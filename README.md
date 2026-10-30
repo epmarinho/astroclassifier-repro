@@ -1,5 +1,7 @@
 # AstroClassifier: object-independent evaluation
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23815955.svg)](https://doi.org/10.5281/zenodo.23815955)
+
 This repository accompanies the manuscript **Object-independent evaluation of
 small-data astronomical image classifiers: architecture, representation, and
 acquisition shortcuts**.

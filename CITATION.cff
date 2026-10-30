@@ -9,6 +9,7 @@ authors:
     affiliation: "Institute of Geoscience and Exact Sciences, São Paulo State University (UNESP)"
 version: 1.0.0
 date-released: 2026-10-30
+doi: 10.5281/zenodo.23815956
 repository-code: "https://github.com/epmarinho/astroclassifier-repro"
 url: "https://github.com/epmarinho/astroclassifier-repro"
 license: Apache-2.0
