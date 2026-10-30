@@ -1,0 +1,32 @@
+{
+  "attempt_04_started": false,
+  "candidate_manifest_sha256": "e5032c7194e0f8479c0df6a355d6651f1fb5b90e8811429b992ebb3fbcb13572",
+  "configurations": {
+    "custom_cnn_transformer": 6,
+    "resnet50": 12,
+    "vit_b_16": 12
+  },
+  "metadata_controls": 2,
+  "metadata_controls_validated": 2,
+  "metrics_source": "Frozen fit_complete.validation_metrics; no prediction rows or labels were opened or rescored.",
+  "network_fit_records": 90,
+  "network_fit_records_validated": 90,
+  "old_selection_used_as_decision_source": false,
+  "phase": "Dataset-v2J1-R4",
+  "protocol_canonical_sha256": "6a4593c9e470f8eb61819a13d8fc82e74a4bfb662b5bb22ce9ca221d179b3737",
+  "r3_preservation_manifest_sha256": "763637c7877560c789c64211158feb55b53c2892026bb616ff0c08e6a1f12c67",
+  "recomputation_files_byte_identical": true,
+  "recomputation_sha256": [
+    "52643419e9ad8a15480ee821baf19bf655d6d9e62c374386b544b8f38fe236a2",
+    "52643419e9ad8a15480ee821baf19bf655d6d9e62c374386b544b8f38fe236a2"
+  ],
+  "recomputations": 2,
+  "seeds_per_configuration": 3,
+  "selected_configurations": 3,
+  "selected_unique_checkpoints": 9,
+  "selection_digest": "cd45b0c9fbb1e6310b31410c5f3be5edf9e694a7737f17a6c95c0788381a580b",
+  "status": "passed",
+  "training_or_forward_pass_or_inference_or_new_scoring": false,
+  "training_or_test_data_tensors_or_labels_accessed": false,
+  "v2j2_started": false
+}

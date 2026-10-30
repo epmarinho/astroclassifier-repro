@@ -1,0 +1,13 @@
+split,frozen_class,object_observations,distinct_physical_objects,FITS_band_images,assignment_units_touching_class,D_deterministic_quality,E_author_accept_quality
+train,galaxies,59,59,177,59,56,3
+train,globularclusters,55,55,165,55,52,3
+train,nebulae,51,51,153,51,42,9
+train,opencluster,57,57,171,57,44,13
+validation,galaxies,20,20,60,20,19,1
+validation,globularclusters,19,19,57,19,19,0
+validation,nebulae,17,17,51,17,17,0
+validation,opencluster,19,19,57,19,15,4
+test,galaxies,19,19,57,14,18,1
+test,globularclusters,18,18,54,18,18,0
+test,nebulae,17,17,51,14,15,2
+test,opencluster,19,19,57,16,15,4

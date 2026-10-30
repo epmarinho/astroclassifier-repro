@@ -1,0 +1,1667 @@
+[
+  {
+    "configuration_id": "spatial-pooling-ablation-v3_spatial_transformer_grid8_mean_grad",
+    "configuration_sha256": "31f5d6d5612c855bc52c277d90a593960c4ee7922538908b554633062d437884",
+    "effective_parameters": {
+      "model": {
+        "adapter_version": "spatial-pooling-ablation-v3",
+        "additional_pooling": "mean_grad",
+        "attention_heads": 8,
+        "channels": [
+          128,
+          256,
+          512,
+          1024
+        ],
+        "claims_spatial_attention": true,
+        "contrast_epsilon": 1e-06,
+        "contrast_weight": 1.0,
+        "data_loader_workers": 8,
+        "embedding": 128,
+        "environment_digest": "6ff1d24a3e284556dde5099f452b2ff7f1081084f8d2c87d0e84e256e9c02adb",
+        "gate_policy": "none",
+        "gradient_policy": "forward_xy_zero_missing_neighbor",
+        "grid_size": 8,
+        "input_size": 256,
+        "name": "spatial-pooling-ablation-v3_spatial_transformer_grid8_mean_grad",
+        "native_grid_size": 16,
+        "optimizer": "Adam",
+        "pin_memory": true,
+        "pooling_factor": 2,
+        "pooling_policy": "mean_grad",
+        "pooling_trainable_parameters": 0,
+        "position_policy": "fixed separable 2D sinusoidal x/y encoding; see models_v1.py",
+        "positional_encoding": "fixed_2d_sinusoidal_xy_v1",
+        "pretrained": false,
+        "purpose": "pooling/grid development ablation; no test evaluation",
+        "source_digests": {
+          "rebuild/ablation.py": "8287aaf628a6511cd56677a22dc6e5d11df8a8071e4cb8156d154c5e65fa831b",
+          "rebuild/common.py": "c5aa62eff0a7533ebb511ada406ab2121f79c1aff2c7827c09795e97bde62508",
+          "rebuild/config.py": "1c53947636f39c824cd1903bd232006eedcef01d7434f90b493cd32a69615f57",
+          "rebuild/data.py": "a548fc303d7a992a533e4b9eff14bae3e2fdacb276a33d3fcb5250124f4bb58c",
+          "rebuild/evaluation.py": "f9362a149000d12b264cd38a051b52ef1f7007208c90aa7176a5298a62da1e97",
+          "rebuild/full.py": "d535aca7cfc6ff14d994fabb50b9e250d0551ab02defbc8e15ca17c261e51c21",
+          "rebuild/phase3b/data_v1.py": "95482ee67d8b6acddb908a8bb677adc854d624c5c09e663433189ab5bc99986d",
+          "rebuild/phase3d/models_v1.py": "a282c954284ccd12a7c94a1bcb67940fff30825ba95c938673965b62bb29f692",
+          "rebuild/phase3d/models_v2.py": "6a17fcf5c0319c4c10c6484659f169ce27c6ba4c3d2d1dba5dbd9fea02bbeb6f",
+          "rebuild/phase3d/models_v3.py": "e304b8ada45aef6143ce8acec4e3d1c441a6350d478927d7f68d4706cdf4a82a",
+          "rebuild/phase3d/pilot.py": "27c6548ad77c338193c39df4faddf5c99bf64c623b244331b199a07fad2cb0c3",
+          "rebuild/pooling_ablation.py": "b6f70d275056649959a57cb75c7829778e38fb861c7fbb713d6bc2f1fcdc4205",
+          "rebuild/training.py": "b7638b6da1ae21c994c739ae396ef5ba937baf643a23ba3dd32b47a47f105687"
+        },
+        "token_count": 64,
+        "transformer_layers": 2,
+        "variant": "spatial_transformer"
+      },
+      "runtime": {
+        "deterministic": true,
+        "device": "cuda",
+        "num_threads": 2
+      },
+      "training": {
+        "batch_size": 16,
+        "epochs": 100,
+        "learning_rate": 9e-05,
+        "max_grad_norm": 3.0,
+        "min_delta": 0.0,
+        "patience": 20,
+        "scheduler_factor": 0.1,
+        "scheduler_patience": 5,
+        "weight_decay": 5e-07
+      }
+    },
+    "family": "custom_cnn_transformer",
+    "fit_id": "fit_4844737c50860a8f679ff011",
+    "representation": "B",
+    "scenario": "B_v2_validation_search",
+    "seed": 3908274,
+    "split_sha256": "1678a37f154baf5ff6895c81d286f3cac72fdaead7919e30f2af655be7bd33bf",
+    "stage": "conditional_if_configuration_wins_on_A"
+  },
+  {
+    "configuration_id": "spatial-pooling-ablation-v3_spatial_transformer_grid8_mean_grad",
+    "configuration_sha256": "31f5d6d5612c855bc52c277d90a593960c4ee7922538908b554633062d437884",
+    "effective_parameters": {
+      "model": {
+        "adapter_version": "spatial-pooling-ablation-v3",
+        "additional_pooling": "mean_grad",
+        "attention_heads": 8,
+        "channels": [
+          128,
+          256,
+          512,
+          1024
+        ],
+        "claims_spatial_attention": true,
+        "contrast_epsilon": 1e-06,
+        "contrast_weight": 1.0,
+        "data_loader_workers": 8,
+        "embedding": 128,
+        "environment_digest": "6ff1d24a3e284556dde5099f452b2ff7f1081084f8d2c87d0e84e256e9c02adb",
+        "gate_policy": "none",
+        "gradient_policy": "forward_xy_zero_missing_neighbor",
+        "grid_size": 8,
+        "input_size": 256,
+        "name": "spatial-pooling-ablation-v3_spatial_transformer_grid8_mean_grad",
+        "native_grid_size": 16,
+        "optimizer": "Adam",
+        "pin_memory": true,
+        "pooling_factor": 2,
+        "pooling_policy": "mean_grad",
+        "pooling_trainable_parameters": 0,
+        "position_policy": "fixed separable 2D sinusoidal x/y encoding; see models_v1.py",
+        "positional_encoding": "fixed_2d_sinusoidal_xy_v1",
+        "pretrained": false,
+        "purpose": "pooling/grid development ablation; no test evaluation",
+        "source_digests": {
+          "rebuild/ablation.py": "8287aaf628a6511cd56677a22dc6e5d11df8a8071e4cb8156d154c5e65fa831b",
+          "rebuild/common.py": "c5aa62eff0a7533ebb511ada406ab2121f79c1aff2c7827c09795e97bde62508",
+          "rebuild/config.py": "1c53947636f39c824cd1903bd232006eedcef01d7434f90b493cd32a69615f57",
+          "rebuild/data.py": "a548fc303d7a992a533e4b9eff14bae3e2fdacb276a33d3fcb5250124f4bb58c",
+          "rebuild/evaluation.py": "f9362a149000d12b264cd38a051b52ef1f7007208c90aa7176a5298a62da1e97",
+          "rebuild/full.py": "d535aca7cfc6ff14d994fabb50b9e250d0551ab02defbc8e15ca17c261e51c21",
+          "rebuild/phase3b/data_v1.py": "95482ee67d8b6acddb908a8bb677adc854d624c5c09e663433189ab5bc99986d",
+          "rebuild/phase3d/models_v1.py": "a282c954284ccd12a7c94a1bcb67940fff30825ba95c938673965b62bb29f692",
+          "rebuild/phase3d/models_v2.py": "6a17fcf5c0319c4c10c6484659f169ce27c6ba4c3d2d1dba5dbd9fea02bbeb6f",
+          "rebuild/phase3d/models_v3.py": "e304b8ada45aef6143ce8acec4e3d1c441a6350d478927d7f68d4706cdf4a82a",
+          "rebuild/phase3d/pilot.py": "27c6548ad77c338193c39df4faddf5c99bf64c623b244331b199a07fad2cb0c3",
+          "rebuild/pooling_ablation.py": "b6f70d275056649959a57cb75c7829778e38fb861c7fbb713d6bc2f1fcdc4205",
+          "rebuild/training.py": "b7638b6da1ae21c994c739ae396ef5ba937baf643a23ba3dd32b47a47f105687"
+        },
+        "token_count": 64,
+        "transformer_layers": 2,
+        "variant": "spatial_transformer"
+      },
+      "runtime": {
+        "deterministic": true,
+        "device": "cuda",
+        "num_threads": 2
+      },
+      "training": {
+        "batch_size": 16,
+        "epochs": 100,
+        "learning_rate": 9e-05,
+        "max_grad_norm": 3.0,
+        "min_delta": 0.0,
+        "patience": 20,
+        "scheduler_factor": 0.1,
+        "scheduler_patience": 5,
+        "weight_decay": 5e-07
+      }
+    },
+    "family": "custom_cnn_transformer",
+    "fit_id": "fit_ed0fec912c6200ba1003a798",
+    "representation": "B",
+    "scenario": "B_v2_validation_search",
+    "seed": 3908275,
+    "split_sha256": "1678a37f154baf5ff6895c81d286f3cac72fdaead7919e30f2af655be7bd33bf",
+    "stage": "conditional_if_configuration_wins_on_A"
+  },
+  {
+    "configuration_id": "spatial-pooling-ablation-v3_spatial_transformer_grid8_mean_grad",
+    "configuration_sha256": "31f5d6d5612c855bc52c277d90a593960c4ee7922538908b554633062d437884",
+    "effective_parameters": {
+      "model": {
+        "adapter_version": "spatial-pooling-ablation-v3",
+        "additional_pooling": "mean_grad",
+        "attention_heads": 8,
+        "channels": [
+          128,
+          256,
+          512,
+          1024
+        ],
+        "claims_spatial_attention": true,
+        "contrast_epsilon": 1e-06,
+        "contrast_weight": 1.0,
+        "data_loader_workers": 8,
+        "embedding": 128,
+        "environment_digest": "6ff1d24a3e284556dde5099f452b2ff7f1081084f8d2c87d0e84e256e9c02adb",
+        "gate_policy": "none",
+        "gradient_policy": "forward_xy_zero_missing_neighbor",
+        "grid_size": 8,
+        "input_size": 256,
+        "name": "spatial-pooling-ablation-v3_spatial_transformer_grid8_mean_grad",
+        "native_grid_size": 16,
+        "optimizer": "Adam",
+        "pin_memory": true,
+        "pooling_factor": 2,
+        "pooling_policy": "mean_grad",
+        "pooling_trainable_parameters": 0,
+        "position_policy": "fixed separable 2D sinusoidal x/y encoding; see models_v1.py",
+        "positional_encoding": "fixed_2d_sinusoidal_xy_v1",
+        "pretrained": false,
+        "purpose": "pooling/grid development ablation; no test evaluation",
+        "source_digests": {
+          "rebuild/ablation.py": "8287aaf628a6511cd56677a22dc6e5d11df8a8071e4cb8156d154c5e65fa831b",
+          "rebuild/common.py": "c5aa62eff0a7533ebb511ada406ab2121f79c1aff2c7827c09795e97bde62508",
+          "rebuild/config.py": "1c53947636f39c824cd1903bd232006eedcef01d7434f90b493cd32a69615f57",
+          "rebuild/data.py": "a548fc303d7a992a533e4b9eff14bae3e2fdacb276a33d3fcb5250124f4bb58c",
+          "rebuild/evaluation.py": "f9362a149000d12b264cd38a051b52ef1f7007208c90aa7176a5298a62da1e97",
+          "rebuild/full.py": "d535aca7cfc6ff14d994fabb50b9e250d0551ab02defbc8e15ca17c261e51c21",
+          "rebuild/phase3b/data_v1.py": "95482ee67d8b6acddb908a8bb677adc854d624c5c09e663433189ab5bc99986d",
+          "rebuild/phase3d/models_v1.py": "a282c954284ccd12a7c94a1bcb67940fff30825ba95c938673965b62bb29f692",
+          "rebuild/phase3d/models_v2.py": "6a17fcf5c0319c4c10c6484659f169ce27c6ba4c3d2d1dba5dbd9fea02bbeb6f",
+          "rebuild/phase3d/models_v3.py": "e304b8ada45aef6143ce8acec4e3d1c441a6350d478927d7f68d4706cdf4a82a",
+          "rebuild/phase3d/pilot.py": "27c6548ad77c338193c39df4faddf5c99bf64c623b244331b199a07fad2cb0c3",
+          "rebuild/pooling_ablation.py": "b6f70d275056649959a57cb75c7829778e38fb861c7fbb713d6bc2f1fcdc4205",
+          "rebuild/training.py": "b7638b6da1ae21c994c739ae396ef5ba937baf643a23ba3dd32b47a47f105687"
+        },
+        "token_count": 64,
+        "transformer_layers": 2,
+        "variant": "spatial_transformer"
+      },
+      "runtime": {
+        "deterministic": true,
+        "device": "cuda",
+        "num_threads": 2
+      },
+      "training": {
+        "batch_size": 16,
+        "epochs": 100,
+        "learning_rate": 9e-05,
+        "max_grad_norm": 3.0,
+        "min_delta": 0.0,
+        "patience": 20,
+        "scheduler_factor": 0.1,
+        "scheduler_patience": 5,
+        "weight_decay": 5e-07
+      }
+    },
+    "family": "custom_cnn_transformer",
+    "fit_id": "fit_f03b9e7edd9ba353d5ede052",
+    "representation": "B",
+    "scenario": "B_v2_validation_search",
+    "seed": 3908276,
+    "split_sha256": "1678a37f154baf5ff6895c81d286f3cac72fdaead7919e30f2af655be7bd33bf",
+    "stage": "conditional_if_configuration_wins_on_A"
+  },
+  {
+    "configuration_id": "spatial-pooling-ablation-v3_spatial_transformer_grid8_mean_grad",
+    "configuration_sha256": "31f5d6d5612c855bc52c277d90a593960c4ee7922538908b554633062d437884",
+    "effective_parameters": {
+      "model": {
+        "adapter_version": "spatial-pooling-ablation-v3",
+        "additional_pooling": "mean_grad",
+        "attention_heads": 8,
+        "channels": [
+          128,
+          256,
+          512,
+          1024
+        ],
+        "claims_spatial_attention": true,
+        "contrast_epsilon": 1e-06,
+        "contrast_weight": 1.0,
+        "data_loader_workers": 8,
+        "embedding": 128,
+        "environment_digest": "6ff1d24a3e284556dde5099f452b2ff7f1081084f8d2c87d0e84e256e9c02adb",
+        "gate_policy": "none",
+        "gradient_policy": "forward_xy_zero_missing_neighbor",
+        "grid_size": 8,
+        "input_size": 256,
+        "name": "spatial-pooling-ablation-v3_spatial_transformer_grid8_mean_grad",
+        "native_grid_size": 16,
+        "optimizer": "Adam",
+        "pin_memory": true,
+        "pooling_factor": 2,
+        "pooling_policy": "mean_grad",
+        "pooling_trainable_parameters": 0,
+        "position_policy": "fixed separable 2D sinusoidal x/y encoding; see models_v1.py",
+        "positional_encoding": "fixed_2d_sinusoidal_xy_v1",
+        "pretrained": false,
+        "purpose": "pooling/grid development ablation; no test evaluation",
+        "source_digests": {
+          "rebuild/ablation.py": "8287aaf628a6511cd56677a22dc6e5d11df8a8071e4cb8156d154c5e65fa831b",
+          "rebuild/common.py": "c5aa62eff0a7533ebb511ada406ab2121f79c1aff2c7827c09795e97bde62508",
+          "rebuild/config.py": "1c53947636f39c824cd1903bd232006eedcef01d7434f90b493cd32a69615f57",
+          "rebuild/data.py": "a548fc303d7a992a533e4b9eff14bae3e2fdacb276a33d3fcb5250124f4bb58c",
+          "rebuild/evaluation.py": "f9362a149000d12b264cd38a051b52ef1f7007208c90aa7176a5298a62da1e97",
+          "rebuild/full.py": "d535aca7cfc6ff14d994fabb50b9e250d0551ab02defbc8e15ca17c261e51c21",
+          "rebuild/phase3b/data_v1.py": "95482ee67d8b6acddb908a8bb677adc854d624c5c09e663433189ab5bc99986d",
+          "rebuild/phase3d/models_v1.py": "a282c954284ccd12a7c94a1bcb67940fff30825ba95c938673965b62bb29f692",
+          "rebuild/phase3d/models_v2.py": "6a17fcf5c0319c4c10c6484659f169ce27c6ba4c3d2d1dba5dbd9fea02bbeb6f",
+          "rebuild/phase3d/models_v3.py": "e304b8ada45aef6143ce8acec4e3d1c441a6350d478927d7f68d4706cdf4a82a",
+          "rebuild/phase3d/pilot.py": "27c6548ad77c338193c39df4faddf5c99bf64c623b244331b199a07fad2cb0c3",
+          "rebuild/pooling_ablation.py": "b6f70d275056649959a57cb75c7829778e38fb861c7fbb713d6bc2f1fcdc4205",
+          "rebuild/training.py": "b7638b6da1ae21c994c739ae396ef5ba937baf643a23ba3dd32b47a47f105687"
+        },
+        "token_count": 64,
+        "transformer_layers": 2,
+        "variant": "spatial_transformer"
+      },
+      "runtime": {
+        "deterministic": true,
+        "device": "cuda",
+        "num_threads": 2
+      },
+      "training": {
+        "batch_size": 16,
+        "epochs": 100,
+        "learning_rate": 9e-05,
+        "max_grad_norm": 3.0,
+        "min_delta": 0.0,
+        "patience": 20,
+        "scheduler_factor": 0.1,
+        "scheduler_patience": 5,
+        "weight_decay": 5e-07
+      }
+    },
+    "family": "custom_cnn_transformer",
+    "fit_id": "fit_ce66c4ffa386414dde302cac",
+    "representation": "A_outer",
+    "scenario": "B_v2_validation_search",
+    "seed": 3908274,
+    "split_sha256": "1678a37f154baf5ff6895c81d286f3cac72fdaead7919e30f2af655be7bd33bf",
+    "stage": "conditional_if_configuration_wins_on_A"
+  },
+  {
+    "configuration_id": "spatial-pooling-ablation-v3_spatial_transformer_grid8_mean_grad",
+    "configuration_sha256": "31f5d6d5612c855bc52c277d90a593960c4ee7922538908b554633062d437884",
+    "effective_parameters": {
+      "model": {
+        "adapter_version": "spatial-pooling-ablation-v3",
+        "additional_pooling": "mean_grad",
+        "attention_heads": 8,
+        "channels": [
+          128,
+          256,
+          512,
+          1024
+        ],
+        "claims_spatial_attention": true,
+        "contrast_epsilon": 1e-06,
+        "contrast_weight": 1.0,
+        "data_loader_workers": 8,
+        "embedding": 128,
+        "environment_digest": "6ff1d24a3e284556dde5099f452b2ff7f1081084f8d2c87d0e84e256e9c02adb",
+        "gate_policy": "none",
+        "gradient_policy": "forward_xy_zero_missing_neighbor",
+        "grid_size": 8,
+        "input_size": 256,
+        "name": "spatial-pooling-ablation-v3_spatial_transformer_grid8_mean_grad",
+        "native_grid_size": 16,
+        "optimizer": "Adam",
+        "pin_memory": true,
+        "pooling_factor": 2,
+        "pooling_policy": "mean_grad",
+        "pooling_trainable_parameters": 0,
+        "position_policy": "fixed separable 2D sinusoidal x/y encoding; see models_v1.py",
+        "positional_encoding": "fixed_2d_sinusoidal_xy_v1",
+        "pretrained": false,
+        "purpose": "pooling/grid development ablation; no test evaluation",
+        "source_digests": {
+          "rebuild/ablation.py": "8287aaf628a6511cd56677a22dc6e5d11df8a8071e4cb8156d154c5e65fa831b",
+          "rebuild/common.py": "c5aa62eff0a7533ebb511ada406ab2121f79c1aff2c7827c09795e97bde62508",
+          "rebuild/config.py": "1c53947636f39c824cd1903bd232006eedcef01d7434f90b493cd32a69615f57",
+          "rebuild/data.py": "a548fc303d7a992a533e4b9eff14bae3e2fdacb276a33d3fcb5250124f4bb58c",
+          "rebuild/evaluation.py": "f9362a149000d12b264cd38a051b52ef1f7007208c90aa7176a5298a62da1e97",
+          "rebuild/full.py": "d535aca7cfc6ff14d994fabb50b9e250d0551ab02defbc8e15ca17c261e51c21",
+          "rebuild/phase3b/data_v1.py": "95482ee67d8b6acddb908a8bb677adc854d624c5c09e663433189ab5bc99986d",
+          "rebuild/phase3d/models_v1.py": "a282c954284ccd12a7c94a1bcb67940fff30825ba95c938673965b62bb29f692",
+          "rebuild/phase3d/models_v2.py": "6a17fcf5c0319c4c10c6484659f169ce27c6ba4c3d2d1dba5dbd9fea02bbeb6f",
+          "rebuild/phase3d/models_v3.py": "e304b8ada45aef6143ce8acec4e3d1c441a6350d478927d7f68d4706cdf4a82a",
+          "rebuild/phase3d/pilot.py": "27c6548ad77c338193c39df4faddf5c99bf64c623b244331b199a07fad2cb0c3",
+          "rebuild/pooling_ablation.py": "b6f70d275056649959a57cb75c7829778e38fb861c7fbb713d6bc2f1fcdc4205",
+          "rebuild/training.py": "b7638b6da1ae21c994c739ae396ef5ba937baf643a23ba3dd32b47a47f105687"
+        },
+        "token_count": 64,
+        "transformer_layers": 2,
+        "variant": "spatial_transformer"
+      },
+      "runtime": {
+        "deterministic": true,
+        "device": "cuda",
+        "num_threads": 2
+      },
+      "training": {
+        "batch_size": 16,
+        "epochs": 100,
+        "learning_rate": 9e-05,
+        "max_grad_norm": 3.0,
+        "min_delta": 0.0,
+        "patience": 20,
+        "scheduler_factor": 0.1,
+        "scheduler_patience": 5,
+        "weight_decay": 5e-07
+      }
+    },
+    "family": "custom_cnn_transformer",
+    "fit_id": "fit_adfbbe9dcdd75b2ea1be3cab",
+    "representation": "A_outer",
+    "scenario": "B_v2_validation_search",
+    "seed": 3908275,
+    "split_sha256": "1678a37f154baf5ff6895c81d286f3cac72fdaead7919e30f2af655be7bd33bf",
+    "stage": "conditional_if_configuration_wins_on_A"
+  },
+  {
+    "configuration_id": "spatial-pooling-ablation-v3_spatial_transformer_grid8_mean_grad",
+    "configuration_sha256": "31f5d6d5612c855bc52c277d90a593960c4ee7922538908b554633062d437884",
+    "effective_parameters": {
+      "model": {
+        "adapter_version": "spatial-pooling-ablation-v3",
+        "additional_pooling": "mean_grad",
+        "attention_heads": 8,
+        "channels": [
+          128,
+          256,
+          512,
+          1024
+        ],
+        "claims_spatial_attention": true,
+        "contrast_epsilon": 1e-06,
+        "contrast_weight": 1.0,
+        "data_loader_workers": 8,
+        "embedding": 128,
+        "environment_digest": "6ff1d24a3e284556dde5099f452b2ff7f1081084f8d2c87d0e84e256e9c02adb",
+        "gate_policy": "none",
+        "gradient_policy": "forward_xy_zero_missing_neighbor",
+        "grid_size": 8,
+        "input_size": 256,
+        "name": "spatial-pooling-ablation-v3_spatial_transformer_grid8_mean_grad",
+        "native_grid_size": 16,
+        "optimizer": "Adam",
+        "pin_memory": true,
+        "pooling_factor": 2,
+        "pooling_policy": "mean_grad",
+        "pooling_trainable_parameters": 0,
+        "position_policy": "fixed separable 2D sinusoidal x/y encoding; see models_v1.py",
+        "positional_encoding": "fixed_2d_sinusoidal_xy_v1",
+        "pretrained": false,
+        "purpose": "pooling/grid development ablation; no test evaluation",
+        "source_digests": {
+          "rebuild/ablation.py": "8287aaf628a6511cd56677a22dc6e5d11df8a8071e4cb8156d154c5e65fa831b",
+          "rebuild/common.py": "c5aa62eff0a7533ebb511ada406ab2121f79c1aff2c7827c09795e97bde62508",
+          "rebuild/config.py": "1c53947636f39c824cd1903bd232006eedcef01d7434f90b493cd32a69615f57",
+          "rebuild/data.py": "a548fc303d7a992a533e4b9eff14bae3e2fdacb276a33d3fcb5250124f4bb58c",
+          "rebuild/evaluation.py": "f9362a149000d12b264cd38a051b52ef1f7007208c90aa7176a5298a62da1e97",
+          "rebuild/full.py": "d535aca7cfc6ff14d994fabb50b9e250d0551ab02defbc8e15ca17c261e51c21",
+          "rebuild/phase3b/data_v1.py": "95482ee67d8b6acddb908a8bb677adc854d624c5c09e663433189ab5bc99986d",
+          "rebuild/phase3d/models_v1.py": "a282c954284ccd12a7c94a1bcb67940fff30825ba95c938673965b62bb29f692",
+          "rebuild/phase3d/models_v2.py": "6a17fcf5c0319c4c10c6484659f169ce27c6ba4c3d2d1dba5dbd9fea02bbeb6f",
+          "rebuild/phase3d/models_v3.py": "e304b8ada45aef6143ce8acec4e3d1c441a6350d478927d7f68d4706cdf4a82a",
+          "rebuild/phase3d/pilot.py": "27c6548ad77c338193c39df4faddf5c99bf64c623b244331b199a07fad2cb0c3",
+          "rebuild/pooling_ablation.py": "b6f70d275056649959a57cb75c7829778e38fb861c7fbb713d6bc2f1fcdc4205",
+          "rebuild/training.py": "b7638b6da1ae21c994c739ae396ef5ba937baf643a23ba3dd32b47a47f105687"
+        },
+        "token_count": 64,
+        "transformer_layers": 2,
+        "variant": "spatial_transformer"
+      },
+      "runtime": {
+        "deterministic": true,
+        "device": "cuda",
+        "num_threads": 2
+      },
+      "training": {
+        "batch_size": 16,
+        "epochs": 100,
+        "learning_rate": 9e-05,
+        "max_grad_norm": 3.0,
+        "min_delta": 0.0,
+        "patience": 20,
+        "scheduler_factor": 0.1,
+        "scheduler_patience": 5,
+        "weight_decay": 5e-07
+      }
+    },
+    "family": "custom_cnn_transformer",
+    "fit_id": "fit_f7d160ad41b6d1cc896feaae",
+    "representation": "A_outer",
+    "scenario": "B_v2_validation_search",
+    "seed": 3908276,
+    "split_sha256": "1678a37f154baf5ff6895c81d286f3cac72fdaead7919e30f2af655be7bd33bf",
+    "stage": "conditional_if_configuration_wins_on_A"
+  },
+  {
+    "configuration_id": "spatial-pooling-ablation-v3_spatial_transformer_grid8_mean_grad",
+    "configuration_sha256": "31f5d6d5612c855bc52c277d90a593960c4ee7922538908b554633062d437884",
+    "effective_parameters": {
+      "model": {
+        "adapter_version": "spatial-pooling-ablation-v3",
+        "additional_pooling": "mean_grad",
+        "attention_heads": 8,
+        "channels": [
+          128,
+          256,
+          512,
+          1024
+        ],
+        "claims_spatial_attention": true,
+        "contrast_epsilon": 1e-06,
+        "contrast_weight": 1.0,
+        "data_loader_workers": 8,
+        "embedding": 128,
+        "environment_digest": "6ff1d24a3e284556dde5099f452b2ff7f1081084f8d2c87d0e84e256e9c02adb",
+        "gate_policy": "none",
+        "gradient_policy": "forward_xy_zero_missing_neighbor",
+        "grid_size": 8,
+        "input_size": 256,
+        "name": "spatial-pooling-ablation-v3_spatial_transformer_grid8_mean_grad",
+        "native_grid_size": 16,
+        "optimizer": "Adam",
+        "pin_memory": true,
+        "pooling_factor": 2,
+        "pooling_policy": "mean_grad",
+        "pooling_trainable_parameters": 0,
+        "position_policy": "fixed separable 2D sinusoidal x/y encoding; see models_v1.py",
+        "positional_encoding": "fixed_2d_sinusoidal_xy_v1",
+        "pretrained": false,
+        "purpose": "pooling/grid development ablation; no test evaluation",
+        "source_digests": {
+          "rebuild/ablation.py": "8287aaf628a6511cd56677a22dc6e5d11df8a8071e4cb8156d154c5e65fa831b",
+          "rebuild/common.py": "c5aa62eff0a7533ebb511ada406ab2121f79c1aff2c7827c09795e97bde62508",
+          "rebuild/config.py": "1c53947636f39c824cd1903bd232006eedcef01d7434f90b493cd32a69615f57",
+          "rebuild/data.py": "a548fc303d7a992a533e4b9eff14bae3e2fdacb276a33d3fcb5250124f4bb58c",
+          "rebuild/evaluation.py": "f9362a149000d12b264cd38a051b52ef1f7007208c90aa7176a5298a62da1e97",
+          "rebuild/full.py": "d535aca7cfc6ff14d994fabb50b9e250d0551ab02defbc8e15ca17c261e51c21",
+          "rebuild/phase3b/data_v1.py": "95482ee67d8b6acddb908a8bb677adc854d624c5c09e663433189ab5bc99986d",
+          "rebuild/phase3d/models_v1.py": "a282c954284ccd12a7c94a1bcb67940fff30825ba95c938673965b62bb29f692",
+          "rebuild/phase3d/models_v2.py": "6a17fcf5c0319c4c10c6484659f169ce27c6ba4c3d2d1dba5dbd9fea02bbeb6f",
+          "rebuild/phase3d/models_v3.py": "e304b8ada45aef6143ce8acec4e3d1c441a6350d478927d7f68d4706cdf4a82a",
+          "rebuild/phase3d/pilot.py": "27c6548ad77c338193c39df4faddf5c99bf64c623b244331b199a07fad2cb0c3",
+          "rebuild/pooling_ablation.py": "b6f70d275056649959a57cb75c7829778e38fb861c7fbb713d6bc2f1fcdc4205",
+          "rebuild/training.py": "b7638b6da1ae21c994c739ae396ef5ba937baf643a23ba3dd32b47a47f105687"
+        },
+        "token_count": 64,
+        "transformer_layers": 2,
+        "variant": "spatial_transformer"
+      },
+      "runtime": {
+        "deterministic": true,
+        "device": "cuda",
+        "num_threads": 2
+      },
+      "training": {
+        "batch_size": 16,
+        "epochs": 100,
+        "learning_rate": 9e-05,
+        "max_grad_norm": 3.0,
+        "min_delta": 0.0,
+        "patience": 20,
+        "scheduler_factor": 0.1,
+        "scheduler_patience": 5,
+        "weight_decay": 5e-07
+      }
+    },
+    "family": "custom_cnn_transformer",
+    "fit_id": "fit_fb3cdb7a5185134251517988",
+    "representation": "B_outer",
+    "scenario": "B_v2_validation_search",
+    "seed": 3908274,
+    "split_sha256": "1678a37f154baf5ff6895c81d286f3cac72fdaead7919e30f2af655be7bd33bf",
+    "stage": "conditional_if_configuration_wins_on_A"
+  },
+  {
+    "configuration_id": "spatial-pooling-ablation-v3_spatial_transformer_grid8_mean_grad",
+    "configuration_sha256": "31f5d6d5612c855bc52c277d90a593960c4ee7922538908b554633062d437884",
+    "effective_parameters": {
+      "model": {
+        "adapter_version": "spatial-pooling-ablation-v3",
+        "additional_pooling": "mean_grad",
+        "attention_heads": 8,
+        "channels": [
+          128,
+          256,
+          512,
+          1024
+        ],
+        "claims_spatial_attention": true,
+        "contrast_epsilon": 1e-06,
+        "contrast_weight": 1.0,
+        "data_loader_workers": 8,
+        "embedding": 128,
+        "environment_digest": "6ff1d24a3e284556dde5099f452b2ff7f1081084f8d2c87d0e84e256e9c02adb",
+        "gate_policy": "none",
+        "gradient_policy": "forward_xy_zero_missing_neighbor",
+        "grid_size": 8,
+        "input_size": 256,
+        "name": "spatial-pooling-ablation-v3_spatial_transformer_grid8_mean_grad",
+        "native_grid_size": 16,
+        "optimizer": "Adam",
+        "pin_memory": true,
+        "pooling_factor": 2,
+        "pooling_policy": "mean_grad",
+        "pooling_trainable_parameters": 0,
+        "position_policy": "fixed separable 2D sinusoidal x/y encoding; see models_v1.py",
+        "positional_encoding": "fixed_2d_sinusoidal_xy_v1",
+        "pretrained": false,
+        "purpose": "pooling/grid development ablation; no test evaluation",
+        "source_digests": {
+          "rebuild/ablation.py": "8287aaf628a6511cd56677a22dc6e5d11df8a8071e4cb8156d154c5e65fa831b",
+          "rebuild/common.py": "c5aa62eff0a7533ebb511ada406ab2121f79c1aff2c7827c09795e97bde62508",
+          "rebuild/config.py": "1c53947636f39c824cd1903bd232006eedcef01d7434f90b493cd32a69615f57",
+          "rebuild/data.py": "a548fc303d7a992a533e4b9eff14bae3e2fdacb276a33d3fcb5250124f4bb58c",
+          "rebuild/evaluation.py": "f9362a149000d12b264cd38a051b52ef1f7007208c90aa7176a5298a62da1e97",
+          "rebuild/full.py": "d535aca7cfc6ff14d994fabb50b9e250d0551ab02defbc8e15ca17c261e51c21",
+          "rebuild/phase3b/data_v1.py": "95482ee67d8b6acddb908a8bb677adc854d624c5c09e663433189ab5bc99986d",
+          "rebuild/phase3d/models_v1.py": "a282c954284ccd12a7c94a1bcb67940fff30825ba95c938673965b62bb29f692",
+          "rebuild/phase3d/models_v2.py": "6a17fcf5c0319c4c10c6484659f169ce27c6ba4c3d2d1dba5dbd9fea02bbeb6f",
+          "rebuild/phase3d/models_v3.py": "e304b8ada45aef6143ce8acec4e3d1c441a6350d478927d7f68d4706cdf4a82a",
+          "rebuild/phase3d/pilot.py": "27c6548ad77c338193c39df4faddf5c99bf64c623b244331b199a07fad2cb0c3",
+          "rebuild/pooling_ablation.py": "b6f70d275056649959a57cb75c7829778e38fb861c7fbb713d6bc2f1fcdc4205",
+          "rebuild/training.py": "b7638b6da1ae21c994c739ae396ef5ba937baf643a23ba3dd32b47a47f105687"
+        },
+        "token_count": 64,
+        "transformer_layers": 2,
+        "variant": "spatial_transformer"
+      },
+      "runtime": {
+        "deterministic": true,
+        "device": "cuda",
+        "num_threads": 2
+      },
+      "training": {
+        "batch_size": 16,
+        "epochs": 100,
+        "learning_rate": 9e-05,
+        "max_grad_norm": 3.0,
+        "min_delta": 0.0,
+        "patience": 20,
+        "scheduler_factor": 0.1,
+        "scheduler_patience": 5,
+        "weight_decay": 5e-07
+      }
+    },
+    "family": "custom_cnn_transformer",
+    "fit_id": "fit_fd749af4b395404f6d8b2a3b",
+    "representation": "B_outer",
+    "scenario": "B_v2_validation_search",
+    "seed": 3908275,
+    "split_sha256": "1678a37f154baf5ff6895c81d286f3cac72fdaead7919e30f2af655be7bd33bf",
+    "stage": "conditional_if_configuration_wins_on_A"
+  },
+  {
+    "configuration_id": "spatial-pooling-ablation-v3_spatial_transformer_grid8_mean_grad",
+    "configuration_sha256": "31f5d6d5612c855bc52c277d90a593960c4ee7922538908b554633062d437884",
+    "effective_parameters": {
+      "model": {
+        "adapter_version": "spatial-pooling-ablation-v3",
+        "additional_pooling": "mean_grad",
+        "attention_heads": 8,
+        "channels": [
+          128,
+          256,
+          512,
+          1024
+        ],
+        "claims_spatial_attention": true,
+        "contrast_epsilon": 1e-06,
+        "contrast_weight": 1.0,
+        "data_loader_workers": 8,
+        "embedding": 128,
+        "environment_digest": "6ff1d24a3e284556dde5099f452b2ff7f1081084f8d2c87d0e84e256e9c02adb",
+        "gate_policy": "none",
+        "gradient_policy": "forward_xy_zero_missing_neighbor",
+        "grid_size": 8,
+        "input_size": 256,
+        "name": "spatial-pooling-ablation-v3_spatial_transformer_grid8_mean_grad",
+        "native_grid_size": 16,
+        "optimizer": "Adam",
+        "pin_memory": true,
+        "pooling_factor": 2,
+        "pooling_policy": "mean_grad",
+        "pooling_trainable_parameters": 0,
+        "position_policy": "fixed separable 2D sinusoidal x/y encoding; see models_v1.py",
+        "positional_encoding": "fixed_2d_sinusoidal_xy_v1",
+        "pretrained": false,
+        "purpose": "pooling/grid development ablation; no test evaluation",
+        "source_digests": {
+          "rebuild/ablation.py": "8287aaf628a6511cd56677a22dc6e5d11df8a8071e4cb8156d154c5e65fa831b",
+          "rebuild/common.py": "c5aa62eff0a7533ebb511ada406ab2121f79c1aff2c7827c09795e97bde62508",
+          "rebuild/config.py": "1c53947636f39c824cd1903bd232006eedcef01d7434f90b493cd32a69615f57",
+          "rebuild/data.py": "a548fc303d7a992a533e4b9eff14bae3e2fdacb276a33d3fcb5250124f4bb58c",
+          "rebuild/evaluation.py": "f9362a149000d12b264cd38a051b52ef1f7007208c90aa7176a5298a62da1e97",
+          "rebuild/full.py": "d535aca7cfc6ff14d994fabb50b9e250d0551ab02defbc8e15ca17c261e51c21",
+          "rebuild/phase3b/data_v1.py": "95482ee67d8b6acddb908a8bb677adc854d624c5c09e663433189ab5bc99986d",
+          "rebuild/phase3d/models_v1.py": "a282c954284ccd12a7c94a1bcb67940fff30825ba95c938673965b62bb29f692",
+          "rebuild/phase3d/models_v2.py": "6a17fcf5c0319c4c10c6484659f169ce27c6ba4c3d2d1dba5dbd9fea02bbeb6f",
+          "rebuild/phase3d/models_v3.py": "e304b8ada45aef6143ce8acec4e3d1c441a6350d478927d7f68d4706cdf4a82a",
+          "rebuild/phase3d/pilot.py": "27c6548ad77c338193c39df4faddf5c99bf64c623b244331b199a07fad2cb0c3",
+          "rebuild/pooling_ablation.py": "b6f70d275056649959a57cb75c7829778e38fb861c7fbb713d6bc2f1fcdc4205",
+          "rebuild/training.py": "b7638b6da1ae21c994c739ae396ef5ba937baf643a23ba3dd32b47a47f105687"
+        },
+        "token_count": 64,
+        "transformer_layers": 2,
+        "variant": "spatial_transformer"
+      },
+      "runtime": {
+        "deterministic": true,
+        "device": "cuda",
+        "num_threads": 2
+      },
+      "training": {
+        "batch_size": 16,
+        "epochs": 100,
+        "learning_rate": 9e-05,
+        "max_grad_norm": 3.0,
+        "min_delta": 0.0,
+        "patience": 20,
+        "scheduler_factor": 0.1,
+        "scheduler_patience": 5,
+        "weight_decay": 5e-07
+      }
+    },
+    "family": "custom_cnn_transformer",
+    "fit_id": "fit_915693fd45d4d7fb9022e2ce",
+    "representation": "B_outer",
+    "scenario": "B_v2_validation_search",
+    "seed": 3908276,
+    "split_sha256": "1678a37f154baf5ff6895c81d286f3cac72fdaead7919e30f2af655be7bd33bf",
+    "stage": "conditional_if_configuration_wins_on_A"
+  },
+  {
+    "configuration_id": "resnet50_ddc5866488e57f18",
+    "configuration_sha256": "dbe456b4fce9bde0bab0b9adc1b7630f57770114454577cf1d735e728cf6f16c",
+    "effective_parameters": {
+      "model": {
+        "architecture": "torchvision.models.resnet50",
+        "data_loader_workers": 8,
+        "decay_policy": "all optimized parameters; decoupled weight decay",
+        "family": "resnet50",
+        "head": "fc: Linear(2048,4)",
+        "head_initialization": "seeded default nn.Linear initialization after backbone load",
+        "head_lr_multiplier": 10.0,
+        "head_only_warmup_epochs": 0,
+        "name": "resnet50_ddc5866488e57f18",
+        "optimizer": "AdamW",
+        "optimizer_betas": [
+          0.9,
+          0.999
+        ],
+        "optimizer_epsilon": 1e-08,
+        "optimizer_state_policy": "one optimizer; no resets at unfreeze",
+        "pin_memory": true,
+        "pretrained_backbone_initialization": "identical cached official weights across seeds",
+        "pretrained_required": true,
+        "scheduler_and_early_stopping": "active from epoch 1; no resets at unfreeze",
+        "warmup_batchnorm_policy": "backbone eval while frozen; train after unfreezing",
+        "warmup_counts_toward_maximum_epochs": true
+      },
+      "runtime": {
+        "deterministic": true,
+        "device": "cuda",
+        "num_threads": 2
+      },
+      "training": {
+        "batch_size": 16,
+        "epochs": 100,
+        "learning_rate": 0.0001,
+        "max_grad_norm": 3.0,
+        "min_delta": 0.0,
+        "patience": 20,
+        "scheduler_factor": 0.1,
+        "scheduler_patience": 5,
+        "weight_decay": 0.0001
+      }
+    },
+    "family": "resnet50",
+    "fit_id": "fit_9d1e53dd876b96c1f8c9d822",
+    "representation": "B",
+    "scenario": "B_v2_validation_search",
+    "seed": 3908274,
+    "split_sha256": "1678a37f154baf5ff6895c81d286f3cac72fdaead7919e30f2af655be7bd33bf",
+    "stage": "conditional_if_configuration_wins_on_A"
+  },
+  {
+    "configuration_id": "resnet50_ddc5866488e57f18",
+    "configuration_sha256": "dbe456b4fce9bde0bab0b9adc1b7630f57770114454577cf1d735e728cf6f16c",
+    "effective_parameters": {
+      "model": {
+        "architecture": "torchvision.models.resnet50",
+        "data_loader_workers": 8,
+        "decay_policy": "all optimized parameters; decoupled weight decay",
+        "family": "resnet50",
+        "head": "fc: Linear(2048,4)",
+        "head_initialization": "seeded default nn.Linear initialization after backbone load",
+        "head_lr_multiplier": 10.0,
+        "head_only_warmup_epochs": 0,
+        "name": "resnet50_ddc5866488e57f18",
+        "optimizer": "AdamW",
+        "optimizer_betas": [
+          0.9,
+          0.999
+        ],
+        "optimizer_epsilon": 1e-08,
+        "optimizer_state_policy": "one optimizer; no resets at unfreeze",
+        "pin_memory": true,
+        "pretrained_backbone_initialization": "identical cached official weights across seeds",
+        "pretrained_required": true,
+        "scheduler_and_early_stopping": "active from epoch 1; no resets at unfreeze",
+        "warmup_batchnorm_policy": "backbone eval while frozen; train after unfreezing",
+        "warmup_counts_toward_maximum_epochs": true
+      },
+      "runtime": {
+        "deterministic": true,
+        "device": "cuda",
+        "num_threads": 2
+      },
+      "training": {
+        "batch_size": 16,
+        "epochs": 100,
+        "learning_rate": 0.0001,
+        "max_grad_norm": 3.0,
+        "min_delta": 0.0,
+        "patience": 20,
+        "scheduler_factor": 0.1,
+        "scheduler_patience": 5,
+        "weight_decay": 0.0001
+      }
+    },
+    "family": "resnet50",
+    "fit_id": "fit_d0bfd37d25ac2d5e9af3f1c8",
+    "representation": "B",
+    "scenario": "B_v2_validation_search",
+    "seed": 3908275,
+    "split_sha256": "1678a37f154baf5ff6895c81d286f3cac72fdaead7919e30f2af655be7bd33bf",
+    "stage": "conditional_if_configuration_wins_on_A"
+  },
+  {
+    "configuration_id": "resnet50_ddc5866488e57f18",
+    "configuration_sha256": "dbe456b4fce9bde0bab0b9adc1b7630f57770114454577cf1d735e728cf6f16c",
+    "effective_parameters": {
+      "model": {
+        "architecture": "torchvision.models.resnet50",
+        "data_loader_workers": 8,
+        "decay_policy": "all optimized parameters; decoupled weight decay",
+        "family": "resnet50",
+        "head": "fc: Linear(2048,4)",
+        "head_initialization": "seeded default nn.Linear initialization after backbone load",
+        "head_lr_multiplier": 10.0,
+        "head_only_warmup_epochs": 0,
+        "name": "resnet50_ddc5866488e57f18",
+        "optimizer": "AdamW",
+        "optimizer_betas": [
+          0.9,
+          0.999
+        ],
+        "optimizer_epsilon": 1e-08,
+        "optimizer_state_policy": "one optimizer; no resets at unfreeze",
+        "pin_memory": true,
+        "pretrained_backbone_initialization": "identical cached official weights across seeds",
+        "pretrained_required": true,
+        "scheduler_and_early_stopping": "active from epoch 1; no resets at unfreeze",
+        "warmup_batchnorm_policy": "backbone eval while frozen; train after unfreezing",
+        "warmup_counts_toward_maximum_epochs": true
+      },
+      "runtime": {
+        "deterministic": true,
+        "device": "cuda",
+        "num_threads": 2
+      },
+      "training": {
+        "batch_size": 16,
+        "epochs": 100,
+        "learning_rate": 0.0001,
+        "max_grad_norm": 3.0,
+        "min_delta": 0.0,
+        "patience": 20,
+        "scheduler_factor": 0.1,
+        "scheduler_patience": 5,
+        "weight_decay": 0.0001
+      }
+    },
+    "family": "resnet50",
+    "fit_id": "fit_8c690b627bc664bced2e796f",
+    "representation": "B",
+    "scenario": "B_v2_validation_search",
+    "seed": 3908276,
+    "split_sha256": "1678a37f154baf5ff6895c81d286f3cac72fdaead7919e30f2af655be7bd33bf",
+    "stage": "conditional_if_configuration_wins_on_A"
+  },
+  {
+    "configuration_id": "resnet50_ddc5866488e57f18",
+    "configuration_sha256": "dbe456b4fce9bde0bab0b9adc1b7630f57770114454577cf1d735e728cf6f16c",
+    "effective_parameters": {
+      "model": {
+        "architecture": "torchvision.models.resnet50",
+        "data_loader_workers": 8,
+        "decay_policy": "all optimized parameters; decoupled weight decay",
+        "family": "resnet50",
+        "head": "fc: Linear(2048,4)",
+        "head_initialization": "seeded default nn.Linear initialization after backbone load",
+        "head_lr_multiplier": 10.0,
+        "head_only_warmup_epochs": 0,
+        "name": "resnet50_ddc5866488e57f18",
+        "optimizer": "AdamW",
+        "optimizer_betas": [
+          0.9,
+          0.999
+        ],
+        "optimizer_epsilon": 1e-08,
+        "optimizer_state_policy": "one optimizer; no resets at unfreeze",
+        "pin_memory": true,
+        "pretrained_backbone_initialization": "identical cached official weights across seeds",
+        "pretrained_required": true,
+        "scheduler_and_early_stopping": "active from epoch 1; no resets at unfreeze",
+        "warmup_batchnorm_policy": "backbone eval while frozen; train after unfreezing",
+        "warmup_counts_toward_maximum_epochs": true
+      },
+      "runtime": {
+        "deterministic": true,
+        "device": "cuda",
+        "num_threads": 2
+      },
+      "training": {
+        "batch_size": 16,
+        "epochs": 100,
+        "learning_rate": 0.0001,
+        "max_grad_norm": 3.0,
+        "min_delta": 0.0,
+        "patience": 20,
+        "scheduler_factor": 0.1,
+        "scheduler_patience": 5,
+        "weight_decay": 0.0001
+      }
+    },
+    "family": "resnet50",
+    "fit_id": "fit_e81ea23f19e61d81ddae1e01",
+    "representation": "A_outer",
+    "scenario": "B_v2_validation_search",
+    "seed": 3908274,
+    "split_sha256": "1678a37f154baf5ff6895c81d286f3cac72fdaead7919e30f2af655be7bd33bf",
+    "stage": "conditional_if_configuration_wins_on_A"
+  },
+  {
+    "configuration_id": "resnet50_ddc5866488e57f18",
+    "configuration_sha256": "dbe456b4fce9bde0bab0b9adc1b7630f57770114454577cf1d735e728cf6f16c",
+    "effective_parameters": {
+      "model": {
+        "architecture": "torchvision.models.resnet50",
+        "data_loader_workers": 8,
+        "decay_policy": "all optimized parameters; decoupled weight decay",
+        "family": "resnet50",
+        "head": "fc: Linear(2048,4)",
+        "head_initialization": "seeded default nn.Linear initialization after backbone load",
+        "head_lr_multiplier": 10.0,
+        "head_only_warmup_epochs": 0,
+        "name": "resnet50_ddc5866488e57f18",
+        "optimizer": "AdamW",
+        "optimizer_betas": [
+          0.9,
+          0.999
+        ],
+        "optimizer_epsilon": 1e-08,
+        "optimizer_state_policy": "one optimizer; no resets at unfreeze",
+        "pin_memory": true,
+        "pretrained_backbone_initialization": "identical cached official weights across seeds",
+        "pretrained_required": true,
+        "scheduler_and_early_stopping": "active from epoch 1; no resets at unfreeze",
+        "warmup_batchnorm_policy": "backbone eval while frozen; train after unfreezing",
+        "warmup_counts_toward_maximum_epochs": true
+      },
+      "runtime": {
+        "deterministic": true,
+        "device": "cuda",
+        "num_threads": 2
+      },
+      "training": {
+        "batch_size": 16,
+        "epochs": 100,
+        "learning_rate": 0.0001,
+        "max_grad_norm": 3.0,
+        "min_delta": 0.0,
+        "patience": 20,
+        "scheduler_factor": 0.1,
+        "scheduler_patience": 5,
+        "weight_decay": 0.0001
+      }
+    },
+    "family": "resnet50",
+    "fit_id": "fit_1ad490be121880a8c84a4138",
+    "representation": "A_outer",
+    "scenario": "B_v2_validation_search",
+    "seed": 3908275,
+    "split_sha256": "1678a37f154baf5ff6895c81d286f3cac72fdaead7919e30f2af655be7bd33bf",
+    "stage": "conditional_if_configuration_wins_on_A"
+  },
+  {
+    "configuration_id": "resnet50_ddc5866488e57f18",
+    "configuration_sha256": "dbe456b4fce9bde0bab0b9adc1b7630f57770114454577cf1d735e728cf6f16c",
+    "effective_parameters": {
+      "model": {
+        "architecture": "torchvision.models.resnet50",
+        "data_loader_workers": 8,
+        "decay_policy": "all optimized parameters; decoupled weight decay",
+        "family": "resnet50",
+        "head": "fc: Linear(2048,4)",
+        "head_initialization": "seeded default nn.Linear initialization after backbone load",
+        "head_lr_multiplier": 10.0,
+        "head_only_warmup_epochs": 0,
+        "name": "resnet50_ddc5866488e57f18",
+        "optimizer": "AdamW",
+        "optimizer_betas": [
+          0.9,
+          0.999
+        ],
+        "optimizer_epsilon": 1e-08,
+        "optimizer_state_policy": "one optimizer; no resets at unfreeze",
+        "pin_memory": true,
+        "pretrained_backbone_initialization": "identical cached official weights across seeds",
+        "pretrained_required": true,
+        "scheduler_and_early_stopping": "active from epoch 1; no resets at unfreeze",
+        "warmup_batchnorm_policy": "backbone eval while frozen; train after unfreezing",
+        "warmup_counts_toward_maximum_epochs": true
+      },
+      "runtime": {
+        "deterministic": true,
+        "device": "cuda",
+        "num_threads": 2
+      },
+      "training": {
+        "batch_size": 16,
+        "epochs": 100,
+        "learning_rate": 0.0001,
+        "max_grad_norm": 3.0,
+        "min_delta": 0.0,
+        "patience": 20,
+        "scheduler_factor": 0.1,
+        "scheduler_patience": 5,
+        "weight_decay": 0.0001
+      }
+    },
+    "family": "resnet50",
+    "fit_id": "fit_17246bc0375a4818a782cc14",
+    "representation": "A_outer",
+    "scenario": "B_v2_validation_search",
+    "seed": 3908276,
+    "split_sha256": "1678a37f154baf5ff6895c81d286f3cac72fdaead7919e30f2af655be7bd33bf",
+    "stage": "conditional_if_configuration_wins_on_A"
+  },
+  {
+    "configuration_id": "resnet50_ddc5866488e57f18",
+    "configuration_sha256": "dbe456b4fce9bde0bab0b9adc1b7630f57770114454577cf1d735e728cf6f16c",
+    "effective_parameters": {
+      "model": {
+        "architecture": "torchvision.models.resnet50",
+        "data_loader_workers": 8,
+        "decay_policy": "all optimized parameters; decoupled weight decay",
+        "family": "resnet50",
+        "head": "fc: Linear(2048,4)",
+        "head_initialization": "seeded default nn.Linear initialization after backbone load",
+        "head_lr_multiplier": 10.0,
+        "head_only_warmup_epochs": 0,
+        "name": "resnet50_ddc5866488e57f18",
+        "optimizer": "AdamW",
+        "optimizer_betas": [
+          0.9,
+          0.999
+        ],
+        "optimizer_epsilon": 1e-08,
+        "optimizer_state_policy": "one optimizer; no resets at unfreeze",
+        "pin_memory": true,
+        "pretrained_backbone_initialization": "identical cached official weights across seeds",
+        "pretrained_required": true,
+        "scheduler_and_early_stopping": "active from epoch 1; no resets at unfreeze",
+        "warmup_batchnorm_policy": "backbone eval while frozen; train after unfreezing",
+        "warmup_counts_toward_maximum_epochs": true
+      },
+      "runtime": {
+        "deterministic": true,
+        "device": "cuda",
+        "num_threads": 2
+      },
+      "training": {
+        "batch_size": 16,
+        "epochs": 100,
+        "learning_rate": 0.0001,
+        "max_grad_norm": 3.0,
+        "min_delta": 0.0,
+        "patience": 20,
+        "scheduler_factor": 0.1,
+        "scheduler_patience": 5,
+        "weight_decay": 0.0001
+      }
+    },
+    "family": "resnet50",
+    "fit_id": "fit_2694d9f2293effef9fc2219f",
+    "representation": "B_outer",
+    "scenario": "B_v2_validation_search",
+    "seed": 3908274,
+    "split_sha256": "1678a37f154baf5ff6895c81d286f3cac72fdaead7919e30f2af655be7bd33bf",
+    "stage": "conditional_if_configuration_wins_on_A"
+  },
+  {
+    "configuration_id": "resnet50_ddc5866488e57f18",
+    "configuration_sha256": "dbe456b4fce9bde0bab0b9adc1b7630f57770114454577cf1d735e728cf6f16c",
+    "effective_parameters": {
+      "model": {
+        "architecture": "torchvision.models.resnet50",
+        "data_loader_workers": 8,
+        "decay_policy": "all optimized parameters; decoupled weight decay",
+        "family": "resnet50",
+        "head": "fc: Linear(2048,4)",
+        "head_initialization": "seeded default nn.Linear initialization after backbone load",
+        "head_lr_multiplier": 10.0,
+        "head_only_warmup_epochs": 0,
+        "name": "resnet50_ddc5866488e57f18",
+        "optimizer": "AdamW",
+        "optimizer_betas": [
+          0.9,
+          0.999
+        ],
+        "optimizer_epsilon": 1e-08,
+        "optimizer_state_policy": "one optimizer; no resets at unfreeze",
+        "pin_memory": true,
+        "pretrained_backbone_initialization": "identical cached official weights across seeds",
+        "pretrained_required": true,
+        "scheduler_and_early_stopping": "active from epoch 1; no resets at unfreeze",
+        "warmup_batchnorm_policy": "backbone eval while frozen; train after unfreezing",
+        "warmup_counts_toward_maximum_epochs": true
+      },
+      "runtime": {
+        "deterministic": true,
+        "device": "cuda",
+        "num_threads": 2
+      },
+      "training": {
+        "batch_size": 16,
+        "epochs": 100,
+        "learning_rate": 0.0001,
+        "max_grad_norm": 3.0,
+        "min_delta": 0.0,
+        "patience": 20,
+        "scheduler_factor": 0.1,
+        "scheduler_patience": 5,
+        "weight_decay": 0.0001
+      }
+    },
+    "family": "resnet50",
+    "fit_id": "fit_09f28df00b35804579926376",
+    "representation": "B_outer",
+    "scenario": "B_v2_validation_search",
+    "seed": 3908275,
+    "split_sha256": "1678a37f154baf5ff6895c81d286f3cac72fdaead7919e30f2af655be7bd33bf",
+    "stage": "conditional_if_configuration_wins_on_A"
+  },
+  {
+    "configuration_id": "resnet50_ddc5866488e57f18",
+    "configuration_sha256": "dbe456b4fce9bde0bab0b9adc1b7630f57770114454577cf1d735e728cf6f16c",
+    "effective_parameters": {
+      "model": {
+        "architecture": "torchvision.models.resnet50",
+        "data_loader_workers": 8,
+        "decay_policy": "all optimized parameters; decoupled weight decay",
+        "family": "resnet50",
+        "head": "fc: Linear(2048,4)",
+        "head_initialization": "seeded default nn.Linear initialization after backbone load",
+        "head_lr_multiplier": 10.0,
+        "head_only_warmup_epochs": 0,
+        "name": "resnet50_ddc5866488e57f18",
+        "optimizer": "AdamW",
+        "optimizer_betas": [
+          0.9,
+          0.999
+        ],
+        "optimizer_epsilon": 1e-08,
+        "optimizer_state_policy": "one optimizer; no resets at unfreeze",
+        "pin_memory": true,
+        "pretrained_backbone_initialization": "identical cached official weights across seeds",
+        "pretrained_required": true,
+        "scheduler_and_early_stopping": "active from epoch 1; no resets at unfreeze",
+        "warmup_batchnorm_policy": "backbone eval while frozen; train after unfreezing",
+        "warmup_counts_toward_maximum_epochs": true
+      },
+      "runtime": {
+        "deterministic": true,
+        "device": "cuda",
+        "num_threads": 2
+      },
+      "training": {
+        "batch_size": 16,
+        "epochs": 100,
+        "learning_rate": 0.0001,
+        "max_grad_norm": 3.0,
+        "min_delta": 0.0,
+        "patience": 20,
+        "scheduler_factor": 0.1,
+        "scheduler_patience": 5,
+        "weight_decay": 0.0001
+      }
+    },
+    "family": "resnet50",
+    "fit_id": "fit_4a7775f90e30526eef85d030",
+    "representation": "B_outer",
+    "scenario": "B_v2_validation_search",
+    "seed": 3908276,
+    "split_sha256": "1678a37f154baf5ff6895c81d286f3cac72fdaead7919e30f2af655be7bd33bf",
+    "stage": "conditional_if_configuration_wins_on_A"
+  },
+  {
+    "configuration_id": "vit_b_16_ed7ae4a374295b2c",
+    "configuration_sha256": "753dffdef91a6b6046872a098c78f67e04e0f5a53eaa239a0734f525f0b3aca8",
+    "effective_parameters": {
+      "model": {
+        "architecture": "torchvision.models.vit_b_16",
+        "data_loader_workers": 8,
+        "decay_policy": "all optimized parameters; decoupled weight decay",
+        "family": "vit_b_16",
+        "head": "heads.head: Linear(768,4)",
+        "head_initialization": "seeded default nn.Linear initialization after backbone load",
+        "head_lr_multiplier": 10.0,
+        "head_only_warmup_epochs": 0,
+        "name": "vit_b_16_ed7ae4a374295b2c",
+        "optimizer": "AdamW",
+        "optimizer_betas": [
+          0.9,
+          0.999
+        ],
+        "optimizer_epsilon": 1e-08,
+        "optimizer_state_policy": "one optimizer; no resets at unfreeze",
+        "pin_memory": true,
+        "pretrained_backbone_initialization": "identical cached official weights across seeds",
+        "pretrained_required": true,
+        "scheduler_and_early_stopping": "active from epoch 1; no resets at unfreeze",
+        "warmup_batchnorm_policy": "backbone eval while frozen; train after unfreezing",
+        "warmup_counts_toward_maximum_epochs": true
+      },
+      "runtime": {
+        "deterministic": true,
+        "device": "cuda",
+        "num_threads": 2
+      },
+      "training": {
+        "batch_size": 16,
+        "epochs": 100,
+        "learning_rate": 3e-05,
+        "max_grad_norm": 3.0,
+        "min_delta": 0.0,
+        "patience": 20,
+        "scheduler_factor": 0.1,
+        "scheduler_patience": 5,
+        "weight_decay": 0.05
+      }
+    },
+    "family": "vit_b_16",
+    "fit_id": "fit_c3eaff12fe8a87c2111aa80a",
+    "representation": "B",
+    "scenario": "B_v2_validation_search",
+    "seed": 3908274,
+    "split_sha256": "1678a37f154baf5ff6895c81d286f3cac72fdaead7919e30f2af655be7bd33bf",
+    "stage": "conditional_if_configuration_wins_on_A"
+  },
+  {
+    "configuration_id": "vit_b_16_ed7ae4a374295b2c",
+    "configuration_sha256": "753dffdef91a6b6046872a098c78f67e04e0f5a53eaa239a0734f525f0b3aca8",
+    "effective_parameters": {
+      "model": {
+        "architecture": "torchvision.models.vit_b_16",
+        "data_loader_workers": 8,
+        "decay_policy": "all optimized parameters; decoupled weight decay",
+        "family": "vit_b_16",
+        "head": "heads.head: Linear(768,4)",
+        "head_initialization": "seeded default nn.Linear initialization after backbone load",
+        "head_lr_multiplier": 10.0,
+        "head_only_warmup_epochs": 0,
+        "name": "vit_b_16_ed7ae4a374295b2c",
+        "optimizer": "AdamW",
+        "optimizer_betas": [
+          0.9,
+          0.999
+        ],
+        "optimizer_epsilon": 1e-08,
+        "optimizer_state_policy": "one optimizer; no resets at unfreeze",
+        "pin_memory": true,
+        "pretrained_backbone_initialization": "identical cached official weights across seeds",
+        "pretrained_required": true,
+        "scheduler_and_early_stopping": "active from epoch 1; no resets at unfreeze",
+        "warmup_batchnorm_policy": "backbone eval while frozen; train after unfreezing",
+        "warmup_counts_toward_maximum_epochs": true
+      },
+      "runtime": {
+        "deterministic": true,
+        "device": "cuda",
+        "num_threads": 2
+      },
+      "training": {
+        "batch_size": 16,
+        "epochs": 100,
+        "learning_rate": 3e-05,
+        "max_grad_norm": 3.0,
+        "min_delta": 0.0,
+        "patience": 20,
+        "scheduler_factor": 0.1,
+        "scheduler_patience": 5,
+        "weight_decay": 0.05
+      }
+    },
+    "family": "vit_b_16",
+    "fit_id": "fit_31ef249e2972fa29d8e000d9",
+    "representation": "B",
+    "scenario": "B_v2_validation_search",
+    "seed": 3908275,
+    "split_sha256": "1678a37f154baf5ff6895c81d286f3cac72fdaead7919e30f2af655be7bd33bf",
+    "stage": "conditional_if_configuration_wins_on_A"
+  },
+  {
+    "configuration_id": "vit_b_16_ed7ae4a374295b2c",
+    "configuration_sha256": "753dffdef91a6b6046872a098c78f67e04e0f5a53eaa239a0734f525f0b3aca8",
+    "effective_parameters": {
+      "model": {
+        "architecture": "torchvision.models.vit_b_16",
+        "data_loader_workers": 8,
+        "decay_policy": "all optimized parameters; decoupled weight decay",
+        "family": "vit_b_16",
+        "head": "heads.head: Linear(768,4)",
+        "head_initialization": "seeded default nn.Linear initialization after backbone load",
+        "head_lr_multiplier": 10.0,
+        "head_only_warmup_epochs": 0,
+        "name": "vit_b_16_ed7ae4a374295b2c",
+        "optimizer": "AdamW",
+        "optimizer_betas": [
+          0.9,
+          0.999
+        ],
+        "optimizer_epsilon": 1e-08,
+        "optimizer_state_policy": "one optimizer; no resets at unfreeze",
+        "pin_memory": true,
+        "pretrained_backbone_initialization": "identical cached official weights across seeds",
+        "pretrained_required": true,
+        "scheduler_and_early_stopping": "active from epoch 1; no resets at unfreeze",
+        "warmup_batchnorm_policy": "backbone eval while frozen; train after unfreezing",
+        "warmup_counts_toward_maximum_epochs": true
+      },
+      "runtime": {
+        "deterministic": true,
+        "device": "cuda",
+        "num_threads": 2
+      },
+      "training": {
+        "batch_size": 16,
+        "epochs": 100,
+        "learning_rate": 3e-05,
+        "max_grad_norm": 3.0,
+        "min_delta": 0.0,
+        "patience": 20,
+        "scheduler_factor": 0.1,
+        "scheduler_patience": 5,
+        "weight_decay": 0.05
+      }
+    },
+    "family": "vit_b_16",
+    "fit_id": "fit_8aa8874f65dee402239b2391",
+    "representation": "B",
+    "scenario": "B_v2_validation_search",
+    "seed": 3908276,
+    "split_sha256": "1678a37f154baf5ff6895c81d286f3cac72fdaead7919e30f2af655be7bd33bf",
+    "stage": "conditional_if_configuration_wins_on_A"
+  },
+  {
+    "configuration_id": "vit_b_16_ed7ae4a374295b2c",
+    "configuration_sha256": "753dffdef91a6b6046872a098c78f67e04e0f5a53eaa239a0734f525f0b3aca8",
+    "effective_parameters": {
+      "model": {
+        "architecture": "torchvision.models.vit_b_16",
+        "data_loader_workers": 8,
+        "decay_policy": "all optimized parameters; decoupled weight decay",
+        "family": "vit_b_16",
+        "head": "heads.head: Linear(768,4)",
+        "head_initialization": "seeded default nn.Linear initialization after backbone load",
+        "head_lr_multiplier": 10.0,
+        "head_only_warmup_epochs": 0,
+        "name": "vit_b_16_ed7ae4a374295b2c",
+        "optimizer": "AdamW",
+        "optimizer_betas": [
+          0.9,
+          0.999
+        ],
+        "optimizer_epsilon": 1e-08,
+        "optimizer_state_policy": "one optimizer; no resets at unfreeze",
+        "pin_memory": true,
+        "pretrained_backbone_initialization": "identical cached official weights across seeds",
+        "pretrained_required": true,
+        "scheduler_and_early_stopping": "active from epoch 1; no resets at unfreeze",
+        "warmup_batchnorm_policy": "backbone eval while frozen; train after unfreezing",
+        "warmup_counts_toward_maximum_epochs": true
+      },
+      "runtime": {
+        "deterministic": true,
+        "device": "cuda",
+        "num_threads": 2
+      },
+      "training": {
+        "batch_size": 16,
+        "epochs": 100,
+        "learning_rate": 3e-05,
+        "max_grad_norm": 3.0,
+        "min_delta": 0.0,
+        "patience": 20,
+        "scheduler_factor": 0.1,
+        "scheduler_patience": 5,
+        "weight_decay": 0.05
+      }
+    },
+    "family": "vit_b_16",
+    "fit_id": "fit_1467a7b366862a0f838a16b1",
+    "representation": "A_outer",
+    "scenario": "B_v2_validation_search",
+    "seed": 3908274,
+    "split_sha256": "1678a37f154baf5ff6895c81d286f3cac72fdaead7919e30f2af655be7bd33bf",
+    "stage": "conditional_if_configuration_wins_on_A"
+  },
+  {
+    "configuration_id": "vit_b_16_ed7ae4a374295b2c",
+    "configuration_sha256": "753dffdef91a6b6046872a098c78f67e04e0f5a53eaa239a0734f525f0b3aca8",
+    "effective_parameters": {
+      "model": {
+        "architecture": "torchvision.models.vit_b_16",
+        "data_loader_workers": 8,
+        "decay_policy": "all optimized parameters; decoupled weight decay",
+        "family": "vit_b_16",
+        "head": "heads.head: Linear(768,4)",
+        "head_initialization": "seeded default nn.Linear initialization after backbone load",
+        "head_lr_multiplier": 10.0,
+        "head_only_warmup_epochs": 0,
+        "name": "vit_b_16_ed7ae4a374295b2c",
+        "optimizer": "AdamW",
+        "optimizer_betas": [
+          0.9,
+          0.999
+        ],
+        "optimizer_epsilon": 1e-08,
+        "optimizer_state_policy": "one optimizer; no resets at unfreeze",
+        "pin_memory": true,
+        "pretrained_backbone_initialization": "identical cached official weights across seeds",
+        "pretrained_required": true,
+        "scheduler_and_early_stopping": "active from epoch 1; no resets at unfreeze",
+        "warmup_batchnorm_policy": "backbone eval while frozen; train after unfreezing",
+        "warmup_counts_toward_maximum_epochs": true
+      },
+      "runtime": {
+        "deterministic": true,
+        "device": "cuda",
+        "num_threads": 2
+      },
+      "training": {
+        "batch_size": 16,
+        "epochs": 100,
+        "learning_rate": 3e-05,
+        "max_grad_norm": 3.0,
+        "min_delta": 0.0,
+        "patience": 20,
+        "scheduler_factor": 0.1,
+        "scheduler_patience": 5,
+        "weight_decay": 0.05
+      }
+    },
+    "family": "vit_b_16",
+    "fit_id": "fit_8c7586b841cea83eabdff326",
+    "representation": "A_outer",
+    "scenario": "B_v2_validation_search",
+    "seed": 3908275,
+    "split_sha256": "1678a37f154baf5ff6895c81d286f3cac72fdaead7919e30f2af655be7bd33bf",
+    "stage": "conditional_if_configuration_wins_on_A"
+  },
+  {
+    "configuration_id": "vit_b_16_ed7ae4a374295b2c",
+    "configuration_sha256": "753dffdef91a6b6046872a098c78f67e04e0f5a53eaa239a0734f525f0b3aca8",
+    "effective_parameters": {
+      "model": {
+        "architecture": "torchvision.models.vit_b_16",
+        "data_loader_workers": 8,
+        "decay_policy": "all optimized parameters; decoupled weight decay",
+        "family": "vit_b_16",
+        "head": "heads.head: Linear(768,4)",
+        "head_initialization": "seeded default nn.Linear initialization after backbone load",
+        "head_lr_multiplier": 10.0,
+        "head_only_warmup_epochs": 0,
+        "name": "vit_b_16_ed7ae4a374295b2c",
+        "optimizer": "AdamW",
+        "optimizer_betas": [
+          0.9,
+          0.999
+        ],
+        "optimizer_epsilon": 1e-08,
+        "optimizer_state_policy": "one optimizer; no resets at unfreeze",
+        "pin_memory": true,
+        "pretrained_backbone_initialization": "identical cached official weights across seeds",
+        "pretrained_required": true,
+        "scheduler_and_early_stopping": "active from epoch 1; no resets at unfreeze",
+        "warmup_batchnorm_policy": "backbone eval while frozen; train after unfreezing",
+        "warmup_counts_toward_maximum_epochs": true
+      },
+      "runtime": {
+        "deterministic": true,
+        "device": "cuda",
+        "num_threads": 2
+      },
+      "training": {
+        "batch_size": 16,
+        "epochs": 100,
+        "learning_rate": 3e-05,
+        "max_grad_norm": 3.0,
+        "min_delta": 0.0,
+        "patience": 20,
+        "scheduler_factor": 0.1,
+        "scheduler_patience": 5,
+        "weight_decay": 0.05
+      }
+    },
+    "family": "vit_b_16",
+    "fit_id": "fit_998a9d132c5b44349ee380e4",
+    "representation": "A_outer",
+    "scenario": "B_v2_validation_search",
+    "seed": 3908276,
+    "split_sha256": "1678a37f154baf5ff6895c81d286f3cac72fdaead7919e30f2af655be7bd33bf",
+    "stage": "conditional_if_configuration_wins_on_A"
+  },
+  {
+    "configuration_id": "vit_b_16_ed7ae4a374295b2c",
+    "configuration_sha256": "753dffdef91a6b6046872a098c78f67e04e0f5a53eaa239a0734f525f0b3aca8",
+    "effective_parameters": {
+      "model": {
+        "architecture": "torchvision.models.vit_b_16",
+        "data_loader_workers": 8,
+        "decay_policy": "all optimized parameters; decoupled weight decay",
+        "family": "vit_b_16",
+        "head": "heads.head: Linear(768,4)",
+        "head_initialization": "seeded default nn.Linear initialization after backbone load",
+        "head_lr_multiplier": 10.0,
+        "head_only_warmup_epochs": 0,
+        "name": "vit_b_16_ed7ae4a374295b2c",
+        "optimizer": "AdamW",
+        "optimizer_betas": [
+          0.9,
+          0.999
+        ],
+        "optimizer_epsilon": 1e-08,
+        "optimizer_state_policy": "one optimizer; no resets at unfreeze",
+        "pin_memory": true,
+        "pretrained_backbone_initialization": "identical cached official weights across seeds",
+        "pretrained_required": true,
+        "scheduler_and_early_stopping": "active from epoch 1; no resets at unfreeze",
+        "warmup_batchnorm_policy": "backbone eval while frozen; train after unfreezing",
+        "warmup_counts_toward_maximum_epochs": true
+      },
+      "runtime": {
+        "deterministic": true,
+        "device": "cuda",
+        "num_threads": 2
+      },
+      "training": {
+        "batch_size": 16,
+        "epochs": 100,
+        "learning_rate": 3e-05,
+        "max_grad_norm": 3.0,
+        "min_delta": 0.0,
+        "patience": 20,
+        "scheduler_factor": 0.1,
+        "scheduler_patience": 5,
+        "weight_decay": 0.05
+      }
+    },
+    "family": "vit_b_16",
+    "fit_id": "fit_022bee7a649e24d8eb265492",
+    "representation": "B_outer",
+    "scenario": "B_v2_validation_search",
+    "seed": 3908274,
+    "split_sha256": "1678a37f154baf5ff6895c81d286f3cac72fdaead7919e30f2af655be7bd33bf",
+    "stage": "conditional_if_configuration_wins_on_A"
+  },
+  {
+    "configuration_id": "vit_b_16_ed7ae4a374295b2c",
+    "configuration_sha256": "753dffdef91a6b6046872a098c78f67e04e0f5a53eaa239a0734f525f0b3aca8",
+    "effective_parameters": {
+      "model": {
+        "architecture": "torchvision.models.vit_b_16",
+        "data_loader_workers": 8,
+        "decay_policy": "all optimized parameters; decoupled weight decay",
+        "family": "vit_b_16",
+        "head": "heads.head: Linear(768,4)",
+        "head_initialization": "seeded default nn.Linear initialization after backbone load",
+        "head_lr_multiplier": 10.0,
+        "head_only_warmup_epochs": 0,
+        "name": "vit_b_16_ed7ae4a374295b2c",
+        "optimizer": "AdamW",
+        "optimizer_betas": [
+          0.9,
+          0.999
+        ],
+        "optimizer_epsilon": 1e-08,
+        "optimizer_state_policy": "one optimizer; no resets at unfreeze",
+        "pin_memory": true,
+        "pretrained_backbone_initialization": "identical cached official weights across seeds",
+        "pretrained_required": true,
+        "scheduler_and_early_stopping": "active from epoch 1; no resets at unfreeze",
+        "warmup_batchnorm_policy": "backbone eval while frozen; train after unfreezing",
+        "warmup_counts_toward_maximum_epochs": true
+      },
+      "runtime": {
+        "deterministic": true,
+        "device": "cuda",
+        "num_threads": 2
+      },
+      "training": {
+        "batch_size": 16,
+        "epochs": 100,
+        "learning_rate": 3e-05,
+        "max_grad_norm": 3.0,
+        "min_delta": 0.0,
+        "patience": 20,
+        "scheduler_factor": 0.1,
+        "scheduler_patience": 5,
+        "weight_decay": 0.05
+      }
+    },
+    "family": "vit_b_16",
+    "fit_id": "fit_684b017401f8317b2f1ff590",
+    "representation": "B_outer",
+    "scenario": "B_v2_validation_search",
+    "seed": 3908275,
+    "split_sha256": "1678a37f154baf5ff6895c81d286f3cac72fdaead7919e30f2af655be7bd33bf",
+    "stage": "conditional_if_configuration_wins_on_A"
+  },
+  {
+    "configuration_id": "vit_b_16_ed7ae4a374295b2c",
+    "configuration_sha256": "753dffdef91a6b6046872a098c78f67e04e0f5a53eaa239a0734f525f0b3aca8",
+    "effective_parameters": {
+      "model": {
+        "architecture": "torchvision.models.vit_b_16",
+        "data_loader_workers": 8,
+        "decay_policy": "all optimized parameters; decoupled weight decay",
+        "family": "vit_b_16",
+        "head": "heads.head: Linear(768,4)",
+        "head_initialization": "seeded default nn.Linear initialization after backbone load",
+        "head_lr_multiplier": 10.0,
+        "head_only_warmup_epochs": 0,
+        "name": "vit_b_16_ed7ae4a374295b2c",
+        "optimizer": "AdamW",
+        "optimizer_betas": [
+          0.9,
+          0.999
+        ],
+        "optimizer_epsilon": 1e-08,
+        "optimizer_state_policy": "one optimizer; no resets at unfreeze",
+        "pin_memory": true,
+        "pretrained_backbone_initialization": "identical cached official weights across seeds",
+        "pretrained_required": true,
+        "scheduler_and_early_stopping": "active from epoch 1; no resets at unfreeze",
+        "warmup_batchnorm_policy": "backbone eval while frozen; train after unfreezing",
+        "warmup_counts_toward_maximum_epochs": true
+      },
+      "runtime": {
+        "deterministic": true,
+        "device": "cuda",
+        "num_threads": 2
+      },
+      "training": {
+        "batch_size": 16,
+        "epochs": 100,
+        "learning_rate": 3e-05,
+        "max_grad_norm": 3.0,
+        "min_delta": 0.0,
+        "patience": 20,
+        "scheduler_factor": 0.1,
+        "scheduler_patience": 5,
+        "weight_decay": 0.05
+      }
+    },
+    "family": "vit_b_16",
+    "fit_id": "fit_fb6f77ae6b88b2e90f000e57",
+    "representation": "B_outer",
+    "scenario": "B_v2_validation_search",
+    "seed": 3908276,
+    "split_sha256": "1678a37f154baf5ff6895c81d286f3cac72fdaead7919e30f2af655be7bd33bf",
+    "stage": "conditional_if_configuration_wins_on_A"
+  }
+]

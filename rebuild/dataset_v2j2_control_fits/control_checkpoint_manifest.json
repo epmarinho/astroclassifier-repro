@@ -1,0 +1,3449 @@
+{
+  "canonical_sha256": "542fd4f42dc116c4806e3ef5ff96c0ca0abf2c25c4340bdaadda3bae87fba162",
+  "checkpoints": [
+    {
+      "checkpoint_path": "rebuild/dataset_v2j2_control_fits/fit_attempts/fit_4844737c50860a8f679ff011/attempt_01/best.pt",
+      "checkpoint_sha256": "a59557bb2ce3c18c02897458a6a41d42a2862ae224916b688d34d52d4bdb788a",
+      "checkpoint_size_bytes": 87733089,
+      "configuration_id": "spatial-pooling-ablation-v3_spatial_transformer_grid8_mean_grad",
+      "configuration_sha256": "31f5d6d5612c855bc52c277d90a593960c4ee7922538908b554633062d437884",
+      "effective_parameters": {
+        "model": {
+          "adapter_version": "spatial-pooling-ablation-v3",
+          "additional_pooling": "mean_grad",
+          "attention_heads": 8,
+          "channels": [
+            128,
+            256,
+            512,
+            1024
+          ],
+          "claims_spatial_attention": true,
+          "contrast_epsilon": 1e-06,
+          "contrast_weight": 1.0,
+          "data_loader_workers": 8,
+          "embedding": 128,
+          "environment_digest": "6ff1d24a3e284556dde5099f452b2ff7f1081084f8d2c87d0e84e256e9c02adb",
+          "gate_policy": "none",
+          "gradient_policy": "forward_xy_zero_missing_neighbor",
+          "grid_size": 8,
+          "input_size": 256,
+          "name": "spatial-pooling-ablation-v3_spatial_transformer_grid8_mean_grad",
+          "native_grid_size": 16,
+          "optimizer": "Adam",
+          "pin_memory": true,
+          "pooling_factor": 2,
+          "pooling_policy": "mean_grad",
+          "pooling_trainable_parameters": 0,
+          "position_policy": "fixed separable 2D sinusoidal x/y encoding; see models_v1.py",
+          "positional_encoding": "fixed_2d_sinusoidal_xy_v1",
+          "pretrained": false,
+          "purpose": "pooling/grid development ablation; no test evaluation",
+          "source_digests": {
+            "rebuild/ablation.py": "8287aaf628a6511cd56677a22dc6e5d11df8a8071e4cb8156d154c5e65fa831b",
+            "rebuild/common.py": "c5aa62eff0a7533ebb511ada406ab2121f79c1aff2c7827c09795e97bde62508",
+            "rebuild/config.py": "1c53947636f39c824cd1903bd232006eedcef01d7434f90b493cd32a69615f57",
+            "rebuild/data.py": "a548fc303d7a992a533e4b9eff14bae3e2fdacb276a33d3fcb5250124f4bb58c",
+            "rebuild/evaluation.py": "f9362a149000d12b264cd38a051b52ef1f7007208c90aa7176a5298a62da1e97",
+            "rebuild/full.py": "d535aca7cfc6ff14d994fabb50b9e250d0551ab02defbc8e15ca17c261e51c21",
+            "rebuild/phase3b/data_v1.py": "95482ee67d8b6acddb908a8bb677adc854d624c5c09e663433189ab5bc99986d",
+            "rebuild/phase3d/models_v1.py": "a282c954284ccd12a7c94a1bcb67940fff30825ba95c938673965b62bb29f692",
+            "rebuild/phase3d/models_v2.py": "6a17fcf5c0319c4c10c6484659f169ce27c6ba4c3d2d1dba5dbd9fea02bbeb6f",
+            "rebuild/phase3d/models_v3.py": "e304b8ada45aef6143ce8acec4e3d1c441a6350d478927d7f68d4706cdf4a82a",
+            "rebuild/phase3d/pilot.py": "27c6548ad77c338193c39df4faddf5c99bf64c623b244331b199a07fad2cb0c3",
+            "rebuild/pooling_ablation.py": "b6f70d275056649959a57cb75c7829778e38fb861c7fbb713d6bc2f1fcdc4205",
+            "rebuild/training.py": "b7638b6da1ae21c994c739ae396ef5ba937baf643a23ba3dd32b47a47f105687"
+          },
+          "token_count": 64,
+          "transformer_layers": 2,
+          "variant": "spatial_transformer"
+        },
+        "runtime": {
+          "deterministic": true,
+          "device": "cuda",
+          "num_threads": 2
+        },
+        "training": {
+          "batch_size": 16,
+          "epochs": 100,
+          "learning_rate": 9e-05,
+          "max_grad_norm": 3.0,
+          "min_delta": 0.0,
+          "patience": 20,
+          "scheduler_factor": 0.1,
+          "scheduler_patience": 5,
+          "weight_decay": 5e-07
+        }
+      },
+      "environment_sha256": "172c0fb72605a5fb2284e7bccfae82d2930799c55495dd53e2af0b19d3fdf705",
+      "family": "custom_cnn_transformer",
+      "fit_id": "fit_4844737c50860a8f679ff011",
+      "history_sha256": "acfbf169ff20aeba66b3b8b0ae752c81be542ebbd5230f7af3dc658d1261562d",
+      "input_sha256": "88dade9e0a7b170cd779c1e0b802f9995ddbed0839db4ce530bb48db11ba571a",
+      "last_checkpoint_sha256": "ced1aa0ef2a9f8e4e9a3ec59e8884dccb25ee4266b4c4fee84988165803e7969",
+      "manifest_index": 0,
+      "representation": "B",
+      "seed": 3908274,
+      "validation_metrics": {
+        "accuracy": 0.6933333333333334,
+        "balanced_accuracy": 0.6911764705882353,
+        "confusion_matrix_true_rows_predicted_columns": [
+          [
+            20,
+            0,
+            0,
+            0
+          ],
+          [
+            4,
+            9,
+            1,
+            5
+          ],
+          [
+            2,
+            2,
+            13,
+            0
+          ],
+          [
+            1,
+            2,
+            6,
+            10
+          ]
+        ],
+        "macro_f1": 0.6761254566518959,
+        "per_class": {
+          "f1": [
+            0.851063829787234,
+            0.5625,
+            0.7027027027027027,
+            0.5882352941176471
+          ],
+          "precision": [
+            0.7407407407407407,
+            0.6923076923076923,
+            0.65,
+            0.6666666666666666
+          ],
+          "recall": [
+            1.0,
+            0.47368421052631576,
+            0.7647058823529411,
+            0.5263157894736842
+          ],
+          "support": [
+            20,
+            19,
+            17,
+            19
+          ]
+        },
+        "probability_rows": 75,
+        "weighted_validation_loss": 0.8421468074123065
+      },
+      "validation_prediction_sha256": "2b1fcb7550c2e27f6cedfa30dbee88b0d62dd5251a4ef4af383f53a482512d06"
+    },
+    {
+      "checkpoint_path": "rebuild/dataset_v2j2_control_fits/fit_attempts/fit_ed0fec912c6200ba1003a798/attempt_01/best.pt",
+      "checkpoint_sha256": "07068bf5ee1ef3ec605dcf1e7a48531f9c9ba2f772d5c03fbaa45efac3e3f742",
+      "checkpoint_size_bytes": 87733537,
+      "configuration_id": "spatial-pooling-ablation-v3_spatial_transformer_grid8_mean_grad",
+      "configuration_sha256": "31f5d6d5612c855bc52c277d90a593960c4ee7922538908b554633062d437884",
+      "effective_parameters": {
+        "model": {
+          "adapter_version": "spatial-pooling-ablation-v3",
+          "additional_pooling": "mean_grad",
+          "attention_heads": 8,
+          "channels": [
+            128,
+            256,
+            512,
+            1024
+          ],
+          "claims_spatial_attention": true,
+          "contrast_epsilon": 1e-06,
+          "contrast_weight": 1.0,
+          "data_loader_workers": 8,
+          "embedding": 128,
+          "environment_digest": "6ff1d24a3e284556dde5099f452b2ff7f1081084f8d2c87d0e84e256e9c02adb",
+          "gate_policy": "none",
+          "gradient_policy": "forward_xy_zero_missing_neighbor",
+          "grid_size": 8,
+          "input_size": 256,
+          "name": "spatial-pooling-ablation-v3_spatial_transformer_grid8_mean_grad",
+          "native_grid_size": 16,
+          "optimizer": "Adam",
+          "pin_memory": true,
+          "pooling_factor": 2,
+          "pooling_policy": "mean_grad",
+          "pooling_trainable_parameters": 0,
+          "position_policy": "fixed separable 2D sinusoidal x/y encoding; see models_v1.py",
+          "positional_encoding": "fixed_2d_sinusoidal_xy_v1",
+          "pretrained": false,
+          "purpose": "pooling/grid development ablation; no test evaluation",
+          "source_digests": {
+            "rebuild/ablation.py": "8287aaf628a6511cd56677a22dc6e5d11df8a8071e4cb8156d154c5e65fa831b",
+            "rebuild/common.py": "c5aa62eff0a7533ebb511ada406ab2121f79c1aff2c7827c09795e97bde62508",
+            "rebuild/config.py": "1c53947636f39c824cd1903bd232006eedcef01d7434f90b493cd32a69615f57",
+            "rebuild/data.py": "a548fc303d7a992a533e4b9eff14bae3e2fdacb276a33d3fcb5250124f4bb58c",
+            "rebuild/evaluation.py": "f9362a149000d12b264cd38a051b52ef1f7007208c90aa7176a5298a62da1e97",
+            "rebuild/full.py": "d535aca7cfc6ff14d994fabb50b9e250d0551ab02defbc8e15ca17c261e51c21",
+            "rebuild/phase3b/data_v1.py": "95482ee67d8b6acddb908a8bb677adc854d624c5c09e663433189ab5bc99986d",
+            "rebuild/phase3d/models_v1.py": "a282c954284ccd12a7c94a1bcb67940fff30825ba95c938673965b62bb29f692",
+            "rebuild/phase3d/models_v2.py": "6a17fcf5c0319c4c10c6484659f169ce27c6ba4c3d2d1dba5dbd9fea02bbeb6f",
+            "rebuild/phase3d/models_v3.py": "e304b8ada45aef6143ce8acec4e3d1c441a6350d478927d7f68d4706cdf4a82a",
+            "rebuild/phase3d/pilot.py": "27c6548ad77c338193c39df4faddf5c99bf64c623b244331b199a07fad2cb0c3",
+            "rebuild/pooling_ablation.py": "b6f70d275056649959a57cb75c7829778e38fb861c7fbb713d6bc2f1fcdc4205",
+            "rebuild/training.py": "b7638b6da1ae21c994c739ae396ef5ba937baf643a23ba3dd32b47a47f105687"
+          },
+          "token_count": 64,
+          "transformer_layers": 2,
+          "variant": "spatial_transformer"
+        },
+        "runtime": {
+          "deterministic": true,
+          "device": "cuda",
+          "num_threads": 2
+        },
+        "training": {
+          "batch_size": 16,
+          "epochs": 100,
+          "learning_rate": 9e-05,
+          "max_grad_norm": 3.0,
+          "min_delta": 0.0,
+          "patience": 20,
+          "scheduler_factor": 0.1,
+          "scheduler_patience": 5,
+          "weight_decay": 5e-07
+        }
+      },
+      "environment_sha256": "172c0fb72605a5fb2284e7bccfae82d2930799c55495dd53e2af0b19d3fdf705",
+      "family": "custom_cnn_transformer",
+      "fit_id": "fit_ed0fec912c6200ba1003a798",
+      "history_sha256": "9a3cf0274a63fefa332ea1aa053eef13171ba1ca73c6bd88cdca2e6f8ae9aad7",
+      "input_sha256": "88dade9e0a7b170cd779c1e0b802f9995ddbed0839db4ce530bb48db11ba571a",
+      "last_checkpoint_sha256": "9af83f2847ae0b588cd7d1f6cb5590595367ddd0a233ab1d2eaaf3f6f0f0d0b7",
+      "manifest_index": 1,
+      "representation": "B",
+      "seed": 3908275,
+      "validation_metrics": {
+        "accuracy": 0.6666666666666666,
+        "balanced_accuracy": 0.6661764705882353,
+        "confusion_matrix_true_rows_predicted_columns": [
+          [
+            18,
+            0,
+            0,
+            2
+          ],
+          [
+            3,
+            11,
+            1,
+            4
+          ],
+          [
+            0,
+            3,
+            13,
+            1
+          ],
+          [
+            1,
+            4,
+            6,
+            8
+          ]
+        ],
+        "macro_f1": 0.6562570974335681,
+        "per_class": {
+          "f1": [
+            0.8571428571428571,
+            0.5945945945945946,
+            0.7027027027027027,
+            0.47058823529411764
+          ],
+          "precision": [
+            0.8181818181818182,
+            0.6111111111111112,
+            0.65,
+            0.5333333333333333
+          ],
+          "recall": [
+            0.9,
+            0.5789473684210527,
+            0.7647058823529411,
+            0.42105263157894735
+          ],
+          "support": [
+            20,
+            19,
+            17,
+            19
+          ]
+        },
+        "probability_rows": 75,
+        "weighted_validation_loss": 0.8912805290023486
+      },
+      "validation_prediction_sha256": "fdead6c2e144eeb2716cdca750eec39a9a443c1353c038d03e87591c8648c730"
+    },
+    {
+      "checkpoint_path": "rebuild/dataset_v2j2_control_fits/fit_attempts/fit_f03b9e7edd9ba353d5ede052/attempt_01/best.pt",
+      "checkpoint_sha256": "04c61b3346e28abd5e48ccd53c6fddb543c04c0c018b54908e4fb51874053bbb",
+      "checkpoint_size_bytes": 87732641,
+      "configuration_id": "spatial-pooling-ablation-v3_spatial_transformer_grid8_mean_grad",
+      "configuration_sha256": "31f5d6d5612c855bc52c277d90a593960c4ee7922538908b554633062d437884",
+      "effective_parameters": {
+        "model": {
+          "adapter_version": "spatial-pooling-ablation-v3",
+          "additional_pooling": "mean_grad",
+          "attention_heads": 8,
+          "channels": [
+            128,
+            256,
+            512,
+            1024
+          ],
+          "claims_spatial_attention": true,
+          "contrast_epsilon": 1e-06,
+          "contrast_weight": 1.0,
+          "data_loader_workers": 8,
+          "embedding": 128,
+          "environment_digest": "6ff1d24a3e284556dde5099f452b2ff7f1081084f8d2c87d0e84e256e9c02adb",
+          "gate_policy": "none",
+          "gradient_policy": "forward_xy_zero_missing_neighbor",
+          "grid_size": 8,
+          "input_size": 256,
+          "name": "spatial-pooling-ablation-v3_spatial_transformer_grid8_mean_grad",
+          "native_grid_size": 16,
+          "optimizer": "Adam",
+          "pin_memory": true,
+          "pooling_factor": 2,
+          "pooling_policy": "mean_grad",
+          "pooling_trainable_parameters": 0,
+          "position_policy": "fixed separable 2D sinusoidal x/y encoding; see models_v1.py",
+          "positional_encoding": "fixed_2d_sinusoidal_xy_v1",
+          "pretrained": false,
+          "purpose": "pooling/grid development ablation; no test evaluation",
+          "source_digests": {
+            "rebuild/ablation.py": "8287aaf628a6511cd56677a22dc6e5d11df8a8071e4cb8156d154c5e65fa831b",
+            "rebuild/common.py": "c5aa62eff0a7533ebb511ada406ab2121f79c1aff2c7827c09795e97bde62508",
+            "rebuild/config.py": "1c53947636f39c824cd1903bd232006eedcef01d7434f90b493cd32a69615f57",
+            "rebuild/data.py": "a548fc303d7a992a533e4b9eff14bae3e2fdacb276a33d3fcb5250124f4bb58c",
+            "rebuild/evaluation.py": "f9362a149000d12b264cd38a051b52ef1f7007208c90aa7176a5298a62da1e97",
+            "rebuild/full.py": "d535aca7cfc6ff14d994fabb50b9e250d0551ab02defbc8e15ca17c261e51c21",
+            "rebuild/phase3b/data_v1.py": "95482ee67d8b6acddb908a8bb677adc854d624c5c09e663433189ab5bc99986d",
+            "rebuild/phase3d/models_v1.py": "a282c954284ccd12a7c94a1bcb67940fff30825ba95c938673965b62bb29f692",
+            "rebuild/phase3d/models_v2.py": "6a17fcf5c0319c4c10c6484659f169ce27c6ba4c3d2d1dba5dbd9fea02bbeb6f",
+            "rebuild/phase3d/models_v3.py": "e304b8ada45aef6143ce8acec4e3d1c441a6350d478927d7f68d4706cdf4a82a",
+            "rebuild/phase3d/pilot.py": "27c6548ad77c338193c39df4faddf5c99bf64c623b244331b199a07fad2cb0c3",
+            "rebuild/pooling_ablation.py": "b6f70d275056649959a57cb75c7829778e38fb861c7fbb713d6bc2f1fcdc4205",
+            "rebuild/training.py": "b7638b6da1ae21c994c739ae396ef5ba937baf643a23ba3dd32b47a47f105687"
+          },
+          "token_count": 64,
+          "transformer_layers": 2,
+          "variant": "spatial_transformer"
+        },
+        "runtime": {
+          "deterministic": true,
+          "device": "cuda",
+          "num_threads": 2
+        },
+        "training": {
+          "batch_size": 16,
+          "epochs": 100,
+          "learning_rate": 9e-05,
+          "max_grad_norm": 3.0,
+          "min_delta": 0.0,
+          "patience": 20,
+          "scheduler_factor": 0.1,
+          "scheduler_patience": 5,
+          "weight_decay": 5e-07
+        }
+      },
+      "environment_sha256": "172c0fb72605a5fb2284e7bccfae82d2930799c55495dd53e2af0b19d3fdf705",
+      "family": "custom_cnn_transformer",
+      "fit_id": "fit_f03b9e7edd9ba353d5ede052",
+      "history_sha256": "0b1e8b55fce86473e1d2fbed0504203729cd249c526126c4f54bba2c137239d4",
+      "input_sha256": "88dade9e0a7b170cd779c1e0b802f9995ddbed0839db4ce530bb48db11ba571a",
+      "last_checkpoint_sha256": "e7e4ae1baa0f9258d63d27bc52aff6a375145410b534c2e347fc5a650b0c4bf3",
+      "manifest_index": 2,
+      "representation": "B",
+      "seed": 3908276,
+      "validation_metrics": {
+        "accuracy": 0.7066666666666667,
+        "balanced_accuracy": 0.7065402476780186,
+        "confusion_matrix_true_rows_predicted_columns": [
+          [
+            19,
+            0,
+            1,
+            0
+          ],
+          [
+            3,
+            9,
+            1,
+            6
+          ],
+          [
+            0,
+            2,
+            14,
+            1
+          ],
+          [
+            0,
+            3,
+            5,
+            11
+          ]
+        ],
+        "macro_f1": 0.6954132875185507,
+        "per_class": {
+          "f1": [
+            0.9047619047619048,
+            0.5454545454545454,
+            0.7368421052631579,
+            0.5945945945945946
+          ],
+          "precision": [
+            0.8636363636363636,
+            0.6428571428571429,
+            0.6666666666666666,
+            0.6111111111111112
+          ],
+          "recall": [
+            0.95,
+            0.47368421052631576,
+            0.8235294117647058,
+            0.5789473684210527
+          ],
+          "support": [
+            20,
+            19,
+            17,
+            19
+          ]
+        },
+        "probability_rows": 75,
+        "weighted_validation_loss": 0.8563062662382921
+      },
+      "validation_prediction_sha256": "3609089c16a544618d5f626e3a834d2285054af5476ddcff847b312741e69b79"
+    },
+    {
+      "checkpoint_path": "rebuild/dataset_v2j2_control_fits/fit_attempts/fit_ce66c4ffa386414dde302cac/attempt_01/best.pt",
+      "checkpoint_sha256": "e9a389f8b039e6caa148452ec8a28587e3e52daecc3553a5fc62d825ab1f2a8d",
+      "checkpoint_size_bytes": 87729441,
+      "configuration_id": "spatial-pooling-ablation-v3_spatial_transformer_grid8_mean_grad",
+      "configuration_sha256": "31f5d6d5612c855bc52c277d90a593960c4ee7922538908b554633062d437884",
+      "effective_parameters": {
+        "model": {
+          "adapter_version": "spatial-pooling-ablation-v3",
+          "additional_pooling": "mean_grad",
+          "attention_heads": 8,
+          "channels": [
+            128,
+            256,
+            512,
+            1024
+          ],
+          "claims_spatial_attention": true,
+          "contrast_epsilon": 1e-06,
+          "contrast_weight": 1.0,
+          "data_loader_workers": 8,
+          "embedding": 128,
+          "environment_digest": "6ff1d24a3e284556dde5099f452b2ff7f1081084f8d2c87d0e84e256e9c02adb",
+          "gate_policy": "none",
+          "gradient_policy": "forward_xy_zero_missing_neighbor",
+          "grid_size": 8,
+          "input_size": 256,
+          "name": "spatial-pooling-ablation-v3_spatial_transformer_grid8_mean_grad",
+          "native_grid_size": 16,
+          "optimizer": "Adam",
+          "pin_memory": true,
+          "pooling_factor": 2,
+          "pooling_policy": "mean_grad",
+          "pooling_trainable_parameters": 0,
+          "position_policy": "fixed separable 2D sinusoidal x/y encoding; see models_v1.py",
+          "positional_encoding": "fixed_2d_sinusoidal_xy_v1",
+          "pretrained": false,
+          "purpose": "pooling/grid development ablation; no test evaluation",
+          "source_digests": {
+            "rebuild/ablation.py": "8287aaf628a6511cd56677a22dc6e5d11df8a8071e4cb8156d154c5e65fa831b",
+            "rebuild/common.py": "c5aa62eff0a7533ebb511ada406ab2121f79c1aff2c7827c09795e97bde62508",
+            "rebuild/config.py": "1c53947636f39c824cd1903bd232006eedcef01d7434f90b493cd32a69615f57",
+            "rebuild/data.py": "a548fc303d7a992a533e4b9eff14bae3e2fdacb276a33d3fcb5250124f4bb58c",
+            "rebuild/evaluation.py": "f9362a149000d12b264cd38a051b52ef1f7007208c90aa7176a5298a62da1e97",
+            "rebuild/full.py": "d535aca7cfc6ff14d994fabb50b9e250d0551ab02defbc8e15ca17c261e51c21",
+            "rebuild/phase3b/data_v1.py": "95482ee67d8b6acddb908a8bb677adc854d624c5c09e663433189ab5bc99986d",
+            "rebuild/phase3d/models_v1.py": "a282c954284ccd12a7c94a1bcb67940fff30825ba95c938673965b62bb29f692",
+            "rebuild/phase3d/models_v2.py": "6a17fcf5c0319c4c10c6484659f169ce27c6ba4c3d2d1dba5dbd9fea02bbeb6f",
+            "rebuild/phase3d/models_v3.py": "e304b8ada45aef6143ce8acec4e3d1c441a6350d478927d7f68d4706cdf4a82a",
+            "rebuild/phase3d/pilot.py": "27c6548ad77c338193c39df4faddf5c99bf64c623b244331b199a07fad2cb0c3",
+            "rebuild/pooling_ablation.py": "b6f70d275056649959a57cb75c7829778e38fb861c7fbb713d6bc2f1fcdc4205",
+            "rebuild/training.py": "b7638b6da1ae21c994c739ae396ef5ba937baf643a23ba3dd32b47a47f105687"
+          },
+          "token_count": 64,
+          "transformer_layers": 2,
+          "variant": "spatial_transformer"
+        },
+        "runtime": {
+          "deterministic": true,
+          "device": "cuda",
+          "num_threads": 2
+        },
+        "training": {
+          "batch_size": 16,
+          "epochs": 100,
+          "learning_rate": 9e-05,
+          "max_grad_norm": 3.0,
+          "min_delta": 0.0,
+          "patience": 20,
+          "scheduler_factor": 0.1,
+          "scheduler_patience": 5,
+          "weight_decay": 5e-07
+        }
+      },
+      "environment_sha256": "172c0fb72605a5fb2284e7bccfae82d2930799c55495dd53e2af0b19d3fdf705",
+      "family": "custom_cnn_transformer",
+      "fit_id": "fit_ce66c4ffa386414dde302cac",
+      "history_sha256": "22130f9362e3a9d50755771618bf9e24a25bdb1bd56bfb7d3e9cca6715b19fc4",
+      "input_sha256": "8c7989cbb0e8eecb42a632dc344026ea2881e693d4d9cd825f9d2b9f515860ae",
+      "last_checkpoint_sha256": "91b9d57ad0027abeb709fdb925bb8b7f8e236a944e1e0221a8bd5c28e30ebb50",
+      "manifest_index": 3,
+      "representation": "A_outer",
+      "seed": 3908274,
+      "validation_metrics": {
+        "accuracy": 0.72,
+        "balanced_accuracy": 0.7020123839009288,
+        "confusion_matrix_true_rows_predicted_columns": [
+          [
+            20,
+            0,
+            0,
+            0
+          ],
+          [
+            4,
+            13,
+            1,
+            1
+          ],
+          [
+            5,
+            0,
+            3,
+            9
+          ],
+          [
+            0,
+            1,
+            0,
+            18
+          ]
+        ],
+        "macro_f1": 0.6639692627534572,
+        "per_class": {
+          "f1": [
+            0.8163265306122449,
+            0.7878787878787878,
+            0.2857142857142857,
+            0.7659574468085106
+          ],
+          "precision": [
+            0.6896551724137931,
+            0.9285714285714286,
+            0.75,
+            0.6428571428571429
+          ],
+          "recall": [
+            1.0,
+            0.6842105263157895,
+            0.17647058823529413,
+            0.9473684210526315
+          ],
+          "support": [
+            20,
+            19,
+            17,
+            19
+          ]
+        },
+        "probability_rows": 75,
+        "weighted_validation_loss": 0.7815741513172786
+      },
+      "validation_prediction_sha256": "8b55c966ee8ecd484662efec3943e5fb9736a874cc86be759a77869348ff7293"
+    },
+    {
+      "checkpoint_path": "rebuild/dataset_v2j2_control_fits/fit_attempts/fit_adfbbe9dcdd75b2ea1be3cab/attempt_01/best.pt",
+      "checkpoint_sha256": "b908793c8a567e5dbeefebdcdfd96a39a24f021b8164580e385183342b46613f",
+      "checkpoint_size_bytes": 87733601,
+      "configuration_id": "spatial-pooling-ablation-v3_spatial_transformer_grid8_mean_grad",
+      "configuration_sha256": "31f5d6d5612c855bc52c277d90a593960c4ee7922538908b554633062d437884",
+      "effective_parameters": {
+        "model": {
+          "adapter_version": "spatial-pooling-ablation-v3",
+          "additional_pooling": "mean_grad",
+          "attention_heads": 8,
+          "channels": [
+            128,
+            256,
+            512,
+            1024
+          ],
+          "claims_spatial_attention": true,
+          "contrast_epsilon": 1e-06,
+          "contrast_weight": 1.0,
+          "data_loader_workers": 8,
+          "embedding": 128,
+          "environment_digest": "6ff1d24a3e284556dde5099f452b2ff7f1081084f8d2c87d0e84e256e9c02adb",
+          "gate_policy": "none",
+          "gradient_policy": "forward_xy_zero_missing_neighbor",
+          "grid_size": 8,
+          "input_size": 256,
+          "name": "spatial-pooling-ablation-v3_spatial_transformer_grid8_mean_grad",
+          "native_grid_size": 16,
+          "optimizer": "Adam",
+          "pin_memory": true,
+          "pooling_factor": 2,
+          "pooling_policy": "mean_grad",
+          "pooling_trainable_parameters": 0,
+          "position_policy": "fixed separable 2D sinusoidal x/y encoding; see models_v1.py",
+          "positional_encoding": "fixed_2d_sinusoidal_xy_v1",
+          "pretrained": false,
+          "purpose": "pooling/grid development ablation; no test evaluation",
+          "source_digests": {
+            "rebuild/ablation.py": "8287aaf628a6511cd56677a22dc6e5d11df8a8071e4cb8156d154c5e65fa831b",
+            "rebuild/common.py": "c5aa62eff0a7533ebb511ada406ab2121f79c1aff2c7827c09795e97bde62508",
+            "rebuild/config.py": "1c53947636f39c824cd1903bd232006eedcef01d7434f90b493cd32a69615f57",
+            "rebuild/data.py": "a548fc303d7a992a533e4b9eff14bae3e2fdacb276a33d3fcb5250124f4bb58c",
+            "rebuild/evaluation.py": "f9362a149000d12b264cd38a051b52ef1f7007208c90aa7176a5298a62da1e97",
+            "rebuild/full.py": "d535aca7cfc6ff14d994fabb50b9e250d0551ab02defbc8e15ca17c261e51c21",
+            "rebuild/phase3b/data_v1.py": "95482ee67d8b6acddb908a8bb677adc854d624c5c09e663433189ab5bc99986d",
+            "rebuild/phase3d/models_v1.py": "a282c954284ccd12a7c94a1bcb67940fff30825ba95c938673965b62bb29f692",
+            "rebuild/phase3d/models_v2.py": "6a17fcf5c0319c4c10c6484659f169ce27c6ba4c3d2d1dba5dbd9fea02bbeb6f",
+            "rebuild/phase3d/models_v3.py": "e304b8ada45aef6143ce8acec4e3d1c441a6350d478927d7f68d4706cdf4a82a",
+            "rebuild/phase3d/pilot.py": "27c6548ad77c338193c39df4faddf5c99bf64c623b244331b199a07fad2cb0c3",
+            "rebuild/pooling_ablation.py": "b6f70d275056649959a57cb75c7829778e38fb861c7fbb713d6bc2f1fcdc4205",
+            "rebuild/training.py": "b7638b6da1ae21c994c739ae396ef5ba937baf643a23ba3dd32b47a47f105687"
+          },
+          "token_count": 64,
+          "transformer_layers": 2,
+          "variant": "spatial_transformer"
+        },
+        "runtime": {
+          "deterministic": true,
+          "device": "cuda",
+          "num_threads": 2
+        },
+        "training": {
+          "batch_size": 16,
+          "epochs": 100,
+          "learning_rate": 9e-05,
+          "max_grad_norm": 3.0,
+          "min_delta": 0.0,
+          "patience": 20,
+          "scheduler_factor": 0.1,
+          "scheduler_patience": 5,
+          "weight_decay": 5e-07
+        }
+      },
+      "environment_sha256": "172c0fb72605a5fb2284e7bccfae82d2930799c55495dd53e2af0b19d3fdf705",
+      "family": "custom_cnn_transformer",
+      "fit_id": "fit_adfbbe9dcdd75b2ea1be3cab",
+      "history_sha256": "a8988efa067b170e0597d1e22b15d6786bff206ac01e940c1499de201fa74a66",
+      "input_sha256": "8c7989cbb0e8eecb42a632dc344026ea2881e693d4d9cd825f9d2b9f515860ae",
+      "last_checkpoint_sha256": "f11eb980ddc55c9f11a2c72463b7cd5768e085b58b7ce004c06390a815c95003",
+      "manifest_index": 4,
+      "representation": "A_outer",
+      "seed": 3908275,
+      "validation_metrics": {
+        "accuracy": 0.76,
+        "balanced_accuracy": 0.7489938080495356,
+        "confusion_matrix_true_rows_predicted_columns": [
+          [
+            18,
+            1,
+            1,
+            0
+          ],
+          [
+            3,
+            15,
+            0,
+            1
+          ],
+          [
+            3,
+            1,
+            7,
+            6
+          ],
+          [
+            0,
+            1,
+            1,
+            17
+          ]
+        ],
+        "macro_f1": 0.7395379604681931,
+        "per_class": {
+          "f1": [
+            0.8181818181818182,
+            0.8108108108108109,
+            0.5384615384615384,
+            0.7906976744186046
+          ],
+          "precision": [
+            0.75,
+            0.8333333333333334,
+            0.7777777777777778,
+            0.7083333333333334
+          ],
+          "recall": [
+            0.9,
+            0.7894736842105263,
+            0.4117647058823529,
+            0.8947368421052632
+          ],
+          "support": [
+            20,
+            19,
+            17,
+            19
+          ]
+        },
+        "probability_rows": 75,
+        "weighted_validation_loss": 0.7100334108869235
+      },
+      "validation_prediction_sha256": "6970b17a75365fb6e4c59b9144efd0b24b2690c4934fe31591919face22ccc4d"
+    },
+    {
+      "checkpoint_path": "rebuild/dataset_v2j2_control_fits/fit_attempts/fit_f7d160ad41b6d1cc896feaae/attempt_01/best.pt",
+      "checkpoint_sha256": "8b27ac2ae2f9ca0c4308ef3f032773490c010692ec8ccd2b023ba6ced238f2bd",
+      "checkpoint_size_bytes": 87730849,
+      "configuration_id": "spatial-pooling-ablation-v3_spatial_transformer_grid8_mean_grad",
+      "configuration_sha256": "31f5d6d5612c855bc52c277d90a593960c4ee7922538908b554633062d437884",
+      "effective_parameters": {
+        "model": {
+          "adapter_version": "spatial-pooling-ablation-v3",
+          "additional_pooling": "mean_grad",
+          "attention_heads": 8,
+          "channels": [
+            128,
+            256,
+            512,
+            1024
+          ],
+          "claims_spatial_attention": true,
+          "contrast_epsilon": 1e-06,
+          "contrast_weight": 1.0,
+          "data_loader_workers": 8,
+          "embedding": 128,
+          "environment_digest": "6ff1d24a3e284556dde5099f452b2ff7f1081084f8d2c87d0e84e256e9c02adb",
+          "gate_policy": "none",
+          "gradient_policy": "forward_xy_zero_missing_neighbor",
+          "grid_size": 8,
+          "input_size": 256,
+          "name": "spatial-pooling-ablation-v3_spatial_transformer_grid8_mean_grad",
+          "native_grid_size": 16,
+          "optimizer": "Adam",
+          "pin_memory": true,
+          "pooling_factor": 2,
+          "pooling_policy": "mean_grad",
+          "pooling_trainable_parameters": 0,
+          "position_policy": "fixed separable 2D sinusoidal x/y encoding; see models_v1.py",
+          "positional_encoding": "fixed_2d_sinusoidal_xy_v1",
+          "pretrained": false,
+          "purpose": "pooling/grid development ablation; no test evaluation",
+          "source_digests": {
+            "rebuild/ablation.py": "8287aaf628a6511cd56677a22dc6e5d11df8a8071e4cb8156d154c5e65fa831b",
+            "rebuild/common.py": "c5aa62eff0a7533ebb511ada406ab2121f79c1aff2c7827c09795e97bde62508",
+            "rebuild/config.py": "1c53947636f39c824cd1903bd232006eedcef01d7434f90b493cd32a69615f57",
+            "rebuild/data.py": "a548fc303d7a992a533e4b9eff14bae3e2fdacb276a33d3fcb5250124f4bb58c",
+            "rebuild/evaluation.py": "f9362a149000d12b264cd38a051b52ef1f7007208c90aa7176a5298a62da1e97",
+            "rebuild/full.py": "d535aca7cfc6ff14d994fabb50b9e250d0551ab02defbc8e15ca17c261e51c21",
+            "rebuild/phase3b/data_v1.py": "95482ee67d8b6acddb908a8bb677adc854d624c5c09e663433189ab5bc99986d",
+            "rebuild/phase3d/models_v1.py": "a282c954284ccd12a7c94a1bcb67940fff30825ba95c938673965b62bb29f692",
+            "rebuild/phase3d/models_v2.py": "6a17fcf5c0319c4c10c6484659f169ce27c6ba4c3d2d1dba5dbd9fea02bbeb6f",
+            "rebuild/phase3d/models_v3.py": "e304b8ada45aef6143ce8acec4e3d1c441a6350d478927d7f68d4706cdf4a82a",
+            "rebuild/phase3d/pilot.py": "27c6548ad77c338193c39df4faddf5c99bf64c623b244331b199a07fad2cb0c3",
+            "rebuild/pooling_ablation.py": "b6f70d275056649959a57cb75c7829778e38fb861c7fbb713d6bc2f1fcdc4205",
+            "rebuild/training.py": "b7638b6da1ae21c994c739ae396ef5ba937baf643a23ba3dd32b47a47f105687"
+          },
+          "token_count": 64,
+          "transformer_layers": 2,
+          "variant": "spatial_transformer"
+        },
+        "runtime": {
+          "deterministic": true,
+          "device": "cuda",
+          "num_threads": 2
+        },
+        "training": {
+          "batch_size": 16,
+          "epochs": 100,
+          "learning_rate": 9e-05,
+          "max_grad_norm": 3.0,
+          "min_delta": 0.0,
+          "patience": 20,
+          "scheduler_factor": 0.1,
+          "scheduler_patience": 5,
+          "weight_decay": 5e-07
+        }
+      },
+      "environment_sha256": "172c0fb72605a5fb2284e7bccfae82d2930799c55495dd53e2af0b19d3fdf705",
+      "family": "custom_cnn_transformer",
+      "fit_id": "fit_f7d160ad41b6d1cc896feaae",
+      "history_sha256": "88c496797b68baab8ec2109a23e7aa507b43934dd5d2cb94605eb1784b8f8dea",
+      "input_sha256": "8c7989cbb0e8eecb42a632dc344026ea2881e693d4d9cd825f9d2b9f515860ae",
+      "last_checkpoint_sha256": "0050396d027e99bce3cdd9cd38bea7a6ed78732c634f71d6ade69715b375a6c4",
+      "manifest_index": 5,
+      "representation": "A_outer",
+      "seed": 3908276,
+      "validation_metrics": {
+        "accuracy": 0.7466666666666667,
+        "balanced_accuracy": 0.7329721362229102,
+        "confusion_matrix_true_rows_predicted_columns": [
+          [
+            20,
+            0,
+            0,
+            0
+          ],
+          [
+            4,
+            13,
+            1,
+            1
+          ],
+          [
+            5,
+            0,
+            6,
+            6
+          ],
+          [
+            0,
+            1,
+            1,
+            17
+          ]
+        ],
+        "macro_f1": 0.7187257482274093,
+        "per_class": {
+          "f1": [
+            0.8163265306122449,
+            0.7878787878787878,
+            0.48,
+            0.7906976744186046
+          ],
+          "precision": [
+            0.6896551724137931,
+            0.9285714285714286,
+            0.75,
+            0.7083333333333334
+          ],
+          "recall": [
+            1.0,
+            0.6842105263157895,
+            0.35294117647058826,
+            0.8947368421052632
+          ],
+          "support": [
+            20,
+            19,
+            17,
+            19
+          ]
+        },
+        "probability_rows": 75,
+        "weighted_validation_loss": 0.7367426729202271
+      },
+      "validation_prediction_sha256": "1b9f0d3e87ab1fb275d5539f5d77bbbb51f5a2623ba56329ed390facab08fee2"
+    },
+    {
+      "checkpoint_path": "rebuild/dataset_v2j2_control_fits/fit_attempts/fit_fb3cdb7a5185134251517988/attempt_01/best.pt",
+      "checkpoint_sha256": "57c32f75f034dec8259743926e2c64ad6c7be0cd11a23d665843cd5b42eacc85",
+      "checkpoint_size_bytes": 87731297,
+      "configuration_id": "spatial-pooling-ablation-v3_spatial_transformer_grid8_mean_grad",
+      "configuration_sha256": "31f5d6d5612c855bc52c277d90a593960c4ee7922538908b554633062d437884",
+      "effective_parameters": {
+        "model": {
+          "adapter_version": "spatial-pooling-ablation-v3",
+          "additional_pooling": "mean_grad",
+          "attention_heads": 8,
+          "channels": [
+            128,
+            256,
+            512,
+            1024
+          ],
+          "claims_spatial_attention": true,
+          "contrast_epsilon": 1e-06,
+          "contrast_weight": 1.0,
+          "data_loader_workers": 8,
+          "embedding": 128,
+          "environment_digest": "6ff1d24a3e284556dde5099f452b2ff7f1081084f8d2c87d0e84e256e9c02adb",
+          "gate_policy": "none",
+          "gradient_policy": "forward_xy_zero_missing_neighbor",
+          "grid_size": 8,
+          "input_size": 256,
+          "name": "spatial-pooling-ablation-v3_spatial_transformer_grid8_mean_grad",
+          "native_grid_size": 16,
+          "optimizer": "Adam",
+          "pin_memory": true,
+          "pooling_factor": 2,
+          "pooling_policy": "mean_grad",
+          "pooling_trainable_parameters": 0,
+          "position_policy": "fixed separable 2D sinusoidal x/y encoding; see models_v1.py",
+          "positional_encoding": "fixed_2d_sinusoidal_xy_v1",
+          "pretrained": false,
+          "purpose": "pooling/grid development ablation; no test evaluation",
+          "source_digests": {
+            "rebuild/ablation.py": "8287aaf628a6511cd56677a22dc6e5d11df8a8071e4cb8156d154c5e65fa831b",
+            "rebuild/common.py": "c5aa62eff0a7533ebb511ada406ab2121f79c1aff2c7827c09795e97bde62508",
+            "rebuild/config.py": "1c53947636f39c824cd1903bd232006eedcef01d7434f90b493cd32a69615f57",
+            "rebuild/data.py": "a548fc303d7a992a533e4b9eff14bae3e2fdacb276a33d3fcb5250124f4bb58c",
+            "rebuild/evaluation.py": "f9362a149000d12b264cd38a051b52ef1f7007208c90aa7176a5298a62da1e97",
+            "rebuild/full.py": "d535aca7cfc6ff14d994fabb50b9e250d0551ab02defbc8e15ca17c261e51c21",
+            "rebuild/phase3b/data_v1.py": "95482ee67d8b6acddb908a8bb677adc854d624c5c09e663433189ab5bc99986d",
+            "rebuild/phase3d/models_v1.py": "a282c954284ccd12a7c94a1bcb67940fff30825ba95c938673965b62bb29f692",
+            "rebuild/phase3d/models_v2.py": "6a17fcf5c0319c4c10c6484659f169ce27c6ba4c3d2d1dba5dbd9fea02bbeb6f",
+            "rebuild/phase3d/models_v3.py": "e304b8ada45aef6143ce8acec4e3d1c441a6350d478927d7f68d4706cdf4a82a",
+            "rebuild/phase3d/pilot.py": "27c6548ad77c338193c39df4faddf5c99bf64c623b244331b199a07fad2cb0c3",
+            "rebuild/pooling_ablation.py": "b6f70d275056649959a57cb75c7829778e38fb861c7fbb713d6bc2f1fcdc4205",
+            "rebuild/training.py": "b7638b6da1ae21c994c739ae396ef5ba937baf643a23ba3dd32b47a47f105687"
+          },
+          "token_count": 64,
+          "transformer_layers": 2,
+          "variant": "spatial_transformer"
+        },
+        "runtime": {
+          "deterministic": true,
+          "device": "cuda",
+          "num_threads": 2
+        },
+        "training": {
+          "batch_size": 16,
+          "epochs": 100,
+          "learning_rate": 9e-05,
+          "max_grad_norm": 3.0,
+          "min_delta": 0.0,
+          "patience": 20,
+          "scheduler_factor": 0.1,
+          "scheduler_patience": 5,
+          "weight_decay": 5e-07
+        }
+      },
+      "environment_sha256": "172c0fb72605a5fb2284e7bccfae82d2930799c55495dd53e2af0b19d3fdf705",
+      "family": "custom_cnn_transformer",
+      "fit_id": "fit_fb3cdb7a5185134251517988",
+      "history_sha256": "5eb0e4b7b53425b4e9c5b56e034ca05fb4f4af5ea6eceaf8d27ee8bd31203549",
+      "input_sha256": "b45720436baf55fff87de8623b9ab92629166fa8c6d35725198a9236cef1a978",
+      "last_checkpoint_sha256": "26786d1442e53894e7a657bf0b0410a285966eb6366b12ebde2931b1de54dfc9",
+      "manifest_index": 6,
+      "representation": "B_outer",
+      "seed": 3908274,
+      "validation_metrics": {
+        "accuracy": 0.6266666666666667,
+        "balanced_accuracy": 0.6180727554179567,
+        "confusion_matrix_true_rows_predicted_columns": [
+          [
+            17,
+            0,
+            2,
+            1
+          ],
+          [
+            4,
+            9,
+            1,
+            5
+          ],
+          [
+            3,
+            1,
+            7,
+            6
+          ],
+          [
+            1,
+            0,
+            4,
+            14
+          ]
+        ],
+        "macro_f1": 0.6125200840439995,
+        "per_class": {
+          "f1": [
+            0.7555555555555555,
+            0.6206896551724138,
+            0.45161290322580644,
+            0.6222222222222222
+          ],
+          "precision": [
+            0.68,
+            0.9,
+            0.5,
+            0.5384615384615384
+          ],
+          "recall": [
+            0.85,
+            0.47368421052631576,
+            0.4117647058823529,
+            0.7368421052631579
+          ],
+          "support": [
+            20,
+            19,
+            17,
+            19
+          ]
+        },
+        "probability_rows": 75,
+        "weighted_validation_loss": 1.0514626175165176
+      },
+      "validation_prediction_sha256": "318c2d693509cd3f203b5ffcdbf3e5b0ff8f75b4bb384513a2180ee4a9aab629"
+    },
+    {
+      "checkpoint_path": "rebuild/dataset_v2j2_control_fits/fit_attempts/fit_fd749af4b395404f6d8b2a3b/attempt_01/best.pt",
+      "checkpoint_sha256": "79761d99eec7ed543fdca0f90e8e0489ebb3f70286817bed35251e1a951b613f",
+      "checkpoint_size_bytes": 87728993,
+      "configuration_id": "spatial-pooling-ablation-v3_spatial_transformer_grid8_mean_grad",
+      "configuration_sha256": "31f5d6d5612c855bc52c277d90a593960c4ee7922538908b554633062d437884",
+      "effective_parameters": {
+        "model": {
+          "adapter_version": "spatial-pooling-ablation-v3",
+          "additional_pooling": "mean_grad",
+          "attention_heads": 8,
+          "channels": [
+            128,
+            256,
+            512,
+            1024
+          ],
+          "claims_spatial_attention": true,
+          "contrast_epsilon": 1e-06,
+          "contrast_weight": 1.0,
+          "data_loader_workers": 8,
+          "embedding": 128,
+          "environment_digest": "6ff1d24a3e284556dde5099f452b2ff7f1081084f8d2c87d0e84e256e9c02adb",
+          "gate_policy": "none",
+          "gradient_policy": "forward_xy_zero_missing_neighbor",
+          "grid_size": 8,
+          "input_size": 256,
+          "name": "spatial-pooling-ablation-v3_spatial_transformer_grid8_mean_grad",
+          "native_grid_size": 16,
+          "optimizer": "Adam",
+          "pin_memory": true,
+          "pooling_factor": 2,
+          "pooling_policy": "mean_grad",
+          "pooling_trainable_parameters": 0,
+          "position_policy": "fixed separable 2D sinusoidal x/y encoding; see models_v1.py",
+          "positional_encoding": "fixed_2d_sinusoidal_xy_v1",
+          "pretrained": false,
+          "purpose": "pooling/grid development ablation; no test evaluation",
+          "source_digests": {
+            "rebuild/ablation.py": "8287aaf628a6511cd56677a22dc6e5d11df8a8071e4cb8156d154c5e65fa831b",
+            "rebuild/common.py": "c5aa62eff0a7533ebb511ada406ab2121f79c1aff2c7827c09795e97bde62508",
+            "rebuild/config.py": "1c53947636f39c824cd1903bd232006eedcef01d7434f90b493cd32a69615f57",
+            "rebuild/data.py": "a548fc303d7a992a533e4b9eff14bae3e2fdacb276a33d3fcb5250124f4bb58c",
+            "rebuild/evaluation.py": "f9362a149000d12b264cd38a051b52ef1f7007208c90aa7176a5298a62da1e97",
+            "rebuild/full.py": "d535aca7cfc6ff14d994fabb50b9e250d0551ab02defbc8e15ca17c261e51c21",
+            "rebuild/phase3b/data_v1.py": "95482ee67d8b6acddb908a8bb677adc854d624c5c09e663433189ab5bc99986d",
+            "rebuild/phase3d/models_v1.py": "a282c954284ccd12a7c94a1bcb67940fff30825ba95c938673965b62bb29f692",
+            "rebuild/phase3d/models_v2.py": "6a17fcf5c0319c4c10c6484659f169ce27c6ba4c3d2d1dba5dbd9fea02bbeb6f",
+            "rebuild/phase3d/models_v3.py": "e304b8ada45aef6143ce8acec4e3d1c441a6350d478927d7f68d4706cdf4a82a",
+            "rebuild/phase3d/pilot.py": "27c6548ad77c338193c39df4faddf5c99bf64c623b244331b199a07fad2cb0c3",
+            "rebuild/pooling_ablation.py": "b6f70d275056649959a57cb75c7829778e38fb861c7fbb713d6bc2f1fcdc4205",
+            "rebuild/training.py": "b7638b6da1ae21c994c739ae396ef5ba937baf643a23ba3dd32b47a47f105687"
+          },
+          "token_count": 64,
+          "transformer_layers": 2,
+          "variant": "spatial_transformer"
+        },
+        "runtime": {
+          "deterministic": true,
+          "device": "cuda",
+          "num_threads": 2
+        },
+        "training": {
+          "batch_size": 16,
+          "epochs": 100,
+          "learning_rate": 9e-05,
+          "max_grad_norm": 3.0,
+          "min_delta": 0.0,
+          "patience": 20,
+          "scheduler_factor": 0.1,
+          "scheduler_patience": 5,
+          "weight_decay": 5e-07
+        }
+      },
+      "environment_sha256": "172c0fb72605a5fb2284e7bccfae82d2930799c55495dd53e2af0b19d3fdf705",
+      "family": "custom_cnn_transformer",
+      "fit_id": "fit_fd749af4b395404f6d8b2a3b",
+      "history_sha256": "f7fafeb001d63a6f515e71e42f90af2c058af73442c6940af1621f7c73ea83cf",
+      "input_sha256": "b45720436baf55fff87de8623b9ab92629166fa8c6d35725198a9236cef1a978",
+      "last_checkpoint_sha256": "5edd682c35719048e1f7e387e79d6714caf842522fcb99fdc74c385d13f25efb",
+      "manifest_index": 7,
+      "representation": "B_outer",
+      "seed": 3908275,
+      "validation_metrics": {
+        "accuracy": 0.5866666666666667,
+        "balanced_accuracy": 0.5772832817337461,
+        "confusion_matrix_true_rows_predicted_columns": [
+          [
+            19,
+            0,
+            1,
+            0
+          ],
+          [
+            4,
+            10,
+            2,
+            3
+          ],
+          [
+            6,
+            3,
+            7,
+            1
+          ],
+          [
+            2,
+            5,
+            4,
+            8
+          ]
+        ],
+        "macro_f1": 0.5633451288100244,
+        "per_class": {
+          "f1": [
+            0.7450980392156863,
+            0.5405405405405406,
+            0.45161290322580644,
+            0.5161290322580645
+          ],
+          "precision": [
+            0.6129032258064516,
+            0.5555555555555556,
+            0.5,
+            0.6666666666666666
+          ],
+          "recall": [
+            0.95,
+            0.5263157894736842,
+            0.4117647058823529,
+            0.42105263157894735
+          ],
+          "support": [
+            20,
+            19,
+            17,
+            19
+          ]
+        },
+        "probability_rows": 75,
+        "weighted_validation_loss": 1.0486969037850697
+      },
+      "validation_prediction_sha256": "cbc68d0fa33de48e18fc73d778afbdfe968af058d894ee33dae3c4b4801ca4e8"
+    },
+    {
+      "checkpoint_path": "rebuild/dataset_v2j2_control_fits/fit_attempts/fit_915693fd45d4d7fb9022e2ce/attempt_01/best.pt",
+      "checkpoint_sha256": "0e3c4e3a078e9a62a6a5d8410437b79992ad72cb3adf34bf1e0cab5bb3997cde",
+      "checkpoint_size_bytes": 87725729,
+      "configuration_id": "spatial-pooling-ablation-v3_spatial_transformer_grid8_mean_grad",
+      "configuration_sha256": "31f5d6d5612c855bc52c277d90a593960c4ee7922538908b554633062d437884",
+      "effective_parameters": {
+        "model": {
+          "adapter_version": "spatial-pooling-ablation-v3",
+          "additional_pooling": "mean_grad",
+          "attention_heads": 8,
+          "channels": [
+            128,
+            256,
+            512,
+            1024
+          ],
+          "claims_spatial_attention": true,
+          "contrast_epsilon": 1e-06,
+          "contrast_weight": 1.0,
+          "data_loader_workers": 8,
+          "embedding": 128,
+          "environment_digest": "6ff1d24a3e284556dde5099f452b2ff7f1081084f8d2c87d0e84e256e9c02adb",
+          "gate_policy": "none",
+          "gradient_policy": "forward_xy_zero_missing_neighbor",
+          "grid_size": 8,
+          "input_size": 256,
+          "name": "spatial-pooling-ablation-v3_spatial_transformer_grid8_mean_grad",
+          "native_grid_size": 16,
+          "optimizer": "Adam",
+          "pin_memory": true,
+          "pooling_factor": 2,
+          "pooling_policy": "mean_grad",
+          "pooling_trainable_parameters": 0,
+          "position_policy": "fixed separable 2D sinusoidal x/y encoding; see models_v1.py",
+          "positional_encoding": "fixed_2d_sinusoidal_xy_v1",
+          "pretrained": false,
+          "purpose": "pooling/grid development ablation; no test evaluation",
+          "source_digests": {
+            "rebuild/ablation.py": "8287aaf628a6511cd56677a22dc6e5d11df8a8071e4cb8156d154c5e65fa831b",
+            "rebuild/common.py": "c5aa62eff0a7533ebb511ada406ab2121f79c1aff2c7827c09795e97bde62508",
+            "rebuild/config.py": "1c53947636f39c824cd1903bd232006eedcef01d7434f90b493cd32a69615f57",
+            "rebuild/data.py": "a548fc303d7a992a533e4b9eff14bae3e2fdacb276a33d3fcb5250124f4bb58c",
+            "rebuild/evaluation.py": "f9362a149000d12b264cd38a051b52ef1f7007208c90aa7176a5298a62da1e97",
+            "rebuild/full.py": "d535aca7cfc6ff14d994fabb50b9e250d0551ab02defbc8e15ca17c261e51c21",
+            "rebuild/phase3b/data_v1.py": "95482ee67d8b6acddb908a8bb677adc854d624c5c09e663433189ab5bc99986d",
+            "rebuild/phase3d/models_v1.py": "a282c954284ccd12a7c94a1bcb67940fff30825ba95c938673965b62bb29f692",
+            "rebuild/phase3d/models_v2.py": "6a17fcf5c0319c4c10c6484659f169ce27c6ba4c3d2d1dba5dbd9fea02bbeb6f",
+            "rebuild/phase3d/models_v3.py": "e304b8ada45aef6143ce8acec4e3d1c441a6350d478927d7f68d4706cdf4a82a",
+            "rebuild/phase3d/pilot.py": "27c6548ad77c338193c39df4faddf5c99bf64c623b244331b199a07fad2cb0c3",
+            "rebuild/pooling_ablation.py": "b6f70d275056649959a57cb75c7829778e38fb861c7fbb713d6bc2f1fcdc4205",
+            "rebuild/training.py": "b7638b6da1ae21c994c739ae396ef5ba937baf643a23ba3dd32b47a47f105687"
+          },
+          "token_count": 64,
+          "transformer_layers": 2,
+          "variant": "spatial_transformer"
+        },
+        "runtime": {
+          "deterministic": true,
+          "device": "cuda",
+          "num_threads": 2
+        },
+        "training": {
+          "batch_size": 16,
+          "epochs": 100,
+          "learning_rate": 9e-05,
+          "max_grad_norm": 3.0,
+          "min_delta": 0.0,
+          "patience": 20,
+          "scheduler_factor": 0.1,
+          "scheduler_patience": 5,
+          "weight_decay": 5e-07
+        }
+      },
+      "environment_sha256": "172c0fb72605a5fb2284e7bccfae82d2930799c55495dd53e2af0b19d3fdf705",
+      "family": "custom_cnn_transformer",
+      "fit_id": "fit_915693fd45d4d7fb9022e2ce",
+      "history_sha256": "c5a026f786eabc5fa0d7eb79f41a760beac6a35ec996a5d00841a67e32f56676",
+      "input_sha256": "b45720436baf55fff87de8623b9ab92629166fa8c6d35725198a9236cef1a978",
+      "last_checkpoint_sha256": "c157520231932b82038d2bf0e6b8b7e6327478b52a34c0f586b03880f4d6e59f",
+      "manifest_index": 8,
+      "representation": "B_outer",
+      "seed": 3908276,
+      "validation_metrics": {
+        "accuracy": 0.5733333333333334,
+        "balanced_accuracy": 0.562577399380805,
+        "confusion_matrix_true_rows_predicted_columns": [
+          [
+            19,
+            0,
+            1,
+            0
+          ],
+          [
+            4,
+            9,
+            2,
+            4
+          ],
+          [
+            6,
+            0,
+            6,
+            5
+          ],
+          [
+            1,
+            4,
+            5,
+            9
+          ]
+        ],
+        "macro_f1": 0.5490208151700087,
+        "per_class": {
+          "f1": [
+            0.76,
+            0.5625,
+            0.3870967741935484,
+            0.4864864864864865
+          ],
+          "precision": [
+            0.6333333333333333,
+            0.6923076923076923,
+            0.42857142857142855,
+            0.5
+          ],
+          "recall": [
+            0.95,
+            0.47368421052631576,
+            0.35294117647058826,
+            0.47368421052631576
+          ],
+          "support": [
+            20,
+            19,
+            17,
+            19
+          ]
+        },
+        "probability_rows": 75,
+        "weighted_validation_loss": 1.056441311041514
+      },
+      "validation_prediction_sha256": "9295c6709a784f6637db7ed2978194d9a2a1699988fd341cccf2769f98e39ecb"
+    },
+    {
+      "checkpoint_path": "rebuild/dataset_v2j2_control_fits/fit_attempts/fit_9d1e53dd876b96c1f8c9d822/attempt_01/best.pt",
+      "checkpoint_sha256": "408273af52a3d25a61e8ecbe0cdbfbeaf10a2047ca558101332004b6d5b10d0f",
+      "checkpoint_size_bytes": 282672437,
+      "configuration_id": "resnet50_ddc5866488e57f18",
+      "configuration_sha256": "dbe456b4fce9bde0bab0b9adc1b7630f57770114454577cf1d735e728cf6f16c",
+      "effective_parameters": {
+        "model": {
+          "architecture": "torchvision.models.resnet50",
+          "data_loader_workers": 8,
+          "decay_policy": "all optimized parameters; decoupled weight decay",
+          "family": "resnet50",
+          "head": "fc: Linear(2048,4)",
+          "head_initialization": "seeded default nn.Linear initialization after backbone load",
+          "head_lr_multiplier": 10.0,
+          "head_only_warmup_epochs": 0,
+          "name": "resnet50_ddc5866488e57f18",
+          "optimizer": "AdamW",
+          "optimizer_betas": [
+            0.9,
+            0.999
+          ],
+          "optimizer_epsilon": 1e-08,
+          "optimizer_state_policy": "one optimizer; no resets at unfreeze",
+          "pin_memory": true,
+          "pretrained_backbone_initialization": "identical cached official weights across seeds",
+          "pretrained_required": true,
+          "scheduler_and_early_stopping": "active from epoch 1; no resets at unfreeze",
+          "warmup_batchnorm_policy": "backbone eval while frozen; train after unfreezing",
+          "warmup_counts_toward_maximum_epochs": true
+        },
+        "runtime": {
+          "deterministic": true,
+          "device": "cuda",
+          "num_threads": 2
+        },
+        "training": {
+          "batch_size": 16,
+          "epochs": 100,
+          "learning_rate": 0.0001,
+          "max_grad_norm": 3.0,
+          "min_delta": 0.0,
+          "patience": 20,
+          "scheduler_factor": 0.1,
+          "scheduler_patience": 5,
+          "weight_decay": 0.0001
+        }
+      },
+      "environment_sha256": "172c0fb72605a5fb2284e7bccfae82d2930799c55495dd53e2af0b19d3fdf705",
+      "family": "resnet50",
+      "fit_id": "fit_9d1e53dd876b96c1f8c9d822",
+      "history_sha256": "eeb83d7118c8c996ec3eadec4026fefe7b82c6730abab17b66e5a58e83998cbc",
+      "input_sha256": "88dade9e0a7b170cd779c1e0b802f9995ddbed0839db4ce530bb48db11ba571a",
+      "last_checkpoint_sha256": "3153d3d8666220421b83bce569764cd7f332a1990404d15225967244a31cbf27",
+      "manifest_index": 9,
+      "representation": "B",
+      "seed": 3908274,
+      "validation_metrics": {
+        "accuracy": 0.7733333333333333,
+        "balanced_accuracy": 0.768343653250774,
+        "confusion_matrix_true_rows_predicted_columns": [
+          [
+            18,
+            2,
+            0,
+            0
+          ],
+          [
+            2,
+            15,
+            1,
+            1
+          ],
+          [
+            2,
+            2,
+            11,
+            2
+          ],
+          [
+            0,
+            2,
+            3,
+            14
+          ]
+        ],
+        "macro_f1": 0.7681051587301587,
+        "per_class": {
+          "f1": [
+            0.8571428571428571,
+            0.75,
+            0.6875,
+            0.7777777777777778
+          ],
+          "precision": [
+            0.8181818181818182,
+            0.7142857142857143,
+            0.7333333333333333,
+            0.8235294117647058
+          ],
+          "recall": [
+            0.9,
+            0.7894736842105263,
+            0.6470588235294118,
+            0.7368421052631579
+          ],
+          "support": [
+            20,
+            19,
+            17,
+            19
+          ]
+        },
+        "probability_rows": 75,
+        "weighted_validation_loss": 0.7798375532419656
+      },
+      "validation_prediction_sha256": "dc85e38b54e115f15b395f971daac7956c86cb5506adf3f6324612e106baf8c5"
+    },
+    {
+      "checkpoint_path": "rebuild/dataset_v2j2_control_fits/fit_attempts/fit_d0bfd37d25ac2d5e9af3f1c8/attempt_01/best.pt",
+      "checkpoint_sha256": "b70bb71821974be74f95441525505e8f00661d6b4763dbb7a4caf9c3629e1b83",
+      "checkpoint_size_bytes": 282671477,
+      "configuration_id": "resnet50_ddc5866488e57f18",
+      "configuration_sha256": "dbe456b4fce9bde0bab0b9adc1b7630f57770114454577cf1d735e728cf6f16c",
+      "effective_parameters": {
+        "model": {
+          "architecture": "torchvision.models.resnet50",
+          "data_loader_workers": 8,
+          "decay_policy": "all optimized parameters; decoupled weight decay",
+          "family": "resnet50",
+          "head": "fc: Linear(2048,4)",
+          "head_initialization": "seeded default nn.Linear initialization after backbone load",
+          "head_lr_multiplier": 10.0,
+          "head_only_warmup_epochs": 0,
+          "name": "resnet50_ddc5866488e57f18",
+          "optimizer": "AdamW",
+          "optimizer_betas": [
+            0.9,
+            0.999
+          ],
+          "optimizer_epsilon": 1e-08,
+          "optimizer_state_policy": "one optimizer; no resets at unfreeze",
+          "pin_memory": true,
+          "pretrained_backbone_initialization": "identical cached official weights across seeds",
+          "pretrained_required": true,
+          "scheduler_and_early_stopping": "active from epoch 1; no resets at unfreeze",
+          "warmup_batchnorm_policy": "backbone eval while frozen; train after unfreezing",
+          "warmup_counts_toward_maximum_epochs": true
+        },
+        "runtime": {
+          "deterministic": true,
+          "device": "cuda",
+          "num_threads": 2
+        },
+        "training": {
+          "batch_size": 16,
+          "epochs": 100,
+          "learning_rate": 0.0001,
+          "max_grad_norm": 3.0,
+          "min_delta": 0.0,
+          "patience": 20,
+          "scheduler_factor": 0.1,
+          "scheduler_patience": 5,
+          "weight_decay": 0.0001
+        }
+      },
+      "environment_sha256": "172c0fb72605a5fb2284e7bccfae82d2930799c55495dd53e2af0b19d3fdf705",
+      "family": "resnet50",
+      "fit_id": "fit_d0bfd37d25ac2d5e9af3f1c8",
+      "history_sha256": "d5e42ba1dbb4f7dcd6bb667de8c2898a4b16d375b294de1f26caa88d2a7d4162",
+      "input_sha256": "88dade9e0a7b170cd779c1e0b802f9995ddbed0839db4ce530bb48db11ba571a",
+      "last_checkpoint_sha256": "3d4eb57945523f7774130000eb39d05fea4af21d020e4c8068fa53d66b7cb3e6",
+      "manifest_index": 10,
+      "representation": "B",
+      "seed": 3908275,
+      "validation_metrics": {
+        "accuracy": 0.72,
+        "balanced_accuracy": 0.7150541795665635,
+        "confusion_matrix_true_rows_predicted_columns": [
+          [
+            19,
+            0,
+            1,
+            0
+          ],
+          [
+            5,
+            10,
+            0,
+            4
+          ],
+          [
+            0,
+            0,
+            11,
+            6
+          ],
+          [
+            0,
+            1,
+            4,
+            14
+          ]
+        ],
+        "macro_f1": 0.7120331219168428,
+        "per_class": {
+          "f1": [
+            0.8636363636363636,
+            0.6666666666666666,
+            0.6666666666666666,
+            0.6511627906976745
+          ],
+          "precision": [
+            0.7916666666666666,
+            0.9090909090909091,
+            0.6875,
+            0.5833333333333334
+          ],
+          "recall": [
+            0.95,
+            0.5263157894736842,
+            0.6470588235294118,
+            0.7368421052631579
+          ],
+          "support": [
+            20,
+            19,
+            17,
+            19
+          ]
+        },
+        "probability_rows": 75,
+        "weighted_validation_loss": 0.7916073124030724
+      },
+      "validation_prediction_sha256": "53192da3af4714e19e048af67f75fbf1ad3eafd539b09171dcf42ad142079e4d"
+    },
+    {
+      "checkpoint_path": "rebuild/dataset_v2j2_control_fits/fit_attempts/fit_8c690b627bc664bced2e796f/attempt_01/best.pt",
+      "checkpoint_sha256": "9599578d207f2aae57e73bdf8c81e171e8251186a9dffd1117c65ee9bde8c7ca",
+      "checkpoint_size_bytes": 282671541,
+      "configuration_id": "resnet50_ddc5866488e57f18",
+      "configuration_sha256": "dbe456b4fce9bde0bab0b9adc1b7630f57770114454577cf1d735e728cf6f16c",
+      "effective_parameters": {
+        "model": {
+          "architecture": "torchvision.models.resnet50",
+          "data_loader_workers": 8,
+          "decay_policy": "all optimized parameters; decoupled weight decay",
+          "family": "resnet50",
+          "head": "fc: Linear(2048,4)",
+          "head_initialization": "seeded default nn.Linear initialization after backbone load",
+          "head_lr_multiplier": 10.0,
+          "head_only_warmup_epochs": 0,
+          "name": "resnet50_ddc5866488e57f18",
+          "optimizer": "AdamW",
+          "optimizer_betas": [
+            0.9,
+            0.999
+          ],
+          "optimizer_epsilon": 1e-08,
+          "optimizer_state_policy": "one optimizer; no resets at unfreeze",
+          "pin_memory": true,
+          "pretrained_backbone_initialization": "identical cached official weights across seeds",
+          "pretrained_required": true,
+          "scheduler_and_early_stopping": "active from epoch 1; no resets at unfreeze",
+          "warmup_batchnorm_policy": "backbone eval while frozen; train after unfreezing",
+          "warmup_counts_toward_maximum_epochs": true
+        },
+        "runtime": {
+          "deterministic": true,
+          "device": "cuda",
+          "num_threads": 2
+        },
+        "training": {
+          "batch_size": 16,
+          "epochs": 100,
+          "learning_rate": 0.0001,
+          "max_grad_norm": 3.0,
+          "min_delta": 0.0,
+          "patience": 20,
+          "scheduler_factor": 0.1,
+          "scheduler_patience": 5,
+          "weight_decay": 0.0001
+        }
+      },
+      "environment_sha256": "172c0fb72605a5fb2284e7bccfae82d2930799c55495dd53e2af0b19d3fdf705",
+      "family": "resnet50",
+      "fit_id": "fit_8c690b627bc664bced2e796f",
+      "history_sha256": "1401308d3c9c6b7e4ce84142bb52eab49ec2e6f5bf2cb8d6b5025f366b7cf787",
+      "input_sha256": "88dade9e0a7b170cd779c1e0b802f9995ddbed0839db4ce530bb48db11ba571a",
+      "last_checkpoint_sha256": "7e8622ba38e92dbf86fe19e86875d7282f86909be1c81c11756062163d3c1a5c",
+      "manifest_index": 11,
+      "representation": "B",
+      "seed": 3908276,
+      "validation_metrics": {
+        "accuracy": 0.68,
+        "balanced_accuracy": 0.6760061919504644,
+        "confusion_matrix_true_rows_predicted_columns": [
+          [
+            16,
+            0,
+            4,
+            0
+          ],
+          [
+            2,
+            14,
+            2,
+            1
+          ],
+          [
+            0,
+            2,
+            10,
+            5
+          ],
+          [
+            1,
+            3,
+            4,
+            11
+          ]
+        ],
+        "macro_f1": 0.6772516443569075,
+        "per_class": {
+          "f1": [
+            0.8205128205128205,
+            0.7368421052631579,
+            0.5405405405405406,
+            0.6111111111111112
+          ],
+          "precision": [
+            0.8421052631578947,
+            0.7368421052631579,
+            0.5,
+            0.6470588235294118
+          ],
+          "recall": [
+            0.8,
+            0.7368421052631579,
+            0.5882352941176471,
+            0.5789473684210527
+          ],
+          "support": [
+            20,
+            19,
+            17,
+            19
+          ]
+        },
+        "probability_rows": 75,
+        "weighted_validation_loss": 0.9200438792692148
+      },
+      "validation_prediction_sha256": "d01092c3cc2d2a0e715c8a36bdfe2aaf43e89e0e96c87313cf590a691d83c329"
+    },
+    {
+      "checkpoint_path": "rebuild/dataset_v2j2_control_fits/fit_attempts/fit_e81ea23f19e61d81ddae1e01/attempt_01/best.pt",
+      "checkpoint_sha256": "70ce94900bab409c97322ad9b38498f087687135149f97aa3d343d1b0d50b0b6",
+      "checkpoint_size_bytes": 282670581,
+      "configuration_id": "resnet50_ddc5866488e57f18",
+      "configuration_sha256": "dbe456b4fce9bde0bab0b9adc1b7630f57770114454577cf1d735e728cf6f16c",
+      "effective_parameters": {
+        "model": {
+          "architecture": "torchvision.models.resnet50",
+          "data_loader_workers": 8,
+          "decay_policy": "all optimized parameters; decoupled weight decay",
+          "family": "resnet50",
+          "head": "fc: Linear(2048,4)",
+          "head_initialization": "seeded default nn.Linear initialization after backbone load",
+          "head_lr_multiplier": 10.0,
+          "head_only_warmup_epochs": 0,
+          "name": "resnet50_ddc5866488e57f18",
+          "optimizer": "AdamW",
+          "optimizer_betas": [
+            0.9,
+            0.999
+          ],
+          "optimizer_epsilon": 1e-08,
+          "optimizer_state_policy": "one optimizer; no resets at unfreeze",
+          "pin_memory": true,
+          "pretrained_backbone_initialization": "identical cached official weights across seeds",
+          "pretrained_required": true,
+          "scheduler_and_early_stopping": "active from epoch 1; no resets at unfreeze",
+          "warmup_batchnorm_policy": "backbone eval while frozen; train after unfreezing",
+          "warmup_counts_toward_maximum_epochs": true
+        },
+        "runtime": {
+          "deterministic": true,
+          "device": "cuda",
+          "num_threads": 2
+        },
+        "training": {
+          "batch_size": 16,
+          "epochs": 100,
+          "learning_rate": 0.0001,
+          "max_grad_norm": 3.0,
+          "min_delta": 0.0,
+          "patience": 20,
+          "scheduler_factor": 0.1,
+          "scheduler_patience": 5,
+          "weight_decay": 0.0001
+        }
+      },
+      "environment_sha256": "172c0fb72605a5fb2284e7bccfae82d2930799c55495dd53e2af0b19d3fdf705",
+      "family": "resnet50",
+      "fit_id": "fit_e81ea23f19e61d81ddae1e01",
+      "history_sha256": "8a6b3c1d414849335100544acf05685961fd2891207d440a50e75902f49c05a2",
+      "input_sha256": "8c7989cbb0e8eecb42a632dc344026ea2881e693d4d9cd825f9d2b9f515860ae",
+      "last_checkpoint_sha256": "042318f26716cc9a7e9ca1e3c3b6dd3f17ce9674b02dc02268ae4bd2572a43df",
+      "manifest_index": 12,
+      "representation": "A_outer",
+      "seed": 3908274,
+      "validation_metrics": {
+        "accuracy": 0.6266666666666667,
+        "balanced_accuracy": 0.6233359133126934,
+        "confusion_matrix_true_rows_predicted_columns": [
+          [
+            9,
+            11,
+            0,
+            0
+          ],
+          [
+            0,
+            18,
+            0,
+            1
+          ],
+          [
+            1,
+            6,
+            7,
+            3
+          ],
+          [
+            0,
+            1,
+            5,
+            13
+          ]
+        ],
+        "macro_f1": 0.614881574364333,
+        "per_class": {
+          "f1": [
+            0.6,
+            0.6545454545454545,
+            0.4827586206896552,
+            0.7222222222222222
+          ],
+          "precision": [
+            0.9,
+            0.5,
+            0.5833333333333334,
+            0.7647058823529411
+          ],
+          "recall": [
+            0.45,
+            0.9473684210526315,
+            0.4117647058823529,
+            0.6842105263157895
+          ],
+          "support": [
+            20,
+            19,
+            17,
+            19
+          ]
+        },
+        "probability_rows": 75,
+        "weighted_validation_loss": 0.9654480474091057
+      },
+      "validation_prediction_sha256": "8214f5ec124986f6c895949655a191efbd62512e0b71612d758b66ac43e1782b"
+    },
+    {
+      "checkpoint_path": "rebuild/dataset_v2j2_control_fits/fit_attempts/fit_1ad490be121880a8c84a4138/attempt_01/best.pt",
+      "checkpoint_sha256": "f82129ff96642fb3a001e1f01a59300fd03161b896c67d4e34bbe88f42fe86ba",
+      "checkpoint_size_bytes": 282670197,
+      "configuration_id": "resnet50_ddc5866488e57f18",
+      "configuration_sha256": "dbe456b4fce9bde0bab0b9adc1b7630f57770114454577cf1d735e728cf6f16c",
+      "effective_parameters": {
+        "model": {
+          "architecture": "torchvision.models.resnet50",
+          "data_loader_workers": 8,
+          "decay_policy": "all optimized parameters; decoupled weight decay",
+          "family": "resnet50",
+          "head": "fc: Linear(2048,4)",
+          "head_initialization": "seeded default nn.Linear initialization after backbone load",
+          "head_lr_multiplier": 10.0,
+          "head_only_warmup_epochs": 0,
+          "name": "resnet50_ddc5866488e57f18",
+          "optimizer": "AdamW",
+          "optimizer_betas": [
+            0.9,
+            0.999
+          ],
+          "optimizer_epsilon": 1e-08,
+          "optimizer_state_policy": "one optimizer; no resets at unfreeze",
+          "pin_memory": true,
+          "pretrained_backbone_initialization": "identical cached official weights across seeds",
+          "pretrained_required": true,
+          "scheduler_and_early_stopping": "active from epoch 1; no resets at unfreeze",
+          "warmup_batchnorm_policy": "backbone eval while frozen; train after unfreezing",
+          "warmup_counts_toward_maximum_epochs": true
+        },
+        "runtime": {
+          "deterministic": true,
+          "device": "cuda",
+          "num_threads": 2
+        },
+        "training": {
+          "batch_size": 16,
+          "epochs": 100,
+          "learning_rate": 0.0001,
+          "max_grad_norm": 3.0,
+          "min_delta": 0.0,
+          "patience": 20,
+          "scheduler_factor": 0.1,
+          "scheduler_patience": 5,
+          "weight_decay": 0.0001
+        }
+      },
+      "environment_sha256": "172c0fb72605a5fb2284e7bccfae82d2930799c55495dd53e2af0b19d3fdf705",
+      "family": "resnet50",
+      "fit_id": "fit_1ad490be121880a8c84a4138",
+      "history_sha256": "25afdc8bf305b3d2d6f7931cf366df1aca15c56cab69253ccf86650fdcc8be61",
+      "input_sha256": "8c7989cbb0e8eecb42a632dc344026ea2881e693d4d9cd825f9d2b9f515860ae",
+      "last_checkpoint_sha256": "88ef54f23c5e6de84467558dfb4dff4ac6fcf8dafb4afd3244179d8e0760d05b",
+      "manifest_index": 13,
+      "representation": "A_outer",
+      "seed": 3908275,
+      "validation_metrics": {
+        "accuracy": 0.68,
+        "balanced_accuracy": 0.6817724458204334,
+        "confusion_matrix_true_rows_predicted_columns": [
+          [
+            19,
+            0,
+            1,
+            0
+          ],
+          [
+            4,
+            10,
+            3,
+            2
+          ],
+          [
+            1,
+            0,
+            15,
+            1
+          ],
+          [
+            0,
+            1,
+            11,
+            7
+          ]
+        ],
+        "macro_f1": 0.6628398808332777,
+        "per_class": {
+          "f1": [
+            0.8636363636363636,
+            0.6666666666666666,
+            0.6382978723404256,
+            0.4827586206896552
+          ],
+          "precision": [
+            0.7916666666666666,
+            0.9090909090909091,
+            0.5,
+            0.7
+          ],
+          "recall": [
+            0.95,
+            0.5263157894736842,
+            0.8823529411764706,
+            0.3684210526315789
+          ],
+          "support": [
+            20,
+            19,
+            17,
+            19
+          ]
+        },
+        "probability_rows": 75,
+        "weighted_validation_loss": 0.8253570766622822
+      },
+      "validation_prediction_sha256": "5229aa4c5798c61e77a3c866da8f3e74b554d66512c98e2678c11893cd3be175"
+    },
+    {
+      "checkpoint_path": "rebuild/dataset_v2j2_control_fits/fit_attempts/fit_17246bc0375a4818a782cc14/attempt_01/best.pt",
+      "checkpoint_sha256": "b08325411b96c421a1d77cd9a0a5d07d2ce080bbcb4866f21aeaefc86d698325",
+      "checkpoint_size_bytes": 282674741,
+      "configuration_id": "resnet50_ddc5866488e57f18",
+      "configuration_sha256": "dbe456b4fce9bde0bab0b9adc1b7630f57770114454577cf1d735e728cf6f16c",
+      "effective_parameters": {
+        "model": {
+          "architecture": "torchvision.models.resnet50",
+          "data_loader_workers": 8,
+          "decay_policy": "all optimized parameters; decoupled weight decay",
+          "family": "resnet50",
+          "head": "fc: Linear(2048,4)",
+          "head_initialization": "seeded default nn.Linear initialization after backbone load",
+          "head_lr_multiplier": 10.0,
+          "head_only_warmup_epochs": 0,
+          "name": "resnet50_ddc5866488e57f18",
+          "optimizer": "AdamW",
+          "optimizer_betas": [
+            0.9,
+            0.999
+          ],
+          "optimizer_epsilon": 1e-08,
+          "optimizer_state_policy": "one optimizer; no resets at unfreeze",
+          "pin_memory": true,
+          "pretrained_backbone_initialization": "identical cached official weights across seeds",
+          "pretrained_required": true,
+          "scheduler_and_early_stopping": "active from epoch 1; no resets at unfreeze",
+          "warmup_batchnorm_policy": "backbone eval while frozen; train after unfreezing",
+          "warmup_counts_toward_maximum_epochs": true
+        },
+        "runtime": {
+          "deterministic": true,
+          "device": "cuda",
+          "num_threads": 2
+        },
+        "training": {
+          "batch_size": 16,
+          "epochs": 100,
+          "learning_rate": 0.0001,
+          "max_grad_norm": 3.0,
+          "min_delta": 0.0,
+          "patience": 20,
+          "scheduler_factor": 0.1,
+          "scheduler_patience": 5,
+          "weight_decay": 0.0001
+        }
+      },
+      "environment_sha256": "172c0fb72605a5fb2284e7bccfae82d2930799c55495dd53e2af0b19d3fdf705",
+      "family": "resnet50",
+      "fit_id": "fit_17246bc0375a4818a782cc14",
+      "history_sha256": "b5be18f40b2ede9b67b6107b31ef5ffc37399d07be92780d823a83186a54b859",
+      "input_sha256": "8c7989cbb0e8eecb42a632dc344026ea2881e693d4d9cd825f9d2b9f515860ae",
+      "last_checkpoint_sha256": "dce2093b5f27aebfad3dd577a56d9faf891e88319fe6d2adfd60653daeddd4bc",
+      "manifest_index": 14,
+      "representation": "A_outer",
+      "seed": 3908276,
+      "validation_metrics": {
+        "accuracy": 0.84,
+        "balanced_accuracy": 0.8312693498452012,
+        "confusion_matrix_true_rows_predicted_columns": [
+          [
+            20,
+            0,
+            0,
+            0
+          ],
+          [
+            3,
+            15,
+            0,
+            1
+          ],
+          [
+            3,
+            0,
+            10,
+            4
+          ],
+          [
+            0,
+            0,
+            1,
+            18
+          ]
+        ],
+        "macro_f1": 0.8308366824990866,
+        "per_class": {
+          "f1": [
+            0.8695652173913043,
+            0.8823529411764706,
+            0.7142857142857143,
+            0.8571428571428571
+          ],
+          "precision": [
+            0.7692307692307693,
+            1.0,
+            0.9090909090909091,
+            0.782608695652174
+          ],
+          "recall": [
+            1.0,
+            0.7894736842105263,
+            0.5882352941176471,
+            0.9473684210526315
+          ],
+          "support": [
+            20,
+            19,
+            17,
+            19
+          ]
+        },
+        "probability_rows": 75,
+        "weighted_validation_loss": 0.8236012066151428
+      },
+      "validation_prediction_sha256": "b4a3af4ff1bc348b77d0553979f1ceda681fca0dc4addf8ca495a2b102cbe7a7"
+    },
+    {
+      "checkpoint_path": "rebuild/dataset_v2j2_control_fits/fit_attempts/fit_2694d9f2293effef9fc2219f/attempt_01/best.pt",
+      "checkpoint_sha256": "903e08a2787864ad575826b1fa0eec0b508829179cfdb3d7c4479555b0f2c662",
+      "checkpoint_size_bytes": 282671605,
+      "configuration_id": "resnet50_ddc5866488e57f18",
+      "configuration_sha256": "dbe456b4fce9bde0bab0b9adc1b7630f57770114454577cf1d735e728cf6f16c",
+      "effective_parameters": {
+        "model": {
+          "architecture": "torchvision.models.resnet50",
+          "data_loader_workers": 8,
+          "decay_policy": "all optimized parameters; decoupled weight decay",
+          "family": "resnet50",
+          "head": "fc: Linear(2048,4)",
+          "head_initialization": "seeded default nn.Linear initialization after backbone load",
+          "head_lr_multiplier": 10.0,
+          "head_only_warmup_epochs": 0,
+          "name": "resnet50_ddc5866488e57f18",
+          "optimizer": "AdamW",
+          "optimizer_betas": [
+            0.9,
+            0.999
+          ],
+          "optimizer_epsilon": 1e-08,
+          "optimizer_state_policy": "one optimizer; no resets at unfreeze",
+          "pin_memory": true,
+          "pretrained_backbone_initialization": "identical cached official weights across seeds",
+          "pretrained_required": true,
+          "scheduler_and_early_stopping": "active from epoch 1; no resets at unfreeze",
+          "warmup_batchnorm_policy": "backbone eval while frozen; train after unfreezing",
+          "warmup_counts_toward_maximum_epochs": true
+        },
+        "runtime": {
+          "deterministic": true,
+          "device": "cuda",
+          "num_threads": 2
+        },
+        "training": {
+          "batch_size": 16,
+          "epochs": 100,
+          "learning_rate": 0.0001,
+          "max_grad_norm": 3.0,
+          "min_delta": 0.0,
+          "patience": 20,
+          "scheduler_factor": 0.1,
+          "scheduler_patience": 5,
+          "weight_decay": 0.0001
+        }
+      },
+      "environment_sha256": "172c0fb72605a5fb2284e7bccfae82d2930799c55495dd53e2af0b19d3fdf705",
+      "family": "resnet50",
+      "fit_id": "fit_2694d9f2293effef9fc2219f",
+      "history_sha256": "8befd6f11d8d0cfa3727033db3bf2b357d9795318478d1bb6b743670cd0fbd04",
+      "input_sha256": "b45720436baf55fff87de8623b9ab92629166fa8c6d35725198a9236cef1a978",
+      "last_checkpoint_sha256": "a3ef8832373f7040a8d604b0e491e0be2d51e4452cfbb017f841625afdbf6668",
+      "manifest_index": 15,
+      "representation": "B_outer",
+      "seed": 3908274,
+      "validation_metrics": {
+        "accuracy": 0.5733333333333334,
+        "balanced_accuracy": 0.5691950464396285,
+        "confusion_matrix_true_rows_predicted_columns": [
+          [
+            16,
+            2,
+            2,
+            0
+          ],
+          [
+            4,
+            9,
+            5,
+            1
+          ],
+          [
+            6,
+            2,
+            9,
+            0
+          ],
+          [
+            2,
+            2,
+            6,
+            9
+          ]
+        ],
+        "macro_f1": 0.569576637020856,
+        "per_class": {
+          "f1": [
+            0.6666666666666666,
+            0.5294117647058824,
+            0.46153846153846156,
+            0.6206896551724138
+          ],
+          "precision": [
+            0.5714285714285714,
+            0.6,
+            0.4090909090909091,
+            0.9
+          ],
+          "recall": [
+            0.8,
+            0.47368421052631576,
+            0.5294117647058824,
+            0.47368421052631576
+          ],
+          "support": [
+            20,
+            19,
+            17,
+            19
+          ]
+        },
+        "probability_rows": 75,
+        "weighted_validation_loss": 1.2284012222024223
+      },
+      "validation_prediction_sha256": "ea13dc1044ce11a46b830e571764bdbf78a2c46fe118d558162a673b5ea71d64"
+    },
+    {
+      "checkpoint_path": "rebuild/dataset_v2j2_control_fits/fit_attempts/fit_09f28df00b35804579926376/attempt_01/best.pt",
+      "checkpoint_sha256": "eccd23386e4ddb3631024deed224d507b495b1ae60791e2c991758ec39f5c023",
+      "checkpoint_size_bytes": 282672437,
+      "configuration_id": "resnet50_ddc5866488e57f18",
+      "configuration_sha256": "dbe456b4fce9bde0bab0b9adc1b7630f57770114454577cf1d735e728cf6f16c",
+      "effective_parameters": {
+        "model": {
+          "architecture": "torchvision.models.resnet50",
+          "data_loader_workers": 8,
+          "decay_policy": "all optimized parameters; decoupled weight decay",
+          "family": "resnet50",
+          "head": "fc: Linear(2048,4)",
+          "head_initialization": "seeded default nn.Linear initialization after backbone load",
+          "head_lr_multiplier": 10.0,
+          "head_only_warmup_epochs": 0,
+          "name": "resnet50_ddc5866488e57f18",
+          "optimizer": "AdamW",
+          "optimizer_betas": [
+            0.9,
+            0.999
+          ],
+          "optimizer_epsilon": 1e-08,
+          "optimizer_state_policy": "one optimizer; no resets at unfreeze",
+          "pin_memory": true,
+          "pretrained_backbone_initialization": "identical cached official weights across seeds",
+          "pretrained_required": true,
+          "scheduler_and_early_stopping": "active from epoch 1; no resets at unfreeze",
+          "warmup_batchnorm_policy": "backbone eval while frozen; train after unfreezing",
+          "warmup_counts_toward_maximum_epochs": true
+        },
+        "runtime": {
+          "deterministic": true,
+          "device": "cuda",
+          "num_threads": 2
+        },
+        "training": {
+          "batch_size": 16,
+          "epochs": 100,
+          "learning_rate": 0.0001,
+          "max_grad_norm": 3.0,
+          "min_delta": 0.0,
+          "patience": 20,
+          "scheduler_factor": 0.1,
+          "scheduler_patience": 5,
+          "weight_decay": 0.0001
+        }
+      },
+      "environment_sha256": "172c0fb72605a5fb2284e7bccfae82d2930799c55495dd53e2af0b19d3fdf705",
+      "family": "resnet50",
+      "fit_id": "fit_09f28df00b35804579926376",
+      "history_sha256": "f2d6d9c908162f15084c41918af27bcc2918dba3fd6aec41a2bdbbd13b41f442",
+      "input_sha256": "b45720436baf55fff87de8623b9ab92629166fa8c6d35725198a9236cef1a978",
+      "last_checkpoint_sha256": "b34aa37c3902bac0502107ab51e28d7aa3fcaa18c52073b06e15dc828853c879",
+      "manifest_index": 16,
+      "representation": "B_outer",
+      "seed": 3908275,
+      "validation_metrics": {
+        "accuracy": 0.7333333333333333,
+        "balanced_accuracy": 0.7235681114551084,
+        "confusion_matrix_true_rows_predicted_columns": [
+          [
+            19,
+            0,
+            1,
+            0
+          ],
+          [
+            5,
+            14,
+            0,
+            0
+          ],
+          [
+            3,
+            3,
+            8,
+            3
+          ],
+          [
+            0,
+            2,
+            3,
+            14
+          ]
+        ],
+        "macro_f1": 0.7187136648174606,
+        "per_class": {
+          "f1": [
+            0.8085106382978723,
+            0.7368421052631579,
+            0.5517241379310345,
+            0.7777777777777778
+          ],
+          "precision": [
+            0.7037037037037037,
+            0.7368421052631579,
+            0.6666666666666666,
+            0.8235294117647058
+          ],
+          "recall": [
+            0.95,
+            0.7368421052631579,
+            0.47058823529411764,
+            0.7368421052631579
+          ],
+          "support": [
+            20,
+            19,
+            17,
+            19
+          ]
+        },
+        "probability_rows": 75,
+        "weighted_validation_loss": 1.1324550947296939
+      },
+      "validation_prediction_sha256": "ef9b1edb5ddc299d00e7693de5eb9bb39c3ca835f212c424aa83009f2cc68829"
+    },
+    {
+      "checkpoint_path": "rebuild/dataset_v2j2_control_fits/fit_attempts/fit_4a7775f90e30526eef85d030/attempt_01/best.pt",
+      "checkpoint_sha256": "729da0d3a3ad8152501904351646f31359fe0a0997bc4a9279423cfc55934dbc",
+      "checkpoint_size_bytes": 282676213,
+      "configuration_id": "resnet50_ddc5866488e57f18",
+      "configuration_sha256": "dbe456b4fce9bde0bab0b9adc1b7630f57770114454577cf1d735e728cf6f16c",
+      "effective_parameters": {
+        "model": {
+          "architecture": "torchvision.models.resnet50",
+          "data_loader_workers": 8,
+          "decay_policy": "all optimized parameters; decoupled weight decay",
+          "family": "resnet50",
+          "head": "fc: Linear(2048,4)",
+          "head_initialization": "seeded default nn.Linear initialization after backbone load",
+          "head_lr_multiplier": 10.0,
+          "head_only_warmup_epochs": 0,
+          "name": "resnet50_ddc5866488e57f18",
+          "optimizer": "AdamW",
+          "optimizer_betas": [
+            0.9,
+            0.999
+          ],
+          "optimizer_epsilon": 1e-08,
+          "optimizer_state_policy": "one optimizer; no resets at unfreeze",
+          "pin_memory": true,
+          "pretrained_backbone_initialization": "identical cached official weights across seeds",
+          "pretrained_required": true,
+          "scheduler_and_early_stopping": "active from epoch 1; no resets at unfreeze",
+          "warmup_batchnorm_policy": "backbone eval while frozen; train after unfreezing",
+          "warmup_counts_toward_maximum_epochs": true
+        },
+        "runtime": {
+          "deterministic": true,
+          "device": "cuda",
+          "num_threads": 2
+        },
+        "training": {
+          "batch_size": 16,
+          "epochs": 100,
+          "learning_rate": 0.0001,
+          "max_grad_norm": 3.0,
+          "min_delta": 0.0,
+          "patience": 20,
+          "scheduler_factor": 0.1,
+          "scheduler_patience": 5,
+          "weight_decay": 0.0001
+        }
+      },
+      "environment_sha256": "172c0fb72605a5fb2284e7bccfae82d2930799c55495dd53e2af0b19d3fdf705",
+      "family": "resnet50",
+      "fit_id": "fit_4a7775f90e30526eef85d030",
+      "history_sha256": "344f4699d1b70e56fa338ba0b09441d4bec12698ac4f98a5838f0c630f38a5ef",
+      "input_sha256": "b45720436baf55fff87de8623b9ab92629166fa8c6d35725198a9236cef1a978",
+      "last_checkpoint_sha256": "9e5bce808ba7d82e98ac806a5fae6ced61f48bfdb2295f0d99ded6ea9d8ee0a2",
+      "manifest_index": 17,
+      "representation": "B_outer",
+      "seed": 3908276,
+      "validation_metrics": {
+        "accuracy": 0.6933333333333334,
+        "balanced_accuracy": 0.6885061919504645,
+        "confusion_matrix_true_rows_predicted_columns": [
+          [
+            17,
+            2,
+            0,
+            1
+          ],
+          [
+            4,
+            11,
+            0,
+            4
+          ],
+          [
+            4,
+            1,
+            10,
+            2
+          ],
+          [
+            0,
+            2,
+            3,
+            14
+          ]
+        ],
+        "macro_f1": 0.6876984126984127,
+        "per_class": {
+          "f1": [
+            0.7555555555555555,
+            0.6285714285714286,
+            0.6666666666666666,
+            0.7
+          ],
+          "precision": [
+            0.68,
+            0.6875,
+            0.7692307692307693,
+            0.6666666666666666
+          ],
+          "recall": [
+            0.85,
+            0.5789473684210527,
+            0.5882352941176471,
+            0.7368421052631579
+          ],
+          "support": [
+            20,
+            19,
+            17,
+            19
+          ]
+        },
+        "probability_rows": 75,
+        "weighted_validation_loss": 1.044676118155691
+      },
+      "validation_prediction_sha256": "23d104697c0ed01e169ac1d767a87d3ceabd4a86d309de06ebd607a2b85c946e"
+    },
+    {
+      "checkpoint_path": "rebuild/dataset_v2j2_control_fits/fit_attempts/fit_c3eaff12fe8a87c2111aa80a/attempt_01/best.pt",
+      "checkpoint_sha256": "4f7b2594c424be8381da6eccc5a10822e0c3f4cf7d875a69eec887786479cff7",
+      "checkpoint_size_bytes": 1029831163,
+      "configuration_id": "vit_b_16_ed7ae4a374295b2c",
+      "configuration_sha256": "753dffdef91a6b6046872a098c78f67e04e0f5a53eaa239a0734f525f0b3aca8",
+      "effective_parameters": {
+        "model": {
+          "architecture": "torchvision.models.vit_b_16",
+          "data_loader_workers": 8,
+          "decay_policy": "all optimized parameters; decoupled weight decay",
+          "family": "vit_b_16",
+          "head": "heads.head: Linear(768,4)",
+          "head_initialization": "seeded default nn.Linear initialization after backbone load",
+          "head_lr_multiplier": 10.0,
+          "head_only_warmup_epochs": 0,
+          "name": "vit_b_16_ed7ae4a374295b2c",
+          "optimizer": "AdamW",
+          "optimizer_betas": [
+            0.9,
+            0.999
+          ],
+          "optimizer_epsilon": 1e-08,
+          "optimizer_state_policy": "one optimizer; no resets at unfreeze",
+          "pin_memory": true,
+          "pretrained_backbone_initialization": "identical cached official weights across seeds",
+          "pretrained_required": true,
+          "scheduler_and_early_stopping": "active from epoch 1; no resets at unfreeze",
+          "warmup_batchnorm_policy": "backbone eval while frozen; train after unfreezing",
+          "warmup_counts_toward_maximum_epochs": true
+        },
+        "runtime": {
+          "deterministic": true,
+          "device": "cuda",
+          "num_threads": 2
+        },
+        "training": {
+          "batch_size": 16,
+          "epochs": 100,
+          "learning_rate": 3e-05,
+          "max_grad_norm": 3.0,
+          "min_delta": 0.0,
+          "patience": 20,
+          "scheduler_factor": 0.1,
+          "scheduler_patience": 5,
+          "weight_decay": 0.05
+        }
+      },
+      "environment_sha256": "172c0fb72605a5fb2284e7bccfae82d2930799c55495dd53e2af0b19d3fdf705",
+      "family": "vit_b_16",
+      "fit_id": "fit_c3eaff12fe8a87c2111aa80a",
+      "history_sha256": "fc7d727ab7edaac792633309107d6e0192b03a0f3f53ab524b35eea9cb32cec4",
+      "input_sha256": "88dade9e0a7b170cd779c1e0b802f9995ddbed0839db4ce530bb48db11ba571a",
+      "last_checkpoint_sha256": "330711931128237346a9667885f2857350da19717a31c912b2113dd05f92ee30",
+      "manifest_index": 18,
+      "representation": "B",
+      "seed": 3908274,
+      "validation_metrics": {
+        "accuracy": 0.7333333333333333,
+        "balanced_accuracy": 0.7291021671826625,
+        "confusion_matrix_true_rows_predicted_columns": [
+          [
+            20,
+            0,
+            0,
+            0
+          ],
+          [
+            5,
+            11,
+            0,
+            3
+          ],
+          [
+            0,
+            2,
+            12,
+            3
+          ],
+          [
+            1,
+            1,
+            5,
+            12
+          ]
+        ],
+        "macro_f1": 0.722690721411949,
+        "per_class": {
+          "f1": [
+            0.8695652173913043,
+            0.6666666666666666,
+            0.7058823529411765,
+            0.6486486486486487
+          ],
+          "precision": [
+            0.7692307692307693,
+            0.7857142857142857,
+            0.7058823529411765,
+            0.6666666666666666
+          ],
+          "recall": [
+            1.0,
+            0.5789473684210527,
+            0.7058823529411765,
+            0.631578947368421
+          ],
+          "support": [
+            20,
+            19,
+            17,
+            19
+          ]
+        },
+        "probability_rows": 75,
+        "weighted_validation_loss": 0.7910520440060645
+      },
+      "validation_prediction_sha256": "a45634968da7861f3f2d77fe1c2575c26412ed9a366fe570faa2c9e3281bd26b"
+    },
+    {
+      "checkpoint_path": "rebuild/dataset_v2j2_control_fits/fit_attempts/fit_31ef249e2972fa29d8e000d9/attempt_01/best.pt",
+      "checkpoint_sha256": "da78a5ba4fd8bdcc57bfb466f6a1b596b696e685435c7ab4032455296ce409ab",
+      "checkpoint_size_bytes": 1029830203,
+      "configuration_id": "vit_b_16_ed7ae4a374295b2c",
+      "configuration_sha256": "753dffdef91a6b6046872a098c78f67e04e0f5a53eaa239a0734f525f0b3aca8",
+      "effective_parameters": {
+        "model": {
+          "architecture": "torchvision.models.vit_b_16",
+          "data_loader_workers": 8,
+          "decay_policy": "all optimized parameters; decoupled weight decay",
+          "family": "vit_b_16",
+          "head": "heads.head: Linear(768,4)",
+          "head_initialization": "seeded default nn.Linear initialization after backbone load",
+          "head_lr_multiplier": 10.0,
+          "head_only_warmup_epochs": 0,
+          "name": "vit_b_16_ed7ae4a374295b2c",
+          "optimizer": "AdamW",
+          "optimizer_betas": [
+            0.9,
+            0.999
+          ],
+          "optimizer_epsilon": 1e-08,
+          "optimizer_state_policy": "one optimizer; no resets at unfreeze",
+          "pin_memory": true,
+          "pretrained_backbone_initialization": "identical cached official weights across seeds",
+          "pretrained_required": true,
+          "scheduler_and_early_stopping": "active from epoch 1; no resets at unfreeze",
+          "warmup_batchnorm_policy": "backbone eval while frozen; train after unfreezing",
+          "warmup_counts_toward_maximum_epochs": true
+        },
+        "runtime": {
+          "deterministic": true,
+          "device": "cuda",
+          "num_threads": 2
+        },
+        "training": {
+          "batch_size": 16,
+          "epochs": 100,
+          "learning_rate": 3e-05,
+          "max_grad_norm": 3.0,
+          "min_delta": 0.0,
+          "patience": 20,
+          "scheduler_factor": 0.1,
+          "scheduler_patience": 5,
+          "weight_decay": 0.05
+        }
+      },
+      "environment_sha256": "172c0fb72605a5fb2284e7bccfae82d2930799c55495dd53e2af0b19d3fdf705",
+      "family": "vit_b_16",
+      "fit_id": "fit_31ef249e2972fa29d8e000d9",
+      "history_sha256": "af275bcc9b04079da395eb47b4542dd03355a90fb7c3bf3f50edf180fb67d17e",
+      "input_sha256": "88dade9e0a7b170cd779c1e0b802f9995ddbed0839db4ce530bb48db11ba571a",
+      "last_checkpoint_sha256": "151ea7c3ba9a1205e3c32fd4e09303a60e5bcd933c126858f0deafe9270035a9",
+      "manifest_index": 19,
+      "representation": "B",
+      "seed": 3908275,
+      "validation_metrics": {
+        "accuracy": 0.7866666666666666,
+        "balanced_accuracy": 0.7854876160990713,
+        "confusion_matrix_true_rows_predicted_columns": [
+          [
+            19,
+            0,
+            1,
+            0
+          ],
+          [
+            4,
+            12,
+            1,
+            2
+          ],
+          [
+            0,
+            2,
+            14,
+            1
+          ],
+          [
+            0,
+            1,
+            4,
+            14
+          ]
+        ],
+        "macro_f1": 0.7810344544270673,
+        "per_class": {
+          "f1": [
+            0.8837209302325582,
+            0.7058823529411765,
+            0.7567567567567568,
+            0.7777777777777778
+          ],
+          "precision": [
+            0.8260869565217391,
+            0.8,
+            0.7,
+            0.8235294117647058
+          ],
+          "recall": [
+            0.95,
+            0.631578947368421,
+            0.8235294117647058,
+            0.7368421052631579
+          ],
+          "support": [
+            20,
+            19,
+            17,
+            19
+          ]
+        },
+        "probability_rows": 75,
+        "weighted_validation_loss": 0.6848231956114371
+      },
+      "validation_prediction_sha256": "26ef40b2a4107a93fccb5a475b80aafb91f471ce8b11d8641b3bae28ffb67f59"
+    },
+    {
+      "checkpoint_path": "rebuild/dataset_v2j2_control_fits/fit_attempts/fit_8aa8874f65dee402239b2391/attempt_01/best.pt",
+      "checkpoint_sha256": "876e9b6b69a2882276e6ddd703374c5366d8511ef7f5f662607cad1b7aa6bf91",
+      "checkpoint_size_bytes": 1029830587,
+      "configuration_id": "vit_b_16_ed7ae4a374295b2c",
+      "configuration_sha256": "753dffdef91a6b6046872a098c78f67e04e0f5a53eaa239a0734f525f0b3aca8",
+      "effective_parameters": {
+        "model": {
+          "architecture": "torchvision.models.vit_b_16",
+          "data_loader_workers": 8,
+          "decay_policy": "all optimized parameters; decoupled weight decay",
+          "family": "vit_b_16",
+          "head": "heads.head: Linear(768,4)",
+          "head_initialization": "seeded default nn.Linear initialization after backbone load",
+          "head_lr_multiplier": 10.0,
+          "head_only_warmup_epochs": 0,
+          "name": "vit_b_16_ed7ae4a374295b2c",
+          "optimizer": "AdamW",
+          "optimizer_betas": [
+            0.9,
+            0.999
+          ],
+          "optimizer_epsilon": 1e-08,
+          "optimizer_state_policy": "one optimizer; no resets at unfreeze",
+          "pin_memory": true,
+          "pretrained_backbone_initialization": "identical cached official weights across seeds",
+          "pretrained_required": true,
+          "scheduler_and_early_stopping": "active from epoch 1; no resets at unfreeze",
+          "warmup_batchnorm_policy": "backbone eval while frozen; train after unfreezing",
+          "warmup_counts_toward_maximum_epochs": true
+        },
+        "runtime": {
+          "deterministic": true,
+          "device": "cuda",
+          "num_threads": 2
+        },
+        "training": {
+          "batch_size": 16,
+          "epochs": 100,
+          "learning_rate": 3e-05,
+          "max_grad_norm": 3.0,
+          "min_delta": 0.0,
+          "patience": 20,
+          "scheduler_factor": 0.1,
+          "scheduler_patience": 5,
+          "weight_decay": 0.05
+        }
+      },
+      "environment_sha256": "172c0fb72605a5fb2284e7bccfae82d2930799c55495dd53e2af0b19d3fdf705",
+      "family": "vit_b_16",
+      "fit_id": "fit_8aa8874f65dee402239b2391",
+      "history_sha256": "2f7d02edd88df71a5971f6b8974d75f7a46db98a5dd8c9fab7babd57f8d139d4",
+      "input_sha256": "88dade9e0a7b170cd779c1e0b802f9995ddbed0839db4ce530bb48db11ba571a",
+      "last_checkpoint_sha256": "ce92670a6120c2476f1794e9706ba51a0e435afe0038c9ec97c04cd97ac9f186",
+      "manifest_index": 20,
+      "representation": "B",
+      "seed": 3908276,
+      "validation_metrics": {
+        "accuracy": 0.8,
+        "balanced_accuracy": 0.7995356037151702,
+        "confusion_matrix_true_rows_predicted_columns": [
+          [
+            20,
+            0,
+            0,
+            0
+          ],
+          [
+            5,
+            12,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            15,
+            2
+          ],
+          [
+            1,
+            1,
+            4,
+            13
+          ]
+        ],
+        "macro_f1": 0.793780193236715,
+        "per_class": {
+          "f1": [
+            0.8695652173913043,
+            0.75,
+            0.8333333333333334,
+            0.7222222222222222
+          ],
+          "precision": [
+            0.7692307692307693,
+            0.9230769230769231,
+            0.7894736842105263,
+            0.7647058823529411
+          ],
+          "recall": [
+            1.0,
+            0.631578947368421,
+            0.8823529411764706,
+            0.6842105263157895
+          ],
+          "support": [
+            20,
+            19,
+            17,
+            19
+          ]
+        },
+        "probability_rows": 75,
+        "weighted_validation_loss": 0.8160338486218826
+      },
+      "validation_prediction_sha256": "e1fdc5561719bd47e9d9d4196fc28e604bd626c73bb3d94eeca0e601cdf29101"
+    },
+    {
+      "checkpoint_path": "rebuild/dataset_v2j2_control_fits/fit_attempts/fit_1467a7b366862a0f838a16b1/attempt_01/best.pt",
+      "checkpoint_sha256": "a2f8a5a7c165a569cf6ca6d314e34441fd8b771c11bd4b1d2cd8e47250b94991",
+      "checkpoint_size_bytes": 1029830203,
+      "configuration_id": "vit_b_16_ed7ae4a374295b2c",
+      "configuration_sha256": "753dffdef91a6b6046872a098c78f67e04e0f5a53eaa239a0734f525f0b3aca8",
+      "effective_parameters": {
+        "model": {
+          "architecture": "torchvision.models.vit_b_16",
+          "data_loader_workers": 8,
+          "decay_policy": "all optimized parameters; decoupled weight decay",
+          "family": "vit_b_16",
+          "head": "heads.head: Linear(768,4)",
+          "head_initialization": "seeded default nn.Linear initialization after backbone load",
+          "head_lr_multiplier": 10.0,
+          "head_only_warmup_epochs": 0,
+          "name": "vit_b_16_ed7ae4a374295b2c",
+          "optimizer": "AdamW",
+          "optimizer_betas": [
+            0.9,
+            0.999
+          ],
+          "optimizer_epsilon": 1e-08,
+          "optimizer_state_policy": "one optimizer; no resets at unfreeze",
+          "pin_memory": true,
+          "pretrained_backbone_initialization": "identical cached official weights across seeds",
+          "pretrained_required": true,
+          "scheduler_and_early_stopping": "active from epoch 1; no resets at unfreeze",
+          "warmup_batchnorm_policy": "backbone eval while frozen; train after unfreezing",
+          "warmup_counts_toward_maximum_epochs": true
+        },
+        "runtime": {
+          "deterministic": true,
+          "device": "cuda",
+          "num_threads": 2
+        },
+        "training": {
+          "batch_size": 16,
+          "epochs": 100,
+          "learning_rate": 3e-05,
+          "max_grad_norm": 3.0,
+          "min_delta": 0.0,
+          "patience": 20,
+          "scheduler_factor": 0.1,
+          "scheduler_patience": 5,
+          "weight_decay": 0.05
+        }
+      },
+      "environment_sha256": "172c0fb72605a5fb2284e7bccfae82d2930799c55495dd53e2af0b19d3fdf705",
+      "family": "vit_b_16",
+      "fit_id": "fit_1467a7b366862a0f838a16b1",
+      "history_sha256": "0fd4618a9651ef276a874894f1cdb12443dece3716739af1a9f90a55db7aa068",
+      "input_sha256": "8c7989cbb0e8eecb42a632dc344026ea2881e693d4d9cd825f9d2b9f515860ae",
+      "last_checkpoint_sha256": "715c42199b03ac43db4dcc61c09580238f9bea1b4f50f72a56e399c1d941b1d1",
+      "manifest_index": 21,
+      "representation": "A_outer",
+      "seed": 3908274,
+      "validation_metrics": {
+        "accuracy": 0.76,
+        "balanced_accuracy": 0.7538699690402477,
+        "confusion_matrix_true_rows_predicted_columns": [
+          [
+            20,
+            0,
+            0,
+            0
+          ],
+          [
+            4,
+            14,
+            0,
+            1
+          ],
+          [
+            2,
+            2,
+            11,
+            2
+          ],
+          [
+            0,
+            2,
+            5,
+            12
+          ]
+        ],
+        "macro_f1": 0.7497177484389761,
+        "per_class": {
+          "f1": [
+            0.8695652173913043,
+            0.7567567567567568,
+            0.6666666666666666,
+            0.7058823529411765
+          ],
+          "precision": [
+            0.7692307692307693,
+            0.7777777777777778,
+            0.6875,
+            0.8
+          ],
+          "recall": [
+            1.0,
+            0.7368421052631579,
+            0.6470588235294118,
+            0.631578947368421
+          ],
+          "support": [
+            20,
+            19,
+            17,
+            19
+          ]
+        },
+        "probability_rows": 75,
+        "weighted_validation_loss": 0.6951798352537056
+      },
+      "validation_prediction_sha256": "9f6403cd0868eb78dc5ca16bd297c37b122d60e0edf9ea65fa83b776252a487a"
+    },
+    {
+      "checkpoint_path": "rebuild/dataset_v2j2_control_fits/fit_attempts/fit_8c7586b841cea83eabdff326/attempt_01/best.pt",
+      "checkpoint_sha256": "c173a3fc42b1820317268c1d2a96f2b470e3f2a5c005910cbd51966cde1d87ab",
+      "checkpoint_size_bytes": 1029830715,
+      "configuration_id": "vit_b_16_ed7ae4a374295b2c",
+      "configuration_sha256": "753dffdef91a6b6046872a098c78f67e04e0f5a53eaa239a0734f525f0b3aca8",
+      "effective_parameters": {
+        "model": {
+          "architecture": "torchvision.models.vit_b_16",
+          "data_loader_workers": 8,
+          "decay_policy": "all optimized parameters; decoupled weight decay",
+          "family": "vit_b_16",
+          "head": "heads.head: Linear(768,4)",
+          "head_initialization": "seeded default nn.Linear initialization after backbone load",
+          "head_lr_multiplier": 10.0,
+          "head_only_warmup_epochs": 0,
+          "name": "vit_b_16_ed7ae4a374295b2c",
+          "optimizer": "AdamW",
+          "optimizer_betas": [
+            0.9,
+            0.999
+          ],
+          "optimizer_epsilon": 1e-08,
+          "optimizer_state_policy": "one optimizer; no resets at unfreeze",
+          "pin_memory": true,
+          "pretrained_backbone_initialization": "identical cached official weights across seeds",
+          "pretrained_required": true,
+          "scheduler_and_early_stopping": "active from epoch 1; no resets at unfreeze",
+          "warmup_batchnorm_policy": "backbone eval while frozen; train after unfreezing",
+          "warmup_counts_toward_maximum_epochs": true
+        },
+        "runtime": {
+          "deterministic": true,
+          "device": "cuda",
+          "num_threads": 2
+        },
+        "training": {
+          "batch_size": 16,
+          "epochs": 100,
+          "learning_rate": 3e-05,
+          "max_grad_norm": 3.0,
+          "min_delta": 0.0,
+          "patience": 20,
+          "scheduler_factor": 0.1,
+          "scheduler_patience": 5,
+          "weight_decay": 0.05
+        }
+      },
+      "environment_sha256": "172c0fb72605a5fb2284e7bccfae82d2930799c55495dd53e2af0b19d3fdf705",
+      "family": "vit_b_16",
+      "fit_id": "fit_8c7586b841cea83eabdff326",
+      "history_sha256": "58a2ba7d7fa5492e5170b8d7ac8a47ff543c3be3becfa3b77e2803e97b7ba183",
+      "input_sha256": "8c7989cbb0e8eecb42a632dc344026ea2881e693d4d9cd825f9d2b9f515860ae",
+      "last_checkpoint_sha256": "5d076e8494f817207559b4ab38a4c79c7763b98048dc6e648b9f70406e3b2c4c",
+      "manifest_index": 22,
+      "representation": "A_outer",
+      "seed": 3908275,
+      "validation_metrics": {
+        "accuracy": 0.7733333333333333,
+        "balanced_accuracy": 0.768343653250774,
+        "confusion_matrix_true_rows_predicted_columns": [
+          [
+            18,
+            2,
+            0,
+            0
+          ],
+          [
+            3,
+            15,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            11,
+            5
+          ],
+          [
+            0,
+            1,
+            4,
+            14
+          ]
+        ],
+        "macro_f1": 0.7682427956617623,
+        "per_class": {
+          "f1": [
+            0.8780487804878049,
+            0.7894736842105263,
+            0.6875,
+            0.717948717948718
+          ],
+          "precision": [
+            0.8571428571428571,
+            0.7894736842105263,
+            0.7333333333333333,
+            0.7
+          ],
+          "recall": [
+            0.9,
+            0.7894736842105263,
+            0.6470588235294118,
+            0.7368421052631579
+          ],
+          "support": [
+            20,
+            19,
+            17,
+            19
+          ]
+        },
+        "probability_rows": 75,
+        "weighted_validation_loss": 0.6515308088250458
+      },
+      "validation_prediction_sha256": "090969a1cb531266d11b491f4e31623d53e9cf96cbbaf37d5d00c594a4f78128"
+    },
+    {
+      "checkpoint_path": "rebuild/dataset_v2j2_control_fits/fit_attempts/fit_998a9d132c5b44349ee380e4/attempt_01/best.pt",
+      "checkpoint_sha256": "070bb6ec432fa05239bc3ed9c95c83aaada3e92497f24cc8f2befd3d0e895b49",
+      "checkpoint_size_bytes": 1029830267,
+      "configuration_id": "vit_b_16_ed7ae4a374295b2c",
+      "configuration_sha256": "753dffdef91a6b6046872a098c78f67e04e0f5a53eaa239a0734f525f0b3aca8",
+      "effective_parameters": {
+        "model": {
+          "architecture": "torchvision.models.vit_b_16",
+          "data_loader_workers": 8,
+          "decay_policy": "all optimized parameters; decoupled weight decay",
+          "family": "vit_b_16",
+          "head": "heads.head: Linear(768,4)",
+          "head_initialization": "seeded default nn.Linear initialization after backbone load",
+          "head_lr_multiplier": 10.0,
+          "head_only_warmup_epochs": 0,
+          "name": "vit_b_16_ed7ae4a374295b2c",
+          "optimizer": "AdamW",
+          "optimizer_betas": [
+            0.9,
+            0.999
+          ],
+          "optimizer_epsilon": 1e-08,
+          "optimizer_state_policy": "one optimizer; no resets at unfreeze",
+          "pin_memory": true,
+          "pretrained_backbone_initialization": "identical cached official weights across seeds",
+          "pretrained_required": true,
+          "scheduler_and_early_stopping": "active from epoch 1; no resets at unfreeze",
+          "warmup_batchnorm_policy": "backbone eval while frozen; train after unfreezing",
+          "warmup_counts_toward_maximum_epochs": true
+        },
+        "runtime": {
+          "deterministic": true,
+          "device": "cuda",
+          "num_threads": 2
+        },
+        "training": {
+          "batch_size": 16,
+          "epochs": 100,
+          "learning_rate": 3e-05,
+          "max_grad_norm": 3.0,
+          "min_delta": 0.0,
+          "patience": 20,
+          "scheduler_factor": 0.1,
+          "scheduler_patience": 5,
+          "weight_decay": 0.05
+        }
+      },
+      "environment_sha256": "172c0fb72605a5fb2284e7bccfae82d2930799c55495dd53e2af0b19d3fdf705",
+      "family": "vit_b_16",
+      "fit_id": "fit_998a9d132c5b44349ee380e4",
+      "history_sha256": "1ba06d994a5293e7a3b60f374ff1d932b2fda762a4a3497e6904f3dbdd05d3a7",
+      "input_sha256": "8c7989cbb0e8eecb42a632dc344026ea2881e693d4d9cd825f9d2b9f515860ae",
+      "last_checkpoint_sha256": "18d04bc70aeec59dc6cef9470bdd3938ebcab0d375de4710934b04515244de7c",
+      "manifest_index": 23,
+      "representation": "A_outer",
+      "seed": 3908276,
+      "validation_metrics": {
+        "accuracy": 0.8,
+        "balanced_accuracy": 0.791795665634675,
+        "confusion_matrix_true_rows_predicted_columns": [
+          [
+            20,
+            0,
+            0,
+            0
+          ],
+          [
+            4,
+            14,
+            0,
+            1
+          ],
+          [
+            1,
+            1,
+            10,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            16
+          ]
+        ],
+        "macro_f1": 0.7897579665451826,
+        "per_class": {
+          "f1": [
+            0.8888888888888888,
+            0.8,
+            0.6896551724137931,
+            0.7804878048780488
+          ],
+          "precision": [
+            0.8,
+            0.875,
+            0.8333333333333334,
+            0.7272727272727273
+          ],
+          "recall": [
+            1.0,
+            0.7368421052631579,
+            0.5882352941176471,
+            0.8421052631578947
+          ],
+          "support": [
+            20,
+            19,
+            17,
+            19
+          ]
+        },
+        "probability_rows": 75,
+        "weighted_validation_loss": 0.6554745548591018
+      },
+      "validation_prediction_sha256": "e5a2b6e40a7fe4e9249fe9e0308d2ddbe4ed62355168b9e78dff7fd53b42ec01"
+    },
+    {
+      "checkpoint_path": "rebuild/dataset_v2j2_control_fits/fit_attempts/fit_022bee7a649e24d8eb265492/attempt_01/best.pt",
+      "checkpoint_sha256": "1d162e823dce9bcc53b122bbc023974d320e2ca64dc9a98b8caa77f1ddcc1412",
+      "checkpoint_size_bytes": 1029832955,
+      "configuration_id": "vit_b_16_ed7ae4a374295b2c",
+      "configuration_sha256": "753dffdef91a6b6046872a098c78f67e04e0f5a53eaa239a0734f525f0b3aca8",
+      "effective_parameters": {
+        "model": {
+          "architecture": "torchvision.models.vit_b_16",
+          "data_loader_workers": 8,
+          "decay_policy": "all optimized parameters; decoupled weight decay",
+          "family": "vit_b_16",
+          "head": "heads.head: Linear(768,4)",
+          "head_initialization": "seeded default nn.Linear initialization after backbone load",
+          "head_lr_multiplier": 10.0,
+          "head_only_warmup_epochs": 0,
+          "name": "vit_b_16_ed7ae4a374295b2c",
+          "optimizer": "AdamW",
+          "optimizer_betas": [
+            0.9,
+            0.999
+          ],
+          "optimizer_epsilon": 1e-08,
+          "optimizer_state_policy": "one optimizer; no resets at unfreeze",
+          "pin_memory": true,
+          "pretrained_backbone_initialization": "identical cached official weights across seeds",
+          "pretrained_required": true,
+          "scheduler_and_early_stopping": "active from epoch 1; no resets at unfreeze",
+          "warmup_batchnorm_policy": "backbone eval while frozen; train after unfreezing",
+          "warmup_counts_toward_maximum_epochs": true
+        },
+        "runtime": {
+          "deterministic": true,
+          "device": "cuda",
+          "num_threads": 2
+        },
+        "training": {
+          "batch_size": 16,
+          "epochs": 100,
+          "learning_rate": 3e-05,
+          "max_grad_norm": 3.0,
+          "min_delta": 0.0,
+          "patience": 20,
+          "scheduler_factor": 0.1,
+          "scheduler_patience": 5,
+          "weight_decay": 0.05
+        }
+      },
+      "environment_sha256": "172c0fb72605a5fb2284e7bccfae82d2930799c55495dd53e2af0b19d3fdf705",
+      "family": "vit_b_16",
+      "fit_id": "fit_022bee7a649e24d8eb265492",
+      "history_sha256": "afae836d49655c667104e0a7f0d63e2d357ff14dcbad8b1a10634b6ee2a22248",
+      "input_sha256": "b45720436baf55fff87de8623b9ab92629166fa8c6d35725198a9236cef1a978",
+      "last_checkpoint_sha256": "aff712a1d612c80b8ea4ae83b288b98cee53ae67247bc92191fe29475c8ad14a",
+      "manifest_index": 24,
+      "representation": "B_outer",
+      "seed": 3908274,
+      "validation_metrics": {
+        "accuracy": 0.72,
+        "balanced_accuracy": 0.7170278637770898,
+        "confusion_matrix_true_rows_predicted_columns": [
+          [
+            16,
+            2,
+            2,
+            0
+          ],
+          [
+            4,
+            13,
+            0,
+            2
+          ],
+          [
+            1,
+            3,
+            11,
+            2
+          ],
+          [
+            0,
+            3,
+            2,
+            14
+          ]
+        ],
+        "macro_f1": 0.7186861404087015,
+        "per_class": {
+          "f1": [
+            0.7804878048780488,
+            0.65,
+            0.6875,
+            0.7567567567567568
+          ],
+          "precision": [
+            0.7619047619047619,
+            0.6190476190476191,
+            0.7333333333333333,
+            0.7777777777777778
+          ],
+          "recall": [
+            0.8,
+            0.6842105263157895,
+            0.6470588235294118,
+            0.7368421052631579
+          ],
+          "support": [
+            20,
+            19,
+            17,
+            19
+          ]
+        },
+        "probability_rows": 75,
+        "weighted_validation_loss": 0.9484479725422958
+      },
+      "validation_prediction_sha256": "327a774af01df2565c7e0c8030e88a5ccd6543e78c0c603afbc1c5cfa272a208"
+    },
+    {
+      "checkpoint_path": "rebuild/dataset_v2j2_control_fits/fit_attempts/fit_684b017401f8317b2f1ff590/attempt_01/best.pt",
+      "checkpoint_sha256": "3158c7d4c1e597282f1142c9a4df4cdd018d6e779601a37989e6d0e887c14ecc",
+      "checkpoint_size_bytes": 1029832571,
+      "configuration_id": "vit_b_16_ed7ae4a374295b2c",
+      "configuration_sha256": "753dffdef91a6b6046872a098c78f67e04e0f5a53eaa239a0734f525f0b3aca8",
+      "effective_parameters": {
+        "model": {
+          "architecture": "torchvision.models.vit_b_16",
+          "data_loader_workers": 8,
+          "decay_policy": "all optimized parameters; decoupled weight decay",
+          "family": "vit_b_16",
+          "head": "heads.head: Linear(768,4)",
+          "head_initialization": "seeded default nn.Linear initialization after backbone load",
+          "head_lr_multiplier": 10.0,
+          "head_only_warmup_epochs": 0,
+          "name": "vit_b_16_ed7ae4a374295b2c",
+          "optimizer": "AdamW",
+          "optimizer_betas": [
+            0.9,
+            0.999
+          ],
+          "optimizer_epsilon": 1e-08,
+          "optimizer_state_policy": "one optimizer; no resets at unfreeze",
+          "pin_memory": true,
+          "pretrained_backbone_initialization": "identical cached official weights across seeds",
+          "pretrained_required": true,
+          "scheduler_and_early_stopping": "active from epoch 1; no resets at unfreeze",
+          "warmup_batchnorm_policy": "backbone eval while frozen; train after unfreezing",
+          "warmup_counts_toward_maximum_epochs": true
+        },
+        "runtime": {
+          "deterministic": true,
+          "device": "cuda",
+          "num_threads": 2
+        },
+        "training": {
+          "batch_size": 16,
+          "epochs": 100,
+          "learning_rate": 3e-05,
+          "max_grad_norm": 3.0,
+          "min_delta": 0.0,
+          "patience": 20,
+          "scheduler_factor": 0.1,
+          "scheduler_patience": 5,
+          "weight_decay": 0.05
+        }
+      },
+      "environment_sha256": "172c0fb72605a5fb2284e7bccfae82d2930799c55495dd53e2af0b19d3fdf705",
+      "family": "vit_b_16",
+      "fit_id": "fit_684b017401f8317b2f1ff590",
+      "history_sha256": "4027d94e1707899af9f82b3755ef0c57e8d41d825b41710a1c1cb2be540eeef4",
+      "input_sha256": "b45720436baf55fff87de8623b9ab92629166fa8c6d35725198a9236cef1a978",
+      "last_checkpoint_sha256": "8c7d257c27a188be821ff0364faf02ef42512767e19a7659a83df9a271c8982b",
+      "manifest_index": 25,
+      "representation": "B_outer",
+      "seed": 3908275,
+      "validation_metrics": {
+        "accuracy": 0.6533333333333333,
+        "balanced_accuracy": 0.6556501547987617,
+        "confusion_matrix_true_rows_predicted_columns": [
+          [
+            14,
+            0,
+            6,
+            0
+          ],
+          [
+            4,
+            10,
+            3,
+            2
+          ],
+          [
+            1,
+            2,
+            13,
+            1
+          ],
+          [
+            1,
+            1,
+            5,
+            12
+          ]
+        ],
+        "macro_f1": 0.6554478609625669,
+        "per_class": {
+          "f1": [
+            0.7,
+            0.625,
+            0.5909090909090909,
+            0.7058823529411765
+          ],
+          "precision": [
+            0.7,
+            0.7692307692307693,
+            0.48148148148148145,
+            0.8
+          ],
+          "recall": [
+            0.7,
+            0.5263157894736842,
+            0.7647058823529411,
+            0.631578947368421
+          ],
+          "support": [
+            20,
+            19,
+            17,
+            19
+          ]
+        },
+        "probability_rows": 75,
+        "weighted_validation_loss": 0.8880494619254022
+      },
+      "validation_prediction_sha256": "71f37e0c0f4844dc3cb34579ef23f49af0729c9d7e070779b4dc6181288e56f2"
+    },
+    {
+      "checkpoint_path": "rebuild/dataset_v2j2_control_fits/fit_attempts/fit_fb6f77ae6b88b2e90f000e57/attempt_01/best.pt",
+      "checkpoint_sha256": "8ab0af9e54eb7856c91dcf14c07aabea41f8ef574ce981dcc929289e7685e6f8",
+      "checkpoint_size_bytes": 1029832123,
+      "configuration_id": "vit_b_16_ed7ae4a374295b2c",
+      "configuration_sha256": "753dffdef91a6b6046872a098c78f67e04e0f5a53eaa239a0734f525f0b3aca8",
+      "effective_parameters": {
+        "model": {
+          "architecture": "torchvision.models.vit_b_16",
+          "data_loader_workers": 8,
+          "decay_policy": "all optimized parameters; decoupled weight decay",
+          "family": "vit_b_16",
+          "head": "heads.head: Linear(768,4)",
+          "head_initialization": "seeded default nn.Linear initialization after backbone load",
+          "head_lr_multiplier": 10.0,
+          "head_only_warmup_epochs": 0,
+          "name": "vit_b_16_ed7ae4a374295b2c",
+          "optimizer": "AdamW",
+          "optimizer_betas": [
+            0.9,
+            0.999
+          ],
+          "optimizer_epsilon": 1e-08,
+          "optimizer_state_policy": "one optimizer; no resets at unfreeze",
+          "pin_memory": true,
+          "pretrained_backbone_initialization": "identical cached official weights across seeds",
+          "pretrained_required": true,
+          "scheduler_and_early_stopping": "active from epoch 1; no resets at unfreeze",
+          "warmup_batchnorm_policy": "backbone eval while frozen; train after unfreezing",
+          "warmup_counts_toward_maximum_epochs": true
+        },
+        "runtime": {
+          "deterministic": true,
+          "device": "cuda",
+          "num_threads": 2
+        },
+        "training": {
+          "batch_size": 16,
+          "epochs": 100,
+          "learning_rate": 3e-05,
+          "max_grad_norm": 3.0,
+          "min_delta": 0.0,
+          "patience": 20,
+          "scheduler_factor": 0.1,
+          "scheduler_patience": 5,
+          "weight_decay": 0.05
+        }
+      },
+      "environment_sha256": "172c0fb72605a5fb2284e7bccfae82d2930799c55495dd53e2af0b19d3fdf705",
+      "family": "vit_b_16",
+      "fit_id": "fit_fb6f77ae6b88b2e90f000e57",
+      "history_sha256": "f03004e1a09c52cc6bc172b748855a2fc9c403d48d3f163c719898971ccca194",
+      "input_sha256": "b45720436baf55fff87de8623b9ab92629166fa8c6d35725198a9236cef1a978",
+      "last_checkpoint_sha256": "afd8bbf4bc9a3cdc5f1a1a1a0b6b5bab2adbb66de79cb510b700cbca46aaae21",
+      "manifest_index": 26,
+      "representation": "B_outer",
+      "seed": 3908276,
+      "validation_metrics": {
+        "accuracy": 0.7333333333333333,
+        "balanced_accuracy": 0.7264318885448917,
+        "confusion_matrix_true_rows_predicted_columns": [
+          [
+            17,
+            1,
+            2,
+            0
+          ],
+          [
+            4,
+            14,
+            0,
+            1
+          ],
+          [
+            2,
+            3,
+            9,
+            3
+          ],
+          [
+            0,
+            2,
+            2,
+            15
+          ]
+        ],
+        "macro_f1": 0.7245300191444621,
+        "per_class": {
+          "f1": [
+            0.7906976744186046,
+            0.717948717948718,
+            0.6,
+            0.7894736842105263
+          ],
+          "precision": [
+            0.7391304347826086,
+            0.7,
+            0.6923076923076923,
+            0.7894736842105263
+          ],
+          "recall": [
+            0.85,
+            0.7368421052631579,
+            0.5294117647058824,
+            0.7894736842105263
+          ],
+          "support": [
+            20,
+            19,
+            17,
+            19
+          ]
+        },
+        "probability_rows": 75,
+        "weighted_validation_loss": 0.8371938342476885
+      },
+      "validation_prediction_sha256": "aa97302cfa8698c068a6e84a1f15999c09afcd0a82339ef44f3788c98c5a08f5"
+    }
+  ],
+  "control_checkpoint_count": 27,
+  "control_slot_count": 27,
+  "families": [
+    "custom_cnn_transformer",
+    "resnet50",
+    "vit_b_16"
+  ],
+  "phase": "Dataset-v2J2",
+  "protocol_canonical_sha256": "6a4593c9e470f8eb61819a13d8fc82e74a4bfb662b5bb22ce9ca221d179b3737",
+  "representations": [
+    "B",
+    "A_outer",
+    "B_outer"
+  ],
+  "seeds": [
+    3908274,
+    3908275,
+    3908276
+  ],
+  "selected_checkpoint_manifest_file_sha256": "ab9d653923ee8b42af97fa99f4901d6ecf979cd7f83791bbec61dbb3d56fbb32",
+  "selection_digest": "cd45b0c9fbb1e6310b31410c5f3be5edf9e694a7737f17a6c95c0788381a580b",
+  "selection_from_control_results": false,
+  "status": "frozen_control_fits",
+  "test_data_accessed": false
+}

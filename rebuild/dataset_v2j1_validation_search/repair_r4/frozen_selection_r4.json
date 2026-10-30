@@ -1,0 +1,3834 @@
+{
+  "augmentation": {
+    "implementation_gate": "Before training, prove an implementation over stored v2H tensors is numerically equivalent to the frozen source-lattice operation; otherwise apply the transform on the frozen A 512 and B 16 lattices before sizing. Do not pre-materialize random views.",
+    "prohibited": [
+      "random crop",
+      "continuous rotation",
+      "brightness/contrast/color jitter",
+      "cutout",
+      "noise",
+      "mixup",
+      "test-time augmentation"
+    ],
+    "recipe": "v2F deterministic D4 keyed by SHA256 UTF-8 Dataset-v2F|augment|2026102303|physical_object_id|zero_based_epoch; first 8 bytes big endian modulo 8. Codes 0–3 are quarter-turn CCW; 4–7 mirror horizontally then rotate.",
+    "same_object_epoch_transform_for_all_channels_representations_architectures_and_seeds": true,
+    "train_only": true,
+    "validation_test": "identity"
+  },
+  "candidate_manifest_sha256": "e5032c7194e0f8479c0df6a355d6651f1fb5b90e8811429b992ebb3fbcb13572",
+  "class_order": [
+    "galaxies",
+    "globularclusters",
+    "nebulae",
+    "opencluster"
+  ],
+  "environment_sha256": "172c0fb72605a5fb2284e7bccfae82d2930799c55495dd53e2af0b19d3fdf705",
+  "families": [
+    {
+      "candidates": [
+        {
+          "configuration_id": "spatial-pooling-ablation-v3_spatial_transformer_grid8_mean_grad",
+          "configuration_sha256": "31f5d6d5612c855bc52c277d90a593960c4ee7922538908b554633062d437884",
+          "effective_parameters": {
+            "model": {
+              "adapter_version": "spatial-pooling-ablation-v3",
+              "additional_pooling": "mean_grad",
+              "attention_heads": 8,
+              "channels": [
+                128,
+                256,
+                512,
+                1024
+              ],
+              "claims_spatial_attention": true,
+              "contrast_epsilon": 1e-06,
+              "contrast_weight": 1.0,
+              "data_loader_workers": 8,
+              "embedding": 128,
+              "environment_digest": "6ff1d24a3e284556dde5099f452b2ff7f1081084f8d2c87d0e84e256e9c02adb",
+              "gate_policy": "none",
+              "gradient_policy": "forward_xy_zero_missing_neighbor",
+              "grid_size": 8,
+              "input_size": 256,
+              "name": "spatial-pooling-ablation-v3_spatial_transformer_grid8_mean_grad",
+              "native_grid_size": 16,
+              "optimizer": "Adam",
+              "pin_memory": true,
+              "pooling_factor": 2,
+              "pooling_policy": "mean_grad",
+              "pooling_trainable_parameters": 0,
+              "position_policy": "fixed separable 2D sinusoidal x/y encoding; see models_v1.py",
+              "positional_encoding": "fixed_2d_sinusoidal_xy_v1",
+              "pretrained": false,
+              "purpose": "pooling/grid development ablation; no test evaluation",
+              "source_digests": {
+                "rebuild/ablation.py": "8287aaf628a6511cd56677a22dc6e5d11df8a8071e4cb8156d154c5e65fa831b",
+                "rebuild/common.py": "c5aa62eff0a7533ebb511ada406ab2121f79c1aff2c7827c09795e97bde62508",
+                "rebuild/config.py": "1c53947636f39c824cd1903bd232006eedcef01d7434f90b493cd32a69615f57",
+                "rebuild/data.py": "a548fc303d7a992a533e4b9eff14bae3e2fdacb276a33d3fcb5250124f4bb58c",
+                "rebuild/evaluation.py": "f9362a149000d12b264cd38a051b52ef1f7007208c90aa7176a5298a62da1e97",
+                "rebuild/full.py": "d535aca7cfc6ff14d994fabb50b9e250d0551ab02defbc8e15ca17c261e51c21",
+                "rebuild/phase3b/data_v1.py": "95482ee67d8b6acddb908a8bb677adc854d624c5c09e663433189ab5bc99986d",
+                "rebuild/phase3d/models_v1.py": "a282c954284ccd12a7c94a1bcb67940fff30825ba95c938673965b62bb29f692",
+                "rebuild/phase3d/models_v2.py": "6a17fcf5c0319c4c10c6484659f169ce27c6ba4c3d2d1dba5dbd9fea02bbeb6f",
+                "rebuild/phase3d/models_v3.py": "e304b8ada45aef6143ce8acec4e3d1c441a6350d478927d7f68d4706cdf4a82a",
+                "rebuild/phase3d/pilot.py": "27c6548ad77c338193c39df4faddf5c99bf64c623b244331b199a07fad2cb0c3",
+                "rebuild/pooling_ablation.py": "b6f70d275056649959a57cb75c7829778e38fb861c7fbb713d6bc2f1fcdc4205",
+                "rebuild/training.py": "b7638b6da1ae21c994c739ae396ef5ba937baf643a23ba3dd32b47a47f105687"
+              },
+              "token_count": 64,
+              "transformer_layers": 2,
+              "variant": "spatial_transformer"
+            },
+            "runtime": {
+              "deterministic": true,
+              "device": "cuda",
+              "num_threads": 2
+            },
+            "training": {
+              "batch_size": 16,
+              "epochs": 100,
+              "learning_rate": 9e-05,
+              "max_grad_norm": 3.0,
+              "min_delta": 0.0,
+              "patience": 20,
+              "scheduler_factor": 0.1,
+              "scheduler_patience": 5,
+              "weight_decay": 5e-07
+            }
+          },
+          "family": "custom_cnn_transformer",
+          "mean_balanced_accuracy": 0.7641898864809081,
+          "mean_macro_f1": 0.7523946071538044,
+          "mean_weighted_validation_loss": 0.6627979597780439,
+          "per_seed": [
+            {
+              "accuracy": 0.76,
+              "balanced_accuracy": 0.7461300309597523,
+              "best_checkpoint_path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_c05073a85f17c6b4c0e378f2/attempt_03/best.pt",
+              "best_checkpoint_sha256": "429327cd27b1788b598b6df0dd55e3098942b299f7b9a5546f00176034983ea6",
+              "best_epoch": 46,
+              "fit_id": "fit_c05073a85f17c6b4c0e378f2",
+              "history_sha256": "0334437735ba4197a6e6329907e11a877328808cbda85d7b3284efc950a3d33b",
+              "macro_f1": 0.7330981833604298,
+              "seed": 3908274,
+              "validation_predictions_sha256": "07b924c88b80b14939592fda6a43cb1bcd3626fc0c857429109bb3829da51470",
+              "weighted_validation_loss": 0.6806909093260765
+            },
+            {
+              "accuracy": 0.7866666666666666,
+              "balanced_accuracy": 0.7724458204334366,
+              "best_checkpoint_path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_46c77751cd744157c900ce49/attempt_03/best.pt",
+              "best_checkpoint_sha256": "c60e04d53037b29e32f710b31d205d381aaa68e940e7564df2d5822029a75ac7",
+              "best_epoch": 27,
+              "fit_id": "fit_46c77751cd744157c900ce49",
+              "history_sha256": "65b629554ae8070810718d018f38b5e89bfd1939d9de834fc3e43ee98888b3fa",
+              "macro_f1": 0.7575972245537463,
+              "seed": 3908275,
+              "validation_predictions_sha256": "205b8560225639733be1e0ad413676f905799625cc4332a21fdc72d4d2514f9a",
+              "weighted_validation_loss": 0.6367863606413205
+            },
+            {
+              "accuracy": 0.7866666666666666,
+              "balanced_accuracy": 0.7739938080495355,
+              "best_checkpoint_path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_928e6367d59d3fe75b659283/attempt_03/best.pt",
+              "best_checkpoint_sha256": "a0c893fcf0d7db3fbffb3f3b7eb31d4362c25b2210dd7b208332d3bbe193407e",
+              "best_epoch": 14,
+              "fit_id": "fit_928e6367d59d3fe75b659283",
+              "history_sha256": "6a6c331dc61e597e1b50d5bdaa4a63dc4a455922821a10fadbc55026fd41a0db",
+              "macro_f1": 0.7664884135472371,
+              "seed": 3908276,
+              "validation_predictions_sha256": "085f4de78b6cd922e883a3a7e25cd0f18193a37bc5a39512e79233f55ab43616",
+              "weighted_validation_loss": 0.6709166093667348
+            }
+          ],
+          "sample_sd_balanced_accuracy_ddof1": 0.015659433339002618,
+          "sample_variance_balanced_accuracy_ddof1": 0.00024521785249866665,
+          "seed_ids": [
+            3908274,
+            3908275,
+            3908276
+          ],
+          "validation_rank": 1
+        },
+        {
+          "configuration_id": "spatial-pooling-ablation-v3_spatial_transformer_grid8_avg",
+          "configuration_sha256": "91282870f8cee907e62da35464f39aafa08cc2afff3ea250c464b26fca857d96",
+          "effective_parameters": {
+            "model": {
+              "adapter_version": "spatial-pooling-ablation-v3",
+              "additional_pooling": "avg",
+              "attention_heads": 8,
+              "channels": [
+                128,
+                256,
+                512,
+                1024
+              ],
+              "claims_spatial_attention": true,
+              "contrast_epsilon": 0.0,
+              "contrast_weight": 0.0,
+              "data_loader_workers": 8,
+              "embedding": 128,
+              "environment_digest": "6ff1d24a3e284556dde5099f452b2ff7f1081084f8d2c87d0e84e256e9c02adb",
+              "gate_policy": "none",
+              "gradient_policy": "none",
+              "grid_size": 8,
+              "input_size": 256,
+              "name": "spatial-pooling-ablation-v3_spatial_transformer_grid8_avg",
+              "native_grid_size": 16,
+              "optimizer": "Adam",
+              "pin_memory": true,
+              "pooling_factor": 2,
+              "pooling_policy": "avg",
+              "pooling_trainable_parameters": 0,
+              "position_policy": "fixed separable 2D sinusoidal x/y encoding; see models_v1.py",
+              "positional_encoding": "fixed_2d_sinusoidal_xy_v1",
+              "pretrained": false,
+              "purpose": "pooling/grid development ablation; no test evaluation",
+              "source_digests": {
+                "rebuild/ablation.py": "8287aaf628a6511cd56677a22dc6e5d11df8a8071e4cb8156d154c5e65fa831b",
+                "rebuild/common.py": "c5aa62eff0a7533ebb511ada406ab2121f79c1aff2c7827c09795e97bde62508",
+                "rebuild/config.py": "1c53947636f39c824cd1903bd232006eedcef01d7434f90b493cd32a69615f57",
+                "rebuild/data.py": "a548fc303d7a992a533e4b9eff14bae3e2fdacb276a33d3fcb5250124f4bb58c",
+                "rebuild/evaluation.py": "f9362a149000d12b264cd38a051b52ef1f7007208c90aa7176a5298a62da1e97",
+                "rebuild/full.py": "d535aca7cfc6ff14d994fabb50b9e250d0551ab02defbc8e15ca17c261e51c21",
+                "rebuild/phase3b/data_v1.py": "95482ee67d8b6acddb908a8bb677adc854d624c5c09e663433189ab5bc99986d",
+                "rebuild/phase3d/models_v1.py": "a282c954284ccd12a7c94a1bcb67940fff30825ba95c938673965b62bb29f692",
+                "rebuild/phase3d/models_v2.py": "6a17fcf5c0319c4c10c6484659f169ce27c6ba4c3d2d1dba5dbd9fea02bbeb6f",
+                "rebuild/phase3d/models_v3.py": "e304b8ada45aef6143ce8acec4e3d1c441a6350d478927d7f68d4706cdf4a82a",
+                "rebuild/phase3d/pilot.py": "27c6548ad77c338193c39df4faddf5c99bf64c623b244331b199a07fad2cb0c3",
+                "rebuild/pooling_ablation.py": "b6f70d275056649959a57cb75c7829778e38fb861c7fbb713d6bc2f1fcdc4205",
+                "rebuild/training.py": "b7638b6da1ae21c994c739ae396ef5ba937baf643a23ba3dd32b47a47f105687"
+              },
+              "token_count": 64,
+              "transformer_layers": 2,
+              "variant": "spatial_transformer"
+            },
+            "runtime": {
+              "deterministic": true,
+              "device": "cuda",
+              "num_threads": 2
+            },
+            "training": {
+              "batch_size": 16,
+              "epochs": 100,
+              "learning_rate": 9e-05,
+              "max_grad_norm": 3.0,
+              "min_delta": 0.0,
+              "patience": 20,
+              "scheduler_factor": 0.1,
+              "scheduler_patience": 5,
+              "weight_decay": 5e-07
+            }
+          },
+          "family": "custom_cnn_transformer",
+          "mean_balanced_accuracy": 0.7598039215686274,
+          "mean_macro_f1": 0.7466588870075092,
+          "mean_weighted_validation_loss": 0.674968178735839,
+          "per_seed": [
+            {
+              "accuracy": 0.8,
+              "balanced_accuracy": 0.7886996904024768,
+              "best_checkpoint_path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_b83c3455cbd1d384719b6942/attempt_03/best.pt",
+              "best_checkpoint_sha256": "a486bfb334a6786946578077a4cc289ac0a864a89ec3714066841f23dd5f81d7",
+              "best_epoch": 20,
+              "fit_id": "fit_b83c3455cbd1d384719b6942",
+              "history_sha256": "98441174cafa0b018a3f7e3b8e4f0a5e8e0d1df5a895234ef6c75ece5070daea",
+              "macro_f1": 0.7820761280063606,
+              "seed": 3908274,
+              "validation_predictions_sha256": "750a97c9d6761f4b3eb0dff1ace49fca175fd0af09f64cde742461b9de8da8ae",
+              "weighted_validation_loss": 0.6803397298852603
+            },
+            {
+              "accuracy": 0.76,
+              "balanced_accuracy": 0.7445820433436533,
+              "best_checkpoint_path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_6feb59f8f1ccd86028b4aafc/attempt_03/best.pt",
+              "best_checkpoint_sha256": "e644c9088fb1d526d7640baa3e6f75dfe548f7ead2bd5deb30e2082219bf8742",
+              "best_epoch": 26,
+              "fit_id": "fit_6feb59f8f1ccd86028b4aafc",
+              "history_sha256": "641f0eea66cffdcc314249f0646f4d6d76a63633e4b53b06ec08306b23ad1f73",
+              "macro_f1": 0.7246362127953248,
+              "seed": 3908275,
+              "validation_predictions_sha256": "9b4304f44443df293686b5baa0a07b85702f12ea76ad52d3935ec45cede8bd7c",
+              "weighted_validation_loss": 0.7289298937718074
+            },
+            {
+              "accuracy": 0.76,
+              "balanced_accuracy": 0.7461300309597523,
+              "best_checkpoint_path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_1546b7b81557fb8a6a2dcda4/attempt_03/best.pt",
+              "best_checkpoint_sha256": "9cf5acfe2237136c44254ef3f477b8fd7479dbb72bc7017a474ba76fb953e890",
+              "best_epoch": 26,
+              "fit_id": "fit_1546b7b81557fb8a6a2dcda4",
+              "history_sha256": "11be37e691bccfb0fa23dea2351c6f744770a32c79f025e562976549cc4ecd7c",
+              "macro_f1": 0.733264320220842,
+              "seed": 3908276,
+              "validation_predictions_sha256": "8ffd826a9a38d3fe1c579ad802087aae42d6c9806805c89707382abb922ae4fe",
+              "weighted_validation_loss": 0.6156349125504493
+            }
+          ],
+          "sample_sd_balanced_accuracy_ddof1": 0.025036436623236596,
+          "sample_variance_balanced_accuracy_ddof1": 0.0006268231587893427,
+          "seed_ids": [
+            3908274,
+            3908275,
+            3908276
+          ],
+          "validation_rank": 2
+        },
+        {
+          "configuration_id": "spatial-pooling-ablation-v3_spatial_transformer_grid8_mean_std",
+          "configuration_sha256": "6ca999f387c1a4818b49029b21fb3abecbfa40c8ad2bff8c5ec5e616de8519b2",
+          "effective_parameters": {
+            "model": {
+              "adapter_version": "spatial-pooling-ablation-v3",
+              "additional_pooling": "mean_std",
+              "attention_heads": 8,
+              "channels": [
+                128,
+                256,
+                512,
+                1024
+              ],
+              "claims_spatial_attention": true,
+              "contrast_epsilon": 1e-06,
+              "contrast_weight": 1.0,
+              "data_loader_workers": 8,
+              "embedding": 128,
+              "environment_digest": "6ff1d24a3e284556dde5099f452b2ff7f1081084f8d2c87d0e84e256e9c02adb",
+              "gate_policy": "none",
+              "gradient_policy": "none",
+              "grid_size": 8,
+              "input_size": 256,
+              "name": "spatial-pooling-ablation-v3_spatial_transformer_grid8_mean_std",
+              "native_grid_size": 16,
+              "optimizer": "Adam",
+              "pin_memory": true,
+              "pooling_factor": 2,
+              "pooling_policy": "mean_std",
+              "pooling_trainable_parameters": 0,
+              "position_policy": "fixed separable 2D sinusoidal x/y encoding; see models_v1.py",
+              "positional_encoding": "fixed_2d_sinusoidal_xy_v1",
+              "pretrained": false,
+              "purpose": "pooling/grid development ablation; no test evaluation",
+              "source_digests": {
+                "rebuild/ablation.py": "8287aaf628a6511cd56677a22dc6e5d11df8a8071e4cb8156d154c5e65fa831b",
+                "rebuild/common.py": "c5aa62eff0a7533ebb511ada406ab2121f79c1aff2c7827c09795e97bde62508",
+                "rebuild/config.py": "1c53947636f39c824cd1903bd232006eedcef01d7434f90b493cd32a69615f57",
+                "rebuild/data.py": "a548fc303d7a992a533e4b9eff14bae3e2fdacb276a33d3fcb5250124f4bb58c",
+                "rebuild/evaluation.py": "f9362a149000d12b264cd38a051b52ef1f7007208c90aa7176a5298a62da1e97",
+                "rebuild/full.py": "d535aca7cfc6ff14d994fabb50b9e250d0551ab02defbc8e15ca17c261e51c21",
+                "rebuild/phase3b/data_v1.py": "95482ee67d8b6acddb908a8bb677adc854d624c5c09e663433189ab5bc99986d",
+                "rebuild/phase3d/models_v1.py": "a282c954284ccd12a7c94a1bcb67940fff30825ba95c938673965b62bb29f692",
+                "rebuild/phase3d/models_v2.py": "6a17fcf5c0319c4c10c6484659f169ce27c6ba4c3d2d1dba5dbd9fea02bbeb6f",
+                "rebuild/phase3d/models_v3.py": "e304b8ada45aef6143ce8acec4e3d1c441a6350d478927d7f68d4706cdf4a82a",
+                "rebuild/phase3d/pilot.py": "27c6548ad77c338193c39df4faddf5c99bf64c623b244331b199a07fad2cb0c3",
+                "rebuild/pooling_ablation.py": "b6f70d275056649959a57cb75c7829778e38fb861c7fbb713d6bc2f1fcdc4205",
+                "rebuild/training.py": "b7638b6da1ae21c994c739ae396ef5ba937baf643a23ba3dd32b47a47f105687"
+              },
+              "token_count": 64,
+              "transformer_layers": 2,
+              "variant": "spatial_transformer"
+            },
+            "runtime": {
+              "deterministic": true,
+              "device": "cuda",
+              "num_threads": 2
+            },
+            "training": {
+              "batch_size": 16,
+              "epochs": 100,
+              "learning_rate": 9e-05,
+              "max_grad_norm": 3.0,
+              "min_delta": 0.0,
+              "patience": 20,
+              "scheduler_factor": 0.1,
+              "scheduler_patience": 5,
+              "weight_decay": 5e-07
+            }
+          },
+          "family": "custom_cnn_transformer",
+          "mean_balanced_accuracy": 0.7564499484004128,
+          "mean_macro_f1": 0.7474760586899835,
+          "mean_weighted_validation_loss": 0.6927174251609378,
+          "per_seed": [
+            {
+              "accuracy": 0.8,
+              "balanced_accuracy": 0.7886996904024768,
+              "best_checkpoint_path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_06b3c235ff5f1db6877566fc/attempt_03/best.pt",
+              "best_checkpoint_sha256": "fdcc414ce3d8268e40d76bcbd9f190f2f063009ba2b6209d6fa183009b683dc2",
+              "best_epoch": 36,
+              "fit_id": "fit_06b3c235ff5f1db6877566fc",
+              "history_sha256": "c62e86059af1d5a6e6ee7269c49f08613220a08280e63437a0e66d8ae79a6183",
+              "macro_f1": 0.7831975910843454,
+              "seed": 3908274,
+              "validation_predictions_sha256": "bf2a0680713767615ad24b3ec34391c31c4a40638ceeef233386022750fa7d79",
+              "weighted_validation_loss": 0.6546863368153573
+            },
+            {
+              "accuracy": 0.7466666666666667,
+              "balanced_accuracy": 0.7329721362229102,
+              "best_checkpoint_path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_84af9bfcc446cff45867557a/attempt_03/best.pt",
+              "best_checkpoint_sha256": "1ecf795ba0a64fd92b12f02813b713553bbd12265ae7ce2e2475f5bc47b70a58",
+              "best_epoch": 26,
+              "fit_id": "fit_84af9bfcc446cff45867557a",
+              "history_sha256": "e29a47ca16301325e97db6cc096be27e1b3f8cfdd52b61bba26514130befd27d",
+              "macro_f1": 0.7204764544917999,
+              "seed": 3908275,
+              "validation_predictions_sha256": "aabd3e36cdc97ddbcccffa0d207d53d7643d8ac05b24cbfc57176b112cdade45",
+              "weighted_validation_loss": 0.7221366765101751
+            },
+            {
+              "accuracy": 0.76,
+              "balanced_accuracy": 0.7476780185758514,
+              "best_checkpoint_path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_e426d28ee48c4615ad792b79/attempt_03/best.pt",
+              "best_checkpoint_sha256": "33886b6efdcb490a32b4b16aef469412a1aa66ef79224f35ce4fa6da499f8804",
+              "best_epoch": 26,
+              "fit_id": "fit_e426d28ee48c4615ad792b79",
+              "history_sha256": "140ce5bfa7a26eb574924fbbe08d371dad422437f4add83f49a53b00535319b4",
+              "macro_f1": 0.7387541304938051,
+              "seed": 3908276,
+              "validation_predictions_sha256": "d639437445b19e4b1227bd35c0caca078f992355dcd0c7ef5018eae564d3fa41",
+              "weighted_validation_loss": 0.7013292621572812
+            }
+          ],
+          "sample_sd_balanced_accuracy_ddof1": 0.028880791857987618,
+          "sample_variance_balanced_accuracy_ddof1": 0.0008341001383444038,
+          "seed_ids": [
+            3908274,
+            3908275,
+            3908276
+          ],
+          "validation_rank": 3
+        },
+        {
+          "configuration_id": "spatial-pooling-ablation-v3_spatial_transformer_grid16_identity",
+          "configuration_sha256": "cdb9494d20ab169ed6a5d5906b306d069b998962a9904f7c0f0d0c8e6c1bd540",
+          "effective_parameters": {
+            "model": {
+              "adapter_version": "spatial-pooling-ablation-v3",
+              "additional_pooling": "identity",
+              "attention_heads": 8,
+              "channels": [
+                128,
+                256,
+                512,
+                1024
+              ],
+              "claims_spatial_attention": true,
+              "contrast_epsilon": 0.0,
+              "contrast_weight": 0.0,
+              "data_loader_workers": 8,
+              "embedding": 128,
+              "environment_digest": "6ff1d24a3e284556dde5099f452b2ff7f1081084f8d2c87d0e84e256e9c02adb",
+              "gate_policy": "none",
+              "gradient_policy": "none",
+              "grid_size": 16,
+              "input_size": 256,
+              "name": "spatial-pooling-ablation-v3_spatial_transformer_grid16_identity",
+              "native_grid_size": 16,
+              "optimizer": "Adam",
+              "pin_memory": true,
+              "pooling_factor": 1,
+              "pooling_policy": "identity",
+              "pooling_trainable_parameters": 0,
+              "position_policy": "fixed separable 2D sinusoidal x/y encoding; see models_v1.py",
+              "positional_encoding": "fixed_2d_sinusoidal_xy_v1",
+              "pretrained": false,
+              "purpose": "pooling/grid development ablation; no test evaluation",
+              "source_digests": {
+                "rebuild/ablation.py": "8287aaf628a6511cd56677a22dc6e5d11df8a8071e4cb8156d154c5e65fa831b",
+                "rebuild/common.py": "c5aa62eff0a7533ebb511ada406ab2121f79c1aff2c7827c09795e97bde62508",
+                "rebuild/config.py": "1c53947636f39c824cd1903bd232006eedcef01d7434f90b493cd32a69615f57",
+                "rebuild/data.py": "a548fc303d7a992a533e4b9eff14bae3e2fdacb276a33d3fcb5250124f4bb58c",
+                "rebuild/evaluation.py": "f9362a149000d12b264cd38a051b52ef1f7007208c90aa7176a5298a62da1e97",
+                "rebuild/full.py": "d535aca7cfc6ff14d994fabb50b9e250d0551ab02defbc8e15ca17c261e51c21",
+                "rebuild/phase3b/data_v1.py": "95482ee67d8b6acddb908a8bb677adc854d624c5c09e663433189ab5bc99986d",
+                "rebuild/phase3d/models_v1.py": "a282c954284ccd12a7c94a1bcb67940fff30825ba95c938673965b62bb29f692",
+                "rebuild/phase3d/models_v2.py": "6a17fcf5c0319c4c10c6484659f169ce27c6ba4c3d2d1dba5dbd9fea02bbeb6f",
+                "rebuild/phase3d/models_v3.py": "e304b8ada45aef6143ce8acec4e3d1c441a6350d478927d7f68d4706cdf4a82a",
+                "rebuild/phase3d/pilot.py": "27c6548ad77c338193c39df4faddf5c99bf64c623b244331b199a07fad2cb0c3",
+                "rebuild/pooling_ablation.py": "b6f70d275056649959a57cb75c7829778e38fb861c7fbb713d6bc2f1fcdc4205",
+                "rebuild/training.py": "b7638b6da1ae21c994c739ae396ef5ba937baf643a23ba3dd32b47a47f105687"
+              },
+              "token_count": 256,
+              "transformer_layers": 2,
+              "variant": "spatial_transformer"
+            },
+            "runtime": {
+              "deterministic": true,
+              "device": "cuda",
+              "num_threads": 2
+            },
+            "training": {
+              "batch_size": 16,
+              "epochs": 100,
+              "learning_rate": 9e-05,
+              "max_grad_norm": 3.0,
+              "min_delta": 0.0,
+              "patience": 20,
+              "scheduler_factor": 0.1,
+              "scheduler_patience": 5,
+              "weight_decay": 5e-07
+            }
+          },
+          "family": "custom_cnn_transformer",
+          "mean_balanced_accuracy": 0.749187306501548,
+          "mean_macro_f1": 0.7285843531613774,
+          "mean_weighted_validation_loss": 0.6572144365476238,
+          "per_seed": [
+            {
+              "accuracy": 0.7733333333333333,
+              "balanced_accuracy": 0.7577399380804953,
+              "best_checkpoint_path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_fb3e6e90d1f20de733940958/attempt_03/best.pt",
+              "best_checkpoint_sha256": "cc4679eb5b7907886b54deb16dad1b9a2f1f32ce742076022ccd15cd058d9bf1",
+              "best_epoch": 29,
+              "fit_id": "fit_fb3e6e90d1f20de733940958",
+              "history_sha256": "774e88fa8b40b495b07d8dd9439757ba5af34327cf4381208311fe6c84986f89",
+              "macro_f1": 0.735718372016999,
+              "seed": 3908274,
+              "validation_predictions_sha256": "0c4ec7639813b7a0f04215ec256e0a25606c0af1e3d0eadad3e6dd6a13602622",
+              "weighted_validation_loss": 0.5922378152112167
+            },
+            {
+              "accuracy": 0.7333333333333333,
+              "balanced_accuracy": 0.7167182662538699,
+              "best_checkpoint_path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_405495bffef28a66b0e56e01/attempt_03/best.pt",
+              "best_checkpoint_sha256": "6b46b67f9d8a613c5b3d4368960ea9838afedda5b203ceab310c4bd3af79ab1b",
+              "best_epoch": 46,
+              "fit_id": "fit_405495bffef28a66b0e56e01",
+              "history_sha256": "be23d69b135ffeb7f3cb8438da2c1debc44ff10612d05d6adaa7dce26be92781",
+              "macro_f1": 0.6913937511763599,
+              "seed": 3908275,
+              "validation_predictions_sha256": "cd9a2131e479db825d0a070efc59fa2d8d7d4f65d249f996f0188ebdfbd39d12",
+              "weighted_validation_loss": 0.7126970202724139
+            },
+            {
+              "accuracy": 0.7866666666666666,
+              "balanced_accuracy": 0.7731037151702785,
+              "best_checkpoint_path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_e4cc72f0c71559990f30c9c5/attempt_03/best.pt",
+              "best_checkpoint_sha256": "388cc3efd644b03f7f2a56892646542b601a1a004cb3fe6289114b69cf842b45",
+              "best_epoch": 14,
+              "fit_id": "fit_e4cc72f0c71559990f30c9c5",
+              "history_sha256": "1d5d95c160ab9f4cdd1da16c96a19c2ff7db51c40c063672951f914858166c38",
+              "macro_f1": 0.7586409362907731,
+              "seed": 3908276,
+              "validation_predictions_sha256": "35f21d28e6183f8aa4acf3c543fc643a3755f7bcff073a47ef63a2d585f4a5e3",
+              "weighted_validation_loss": 0.6667084741592407
+            }
+          ],
+          "sample_sd_balanced_accuracy_ddof1": 0.02914944840936339,
+          "sample_variance_balanced_accuracy_ddof1": 0.0008496903425701378,
+          "seed_ids": [
+            3908274,
+            3908275,
+            3908276
+          ],
+          "validation_rank": 4
+        },
+        {
+          "configuration_id": "spatial-pooling-ablation-v3_spatial_transformer_grid8_max",
+          "configuration_sha256": "0ca83cb65ea29d576526eb6a95f32256d572db4e21f5b2ab99b3717eaa5e1596",
+          "effective_parameters": {
+            "model": {
+              "adapter_version": "spatial-pooling-ablation-v3",
+              "additional_pooling": "max",
+              "attention_heads": 8,
+              "channels": [
+                128,
+                256,
+                512,
+                1024
+              ],
+              "claims_spatial_attention": true,
+              "contrast_epsilon": 0.0,
+              "contrast_weight": 0.0,
+              "data_loader_workers": 8,
+              "embedding": 128,
+              "environment_digest": "6ff1d24a3e284556dde5099f452b2ff7f1081084f8d2c87d0e84e256e9c02adb",
+              "gate_policy": "none",
+              "gradient_policy": "none",
+              "grid_size": 8,
+              "input_size": 256,
+              "name": "spatial-pooling-ablation-v3_spatial_transformer_grid8_max",
+              "native_grid_size": 16,
+              "optimizer": "Adam",
+              "pin_memory": true,
+              "pooling_factor": 2,
+              "pooling_policy": "max",
+              "pooling_trainable_parameters": 0,
+              "position_policy": "fixed separable 2D sinusoidal x/y encoding; see models_v1.py",
+              "positional_encoding": "fixed_2d_sinusoidal_xy_v1",
+              "pretrained": false,
+              "purpose": "pooling/grid development ablation; no test evaluation",
+              "source_digests": {
+                "rebuild/ablation.py": "8287aaf628a6511cd56677a22dc6e5d11df8a8071e4cb8156d154c5e65fa831b",
+                "rebuild/common.py": "c5aa62eff0a7533ebb511ada406ab2121f79c1aff2c7827c09795e97bde62508",
+                "rebuild/config.py": "1c53947636f39c824cd1903bd232006eedcef01d7434f90b493cd32a69615f57",
+                "rebuild/data.py": "a548fc303d7a992a533e4b9eff14bae3e2fdacb276a33d3fcb5250124f4bb58c",
+                "rebuild/evaluation.py": "f9362a149000d12b264cd38a051b52ef1f7007208c90aa7176a5298a62da1e97",
+                "rebuild/full.py": "d535aca7cfc6ff14d994fabb50b9e250d0551ab02defbc8e15ca17c261e51c21",
+                "rebuild/phase3b/data_v1.py": "95482ee67d8b6acddb908a8bb677adc854d624c5c09e663433189ab5bc99986d",
+                "rebuild/phase3d/models_v1.py": "a282c954284ccd12a7c94a1bcb67940fff30825ba95c938673965b62bb29f692",
+                "rebuild/phase3d/models_v2.py": "6a17fcf5c0319c4c10c6484659f169ce27c6ba4c3d2d1dba5dbd9fea02bbeb6f",
+                "rebuild/phase3d/models_v3.py": "e304b8ada45aef6143ce8acec4e3d1c441a6350d478927d7f68d4706cdf4a82a",
+                "rebuild/phase3d/pilot.py": "27c6548ad77c338193c39df4faddf5c99bf64c623b244331b199a07fad2cb0c3",
+                "rebuild/pooling_ablation.py": "b6f70d275056649959a57cb75c7829778e38fb861c7fbb713d6bc2f1fcdc4205",
+                "rebuild/training.py": "b7638b6da1ae21c994c739ae396ef5ba937baf643a23ba3dd32b47a47f105687"
+              },
+              "token_count": 64,
+              "transformer_layers": 2,
+              "variant": "spatial_transformer"
+            },
+            "runtime": {
+              "deterministic": true,
+              "device": "cuda",
+              "num_threads": 2
+            },
+            "training": {
+              "batch_size": 16,
+              "epochs": 100,
+              "learning_rate": 9e-05,
+              "max_grad_norm": 3.0,
+              "min_delta": 0.0,
+              "patience": 20,
+              "scheduler_factor": 0.1,
+              "scheduler_patience": 5,
+              "weight_decay": 5e-07
+            }
+          },
+          "family": "custom_cnn_transformer",
+          "mean_balanced_accuracy": 0.7470846233230134,
+          "mean_macro_f1": 0.7324031783595103,
+          "mean_weighted_validation_loss": 0.6676535278889868,
+          "per_seed": [
+            {
+              "accuracy": 0.7333333333333333,
+              "balanced_accuracy": 0.7180340557275542,
+              "best_checkpoint_path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_32ad5e2cc8cff01ec19db53a/attempt_03/best.pt",
+              "best_checkpoint_sha256": "0c9f6ba83460f037b315bb70ed1a63acf3f8350923fcb03365fed3d06739be43",
+              "best_epoch": 26,
+              "fit_id": "fit_32ad5e2cc8cff01ec19db53a",
+              "history_sha256": "ba1db9381a73e0d5fc31ee73549c17d22a463bb273460cc9e78b41742abf5997",
+              "macro_f1": 0.6957477025898079,
+              "seed": 3908274,
+              "validation_predictions_sha256": "4cde97a7fe2261b910df6f29316a70ac791aaecf859b79fceec0dbb1eb5dd56d",
+              "weighted_validation_loss": 0.6506559552748998
+            },
+            {
+              "accuracy": 0.7466666666666667,
+              "balanced_accuracy": 0.7314241486068112,
+              "best_checkpoint_path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_d6c261a3853e5d5880571114/attempt_03/best.pt",
+              "best_checkpoint_sha256": "ce0b64a2ad15498163b5db9fec4af254d80a416b2fdb142828e45a7b0b0b0387",
+              "best_epoch": 27,
+              "fit_id": "fit_d6c261a3853e5d5880571114",
+              "history_sha256": "d038a280b39a9b2a5022d7bd213143b8f8b98cf68259160b3460909ed0abb07f",
+              "macro_f1": 0.7117038659435405,
+              "seed": 3908275,
+              "validation_predictions_sha256": "032626cc2ddb9c6c86af0e943fd276c88c70ff343af9574e0a62a12f020c828a",
+              "weighted_validation_loss": 0.7195669897397359
+            },
+            {
+              "accuracy": 0.8,
+              "balanced_accuracy": 0.791795665634675,
+              "best_checkpoint_path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_49c174a2204b311e4d8a735d/attempt_03/best.pt",
+              "best_checkpoint_sha256": "2c059b0a1abece9d7dc016234289352d7f4460be352247d0f8bf907117c8c430",
+              "best_epoch": 33,
+              "fit_id": "fit_49c174a2204b311e4d8a735d",
+              "history_sha256": "3781db01e610822092ee977c7a9bd486a398f24c1187c6d2c0765c849ea3970d",
+              "macro_f1": 0.7897579665451826,
+              "seed": 3908276,
+              "validation_predictions_sha256": "d066550a932a1d75d8c6981f706950f1f2e69c1569c3e72bf44117dd3c8ddbf1",
+              "weighted_validation_loss": 0.6327376386523247
+            }
+          ],
+          "sample_sd_balanced_accuracy_ddof1": 0.03929544026061004,
+          "sample_variance_balanced_accuracy_ddof1": 0.0015441316252751726,
+          "seed_ids": [
+            3908274,
+            3908275,
+            3908276
+          ],
+          "validation_rank": 5
+        },
+        {
+          "configuration_id": "spatial-pooling-ablation-v3_spatial_transformer_grid8_gated_mix",
+          "configuration_sha256": "62d6c66d64b8153374e0d43b7c1c51b65657d82037c178cb0688f768c7f25048",
+          "effective_parameters": {
+            "model": {
+              "adapter_version": "spatial-pooling-ablation-v3",
+              "additional_pooling": "gated_mix",
+              "attention_heads": 8,
+              "channels": [
+                128,
+                256,
+                512,
+                1024
+              ],
+              "claims_spatial_attention": true,
+              "contrast_epsilon": 0.0,
+              "contrast_weight": 0.0,
+              "data_loader_workers": 8,
+              "embedding": 128,
+              "environment_digest": "6ff1d24a3e284556dde5099f452b2ff7f1081084f8d2c87d0e84e256e9c02adb",
+              "gate_policy": "sigmoid_per_channel_per_window_mean_max",
+              "gradient_policy": "none",
+              "grid_size": 8,
+              "input_size": 256,
+              "name": "spatial-pooling-ablation-v3_spatial_transformer_grid8_gated_mix",
+              "native_grid_size": 16,
+              "optimizer": "Adam",
+              "pin_memory": true,
+              "pooling_factor": 2,
+              "pooling_policy": "gated_mix",
+              "pooling_trainable_parameters": 3072,
+              "position_policy": "fixed separable 2D sinusoidal x/y encoding; see models_v1.py",
+              "positional_encoding": "fixed_2d_sinusoidal_xy_v1",
+              "pretrained": false,
+              "purpose": "pooling/grid development ablation; no test evaluation",
+              "source_digests": {
+                "rebuild/ablation.py": "8287aaf628a6511cd56677a22dc6e5d11df8a8071e4cb8156d154c5e65fa831b",
+                "rebuild/common.py": "c5aa62eff0a7533ebb511ada406ab2121f79c1aff2c7827c09795e97bde62508",
+                "rebuild/config.py": "1c53947636f39c824cd1903bd232006eedcef01d7434f90b493cd32a69615f57",
+                "rebuild/data.py": "a548fc303d7a992a533e4b9eff14bae3e2fdacb276a33d3fcb5250124f4bb58c",
+                "rebuild/evaluation.py": "f9362a149000d12b264cd38a051b52ef1f7007208c90aa7176a5298a62da1e97",
+                "rebuild/full.py": "d535aca7cfc6ff14d994fabb50b9e250d0551ab02defbc8e15ca17c261e51c21",
+                "rebuild/phase3b/data_v1.py": "95482ee67d8b6acddb908a8bb677adc854d624c5c09e663433189ab5bc99986d",
+                "rebuild/phase3d/models_v1.py": "a282c954284ccd12a7c94a1bcb67940fff30825ba95c938673965b62bb29f692",
+                "rebuild/phase3d/models_v2.py": "6a17fcf5c0319c4c10c6484659f169ce27c6ba4c3d2d1dba5dbd9fea02bbeb6f",
+                "rebuild/phase3d/models_v3.py": "e304b8ada45aef6143ce8acec4e3d1c441a6350d478927d7f68d4706cdf4a82a",
+                "rebuild/phase3d/pilot.py": "27c6548ad77c338193c39df4faddf5c99bf64c623b244331b199a07fad2cb0c3",
+                "rebuild/pooling_ablation.py": "b6f70d275056649959a57cb75c7829778e38fb861c7fbb713d6bc2f1fcdc4205",
+                "rebuild/training.py": "b7638b6da1ae21c994c739ae396ef5ba937baf643a23ba3dd32b47a47f105687"
+              },
+              "token_count": 64,
+              "transformer_layers": 2,
+              "variant": "spatial_transformer"
+            },
+            "runtime": {
+              "deterministic": true,
+              "device": "cuda",
+              "num_threads": 2
+            },
+            "training": {
+              "batch_size": 16,
+              "epochs": 100,
+              "learning_rate": 9e-05,
+              "max_grad_norm": 3.0,
+              "min_delta": 0.0,
+              "patience": 20,
+              "scheduler_factor": 0.1,
+              "scheduler_patience": 5,
+              "weight_decay": 5e-07
+            }
+          },
+          "family": "custom_cnn_transformer",
+          "mean_balanced_accuracy": 0.7303921568627452,
+          "mean_macro_f1": 0.7017528107325767,
+          "mean_weighted_validation_loss": 0.6633538884255621,
+          "per_seed": [
+            {
+              "accuracy": 0.7066666666666667,
+              "balanced_accuracy": 0.6857585139318886,
+              "best_checkpoint_path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_a4bc7f0612fa2433fa1d8995/attempt_03/best.pt",
+              "best_checkpoint_sha256": "ca9aa3c1ac9c9604bb6e9413af03f4a054ff2ca7de3ab815779acc7ebb6019f2",
+              "best_epoch": 19,
+              "fit_id": "fit_a4bc7f0612fa2433fa1d8995",
+              "history_sha256": "df5f05ef4f4195b76556656b3165d7a8af14b03cdcb626b3f06f684e8257ed00",
+              "macro_f1": 0.6255342002422469,
+              "seed": 3908274,
+              "validation_predictions_sha256": "8a6cd306abcf9e04adea44235a1ad19ce6f5c85f2adf29e6f93e30b90187bb11",
+              "weighted_validation_loss": 0.7113322160641352
+            },
+            {
+              "accuracy": 0.7866666666666666,
+              "balanced_accuracy": 0.7739938080495357,
+              "best_checkpoint_path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_e5227f9e6279afa8d15c4b93/attempt_03/best.pt",
+              "best_checkpoint_sha256": "df4b0cb0ba408267cede139bc8231dd37f7995dffe3422c9514fd14885ebb9c0",
+              "best_epoch": 29,
+              "fit_id": "fit_e5227f9e6279afa8d15c4b93",
+              "history_sha256": "80baae05a6f8825c61079962a210c17301b79fe3d229b71c8a0c0285eb7a31af",
+              "macro_f1": 0.7662418471316348,
+              "seed": 3908275,
+              "validation_predictions_sha256": "57d2e4ee9e620cc45f280e9e1cb0c569ab8b3918581a8613a2b24aacff18b4d7",
+              "weighted_validation_loss": 0.6148044378558795
+            },
+            {
+              "accuracy": 0.7466666666666667,
+              "balanced_accuracy": 0.7314241486068112,
+              "best_checkpoint_path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_50167b8497fcc2c9468dc854/attempt_03/best.pt",
+              "best_checkpoint_sha256": "a1bdf4b723f525b49b542dbf11d20cddeb7a4225060b611c1efebfb6503947f2",
+              "best_epoch": 22,
+              "fit_id": "fit_50167b8497fcc2c9468dc854",
+              "history_sha256": "6ed78b44c0c463c5f423c6bea66515b42cb897aaa3bb70320cbaa73ad9cdf741",
+              "macro_f1": 0.7134823848238483,
+              "seed": 3908276,
+              "validation_predictions_sha256": "54db19055a3dfb6c59d32c08c42f45cf658971e3f529cd295f6fa70e31169566",
+              "weighted_validation_loss": 0.6639250113566717
+            }
+          ],
+          "sample_sd_balanced_accuracy_ddof1": 0.04412669868941916,
+          "sample_variance_balanced_accuracy_ddof1": 0.0019471655372267865,
+          "seed_ids": [
+            3908274,
+            3908275,
+            3908276
+          ],
+          "validation_rank": 6
+        }
+      ],
+      "family": "custom_cnn_transformer",
+      "winner_configuration_id": "spatial-pooling-ablation-v3_spatial_transformer_grid8_mean_grad",
+      "winner_configuration_sha256": "31f5d6d5612c855bc52c277d90a593960c4ee7922538908b554633062d437884"
+    },
+    {
+      "candidates": [
+        {
+          "configuration_id": "resnet50_ddc5866488e57f18",
+          "configuration_sha256": "dbe456b4fce9bde0bab0b9adc1b7630f57770114454577cf1d735e728cf6f16c",
+          "effective_parameters": {
+            "model": {
+              "architecture": "torchvision.models.resnet50",
+              "data_loader_workers": 8,
+              "decay_policy": "all optimized parameters; decoupled weight decay",
+              "family": "resnet50",
+              "head": "fc: Linear(2048,4)",
+              "head_initialization": "seeded default nn.Linear initialization after backbone load",
+              "head_lr_multiplier": 10.0,
+              "head_only_warmup_epochs": 0,
+              "name": "resnet50_ddc5866488e57f18",
+              "optimizer": "AdamW",
+              "optimizer_betas": [
+                0.9,
+                0.999
+              ],
+              "optimizer_epsilon": 1e-08,
+              "optimizer_state_policy": "one optimizer; no resets at unfreeze",
+              "pin_memory": true,
+              "pretrained_backbone_initialization": "identical cached official weights across seeds",
+              "pretrained_required": true,
+              "scheduler_and_early_stopping": "active from epoch 1; no resets at unfreeze",
+              "warmup_batchnorm_policy": "backbone eval while frozen; train after unfreezing",
+              "warmup_counts_toward_maximum_epochs": true
+            },
+            "runtime": {
+              "deterministic": true,
+              "device": "cuda",
+              "num_threads": 2
+            },
+            "training": {
+              "batch_size": 16,
+              "epochs": 100,
+              "learning_rate": 0.0001,
+              "max_grad_norm": 3.0,
+              "min_delta": 0.0,
+              "patience": 20,
+              "scheduler_factor": 0.1,
+              "scheduler_patience": 5,
+              "weight_decay": 0.0001
+            }
+          },
+          "family": "resnet50",
+          "mean_balanced_accuracy": 0.8596104231166151,
+          "mean_macro_f1": 0.8594502337310919,
+          "mean_weighted_validation_loss": 0.5629577349817589,
+          "per_seed": [
+            {
+              "accuracy": 0.8666666666666667,
+              "balanced_accuracy": 0.8628869969040247,
+              "best_checkpoint_path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_d807ccc78f9f55959d821058/attempt_03/best.pt",
+              "best_checkpoint_sha256": "ab39b0a0c7aad51a40abc79d97e31924d5ca1f9878fc753cf8283a89f2dc624f",
+              "best_epoch": 15,
+              "fit_id": "fit_d807ccc78f9f55959d821058",
+              "history_sha256": "300f3eafc64ecf48aedd90fd0b0c6312956791aa7dd50b7b02cb866c2e7b689e",
+              "macro_f1": 0.8643092105263157,
+              "seed": 3908274,
+              "validation_predictions_sha256": "19ebd7e1bcb217caeef49de065efe7ccd794b1df07267b08542fee049b575982",
+              "weighted_validation_loss": 0.5093094992332027
+            },
+            {
+              "accuracy": 0.8666666666666667,
+              "balanced_accuracy": 0.8622291021671827,
+              "best_checkpoint_path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_8ea7d46d25e3ff4711aa872c/attempt_03/best.pt",
+              "best_checkpoint_sha256": "3d9e3a31b16c80f83bcfb42bbebd2c37f352369116a0851f360595d18de202a3",
+              "best_epoch": 20,
+              "fit_id": "fit_8ea7d46d25e3ff4711aa872c",
+              "history_sha256": "410ee4dcb9e4cac19b3d5db58f235c3ec62e7f98cab8f269ff2b45fff02b7898",
+              "macro_f1": 0.8638383463461684,
+              "seed": 3908275,
+              "validation_predictions_sha256": "6c7a6a9c11fa282277f33ec7840a0527868c2229e54b786f18dc8961d555864a",
+              "weighted_validation_loss": 0.6202563072025805
+            },
+            {
+              "accuracy": 0.8533333333333334,
+              "balanced_accuracy": 0.8537151702786377,
+              "best_checkpoint_path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_213b98f5b2335e6839c34835/attempt_03/best.pt",
+              "best_checkpoint_sha256": "4d9f269591e072753cfd57ec32135e249b27f47eb2ad00e067e5fb2a9667f5d5",
+              "best_epoch": 3,
+              "fit_id": "fit_213b98f5b2335e6839c34835",
+              "history_sha256": "a4fb7a24453a9999ceceb397236bd41cd5017469078800765de00ee61ac99a7f",
+              "macro_f1": 0.8502031443207914,
+              "seed": 3908276,
+              "validation_predictions_sha256": "a7c45e4f8ea466dd1ec67009ff8aba9829805f4a896ef1c7758bfe1300bdb7a6",
+              "weighted_validation_loss": 0.5593073985094937
+            }
+          ],
+          "sample_sd_balanced_accuracy_ddof1": 0.00511602491090014,
+          "sample_variance_balanced_accuracy_ddof1": 2.6173710888950792e-05,
+          "seed_ids": [
+            3908274,
+            3908275,
+            3908276
+          ],
+          "validation_rank": 1
+        },
+        {
+          "configuration_id": "resnet50_b2d83f0ac5117cd9",
+          "configuration_sha256": "ea6740abc122aa2a31eba847f199e21c31562e830c65bbe4aa5d02638c943844",
+          "effective_parameters": {
+            "model": {
+              "architecture": "torchvision.models.resnet50",
+              "data_loader_workers": 8,
+              "decay_policy": "all optimized parameters; decoupled weight decay",
+              "family": "resnet50",
+              "head": "fc: Linear(2048,4)",
+              "head_initialization": "seeded default nn.Linear initialization after backbone load",
+              "head_lr_multiplier": 10.0,
+              "head_only_warmup_epochs": 5,
+              "name": "resnet50_b2d83f0ac5117cd9",
+              "optimizer": "AdamW",
+              "optimizer_betas": [
+                0.9,
+                0.999
+              ],
+              "optimizer_epsilon": 1e-08,
+              "optimizer_state_policy": "one optimizer; no resets at unfreeze",
+              "pin_memory": true,
+              "pretrained_backbone_initialization": "identical cached official weights across seeds",
+              "pretrained_required": true,
+              "scheduler_and_early_stopping": "active from epoch 1; no resets at unfreeze",
+              "warmup_batchnorm_policy": "backbone eval while frozen; train after unfreezing",
+              "warmup_counts_toward_maximum_epochs": true
+            },
+            "runtime": {
+              "deterministic": true,
+              "device": "cuda",
+              "num_threads": 2
+            },
+            "training": {
+              "batch_size": 16,
+              "epochs": 100,
+              "learning_rate": 0.0001,
+              "max_grad_norm": 3.0,
+              "min_delta": 0.0,
+              "patience": 20,
+              "scheduler_factor": 0.1,
+              "scheduler_patience": 5,
+              "weight_decay": 0.01
+            }
+          },
+          "family": "resnet50",
+          "mean_balanced_accuracy": 0.8480392156862745,
+          "mean_macro_f1": 0.8480407850527231,
+          "mean_weighted_validation_loss": 0.5056677496875204,
+          "per_seed": [
+            {
+              "accuracy": 0.7866666666666666,
+              "balanced_accuracy": 0.781733746130031,
+              "best_checkpoint_path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_95350610c2dd9f7ad60268bc/attempt_03/best.pt",
+              "best_checkpoint_sha256": "5ee6e3f80d5f43b75ee9a26d5966506ba9e4aa19e19014f382e3285d1e96ae16",
+              "best_epoch": 6,
+              "fit_id": "fit_95350610c2dd9f7ad60268bc",
+              "history_sha256": "3e128ab994b9897a5db82d39d0c60ffb90e3a581b9ad9c7b2a1bb3e3b8793b10",
+              "macro_f1": 0.779040404040404,
+              "seed": 3908274,
+              "validation_predictions_sha256": "97c5f0ffce5db596ad6642980e1438440969e62ae03ac4990b7032572b40c877",
+              "weighted_validation_loss": 0.5359564381979484
+            },
+            {
+              "accuracy": 0.8666666666666667,
+              "balanced_accuracy": 0.8622291021671827,
+              "best_checkpoint_path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_bb16a3d97c776842b54c624d/attempt_03/best.pt",
+              "best_checkpoint_sha256": "6668bc86cef61c0ed555c0b1801e97713b1bd9cc8060ceb387e60cfa54cb55e0",
+              "best_epoch": 15,
+              "fit_id": "fit_bb16a3d97c776842b54c624d",
+              "history_sha256": "457cb4df3f480d27a98b0f3059e07b6f8cc1b76d3a869da9520860d4e92b01cb",
+              "macro_f1": 0.8637358609132803,
+              "seed": 3908275,
+              "validation_predictions_sha256": "c01c6ea68c66749cace7c786aa26c735108996709c4e72a2e2da821ef64c6188",
+              "weighted_validation_loss": 0.45705042249391
+            },
+            {
+              "accuracy": 0.9066666666666666,
+              "balanced_accuracy": 0.9001547987616099,
+              "best_checkpoint_path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_76bfc4d3b9f0425d7a40a331/attempt_03/best.pt",
+              "best_checkpoint_sha256": "f48e19a90a9fd5297ee3bb94954dc50a7bae37cc017fd6fe1e4223d9baef95e3",
+              "best_epoch": 10,
+              "fit_id": "fit_76bfc4d3b9f0425d7a40a331",
+              "history_sha256": "78882e9bb0f26474eeee6b042cff5745ddf28ed235f7a96ff6f7ddf59a76b1d6",
+              "macro_f1": 0.9013460902044851,
+              "seed": 3908276,
+              "validation_predictions_sha256": "240ffdebf4c744aa543cdd8ce1c45dc2010041c5a994b16ec450c4093d4d3953",
+              "weighted_validation_loss": 0.523996388370703
+            }
+          ],
+          "sample_sd_balanced_accuracy_ddof1": 0.06047231668580748,
+          "sample_variance_balanced_accuracy_ddof1": 0.0036569010853485895,
+          "seed_ids": [
+            3908274,
+            3908275,
+            3908276
+          ],
+          "validation_rank": 2
+        },
+        {
+          "configuration_id": "resnet50_d20edd8711ada4da",
+          "configuration_sha256": "9613ea73ba1c2e5b8b7ccdc85c255338cb58562c2508b65e78614c1af7186b02",
+          "effective_parameters": {
+            "model": {
+              "architecture": "torchvision.models.resnet50",
+              "data_loader_workers": 8,
+              "decay_policy": "all optimized parameters; decoupled weight decay",
+              "family": "resnet50",
+              "head": "fc: Linear(2048,4)",
+              "head_initialization": "seeded default nn.Linear initialization after backbone load",
+              "head_lr_multiplier": 10.0,
+              "head_only_warmup_epochs": 0,
+              "name": "resnet50_d20edd8711ada4da",
+              "optimizer": "AdamW",
+              "optimizer_betas": [
+                0.9,
+                0.999
+              ],
+              "optimizer_epsilon": 1e-08,
+              "optimizer_state_policy": "one optimizer; no resets at unfreeze",
+              "pin_memory": true,
+              "pretrained_backbone_initialization": "identical cached official weights across seeds",
+              "pretrained_required": true,
+              "scheduler_and_early_stopping": "active from epoch 1; no resets at unfreeze",
+              "warmup_batchnorm_policy": "backbone eval while frozen; train after unfreezing",
+              "warmup_counts_toward_maximum_epochs": true
+            },
+            "runtime": {
+              "deterministic": true,
+              "device": "cuda",
+              "num_threads": 2
+            },
+            "training": {
+              "batch_size": 16,
+              "epochs": 100,
+              "learning_rate": 0.0001,
+              "max_grad_norm": 3.0,
+              "min_delta": 0.0,
+              "patience": 20,
+              "scheduler_factor": 0.1,
+              "scheduler_patience": 5,
+              "weight_decay": 0.01
+            }
+          },
+          "family": "resnet50",
+          "mean_balanced_accuracy": 0.8379772961816305,
+          "mean_macro_f1": 0.8360714531029169,
+          "mean_weighted_validation_loss": 0.5934983917679266,
+          "per_seed": [
+            {
+              "accuracy": 0.8266666666666667,
+              "balanced_accuracy": 0.8243034055727555,
+              "best_checkpoint_path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_e8e9e90649c265d3ce2526a7/attempt_03/best.pt",
+              "best_checkpoint_sha256": "7eb318c2b1259b69f3c06e7e641b56efe853ee8ee1e7448307fe693bf886d06b",
+              "best_epoch": 6,
+              "fit_id": "fit_e8e9e90649c265d3ce2526a7",
+              "history_sha256": "9c057fadf587c1124e592df2a8f77786f8c213c1dab819687289c42c0958b52e",
+              "macro_f1": 0.8225490196078431,
+              "seed": 3908274,
+              "validation_predictions_sha256": "63c6fd0be591faa62ecccb9cef72b610a1ec02a9eb89b3645a619a7408c736ca",
+              "weighted_validation_loss": 0.6457221178690937
+            },
+            {
+              "accuracy": 0.84,
+              "balanced_accuracy": 0.8390092879256965,
+              "best_checkpoint_path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_f9b0d733884686a771fad784/attempt_03/best.pt",
+              "best_checkpoint_sha256": "0a3ea8db6f2bcb0e9c3c2d009fb2c52f216f03ad5eb8e3312d2258f034bf70f9",
+              "best_epoch": 11,
+              "fit_id": "fit_f9b0d733884686a771fad784",
+              "history_sha256": "b30e7484fca57a2ef3a9433b7c0852441ec1231499fb21f1a5ff24882e2b8bfc",
+              "macro_f1": 0.8352608422375865,
+              "seed": 3908275,
+              "validation_predictions_sha256": "b4198d32e2ba60be98db073853335e64b2488124b47f0cfb75b9642504c631f9",
+              "weighted_validation_loss": 0.6130280502693843
+            },
+            {
+              "accuracy": 0.8533333333333334,
+              "balanced_accuracy": 0.8506191950464397,
+              "best_checkpoint_path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_6871ac1c8721d0639635348d/attempt_03/best.pt",
+              "best_checkpoint_sha256": "124036cc55499825c32b0fac7b252f0ffe0ac96b27f211a9ff2302d9b6885d2b",
+              "best_epoch": 8,
+              "fit_id": "fit_6871ac1c8721d0639635348d",
+              "history_sha256": "03ee439ff2f99cd40056898a0d304bad5081f668dbd74f033aade0cc75090675",
+              "macro_f1": 0.8504044974633209,
+              "seed": 3908276,
+              "validation_predictions_sha256": "64c6af1517ee08e8b42fa7dce739059549738943258404312db7220c3376b2ae",
+              "weighted_validation_loss": 0.5217450071653019
+            }
+          ],
+          "sample_sd_balanced_accuracy_ddof1": 0.013188212506844208,
+          "sample_variance_balanced_accuracy_ddof1": 0.000173928949125682,
+          "seed_ids": [
+            3908274,
+            3908275,
+            3908276
+          ],
+          "validation_rank": 3
+        },
+        {
+          "configuration_id": "resnet50_7e8a71b01bc45998",
+          "configuration_sha256": "1371478b3a639271aeef51c24d8655670f25e753d3b376bb03247fe8428f0832",
+          "effective_parameters": {
+            "model": {
+              "architecture": "torchvision.models.resnet50",
+              "data_loader_workers": 8,
+              "decay_policy": "all optimized parameters; decoupled weight decay",
+              "family": "resnet50",
+              "head": "fc: Linear(2048,4)",
+              "head_initialization": "seeded default nn.Linear initialization after backbone load",
+              "head_lr_multiplier": 10.0,
+              "head_only_warmup_epochs": 5,
+              "name": "resnet50_7e8a71b01bc45998",
+              "optimizer": "AdamW",
+              "optimizer_betas": [
+                0.9,
+                0.999
+              ],
+              "optimizer_epsilon": 1e-08,
+              "optimizer_state_policy": "one optimizer; no resets at unfreeze",
+              "pin_memory": true,
+              "pretrained_backbone_initialization": "identical cached official weights across seeds",
+              "pretrained_required": true,
+              "scheduler_and_early_stopping": "active from epoch 1; no resets at unfreeze",
+              "warmup_batchnorm_policy": "backbone eval while frozen; train after unfreezing",
+              "warmup_counts_toward_maximum_epochs": true
+            },
+            "runtime": {
+              "deterministic": true,
+              "device": "cuda",
+              "num_threads": 2
+            },
+            "training": {
+              "batch_size": 16,
+              "epochs": 100,
+              "learning_rate": 0.0003,
+              "max_grad_norm": 3.0,
+              "min_delta": 0.0,
+              "patience": 20,
+              "scheduler_factor": 0.1,
+              "scheduler_patience": 5,
+              "weight_decay": 0.0001
+            }
+          },
+          "family": "resnet50",
+          "mean_balanced_accuracy": 0.8356166150670794,
+          "mean_macro_f1": 0.8350492100492101,
+          "mean_weighted_validation_loss": 0.5090645548376147,
+          "per_seed": [
+            {
+              "accuracy": 0.8533333333333334,
+              "balanced_accuracy": 0.8512770897832818,
+              "best_checkpoint_path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_7ad76d2b197f1d89e639e9e7/attempt_03/best.pt",
+              "best_checkpoint_sha256": "e75409f55060120d3e4c7e462c70d9e6fdcd894f5cbf4e884dced065a5991896",
+              "best_epoch": 13,
+              "fit_id": "fit_7ad76d2b197f1d89e639e9e7",
+              "history_sha256": "bd48722821c0910e99e144e2f247d100c8f848e758016d0cb095a796e3f1bf64",
+              "macro_f1": 0.8517732267732268,
+              "seed": 3908274,
+              "validation_predictions_sha256": "32c40eded52ed93aba444432621215d085ddf2e804012461ae3aba19a81aa44b",
+              "weighted_validation_loss": 0.5185021411426639
+            },
+            {
+              "accuracy": 0.7733333333333333,
+              "balanced_accuracy": 0.7639318885448916,
+              "best_checkpoint_path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_30e95ed2dde9cbeec29b966a/attempt_03/best.pt",
+              "best_checkpoint_sha256": "28135c9db29b28b4eed74db240dd3d46eaaa072fed19888440204fa09a5d2031",
+              "best_epoch": 15,
+              "fit_id": "fit_30e95ed2dde9cbeec29b966a",
+              "history_sha256": "da90636d0c48f68db926e6e272e547769176fece16a2090cff11e41f2f9c688c",
+              "macro_f1": 0.7617243867243868,
+              "seed": 3908275,
+              "validation_predictions_sha256": "9f26b754392d5afb4c1f759eeadeb89cd7a4e73ac64c223197d147804089fcd7",
+              "weighted_validation_loss": 0.5434818363368443
+            },
+            {
+              "accuracy": 0.8933333333333333,
+              "balanced_accuracy": 0.891640866873065,
+              "best_checkpoint_path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_32ee22f9bbe9dc62ca43ca5a/attempt_03/best.pt",
+              "best_checkpoint_sha256": "5a6dd489844f051468ee9d253903bf21d8a3ff98a83d526eb85b285ff3b3f4a5",
+              "best_epoch": 14,
+              "fit_id": "fit_32ee22f9bbe9dc62ca43ca5a",
+              "history_sha256": "dd6c77a27d3eae6fad33825b76f4e6aac559f6c0db2dbb1537761ca4555888d9",
+              "macro_f1": 0.8916500166500166,
+              "seed": 3908276,
+              "validation_predictions_sha256": "3f3c6d422b469b05b76258802e7baddf75789e018a3db3e8a6bf51bf4660b926",
+              "weighted_validation_loss": 0.4652096870333359
+            }
+          ],
+          "sample_sd_balanced_accuracy_ddof1": 0.06527889121039875,
+          "sample_variance_balanced_accuracy_ddof1": 0.004261333637659075,
+          "seed_ids": [
+            3908274,
+            3908275,
+            3908276
+          ],
+          "validation_rank": 4
+        },
+        {
+          "configuration_id": "resnet50_95d66ec6676c25fb",
+          "configuration_sha256": "b10757c2c52531343e580f0621542a501afaacac32093d6dc4d2fcdc463c4c7f",
+          "effective_parameters": {
+            "model": {
+              "architecture": "torchvision.models.resnet50",
+              "data_loader_workers": 8,
+              "decay_policy": "all optimized parameters; decoupled weight decay",
+              "family": "resnet50",
+              "head": "fc: Linear(2048,4)",
+              "head_initialization": "seeded default nn.Linear initialization after backbone load",
+              "head_lr_multiplier": 10.0,
+              "head_only_warmup_epochs": 0,
+              "name": "resnet50_95d66ec6676c25fb",
+              "optimizer": "AdamW",
+              "optimizer_betas": [
+                0.9,
+                0.999
+              ],
+              "optimizer_epsilon": 1e-08,
+              "optimizer_state_policy": "one optimizer; no resets at unfreeze",
+              "pin_memory": true,
+              "pretrained_backbone_initialization": "identical cached official weights across seeds",
+              "pretrained_required": true,
+              "scheduler_and_early_stopping": "active from epoch 1; no resets at unfreeze",
+              "warmup_batchnorm_policy": "backbone eval while frozen; train after unfreezing",
+              "warmup_counts_toward_maximum_epochs": true
+            },
+            "runtime": {
+              "deterministic": true,
+              "device": "cuda",
+              "num_threads": 2
+            },
+            "training": {
+              "batch_size": 16,
+              "epochs": 100,
+              "learning_rate": 0.0003,
+              "max_grad_norm": 3.0,
+              "min_delta": 0.0,
+              "patience": 20,
+              "scheduler_factor": 0.1,
+              "scheduler_patience": 5,
+              "weight_decay": 0.01
+            }
+          },
+          "family": "resnet50",
+          "mean_balanced_accuracy": 0.8345846233230134,
+          "mean_macro_f1": 0.8328630129616972,
+          "mean_weighted_validation_loss": 0.5645131680094884,
+          "per_seed": [
+            {
+              "accuracy": 0.8933333333333333,
+              "balanced_accuracy": 0.8885448916408668,
+              "best_checkpoint_path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_bf8f84b290ff71fc09ede6e0/attempt_03/best.pt",
+              "best_checkpoint_sha256": "17929fcf35a928f4ecfd605b801da6aab9c524f5052798ef04d2dfdf96c25a11",
+              "best_epoch": 8,
+              "fit_id": "fit_bf8f84b290ff71fc09ede6e0",
+              "history_sha256": "5a6de11df55b5b2d858914a780e3366c4628d14e06dc28966a1cf68343f164c4",
+              "macro_f1": 0.8899671052631579,
+              "seed": 3908274,
+              "validation_predictions_sha256": "588bb22d54698ba70c9c93c398d092e2ca4b3489413fdc59cd3419603da90733",
+              "weighted_validation_loss": 0.41108099255186387
+            },
+            {
+              "accuracy": 0.76,
+              "balanced_accuracy": 0.7498839009287925,
+              "best_checkpoint_path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_79b67ce0068a30c094b4f658/attempt_03/best.pt",
+              "best_checkpoint_sha256": "94419c94f290dfc22cab8d455dc92b1905122505e27442514515ea3116c66797",
+              "best_epoch": 14,
+              "fit_id": "fit_79b67ce0068a30c094b4f658",
+              "history_sha256": "93b2ba9e76e13dc7041d46775d55ba9fa3fcd8d61707cb048b23dacafe5bd6b1",
+              "macro_f1": 0.7444444444444445,
+              "seed": 3908275,
+              "validation_predictions_sha256": "aeb038aea9e4512ff0d345e039f74f9c8ed3492761d00d7f58d7ad3ab56cbd72",
+              "weighted_validation_loss": 0.6668808871221078
+            },
+            {
+              "accuracy": 0.8666666666666667,
+              "balanced_accuracy": 0.8653250773993808,
+              "best_checkpoint_path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_1a78cdf5078c5df044583c09/attempt_03/best.pt",
+              "best_checkpoint_sha256": "2d0a688cc491fa1a0292cdf5c47d0c5ee31bb5da38aefdef7e4cb51053083700",
+              "best_epoch": 25,
+              "fit_id": "fit_1a78cdf5078c5df044583c09",
+              "history_sha256": "c0a98cdf560aa11fe961d628d330aef07edf08cd68d42caf7834fb44a8042f21",
+              "macro_f1": 0.8641774891774892,
+              "seed": 3908276,
+              "validation_predictions_sha256": "909aae7f85742c842a93f41cb3348fe366495d7bdd6587eb58f8c0b28b7f0754",
+              "weighted_validation_loss": 0.6155776243544934
+            }
+          ],
+          "sample_sd_balanced_accuracy_ddof1": 0.07426607047588708,
+          "sample_variance_balanced_accuracy_ddof1": 0.0055154492239294275,
+          "seed_ids": [
+            3908274,
+            3908275,
+            3908276
+          ],
+          "validation_rank": 5
+        },
+        {
+          "configuration_id": "resnet50_9e59a2e5fb4ac31a",
+          "configuration_sha256": "a0a16437e78def0ceb3196791660ec6a16a666c4fdc5afb4196d5fc8a4ad96a4",
+          "effective_parameters": {
+            "model": {
+              "architecture": "torchvision.models.resnet50",
+              "data_loader_workers": 8,
+              "decay_policy": "all optimized parameters; decoupled weight decay",
+              "family": "resnet50",
+              "head": "fc: Linear(2048,4)",
+              "head_initialization": "seeded default nn.Linear initialization after backbone load",
+              "head_lr_multiplier": 10.0,
+              "head_only_warmup_epochs": 0,
+              "name": "resnet50_9e59a2e5fb4ac31a",
+              "optimizer": "AdamW",
+              "optimizer_betas": [
+                0.9,
+                0.999
+              ],
+              "optimizer_epsilon": 1e-08,
+              "optimizer_state_policy": "one optimizer; no resets at unfreeze",
+              "pin_memory": true,
+              "pretrained_backbone_initialization": "identical cached official weights across seeds",
+              "pretrained_required": true,
+              "scheduler_and_early_stopping": "active from epoch 1; no resets at unfreeze",
+              "warmup_batchnorm_policy": "backbone eval while frozen; train after unfreezing",
+              "warmup_counts_toward_maximum_epochs": true
+            },
+            "runtime": {
+              "deterministic": true,
+              "device": "cuda",
+              "num_threads": 2
+            },
+            "training": {
+              "batch_size": 16,
+              "epochs": 100,
+              "learning_rate": 0.0003,
+              "max_grad_norm": 3.0,
+              "min_delta": 0.0,
+              "patience": 20,
+              "scheduler_factor": 0.1,
+              "scheduler_patience": 5,
+              "weight_decay": 0.0001
+            }
+          },
+          "family": "resnet50",
+          "mean_balanced_accuracy": 0.8209107327141383,
+          "mean_macro_f1": 0.8212897105392035,
+          "mean_weighted_validation_loss": 0.5459274178591861,
+          "per_seed": [
+            {
+              "accuracy": 0.84,
+              "balanced_accuracy": 0.8312693498452013,
+              "best_checkpoint_path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_48a7469a1a7c83b0f7942e9b/attempt_03/best.pt",
+              "best_checkpoint_sha256": "444ebad596b324a57528a65651461ab5952ce6336f375b84957c25d9a9da65fd",
+              "best_epoch": 8,
+              "fit_id": "fit_48a7469a1a7c83b0f7942e9b",
+              "history_sha256": "02d20c87fdbdfa15421b8e92c546dbf6db6b117e24244ea794bc6890e66efde6",
+              "macro_f1": 0.8307149514046066,
+              "seed": 3908274,
+              "validation_predictions_sha256": "059bd2688f7daeb32d42db86d26a9cdf861be6b6d792aa5deeabb7d34887c623",
+              "weighted_validation_loss": 0.5128804832716256
+            },
+            {
+              "accuracy": 0.8133333333333334,
+              "balanced_accuracy": 0.8087074303405573,
+              "best_checkpoint_path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_e8029a32327d337d06bb15bc/attempt_03/best.pt",
+              "best_checkpoint_sha256": "629cdc393e7cbfbc30cd89a69b7a2037b12ef4c75112719fd5866496b3de51d4",
+              "best_epoch": 7,
+              "fit_id": "fit_e8029a32327d337d06bb15bc",
+              "history_sha256": "f9f35fc6a5963d08f564a31d30c92f2102b455a226945894ff8d4459118b3fa1",
+              "macro_f1": 0.8107217107217108,
+              "seed": 3908275,
+              "validation_predictions_sha256": "f21d33d276a15ccbc6dee4bf7765ab119da416a55a35f203cc00c0b62229fd2b",
+              "weighted_validation_loss": 0.5306980608903844
+            },
+            {
+              "accuracy": 0.8266666666666667,
+              "balanced_accuracy": 0.8227554179566563,
+              "best_checkpoint_path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_38b12297ab428a1bd6d307f8/attempt_03/best.pt",
+              "best_checkpoint_sha256": "255a958a25acb8430847b186796ce7c9f5581889994b982d87c78ce13e5a2c97",
+              "best_epoch": 17,
+              "fit_id": "fit_38b12297ab428a1bd6d307f8",
+              "history_sha256": "06f976e1ddac1635a52fffc48ad4019b5bb9316b7ae1c8758ef476aed480c3a5",
+              "macro_f1": 0.822432469491293,
+              "seed": 3908276,
+              "validation_predictions_sha256": "de06fb74e130c0169f144f8df2c114a80fa4208876d9c05c4f2de26822983289",
+              "weighted_validation_loss": 0.5942037094155481
+            }
+          ],
+          "sample_sd_balanced_accuracy_ddof1": 0.011393515728978568,
+          "sample_variance_balanced_accuracy_ddof1": 0.00012981220066648206,
+          "seed_ids": [
+            3908274,
+            3908275,
+            3908276
+          ],
+          "validation_rank": 6
+        },
+        {
+          "configuration_id": "resnet50_16c8ac4cb3c82ad3",
+          "configuration_sha256": "be9111f9ea4885f0c2701c28a511554e18a92defd4f27394a3120bea04a47de2",
+          "effective_parameters": {
+            "model": {
+              "architecture": "torchvision.models.resnet50",
+              "data_loader_workers": 8,
+              "decay_policy": "all optimized parameters; decoupled weight decay",
+              "family": "resnet50",
+              "head": "fc: Linear(2048,4)",
+              "head_initialization": "seeded default nn.Linear initialization after backbone load",
+              "head_lr_multiplier": 10.0,
+              "head_only_warmup_epochs": 0,
+              "name": "resnet50_16c8ac4cb3c82ad3",
+              "optimizer": "AdamW",
+              "optimizer_betas": [
+                0.9,
+                0.999
+              ],
+              "optimizer_epsilon": 1e-08,
+              "optimizer_state_policy": "one optimizer; no resets at unfreeze",
+              "pin_memory": true,
+              "pretrained_backbone_initialization": "identical cached official weights across seeds",
+              "pretrained_required": true,
+              "scheduler_and_early_stopping": "active from epoch 1; no resets at unfreeze",
+              "warmup_batchnorm_policy": "backbone eval while frozen; train after unfreezing",
+              "warmup_counts_toward_maximum_epochs": true
+            },
+            "runtime": {
+              "deterministic": true,
+              "device": "cuda",
+              "num_threads": 2
+            },
+            "training": {
+              "batch_size": 16,
+              "epochs": 100,
+              "learning_rate": 1e-05,
+              "max_grad_norm": 3.0,
+              "min_delta": 0.0,
+              "patience": 20,
+              "scheduler_factor": 0.1,
+              "scheduler_patience": 5,
+              "weight_decay": 0.0001
+            }
+          },
+          "family": "resnet50",
+          "mean_balanced_accuracy": 0.8150154798761611,
+          "mean_macro_f1": 0.8131556695798181,
+          "mean_weighted_validation_loss": 0.49091564742693056,
+          "per_seed": [
+            {
+              "accuracy": 0.8,
+              "balanced_accuracy": 0.7964396284829721,
+              "best_checkpoint_path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_2cca61b660c8e05d2b401a6c/attempt_03/best.pt",
+              "best_checkpoint_sha256": "0ce79f34cf941378e6eba596188a3cb7733c3e41ebc122ba1dceda50e5475763",
+              "best_epoch": 19,
+              "fit_id": "fit_2cca61b660c8e05d2b401a6c",
+              "history_sha256": "6de69052ad58ddcc6e9e3b705ef8d52d6507f899874f6437657a460532b87360",
+              "macro_f1": 0.794906074317839,
+              "seed": 3908274,
+              "validation_predictions_sha256": "6db1d4cb2c121b5a5fb04471d2de1fa7328b1ef787bdd0eaa49c7bd2c1e3f047",
+              "weighted_validation_loss": 0.5001155265017102
+            },
+            {
+              "accuracy": 0.8133333333333334,
+              "balanced_accuracy": 0.8111455108359134,
+              "best_checkpoint_path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_4747df9834e26cdc2a9e5890/attempt_03/best.pt",
+              "best_checkpoint_sha256": "12717487f3dac59ddeeb69295ae6d93c2989b3bbf5af84f9fd86dacf84abe2d3",
+              "best_epoch": 15,
+              "fit_id": "fit_4747df9834e26cdc2a9e5890",
+              "history_sha256": "b589a42cb24884bea5b4c980ae3a94b5ea34547017b9770d4a55c2fd4a8f93db",
+              "macro_f1": 0.8081550802139037,
+              "seed": 3908275,
+              "validation_predictions_sha256": "15cefe3f8e02dc30a3879375cc843df0925a34455e42ba4368aa62820ba3b973",
+              "weighted_validation_loss": 0.47274459646393857
+            },
+            {
+              "accuracy": 0.84,
+              "balanced_accuracy": 0.8374613003095976,
+              "best_checkpoint_path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_963899c803354b90fb4fdc53/attempt_03/best.pt",
+              "best_checkpoint_sha256": "6193102995ac899957d452627a317e6b302a524aff95555188b5316dd7249679",
+              "best_epoch": 17,
+              "fit_id": "fit_963899c803354b90fb4fdc53",
+              "history_sha256": "57cdd80888ae08c783c42aa31a3f71742b3ed543441eb2ad65e1691c43b3ede7",
+              "macro_f1": 0.8364058542077117,
+              "seed": 3908276,
+              "validation_predictions_sha256": "df1341f0358c7634f64dac0ac4ef48b2017b8e63a5b4233f7f08b7f2ab30dd0a",
+              "weighted_validation_loss": 0.49988681931514295
+            }
+          ],
+          "sample_sd_balanced_accuracy_ddof1": 0.020782850746281112,
+          "sample_variance_balanced_accuracy_ddof1": 0.00043192688514219734,
+          "seed_ids": [
+            3908274,
+            3908275,
+            3908276
+          ],
+          "validation_rank": 7
+        },
+        {
+          "configuration_id": "resnet50_d0278e8c67350d9c",
+          "configuration_sha256": "131f6995dd1b6ea42b734e31d6cb71e9f519dbc4f646d456fcab097b7b3d9e83",
+          "effective_parameters": {
+            "model": {
+              "architecture": "torchvision.models.resnet50",
+              "data_loader_workers": 8,
+              "decay_policy": "all optimized parameters; decoupled weight decay",
+              "family": "resnet50",
+              "head": "fc: Linear(2048,4)",
+              "head_initialization": "seeded default nn.Linear initialization after backbone load",
+              "head_lr_multiplier": 10.0,
+              "head_only_warmup_epochs": 0,
+              "name": "resnet50_d0278e8c67350d9c",
+              "optimizer": "AdamW",
+              "optimizer_betas": [
+                0.9,
+                0.999
+              ],
+              "optimizer_epsilon": 1e-08,
+              "optimizer_state_policy": "one optimizer; no resets at unfreeze",
+              "pin_memory": true,
+              "pretrained_backbone_initialization": "identical cached official weights across seeds",
+              "pretrained_required": true,
+              "scheduler_and_early_stopping": "active from epoch 1; no resets at unfreeze",
+              "warmup_batchnorm_policy": "backbone eval while frozen; train after unfreezing",
+              "warmup_counts_toward_maximum_epochs": true
+            },
+            "runtime": {
+              "deterministic": true,
+              "device": "cuda",
+              "num_threads": 2
+            },
+            "training": {
+              "batch_size": 16,
+              "epochs": 100,
+              "learning_rate": 1e-05,
+              "max_grad_norm": 3.0,
+              "min_delta": 0.0,
+              "patience": 20,
+              "scheduler_factor": 0.1,
+              "scheduler_patience": 5,
+              "weight_decay": 0.01
+            }
+          },
+          "family": "resnet50",
+          "mean_balanced_accuracy": 0.8150154798761611,
+          "mean_macro_f1": 0.8131556695798181,
+          "mean_weighted_validation_loss": 0.4917306372290477,
+          "per_seed": [
+            {
+              "accuracy": 0.8,
+              "balanced_accuracy": 0.7964396284829721,
+              "best_checkpoint_path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_bf7d2c0fe3a3833864fd72f8/attempt_03/best.pt",
+              "best_checkpoint_sha256": "3c33abf2fed8ea68ece4013c474a0dd0b12749604de133007acd6475ea59f19b",
+              "best_epoch": 19,
+              "fit_id": "fit_bf7d2c0fe3a3833864fd72f8",
+              "history_sha256": "2009cedbabb552fa6eeed86aad85b3e985b1c996540c0b88746fb2893dac1a9d",
+              "macro_f1": 0.794906074317839,
+              "seed": 3908274,
+              "validation_predictions_sha256": "cae45191574ff53390619eb8badca69e485c43c4f4b698ac63df8d7aa499718b",
+              "weighted_validation_loss": 0.5008295508815597
+            },
+            {
+              "accuracy": 0.8133333333333334,
+              "balanced_accuracy": 0.8111455108359134,
+              "best_checkpoint_path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_366e74d3c7d238a522e22ea9/attempt_03/best.pt",
+              "best_checkpoint_sha256": "bd3b410d18cba3e5c50cbc811b40b2c818aa0a34aceff3c9529a3201b6655d5b",
+              "best_epoch": 15,
+              "fit_id": "fit_366e74d3c7d238a522e22ea9",
+              "history_sha256": "64c9d9875f87a37361b86b6ffdf96f64096905fe50d8c2b99473bc274ae61073",
+              "macro_f1": 0.8081550802139037,
+              "seed": 3908275,
+              "validation_predictions_sha256": "cc206e4ee5bbe9b030686d3f47ac0dd2572d514fc33007189096d0d573ccedab",
+              "weighted_validation_loss": 0.4706884479491661
+            },
+            {
+              "accuracy": 0.84,
+              "balanced_accuracy": 0.8374613003095976,
+              "best_checkpoint_path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_8fcb63b78e7f09e9212b1d31/attempt_03/best.pt",
+              "best_checkpoint_sha256": "57dc9a3f10e6b8672da98cc875cbd56e669824d0c9ac3c40ab303db6c165a5e5",
+              "best_epoch": 17,
+              "fit_id": "fit_8fcb63b78e7f09e9212b1d31",
+              "history_sha256": "baec840d5ea192301119d418db89bcd6e86b88d58b49a0ee451ee70c7e34d0c5",
+              "macro_f1": 0.8364058542077117,
+              "seed": 3908276,
+              "validation_predictions_sha256": "c9bd1fa60d8601a3f16a8f0eca147aff3514aa3e4b2e4bf85aeb2d0418281628",
+              "weighted_validation_loss": 0.5036739128564174
+            }
+          ],
+          "sample_sd_balanced_accuracy_ddof1": 0.020782850746281112,
+          "sample_variance_balanced_accuracy_ddof1": 0.00043192688514219734,
+          "seed_ids": [
+            3908274,
+            3908275,
+            3908276
+          ],
+          "validation_rank": 8
+        },
+        {
+          "configuration_id": "resnet50_b0103c1846e1ab1d",
+          "configuration_sha256": "62edc19dcd415234d97ad33d045d530d53ab2660805d45e0892c152bc081c512",
+          "effective_parameters": {
+            "model": {
+              "architecture": "torchvision.models.resnet50",
+              "data_loader_workers": 8,
+              "decay_policy": "all optimized parameters; decoupled weight decay",
+              "family": "resnet50",
+              "head": "fc: Linear(2048,4)",
+              "head_initialization": "seeded default nn.Linear initialization after backbone load",
+              "head_lr_multiplier": 10.0,
+              "head_only_warmup_epochs": 5,
+              "name": "resnet50_b0103c1846e1ab1d",
+              "optimizer": "AdamW",
+              "optimizer_betas": [
+                0.9,
+                0.999
+              ],
+              "optimizer_epsilon": 1e-08,
+              "optimizer_state_policy": "one optimizer; no resets at unfreeze",
+              "pin_memory": true,
+              "pretrained_backbone_initialization": "identical cached official weights across seeds",
+              "pretrained_required": true,
+              "scheduler_and_early_stopping": "active from epoch 1; no resets at unfreeze",
+              "warmup_batchnorm_policy": "backbone eval while frozen; train after unfreezing",
+              "warmup_counts_toward_maximum_epochs": true
+            },
+            "runtime": {
+              "deterministic": true,
+              "device": "cuda",
+              "num_threads": 2
+            },
+            "training": {
+              "batch_size": 16,
+              "epochs": 100,
+              "learning_rate": 1e-05,
+              "max_grad_norm": 3.0,
+              "min_delta": 0.0,
+              "patience": 20,
+              "scheduler_factor": 0.1,
+              "scheduler_patience": 5,
+              "weight_decay": 0.0001
+            }
+          },
+          "family": "resnet50",
+          "mean_balanced_accuracy": 0.8106295149638802,
+          "mean_macro_f1": 0.8081809081809082,
+          "mean_weighted_validation_loss": 0.49339667547908095,
+          "per_seed": [
+            {
+              "accuracy": 0.8,
+              "balanced_accuracy": 0.7948916408668731,
+              "best_checkpoint_path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_fa0d8b7833f9f4d88536f592/attempt_03/best.pt",
+              "best_checkpoint_sha256": "d3b1f47c1d2cd7d27a0ddcb265630184d9ef7cb0239a7c476ca4e4c191de6e8a",
+              "best_epoch": 19,
+              "fit_id": "fit_fa0d8b7833f9f4d88536f592",
+              "history_sha256": "6c0f2eab4e571131685fd18feb46b58f6d030f71f60e3c44310d38e730aa7001",
+              "macro_f1": 0.7941919191919191,
+              "seed": 3908274,
+              "validation_predictions_sha256": "ce4df43a4d75eef74961e6826dde5aff0a3b8b8eb71e4877f7d450b0077f037f",
+              "weighted_validation_loss": 0.5082251259932915
+            },
+            {
+              "accuracy": 0.8266666666666667,
+              "balanced_accuracy": 0.8258513931888545,
+              "best_checkpoint_path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_fb2c3839ba073ab86e1cdd7e/attempt_03/best.pt",
+              "best_checkpoint_sha256": "8b6f31f1364d318919ca549e8b84c9c7c338085eb528bea3b47c544bcc8dfa4b",
+              "best_epoch": 18,
+              "fit_id": "fit_fb2c3839ba073ab86e1cdd7e",
+              "history_sha256": "fb37c35f65ce017115a50ec9c61975cb09b410d22705714cb00bcea8eb634458",
+              "macro_f1": 0.8219696969696969,
+              "seed": 3908275,
+              "validation_predictions_sha256": "57506eed82ff19003009b3af45e5c3a759ac2a68961804b6ba39eb0337078b29",
+              "weighted_validation_loss": 0.4614794325642288
+            },
+            {
+              "accuracy": 0.8133333333333334,
+              "balanced_accuracy": 0.8111455108359132,
+              "best_checkpoint_path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_f5a6559f22bacb4cd0d2d38e/attempt_03/best.pt",
+              "best_checkpoint_sha256": "2c3dffdba227963594bd40bbabf4b36cc101dbb00aaa07af2f983b2e0c735b85",
+              "best_epoch": 17,
+              "fit_id": "fit_f5a6559f22bacb4cd0d2d38e",
+              "history_sha256": "fbc39a3e2b35b15612be6198e322123782f6a6219c349c04d1175341b7d88a07",
+              "macro_f1": 0.8083811083811083,
+              "seed": 3908276,
+              "validation_predictions_sha256": "a23f3c5598ba1500b245343fc21045a5baf63c5852d612711e763a3ea42bcfd0",
+              "weighted_validation_loss": 0.5104854678797225
+            }
+          ],
+          "sample_sd_balanced_accuracy_ddof1": 0.01548632476621143,
+          "sample_variance_balanced_accuracy_ddof1": 0.00023982625476457348,
+          "seed_ids": [
+            3908274,
+            3908275,
+            3908276
+          ],
+          "validation_rank": 9
+        },
+        {
+          "configuration_id": "resnet50_cffee846f7053520",
+          "configuration_sha256": "f629ea3e4e93e657244e60f59d8cbb21c047f8c7b8a07a3b03b0c99b3beb7c8c",
+          "effective_parameters": {
+            "model": {
+              "architecture": "torchvision.models.resnet50",
+              "data_loader_workers": 8,
+              "decay_policy": "all optimized parameters; decoupled weight decay",
+              "family": "resnet50",
+              "head": "fc: Linear(2048,4)",
+              "head_initialization": "seeded default nn.Linear initialization after backbone load",
+              "head_lr_multiplier": 10.0,
+              "head_only_warmup_epochs": 5,
+              "name": "resnet50_cffee846f7053520",
+              "optimizer": "AdamW",
+              "optimizer_betas": [
+                0.9,
+                0.999
+              ],
+              "optimizer_epsilon": 1e-08,
+              "optimizer_state_policy": "one optimizer; no resets at unfreeze",
+              "pin_memory": true,
+              "pretrained_backbone_initialization": "identical cached official weights across seeds",
+              "pretrained_required": true,
+              "scheduler_and_early_stopping": "active from epoch 1; no resets at unfreeze",
+              "warmup_batchnorm_policy": "backbone eval while frozen; train after unfreezing",
+              "warmup_counts_toward_maximum_epochs": true
+            },
+            "runtime": {
+              "deterministic": true,
+              "device": "cuda",
+              "num_threads": 2
+            },
+            "training": {
+              "batch_size": 16,
+              "epochs": 100,
+              "learning_rate": 1e-05,
+              "max_grad_norm": 3.0,
+              "min_delta": 0.0,
+              "patience": 20,
+              "scheduler_factor": 0.1,
+              "scheduler_patience": 5,
+              "weight_decay": 0.01
+            }
+          },
+          "family": "resnet50",
+          "mean_balanced_accuracy": 0.8106295149638802,
+          "mean_macro_f1": 0.8081809081809082,
+          "mean_weighted_validation_loss": 0.49447508359948794,
+          "per_seed": [
+            {
+              "accuracy": 0.8,
+              "balanced_accuracy": 0.7948916408668731,
+              "best_checkpoint_path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_fc323f535855f415281cead3/attempt_03/best.pt",
+              "best_checkpoint_sha256": "6fac1c9e0591a8e6689e904d0ea93b4829f87fdc70461e20e95c443f77606c1b",
+              "best_epoch": 19,
+              "fit_id": "fit_fc323f535855f415281cead3",
+              "history_sha256": "44cdbce2412f1dd984e0033c32137a8876644c9ed98f1360c8c849a3590c55c8",
+              "macro_f1": 0.7941919191919191,
+              "seed": 3908274,
+              "validation_predictions_sha256": "890a76e08e6e55874c4527c0057affbf47f0d195d6508c3066bf73f589a08a59",
+              "weighted_validation_loss": 0.5089531972507636
+            },
+            {
+              "accuracy": 0.8266666666666667,
+              "balanced_accuracy": 0.8258513931888545,
+              "best_checkpoint_path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_7320b723bc342c39cb1f453d/attempt_03/best.pt",
+              "best_checkpoint_sha256": "493b7d00b05c9de4130869d7e7c2f42b2a0f72ee5f9f0c9f0edf239c0a066fc1",
+              "best_epoch": 18,
+              "fit_id": "fit_7320b723bc342c39cb1f453d",
+              "history_sha256": "74d5c38926c014bc4ea31e1920e3015798a0a0c0e0b277dee981b269e6822ff2",
+              "macro_f1": 0.8219696969696969,
+              "seed": 3908275,
+              "validation_predictions_sha256": "ed432818e03e03b872aa68481d9a3a93c85e8354d21863282c0fcc6a55dbc846",
+              "weighted_validation_loss": 0.46335967821379503
+            },
+            {
+              "accuracy": 0.8133333333333334,
+              "balanced_accuracy": 0.8111455108359132,
+              "best_checkpoint_path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_a4b9d4f132380f26c7774ebf/attempt_03/best.pt",
+              "best_checkpoint_sha256": "542a3740b8203275777eeed5da09cc4e48e8c416e78eb66f2a4152af2985bbc4",
+              "best_epoch": 17,
+              "fit_id": "fit_a4b9d4f132380f26c7774ebf",
+              "history_sha256": "cde3aaec1a55782ce9cba23208800e89db50f4267ac7cc894640ab64793be7e0",
+              "macro_f1": 0.8083811083811083,
+              "seed": 3908276,
+              "validation_predictions_sha256": "062f28ef8e6855d19ec1f66d08e8393b22cb49367a2043f55f65c01427c03ebf",
+              "weighted_validation_loss": 0.5111123753339052
+            }
+          ],
+          "sample_sd_balanced_accuracy_ddof1": 0.01548632476621143,
+          "sample_variance_balanced_accuracy_ddof1": 0.00023982625476457348,
+          "seed_ids": [
+            3908274,
+            3908275,
+            3908276
+          ],
+          "validation_rank": 10
+        },
+        {
+          "configuration_id": "resnet50_ebd677f8f97d5908",
+          "configuration_sha256": "710a4779b95ee7d54f29ab22ccb71306d48c3a84e88f1d6704bd9e07022baca0",
+          "effective_parameters": {
+            "model": {
+              "architecture": "torchvision.models.resnet50",
+              "data_loader_workers": 8,
+              "decay_policy": "all optimized parameters; decoupled weight decay",
+              "family": "resnet50",
+              "head": "fc: Linear(2048,4)",
+              "head_initialization": "seeded default nn.Linear initialization after backbone load",
+              "head_lr_multiplier": 10.0,
+              "head_only_warmup_epochs": 5,
+              "name": "resnet50_ebd677f8f97d5908",
+              "optimizer": "AdamW",
+              "optimizer_betas": [
+                0.9,
+                0.999
+              ],
+              "optimizer_epsilon": 1e-08,
+              "optimizer_state_policy": "one optimizer; no resets at unfreeze",
+              "pin_memory": true,
+              "pretrained_backbone_initialization": "identical cached official weights across seeds",
+              "pretrained_required": true,
+              "scheduler_and_early_stopping": "active from epoch 1; no resets at unfreeze",
+              "warmup_batchnorm_policy": "backbone eval while frozen; train after unfreezing",
+              "warmup_counts_toward_maximum_epochs": true
+            },
+            "runtime": {
+              "deterministic": true,
+              "device": "cuda",
+              "num_threads": 2
+            },
+            "training": {
+              "batch_size": 16,
+              "epochs": 100,
+              "learning_rate": 0.0003,
+              "max_grad_norm": 3.0,
+              "min_delta": 0.0,
+              "patience": 20,
+              "scheduler_factor": 0.1,
+              "scheduler_patience": 5,
+              "weight_decay": 0.01
+            }
+          },
+          "family": "resnet50",
+          "mean_balanced_accuracy": 0.8085655314757482,
+          "mean_macro_f1": 0.8077563882069696,
+          "mean_weighted_validation_loss": 0.5475639176763194,
+          "per_seed": [
+            {
+              "accuracy": 0.8533333333333334,
+              "balanced_accuracy": 0.8490712074303406,
+              "best_checkpoint_path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_2bab85b7d72be0c800b237b0/attempt_03/best.pt",
+              "best_checkpoint_sha256": "a02f13815d9db16c2522063fffc3054c63f7d327ec7f0e031cc98f955f56fe88",
+              "best_epoch": 21,
+              "fit_id": "fit_2bab85b7d72be0c800b237b0",
+              "history_sha256": "aebdf317e4bc7a4bc8292c1c3d3aab1a2b78ff4d335576f3361883c1f0d1c0fa",
+              "macro_f1": 0.8499688538205981,
+              "seed": 3908274,
+              "validation_predictions_sha256": "d1f702bb7e21d2ea7962a0b0df6675a338545ffd64a1915ff7a670064cc2e41f",
+              "weighted_validation_loss": 0.5484469415008524
+            },
+            {
+              "accuracy": 0.8,
+              "balanced_accuracy": 0.7948916408668731,
+              "best_checkpoint_path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_39d15a556c2aca33d4a5982a/attempt_03/best.pt",
+              "best_checkpoint_sha256": "eb3ac93994ab814181e8db1512b392f7cb48337ab056e799312973e83fd03ab6",
+              "best_epoch": 16,
+              "fit_id": "fit_39d15a556c2aca33d4a5982a",
+              "history_sha256": "3f2400c14201147f339b8387bc26752c269dc3c30bfc26287cf695bd5d0ebb4a",
+              "macro_f1": 0.7942599067599068,
+              "seed": 3908275,
+              "validation_predictions_sha256": "59f150ecac9bcdd71b4b36e9948dbea078078b9c127328d2af7b1077486e33d2",
+              "weighted_validation_loss": 0.5507340625846366
+            },
+            {
+              "accuracy": 0.7866666666666666,
+              "balanced_accuracy": 0.7817337461300309,
+              "best_checkpoint_path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_34d7eebe56b9e39bf06eea20/attempt_03/best.pt",
+              "best_checkpoint_sha256": "1c39ebfe2569652580284c90d8e9ce1918cc12a5407be7b54811802ea299909a",
+              "best_epoch": 3,
+              "fit_id": "fit_34d7eebe56b9e39bf06eea20",
+              "history_sha256": "85ea0f369f542eec69fd9b96b3700daee4dc8edba20150c3e85780ad359db2b9",
+              "macro_f1": 0.779040404040404,
+              "seed": 3908276,
+              "validation_predictions_sha256": "0ab5f2caa23e36b74aa733d13fe1925dd55980bc26a724037044052154b0a970",
+              "weighted_validation_loss": 0.5435107489434692
+            }
+          ],
+          "sample_sd_balanced_accuracy_ddof1": 0.03569054338168989,
+          "sample_variance_balanced_accuracy_ddof1": 0.0012738148868802882,
+          "seed_ids": [
+            3908274,
+            3908275,
+            3908276
+          ],
+          "validation_rank": 11
+        },
+        {
+          "configuration_id": "resnet50_4809fb68b7051a2b",
+          "configuration_sha256": "1d6f1f7d14358dff389ecfc3b5a9f03804865d3b9acfb49e0685074161b25dd5",
+          "effective_parameters": {
+            "model": {
+              "architecture": "torchvision.models.resnet50",
+              "data_loader_workers": 8,
+              "decay_policy": "all optimized parameters; decoupled weight decay",
+              "family": "resnet50",
+              "head": "fc: Linear(2048,4)",
+              "head_initialization": "seeded default nn.Linear initialization after backbone load",
+              "head_lr_multiplier": 10.0,
+              "head_only_warmup_epochs": 5,
+              "name": "resnet50_4809fb68b7051a2b",
+              "optimizer": "AdamW",
+              "optimizer_betas": [
+                0.9,
+                0.999
+              ],
+              "optimizer_epsilon": 1e-08,
+              "optimizer_state_policy": "one optimizer; no resets at unfreeze",
+              "pin_memory": true,
+              "pretrained_backbone_initialization": "identical cached official weights across seeds",
+              "pretrained_required": true,
+              "scheduler_and_early_stopping": "active from epoch 1; no resets at unfreeze",
+              "warmup_batchnorm_policy": "backbone eval while frozen; train after unfreezing",
+              "warmup_counts_toward_maximum_epochs": true
+            },
+            "runtime": {
+              "deterministic": true,
+              "device": "cuda",
+              "num_threads": 2
+            },
+            "training": {
+              "batch_size": 16,
+              "epochs": 100,
+              "learning_rate": 0.0001,
+              "max_grad_norm": 3.0,
+              "min_delta": 0.0,
+              "patience": 20,
+              "scheduler_factor": 0.1,
+              "scheduler_patience": 5,
+              "weight_decay": 0.0001
+            }
+          },
+          "family": "resnet50",
+          "mean_balanced_accuracy": 0.7876676986584108,
+          "mean_macro_f1": 0.7842330967330967,
+          "mean_weighted_validation_loss": 0.5694559471149437,
+          "per_seed": [
+            {
+              "accuracy": 0.7866666666666666,
+              "balanced_accuracy": 0.781733746130031,
+              "best_checkpoint_path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_1f4010e4e3d986f0a2c0b4a9/attempt_03/best.pt",
+              "best_checkpoint_sha256": "85fc1e26a5612c3d34cefcb5b2dd80a30825f917e09dd93fdfb9a6fdf3815877",
+              "best_epoch": 6,
+              "fit_id": "fit_1f4010e4e3d986f0a2c0b4a9",
+              "history_sha256": "c844ebbe39dba77cf0e9562b7c516b37264401d9618fb459bf363b5127bf916f",
+              "macro_f1": 0.779040404040404,
+              "seed": 3908274,
+              "validation_predictions_sha256": "c53883651f5dc3620a1577e2d233154ec9a34ccc6015ef94b8fdacba6ffb00b8",
+              "weighted_validation_loss": 0.5287151419637182
+            },
+            {
+              "accuracy": 0.8,
+              "balanced_accuracy": 0.7964396284829722,
+              "best_checkpoint_path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_127f110180846378b6d89197/attempt_03/best.pt",
+              "best_checkpoint_sha256": "fc838ebaaa125cece537e5ec4a329758ba4314a4006223ff2f9865f93bf2c5bc",
+              "best_epoch": 5,
+              "fit_id": "fit_127f110180846378b6d89197",
+              "history_sha256": "b930fcb22e0bf75b49715d89643dd570a33a52452fc731aa0c40a753b4be644e",
+              "macro_f1": 0.7941919191919191,
+              "seed": 3908275,
+              "validation_predictions_sha256": "0336c741c4f77e7beab3ccea6d8e373652d1ef32b57793f2546fcedd7f742bdb",
+              "weighted_validation_loss": 0.5917795982584357
+            },
+            {
+              "accuracy": 0.7866666666666666,
+              "balanced_accuracy": 0.7848297213622291,
+              "best_checkpoint_path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_82dc779385da2c0bcb7b0a2c/attempt_03/best.pt",
+              "best_checkpoint_sha256": "85d9b11ea235652deea99ddb4dc075e4aec4fdf8a3055d121cdfbefff3956cf7",
+              "best_epoch": 5,
+              "fit_id": "fit_82dc779385da2c0bcb7b0a2c",
+              "history_sha256": "6b02cf5f39ec8d5ffbce433712859dbcc21143cb2b6d7a5bf916eb746ce35073",
+              "macro_f1": 0.7794669669669669,
+              "seed": 3908276,
+              "validation_predictions_sha256": "b5707debeb5bc7ce770dcb438a95e2e8ecda6d6239a75705ceecc2e6110c9139",
+              "weighted_validation_loss": 0.5878731011226773
+            }
+          ],
+          "sample_sd_balanced_accuracy_ddof1": 0.007752827245261512,
+          "sample_variance_balanced_accuracy_ddof1": 6.0106330294869204e-05,
+          "seed_ids": [
+            3908274,
+            3908275,
+            3908276
+          ],
+          "validation_rank": 12
+        }
+      ],
+      "family": "resnet50",
+      "winner_configuration_id": "resnet50_ddc5866488e57f18",
+      "winner_configuration_sha256": "dbe456b4fce9bde0bab0b9adc1b7630f57770114454577cf1d735e728cf6f16c"
+    },
+    {
+      "candidates": [
+        {
+          "configuration_id": "vit_b_16_ed7ae4a374295b2c",
+          "configuration_sha256": "753dffdef91a6b6046872a098c78f67e04e0f5a53eaa239a0734f525f0b3aca8",
+          "effective_parameters": {
+            "model": {
+              "architecture": "torchvision.models.vit_b_16",
+              "data_loader_workers": 8,
+              "decay_policy": "all optimized parameters; decoupled weight decay",
+              "family": "vit_b_16",
+              "head": "heads.head: Linear(768,4)",
+              "head_initialization": "seeded default nn.Linear initialization after backbone load",
+              "head_lr_multiplier": 10.0,
+              "head_only_warmup_epochs": 0,
+              "name": "vit_b_16_ed7ae4a374295b2c",
+              "optimizer": "AdamW",
+              "optimizer_betas": [
+                0.9,
+                0.999
+              ],
+              "optimizer_epsilon": 1e-08,
+              "optimizer_state_policy": "one optimizer; no resets at unfreeze",
+              "pin_memory": true,
+              "pretrained_backbone_initialization": "identical cached official weights across seeds",
+              "pretrained_required": true,
+              "scheduler_and_early_stopping": "active from epoch 1; no resets at unfreeze",
+              "warmup_batchnorm_policy": "backbone eval while frozen; train after unfreezing",
+              "warmup_counts_toward_maximum_epochs": true
+            },
+            "runtime": {
+              "deterministic": true,
+              "device": "cuda",
+              "num_threads": 2
+            },
+            "training": {
+              "batch_size": 16,
+              "epochs": 100,
+              "learning_rate": 3e-05,
+              "max_grad_norm": 3.0,
+              "min_delta": 0.0,
+              "patience": 20,
+              "scheduler_factor": 0.1,
+              "scheduler_patience": 5,
+              "weight_decay": 0.05
+            }
+          },
+          "family": "vit_b_16",
+          "mean_balanced_accuracy": 0.8579463364293086,
+          "mean_macro_f1": 0.8555369701654532,
+          "mean_weighted_validation_loss": 0.43492245265903573,
+          "per_seed": [
+            {
+              "accuracy": 0.8266666666666667,
+              "balanced_accuracy": 0.8234133126934985,
+              "best_checkpoint_path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_22fc888eff7d0577f8d02dc9/attempt_03/best.pt",
+              "best_checkpoint_sha256": "dc27e68c99e5331a2f3e1e001f82825edd5610a62adf2c6db1bfefdcb95003dc",
+              "best_epoch": 3,
+              "fit_id": "fit_22fc888eff7d0577f8d02dc9",
+              "history_sha256": "7d1dcd2760ddad73b9b7adc92e0eb433c1419ed12d73ef63be7f81ecbfe3e4e3",
+              "macro_f1": 0.8234133126934985,
+              "seed": 3908274,
+              "validation_predictions_sha256": "6573ed44fc09d8872b5c71a80816eb546b7912aa0fc4c97af650f3579f565c32",
+              "weighted_validation_loss": 0.4007859852941086
+            },
+            {
+              "accuracy": 0.84,
+              "balanced_accuracy": 0.8418730650154799,
+              "best_checkpoint_path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_3a83dde1ef421ea30de958c6/attempt_03/best.pt",
+              "best_checkpoint_sha256": "0c46354f19d3aa8a33a81fdbc53a6155cb789da5d4355f953944cfb0539e02c5",
+              "best_epoch": 4,
+              "fit_id": "fit_3a83dde1ef421ea30de958c6",
+              "history_sha256": "e007543e8f81e3cc13e1de879079ee2bba9e1fc36653b8c020454fbacf04b6c4",
+              "macro_f1": 0.8379979432611011,
+              "seed": 3908275,
+              "validation_predictions_sha256": "5a2254e3b0491e93ab604eb4c032d60cd30cf3abbf907913f7eee140a29dfe67",
+              "weighted_validation_loss": 0.5245347253295283
+            },
+            {
+              "accuracy": 0.9066666666666666,
+              "balanced_accuracy": 0.9085526315789474,
+              "best_checkpoint_path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_d7801df3f99349df3403e22a/attempt_03/best.pt",
+              "best_checkpoint_sha256": "73c3892b2a05bc395efbbfd8bc531cd5c8b5073700f5a81583c5982a41cfe88a",
+              "best_epoch": 4,
+              "fit_id": "fit_d7801df3f99349df3403e22a",
+              "history_sha256": "a819f749ac7de4dce21862e73882c655c35f2f5f9d46202c9aeff80eeb38d9b8",
+              "macro_f1": 0.9051996545417598,
+              "seed": 3908276,
+              "validation_predictions_sha256": "2243a9c8d05178d9a82b9cefe07abb4953258a3f634e5ea3c32906de7379ccac",
+              "weighted_validation_loss": 0.37944664735347033
+            }
+          ],
+          "sample_sd_balanced_accuracy_ddof1": 0.04478770417789341,
+          "sample_variance_balanced_accuracy_ddof1": 0.002005938445526491,
+          "seed_ids": [
+            3908274,
+            3908275,
+            3908276
+          ],
+          "validation_rank": 1
+        },
+        {
+          "configuration_id": "vit_b_16_bfe488252ac3f3a8",
+          "configuration_sha256": "4370fbf16391788c117bdd0688de4beaa84f3da90cd16cf3b7ab3931217eeb1a",
+          "effective_parameters": {
+            "model": {
+              "architecture": "torchvision.models.vit_b_16",
+              "data_loader_workers": 8,
+              "decay_policy": "all optimized parameters; decoupled weight decay",
+              "family": "vit_b_16",
+              "head": "heads.head: Linear(768,4)",
+              "head_initialization": "seeded default nn.Linear initialization after backbone load",
+              "head_lr_multiplier": 10.0,
+              "head_only_warmup_epochs": 0,
+              "name": "vit_b_16_bfe488252ac3f3a8",
+              "optimizer": "AdamW",
+              "optimizer_betas": [
+                0.9,
+                0.999
+              ],
+              "optimizer_epsilon": 1e-08,
+              "optimizer_state_policy": "one optimizer; no resets at unfreeze",
+              "pin_memory": true,
+              "pretrained_backbone_initialization": "identical cached official weights across seeds",
+              "pretrained_required": true,
+              "scheduler_and_early_stopping": "active from epoch 1; no resets at unfreeze",
+              "warmup_batchnorm_policy": "backbone eval while frozen; train after unfreezing",
+              "warmup_counts_toward_maximum_epochs": true
+            },
+            "runtime": {
+              "deterministic": true,
+              "device": "cuda",
+              "num_threads": 2
+            },
+            "training": {
+              "batch_size": 16,
+              "epochs": 100,
+              "learning_rate": 3e-05,
+              "max_grad_norm": 3.0,
+              "min_delta": 0.0,
+              "patience": 20,
+              "scheduler_factor": 0.1,
+              "scheduler_patience": 5,
+              "weight_decay": 0.01
+            }
+          },
+          "family": "vit_b_16",
+          "mean_balanced_accuracy": 0.8535603715170279,
+          "mean_macro_f1": 0.8507206766494693,
+          "mean_weighted_validation_loss": 0.43507043139983176,
+          "per_seed": [
+            {
+              "accuracy": 0.8266666666666667,
+              "balanced_accuracy": 0.8234133126934985,
+              "best_checkpoint_path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_4962e49336b84f6932ae9f75/attempt_03/best.pt",
+              "best_checkpoint_sha256": "4eebea1c8982792bbbc311275734fabd3f268bfabfac1b2a903db14a89c5ac1b",
+              "best_epoch": 3,
+              "fit_id": "fit_4962e49336b84f6932ae9f75",
+              "history_sha256": "fe86adfd6f48fc9602020c0f6b9565614e39efabf1ac07531bb9a378298deed7",
+              "macro_f1": 0.8234133126934985,
+              "seed": 3908274,
+              "validation_predictions_sha256": "b10aa945e73b7c154d89da9ae7f29b3f11121368d1bce8c88abcbf732ab85807",
+              "weighted_validation_loss": 0.4007984951076408
+            },
+            {
+              "accuracy": 0.84,
+              "balanced_accuracy": 0.8418730650154799,
+              "best_checkpoint_path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_fc3aa7bfe35040e074dd1226/attempt_03/best.pt",
+              "best_checkpoint_sha256": "220c7116cc4068ce6636cd33e0df4be65562626e326acb0cefab155acd8f176b",
+              "best_epoch": 4,
+              "fit_id": "fit_fc3aa7bfe35040e074dd1226",
+              "history_sha256": "eb075b92ce300f867f72fa8362a78fe062cf97feffaa4cba740a86b2d7270df7",
+              "macro_f1": 0.8379979432611011,
+              "seed": 3908275,
+              "validation_predictions_sha256": "455c5e5b61f0baca6eae703fa7d338864380368e702b02b9ab54ff845df60e89",
+              "weighted_validation_loss": 0.5246857307571918
+            },
+            {
+              "accuracy": 0.8933333333333333,
+              "balanced_accuracy": 0.8953947368421052,
+              "best_checkpoint_path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_b09c762ac2562f8b071af0b4/attempt_03/best.pt",
+              "best_checkpoint_sha256": "65dadea69f5430d571121e00890220d021add8bf053842c0425f36c7e21805e7",
+              "best_epoch": 4,
+              "fit_id": "fit_b09c762ac2562f8b071af0b4",
+              "history_sha256": "2fe34bdaa00a2543ba0669aed0ba84f75151c75a4dff9dcffbc4c1f214904d5d",
+              "macro_f1": 0.8907507739938081,
+              "seed": 3908276,
+              "validation_predictions_sha256": "37d30a090765e02e67a4b355a7b4de9b55d097d2b77339f1572f452c6c8fff04",
+              "weighted_validation_loss": 0.3797270683346627
+            }
+          ],
+          "sample_sd_balanced_accuracy_ddof1": 0.037386845354499376,
+          "sample_variance_balanced_accuracy_ddof1": 0.0013977762055612515,
+          "seed_ids": [
+            3908274,
+            3908275,
+            3908276
+          ],
+          "validation_rank": 2
+        },
+        {
+          "configuration_id": "vit_b_16_2a4f0cb866166c13",
+          "configuration_sha256": "c9c21e86f5951e76b7d04fcdc6de5e587d0f5a5adcdf636f0beebd403b9d7e52",
+          "effective_parameters": {
+            "model": {
+              "architecture": "torchvision.models.vit_b_16",
+              "data_loader_workers": 8,
+              "decay_policy": "all optimized parameters; decoupled weight decay",
+              "family": "vit_b_16",
+              "head": "heads.head: Linear(768,4)",
+              "head_initialization": "seeded default nn.Linear initialization after backbone load",
+              "head_lr_multiplier": 10.0,
+              "head_only_warmup_epochs": 0,
+              "name": "vit_b_16_2a4f0cb866166c13",
+              "optimizer": "AdamW",
+              "optimizer_betas": [
+                0.9,
+                0.999
+              ],
+              "optimizer_epsilon": 1e-08,
+              "optimizer_state_policy": "one optimizer; no resets at unfreeze",
+              "pin_memory": true,
+              "pretrained_backbone_initialization": "identical cached official weights across seeds",
+              "pretrained_required": true,
+              "scheduler_and_early_stopping": "active from epoch 1; no resets at unfreeze",
+              "warmup_batchnorm_policy": "backbone eval while frozen; train after unfreezing",
+              "warmup_counts_toward_maximum_epochs": true
+            },
+            "runtime": {
+              "deterministic": true,
+              "device": "cuda",
+              "num_threads": 2
+            },
+            "training": {
+              "batch_size": 16,
+              "epochs": 100,
+              "learning_rate": 1e-05,
+              "max_grad_norm": 3.0,
+              "min_delta": 0.0,
+              "patience": 20,
+              "scheduler_factor": 0.1,
+              "scheduler_patience": 5,
+              "weight_decay": 0.05
+            }
+          },
+          "family": "vit_b_16",
+          "mean_balanced_accuracy": 0.8286893704850361,
+          "mean_macro_f1": 0.8266223815759419,
+          "mean_weighted_validation_loss": 0.48002863503889076,
+          "per_seed": [
+            {
+              "accuracy": 0.84,
+              "balanced_accuracy": 0.8374613003095976,
+              "best_checkpoint_path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_eaab95a98ad83f6a021d3a67/attempt_03/best.pt",
+              "best_checkpoint_sha256": "36886d2422113723fb3c8629a232d242a12ddf974689a78b94ec269cbc0ad05f",
+              "best_epoch": 7,
+              "fit_id": "fit_eaab95a98ad83f6a021d3a67",
+              "history_sha256": "e96f04b6b18c387f11dcb15581c296317d440cc04e3fde965696a38cf8dfc450",
+              "macro_f1": 0.8366896308072779,
+              "seed": 3908274,
+              "validation_predictions_sha256": "0eae1bb76fe80e0850402bd78fa445138675da98dccc5bc66c06ccf628b2b212",
+              "weighted_validation_loss": 0.49443193421388665
+            },
+            {
+              "accuracy": 0.8266666666666667,
+              "balanced_accuracy": 0.8258513931888545,
+              "best_checkpoint_path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_010717f065b4c64fab4a3d39/attempt_03/best.pt",
+              "best_checkpoint_sha256": "24d26a9b878b3e2521c3a1df9a743b3bea3686976ca866f4d588b64912ea6a24",
+              "best_epoch": 8,
+              "fit_id": "fit_010717f065b4c64fab4a3d39",
+              "history_sha256": "cd53760d18f166011ccc442983a38821c69d1e526b868d753904b32a95bfdd7d",
+              "macro_f1": 0.820745044429255,
+              "seed": 3908275,
+              "validation_predictions_sha256": "4f6b3de27eb504e57db1e8232e406a6b9a9508b531fd4c56c6e1ff755f9932f6",
+              "weighted_validation_loss": 0.4793205054135372
+            },
+            {
+              "accuracy": 0.8266666666666667,
+              "balanced_accuracy": 0.8227554179566563,
+              "best_checkpoint_path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_63e7a841d3747ed6d5d512a1/attempt_03/best.pt",
+              "best_checkpoint_sha256": "8a1ba3b11a5b75d6d6c99043fcef31a864c1c64555ff4ccf34ee3d71da281848",
+              "best_epoch": 5,
+              "fit_id": "fit_63e7a841d3747ed6d5d512a1",
+              "history_sha256": "85e04178897febd1ea9af95930efe297d9228a4b622b665b1f45fbb818e20408",
+              "macro_f1": 0.822432469491293,
+              "seed": 3908276,
+              "validation_predictions_sha256": "b24aa7f0281ab2435c4887cc34fdc45438d6a0000ddd3c799681a00c0587cf3a",
+              "weighted_validation_loss": 0.4663334654892484
+            }
+          ],
+          "sample_sd_balanced_accuracy_ddof1": 0.0077528272452615545,
+          "sample_variance_balanced_accuracy_ddof1": 6.010633029486987e-05,
+          "seed_ids": [
+            3908274,
+            3908275,
+            3908276
+          ],
+          "validation_rank": 3
+        },
+        {
+          "configuration_id": "vit_b_16_66408a480f90d530",
+          "configuration_sha256": "b4a0e30aeb3c024a5575b92544f93e2ee5ce9801b0b4633f25352ae2f4c18796",
+          "effective_parameters": {
+            "model": {
+              "architecture": "torchvision.models.vit_b_16",
+              "data_loader_workers": 8,
+              "decay_policy": "all optimized parameters; decoupled weight decay",
+              "family": "vit_b_16",
+              "head": "heads.head: Linear(768,4)",
+              "head_initialization": "seeded default nn.Linear initialization after backbone load",
+              "head_lr_multiplier": 10.0,
+              "head_only_warmup_epochs": 0,
+              "name": "vit_b_16_66408a480f90d530",
+              "optimizer": "AdamW",
+              "optimizer_betas": [
+                0.9,
+                0.999
+              ],
+              "optimizer_epsilon": 1e-08,
+              "optimizer_state_policy": "one optimizer; no resets at unfreeze",
+              "pin_memory": true,
+              "pretrained_backbone_initialization": "identical cached official weights across seeds",
+              "pretrained_required": true,
+              "scheduler_and_early_stopping": "active from epoch 1; no resets at unfreeze",
+              "warmup_batchnorm_policy": "backbone eval while frozen; train after unfreezing",
+              "warmup_counts_toward_maximum_epochs": true
+            },
+            "runtime": {
+              "deterministic": true,
+              "device": "cuda",
+              "num_threads": 2
+            },
+            "training": {
+              "batch_size": 16,
+              "epochs": 100,
+              "learning_rate": 1e-05,
+              "max_grad_norm": 3.0,
+              "min_delta": 0.0,
+              "patience": 20,
+              "scheduler_factor": 0.1,
+              "scheduler_patience": 5,
+              "weight_decay": 0.01
+            }
+          },
+          "family": "vit_b_16",
+          "mean_balanced_accuracy": 0.8286893704850361,
+          "mean_macro_f1": 0.8266223815759419,
+          "mean_weighted_validation_loss": 0.48006431330512794,
+          "per_seed": [
+            {
+              "accuracy": 0.84,
+              "balanced_accuracy": 0.8374613003095976,
+              "best_checkpoint_path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_251c6d92b4e890f05e2bc784/attempt_03/best.pt",
+              "best_checkpoint_sha256": "651301114ecbbc09e2e6f7ed60332e410ccf86cd9be93c79fc5c2b6be486ca64",
+              "best_epoch": 7,
+              "fit_id": "fit_251c6d92b4e890f05e2bc784",
+              "history_sha256": "adf0a2d4b84a1cb2a6d3a1ba12de6ea1e7c50d94b4408f3267b570768bd3d54b",
+              "macro_f1": 0.8366896308072779,
+              "seed": 3908274,
+              "validation_predictions_sha256": "0a22644b2c4c215eb918332a509168d529c838e772ee83606be7010156f4badb",
+              "weighted_validation_loss": 0.4945125513803214
+            },
+            {
+              "accuracy": 0.8266666666666667,
+              "balanced_accuracy": 0.8258513931888545,
+              "best_checkpoint_path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_19a8e93b5c5d28344b27b692/attempt_03/best.pt",
+              "best_checkpoint_sha256": "33bc296d6a160cdea79b2c341640dbcf997d6aec8d469e2c260a77f37ba193dd",
+              "best_epoch": 8,
+              "fit_id": "fit_19a8e93b5c5d28344b27b692",
+              "history_sha256": "0360c7401fd2c4430d689440687edbd653c9704e7d7cf4c527e9f0c3233e2c3f",
+              "macro_f1": 0.820745044429255,
+              "seed": 3908275,
+              "validation_predictions_sha256": "16fc433d609fc25e41933f2eb8924b5d3bf070d1d61f916a804127eec02046b4",
+              "weighted_validation_loss": 0.4793243442724148
+            },
+            {
+              "accuracy": 0.8266666666666667,
+              "balanced_accuracy": 0.8227554179566563,
+              "best_checkpoint_path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_e176d34bb89896a33dd00e90/attempt_03/best.pt",
+              "best_checkpoint_sha256": "52db6acf56e7a2caeb2d7b0c943f79c2b818460cb276884a5f0c0cf28cf28ec0",
+              "best_epoch": 5,
+              "fit_id": "fit_e176d34bb89896a33dd00e90",
+              "history_sha256": "6875c2f8f97742c590496d9cde083c6ff808f84ec2bda4d1690879be63641acb",
+              "macro_f1": 0.822432469491293,
+              "seed": 3908276,
+              "validation_predictions_sha256": "512697c5c0433679b0836e310f7b823f4f6180bfed6360f027203f26a17482fa",
+              "weighted_validation_loss": 0.46635604426264765
+            }
+          ],
+          "sample_sd_balanced_accuracy_ddof1": 0.0077528272452615545,
+          "sample_variance_balanced_accuracy_ddof1": 6.010633029486987e-05,
+          "seed_ids": [
+            3908274,
+            3908275,
+            3908276
+          ],
+          "validation_rank": 4
+        },
+        {
+          "configuration_id": "vit_b_16_be3d71bbf2832c97",
+          "configuration_sha256": "531fc43ef740662b4dadaa16b2b1f899756e9447c929508e91badf9aaa9ba8d6",
+          "effective_parameters": {
+            "model": {
+              "architecture": "torchvision.models.vit_b_16",
+              "data_loader_workers": 8,
+              "decay_policy": "all optimized parameters; decoupled weight decay",
+              "family": "vit_b_16",
+              "head": "heads.head: Linear(768,4)",
+              "head_initialization": "seeded default nn.Linear initialization after backbone load",
+              "head_lr_multiplier": 10.0,
+              "head_only_warmup_epochs": 5,
+              "name": "vit_b_16_be3d71bbf2832c97",
+              "optimizer": "AdamW",
+              "optimizer_betas": [
+                0.9,
+                0.999
+              ],
+              "optimizer_epsilon": 1e-08,
+              "optimizer_state_policy": "one optimizer; no resets at unfreeze",
+              "pin_memory": true,
+              "pretrained_backbone_initialization": "identical cached official weights across seeds",
+              "pretrained_required": true,
+              "scheduler_and_early_stopping": "active from epoch 1; no resets at unfreeze",
+              "warmup_batchnorm_policy": "backbone eval while frozen; train after unfreezing",
+              "warmup_counts_toward_maximum_epochs": true
+            },
+            "runtime": {
+              "deterministic": true,
+              "device": "cuda",
+              "num_threads": 2
+            },
+            "training": {
+              "batch_size": 16,
+              "epochs": 100,
+              "learning_rate": 1e-05,
+              "max_grad_norm": 3.0,
+              "min_delta": 0.0,
+              "patience": 20,
+              "scheduler_factor": 0.1,
+              "scheduler_patience": 5,
+              "weight_decay": 0.05
+            }
+          },
+          "family": "vit_b_16",
+          "mean_balanced_accuracy": 0.8232714138286894,
+          "mean_macro_f1": 0.8219357424501783,
+          "mean_weighted_validation_loss": 0.49298378430099954,
+          "per_seed": [
+            {
+              "accuracy": 0.7866666666666666,
+              "balanced_accuracy": 0.781733746130031,
+              "best_checkpoint_path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_45fe8d90077bcbf61ca9c629/attempt_03/best.pt",
+              "best_checkpoint_sha256": "9dae9bd662655153a11c64959b27722e7db6e8b03d2893b15bcbef3bdf6c0aca",
+              "best_epoch": 10,
+              "fit_id": "fit_45fe8d90077bcbf61ca9c629",
+              "history_sha256": "18b958a235459f584ec5af0a38ac6e91336fa256e135e7709121bdc3e7e17457",
+              "macro_f1": 0.7802508390743684,
+              "seed": 3908274,
+              "validation_predictions_sha256": "66561b6b2a72f24eb49bf6d5da38b109c71215595a9025ab35b2beb8d525ffd4",
+              "weighted_validation_loss": 0.4934532547555864
+            },
+            {
+              "accuracy": 0.8533333333333334,
+              "balanced_accuracy": 0.8490712074303406,
+              "best_checkpoint_path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_4b1c33cf0df6003fa30a2643/attempt_03/best.pt",
+              "best_checkpoint_sha256": "a71ac7d7807bd3af3ba3073d0e9f690e1af7d5d7221427308991177e6700dd43",
+              "best_epoch": 10,
+              "fit_id": "fit_4b1c33cf0df6003fa30a2643",
+              "history_sha256": "b22a4fa09491a71da1adade1b3cdacd791f075b018b0259e1ba1408618c7f160",
+              "macro_f1": 0.8491184797794344,
+              "seed": 3908275,
+              "validation_predictions_sha256": "5addb7253989ce34d167683ef5d4b94e1b27ca2fd69c94efa3aad2263a241394",
+              "weighted_validation_loss": 0.49278823860610527
+            },
+            {
+              "accuracy": 0.84,
+              "balanced_accuracy": 0.8390092879256966,
+              "best_checkpoint_path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_051cace257d14341bd220ce3/attempt_03/best.pt",
+              "best_checkpoint_sha256": "9c8048e7230b1ef8e66ab31bf27abb26a2771d3052de91d93f60dcd7c0a3a5bc",
+              "best_epoch": 10,
+              "fit_id": "fit_051cace257d14341bd220ce3",
+              "history_sha256": "24936ee71d35b7d55f7eb35a7cf64ed451e466e905c3ea1f5044e8ebd4be46fb",
+              "macro_f1": 0.8364379084967319,
+              "seed": 3908276,
+              "validation_predictions_sha256": "edea209af55caf7d48e9c67287d5384314dded1e13a46c051fa30ae06414e9a8",
+              "weighted_validation_loss": 0.4927098595413069
+            }
+          ],
+          "sample_sd_balanced_accuracy_ddof1": 0.03632277432152741,
+          "sample_variance_balanced_accuracy_ddof1": 0.0013193439344126113,
+          "seed_ids": [
+            3908274,
+            3908275,
+            3908276
+          ],
+          "validation_rank": 5
+        },
+        {
+          "configuration_id": "vit_b_16_1ec66706dc2df1a5",
+          "configuration_sha256": "d82ee09cfee927d419e6fdb54fc21a0e6ae3a789eafb6311009f239fcea87ca5",
+          "effective_parameters": {
+            "model": {
+              "architecture": "torchvision.models.vit_b_16",
+              "data_loader_workers": 8,
+              "decay_policy": "all optimized parameters; decoupled weight decay",
+              "family": "vit_b_16",
+              "head": "heads.head: Linear(768,4)",
+              "head_initialization": "seeded default nn.Linear initialization after backbone load",
+              "head_lr_multiplier": 10.0,
+              "head_only_warmup_epochs": 5,
+              "name": "vit_b_16_1ec66706dc2df1a5",
+              "optimizer": "AdamW",
+              "optimizer_betas": [
+                0.9,
+                0.999
+              ],
+              "optimizer_epsilon": 1e-08,
+              "optimizer_state_policy": "one optimizer; no resets at unfreeze",
+              "pin_memory": true,
+              "pretrained_backbone_initialization": "identical cached official weights across seeds",
+              "pretrained_required": true,
+              "scheduler_and_early_stopping": "active from epoch 1; no resets at unfreeze",
+              "warmup_batchnorm_policy": "backbone eval while frozen; train after unfreezing",
+              "warmup_counts_toward_maximum_epochs": true
+            },
+            "runtime": {
+              "deterministic": true,
+              "device": "cuda",
+              "num_threads": 2
+            },
+            "training": {
+              "batch_size": 16,
+              "epochs": 100,
+              "learning_rate": 1e-05,
+              "max_grad_norm": 3.0,
+              "min_delta": 0.0,
+              "patience": 20,
+              "scheduler_factor": 0.1,
+              "scheduler_patience": 5,
+              "weight_decay": 0.01
+            }
+          },
+          "family": "vit_b_16",
+          "mean_balanced_accuracy": 0.8232714138286894,
+          "mean_macro_f1": 0.8219357424501783,
+          "mean_weighted_validation_loss": 0.49304260295919244,
+          "per_seed": [
+            {
+              "accuracy": 0.7866666666666666,
+              "balanced_accuracy": 0.781733746130031,
+              "best_checkpoint_path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_132ef3ec22ef859a47a4db35/attempt_03/best.pt",
+              "best_checkpoint_sha256": "0af1a83fe08843350d5a68711d5067041263d72dd155fdd84fc882c2d6245607",
+              "best_epoch": 10,
+              "fit_id": "fit_132ef3ec22ef859a47a4db35",
+              "history_sha256": "d0dd8600190eeb17cdbdb2bd6f86a12a35caf3878ec53184f7c1460487d48a99",
+              "macro_f1": 0.7802508390743684,
+              "seed": 3908274,
+              "validation_predictions_sha256": "1a91e3ab6f26e5772480677b20eebc6c19d7a7acefe0e82727b91f850b00ed56",
+              "weighted_validation_loss": 0.4935044367425144
+            },
+            {
+              "accuracy": 0.8533333333333334,
+              "balanced_accuracy": 0.8490712074303406,
+              "best_checkpoint_path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_757d2f050abd25ea2d06fb5b/attempt_03/best.pt",
+              "best_checkpoint_sha256": "4b47401067832c6f0fb4484644a19f0c790ff3024a2184e9a9940c306639b861",
+              "best_epoch": 10,
+              "fit_id": "fit_757d2f050abd25ea2d06fb5b",
+              "history_sha256": "b3d61acdb257590dcec152fb531d4897cc1d88a43478c15ddca8916cf5b1dd9f",
+              "macro_f1": 0.8491184797794344,
+              "seed": 3908275,
+              "validation_predictions_sha256": "4b9816b49b84b78342d086079877a1612e8e4de78ecfa3bf5065d621bde4842b",
+              "weighted_validation_loss": 0.4928716659856339
+            },
+            {
+              "accuracy": 0.84,
+              "balanced_accuracy": 0.8390092879256966,
+              "best_checkpoint_path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_f4bd76c5ddc9883cbbf77019/attempt_03/best.pt",
+              "best_checkpoint_sha256": "4c7fdf37e303b8ce72132f9a4e17b85c1f88c3bde4aa33f474703f1bd037ed52",
+              "best_epoch": 10,
+              "fit_id": "fit_f4bd76c5ddc9883cbbf77019",
+              "history_sha256": "d51f1c5de3ab9f725f871d39c005f89fa47baa23dbb52d9d1f8d1a0514b56939",
+              "macro_f1": 0.8364379084967319,
+              "seed": 3908276,
+              "validation_predictions_sha256": "43706c7bac0112b7e65062b1ed2e26d8f510ac4ab7fddcb82250bdb98a8254d0",
+              "weighted_validation_loss": 0.4927517061494291
+            }
+          ],
+          "sample_sd_balanced_accuracy_ddof1": 0.03632277432152741,
+          "sample_variance_balanced_accuracy_ddof1": 0.0013193439344126113,
+          "seed_ids": [
+            3908274,
+            3908275,
+            3908276
+          ],
+          "validation_rank": 6
+        },
+        {
+          "configuration_id": "vit_b_16_b19bc1b8e7929435",
+          "configuration_sha256": "3a9a1501bf769b21bcd38ce9afebb05e4553a83c2f61efb434395b94f815e936",
+          "effective_parameters": {
+            "model": {
+              "architecture": "torchvision.models.vit_b_16",
+              "data_loader_workers": 8,
+              "decay_policy": "all optimized parameters; decoupled weight decay",
+              "family": "vit_b_16",
+              "head": "heads.head: Linear(768,4)",
+              "head_initialization": "seeded default nn.Linear initialization after backbone load",
+              "head_lr_multiplier": 10.0,
+              "head_only_warmup_epochs": 5,
+              "name": "vit_b_16_b19bc1b8e7929435",
+              "optimizer": "AdamW",
+              "optimizer_betas": [
+                0.9,
+                0.999
+              ],
+              "optimizer_epsilon": 1e-08,
+              "optimizer_state_policy": "one optimizer; no resets at unfreeze",
+              "pin_memory": true,
+              "pretrained_backbone_initialization": "identical cached official weights across seeds",
+              "pretrained_required": true,
+              "scheduler_and_early_stopping": "active from epoch 1; no resets at unfreeze",
+              "warmup_batchnorm_policy": "backbone eval while frozen; train after unfreezing",
+              "warmup_counts_toward_maximum_epochs": true
+            },
+            "runtime": {
+              "deterministic": true,
+              "device": "cuda",
+              "num_threads": 2
+            },
+            "training": {
+              "batch_size": 16,
+              "epochs": 100,
+              "learning_rate": 3e-05,
+              "max_grad_norm": 3.0,
+              "min_delta": 0.0,
+              "patience": 20,
+              "scheduler_factor": 0.1,
+              "scheduler_patience": 5,
+              "weight_decay": 0.05
+            }
+          },
+          "family": "vit_b_16",
+          "mean_balanced_accuracy": 0.8224587203302374,
+          "mean_macro_f1": 0.8209729803467902,
+          "mean_weighted_validation_loss": 0.4471362088693099,
+          "per_seed": [
+            {
+              "accuracy": 0.7866666666666666,
+              "balanced_accuracy": 0.7801857585139319,
+              "best_checkpoint_path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_6844660b0b6b6cfe4325511f/attempt_03/best.pt",
+              "best_checkpoint_sha256": "7c3e09983b01c3ca67ac4118d11a16e33550178fb8987da9a0bdc24bd2594d4d",
+              "best_epoch": 7,
+              "fit_id": "fit_6844660b0b6b6cfe4325511f",
+              "history_sha256": "6c57d07301cb262b52129cd4032639c2b6d2d533410ea53f0b61417e5ed98da0",
+              "macro_f1": 0.7793591836047921,
+              "seed": 3908274,
+              "validation_predictions_sha256": "f2bfc1af940d820389cf48eff0350e1c73495451c87ca198f018a4f7a2feee76",
+              "weighted_validation_loss": 0.47924667030572893
+            },
+            {
+              "accuracy": 0.8533333333333334,
+              "balanced_accuracy": 0.8506191950464397,
+              "best_checkpoint_path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_e03b99c2444309c8fd85ee27/attempt_03/best.pt",
+              "best_checkpoint_sha256": "2c75c18ba396cdfd0774d468c697a5556651084c024192c187a418b18181b041",
+              "best_epoch": 10,
+              "fit_id": "fit_e03b99c2444309c8fd85ee27",
+              "history_sha256": "2f0401428b4d71ee5bc5beb1cb9c54282ed16053d82dddeeba803a291329ef3c",
+              "macro_f1": 0.8477453797094362,
+              "seed": 3908275,
+              "validation_predictions_sha256": "931cef301df1a233940481ffa02b97038a11aae26bd784da1af1c461ab334966",
+              "weighted_validation_loss": 0.4516879407207792
+            },
+            {
+              "accuracy": 0.84,
+              "balanced_accuracy": 0.8365712074303405,
+              "best_checkpoint_path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_c8615301f947d2d3f4ebdf78/attempt_03/best.pt",
+              "best_checkpoint_sha256": "8b611b8998e81b0c6b9b03aba0146920fd6d4df2f1496adf2929470bcc157771",
+              "best_epoch": 9,
+              "fit_id": "fit_c8615301f947d2d3f4ebdf78",
+              "history_sha256": "043b1e4eb67d7ef2469f53e4c18adc62c7fadf008af87dea54382e51a1e00853",
+              "macro_f1": 0.8358143777261424,
+              "seed": 3908276,
+              "validation_predictions_sha256": "46d759fbe945b80270322d5db574d56efd14e2b4da82ca824051da30cbb90e42",
+              "weighted_validation_loss": 0.41047401558142155
+            }
+          ],
+          "sample_sd_balanced_accuracy_ddof1": 0.03727719094241992,
+          "sample_variance_balanced_accuracy_ddof1": 0.0013895889645576336,
+          "seed_ids": [
+            3908274,
+            3908275,
+            3908276
+          ],
+          "validation_rank": 7
+        },
+        {
+          "configuration_id": "vit_b_16_595748134ad65d52",
+          "configuration_sha256": "cf8ffe71d18caa0e028136268b12b4b126740132987bfacf91bdf999c76e176a",
+          "effective_parameters": {
+            "model": {
+              "architecture": "torchvision.models.vit_b_16",
+              "data_loader_workers": 8,
+              "decay_policy": "all optimized parameters; decoupled weight decay",
+              "family": "vit_b_16",
+              "head": "heads.head: Linear(768,4)",
+              "head_initialization": "seeded default nn.Linear initialization after backbone load",
+              "head_lr_multiplier": 10.0,
+              "head_only_warmup_epochs": 5,
+              "name": "vit_b_16_595748134ad65d52",
+              "optimizer": "AdamW",
+              "optimizer_betas": [
+                0.9,
+                0.999
+              ],
+              "optimizer_epsilon": 1e-08,
+              "optimizer_state_policy": "one optimizer; no resets at unfreeze",
+              "pin_memory": true,
+              "pretrained_backbone_initialization": "identical cached official weights across seeds",
+              "pretrained_required": true,
+              "scheduler_and_early_stopping": "active from epoch 1; no resets at unfreeze",
+              "warmup_batchnorm_policy": "backbone eval while frozen; train after unfreezing",
+              "warmup_counts_toward_maximum_epochs": true
+            },
+            "runtime": {
+              "deterministic": true,
+              "device": "cuda",
+              "num_threads": 2
+            },
+            "training": {
+              "batch_size": 16,
+              "epochs": 100,
+              "learning_rate": 3e-05,
+              "max_grad_norm": 3.0,
+              "min_delta": 0.0,
+              "patience": 20,
+              "scheduler_factor": 0.1,
+              "scheduler_patience": 5,
+              "weight_decay": 0.01
+            }
+          },
+          "family": "vit_b_16",
+          "mean_balanced_accuracy": 0.8224587203302374,
+          "mean_macro_f1": 0.8209729803467902,
+          "mean_weighted_validation_loss": 0.4473447755199029,
+          "per_seed": [
+            {
+              "accuracy": 0.7866666666666666,
+              "balanced_accuracy": 0.7801857585139319,
+              "best_checkpoint_path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_d1a0a352de2bf4d99784a3ce/attempt_03/best.pt",
+              "best_checkpoint_sha256": "00952f885854ec3e643bbadd7081d0fd62c2ad785387356d3dcfd256fb7e9205",
+              "best_epoch": 7,
+              "fit_id": "fit_d1a0a352de2bf4d99784a3ce",
+              "history_sha256": "3af4851443b64bbbf2ec421d05c8ed2df89e202ec53264f544befbeb66c4520f",
+              "macro_f1": 0.7793591836047921,
+              "seed": 3908274,
+              "validation_predictions_sha256": "f1da34ba31e81375995e5175957593a2efd702a31178b8fbfd5fe0d39377216f",
+              "weighted_validation_loss": 0.4793134909092138
+            },
+            {
+              "accuracy": 0.8533333333333334,
+              "balanced_accuracy": 0.8506191950464397,
+              "best_checkpoint_path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_7962b0a835e0b81135bcb0af/attempt_03/best.pt",
+              "best_checkpoint_sha256": "ce81de4b13fdba49a4619d38c068bb2f9e2a9007d6166b520c867d31727d2ce7",
+              "best_epoch": 10,
+              "fit_id": "fit_7962b0a835e0b81135bcb0af",
+              "history_sha256": "3ff9db6ba0158576436d2c9aa24a5d32ae2bd5b7fca283b30b60c0146f75258a",
+              "macro_f1": 0.8477453797094362,
+              "seed": 3908275,
+              "validation_predictions_sha256": "c278c7b291e1f5b9a417933ab4825541525f2522fa8ec52fe7b695a6837995eb",
+              "weighted_validation_loss": 0.45211554983242724
+            },
+            {
+              "accuracy": 0.84,
+              "balanced_accuracy": 0.8365712074303405,
+              "best_checkpoint_path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_6c8e2b406682fd887a5c577b/attempt_03/best.pt",
+              "best_checkpoint_sha256": "874b250fb72e56952e764b5e20b9fa213524da24b361b1fbc196d5da245fc5dc",
+              "best_epoch": 9,
+              "fit_id": "fit_6c8e2b406682fd887a5c577b",
+              "history_sha256": "c0f75a7d31542c2cb2847b04a772a502a7cc0a7824f2f760efe90769d2ca9780",
+              "macro_f1": 0.8358143777261424,
+              "seed": 3908276,
+              "validation_predictions_sha256": "878561df2eb25b288923ac76a4224eda9197b087a962c09d1c4632141c0ee636",
+              "weighted_validation_loss": 0.4106052858180677
+            }
+          ],
+          "sample_sd_balanced_accuracy_ddof1": 0.03727719094241992,
+          "sample_variance_balanced_accuracy_ddof1": 0.0013895889645576336,
+          "seed_ids": [
+            3908274,
+            3908275,
+            3908276
+          ],
+          "validation_rank": 8
+        },
+        {
+          "configuration_id": "vit_b_16_7df605956c34ed0a",
+          "configuration_sha256": "a61d651540c9ea334ea652c414b925a80596183791e9bc02e272dd02de46bd72",
+          "effective_parameters": {
+            "model": {
+              "architecture": "torchvision.models.vit_b_16",
+              "data_loader_workers": 8,
+              "decay_policy": "all optimized parameters; decoupled weight decay",
+              "family": "vit_b_16",
+              "head": "heads.head: Linear(768,4)",
+              "head_initialization": "seeded default nn.Linear initialization after backbone load",
+              "head_lr_multiplier": 10.0,
+              "head_only_warmup_epochs": 0,
+              "name": "vit_b_16_7df605956c34ed0a",
+              "optimizer": "AdamW",
+              "optimizer_betas": [
+                0.9,
+                0.999
+              ],
+              "optimizer_epsilon": 1e-08,
+              "optimizer_state_policy": "one optimizer; no resets at unfreeze",
+              "pin_memory": true,
+              "pretrained_backbone_initialization": "identical cached official weights across seeds",
+              "pretrained_required": true,
+              "scheduler_and_early_stopping": "active from epoch 1; no resets at unfreeze",
+              "warmup_batchnorm_policy": "backbone eval while frozen; train after unfreezing",
+              "warmup_counts_toward_maximum_epochs": true
+            },
+            "runtime": {
+              "deterministic": true,
+              "device": "cuda",
+              "num_threads": 2
+            },
+            "training": {
+              "batch_size": 16,
+              "epochs": 100,
+              "learning_rate": 3e-06,
+              "max_grad_norm": 3.0,
+              "min_delta": 0.0,
+              "patience": 20,
+              "scheduler_factor": 0.1,
+              "scheduler_patience": 5,
+              "weight_decay": 0.05
+            }
+          },
+          "family": "vit_b_16",
+          "mean_balanced_accuracy": 0.814499484004128,
+          "mean_macro_f1": 0.8125957237448345,
+          "mean_weighted_validation_loss": 0.49163732615196043,
+          "per_seed": [
+            {
+              "accuracy": 0.7866666666666666,
+              "balanced_accuracy": 0.78328173374613,
+              "best_checkpoint_path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_86e54edd59acf8f849e3317d/attempt_03/best.pt",
+              "best_checkpoint_sha256": "57231ea7995121ac2b64672c17e0bfaf8665c612a4642832452b5ba587c7f5e7",
+              "best_epoch": 12,
+              "fit_id": "fit_86e54edd59acf8f849e3317d",
+              "history_sha256": "ce82ab973af402118c474369058928b736252f7940916bfb38f10415505e50d4",
+              "macro_f1": 0.7800887021475256,
+              "seed": 3908274,
+              "validation_predictions_sha256": "5a416ea42241e7bd47882057020ca6a0626e67fa42c89f9fcce299a58f6c6cbd",
+              "weighted_validation_loss": 0.49090872693806886
+            },
+            {
+              "accuracy": 0.84,
+              "balanced_accuracy": 0.8374613003095974,
+              "best_checkpoint_path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_c2506a1b364425154e07f91d/attempt_03/best.pt",
+              "best_checkpoint_sha256": "fda94bc137486760bc19be93c26a05d009971998b443911626fbcf3f7fe27280",
+              "best_epoch": 13,
+              "fit_id": "fit_c2506a1b364425154e07f91d",
+              "history_sha256": "a54fe5b937cd0ad5a0cbdd86d17db245c55bf554e6308f58f30137d6605797b7",
+              "macro_f1": 0.8364413364413363,
+              "seed": 3908275,
+              "validation_predictions_sha256": "286b8a19974297f576f3ed5f69cb3ec1001fde7b3ed1f5970463b76572951799",
+              "weighted_validation_loss": 0.4923279752458135
+            },
+            {
+              "accuracy": 0.8266666666666667,
+              "balanced_accuracy": 0.8227554179566564,
+              "best_checkpoint_path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_670d20623ba02b9408f622a9/attempt_03/best.pt",
+              "best_checkpoint_sha256": "cd791f320736ab543099f22d3e8cb7fb6e0fb050fb1a47381b8d13753779f776",
+              "best_epoch": 12,
+              "fit_id": "fit_670d20623ba02b9408f622a9",
+              "history_sha256": "45499797f247a811bcc38b33808340280483f258e55c5d350f96f09042f40b8c",
+              "macro_f1": 0.8212571326456415,
+              "seed": 3908276,
+              "validation_predictions_sha256": "d27d6231e36a2596d5e52b3e0e002620b65d1e10b95235be614de2be4b34b402",
+              "weighted_validation_loss": 0.49167527627199886
+            }
+          ],
+          "sample_sd_balanced_accuracy_ddof1": 0.028017435505818238,
+          "sample_variance_balanced_accuracy_ddof1": 0.0007849766923226844,
+          "seed_ids": [
+            3908274,
+            3908275,
+            3908276
+          ],
+          "validation_rank": 9
+        },
+        {
+          "configuration_id": "vit_b_16_c94965f8f35f3cdc",
+          "configuration_sha256": "62fc15607d24dce20f0af8377c5c3674d22c48cfbe7972c9b278dc11ab90d67a",
+          "effective_parameters": {
+            "model": {
+              "architecture": "torchvision.models.vit_b_16",
+              "data_loader_workers": 8,
+              "decay_policy": "all optimized parameters; decoupled weight decay",
+              "family": "vit_b_16",
+              "head": "heads.head: Linear(768,4)",
+              "head_initialization": "seeded default nn.Linear initialization after backbone load",
+              "head_lr_multiplier": 10.0,
+              "head_only_warmup_epochs": 0,
+              "name": "vit_b_16_c94965f8f35f3cdc",
+              "optimizer": "AdamW",
+              "optimizer_betas": [
+                0.9,
+                0.999
+              ],
+              "optimizer_epsilon": 1e-08,
+              "optimizer_state_policy": "one optimizer; no resets at unfreeze",
+              "pin_memory": true,
+              "pretrained_backbone_initialization": "identical cached official weights across seeds",
+              "pretrained_required": true,
+              "scheduler_and_early_stopping": "active from epoch 1; no resets at unfreeze",
+              "warmup_batchnorm_policy": "backbone eval while frozen; train after unfreezing",
+              "warmup_counts_toward_maximum_epochs": true
+            },
+            "runtime": {
+              "deterministic": true,
+              "device": "cuda",
+              "num_threads": 2
+            },
+            "training": {
+              "batch_size": 16,
+              "epochs": 100,
+              "learning_rate": 3e-06,
+              "max_grad_norm": 3.0,
+              "min_delta": 0.0,
+              "patience": 20,
+              "scheduler_factor": 0.1,
+              "scheduler_patience": 5,
+              "weight_decay": 0.01
+            }
+          },
+          "family": "vit_b_16",
+          "mean_balanced_accuracy": 0.814499484004128,
+          "mean_macro_f1": 0.8125957237448345,
+          "mean_weighted_validation_loss": 0.49165446254528233,
+          "per_seed": [
+            {
+              "accuracy": 0.7866666666666666,
+              "balanced_accuracy": 0.78328173374613,
+              "best_checkpoint_path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_f1c490ede29fc24a456afab0/attempt_03/best.pt",
+              "best_checkpoint_sha256": "bbe31b3954b2dbc1d80f9c34c2b05ebb10e07b04f0c3b4d480652b4ef295596e",
+              "best_epoch": 12,
+              "fit_id": "fit_f1c490ede29fc24a456afab0",
+              "history_sha256": "6325434a0682af8fe6d418f46374741cae8036b530c83711e55a98cdac84d782",
+              "macro_f1": 0.7800887021475256,
+              "seed": 3908274,
+              "validation_predictions_sha256": "f86992e01868dae7ab44a6468d27c10fe1440cff88ddb17546f0c13d4431eed6",
+              "weighted_validation_loss": 0.4909204039722681
+            },
+            {
+              "accuracy": 0.84,
+              "balanced_accuracy": 0.8374613003095974,
+              "best_checkpoint_path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_4f0a1148ac68b7b1693ae1c7/attempt_03/best.pt",
+              "best_checkpoint_sha256": "c695923e01d2664ffc14f119dfc1398eb4c58a31361dc45ae8315ff5f6d70bde",
+              "best_epoch": 13,
+              "fit_id": "fit_4f0a1148ac68b7b1693ae1c7",
+              "history_sha256": "6e9a1dd4666e2c2af90b5d9abc8a5561d5296cf5aaf46c9db18b9c60e34fb8d4",
+              "macro_f1": 0.8364413364413363,
+              "seed": 3908275,
+              "validation_predictions_sha256": "aa687be282cc625ac7edeccd838cd7dd558440312f0256bde25a17fc776e0bc5",
+              "weighted_validation_loss": 0.49235003381967546
+            },
+            {
+              "accuracy": 0.8266666666666667,
+              "balanced_accuracy": 0.8227554179566564,
+              "best_checkpoint_path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_ef9ac1331ba743375ee410e1/attempt_03/best.pt",
+              "best_checkpoint_sha256": "9534c2bc9ff2649d989d5155940109128dd0d33a991bf04a5ba65c032bb5850f",
+              "best_epoch": 12,
+              "fit_id": "fit_ef9ac1331ba743375ee410e1",
+              "history_sha256": "b6e75c96115905df2f7b8548e6fa5e45390fc9843e10c73d8f962db9f2734442",
+              "macro_f1": 0.8212571326456415,
+              "seed": 3908276,
+              "validation_predictions_sha256": "1fee6216d9c5c7cad3bb311eecafed4d8e83856faaf1fb4d77c65e789c0cfdb5",
+              "weighted_validation_loss": 0.4916929498439034
+            }
+          ],
+          "sample_sd_balanced_accuracy_ddof1": 0.028017435505818238,
+          "sample_variance_balanced_accuracy_ddof1": 0.0007849766923226844,
+          "seed_ids": [
+            3908274,
+            3908275,
+            3908276
+          ],
+          "validation_rank": 10
+        },
+        {
+          "configuration_id": "vit_b_16_bd3c6d213797c08a",
+          "configuration_sha256": "ded3b1d240b58c4c0260003eda6abbd599e6560d5ca6bfea1431af6451c272a4",
+          "effective_parameters": {
+            "model": {
+              "architecture": "torchvision.models.vit_b_16",
+              "data_loader_workers": 8,
+              "decay_policy": "all optimized parameters; decoupled weight decay",
+              "family": "vit_b_16",
+              "head": "heads.head: Linear(768,4)",
+              "head_initialization": "seeded default nn.Linear initialization after backbone load",
+              "head_lr_multiplier": 10.0,
+              "head_only_warmup_epochs": 5,
+              "name": "vit_b_16_bd3c6d213797c08a",
+              "optimizer": "AdamW",
+              "optimizer_betas": [
+                0.9,
+                0.999
+              ],
+              "optimizer_epsilon": 1e-08,
+              "optimizer_state_policy": "one optimizer; no resets at unfreeze",
+              "pin_memory": true,
+              "pretrained_backbone_initialization": "identical cached official weights across seeds",
+              "pretrained_required": true,
+              "scheduler_and_early_stopping": "active from epoch 1; no resets at unfreeze",
+              "warmup_batchnorm_policy": "backbone eval while frozen; train after unfreezing",
+              "warmup_counts_toward_maximum_epochs": true
+            },
+            "runtime": {
+              "deterministic": true,
+              "device": "cuda",
+              "num_threads": 2
+            },
+            "training": {
+              "batch_size": 16,
+              "epochs": 100,
+              "learning_rate": 3e-06,
+              "max_grad_norm": 3.0,
+              "min_delta": 0.0,
+              "patience": 20,
+              "scheduler_factor": 0.1,
+              "scheduler_patience": 5,
+              "weight_decay": 0.05
+            }
+          },
+          "family": "vit_b_16",
+          "mean_balanced_accuracy": 0.8085655314757483,
+          "mean_macro_f1": 0.8072601035913897,
+          "mean_weighted_validation_loss": 0.4983408582520982,
+          "per_seed": [
+            {
+              "accuracy": 0.8133333333333334,
+              "balanced_accuracy": 0.8111455108359134,
+              "best_checkpoint_path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_6a4b9733838113699edf555a/attempt_03/best.pt",
+              "best_checkpoint_sha256": "6abcda22c022a3e58ab326fe7e9e1c7f64f4b69620bfe316cb44bd2f7464669c",
+              "best_epoch": 19,
+              "fit_id": "fit_6a4b9733838113699edf555a",
+              "history_sha256": "fd626a3efe93ae18f06aef3ac5647ac7b2023e3940da9bb39a74cd9fff01e190",
+              "macro_f1": 0.8082633053221289,
+              "seed": 3908274,
+              "validation_predictions_sha256": "4687b3cf470dce6b4eef6289d32c35b59f1a0625ef2adce8f0ebd5e912ab8a02",
+              "weighted_validation_loss": 0.4883643911592662
+            },
+            {
+              "accuracy": 0.8266666666666667,
+              "balanced_accuracy": 0.8212074303405573,
+              "best_checkpoint_path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_45af8846bc587239af41b083/attempt_03/best.pt",
+              "best_checkpoint_sha256": "5226ccfa8c1fe3cf14f6ef018cec4820810f4333035073bc5ae843c066ae4e07",
+              "best_epoch": 18,
+              "fit_id": "fit_45af8846bc587239af41b083",
+              "history_sha256": "716215ee4c3417dae80b85629f41a9bf9c6ee154177d3beb41e66a3aeefb9385",
+              "macro_f1": 0.8218254185301901,
+              "seed": 3908275,
+              "validation_predictions_sha256": "eef1a54549ad7e918516847baf01e47c3ef67e0aee280176a12befe5ab95cc34",
+              "weighted_validation_loss": 0.5026374064385891
+            },
+            {
+              "accuracy": 0.8,
+              "balanced_accuracy": 0.793343653250774,
+              "best_checkpoint_path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_8684373bcce96887e6b18358/attempt_03/best.pt",
+              "best_checkpoint_sha256": "ef182f2b8232f4054d45802f0ed330e722490e2cbb8f03c89ae125051520eeae",
+              "best_epoch": 17,
+              "fit_id": "fit_8684373bcce96887e6b18358",
+              "history_sha256": "24c8aa5e4bdd6c503ce532ee230384339f1e5bb9168978c017d6199675b5395e",
+              "macro_f1": 0.79169158692185,
+              "seed": 3908276,
+              "validation_predictions_sha256": "456ee0c29ad18e5a64904a174b157fe2a91630acbe20c9217779c0140ca8c41f",
+              "weighted_validation_loss": 0.5040207771584392
+            }
+          ],
+          "sample_sd_balanced_accuracy_ddof1": 0.014109916319788762,
+          "sample_variance_balanced_accuracy_ddof1": 0.00019908973855144125,
+          "seed_ids": [
+            3908274,
+            3908275,
+            3908276
+          ],
+          "validation_rank": 11
+        },
+        {
+          "configuration_id": "vit_b_16_f7ce67f5daf244ee",
+          "configuration_sha256": "6e071716b8cb2b77f98979d0cf8375bcda2885cb8c3307bb217d1943f2866cd4",
+          "effective_parameters": {
+            "model": {
+              "architecture": "torchvision.models.vit_b_16",
+              "data_loader_workers": 8,
+              "decay_policy": "all optimized parameters; decoupled weight decay",
+              "family": "vit_b_16",
+              "head": "heads.head: Linear(768,4)",
+              "head_initialization": "seeded default nn.Linear initialization after backbone load",
+              "head_lr_multiplier": 10.0,
+              "head_only_warmup_epochs": 5,
+              "name": "vit_b_16_f7ce67f5daf244ee",
+              "optimizer": "AdamW",
+              "optimizer_betas": [
+                0.9,
+                0.999
+              ],
+              "optimizer_epsilon": 1e-08,
+              "optimizer_state_policy": "one optimizer; no resets at unfreeze",
+              "pin_memory": true,
+              "pretrained_backbone_initialization": "identical cached official weights across seeds",
+              "pretrained_required": true,
+              "scheduler_and_early_stopping": "active from epoch 1; no resets at unfreeze",
+              "warmup_batchnorm_policy": "backbone eval while frozen; train after unfreezing",
+              "warmup_counts_toward_maximum_epochs": true
+            },
+            "runtime": {
+              "deterministic": true,
+              "device": "cuda",
+              "num_threads": 2
+            },
+            "training": {
+              "batch_size": 16,
+              "epochs": 100,
+              "learning_rate": 3e-06,
+              "max_grad_norm": 3.0,
+              "min_delta": 0.0,
+              "patience": 20,
+              "scheduler_factor": 0.1,
+              "scheduler_patience": 5,
+              "weight_decay": 0.01
+            }
+          },
+          "family": "vit_b_16",
+          "mean_balanced_accuracy": 0.8085655314757483,
+          "mean_macro_f1": 0.8072601035913897,
+          "mean_weighted_validation_loss": 0.49836915463830034,
+          "per_seed": [
+            {
+              "accuracy": 0.8133333333333334,
+              "balanced_accuracy": 0.8111455108359134,
+              "best_checkpoint_path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_83037154b625474ced8e6d3f/attempt_03/best.pt",
+              "best_checkpoint_sha256": "8ce3b1bb09c97bb3a1d7b951133b26e67502bf7db01ed71555aabd866ef977d4",
+              "best_epoch": 19,
+              "fit_id": "fit_83037154b625474ced8e6d3f",
+              "history_sha256": "db9f5288b29eb947d7b8830cad71e51c25aaed2f8ac9ed08bf3f85b47e65f926",
+              "macro_f1": 0.8082633053221289,
+              "seed": 3908274,
+              "validation_predictions_sha256": "ea03320c9c65e33f9956beff10de57abf3e1e6be590f1feb5a21a928600e79f6",
+              "weighted_validation_loss": 0.48839437959715726
+            },
+            {
+              "accuracy": 0.8266666666666667,
+              "balanced_accuracy": 0.8212074303405573,
+              "best_checkpoint_path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_6e7a1abdab1a39f36d461ddc/attempt_03/best.pt",
+              "best_checkpoint_sha256": "cb392e282363dc2db9f880ba2fb1a37dbfd8995fa40b1676b8756cf358416515",
+              "best_epoch": 18,
+              "fit_id": "fit_6e7a1abdab1a39f36d461ddc",
+              "history_sha256": "e74fb7aeb84276cc3f9158caeec6f1a444172b364a88251c4cb26ea15eb580f3",
+              "macro_f1": 0.8218254185301901,
+              "seed": 3908275,
+              "validation_predictions_sha256": "76686a6642503ae87f61b0a7932064707190f54d1c9621b29796c5b67636ddd8",
+              "weighted_validation_loss": 0.5026687721411387
+            },
+            {
+              "accuracy": 0.8,
+              "balanced_accuracy": 0.793343653250774,
+              "best_checkpoint_path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_6ac7826de5f644689a3a7cbf/attempt_03/best.pt",
+              "best_checkpoint_sha256": "f759db73c09aaa28e28842f89bd5ced1ad81a88eac8bd081743169ecb5a6fdba",
+              "best_epoch": 17,
+              "fit_id": "fit_6ac7826de5f644689a3a7cbf",
+              "history_sha256": "1c9930576ee4263e562cb49c7633758856200bc9ac36e1c433becf4d433355e0",
+              "macro_f1": 0.79169158692185,
+              "seed": 3908276,
+              "validation_predictions_sha256": "cab9f87d16dac063b40c6b8e15b8e225ada8c7f0a142b45416e198767835e1e4",
+              "weighted_validation_loss": 0.5040443121766051
+            }
+          ],
+          "sample_sd_balanced_accuracy_ddof1": 0.014109916319788762,
+          "sample_variance_balanced_accuracy_ddof1": 0.00019908973855144125,
+          "seed_ids": [
+            3908274,
+            3908275,
+            3908276
+          ],
+          "validation_rank": 12
+        }
+      ],
+      "family": "vit_b_16",
+      "winner_configuration_id": "vit_b_16_ed7ae4a374295b2c",
+      "winner_configuration_sha256": "753dffdef91a6b6046872a098c78f67e04e0f5a53eaa239a0734f525f0b3aca8"
+    }
+  ],
+  "metadata_controls_fit_count": 2,
+  "network_search_fit_count": 90,
+  "phase": "Dataset-v2J1",
+  "preprocessing": "Use v2H per-object p01/p99, clipping, asinh(10), and fixed (u-0.5)/0.5 exactly. No additional fitted image normalization. Any metadata imputation/scaling uses training objects only.",
+  "protocol_canonical_sha256": "6a4593c9e470f8eb61819a13d8fc82e74a4bfb662b5bb22ce9ca221d179b3737",
+  "representation": "A",
+  "selected_checkpoints": [
+    {
+      "configuration_id": "spatial-pooling-ablation-v3_spatial_transformer_grid8_mean_grad",
+      "configuration_sha256": "31f5d6d5612c855bc52c277d90a593960c4ee7922538908b554633062d437884",
+      "effective_parameters": {
+        "model": {
+          "adapter_version": "spatial-pooling-ablation-v3",
+          "additional_pooling": "mean_grad",
+          "attention_heads": 8,
+          "channels": [
+            128,
+            256,
+            512,
+            1024
+          ],
+          "claims_spatial_attention": true,
+          "contrast_epsilon": 1e-06,
+          "contrast_weight": 1.0,
+          "data_loader_workers": 8,
+          "embedding": 128,
+          "environment_digest": "6ff1d24a3e284556dde5099f452b2ff7f1081084f8d2c87d0e84e256e9c02adb",
+          "gate_policy": "none",
+          "gradient_policy": "forward_xy_zero_missing_neighbor",
+          "grid_size": 8,
+          "input_size": 256,
+          "name": "spatial-pooling-ablation-v3_spatial_transformer_grid8_mean_grad",
+          "native_grid_size": 16,
+          "optimizer": "Adam",
+          "pin_memory": true,
+          "pooling_factor": 2,
+          "pooling_policy": "mean_grad",
+          "pooling_trainable_parameters": 0,
+          "position_policy": "fixed separable 2D sinusoidal x/y encoding; see models_v1.py",
+          "positional_encoding": "fixed_2d_sinusoidal_xy_v1",
+          "pretrained": false,
+          "purpose": "pooling/grid development ablation; no test evaluation",
+          "source_digests": {
+            "rebuild/ablation.py": "8287aaf628a6511cd56677a22dc6e5d11df8a8071e4cb8156d154c5e65fa831b",
+            "rebuild/common.py": "c5aa62eff0a7533ebb511ada406ab2121f79c1aff2c7827c09795e97bde62508",
+            "rebuild/config.py": "1c53947636f39c824cd1903bd232006eedcef01d7434f90b493cd32a69615f57",
+            "rebuild/data.py": "a548fc303d7a992a533e4b9eff14bae3e2fdacb276a33d3fcb5250124f4bb58c",
+            "rebuild/evaluation.py": "f9362a149000d12b264cd38a051b52ef1f7007208c90aa7176a5298a62da1e97",
+            "rebuild/full.py": "d535aca7cfc6ff14d994fabb50b9e250d0551ab02defbc8e15ca17c261e51c21",
+            "rebuild/phase3b/data_v1.py": "95482ee67d8b6acddb908a8bb677adc854d624c5c09e663433189ab5bc99986d",
+            "rebuild/phase3d/models_v1.py": "a282c954284ccd12a7c94a1bcb67940fff30825ba95c938673965b62bb29f692",
+            "rebuild/phase3d/models_v2.py": "6a17fcf5c0319c4c10c6484659f169ce27c6ba4c3d2d1dba5dbd9fea02bbeb6f",
+            "rebuild/phase3d/models_v3.py": "e304b8ada45aef6143ce8acec4e3d1c441a6350d478927d7f68d4706cdf4a82a",
+            "rebuild/phase3d/pilot.py": "27c6548ad77c338193c39df4faddf5c99bf64c623b244331b199a07fad2cb0c3",
+            "rebuild/pooling_ablation.py": "b6f70d275056649959a57cb75c7829778e38fb861c7fbb713d6bc2f1fcdc4205",
+            "rebuild/training.py": "b7638b6da1ae21c994c739ae396ef5ba937baf643a23ba3dd32b47a47f105687"
+          },
+          "token_count": 64,
+          "transformer_layers": 2,
+          "variant": "spatial_transformer"
+        },
+        "runtime": {
+          "deterministic": true,
+          "device": "cuda",
+          "num_threads": 2
+        },
+        "training": {
+          "batch_size": 16,
+          "epochs": 100,
+          "learning_rate": 9e-05,
+          "max_grad_norm": 3.0,
+          "min_delta": 0.0,
+          "patience": 20,
+          "scheduler_factor": 0.1,
+          "scheduler_patience": 5,
+          "weight_decay": 5e-07
+        }
+      },
+      "family": "custom_cnn_transformer",
+      "fit_id": "fit_c05073a85f17c6b4c0e378f2",
+      "history_path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_c05073a85f17c6b4c0e378f2/attempt_03/history.json",
+      "history_sha256": "0334437735ba4197a6e6329907e11a877328808cbda85d7b3284efc950a3d33b",
+      "path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_c05073a85f17c6b4c0e378f2/attempt_03/best.pt",
+      "representation": "A",
+      "seed": 3908274,
+      "sha256": "429327cd27b1788b598b6df0dd55e3098942b299f7b9a5546f00176034983ea6",
+      "size_bytes": 87739809,
+      "validation": {
+        "accuracy": 0.76,
+        "balanced_accuracy": 0.7461300309597523,
+        "macro_f1": 0.7330981833604298,
+        "weighted_validation_loss": 0.6806909093260765
+      },
+      "validation_predictions_path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_c05073a85f17c6b4c0e378f2/attempt_03/best_validation_predictions.json",
+      "validation_predictions_sha256": "07b924c88b80b14939592fda6a43cb1bcd3626fc0c857429109bb3829da51470"
+    },
+    {
+      "configuration_id": "spatial-pooling-ablation-v3_spatial_transformer_grid8_mean_grad",
+      "configuration_sha256": "31f5d6d5612c855bc52c277d90a593960c4ee7922538908b554633062d437884",
+      "effective_parameters": {
+        "model": {
+          "adapter_version": "spatial-pooling-ablation-v3",
+          "additional_pooling": "mean_grad",
+          "attention_heads": 8,
+          "channels": [
+            128,
+            256,
+            512,
+            1024
+          ],
+          "claims_spatial_attention": true,
+          "contrast_epsilon": 1e-06,
+          "contrast_weight": 1.0,
+          "data_loader_workers": 8,
+          "embedding": 128,
+          "environment_digest": "6ff1d24a3e284556dde5099f452b2ff7f1081084f8d2c87d0e84e256e9c02adb",
+          "gate_policy": "none",
+          "gradient_policy": "forward_xy_zero_missing_neighbor",
+          "grid_size": 8,
+          "input_size": 256,
+          "name": "spatial-pooling-ablation-v3_spatial_transformer_grid8_mean_grad",
+          "native_grid_size": 16,
+          "optimizer": "Adam",
+          "pin_memory": true,
+          "pooling_factor": 2,
+          "pooling_policy": "mean_grad",
+          "pooling_trainable_parameters": 0,
+          "position_policy": "fixed separable 2D sinusoidal x/y encoding; see models_v1.py",
+          "positional_encoding": "fixed_2d_sinusoidal_xy_v1",
+          "pretrained": false,
+          "purpose": "pooling/grid development ablation; no test evaluation",
+          "source_digests": {
+            "rebuild/ablation.py": "8287aaf628a6511cd56677a22dc6e5d11df8a8071e4cb8156d154c5e65fa831b",
+            "rebuild/common.py": "c5aa62eff0a7533ebb511ada406ab2121f79c1aff2c7827c09795e97bde62508",
+            "rebuild/config.py": "1c53947636f39c824cd1903bd232006eedcef01d7434f90b493cd32a69615f57",
+            "rebuild/data.py": "a548fc303d7a992a533e4b9eff14bae3e2fdacb276a33d3fcb5250124f4bb58c",
+            "rebuild/evaluation.py": "f9362a149000d12b264cd38a051b52ef1f7007208c90aa7176a5298a62da1e97",
+            "rebuild/full.py": "d535aca7cfc6ff14d994fabb50b9e250d0551ab02defbc8e15ca17c261e51c21",
+            "rebuild/phase3b/data_v1.py": "95482ee67d8b6acddb908a8bb677adc854d624c5c09e663433189ab5bc99986d",
+            "rebuild/phase3d/models_v1.py": "a282c954284ccd12a7c94a1bcb67940fff30825ba95c938673965b62bb29f692",
+            "rebuild/phase3d/models_v2.py": "6a17fcf5c0319c4c10c6484659f169ce27c6ba4c3d2d1dba5dbd9fea02bbeb6f",
+            "rebuild/phase3d/models_v3.py": "e304b8ada45aef6143ce8acec4e3d1c441a6350d478927d7f68d4706cdf4a82a",
+            "rebuild/phase3d/pilot.py": "27c6548ad77c338193c39df4faddf5c99bf64c623b244331b199a07fad2cb0c3",
+            "rebuild/pooling_ablation.py": "b6f70d275056649959a57cb75c7829778e38fb861c7fbb713d6bc2f1fcdc4205",
+            "rebuild/training.py": "b7638b6da1ae21c994c739ae396ef5ba937baf643a23ba3dd32b47a47f105687"
+          },
+          "token_count": 64,
+          "transformer_layers": 2,
+          "variant": "spatial_transformer"
+        },
+        "runtime": {
+          "deterministic": true,
+          "device": "cuda",
+          "num_threads": 2
+        },
+        "training": {
+          "batch_size": 16,
+          "epochs": 100,
+          "learning_rate": 9e-05,
+          "max_grad_norm": 3.0,
+          "min_delta": 0.0,
+          "patience": 20,
+          "scheduler_factor": 0.1,
+          "scheduler_patience": 5,
+          "weight_decay": 5e-07
+        }
+      },
+      "family": "custom_cnn_transformer",
+      "fit_id": "fit_46c77751cd744157c900ce49",
+      "history_path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_46c77751cd744157c900ce49/attempt_03/history.json",
+      "history_sha256": "65b629554ae8070810718d018f38b5e89bfd1939d9de834fc3e43ee98888b3fa",
+      "path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_46c77751cd744157c900ce49/attempt_03/best.pt",
+      "representation": "A",
+      "seed": 3908275,
+      "sha256": "c60e04d53037b29e32f710b31d205d381aaa68e940e7564df2d5822029a75ac7",
+      "size_bytes": 87731169,
+      "validation": {
+        "accuracy": 0.7866666666666666,
+        "balanced_accuracy": 0.7724458204334366,
+        "macro_f1": 0.7575972245537463,
+        "weighted_validation_loss": 0.6367863606413205
+      },
+      "validation_predictions_path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_46c77751cd744157c900ce49/attempt_03/best_validation_predictions.json",
+      "validation_predictions_sha256": "205b8560225639733be1e0ad413676f905799625cc4332a21fdc72d4d2514f9a"
+    },
+    {
+      "configuration_id": "spatial-pooling-ablation-v3_spatial_transformer_grid8_mean_grad",
+      "configuration_sha256": "31f5d6d5612c855bc52c277d90a593960c4ee7922538908b554633062d437884",
+      "effective_parameters": {
+        "model": {
+          "adapter_version": "spatial-pooling-ablation-v3",
+          "additional_pooling": "mean_grad",
+          "attention_heads": 8,
+          "channels": [
+            128,
+            256,
+            512,
+            1024
+          ],
+          "claims_spatial_attention": true,
+          "contrast_epsilon": 1e-06,
+          "contrast_weight": 1.0,
+          "data_loader_workers": 8,
+          "embedding": 128,
+          "environment_digest": "6ff1d24a3e284556dde5099f452b2ff7f1081084f8d2c87d0e84e256e9c02adb",
+          "gate_policy": "none",
+          "gradient_policy": "forward_xy_zero_missing_neighbor",
+          "grid_size": 8,
+          "input_size": 256,
+          "name": "spatial-pooling-ablation-v3_spatial_transformer_grid8_mean_grad",
+          "native_grid_size": 16,
+          "optimizer": "Adam",
+          "pin_memory": true,
+          "pooling_factor": 2,
+          "pooling_policy": "mean_grad",
+          "pooling_trainable_parameters": 0,
+          "position_policy": "fixed separable 2D sinusoidal x/y encoding; see models_v1.py",
+          "positional_encoding": "fixed_2d_sinusoidal_xy_v1",
+          "pretrained": false,
+          "purpose": "pooling/grid development ablation; no test evaluation",
+          "source_digests": {
+            "rebuild/ablation.py": "8287aaf628a6511cd56677a22dc6e5d11df8a8071e4cb8156d154c5e65fa831b",
+            "rebuild/common.py": "c5aa62eff0a7533ebb511ada406ab2121f79c1aff2c7827c09795e97bde62508",
+            "rebuild/config.py": "1c53947636f39c824cd1903bd232006eedcef01d7434f90b493cd32a69615f57",
+            "rebuild/data.py": "a548fc303d7a992a533e4b9eff14bae3e2fdacb276a33d3fcb5250124f4bb58c",
+            "rebuild/evaluation.py": "f9362a149000d12b264cd38a051b52ef1f7007208c90aa7176a5298a62da1e97",
+            "rebuild/full.py": "d535aca7cfc6ff14d994fabb50b9e250d0551ab02defbc8e15ca17c261e51c21",
+            "rebuild/phase3b/data_v1.py": "95482ee67d8b6acddb908a8bb677adc854d624c5c09e663433189ab5bc99986d",
+            "rebuild/phase3d/models_v1.py": "a282c954284ccd12a7c94a1bcb67940fff30825ba95c938673965b62bb29f692",
+            "rebuild/phase3d/models_v2.py": "6a17fcf5c0319c4c10c6484659f169ce27c6ba4c3d2d1dba5dbd9fea02bbeb6f",
+            "rebuild/phase3d/models_v3.py": "e304b8ada45aef6143ce8acec4e3d1c441a6350d478927d7f68d4706cdf4a82a",
+            "rebuild/phase3d/pilot.py": "27c6548ad77c338193c39df4faddf5c99bf64c623b244331b199a07fad2cb0c3",
+            "rebuild/pooling_ablation.py": "b6f70d275056649959a57cb75c7829778e38fb861c7fbb713d6bc2f1fcdc4205",
+            "rebuild/training.py": "b7638b6da1ae21c994c739ae396ef5ba937baf643a23ba3dd32b47a47f105687"
+          },
+          "token_count": 64,
+          "transformer_layers": 2,
+          "variant": "spatial_transformer"
+        },
+        "runtime": {
+          "deterministic": true,
+          "device": "cuda",
+          "num_threads": 2
+        },
+        "training": {
+          "batch_size": 16,
+          "epochs": 100,
+          "learning_rate": 9e-05,
+          "max_grad_norm": 3.0,
+          "min_delta": 0.0,
+          "patience": 20,
+          "scheduler_factor": 0.1,
+          "scheduler_patience": 5,
+          "weight_decay": 5e-07
+        }
+      },
+      "family": "custom_cnn_transformer",
+      "fit_id": "fit_928e6367d59d3fe75b659283",
+      "history_path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_928e6367d59d3fe75b659283/attempt_03/history.json",
+      "history_sha256": "6a6c331dc61e597e1b50d5bdaa4a63dc4a455922821a10fadbc55026fd41a0db",
+      "path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_928e6367d59d3fe75b659283/attempt_03/best.pt",
+      "representation": "A",
+      "seed": 3908276,
+      "sha256": "a0c893fcf0d7db3fbffb3f3b7eb31d4362c25b2210dd7b208332d3bbe193407e",
+      "size_bytes": 87725281,
+      "validation": {
+        "accuracy": 0.7866666666666666,
+        "balanced_accuracy": 0.7739938080495355,
+        "macro_f1": 0.7664884135472371,
+        "weighted_validation_loss": 0.6709166093667348
+      },
+      "validation_predictions_path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_928e6367d59d3fe75b659283/attempt_03/best_validation_predictions.json",
+      "validation_predictions_sha256": "085f4de78b6cd922e883a3a7e25cd0f18193a37bc5a39512e79233f55ab43616"
+    },
+    {
+      "configuration_id": "resnet50_ddc5866488e57f18",
+      "configuration_sha256": "dbe456b4fce9bde0bab0b9adc1b7630f57770114454577cf1d735e728cf6f16c",
+      "effective_parameters": {
+        "model": {
+          "architecture": "torchvision.models.resnet50",
+          "data_loader_workers": 8,
+          "decay_policy": "all optimized parameters; decoupled weight decay",
+          "family": "resnet50",
+          "head": "fc: Linear(2048,4)",
+          "head_initialization": "seeded default nn.Linear initialization after backbone load",
+          "head_lr_multiplier": 10.0,
+          "head_only_warmup_epochs": 0,
+          "name": "resnet50_ddc5866488e57f18",
+          "optimizer": "AdamW",
+          "optimizer_betas": [
+            0.9,
+            0.999
+          ],
+          "optimizer_epsilon": 1e-08,
+          "optimizer_state_policy": "one optimizer; no resets at unfreeze",
+          "pin_memory": true,
+          "pretrained_backbone_initialization": "identical cached official weights across seeds",
+          "pretrained_required": true,
+          "scheduler_and_early_stopping": "active from epoch 1; no resets at unfreeze",
+          "warmup_batchnorm_policy": "backbone eval while frozen; train after unfreezing",
+          "warmup_counts_toward_maximum_epochs": true
+        },
+        "runtime": {
+          "deterministic": true,
+          "device": "cuda",
+          "num_threads": 2
+        },
+        "training": {
+          "batch_size": 16,
+          "epochs": 100,
+          "learning_rate": 0.0001,
+          "max_grad_norm": 3.0,
+          "min_delta": 0.0,
+          "patience": 20,
+          "scheduler_factor": 0.1,
+          "scheduler_patience": 5,
+          "weight_decay": 0.0001
+        }
+      },
+      "family": "resnet50",
+      "fit_id": "fit_d807ccc78f9f55959d821058",
+      "history_path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_d807ccc78f9f55959d821058/attempt_03/history.json",
+      "history_sha256": "300f3eafc64ecf48aedd90fd0b0c6312956791aa7dd50b7b02cb866c2e7b689e",
+      "path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_d807ccc78f9f55959d821058/attempt_03/best.pt",
+      "representation": "A",
+      "seed": 3908274,
+      "sha256": "ab39b0a0c7aad51a40abc79d97e31924d5ca1f9878fc753cf8283a89f2dc624f",
+      "size_bytes": 282676597,
+      "validation": {
+        "accuracy": 0.8666666666666667,
+        "balanced_accuracy": 0.8628869969040247,
+        "macro_f1": 0.8643092105263157,
+        "weighted_validation_loss": 0.5093094992332027
+      },
+      "validation_predictions_path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_d807ccc78f9f55959d821058/attempt_03/best_validation_predictions.json",
+      "validation_predictions_sha256": "19ebd7e1bcb217caeef49de065efe7ccd794b1df07267b08542fee049b575982"
+    },
+    {
+      "configuration_id": "resnet50_ddc5866488e57f18",
+      "configuration_sha256": "dbe456b4fce9bde0bab0b9adc1b7630f57770114454577cf1d735e728cf6f16c",
+      "effective_parameters": {
+        "model": {
+          "architecture": "torchvision.models.resnet50",
+          "data_loader_workers": 8,
+          "decay_policy": "all optimized parameters; decoupled weight decay",
+          "family": "resnet50",
+          "head": "fc: Linear(2048,4)",
+          "head_initialization": "seeded default nn.Linear initialization after backbone load",
+          "head_lr_multiplier": 10.0,
+          "head_only_warmup_epochs": 0,
+          "name": "resnet50_ddc5866488e57f18",
+          "optimizer": "AdamW",
+          "optimizer_betas": [
+            0.9,
+            0.999
+          ],
+          "optimizer_epsilon": 1e-08,
+          "optimizer_state_policy": "one optimizer; no resets at unfreeze",
+          "pin_memory": true,
+          "pretrained_backbone_initialization": "identical cached official weights across seeds",
+          "pretrained_required": true,
+          "scheduler_and_early_stopping": "active from epoch 1; no resets at unfreeze",
+          "warmup_batchnorm_policy": "backbone eval while frozen; train after unfreezing",
+          "warmup_counts_toward_maximum_epochs": true
+        },
+        "runtime": {
+          "deterministic": true,
+          "device": "cuda",
+          "num_threads": 2
+        },
+        "training": {
+          "batch_size": 16,
+          "epochs": 100,
+          "learning_rate": 0.0001,
+          "max_grad_norm": 3.0,
+          "min_delta": 0.0,
+          "patience": 20,
+          "scheduler_factor": 0.1,
+          "scheduler_patience": 5,
+          "weight_decay": 0.0001
+        }
+      },
+      "family": "resnet50",
+      "fit_id": "fit_8ea7d46d25e3ff4711aa872c",
+      "history_path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_8ea7d46d25e3ff4711aa872c/attempt_03/history.json",
+      "history_sha256": "410ee4dcb9e4cac19b3d5db58f235c3ec62e7f98cab8f269ff2b45fff02b7898",
+      "path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_8ea7d46d25e3ff4711aa872c/attempt_03/best.pt",
+      "representation": "A",
+      "seed": 3908275,
+      "sha256": "3d9e3a31b16c80f83bcfb42bbebd2c37f352369116a0851f360595d18de202a3",
+      "size_bytes": 282678837,
+      "validation": {
+        "accuracy": 0.8666666666666667,
+        "balanced_accuracy": 0.8622291021671827,
+        "macro_f1": 0.8638383463461684,
+        "weighted_validation_loss": 0.6202563072025805
+      },
+      "validation_predictions_path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_8ea7d46d25e3ff4711aa872c/attempt_03/best_validation_predictions.json",
+      "validation_predictions_sha256": "6c7a6a9c11fa282277f33ec7840a0527868c2229e54b786f18dc8961d555864a"
+    },
+    {
+      "configuration_id": "resnet50_ddc5866488e57f18",
+      "configuration_sha256": "dbe456b4fce9bde0bab0b9adc1b7630f57770114454577cf1d735e728cf6f16c",
+      "effective_parameters": {
+        "model": {
+          "architecture": "torchvision.models.resnet50",
+          "data_loader_workers": 8,
+          "decay_policy": "all optimized parameters; decoupled weight decay",
+          "family": "resnet50",
+          "head": "fc: Linear(2048,4)",
+          "head_initialization": "seeded default nn.Linear initialization after backbone load",
+          "head_lr_multiplier": 10.0,
+          "head_only_warmup_epochs": 0,
+          "name": "resnet50_ddc5866488e57f18",
+          "optimizer": "AdamW",
+          "optimizer_betas": [
+            0.9,
+            0.999
+          ],
+          "optimizer_epsilon": 1e-08,
+          "optimizer_state_policy": "one optimizer; no resets at unfreeze",
+          "pin_memory": true,
+          "pretrained_backbone_initialization": "identical cached official weights across seeds",
+          "pretrained_required": true,
+          "scheduler_and_early_stopping": "active from epoch 1; no resets at unfreeze",
+          "warmup_batchnorm_policy": "backbone eval while frozen; train after unfreezing",
+          "warmup_counts_toward_maximum_epochs": true
+        },
+        "runtime": {
+          "deterministic": true,
+          "device": "cuda",
+          "num_threads": 2
+        },
+        "training": {
+          "batch_size": 16,
+          "epochs": 100,
+          "learning_rate": 0.0001,
+          "max_grad_norm": 3.0,
+          "min_delta": 0.0,
+          "patience": 20,
+          "scheduler_factor": 0.1,
+          "scheduler_patience": 5,
+          "weight_decay": 0.0001
+        }
+      },
+      "family": "resnet50",
+      "fit_id": "fit_213b98f5b2335e6839c34835",
+      "history_path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_213b98f5b2335e6839c34835/attempt_03/history.json",
+      "history_sha256": "a4fb7a24453a9999ceceb397236bd41cd5017469078800765de00ee61ac99a7f",
+      "path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_213b98f5b2335e6839c34835/attempt_03/best.pt",
+      "representation": "A",
+      "seed": 3908276,
+      "sha256": "4d9f269591e072753cfd57ec32135e249b27f47eb2ad00e067e5fb2a9667f5d5",
+      "size_bytes": 282670965,
+      "validation": {
+        "accuracy": 0.8533333333333334,
+        "balanced_accuracy": 0.8537151702786377,
+        "macro_f1": 0.8502031443207914,
+        "weighted_validation_loss": 0.5593073985094937
+      },
+      "validation_predictions_path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_213b98f5b2335e6839c34835/attempt_03/best_validation_predictions.json",
+      "validation_predictions_sha256": "a7c45e4f8ea466dd1ec67009ff8aba9829805f4a896ef1c7758bfe1300bdb7a6"
+    },
+    {
+      "configuration_id": "vit_b_16_ed7ae4a374295b2c",
+      "configuration_sha256": "753dffdef91a6b6046872a098c78f67e04e0f5a53eaa239a0734f525f0b3aca8",
+      "effective_parameters": {
+        "model": {
+          "architecture": "torchvision.models.vit_b_16",
+          "data_loader_workers": 8,
+          "decay_policy": "all optimized parameters; decoupled weight decay",
+          "family": "vit_b_16",
+          "head": "heads.head: Linear(768,4)",
+          "head_initialization": "seeded default nn.Linear initialization after backbone load",
+          "head_lr_multiplier": 10.0,
+          "head_only_warmup_epochs": 0,
+          "name": "vit_b_16_ed7ae4a374295b2c",
+          "optimizer": "AdamW",
+          "optimizer_betas": [
+            0.9,
+            0.999
+          ],
+          "optimizer_epsilon": 1e-08,
+          "optimizer_state_policy": "one optimizer; no resets at unfreeze",
+          "pin_memory": true,
+          "pretrained_backbone_initialization": "identical cached official weights across seeds",
+          "pretrained_required": true,
+          "scheduler_and_early_stopping": "active from epoch 1; no resets at unfreeze",
+          "warmup_batchnorm_policy": "backbone eval while frozen; train after unfreezing",
+          "warmup_counts_toward_maximum_epochs": true
+        },
+        "runtime": {
+          "deterministic": true,
+          "device": "cuda",
+          "num_threads": 2
+        },
+        "training": {
+          "batch_size": 16,
+          "epochs": 100,
+          "learning_rate": 3e-05,
+          "max_grad_norm": 3.0,
+          "min_delta": 0.0,
+          "patience": 20,
+          "scheduler_factor": 0.1,
+          "scheduler_patience": 5,
+          "weight_decay": 0.05
+        }
+      },
+      "family": "vit_b_16",
+      "fit_id": "fit_22fc888eff7d0577f8d02dc9",
+      "history_path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_22fc888eff7d0577f8d02dc9/attempt_03/history.json",
+      "history_sha256": "7d1dcd2760ddad73b9b7adc92e0eb433c1419ed12d73ef63be7f81ecbfe3e4e3",
+      "path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_22fc888eff7d0577f8d02dc9/attempt_03/best.pt",
+      "representation": "A",
+      "seed": 3908274,
+      "sha256": "dc27e68c99e5331a2f3e1e001f82825edd5610a62adf2c6db1bfefdcb95003dc",
+      "size_bytes": 1029830139,
+      "validation": {
+        "accuracy": 0.8266666666666667,
+        "balanced_accuracy": 0.8234133126934985,
+        "macro_f1": 0.8234133126934985,
+        "weighted_validation_loss": 0.4007859852941086
+      },
+      "validation_predictions_path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_22fc888eff7d0577f8d02dc9/attempt_03/best_validation_predictions.json",
+      "validation_predictions_sha256": "6573ed44fc09d8872b5c71a80816eb546b7912aa0fc4c97af650f3579f565c32"
+    },
+    {
+      "configuration_id": "vit_b_16_ed7ae4a374295b2c",
+      "configuration_sha256": "753dffdef91a6b6046872a098c78f67e04e0f5a53eaa239a0734f525f0b3aca8",
+      "effective_parameters": {
+        "model": {
+          "architecture": "torchvision.models.vit_b_16",
+          "data_loader_workers": 8,
+          "decay_policy": "all optimized parameters; decoupled weight decay",
+          "family": "vit_b_16",
+          "head": "heads.head: Linear(768,4)",
+          "head_initialization": "seeded default nn.Linear initialization after backbone load",
+          "head_lr_multiplier": 10.0,
+          "head_only_warmup_epochs": 0,
+          "name": "vit_b_16_ed7ae4a374295b2c",
+          "optimizer": "AdamW",
+          "optimizer_betas": [
+            0.9,
+            0.999
+          ],
+          "optimizer_epsilon": 1e-08,
+          "optimizer_state_policy": "one optimizer; no resets at unfreeze",
+          "pin_memory": true,
+          "pretrained_backbone_initialization": "identical cached official weights across seeds",
+          "pretrained_required": true,
+          "scheduler_and_early_stopping": "active from epoch 1; no resets at unfreeze",
+          "warmup_batchnorm_policy": "backbone eval while frozen; train after unfreezing",
+          "warmup_counts_toward_maximum_epochs": true
+        },
+        "runtime": {
+          "deterministic": true,
+          "device": "cuda",
+          "num_threads": 2
+        },
+        "training": {
+          "batch_size": 16,
+          "epochs": 100,
+          "learning_rate": 3e-05,
+          "max_grad_norm": 3.0,
+          "min_delta": 0.0,
+          "patience": 20,
+          "scheduler_factor": 0.1,
+          "scheduler_patience": 5,
+          "weight_decay": 0.05
+        }
+      },
+      "family": "vit_b_16",
+      "fit_id": "fit_3a83dde1ef421ea30de958c6",
+      "history_path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_3a83dde1ef421ea30de958c6/attempt_03/history.json",
+      "history_sha256": "e007543e8f81e3cc13e1de879079ee2bba9e1fc36653b8c020454fbacf04b6c4",
+      "path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_3a83dde1ef421ea30de958c6/attempt_03/best.pt",
+      "representation": "A",
+      "seed": 3908275,
+      "sha256": "0c46354f19d3aa8a33a81fdbc53a6155cb789da5d4355f953944cfb0539e02c5",
+      "size_bytes": 1029830587,
+      "validation": {
+        "accuracy": 0.84,
+        "balanced_accuracy": 0.8418730650154799,
+        "macro_f1": 0.8379979432611011,
+        "weighted_validation_loss": 0.5245347253295283
+      },
+      "validation_predictions_path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_3a83dde1ef421ea30de958c6/attempt_03/best_validation_predictions.json",
+      "validation_predictions_sha256": "5a2254e3b0491e93ab604eb4c032d60cd30cf3abbf907913f7eee140a29dfe67"
+    },
+    {
+      "configuration_id": "vit_b_16_ed7ae4a374295b2c",
+      "configuration_sha256": "753dffdef91a6b6046872a098c78f67e04e0f5a53eaa239a0734f525f0b3aca8",
+      "effective_parameters": {
+        "model": {
+          "architecture": "torchvision.models.vit_b_16",
+          "data_loader_workers": 8,
+          "decay_policy": "all optimized parameters; decoupled weight decay",
+          "family": "vit_b_16",
+          "head": "heads.head: Linear(768,4)",
+          "head_initialization": "seeded default nn.Linear initialization after backbone load",
+          "head_lr_multiplier": 10.0,
+          "head_only_warmup_epochs": 0,
+          "name": "vit_b_16_ed7ae4a374295b2c",
+          "optimizer": "AdamW",
+          "optimizer_betas": [
+            0.9,
+            0.999
+          ],
+          "optimizer_epsilon": 1e-08,
+          "optimizer_state_policy": "one optimizer; no resets at unfreeze",
+          "pin_memory": true,
+          "pretrained_backbone_initialization": "identical cached official weights across seeds",
+          "pretrained_required": true,
+          "scheduler_and_early_stopping": "active from epoch 1; no resets at unfreeze",
+          "warmup_batchnorm_policy": "backbone eval while frozen; train after unfreezing",
+          "warmup_counts_toward_maximum_epochs": true
+        },
+        "runtime": {
+          "deterministic": true,
+          "device": "cuda",
+          "num_threads": 2
+        },
+        "training": {
+          "batch_size": 16,
+          "epochs": 100,
+          "learning_rate": 3e-05,
+          "max_grad_norm": 3.0,
+          "min_delta": 0.0,
+          "patience": 20,
+          "scheduler_factor": 0.1,
+          "scheduler_patience": 5,
+          "weight_decay": 0.05
+        }
+      },
+      "family": "vit_b_16",
+      "fit_id": "fit_d7801df3f99349df3403e22a",
+      "history_path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_d7801df3f99349df3403e22a/attempt_03/history.json",
+      "history_sha256": "a819f749ac7de4dce21862e73882c655c35f2f5f9d46202c9aeff80eeb38d9b8",
+      "path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_d7801df3f99349df3403e22a/attempt_03/best.pt",
+      "representation": "A",
+      "seed": 3908276,
+      "sha256": "73c3892b2a05bc395efbbfd8bc531cd5c8b5073700f5a81583c5982a41cfe88a",
+      "size_bytes": 1029830587,
+      "validation": {
+        "accuracy": 0.9066666666666666,
+        "balanced_accuracy": 0.9085526315789474,
+        "macro_f1": 0.9051996545417598,
+        "weighted_validation_loss": 0.37944664735347033
+      },
+      "validation_predictions_path": "rebuild/dataset_v2j1_validation_search/fit_attempts/fit_d7801df3f99349df3403e22a/attempt_03/best_validation_predictions.json",
+      "validation_predictions_sha256": "2243a9c8d05178d9a82b9cefe07abb4953258a3f634e5ea3c32906de7379ccac"
+    }
+  ],
+  "selection_digest": "cd45b0c9fbb1e6310b31410c5f3be5edf9e694a7737f17a6c95c0788381a580b",
+  "selection_rule": "Per architecture, choose one configuration using only A validation: highest mean balanced accuracy over three seeds; then highest mean macro-F1; then lowest mean weighted validation loss; then lowest sample variance (ddof=1) of balanced accuracy; then lexicographically smallest configuration ID.",
+  "split_sha256": "1678a37f154baf5ff6895c81d286f3cac72fdaead7919e30f2af655be7bd33bf",
+  "status": "frozen",
+  "test_accessed": false,
+  "test_lock_sha256": "2fc9cd1a0b8078457a679f8d021189532ffe9f06231f1ca85cfef9f6d0278fd1"
+}

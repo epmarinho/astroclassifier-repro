@@ -1,0 +1,258 @@
+{
+  "canonical_sha256": "5bf906b3964a7337dfcfc451e5735cd7a18b27016f465a988bdf53d4bc8b577c",
+  "correction": {
+    "authorized_changes": [
+      "phase_v2_to_v3",
+      "idempotent_root_sys_path_bootstrap"
+    ],
+    "base_phase": "rebuild/dataset_v2k_test_executor_freeze_v2",
+    "executor_diff_limited": true,
+    "root_relative_tensor_resolution_preserved": true,
+    "schemas_and_gates_unchanged": true,
+    "scientific_logic_unchanged": true,
+    "scorer_byte_identical": true
+  },
+  "dependencies": {
+    "network_or_installation_used": false,
+    "packages": {
+      "joblib": {
+        "record_path": "/home/emarinho/miniconda3/envs/astro_env/lib/python3.12/site-packages/joblib-1.4.2.dist-info/RECORD",
+        "record_sha256": "8f0bbdd8ebdba089c63f4166fdb97d5b19b31017cc30845944312e57a7c24c38",
+        "version": "1.4.2"
+      },
+      "numpy": {
+        "record_path": "/home/emarinho/miniconda3/envs/astro_env/lib/python3.12/site-packages/numpy-1.26.4.dist-info/RECORD",
+        "record_sha256": "e675fb07b66c67ed54918e4d01d31583781881e9870c95f2b46238e3351a62d6",
+        "version": "1.26.4"
+      },
+      "scikit-learn": {
+        "record_path": "/home/emarinho/miniconda3/envs/astro_env/lib/python3.12/site-packages/scikit_learn-1.4.2.dist-info/RECORD",
+        "record_sha256": "e175cb3892c28fd209630e19421ab333457cf6fb156fc284df575ad3e81df3f3",
+        "version": "1.4.2"
+      },
+      "torch": {
+        "record_path": "/home/emarinho/miniconda3/envs/astro_env/lib/python3.12/site-packages/torch-2.7.0+cu128.dist-info/RECORD",
+        "record_sha256": "e7956dace2f3e7f67c4cb48df1557860f0a22f8daed269c5312e767e17cf282a",
+        "version": "2.7.0+cu128"
+      },
+      "torchvision": {
+        "record_path": "/home/emarinho/miniconda3/envs/astro_env/lib/python3.12/site-packages/torchvision-0.22.0+cu128.dist-info/RECORD",
+        "record_sha256": "839d07f563d672431557c5da83d397a0dfa788dfdb7d8daa389b07ff628b5dd3",
+        "version": "0.22.0+cu128"
+      }
+    },
+    "python": {
+      "executable": "/home/emarinho/miniconda3/envs/astro_env/bin/python",
+      "executable_sha256": "d016bffce3c45efac7a3ca95c5897985fc741a55962019dede1588e80191e079",
+      "version": "3.12.3"
+    },
+    "schema": "v2k_local_dependency_lock_v3",
+    "source_dependencies": [
+      {
+        "authority": "R4 effective_parameters.model.source_digests",
+        "path": "/home/emarinho/workspace/programs/astroclassifier/rebuild/ablation.py",
+        "sha256": "8287aaf628a6511cd56677a22dc6e5d11df8a8071e4cb8156d154c5e65fa831b"
+      },
+      {
+        "authority": "R4 effective_parameters.model.source_digests",
+        "path": "/home/emarinho/workspace/programs/astroclassifier/rebuild/common.py",
+        "sha256": "c5aa62eff0a7533ebb511ada406ab2121f79c1aff2c7827c09795e97bde62508"
+      },
+      {
+        "authority": "R4 effective_parameters.model.source_digests",
+        "path": "/home/emarinho/workspace/programs/astroclassifier/rebuild/config.py",
+        "sha256": "1c53947636f39c824cd1903bd232006eedcef01d7434f90b493cd32a69615f57"
+      },
+      {
+        "authority": "R4 effective_parameters.model.source_digests",
+        "path": "/home/emarinho/workspace/programs/astroclassifier/rebuild/data.py",
+        "sha256": "a548fc303d7a992a533e4b9eff14bae3e2fdacb276a33d3fcb5250124f4bb58c"
+      },
+      {
+        "authority": "R4 effective_parameters.model.source_digests",
+        "path": "/home/emarinho/workspace/programs/astroclassifier/rebuild/evaluation.py",
+        "sha256": "f9362a149000d12b264cd38a051b52ef1f7007208c90aa7176a5298a62da1e97"
+      },
+      {
+        "authority": "R4 effective_parameters.model.source_digests",
+        "path": "/home/emarinho/workspace/programs/astroclassifier/rebuild/full.py",
+        "sha256": "d535aca7cfc6ff14d994fabb50b9e250d0551ab02defbc8e15ca17c261e51c21"
+      },
+      {
+        "authority": "R4 effective_parameters.model.source_digests",
+        "path": "/home/emarinho/workspace/programs/astroclassifier/rebuild/phase3b/data_v1.py",
+        "sha256": "95482ee67d8b6acddb908a8bb677adc854d624c5c09e663433189ab5bc99986d"
+      },
+      {
+        "authority": "R4 effective_parameters.model.source_digests",
+        "path": "/home/emarinho/workspace/programs/astroclassifier/rebuild/phase3d/models_v1.py",
+        "sha256": "a282c954284ccd12a7c94a1bcb67940fff30825ba95c938673965b62bb29f692"
+      },
+      {
+        "authority": "R4 effective_parameters.model.source_digests",
+        "path": "/home/emarinho/workspace/programs/astroclassifier/rebuild/phase3d/models_v2.py",
+        "sha256": "6a17fcf5c0319c4c10c6484659f169ce27c6ba4c3d2d1dba5dbd9fea02bbeb6f"
+      },
+      {
+        "authority": "R4 effective_parameters.model.source_digests",
+        "path": "/home/emarinho/workspace/programs/astroclassifier/rebuild/phase3d/models_v3.py",
+        "sha256": "e304b8ada45aef6143ce8acec4e3d1c441a6350d478927d7f68d4706cdf4a82a"
+      },
+      {
+        "authority": "R4 effective_parameters.model.source_digests",
+        "path": "/home/emarinho/workspace/programs/astroclassifier/rebuild/phase3d/pilot.py",
+        "sha256": "27c6548ad77c338193c39df4faddf5c99bf64c623b244331b199a07fad2cb0c3"
+      },
+      {
+        "authority": "R4 effective_parameters.model.source_digests",
+        "path": "/home/emarinho/workspace/programs/astroclassifier/rebuild/pooling_ablation.py",
+        "sha256": "b6f70d275056649959a57cb75c7829778e38fb861c7fbb713d6bc2f1fcdc4205"
+      },
+      {
+        "authority": "R4 effective_parameters.model.source_digests",
+        "path": "/home/emarinho/workspace/programs/astroclassifier/rebuild/training.py",
+        "sha256": "b7638b6da1ae21c994c739ae396ef5ba937baf643a23ba3dd32b47a47f105687"
+      },
+      {
+        "authority": "frozen J1 A model/validation worker source",
+        "path": "/home/emarinho/workspace/programs/astroclassifier/rebuild/dataset_v2j1_validation_search/repair_r3/executor_r3/train_worker_r3.py",
+        "sha256": "899afb65fb8dfba4193447e1f536410279cd97ed07dcec0ff1c5be2c7cb67d2c"
+      },
+      {
+        "authority": "frozen J2 model/control worker source",
+        "path": "/home/emarinho/workspace/programs/astroclassifier/rebuild/dataset_v2j2_control_fits/executor/train_worker_v2j2.py",
+        "sha256": "90a370f329d0a12b929bf796d5ba763fd1e90af53515036113c12fef6fadd6aa"
+      },
+      {
+        "authority": "fixed metadata-control inference implementation",
+        "path": "/home/emarinho/workspace/programs/astroclassifier/rebuild/dataset_v2j1_validation_search/metadata_controls.py",
+        "sha256": "62428ba17e986768d35374281a5d86351b98e4920ec3aeb07ff242b819dc1118"
+      },
+      {
+        "authority": "frozen tensor representation implementation",
+        "path": "/home/emarinho/workspace/programs/astroclassifier/rebuild/dataset_v2h_representation_materialization/materialize.py",
+        "sha256": "c9d13710e8c6b950a2d5be86c0e0c9484b9cb39829b5a0e251daf90e08ac3889"
+      },
+      {
+        "authority": "frozen statistical scoring rules",
+        "path": "/home/emarinho/workspace/programs/astroclassifier/rebuild/dataset_v2i_training_protocol/statistical_analysis_plan.md",
+        "sha256": "927ccaee16470d2020eeb7f3f2e0a06c4e5d43580181fe58ca52d942fdf65d70"
+      },
+      {
+        "authority": "frozen plan dependency",
+        "path": "/home/emarinho/miniconda3/envs/astro_env/lib/python3.12/site-packages/torchvision/models/resnet.py",
+        "sha256": "7499a5059ad7b1a1f8f7543c04b4a13795140fad837c38530b48ff5d9610bf6e"
+      },
+      {
+        "authority": "frozen plan dependency",
+        "path": "/home/emarinho/miniconda3/envs/astro_env/lib/python3.12/site-packages/torchvision/models/vision_transformer.py",
+        "sha256": "3b899d063605b29f874d903d6d77eec7fc09cc83d1bf5b92e373e3b8d879db37"
+      }
+    ]
+  },
+  "dependency_lock_sha256": "96298b40b7180133723ec89a0774158695e5e06f0c977af1850867de51f27d8c",
+  "freeze_status": "ready_for_review_no_inference_authorized",
+  "inference_executor_sha256": "96b0b431d0bc8de24443a75666a28c64835f6d747810c4b810fee24d775636c0",
+  "metadata_artifacts": [
+    {
+      "sha256": "577c2fe802cb0829851113eec95adba702fb49283a6e83be5f4d34a1d93a0a62",
+      "target_id": "metadata_decision_tree_depth3"
+    },
+    {
+      "sha256": "d02226d8ab86d4776f3daf0e6035b2060509ff930d3cd17d04f170609bc18926",
+      "target_id": "metadata_logreg_C1_balanced_lbfgs"
+    }
+  ],
+  "network_checkpoint_sha256s": [
+    "04c61b3346e28abd5e48ccd53c6fddb543c04c0c018b54908e4fb51874053bbb",
+    "07068bf5ee1ef3ec605dcf1e7a48531f9c9ba2f772d5c03fbaa45efac3e3f742",
+    "070bb6ec432fa05239bc3ed9c95c83aaada3e92497f24cc8f2befd3d0e895b49",
+    "0c46354f19d3aa8a33a81fdbc53a6155cb789da5d4355f953944cfb0539e02c5",
+    "0e3c4e3a078e9a62a6a5d8410437b79992ad72cb3adf34bf1e0cab5bb3997cde",
+    "1d162e823dce9bcc53b122bbc023974d320e2ca64dc9a98b8caa77f1ddcc1412",
+    "3158c7d4c1e597282f1142c9a4df4cdd018d6e779601a37989e6d0e887c14ecc",
+    "3d9e3a31b16c80f83bcfb42bbebd2c37f352369116a0851f360595d18de202a3",
+    "408273af52a3d25a61e8ecbe0cdbfbeaf10a2047ca558101332004b6d5b10d0f",
+    "429327cd27b1788b598b6df0dd55e3098942b299f7b9a5546f00176034983ea6",
+    "4d9f269591e072753cfd57ec32135e249b27f47eb2ad00e067e5fb2a9667f5d5",
+    "4f7b2594c424be8381da6eccc5a10822e0c3f4cf7d875a69eec887786479cff7",
+    "57c32f75f034dec8259743926e2c64ad6c7be0cd11a23d665843cd5b42eacc85",
+    "70ce94900bab409c97322ad9b38498f087687135149f97aa3d343d1b0d50b0b6",
+    "729da0d3a3ad8152501904351646f31359fe0a0997bc4a9279423cfc55934dbc",
+    "73c3892b2a05bc395efbbfd8bc531cd5c8b5073700f5a81583c5982a41cfe88a",
+    "79761d99eec7ed543fdca0f90e8e0489ebb3f70286817bed35251e1a951b613f",
+    "876e9b6b69a2882276e6ddd703374c5366d8511ef7f5f662607cad1b7aa6bf91",
+    "8ab0af9e54eb7856c91dcf14c07aabea41f8ef574ce981dcc929289e7685e6f8",
+    "8b27ac2ae2f9ca0c4308ef3f032773490c010692ec8ccd2b023ba6ced238f2bd",
+    "903e08a2787864ad575826b1fa0eec0b508829179cfdb3d7c4479555b0f2c662",
+    "9599578d207f2aae57e73bdf8c81e171e8251186a9dffd1117c65ee9bde8c7ca",
+    "a0c893fcf0d7db3fbffb3f3b7eb31d4362c25b2210dd7b208332d3bbe193407e",
+    "a2f8a5a7c165a569cf6ca6d314e34441fd8b771c11bd4b1d2cd8e47250b94991",
+    "a59557bb2ce3c18c02897458a6a41d42a2862ae224916b688d34d52d4bdb788a",
+    "ab39b0a0c7aad51a40abc79d97e31924d5ca1f9878fc753cf8283a89f2dc624f",
+    "b08325411b96c421a1d77cd9a0a5d07d2ce080bbcb4866f21aeaefc86d698325",
+    "b70bb71821974be74f95441525505e8f00661d6b4763dbb7a4caf9c3629e1b83",
+    "b908793c8a567e5dbeefebdcdfd96a39a24f021b8164580e385183342b46613f",
+    "c173a3fc42b1820317268c1d2a96f2b470e3f2a5c005910cbd51966cde1d87ab",
+    "c60e04d53037b29e32f710b31d205d381aaa68e940e7564df2d5822029a75ac7",
+    "da78a5ba4fd8bdcc57bfb466f6a1b596b696e685435c7ab4032455296ce409ab",
+    "dc27e68c99e5331a2f3e1e001f82825edd5610a62adf2c6db1bfefdcb95003dc",
+    "e9a389f8b039e6caa148452ec8a28587e3e52daecc3553a5fc62d825ab1f2a8d",
+    "eccd23386e4ddb3631024deed224d507b495b1ae60791e2c991758ec39f5c023",
+    "f82129ff96642fb3a001e1f01a59300fd03161b896c67d4e34bbe88f42fe86ba"
+  ],
+  "phase": "rebuild/dataset_v2k_test_executor_freeze_v3",
+  "plan": {
+    "canonical_sha256": "c0fd829094c6ad02a9cd4b0099c7accec18743ef576cbedffbce96735941c231",
+    "file_sha256": "6d78ab9676b5ad7da1751c40fae596bfecfc2059c50e446342a5253fb958fe41"
+  },
+  "protocol": {
+    "canonical_sha256": "6a4593c9e470f8eb61819a13d8fc82e74a4bfb662b5bb22ce9ca221d179b3737",
+    "file_sha256": "fcbc29993adf83c86f5f4cab445e8e61bb88cd312f390fdfa253c37dad8d2b22"
+  },
+  "schema": "v2k_executor_freeze_v3_hashes_v1",
+  "scoring_executor_sha256": "d750ed126732dfb41e46c1de979f42ee1240f3d43097f2e2b0735926ac169061",
+  "target_manifest": {
+    "canonical_sha256": "ccb33c9a90b867bf859a1b99db29c87c3b02a8d4cc3fab2c9f48465c775c8942",
+    "file_sha256": "4815c40d3a84c8b7b80748cc56b19fc637316104d14499e2d2abfc9fe9392370",
+    "metadata_targets": 2,
+    "network_targets": 36,
+    "targets": 38
+  },
+  "v2_preserved": {
+    "baseline_canonical_sha256": "e9e50b4a43c2a8cbe3173f190ae27bec8cff2fca90419fffd89c98f4229f59a8",
+    "baseline_file_sha256": "c39e475db612ed83cddf184e71990c37dee27e5971712ab7b4fb97d5b171559d",
+    "file_count": 29,
+    "incident_present": true,
+    "inference_lock_present": true,
+    "prediction_manifest_present": false,
+    "revalidated_after_tests": true
+  },
+  "validation_receipts": {
+    "external_cwd_bootstrap": {
+      "path": "rebuild/dataset_v2k_test_executor_freeze_v3/bootstrap_validation.json",
+      "sha256": "40ee81d088926ed2e1524582169d66a838cf05946bf137f07f5f05c02fae17c1",
+      "size_bytes": 620
+    },
+    "model_construction_smoke": {
+      "path": "rebuild/dataset_v2k_test_executor_freeze_v3/model_construction_smoke.json",
+      "sha256": "05fe8b353a6da69aa0c5c297fcf4019da0503acd27a3146f972cbd87c81de9e7",
+      "size_bytes": 675
+    },
+    "py_compile": {
+      "path": "rebuild/dataset_v2k_test_executor_freeze_v3/py_compile_receipt.json",
+      "sha256": "9ad90fa802b3e1d3f0af3b303cc266866dfaec6e162bde5680e274c05cdcc3d1",
+      "size_bytes": 1682
+    },
+    "static_audit": {
+      "path": "rebuild/dataset_v2k_test_executor_freeze_v3/executor_audit.json",
+      "sha256": "9df67455496a31f7a8749e529408d40cae59a305e50884c1264949b5440a8f16",
+      "size_bytes": 1015
+    },
+    "synthetic": {
+      "path": "rebuild/dataset_v2k_test_executor_freeze_v3/synthetic_validation.json",
+      "sha256": "71d03f3e421e306b3265de478a022a5eb0dc06e170fe44612646ffb3b88a26c6",
+      "size_bytes": 522
+    }
+  }
+}

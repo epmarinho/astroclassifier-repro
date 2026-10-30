@@ -1,0 +1,117 @@
+{
+  "authoritative_split_sha256": "1678a37f154baf5ff6895c81d286f3cac72fdaead7919e30f2af655be7bd33bf",
+  "authoritative_v2g_inventory_sha256": "1819213f7e863390cb25b9869f0a187c835da87fe543d1eee9ad33d4b9db600d",
+  "channel_order": [
+    "blue",
+    "red",
+    "NIR"
+  ],
+  "leakage": "zero_for_object_unit_hash_derivative_and_overlap_component",
+  "per_class_counts": {
+    "galaxies": {
+      "test": {
+        "FITS": 57,
+        "assignment_units": 14,
+        "objects": 19
+      },
+      "train": {
+        "FITS": 177,
+        "assignment_units": 59,
+        "objects": 59
+      },
+      "validation": {
+        "FITS": 60,
+        "assignment_units": 20,
+        "objects": 20
+      }
+    },
+    "globularclusters": {
+      "test": {
+        "FITS": 54,
+        "assignment_units": 18,
+        "objects": 18
+      },
+      "train": {
+        "FITS": 165,
+        "assignment_units": 55,
+        "objects": 55
+      },
+      "validation": {
+        "FITS": 57,
+        "assignment_units": 19,
+        "objects": 19
+      }
+    },
+    "nebulae": {
+      "test": {
+        "FITS": 51,
+        "assignment_units": 14,
+        "objects": 17
+      },
+      "train": {
+        "FITS": 153,
+        "assignment_units": 51,
+        "objects": 51
+      },
+      "validation": {
+        "FITS": 51,
+        "assignment_units": 17,
+        "objects": 17
+      }
+    },
+    "opencluster": {
+      "test": {
+        "FITS": 57,
+        "assignment_units": 16,
+        "objects": 19
+      },
+      "train": {
+        "FITS": 171,
+        "assignment_units": 57,
+        "objects": 57
+      },
+      "validation": {
+        "FITS": 57,
+        "assignment_units": 19,
+        "objects": 19
+      }
+    }
+  },
+  "phase": "Dataset-v2H",
+  "predecode_protocol_membership_and_1110_source_hash_gate": "passed",
+  "range": [
+    -1,
+    1
+  ],
+  "reconstruction_identical": true,
+  "reconstruction_mismatches": 0,
+  "source_contract_checks": "passed_for_370_objects_and_1110_bands",
+  "split_counts": {
+    "test": {
+      "FITS": 219,
+      "assignment_units": 61,
+      "objects": 73
+    },
+    "train": {
+      "FITS": 666,
+      "assignment_units": 222,
+      "objects": 222
+    },
+    "validation": {
+      "FITS": 225,
+      "assignment_units": 75,
+      "objects": 75
+    }
+  },
+  "status": "passed",
+  "tensor_byte_total": 891315200,
+  "tensor_count": 1480,
+  "tensor_dtype": "float32",
+  "tensor_shape": [
+    3,
+    224,
+    224
+  ],
+  "training_inference_models_network_or_scoring_used": false,
+  "v2A_v2G_preservation": "byte_identical"
+}

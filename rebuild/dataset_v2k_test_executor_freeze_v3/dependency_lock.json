@@ -1,0 +1,138 @@
+{
+  "network_or_installation_used": false,
+  "packages": {
+    "joblib": {
+      "record_path": "/home/emarinho/miniconda3/envs/astro_env/lib/python3.12/site-packages/joblib-1.4.2.dist-info/RECORD",
+      "record_sha256": "8f0bbdd8ebdba089c63f4166fdb97d5b19b31017cc30845944312e57a7c24c38",
+      "version": "1.4.2"
+    },
+    "numpy": {
+      "record_path": "/home/emarinho/miniconda3/envs/astro_env/lib/python3.12/site-packages/numpy-1.26.4.dist-info/RECORD",
+      "record_sha256": "e675fb07b66c67ed54918e4d01d31583781881e9870c95f2b46238e3351a62d6",
+      "version": "1.26.4"
+    },
+    "scikit-learn": {
+      "record_path": "/home/emarinho/miniconda3/envs/astro_env/lib/python3.12/site-packages/scikit_learn-1.4.2.dist-info/RECORD",
+      "record_sha256": "e175cb3892c28fd209630e19421ab333457cf6fb156fc284df575ad3e81df3f3",
+      "version": "1.4.2"
+    },
+    "torch": {
+      "record_path": "/home/emarinho/miniconda3/envs/astro_env/lib/python3.12/site-packages/torch-2.7.0+cu128.dist-info/RECORD",
+      "record_sha256": "e7956dace2f3e7f67c4cb48df1557860f0a22f8daed269c5312e767e17cf282a",
+      "version": "2.7.0+cu128"
+    },
+    "torchvision": {
+      "record_path": "/home/emarinho/miniconda3/envs/astro_env/lib/python3.12/site-packages/torchvision-0.22.0+cu128.dist-info/RECORD",
+      "record_sha256": "839d07f563d672431557c5da83d397a0dfa788dfdb7d8daa389b07ff628b5dd3",
+      "version": "0.22.0+cu128"
+    }
+  },
+  "python": {
+    "executable": "/home/emarinho/miniconda3/envs/astro_env/bin/python",
+    "executable_sha256": "d016bffce3c45efac7a3ca95c5897985fc741a55962019dede1588e80191e079",
+    "version": "3.12.3"
+  },
+  "schema": "v2k_local_dependency_lock_v3",
+  "source_dependencies": [
+    {
+      "authority": "R4 effective_parameters.model.source_digests",
+      "path": "/home/emarinho/workspace/programs/astroclassifier/rebuild/ablation.py",
+      "sha256": "8287aaf628a6511cd56677a22dc6e5d11df8a8071e4cb8156d154c5e65fa831b"
+    },
+    {
+      "authority": "R4 effective_parameters.model.source_digests",
+      "path": "/home/emarinho/workspace/programs/astroclassifier/rebuild/common.py",
+      "sha256": "c5aa62eff0a7533ebb511ada406ab2121f79c1aff2c7827c09795e97bde62508"
+    },
+    {
+      "authority": "R4 effective_parameters.model.source_digests",
+      "path": "/home/emarinho/workspace/programs/astroclassifier/rebuild/config.py",
+      "sha256": "1c53947636f39c824cd1903bd232006eedcef01d7434f90b493cd32a69615f57"
+    },
+    {
+      "authority": "R4 effective_parameters.model.source_digests",
+      "path": "/home/emarinho/workspace/programs/astroclassifier/rebuild/data.py",
+      "sha256": "a548fc303d7a992a533e4b9eff14bae3e2fdacb276a33d3fcb5250124f4bb58c"
+    },
+    {
+      "authority": "R4 effective_parameters.model.source_digests",
+      "path": "/home/emarinho/workspace/programs/astroclassifier/rebuild/evaluation.py",
+      "sha256": "f9362a149000d12b264cd38a051b52ef1f7007208c90aa7176a5298a62da1e97"
+    },
+    {
+      "authority": "R4 effective_parameters.model.source_digests",
+      "path": "/home/emarinho/workspace/programs/astroclassifier/rebuild/full.py",
+      "sha256": "d535aca7cfc6ff14d994fabb50b9e250d0551ab02defbc8e15ca17c261e51c21"
+    },
+    {
+      "authority": "R4 effective_parameters.model.source_digests",
+      "path": "/home/emarinho/workspace/programs/astroclassifier/rebuild/phase3b/data_v1.py",
+      "sha256": "95482ee67d8b6acddb908a8bb677adc854d624c5c09e663433189ab5bc99986d"
+    },
+    {
+      "authority": "R4 effective_parameters.model.source_digests",
+      "path": "/home/emarinho/workspace/programs/astroclassifier/rebuild/phase3d/models_v1.py",
+      "sha256": "a282c954284ccd12a7c94a1bcb67940fff30825ba95c938673965b62bb29f692"
+    },
+    {
+      "authority": "R4 effective_parameters.model.source_digests",
+      "path": "/home/emarinho/workspace/programs/astroclassifier/rebuild/phase3d/models_v2.py",
+      "sha256": "6a17fcf5c0319c4c10c6484659f169ce27c6ba4c3d2d1dba5dbd9fea02bbeb6f"
+    },
+    {
+      "authority": "R4 effective_parameters.model.source_digests",
+      "path": "/home/emarinho/workspace/programs/astroclassifier/rebuild/phase3d/models_v3.py",
+      "sha256": "e304b8ada45aef6143ce8acec4e3d1c441a6350d478927d7f68d4706cdf4a82a"
+    },
+    {
+      "authority": "R4 effective_parameters.model.source_digests",
+      "path": "/home/emarinho/workspace/programs/astroclassifier/rebuild/phase3d/pilot.py",
+      "sha256": "27c6548ad77c338193c39df4faddf5c99bf64c623b244331b199a07fad2cb0c3"
+    },
+    {
+      "authority": "R4 effective_parameters.model.source_digests",
+      "path": "/home/emarinho/workspace/programs/astroclassifier/rebuild/pooling_ablation.py",
+      "sha256": "b6f70d275056649959a57cb75c7829778e38fb861c7fbb713d6bc2f1fcdc4205"
+    },
+    {
+      "authority": "R4 effective_parameters.model.source_digests",
+      "path": "/home/emarinho/workspace/programs/astroclassifier/rebuild/training.py",
+      "sha256": "b7638b6da1ae21c994c739ae396ef5ba937baf643a23ba3dd32b47a47f105687"
+    },
+    {
+      "authority": "frozen J1 A model/validation worker source",
+      "path": "/home/emarinho/workspace/programs/astroclassifier/rebuild/dataset_v2j1_validation_search/repair_r3/executor_r3/train_worker_r3.py",
+      "sha256": "899afb65fb8dfba4193447e1f536410279cd97ed07dcec0ff1c5be2c7cb67d2c"
+    },
+    {
+      "authority": "frozen J2 model/control worker source",
+      "path": "/home/emarinho/workspace/programs/astroclassifier/rebuild/dataset_v2j2_control_fits/executor/train_worker_v2j2.py",
+      "sha256": "90a370f329d0a12b929bf796d5ba763fd1e90af53515036113c12fef6fadd6aa"
+    },
+    {
+      "authority": "fixed metadata-control inference implementation",
+      "path": "/home/emarinho/workspace/programs/astroclassifier/rebuild/dataset_v2j1_validation_search/metadata_controls.py",
+      "sha256": "62428ba17e986768d35374281a5d86351b98e4920ec3aeb07ff242b819dc1118"
+    },
+    {
+      "authority": "frozen tensor representation implementation",
+      "path": "/home/emarinho/workspace/programs/astroclassifier/rebuild/dataset_v2h_representation_materialization/materialize.py",
+      "sha256": "c9d13710e8c6b950a2d5be86c0e0c9484b9cb39829b5a0e251daf90e08ac3889"
+    },
+    {
+      "authority": "frozen statistical scoring rules",
+      "path": "/home/emarinho/workspace/programs/astroclassifier/rebuild/dataset_v2i_training_protocol/statistical_analysis_plan.md",
+      "sha256": "927ccaee16470d2020eeb7f3f2e0a06c4e5d43580181fe58ca52d942fdf65d70"
+    },
+    {
+      "authority": "frozen plan dependency",
+      "path": "/home/emarinho/miniconda3/envs/astro_env/lib/python3.12/site-packages/torchvision/models/resnet.py",
+      "sha256": "7499a5059ad7b1a1f8f7543c04b4a13795140fad837c38530b48ff5d9610bf6e"
+    },
+    {
+      "authority": "frozen plan dependency",
+      "path": "/home/emarinho/miniconda3/envs/astro_env/lib/python3.12/site-packages/torchvision/models/vision_transformer.py",
+      "sha256": "3b899d063605b29f874d903d6d77eec7fc09cc83d1bf5b92e373e3b8d879db37"
+    }
+  ]
+}

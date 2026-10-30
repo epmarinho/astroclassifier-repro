@@ -1,0 +1,5 @@
+frozen_class,frozen_candidate_objects,D_proposed_quality_ready,D_author_pending,accept_quality,defer_ambiguous,reject_signal,reject_wrong_or_uncentered_field,request_alternative_product,E_current_product_quality_ready,current_product_slots_rejected,proposed_slots_deferred,proposed_slots_alternative_requested,D_only_reserves_unchanged,D_hard_blocked_products_unchanged,new_E_reserve_promotions,objects_permanently_rejected,known_prior_blinding_compromise
+galaxies,120,93,7,5,2,0,0,0,98,0,2,0,19,1,0,0,1
+globularclusters,113,89,11,3,2,6,0,0,92,6,2,0,10,3,0,0,0
+nebulae,120,74,26,11,13,2,0,0,85,2,13,0,20,0,0,0,0
+opencluster,120,74,26,21,0,5,0,0,95,5,0,0,17,3,0,0,0

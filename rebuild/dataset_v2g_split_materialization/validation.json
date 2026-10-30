@@ -1,0 +1,219 @@
+{
+  "B_and_all_other_shortcut_controls_mandatory": true,
+  "FITS_master_images": 1110,
+  "active_assignment_units": 358,
+  "all_full_universe_units": 454,
+  "all_primary_memberships_unique_and_exhaustive": true,
+  "all_source_candidates_accounted_for": 473,
+  "canonical_split_sha256": "1678a37f154baf5ff6895c81d286f3cac72fdaead7919e30f2af655be7bd33bf",
+  "checkpoint_or_model_outcome_access": false,
+  "class_floor_violations": 0,
+  "class_object_floors": {
+    "test": 10,
+    "train": 21,
+    "validation": 6
+  },
+  "complete_phase4f2_profile_adopted": true,
+  "counts": {
+    "test": {
+      "FITS_master_images": 219,
+      "active_assignment_units": 61,
+      "all_lineage_derivatives_inheriting_constraint_role": 356,
+      "distinct_physical_objects": 73,
+      "integer_deviation_from_global_target": -1,
+      "object_fraction_decimal": 0.1972972972972973,
+      "object_fraction_exact": "73/370",
+      "objects": 73,
+      "per_class": {
+        "galaxies": {
+          "D_deterministic_quality": 18,
+          "E_author_accept_quality": 1,
+          "FITS_band_images": 57,
+          "assignment_units_touching_class": 14,
+          "distinct_physical_objects": 19,
+          "frozen_class": "galaxies",
+          "object_observations": 19,
+          "split": "test"
+        },
+        "globularclusters": {
+          "D_deterministic_quality": 18,
+          "E_author_accept_quality": 0,
+          "FITS_band_images": 54,
+          "assignment_units_touching_class": 18,
+          "distinct_physical_objects": 18,
+          "frozen_class": "globularclusters",
+          "object_observations": 18,
+          "split": "test"
+        },
+        "nebulae": {
+          "D_deterministic_quality": 15,
+          "E_author_accept_quality": 2,
+          "FITS_band_images": 51,
+          "assignment_units_touching_class": 14,
+          "distinct_physical_objects": 17,
+          "frozen_class": "nebulae",
+          "object_observations": 17,
+          "split": "test"
+        },
+        "opencluster": {
+          "D_deterministic_quality": 15,
+          "E_author_accept_quality": 4,
+          "FITS_band_images": 57,
+          "assignment_units_touching_class": 16,
+          "distinct_physical_objects": 19,
+          "frozen_class": "opencluster",
+          "object_observations": 19,
+          "split": "test"
+        }
+      },
+      "standalone_derivatives_of_eligible_parents": 352,
+      "target_fraction_exact": "1/5",
+      "target_object_count": 74
+    },
+    "train": {
+      "FITS_master_images": 666,
+      "active_assignment_units": 222,
+      "all_lineage_derivatives_inheriting_constraint_role": 1180,
+      "distinct_physical_objects": 222,
+      "integer_deviation_from_global_target": 0,
+      "object_fraction_decimal": 0.6,
+      "object_fraction_exact": "3/5",
+      "objects": 222,
+      "per_class": {
+        "galaxies": {
+          "D_deterministic_quality": 56,
+          "E_author_accept_quality": 3,
+          "FITS_band_images": 177,
+          "assignment_units_touching_class": 59,
+          "distinct_physical_objects": 59,
+          "frozen_class": "galaxies",
+          "object_observations": 59,
+          "split": "train"
+        },
+        "globularclusters": {
+          "D_deterministic_quality": 52,
+          "E_author_accept_quality": 3,
+          "FITS_band_images": 165,
+          "assignment_units_touching_class": 55,
+          "distinct_physical_objects": 55,
+          "frozen_class": "globularclusters",
+          "object_observations": 55,
+          "split": "train"
+        },
+        "nebulae": {
+          "D_deterministic_quality": 42,
+          "E_author_accept_quality": 9,
+          "FITS_band_images": 153,
+          "assignment_units_touching_class": 51,
+          "distinct_physical_objects": 51,
+          "frozen_class": "nebulae",
+          "object_observations": 51,
+          "split": "train"
+        },
+        "opencluster": {
+          "D_deterministic_quality": 44,
+          "E_author_accept_quality": 13,
+          "FITS_band_images": 171,
+          "assignment_units_touching_class": 57,
+          "distinct_physical_objects": 57,
+          "frozen_class": "opencluster",
+          "object_observations": 57,
+          "split": "train"
+        }
+      },
+      "standalone_derivatives_of_eligible_parents": 1156,
+      "target_fraction_exact": "3/5",
+      "target_object_count": 222
+    },
+    "validation": {
+      "FITS_master_images": 225,
+      "active_assignment_units": 75,
+      "all_lineage_derivatives_inheriting_constraint_role": 384,
+      "distinct_physical_objects": 75,
+      "integer_deviation_from_global_target": 1,
+      "object_fraction_decimal": 0.20270270270270271,
+      "object_fraction_exact": "15/74",
+      "objects": 75,
+      "per_class": {
+        "galaxies": {
+          "D_deterministic_quality": 19,
+          "E_author_accept_quality": 1,
+          "FITS_band_images": 60,
+          "assignment_units_touching_class": 20,
+          "distinct_physical_objects": 20,
+          "frozen_class": "galaxies",
+          "object_observations": 20,
+          "split": "validation"
+        },
+        "globularclusters": {
+          "D_deterministic_quality": 19,
+          "E_author_accept_quality": 0,
+          "FITS_band_images": 57,
+          "assignment_units_touching_class": 19,
+          "distinct_physical_objects": 19,
+          "frozen_class": "globularclusters",
+          "object_observations": 19,
+          "split": "validation"
+        },
+        "nebulae": {
+          "D_deterministic_quality": 17,
+          "E_author_accept_quality": 0,
+          "FITS_band_images": 51,
+          "assignment_units_touching_class": 17,
+          "distinct_physical_objects": 17,
+          "frozen_class": "nebulae",
+          "object_observations": 17,
+          "split": "validation"
+        },
+        "opencluster": {
+          "D_deterministic_quality": 15,
+          "E_author_accept_quality": 4,
+          "FITS_band_images": 57,
+          "assignment_units_touching_class": 19,
+          "distinct_physical_objects": 19,
+          "frozen_class": "opencluster",
+          "object_observations": 19,
+          "split": "validation"
+        }
+      },
+      "standalone_derivatives_of_eligible_parents": 364,
+      "target_fraction_exact": "1/5",
+      "target_object_count": 74
+    }
+  },
+  "derivative_parent_role_violations": 0,
+  "eligible_physical_objects": 370,
+  "exact_eligible_master_SHA_cross_split_overlap": 0,
+  "exact_optimizer_objective_independently_recomputed": "4517/36289400",
+  "exactly_one_materialized_split": true,
+  "export_correction_preserved": true,
+  "fraction_targets_exact": [
+    "3/5",
+    "1/5",
+    "1/5"
+  ],
+  "frozen_F_algorithm_source_unmodified": true,
+  "global_objective_lower_bound_achieved": true,
+  "integer_global_fraction_deviations_explicit": true,
+  "manifest_export_attempts": 2,
+  "manuscript_or_Git_mutations": false,
+  "network_or_downloads": false,
+  "normalized_alias_cross_split_overlap": 0,
+  "optimizer_invocations": 1,
+  "optimizer_invocations_during_validation": 0,
+  "original_nontrivial_overlap_components_preserved": 17,
+  "passed": true,
+  "physical_object_cross_split_overlap": 0,
+  "previous_phase_files_preserved_byte_for_byte": 9145,
+  "primary_representation": "A",
+  "rejected13_and_deferred17_excluded": true,
+  "reserves_or_replacements_newly_admitted": 0,
+  "same_optimizer_result_used_for_both_exports": true,
+  "seeded_coupled_tie_and_singleton_order_independently_verified": true,
+  "source_F_inventory_sha256": "66eafccf1a30fa738a56359617ac4dcb5b4cfc73ec6684166c4ee7752d4b1b39",
+  "split_seed": 3908274,
+  "standalone_derivative_lineages_preserved": 2534,
+  "tensors_materialized": 0,
+  "training_authorized_by_G": false,
+  "training_or_model_inference": false
+}

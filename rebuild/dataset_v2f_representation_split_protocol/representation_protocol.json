@@ -1,0 +1,134 @@
+{
+  "A": {
+    "angular_field": "Keep each exact frozen acquired5–120arcmin field; no new FOV, crop, centering adaptation or crop based on class/appearance.",
+    "known_limitation": "Class-associated angular coverage, source pixel scale, field grain, target extent and background remain visible. Mandatory B/metadata/background controls and FOV-stratified reporting are not optional.",
+    "name": "catalogue_adaptive_full_field",
+    "output": "3x224x224 float32 using common normalization; no padding.",
+    "raw_view": "All512x512 original scaled DN pixels in each aligned band; quantiles estimated on the full512x512 view.",
+    "resize": "Exact separable area-overlap averaging512→224 after intensity and optional D4 augmentation. Output pixel(j,i) spans input-edge coordinates [j*512/224,(j+1)*512/224]×[i*512/224,(i+1)*512/224]; weight each native pixel by intersection area and divide by output-pixel area. No unspecified library interpolation default.",
+    "scientific_estimand": "Whole available adaptive astronomical fields, with substantially preserved structure/context. Not a scale-neutral or morphology-only experiment."
+  },
+  "B": {
+    "PSF_scope": "Fixed added angular Gaussian and fixed output sampling control pixel-scale/FOV channels, but do not claim equal measured original photographic PSF or complete removal of original sampling/grain clues.",
+    "TAN_plane_pixel_scale_arcsec": 15,
+    "area_sampling": "For each common output pixel, use fixed8x8 midpoint quadrature over its TAN-plane pixel area. Map each sample via analytic TAN forward/inverse WCS into the smoothed source; bilinear interpolation from four native pixel centres; arithmetic mean of64 samples. All Gaussian and interpolation support must lie inside original source. No per-case kernel/crop repair.",
+    "common_WCS": "TAN ICRS at frozen catalogue RA/Dec, CRPIX1=CRPIX2=8.5, CDELT1=-15/3600,CDELT2=+15/3600deg/pixel; pixel outer edges0.5..16.5. No per-object adaptation.",
+    "effective_samples": "Only16x16 spatial samples. Added smoothing and area sampling further reduce fine detail;224x224 is an interface shape, not recovered resolution.",
+    "field_arcmin": 4,
+    "name": "common_angular_field_and_sampling_control",
+    "prefilter": "Each raw scaled source DN band is smoothed on its native local TAN plane with a separable normalized Gaussian of added FWHM15arcsec. sigma=15/(2*sqrt(2*ln(2))*source_scale_arcsec_per_pixel); integer support radius=ceil(4*sigma). Weights exp(-k^2/(2*sigma^2)) for k=-radius..radius, normalized to sum1. No source-edge padding; evaluate only fully supported pixels.",
+    "raw_output_grid": [
+      16,
+      16
+    ],
+    "resize": "After optional D4 on the16x16 lattice, repeat each cell exactly14times in each spatial dimension to224x224. Nearest replication has no new independent information.",
+    "role": "Mandatory independently reported image control if A is primary; if B is primary, A is a predeclared contextual comparator. No choice is made after accuracy or test outcomes.",
+    "scientific_estimand": "Central4arcmin appearance at coarse common angular sampling; large targets/context are truncated and small targets may be unresolved.",
+    "stretch_after_common_view": "Compute per-band p01/p99 on the16x16 raw common view, then common asinh transformation. Never estimate B intensity parameters on the original adaptive full field."
+  },
+  "canonical_sha256": "d820a4ee06c32ddc95942ad22543692a76f7753b8e3a3643cc019481240289e8",
+  "common_contract": {
+    "WCS_checks": {
+      "angular_units": "degrees",
+      "band_alignment": "Identical dimensions and projection/frame; all band-to-blue sky-to-pixel mappings at catalogue centre, four pixel-centre corners and geometric centre differ<=1e-6pixel. No alignment repair or per-candidate reprojection fallback.",
+      "catalogue_centre": "Reference position<=1arcsec from frozen catalogue coordinates, requested sky point<=1pixel from geometric centre; independently verify TAN roundtrip<=1e-6pixel.",
+      "dimensions": [
+        512,
+        512
+      ],
+      "failure": "Stop materialization and preserve diagnosis; do not drop/relabel/repair an E-eligible object.",
+      "frame": "ICRS",
+      "frozen_request_FOV": "Check returned CDELT magnitude against degrees(2*tan(radians(request_FOV_deg)/2)/512), relative1e-9 / absolute1e-12deg/pixel.",
+      "matrix": "Finite invertible CD or PC/CDELT; north-up east-left, off-diagonals absolute sum<1e-12deg/pixel, CD11<0, CD22>0.",
+      "projection": [
+        "RA---TAN",
+        "DEC--TAN"
+      ]
+    },
+    "augmentation": {
+      "draw": "SHA256 UTF8 Dataset-v2F|augment|2026102303|physical_object_id|zero_based_epoch; first8 digest bytes interpreted big-endian unsigned, modulo8.",
+      "new_v2F_role": "Prospective augmentation stream, not an inherited split or training seed.",
+      "operation": "For code0..7: horizontal mirror iff code>=4, then counterclockwise np.rot90 k=code%4 on the spatial axes. Identical code for all bands and controls of an object. Apply on512 lattice for A,16 lattice for B, before final sizing.",
+      "prohibited": [
+        "random crop",
+        "continuous-angle rotation or augmentation padding",
+        "brightness/contrast/colour jitter",
+        "cutout",
+        "noise injection",
+        "candidate-specific augmentation",
+        "test-time augmentation"
+      ],
+      "same_stream_across_model_families_and_training_seeds": true,
+      "stream_seed": 2026102303,
+      "train_only": true
+    },
+    "class_order": [
+      "galaxies",
+      "globularclusters",
+      "nebulae",
+      "opencluster"
+    ],
+    "input_bands_in_tensor_order": [
+      "CDS/P/DSS2/blue",
+      "CDS/P/DSS2/red",
+      "CDS/P/DSS2/NIR"
+    ],
+    "intensity": {
+      "arithmetic": "CPU float64 until final tensor cast; no uint8 conversion or JPEG/PNG input.",
+      "normalization": "After spatial resizing: (u-0.5)/0.5 independently in each channel. Fixed constants, not ImageNet RGB statistics or fitted all-data means.",
+      "physical_limit": "Independent band stretches intentionally sacrifice absolute flux and calibrated colour ratios. Photographic DN is not common flux calibration; no physical SED/colour claim.",
+      "quantiles": "Independently per band on the defined raw view. Sort finite values; h=(n-1)*q; linear interpolation between floor(h),ceil(h), q=0.01 and0.99. No class/label, training-wide or test-fitted stretch parameters.",
+      "transform": "z=clip((DN-p01)/(p99-p01),0,1); u=asinh(10*z)/asinh(10). Require p99>p01."
+    },
+    "invalid_pixels": {
+      "current_evidence": "Cached frozen C header/pixel checks for the E370 pool meet finite/nondegenerate conditions; future materialization must revalidate actual FITS independently.",
+      "definition": "Nonfinite native/scaled values or native integer BLANK; apply FITS scaling before intensity transformation.",
+      "policy": "Any declared invalid pixel needed by a recipe stops the whole materialization gate. No imputation, inpainting, variable mask channel, object-specific crop or silent removal.",
+      "zeros": "Finite zero DN is not automatically missing; preserve it. An entirely constant/zero required channel or p99<=p1 stops materialization, never replace with an artificial band."
+    },
+    "never_use_QC_pseudoRGB_order": "QC pseudo-RGB maps NIR/red/blue to displayRGB; those PNGs, contact sheets and review assets are never tensors.",
+    "orientation": "Retain north-up/east-left. FITS row order is flipped vertically for array/tensor orientation after world-grid operations. No EXIF/ICC processing applies to FITS.",
+    "output": {
+      "dtype": "IEEE754 float32",
+      "finite_only": true,
+      "layout": "contiguous CHW",
+      "preprocess_numerical_tolerance": "float64 reference, final float32 absolute tolerance1e-6 for synthetic conformance tests",
+      "range": [
+        -1,
+        1
+      ],
+      "shape_CHW": [
+        3,
+        224,
+        224
+      ]
+    },
+    "padding": "No letterbox, zero-fill borders, mask channel or variable padding. All source grids square. B requires fully covered crop plus blur/interpolation support; missing support stops materialization.",
+    "quality_authority": {
+      "only370_quality_ready_candidates": true,
+      "path": "rebuild/dataset_v2e_author_quality_freeze/accepted_inventory.json",
+      "sha256": "b336a491b66c099e530f0c8ce0e27399ca1fc32cb5c51952cf8ddc095947fbad"
+    },
+    "source_contract": {
+      "identity": "Verify complete byte size and SHA-256 against E on every source read; reject any changed file. Resolve bands by exact E survey ID, not filename colour guesses.",
+      "master_format": "Unmodified primary2D FITS,512x512, FITS BSCALE/BZERO applied in float64",
+      "ownership": "One physical object is one three-band observation. No band, preview, augmentation or derivative becomes an independent labelled observation."
+    },
+    "tensor_channel_names": [
+      "blue",
+      "red",
+      "NIR"
+    ],
+    "validation_test": "Same deterministic recipe, intensity rule, orientation, resize and fixed normalization as training; augmentation code always identity. No model/test outcome can change parameters."
+  },
+  "frozen_utc": "2026-10-23T21:34:49.605108+00:00",
+  "materialization_now": false,
+  "phase": "Dataset-v2F",
+  "primary_choice_evidence": null,
+  "primary_representation": null,
+  "primary_role_requires_explicit_author_decision": true,
+  "selection_never_uses_accuracy_or_test_results": true,
+  "source_FITS_and_all_A_to_E_artifacts_unchanged": true,
+  "status": "complete_prospective_recipes_frozen_primary_role_pending",
+  "tensor_or_image_files_generated_now": 0
+}

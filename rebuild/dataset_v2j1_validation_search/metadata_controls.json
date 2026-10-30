@@ -1,0 +1,1084 @@
+{
+  "fit_count": 2,
+  "frozen_rule": "fixed v2F models; no tuning; no influence on network configuration selection",
+  "models": [
+    {
+      "configuration_id": "metadata_logreg_C1_balanced_lbfgs",
+      "decision_tree_text": null,
+      "family": "metadata_logreg_C1_balanced_lbfgs",
+      "features": [
+        "log(source_FOV_arcmin)",
+        "log(source_pixel_scale_arcsec)",
+        "log(recorded_catalogue_extent_arcmin)",
+        "catalogue_extent_missing",
+        "source_FOV_capped"
+      ],
+      "fit_id": "metadata_logreg_C1_balanced_lbfgs",
+      "fit_preprocessing": "Median imputation and centering/scaling fit on training objects only; no held-out fitting.",
+      "logistic_iterations": [
+        26
+      ],
+      "model_artifact": "metadata_controls/metadata_logreg_C1_balanced_lbfgs.joblib",
+      "model_artifact_sha256": "d02226d8ab86d4776f3daf0e6035b2060509ff930d3cd17d04f170609bc18926",
+      "model_artifact_size_bytes": 1942,
+      "record_sha256": "894c680dc38935db2d4250fa751f3f1cce4f8bc0f8b66179de880c7aeb23e35f",
+      "representation": "metadata_FOV_only",
+      "seed": null,
+      "test_data_accessed": false,
+      "train_objects": 222,
+      "train_split_manifest_sha256": "2796453de81d6b37f920e08a362a86bb43d9e0081ab043845a930b5dd567818e",
+      "validation_metrics": {
+        "accuracy": 0.72,
+        "balanced_accuracy": 0.7110681114551084,
+        "confusion_matrix_true_rows_predicted_columns": [
+          [
+            18,
+            2,
+            0,
+            0
+          ],
+          [
+            6,
+            12,
+            1,
+            0
+          ],
+          [
+            5,
+            1,
+            8,
+            3
+          ],
+          [
+            0,
+            2,
+            1,
+            16
+          ]
+        ],
+        "macro_f1": 0.7090145999920436,
+        "per_class": {
+          "f1": [
+            0.7346938775510204,
+            0.6666666666666666,
+            0.5925925925925926,
+            0.8421052631578947
+          ],
+          "precision": [
+            0.6206896551724138,
+            0.7058823529411765,
+            0.8,
+            0.8421052631578947
+          ],
+          "recall": [
+            0.9,
+            0.631578947368421,
+            0.47058823529411764,
+            0.8421052631578947
+          ],
+          "support": [
+            20,
+            19,
+            17,
+            19
+          ]
+        }
+      },
+      "validation_objects": 75,
+      "validation_predictions": [
+        {
+          "physical_object_id": "object_0a20acda342c7794cad3",
+          "predicted_label": 2,
+          "split_unit_id": "unit_0a20acda342c7794cad3",
+          "true_label": 2
+        },
+        {
+          "physical_object_id": "object_0a82a08ae10c1c7b395e",
+          "predicted_label": 1,
+          "split_unit_id": "unit_0a82a08ae10c1c7b395e",
+          "true_label": 1
+        },
+        {
+          "physical_object_id": "object_17a310c294b8a1aee80e",
+          "predicted_label": 3,
+          "split_unit_id": "unit_17a310c294b8a1aee80e",
+          "true_label": 2
+        },
+        {
+          "physical_object_id": "object_24d540c47551284ac1e2",
+          "predicted_label": 0,
+          "split_unit_id": "unit_24d540c47551284ac1e2",
+          "true_label": 2
+        },
+        {
+          "physical_object_id": "object_258c53309dcf69139e15",
+          "predicted_label": 3,
+          "split_unit_id": "unit_258c53309dcf69139e15",
+          "true_label": 2
+        },
+        {
+          "physical_object_id": "object_26032fd9167b674368e6",
+          "predicted_label": 1,
+          "split_unit_id": "unit_26032fd9167b674368e6",
+          "true_label": 3
+        },
+        {
+          "physical_object_id": "object_28a5d4f9a1313cb4771f",
+          "predicted_label": 0,
+          "split_unit_id": "unit_28a5d4f9a1313cb4771f",
+          "true_label": 0
+        },
+        {
+          "physical_object_id": "object_2cfaf0c5fa5d7c699f34",
+          "predicted_label": 1,
+          "split_unit_id": "unit_2cfaf0c5fa5d7c699f34",
+          "true_label": 2
+        },
+        {
+          "physical_object_id": "object_2f44bb74936a476070b2",
+          "predicted_label": 1,
+          "split_unit_id": "unit_2f44bb74936a476070b2",
+          "true_label": 1
+        },
+        {
+          "physical_object_id": "object_3239b91098ac9b02a4ad",
+          "predicted_label": 1,
+          "split_unit_id": "unit_3239b91098ac9b02a4ad",
+          "true_label": 1
+        },
+        {
+          "physical_object_id": "object_36552436c68a90fde7fa",
+          "predicted_label": 3,
+          "split_unit_id": "unit_36552436c68a90fde7fa",
+          "true_label": 3
+        },
+        {
+          "physical_object_id": "object_3b12fa1f9f6aa3520110",
+          "predicted_label": 2,
+          "split_unit_id": "unit_3b12fa1f9f6aa3520110",
+          "true_label": 2
+        },
+        {
+          "physical_object_id": "object_43a87592d115afe86ca7",
+          "predicted_label": 0,
+          "split_unit_id": "unit_43a87592d115afe86ca7",
+          "true_label": 2
+        },
+        {
+          "physical_object_id": "object_44a500cc7cea7e03f0d6",
+          "predicted_label": 1,
+          "split_unit_id": "unit_44a500cc7cea7e03f0d6",
+          "true_label": 1
+        },
+        {
+          "physical_object_id": "object_485ea3113f4cb46be684",
+          "predicted_label": 0,
+          "split_unit_id": "unit_485ea3113f4cb46be684",
+          "true_label": 0
+        },
+        {
+          "physical_object_id": "object_4a601b0e802014a008a0",
+          "predicted_label": 0,
+          "split_unit_id": "unit_4a601b0e802014a008a0",
+          "true_label": 2
+        },
+        {
+          "physical_object_id": "object_4c1f85272f0cea2ca52c",
+          "predicted_label": 0,
+          "split_unit_id": "unit_4c1f85272f0cea2ca52c",
+          "true_label": 0
+        },
+        {
+          "physical_object_id": "object_4d0e9dc22430b509c942",
+          "predicted_label": 0,
+          "split_unit_id": "unit_4d0e9dc22430b509c942",
+          "true_label": 1
+        },
+        {
+          "physical_object_id": "object_57b5df96294be71c0970",
+          "predicted_label": 0,
+          "split_unit_id": "unit_57b5df96294be71c0970",
+          "true_label": 0
+        },
+        {
+          "physical_object_id": "object_5863c4e828692aeb6ea4",
+          "predicted_label": 0,
+          "split_unit_id": "unit_5863c4e828692aeb6ea4",
+          "true_label": 0
+        },
+        {
+          "physical_object_id": "object_5acd867a64e816ffc660",
+          "predicted_label": 2,
+          "split_unit_id": "unit_5acd867a64e816ffc660",
+          "true_label": 3
+        },
+        {
+          "physical_object_id": "object_5f3a5be487736f15671a",
+          "predicted_label": 0,
+          "split_unit_id": "unit_5f3a5be487736f15671a",
+          "true_label": 1
+        },
+        {
+          "physical_object_id": "object_5f73b5908212f22d8ddf",
+          "predicted_label": 3,
+          "split_unit_id": "unit_5f73b5908212f22d8ddf",
+          "true_label": 3
+        },
+        {
+          "physical_object_id": "object_5fbdf6ac591cdd7ca610",
+          "predicted_label": 0,
+          "split_unit_id": "unit_5fbdf6ac591cdd7ca610",
+          "true_label": 0
+        },
+        {
+          "physical_object_id": "object_60793a9d61400c04a6f9",
+          "predicted_label": 1,
+          "split_unit_id": "unit_60793a9d61400c04a6f9",
+          "true_label": 1
+        },
+        {
+          "physical_object_id": "object_6094adc553b2bf51ba9f",
+          "predicted_label": 2,
+          "split_unit_id": "unit_6094adc553b2bf51ba9f",
+          "true_label": 2
+        },
+        {
+          "physical_object_id": "object_628c1b5808b0ac22e2be",
+          "predicted_label": 3,
+          "split_unit_id": "unit_628c1b5808b0ac22e2be",
+          "true_label": 3
+        },
+        {
+          "physical_object_id": "object_75cc478d7864b8dfcb89",
+          "predicted_label": 3,
+          "split_unit_id": "unit_75cc478d7864b8dfcb89",
+          "true_label": 3
+        },
+        {
+          "physical_object_id": "object_7bafccfa053b57a1d494",
+          "predicted_label": 3,
+          "split_unit_id": "unit_7bafccfa053b57a1d494",
+          "true_label": 3
+        },
+        {
+          "physical_object_id": "object_7be0476ed8d523c91bcb",
+          "predicted_label": 2,
+          "split_unit_id": "unit_7be0476ed8d523c91bcb",
+          "true_label": 1
+        },
+        {
+          "physical_object_id": "object_80e6d7bcafbf009e8bf6",
+          "predicted_label": 3,
+          "split_unit_id": "unit_80e6d7bcafbf009e8bf6",
+          "true_label": 3
+        },
+        {
+          "physical_object_id": "object_8177ced8d1c94a583cbc",
+          "predicted_label": 0,
+          "split_unit_id": "unit_8177ced8d1c94a583cbc",
+          "true_label": 1
+        },
+        {
+          "physical_object_id": "object_85247787cd7aaef86b63",
+          "predicted_label": 0,
+          "split_unit_id": "unit_85247787cd7aaef86b63",
+          "true_label": 0
+        },
+        {
+          "physical_object_id": "object_871c91f53d888be88567",
+          "predicted_label": 0,
+          "split_unit_id": "unit_871c91f53d888be88567",
+          "true_label": 0
+        },
+        {
+          "physical_object_id": "object_87d0bb42d77c46c2de7d",
+          "predicted_label": 0,
+          "split_unit_id": "unit_87d0bb42d77c46c2de7d",
+          "true_label": 0
+        },
+        {
+          "physical_object_id": "object_8c091e9d206997db82c9",
+          "predicted_label": 0,
+          "split_unit_id": "unit_383bb2a11ae1181a0325",
+          "true_label": 2
+        },
+        {
+          "physical_object_id": "object_9107ba4821a7800d8cc2",
+          "predicted_label": 1,
+          "split_unit_id": "unit_9107ba4821a7800d8cc2",
+          "true_label": 1
+        },
+        {
+          "physical_object_id": "object_92cde4c67749b28ce3e0",
+          "predicted_label": 3,
+          "split_unit_id": "unit_92cde4c67749b28ce3e0",
+          "true_label": 3
+        },
+        {
+          "physical_object_id": "object_96c98e4e15c5a6eb12e7",
+          "predicted_label": 3,
+          "split_unit_id": "unit_96c98e4e15c5a6eb12e7",
+          "true_label": 3
+        },
+        {
+          "physical_object_id": "object_9ac63d820038b52451d5",
+          "predicted_label": 0,
+          "split_unit_id": "unit_9ac63d820038b52451d5",
+          "true_label": 1
+        },
+        {
+          "physical_object_id": "object_9d9fdb4c95ef153ea6ae",
+          "predicted_label": 0,
+          "split_unit_id": "unit_9d9fdb4c95ef153ea6ae",
+          "true_label": 0
+        },
+        {
+          "physical_object_id": "object_a0ff260e948580896f1e",
+          "predicted_label": 3,
+          "split_unit_id": "unit_a0ff260e948580896f1e",
+          "true_label": 3
+        },
+        {
+          "physical_object_id": "object_a60ac0de08c7d993d97b",
+          "predicted_label": 1,
+          "split_unit_id": "unit_a60ac0de08c7d993d97b",
+          "true_label": 0
+        },
+        {
+          "physical_object_id": "object_ac5f652672804c139754",
+          "predicted_label": 1,
+          "split_unit_id": "unit_ac5f652672804c139754",
+          "true_label": 1
+        },
+        {
+          "physical_object_id": "object_b06066ba9ecce4847d72",
+          "predicted_label": 3,
+          "split_unit_id": "unit_b06066ba9ecce4847d72",
+          "true_label": 2
+        },
+        {
+          "physical_object_id": "object_b0663f327d7b974eef33",
+          "predicted_label": 1,
+          "split_unit_id": "unit_b0663f327d7b974eef33",
+          "true_label": 1
+        },
+        {
+          "physical_object_id": "object_b391d124cfcb22022af0",
+          "predicted_label": 0,
+          "split_unit_id": "unit_b391d124cfcb22022af0",
+          "true_label": 0
+        },
+        {
+          "physical_object_id": "object_b7128c92f8e0d0eeb0e6",
+          "predicted_label": 2,
+          "split_unit_id": "unit_b7128c92f8e0d0eeb0e6",
+          "true_label": 2
+        },
+        {
+          "physical_object_id": "object_bc03561925f1b579ddcc",
+          "predicted_label": 0,
+          "split_unit_id": "unit_bc03561925f1b579ddcc",
+          "true_label": 0
+        },
+        {
+          "physical_object_id": "object_bce6c7b4bbce5bee4863",
+          "predicted_label": 3,
+          "split_unit_id": "unit_bce6c7b4bbce5bee4863",
+          "true_label": 3
+        },
+        {
+          "physical_object_id": "object_c050d5ba7a2f08086c68",
+          "predicted_label": 3,
+          "split_unit_id": "unit_c050d5ba7a2f08086c68",
+          "true_label": 3
+        },
+        {
+          "physical_object_id": "object_ca8c799ae379300f90f7",
+          "predicted_label": 0,
+          "split_unit_id": "unit_ca8c799ae379300f90f7",
+          "true_label": 0
+        },
+        {
+          "physical_object_id": "object_cee77efa4a91b7bf5095",
+          "predicted_label": 0,
+          "split_unit_id": "unit_cee77efa4a91b7bf5095",
+          "true_label": 0
+        },
+        {
+          "physical_object_id": "object_cf1b4820c4f869c9a731",
+          "predicted_label": 1,
+          "split_unit_id": "unit_cf1b4820c4f869c9a731",
+          "true_label": 0
+        },
+        {
+          "physical_object_id": "object_d049341887f23ff34ba4",
+          "predicted_label": 3,
+          "split_unit_id": "unit_066cb2a5dc676c5a881c",
+          "true_label": 3
+        },
+        {
+          "physical_object_id": "object_d25f4058ae32ca012ed2",
+          "predicted_label": 0,
+          "split_unit_id": "unit_d25f4058ae32ca012ed2",
+          "true_label": 0
+        },
+        {
+          "physical_object_id": "object_d63cb763a096e03a3cb3",
+          "predicted_label": 2,
+          "split_unit_id": "unit_d63cb763a096e03a3cb3",
+          "true_label": 2
+        },
+        {
+          "physical_object_id": "object_d79409efd5c9c432c84a",
+          "predicted_label": 2,
+          "split_unit_id": "unit_d79409efd5c9c432c84a",
+          "true_label": 2
+        },
+        {
+          "physical_object_id": "object_d8e4a680b3f1259eb408",
+          "predicted_label": 0,
+          "split_unit_id": "unit_d8e4a680b3f1259eb408",
+          "true_label": 2
+        },
+        {
+          "physical_object_id": "object_dae7b512c0254450e243",
+          "predicted_label": 3,
+          "split_unit_id": "unit_dae7b512c0254450e243",
+          "true_label": 3
+        },
+        {
+          "physical_object_id": "object_dbd33c106fb4682e0896",
+          "predicted_label": 3,
+          "split_unit_id": "unit_dbd33c106fb4682e0896",
+          "true_label": 3
+        },
+        {
+          "physical_object_id": "object_de5493d8c6aca568aca5",
+          "predicted_label": 1,
+          "split_unit_id": "unit_de5493d8c6aca568aca5",
+          "true_label": 1
+        },
+        {
+          "physical_object_id": "object_df4db6a1abcd7d09e5f0",
+          "predicted_label": 3,
+          "split_unit_id": "unit_df4db6a1abcd7d09e5f0",
+          "true_label": 3
+        },
+        {
+          "physical_object_id": "object_e04b3146df4ed64bda5d",
+          "predicted_label": 0,
+          "split_unit_id": "unit_e04b3146df4ed64bda5d",
+          "true_label": 0
+        },
+        {
+          "physical_object_id": "object_e49101c02791b8641c48",
+          "predicted_label": 0,
+          "split_unit_id": "unit_e49101c02791b8641c48",
+          "true_label": 1
+        },
+        {
+          "physical_object_id": "object_e4dad306dcc44f77579d",
+          "predicted_label": 2,
+          "split_unit_id": "unit_e4dad306dcc44f77579d",
+          "true_label": 2
+        },
+        {
+          "physical_object_id": "object_e59d4b833d430a9d8cdc",
+          "predicted_label": 1,
+          "split_unit_id": "unit_e59d4b833d430a9d8cdc",
+          "true_label": 1
+        },
+        {
+          "physical_object_id": "object_e600e02dee1105d57eb6",
+          "predicted_label": 1,
+          "split_unit_id": "unit_e600e02dee1105d57eb6",
+          "true_label": 1
+        },
+        {
+          "physical_object_id": "object_e6d857b96f9a04e3b307",
+          "predicted_label": 2,
+          "split_unit_id": "unit_e6d857b96f9a04e3b307",
+          "true_label": 2
+        },
+        {
+          "physical_object_id": "object_e8d057c0ae70fecb65a1",
+          "predicted_label": 0,
+          "split_unit_id": "unit_e8d057c0ae70fecb65a1",
+          "true_label": 0
+        },
+        {
+          "physical_object_id": "object_e9aa9efb471faa3fb1a2",
+          "predicted_label": 1,
+          "split_unit_id": "unit_e9aa9efb471faa3fb1a2",
+          "true_label": 3
+        },
+        {
+          "physical_object_id": "object_eda0064c880d7c27ed26",
+          "predicted_label": 3,
+          "split_unit_id": "unit_eda0064c880d7c27ed26",
+          "true_label": 3
+        },
+        {
+          "physical_object_id": "object_eea83675cbf96676348b",
+          "predicted_label": 0,
+          "split_unit_id": "unit_eea83675cbf96676348b",
+          "true_label": 1
+        },
+        {
+          "physical_object_id": "object_f36ca6e6e86f5312ef80",
+          "predicted_label": 1,
+          "split_unit_id": "unit_f36ca6e6e86f5312ef80",
+          "true_label": 1
+        },
+        {
+          "physical_object_id": "object_f48e04b84391395ff670",
+          "predicted_label": 0,
+          "split_unit_id": "unit_f48e04b84391395ff670",
+          "true_label": 0
+        }
+      ],
+      "validation_split_manifest_sha256": "c31844bfda2ca7f13837b3001eb66c0a27d8ae8ed4bff99cfe6fd347851add94",
+      "warnings": []
+    },
+    {
+      "configuration_id": "metadata_decision_tree_depth3",
+      "decision_tree_text": "|--- log_FOV <= -0.03\n|   |--- log_extent <= -0.50\n|   |   |--- log_extent <= -1.39\n|   |   |   |--- class: 2\n|   |   |--- log_extent >  -1.39\n|   |   |   |--- class: 0\n|   |--- log_extent >  -0.50\n|   |   |--- log_FOV <= -0.62\n|   |   |   |--- class: 1\n|   |   |--- log_FOV >  -0.62\n|   |   |   |--- class: 1\n|--- log_FOV >  -0.03\n|   |--- extent_missing <= 1.19\n|   |   |--- log_FOV <= 0.62\n|   |   |   |--- class: 3\n|   |   |--- log_FOV >  0.62\n|   |   |   |--- class: 3\n|   |--- extent_missing >  1.19\n|   |   |--- class: 2\n",
+      "family": "metadata_decision_tree_depth3",
+      "features": [
+        "log(source_FOV_arcmin)",
+        "log(source_pixel_scale_arcsec)",
+        "log(recorded_catalogue_extent_arcmin)",
+        "catalogue_extent_missing",
+        "source_FOV_capped"
+      ],
+      "fit_id": "metadata_decision_tree_depth3",
+      "fit_preprocessing": "Median imputation and centering/scaling fit on training objects only; no held-out fitting.",
+      "logistic_iterations": null,
+      "model_artifact": "metadata_controls/metadata_decision_tree_depth3.joblib",
+      "model_artifact_sha256": "577c2fe802cb0829851113eec95adba702fb49283a6e83be5f4d34a1d93a0a62",
+      "model_artifact_size_bytes": 3440,
+      "record_sha256": "c9fc202841e267fbd4a1b1f4ee4169db03db199aaf5fbfb498e422924621b2b2",
+      "representation": "metadata_FOV_only",
+      "seed": 3908274,
+      "test_data_accessed": false,
+      "train_objects": 222,
+      "train_split_manifest_sha256": "2796453de81d6b37f920e08a362a86bb43d9e0081ab043845a930b5dd567818e",
+      "validation_metrics": {
+        "accuracy": 0.72,
+        "balanced_accuracy": 0.7132739938080495,
+        "confusion_matrix_true_rows_predicted_columns": [
+          [
+            17,
+            3,
+            0,
+            0
+          ],
+          [
+            6,
+            12,
+            1,
+            0
+          ],
+          [
+            4,
+            1,
+            9,
+            3
+          ],
+          [
+            0,
+            2,
+            1,
+            16
+          ]
+        ],
+        "macro_f1": 0.7142538274957088,
+        "per_class": {
+          "f1": [
+            0.723404255319149,
+            0.6486486486486487,
+            0.6428571428571429,
+            0.8421052631578947
+          ],
+          "precision": [
+            0.6296296296296297,
+            0.6666666666666666,
+            0.8181818181818182,
+            0.8421052631578947
+          ],
+          "recall": [
+            0.85,
+            0.631578947368421,
+            0.5294117647058824,
+            0.8421052631578947
+          ],
+          "support": [
+            20,
+            19,
+            17,
+            19
+          ]
+        }
+      },
+      "validation_objects": 75,
+      "validation_predictions": [
+        {
+          "physical_object_id": "object_0a20acda342c7794cad3",
+          "predicted_label": 2,
+          "split_unit_id": "unit_0a20acda342c7794cad3",
+          "true_label": 2
+        },
+        {
+          "physical_object_id": "object_0a82a08ae10c1c7b395e",
+          "predicted_label": 1,
+          "split_unit_id": "unit_0a82a08ae10c1c7b395e",
+          "true_label": 1
+        },
+        {
+          "physical_object_id": "object_17a310c294b8a1aee80e",
+          "predicted_label": 3,
+          "split_unit_id": "unit_17a310c294b8a1aee80e",
+          "true_label": 2
+        },
+        {
+          "physical_object_id": "object_24d540c47551284ac1e2",
+          "predicted_label": 0,
+          "split_unit_id": "unit_24d540c47551284ac1e2",
+          "true_label": 2
+        },
+        {
+          "physical_object_id": "object_258c53309dcf69139e15",
+          "predicted_label": 3,
+          "split_unit_id": "unit_258c53309dcf69139e15",
+          "true_label": 2
+        },
+        {
+          "physical_object_id": "object_26032fd9167b674368e6",
+          "predicted_label": 1,
+          "split_unit_id": "unit_26032fd9167b674368e6",
+          "true_label": 3
+        },
+        {
+          "physical_object_id": "object_28a5d4f9a1313cb4771f",
+          "predicted_label": 0,
+          "split_unit_id": "unit_28a5d4f9a1313cb4771f",
+          "true_label": 0
+        },
+        {
+          "physical_object_id": "object_2cfaf0c5fa5d7c699f34",
+          "predicted_label": 1,
+          "split_unit_id": "unit_2cfaf0c5fa5d7c699f34",
+          "true_label": 2
+        },
+        {
+          "physical_object_id": "object_2f44bb74936a476070b2",
+          "predicted_label": 1,
+          "split_unit_id": "unit_2f44bb74936a476070b2",
+          "true_label": 1
+        },
+        {
+          "physical_object_id": "object_3239b91098ac9b02a4ad",
+          "predicted_label": 1,
+          "split_unit_id": "unit_3239b91098ac9b02a4ad",
+          "true_label": 1
+        },
+        {
+          "physical_object_id": "object_36552436c68a90fde7fa",
+          "predicted_label": 3,
+          "split_unit_id": "unit_36552436c68a90fde7fa",
+          "true_label": 3
+        },
+        {
+          "physical_object_id": "object_3b12fa1f9f6aa3520110",
+          "predicted_label": 2,
+          "split_unit_id": "unit_3b12fa1f9f6aa3520110",
+          "true_label": 2
+        },
+        {
+          "physical_object_id": "object_43a87592d115afe86ca7",
+          "predicted_label": 2,
+          "split_unit_id": "unit_43a87592d115afe86ca7",
+          "true_label": 2
+        },
+        {
+          "physical_object_id": "object_44a500cc7cea7e03f0d6",
+          "predicted_label": 1,
+          "split_unit_id": "unit_44a500cc7cea7e03f0d6",
+          "true_label": 1
+        },
+        {
+          "physical_object_id": "object_485ea3113f4cb46be684",
+          "predicted_label": 0,
+          "split_unit_id": "unit_485ea3113f4cb46be684",
+          "true_label": 0
+        },
+        {
+          "physical_object_id": "object_4a601b0e802014a008a0",
+          "predicted_label": 0,
+          "split_unit_id": "unit_4a601b0e802014a008a0",
+          "true_label": 2
+        },
+        {
+          "physical_object_id": "object_4c1f85272f0cea2ca52c",
+          "predicted_label": 0,
+          "split_unit_id": "unit_4c1f85272f0cea2ca52c",
+          "true_label": 0
+        },
+        {
+          "physical_object_id": "object_4d0e9dc22430b509c942",
+          "predicted_label": 0,
+          "split_unit_id": "unit_4d0e9dc22430b509c942",
+          "true_label": 1
+        },
+        {
+          "physical_object_id": "object_57b5df96294be71c0970",
+          "predicted_label": 0,
+          "split_unit_id": "unit_57b5df96294be71c0970",
+          "true_label": 0
+        },
+        {
+          "physical_object_id": "object_5863c4e828692aeb6ea4",
+          "predicted_label": 0,
+          "split_unit_id": "unit_5863c4e828692aeb6ea4",
+          "true_label": 0
+        },
+        {
+          "physical_object_id": "object_5acd867a64e816ffc660",
+          "predicted_label": 2,
+          "split_unit_id": "unit_5acd867a64e816ffc660",
+          "true_label": 3
+        },
+        {
+          "physical_object_id": "object_5f3a5be487736f15671a",
+          "predicted_label": 0,
+          "split_unit_id": "unit_5f3a5be487736f15671a",
+          "true_label": 1
+        },
+        {
+          "physical_object_id": "object_5f73b5908212f22d8ddf",
+          "predicted_label": 3,
+          "split_unit_id": "unit_5f73b5908212f22d8ddf",
+          "true_label": 3
+        },
+        {
+          "physical_object_id": "object_5fbdf6ac591cdd7ca610",
+          "predicted_label": 0,
+          "split_unit_id": "unit_5fbdf6ac591cdd7ca610",
+          "true_label": 0
+        },
+        {
+          "physical_object_id": "object_60793a9d61400c04a6f9",
+          "predicted_label": 1,
+          "split_unit_id": "unit_60793a9d61400c04a6f9",
+          "true_label": 1
+        },
+        {
+          "physical_object_id": "object_6094adc553b2bf51ba9f",
+          "predicted_label": 2,
+          "split_unit_id": "unit_6094adc553b2bf51ba9f",
+          "true_label": 2
+        },
+        {
+          "physical_object_id": "object_628c1b5808b0ac22e2be",
+          "predicted_label": 3,
+          "split_unit_id": "unit_628c1b5808b0ac22e2be",
+          "true_label": 3
+        },
+        {
+          "physical_object_id": "object_75cc478d7864b8dfcb89",
+          "predicted_label": 3,
+          "split_unit_id": "unit_75cc478d7864b8dfcb89",
+          "true_label": 3
+        },
+        {
+          "physical_object_id": "object_7bafccfa053b57a1d494",
+          "predicted_label": 3,
+          "split_unit_id": "unit_7bafccfa053b57a1d494",
+          "true_label": 3
+        },
+        {
+          "physical_object_id": "object_7be0476ed8d523c91bcb",
+          "predicted_label": 2,
+          "split_unit_id": "unit_7be0476ed8d523c91bcb",
+          "true_label": 1
+        },
+        {
+          "physical_object_id": "object_80e6d7bcafbf009e8bf6",
+          "predicted_label": 3,
+          "split_unit_id": "unit_80e6d7bcafbf009e8bf6",
+          "true_label": 3
+        },
+        {
+          "physical_object_id": "object_8177ced8d1c94a583cbc",
+          "predicted_label": 0,
+          "split_unit_id": "unit_8177ced8d1c94a583cbc",
+          "true_label": 1
+        },
+        {
+          "physical_object_id": "object_85247787cd7aaef86b63",
+          "predicted_label": 0,
+          "split_unit_id": "unit_85247787cd7aaef86b63",
+          "true_label": 0
+        },
+        {
+          "physical_object_id": "object_871c91f53d888be88567",
+          "predicted_label": 0,
+          "split_unit_id": "unit_871c91f53d888be88567",
+          "true_label": 0
+        },
+        {
+          "physical_object_id": "object_87d0bb42d77c46c2de7d",
+          "predicted_label": 0,
+          "split_unit_id": "unit_87d0bb42d77c46c2de7d",
+          "true_label": 0
+        },
+        {
+          "physical_object_id": "object_8c091e9d206997db82c9",
+          "predicted_label": 0,
+          "split_unit_id": "unit_383bb2a11ae1181a0325",
+          "true_label": 2
+        },
+        {
+          "physical_object_id": "object_9107ba4821a7800d8cc2",
+          "predicted_label": 1,
+          "split_unit_id": "unit_9107ba4821a7800d8cc2",
+          "true_label": 1
+        },
+        {
+          "physical_object_id": "object_92cde4c67749b28ce3e0",
+          "predicted_label": 3,
+          "split_unit_id": "unit_92cde4c67749b28ce3e0",
+          "true_label": 3
+        },
+        {
+          "physical_object_id": "object_96c98e4e15c5a6eb12e7",
+          "predicted_label": 3,
+          "split_unit_id": "unit_96c98e4e15c5a6eb12e7",
+          "true_label": 3
+        },
+        {
+          "physical_object_id": "object_9ac63d820038b52451d5",
+          "predicted_label": 0,
+          "split_unit_id": "unit_9ac63d820038b52451d5",
+          "true_label": 1
+        },
+        {
+          "physical_object_id": "object_9d9fdb4c95ef153ea6ae",
+          "predicted_label": 0,
+          "split_unit_id": "unit_9d9fdb4c95ef153ea6ae",
+          "true_label": 0
+        },
+        {
+          "physical_object_id": "object_a0ff260e948580896f1e",
+          "predicted_label": 3,
+          "split_unit_id": "unit_a0ff260e948580896f1e",
+          "true_label": 3
+        },
+        {
+          "physical_object_id": "object_a60ac0de08c7d993d97b",
+          "predicted_label": 1,
+          "split_unit_id": "unit_a60ac0de08c7d993d97b",
+          "true_label": 0
+        },
+        {
+          "physical_object_id": "object_ac5f652672804c139754",
+          "predicted_label": 1,
+          "split_unit_id": "unit_ac5f652672804c139754",
+          "true_label": 1
+        },
+        {
+          "physical_object_id": "object_b06066ba9ecce4847d72",
+          "predicted_label": 3,
+          "split_unit_id": "unit_b06066ba9ecce4847d72",
+          "true_label": 2
+        },
+        {
+          "physical_object_id": "object_b0663f327d7b974eef33",
+          "predicted_label": 1,
+          "split_unit_id": "unit_b0663f327d7b974eef33",
+          "true_label": 1
+        },
+        {
+          "physical_object_id": "object_b391d124cfcb22022af0",
+          "predicted_label": 0,
+          "split_unit_id": "unit_b391d124cfcb22022af0",
+          "true_label": 0
+        },
+        {
+          "physical_object_id": "object_b7128c92f8e0d0eeb0e6",
+          "predicted_label": 2,
+          "split_unit_id": "unit_b7128c92f8e0d0eeb0e6",
+          "true_label": 2
+        },
+        {
+          "physical_object_id": "object_bc03561925f1b579ddcc",
+          "predicted_label": 0,
+          "split_unit_id": "unit_bc03561925f1b579ddcc",
+          "true_label": 0
+        },
+        {
+          "physical_object_id": "object_bce6c7b4bbce5bee4863",
+          "predicted_label": 3,
+          "split_unit_id": "unit_bce6c7b4bbce5bee4863",
+          "true_label": 3
+        },
+        {
+          "physical_object_id": "object_c050d5ba7a2f08086c68",
+          "predicted_label": 3,
+          "split_unit_id": "unit_c050d5ba7a2f08086c68",
+          "true_label": 3
+        },
+        {
+          "physical_object_id": "object_ca8c799ae379300f90f7",
+          "predicted_label": 1,
+          "split_unit_id": "unit_ca8c799ae379300f90f7",
+          "true_label": 0
+        },
+        {
+          "physical_object_id": "object_cee77efa4a91b7bf5095",
+          "predicted_label": 0,
+          "split_unit_id": "unit_cee77efa4a91b7bf5095",
+          "true_label": 0
+        },
+        {
+          "physical_object_id": "object_cf1b4820c4f869c9a731",
+          "predicted_label": 1,
+          "split_unit_id": "unit_cf1b4820c4f869c9a731",
+          "true_label": 0
+        },
+        {
+          "physical_object_id": "object_d049341887f23ff34ba4",
+          "predicted_label": 3,
+          "split_unit_id": "unit_066cb2a5dc676c5a881c",
+          "true_label": 3
+        },
+        {
+          "physical_object_id": "object_d25f4058ae32ca012ed2",
+          "predicted_label": 0,
+          "split_unit_id": "unit_d25f4058ae32ca012ed2",
+          "true_label": 0
+        },
+        {
+          "physical_object_id": "object_d63cb763a096e03a3cb3",
+          "predicted_label": 2,
+          "split_unit_id": "unit_d63cb763a096e03a3cb3",
+          "true_label": 2
+        },
+        {
+          "physical_object_id": "object_d79409efd5c9c432c84a",
+          "predicted_label": 2,
+          "split_unit_id": "unit_d79409efd5c9c432c84a",
+          "true_label": 2
+        },
+        {
+          "physical_object_id": "object_d8e4a680b3f1259eb408",
+          "predicted_label": 0,
+          "split_unit_id": "unit_d8e4a680b3f1259eb408",
+          "true_label": 2
+        },
+        {
+          "physical_object_id": "object_dae7b512c0254450e243",
+          "predicted_label": 3,
+          "split_unit_id": "unit_dae7b512c0254450e243",
+          "true_label": 3
+        },
+        {
+          "physical_object_id": "object_dbd33c106fb4682e0896",
+          "predicted_label": 3,
+          "split_unit_id": "unit_dbd33c106fb4682e0896",
+          "true_label": 3
+        },
+        {
+          "physical_object_id": "object_de5493d8c6aca568aca5",
+          "predicted_label": 1,
+          "split_unit_id": "unit_de5493d8c6aca568aca5",
+          "true_label": 1
+        },
+        {
+          "physical_object_id": "object_df4db6a1abcd7d09e5f0",
+          "predicted_label": 3,
+          "split_unit_id": "unit_df4db6a1abcd7d09e5f0",
+          "true_label": 3
+        },
+        {
+          "physical_object_id": "object_e04b3146df4ed64bda5d",
+          "predicted_label": 0,
+          "split_unit_id": "unit_e04b3146df4ed64bda5d",
+          "true_label": 0
+        },
+        {
+          "physical_object_id": "object_e49101c02791b8641c48",
+          "predicted_label": 0,
+          "split_unit_id": "unit_e49101c02791b8641c48",
+          "true_label": 1
+        },
+        {
+          "physical_object_id": "object_e4dad306dcc44f77579d",
+          "predicted_label": 2,
+          "split_unit_id": "unit_e4dad306dcc44f77579d",
+          "true_label": 2
+        },
+        {
+          "physical_object_id": "object_e59d4b833d430a9d8cdc",
+          "predicted_label": 1,
+          "split_unit_id": "unit_e59d4b833d430a9d8cdc",
+          "true_label": 1
+        },
+        {
+          "physical_object_id": "object_e600e02dee1105d57eb6",
+          "predicted_label": 1,
+          "split_unit_id": "unit_e600e02dee1105d57eb6",
+          "true_label": 1
+        },
+        {
+          "physical_object_id": "object_e6d857b96f9a04e3b307",
+          "predicted_label": 2,
+          "split_unit_id": "unit_e6d857b96f9a04e3b307",
+          "true_label": 2
+        },
+        {
+          "physical_object_id": "object_e8d057c0ae70fecb65a1",
+          "predicted_label": 0,
+          "split_unit_id": "unit_e8d057c0ae70fecb65a1",
+          "true_label": 0
+        },
+        {
+          "physical_object_id": "object_e9aa9efb471faa3fb1a2",
+          "predicted_label": 1,
+          "split_unit_id": "unit_e9aa9efb471faa3fb1a2",
+          "true_label": 3
+        },
+        {
+          "physical_object_id": "object_eda0064c880d7c27ed26",
+          "predicted_label": 3,
+          "split_unit_id": "unit_eda0064c880d7c27ed26",
+          "true_label": 3
+        },
+        {
+          "physical_object_id": "object_eea83675cbf96676348b",
+          "predicted_label": 0,
+          "split_unit_id": "unit_eea83675cbf96676348b",
+          "true_label": 1
+        },
+        {
+          "physical_object_id": "object_f36ca6e6e86f5312ef80",
+          "predicted_label": 1,
+          "split_unit_id": "unit_f36ca6e6e86f5312ef80",
+          "true_label": 1
+        },
+        {
+          "physical_object_id": "object_f48e04b84391395ff670",
+          "predicted_label": 0,
+          "split_unit_id": "unit_f48e04b84391395ff670",
+          "true_label": 0
+        }
+      ],
+      "validation_split_manifest_sha256": "c31844bfda2ca7f13837b3001eb66c0a27d8ae8ed4bff99cfe6fd347851add94",
+      "warnings": []
+    }
+  ],
+  "phase": "Dataset-v2J1",
+  "status": "completed",
+  "test_paths_or_labels_accessed": false,
+  "total_wall_seconds": 0.5097362969972892
+}

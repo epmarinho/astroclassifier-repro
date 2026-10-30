@@ -1,0 +1,28 @@
+{
+  "authorized_executor_changes": [
+    "phase_v2_to_v3",
+    "idempotent_root_sys_path_bootstrap"
+  ],
+  "checkpoint_payload_opened": false,
+  "compact_root_relative_tensor_resolution_preserved": true,
+  "executor_diff_limited": true,
+  "inference_executed": false,
+  "membership_manifest_opened": false,
+  "metadata_targets": 2,
+  "network_accessed": false,
+  "network_targets": 36,
+  "repository_tensor_opened": false,
+  "root_relative_tensor_resolution_preserved": true,
+  "schema": "v2k_executor_freeze_v3_audit_v1",
+  "scorer_byte_identical": true,
+  "scorer_sha256": "d750ed126732dfb41e46c1de979f42ee1240f3d43097f2e2b0735926ac169061",
+  "scoring_executed": false,
+  "source_dependencies_verified": 20,
+  "status": "passed_static_provenance_and_v2_preservation",
+  "target_count": 38,
+  "truth_source_opened": false,
+  "v2_file_count": 29,
+  "v2_incident_preserved": true,
+  "v2_lock_preserved": true,
+  "v2_preservation_baseline_sha256": "c39e475db612ed83cddf184e71990c37dee27e5971712ab7b4fb97d5b171559d"
+}

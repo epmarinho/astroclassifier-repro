@@ -1,0 +1,56 @@
+{
+  "adopted_alternative": "B",
+  "assumptions": "Use the frozen v1 timing comparison and the v2 train/validation sample-size scaling already recorded in the v2I draft. No retiming or candidate-count changes.",
+  "bootstrap_seed": 20261021,
+  "candidate_counts_by_architecture": {
+    "custom_cnn_transformer": 6,
+    "resnet50": 12,
+    "vit_b_16": 12
+  },
+  "candidate_manifest_sha256": "e5032c7194e0f8479c0df6a355d6651f1fb5b90e8811429b992ebb3fbcb13572",
+  "control_fit_schedule": "Three representations (B, A_outer, B_outer) x three seeds for exactly one A-validation-selected configuration per architecture.",
+  "fit_count": {
+    "A_search_winner_fits_reused_in_factorial": 9,
+    "conditional_control_network_fits": 27,
+    "conditional_control_slots_not_executed": 243,
+    "mandatory_network_search_A": 90,
+    "metadata_FOV_fits": 2,
+    "selected_network_factorial_fits": 36,
+    "total_training_fits": 119,
+    "unique_network_training_fits": 117
+  },
+  "fit_schedule": {
+    "conditional_control_slots": "270 slots are enumerated; only the 27 slots corresponding to the selected configuration per architecture execute.",
+    "metadata": "Fit the two fixed metadata/FOV controls; no tuning.",
+    "selection": "Exactly one configuration per architecture, using only the declared validation ranking rule and all three seeds.",
+    "stage_1": "90 network fits on representation A: 12 ResNet50 configurations x 3 seeds; 12 ViT-B/16 configurations x 3 seeds; 6 custom CNN+Transformer configurations x 3 seeds.",
+    "stage_2": "Only after selection, execute 27 network control fits: selected architecture configuration x representations B/A_outer/B_outer x 3 matching seeds. The 9 selected A runs are reused, not repeated."
+  },
+  "metadata_controls": "Two fixed CPU fits per the frozen v2F metadata/FOV-only control; no tuning and not included in GPU-hour estimate.",
+  "paired_bootstrap_replicates": 20000,
+  "paired_randomization_replicates": 20000,
+  "phase": "Dataset-v2I",
+  "randomization_rng": "NumPy PCG64",
+  "randomization_seed": 20261021,
+  "runtime_estimate_gpu_hours": {
+    "author_accepted": true,
+    "candidate_count_changed": false,
+    "central": 16.5,
+    "custom_component": "planning proxy, not measured v2 runtime",
+    "indicative_range": [
+      10.9,
+      40.8
+    ],
+    "timing_pilot_performed": false
+  },
+  "test_assignment_units": 61,
+  "test_evaluation_count": {
+    "metadata_FOV_models": 2,
+    "selected_network_checkpoints": 36,
+    "test_assignment_units": 61,
+    "test_objects": 73,
+    "total_one_time_evaluation_passes": 38
+  },
+  "test_objects": 73,
+  "training_started_this_turn": false
+}

@@ -1,0 +1,57 @@
+{
+  "author_decision_gates_resolved": 5,
+  "candidate_counts": {
+    "A_search_network_fits": 90,
+    "conditional_control_slots": 270,
+    "executed_control_network_fits_after_selection": 27,
+    "metadata_FOV_fits": 2,
+    "reused_winning_A_search_fits": 9,
+    "selected_network_factorial_fits": 36,
+    "total_prospective_training_fits": 119,
+    "unique_network_fits": 117,
+    "unselected_control_slots_not_executed": 243
+  },
+  "candidate_manifest_contains_results_predictions_or_timings": false,
+  "candidate_seed_ids": [
+    3908274,
+    3908275,
+    3908276
+  ],
+  "conditional_control_slots_by_architecture": {
+    "custom_cnn_transformer": 54,
+    "resnet50": 108,
+    "vit_b_16": 108
+  },
+  "conditional_control_slots_by_representation": {
+    "A_outer": 90,
+    "B": 90,
+    "B_outer": 90
+  },
+  "custom_adapter_specification_matches_author_decision": true,
+  "inventory_includes_prior_draft_archive": true,
+  "phase": "Dataset-v2I",
+  "predecision_draft_archived_and_hash_verified": 9,
+  "pretrained_weights_policy_and_frozen_hashes_present": true,
+  "protocol_canonical_digest_recomputed": true,
+  "protocol_canonical_sha256": "6a4593c9e470f8eb61819a13d8fc82e74a4bfb662b5bb22ce9ca221d179b3737",
+  "randomization_rng": "NumPy PCG64",
+  "randomization_seed": 20261021,
+  "ready_for_execution": true,
+  "sealed_test_label_manifest_opened_or_deserialized": false,
+  "search_fits_by_architecture": {
+    "custom_cnn_transformer": 18,
+    "resnet50": 36,
+    "vit_b_16": 36
+  },
+  "statistics_executor_matches_author_decision": true,
+  "status": "passed_author_decision_freeze",
+  "tensor_arrays_loaded_or_reconstructed": false,
+  "test_assignment_units": 61,
+  "test_evaluation_passes_once_after_future_selection_freeze": 38,
+  "test_observations": 73,
+  "test_prediction_outcomes_read": false,
+  "training_inference_checkpoint_loading_or_scoring_performed": false,
+  "v2A_to_v2G_files_hash_verified": 9209,
+  "v2A_to_v2H_changed": false,
+  "v2H_files_hash_verified": 1496
+}

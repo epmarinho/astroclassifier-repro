@@ -1,0 +1,83 @@
+{
+  "decision_source": "explicit user instruction",
+  "decisions": {
+    "control_network_fits": 27,
+    "custom_adapter": {
+      "call": "torch.nn.functional.interpolate(x.unsqueeze(0), size=(256, 256), mode=\"bilinear\", align_corners=False, antialias=True).squeeze(0).contiguous()",
+      "dtype": "float32",
+      "environment": {
+        "python": "3.12.3",
+        "torch": "2.7.0+cu128",
+        "torchvision": "0.22.0+cu128"
+      },
+      "operation_device": "CPU",
+      "placement": "load frozen v2H tensor -> frozen train-only v2F augmentation (identity for validation/test) -> CPU bilinear adapter -> CUDA transfer -> custom model",
+      "source_tensor_shape": [
+        3,
+        224,
+        224
+      ],
+      "target_spatial_size": [
+        256,
+        256
+      ],
+      "trainable_parameters": 0
+    },
+    "custom_architecture_input_size": [
+      256,
+      256
+    ],
+    "metadata_FOV_controls": 2,
+    "pretrained_transfer": {
+      "additional_normalization": "none",
+      "channel_order": [
+        "blue",
+        "red",
+        "NIR"
+      ],
+      "interpretation": "frozen transfer-learning policy; channels are not conventional RGB and do not imply spectral equivalence",
+      "resnet50_sha256": "0676ba61b6795bbe1773cffd859882e5e297624d384b6993f7c9e683e722fb8a",
+      "train_from_scratch": false,
+      "vit_b_16_sha256": "c867db91d3e12c6cbadabb610d73c24a546bf82d8c03a9fea34f43a712ddb0e9"
+    },
+    "primary_search_network_fits": 90,
+    "primary_search_representation": "A",
+    "runtime": {
+      "central_gpu_hours": 16.5,
+      "custom_estimate": "planning proxy; not measured v2 runtime",
+      "range_gpu_hours": [
+        10.9,
+        40.8
+      ]
+    },
+    "selected_configurations_per_architecture": 1,
+    "selection_alternative": "B",
+    "statistics": {
+      "assignment_units": 61,
+      "bootstrap_replicates": 20000,
+      "bootstrap_seed": 20261021,
+      "paired_unit_randomization_replicates": 20000,
+      "predictions_sealed_before_scoring": true,
+      "rng": "NumPy PCG64",
+      "same_resamples_all_models_representations_metrics_seeds": true,
+      "test_driven_retraining_replacement_reselection": false,
+      "truth_hidden_from_prediction_worker": true,
+      "whole_unit_resampling": true
+    },
+    "test_labels_deserialized": false,
+    "training_started": false
+  },
+  "phase": "Dataset-v2I",
+  "prior_draft_sha256": {
+    "REPORT.md": "9a29faab5850446fa97e687b50c3427e9275e0763f80cdf70e9a5de7abc0a12c",
+    "candidate_manifest.json": "582d620afa97c20ff6e2c6940ad8b1e051ce33292d1846b3e50e8fe6826ae91b",
+    "file_inventory.json": "467906a67e44408a9adf67a82a557cf5e81637b8a7334e182a194b078189a0b6",
+    "fit_accounting.json": "c05f7bdddf9677642c60607a8121369aa98359aa77e28243ef966159a6622f38",
+    "open_decisions.md": "928975a5043a763bf9da024a66834de0c1dc42118d2a57180c92e0ce9633842a",
+    "protocol.json": "2e3dc0ff997d29556fed8558e548228199b63bc05722a8674d506f21855515ca",
+    "statistical_analysis_plan.md": "fde2a5641ad79d819663c8a7b48644f5071fe656e53b76ad5a6f5ddb4a47936f",
+    "test_lock.json": "254a408f54236c2ddde259994a9bcabfe6074c5c500305521c95a19bac375289",
+    "validation.json": "682e8b8a3f8d3fff83ab01ad354ae3af2438153d88e8cd76aa9d513ed4f3f318"
+  },
+  "verbatim_statement": "Author decisions for Dataset-v2I:\n\n1. Select Alternative B: prospective validation-only search on representation A.\n   Execute the frozen 90 network search fits, select exactly one configuration\n   per architecture using only the declared validation rule, and then execute\n   only the 27 required B/A_outer/B_outer control fits. No test information may\n   influence selection. The two fixed metadata/FOV controls remain mandatory.\n\n2. For the Custom CNN+Transformer, preserve the effective v1 architecture and\n   its 256×256 input contract. Freeze a deterministic, non-trainable 224→256\n   bilinear input adapter applied identically to A, B, A_outer and B_outer.\n   Specify the exact library call, interpolation mode, antialias setting,\n   operation order and environment version in the protocol. The adapter must\n   occur after loading the frozen v2H tensor and before the custom model; it\n   must not alter v2H files. Do not change the custom architecture to grid 7.\n   Record this as model-specific input adaptation and not as a new\n   representation or tunable candidate.\n\n3. Accept the reported runtime estimate and its uncertainty:\n   central estimate 16.5 GPU-hours and indicative range 10.9–40.8 hours.\n   The custom-model estimate is explicitly a planning proxy, not a measured v2\n   runtime. Do not run a timing pilot or alter the scientific candidate count.\n\n4. Confirm ImageNet transfer for ResNet50 and ViT-B/16:\n   use exactly the locally preserved official weights and their frozen hashes;\n   pass blue/red/NIR into the three channel slots in that order;\n   retain the exact v2H normalization with no additional ImageNet-specific or\n   family-specific normalization;\n   do not train these baselines from scratch;\n   missing or mismatched weight bytes must stop execution.\n   State clearly that the channels are not conventional RGB and that this is a\n   frozen transfer-learning policy, not an assertion of spectral equivalence.\n\n5. Approve the statistical executor:\n   - 61 frozen assignment units;\n   - NumPy PCG64 seed 20261021;\n   - 20,000 paired cluster-bootstrap replicates;\n   - 20,000 paired unit-level randomization replicates;\n   - all objects in a sampled unit remain together;\n   - identical resamples across models, representations, metrics and seeds;\n   - prediction workers receive no truth;\n   - predictions are sealed before the scoring process receives truth;\n   - no test result may trigger retraining, replacement or reselection.\n\nUpdate and refreeze Dataset-v2I accordingly. Recompute protocol, manifest,\naccounting and inventory digests; validate internal counts and preserve\nv2A–v2H byte-for-byte.\n\nDo not begin training in this turn. Do not load checkpoints, run inference,\ndeserialize test labels or score predictions.\n\nReport the final prospective fit count, final protocol digest and whether\nready_for_execution=true. Stop after the updated v2I decision freeze."
+}

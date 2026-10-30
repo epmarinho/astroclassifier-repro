@@ -1,0 +1,2670 @@
+{
+  "background_caveat": "Outer-field pixels can contain real target emission and neighbours; DN values are not calibrated across photographic plates. These descriptors expose risk rather than identifying true sky background or proving causal leakage.",
+  "categorical_associations": {
+    "FOV_arcmin_pooled_quartiles": {
+      "Cramer_V": 0.4703373564464762,
+      "categories": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "class_entropy_bits": 1.999521241897571,
+      "classes": [
+        "galaxies",
+        "globularclusters",
+        "nebulae",
+        "opencluster"
+      ],
+      "counts": [
+        [
+          113,
+          1,
+          5,
+          1
+        ],
+        [
+          73,
+          8,
+          30,
+          2
+        ],
+        [
+          33,
+          1,
+          53,
+          33
+        ],
+        [
+          3,
+          5,
+          31,
+          81
+        ]
+      ],
+      "fraction_of_class_entropy_associated": 0.2747274065064211,
+      "interpretation": "Descriptive in-collection association; no trained classifier, accuracy claim, significance test or causal attribution.",
+      "mutual_information_bits": 0.5493232850410179,
+      "n": 473,
+      "pooled_quartile_edges": [
+        5.0,
+        6.04,
+        15.0
+      ]
+    },
+    "FOV_predeclared_bins": {
+      "Cramer_V": 0.518292679321071,
+      "categories": [
+        "(10,20]",
+        "(20,40]",
+        "(40,80]",
+        "(5,10]",
+        "(80,120]",
+        "5 exactly"
+      ],
+      "class_entropy_bits": 1.999521241897571,
+      "classes": [
+        "galaxies",
+        "globularclusters",
+        "nebulae",
+        "opencluster"
+      ],
+      "counts": [
+        [
+          1,
+          1,
+          0,
+          5,
+          0,
+          113
+        ],
+        [
+          10,
+          0,
+          0,
+          30,
+          0,
+          73
+        ],
+        [
+          56,
+          3,
+          10,
+          6,
+          12,
+          33
+        ],
+        [
+          30,
+          25,
+          23,
+          11,
+          28,
+          3
+        ]
+      ],
+      "fraction_of_class_entropy_associated": 0.3236380282601609,
+      "interpretation": "Descriptive in-collection association; no trained classifier, accuracy claim, significance test or causal attribution.",
+      "mutual_information_bits": 0.6471211121920382,
+      "n": 473
+    },
+    "background_IQR_over_global_dynamic_pooled_quartiles": {
+      "Cramer_V": 0.21195324274582877,
+      "categories": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "class_entropy_bits": 1.999521241897571,
+      "classes": [
+        "galaxies",
+        "globularclusters",
+        "nebulae",
+        "opencluster"
+      ],
+      "counts": [
+        [
+          42,
+          41,
+          31,
+          6
+        ],
+        [
+          16,
+          24,
+          20,
+          53
+        ],
+        [
+          34,
+          28,
+          27,
+          31
+        ],
+        [
+          27,
+          25,
+          40,
+          28
+        ]
+      ],
+      "fraction_of_class_entropy_associated": 0.05246712211501588,
+      "interpretation": "Descriptive in-collection association; no trained classifier, accuracy claim, significance test or causal attribution.",
+      "mutual_information_bits": 0.10490912517020806,
+      "n": 473,
+      "pooled_quartile_edges": [
+        0.0750557253356969,
+        0.12384670530032807,
+        0.20231822971549
+      ]
+    },
+    "background_centre_median_difference_normalized_pooled_quartiles": {
+      "Cramer_V": 0.261607815529227,
+      "categories": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "class_entropy_bits": 1.999521241897571,
+      "classes": [
+        "galaxies",
+        "globularclusters",
+        "nebulae",
+        "opencluster"
+      ],
+      "counts": [
+        [
+          14,
+          27,
+          48,
+          31
+        ],
+        [
+          12,
+          19,
+          32,
+          50
+        ],
+        [
+          48,
+          32,
+          12,
+          28
+        ],
+        [
+          45,
+          40,
+          26,
+          9
+        ]
+      ],
+      "fraction_of_class_entropy_associated": 0.07883044769638349,
+      "interpretation": "Descriptive in-collection association; no trained classifier, accuracy claim, significance test or causal attribution.",
+      "mutual_information_bits": 0.15762315467721422,
+      "n": 473,
+      "pooled_quartile_edges": [
+        0.09969420115561306,
+        0.291377220923532,
+        0.6825998765323221
+      ]
+    },
+    "background_tile_p90_p10_over_global_dynamic_pooled_quartiles": {
+      "Cramer_V": 0.2483785903762511,
+      "categories": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "class_entropy_bits": 1.999521241897571,
+      "classes": [
+        "galaxies",
+        "globularclusters",
+        "nebulae",
+        "opencluster"
+      ],
+      "counts": [
+        [
+          56,
+          43,
+          19,
+          2
+        ],
+        [
+          14,
+          18,
+          38,
+          43
+        ],
+        [
+          29,
+          25,
+          29,
+          37
+        ],
+        [
+          20,
+          32,
+          32,
+          36
+        ]
+      ],
+      "fraction_of_class_entropy_associated": 0.07862734688788109,
+      "interpretation": "Descriptive in-collection association; no trained classifier, accuracy claim, significance test or causal attribution.",
+      "mutual_information_bits": 0.1572170502963671,
+      "n": 473,
+      "pooled_quartile_edges": [
+        0.05771365149833518,
+        0.10985765038156799,
+        0.22819139747797548
+      ]
+    },
+    "catalogue_FOV_capped": {
+      "Cramer_V": 0.2987940016828459,
+      "categories": [
+        "False",
+        "True"
+      ],
+      "class_entropy_bits": 1.999521241897571,
+      "classes": [
+        "galaxies",
+        "globularclusters",
+        "nebulae",
+        "opencluster"
+      ],
+      "counts": [
+        [
+          120,
+          0
+        ],
+        [
+          113,
+          0
+        ],
+        [
+          112,
+          8
+        ],
+        [
+          99,
+          21
+        ]
+      ],
+      "fraction_of_class_entropy_associated": 0.03663379120364982,
+      "interpretation": "Descriptive in-collection association; no trained classifier, accuracy claim, significance test or causal attribution.",
+      "mutual_information_bits": 0.07325004368293819,
+      "n": 473
+    },
+    "catalogue_extent_arcmin_pooled_quartiles": {
+      "Cramer_V": 0.5451491536279042,
+      "categories": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4",
+        "missing"
+      ],
+      "class_entropy_bits": 1.999521241897571,
+      "classes": [
+        "galaxies",
+        "globularclusters",
+        "nebulae",
+        "opencluster"
+      ],
+      "counts": [
+        [
+          63,
+          47,
+          9,
+          1,
+          0
+        ],
+        [
+          17,
+          46,
+          46,
+          0,
+          4
+        ],
+        [
+          24,
+          8,
+          16,
+          25,
+          47
+        ],
+        [
+          1,
+          2,
+          31,
+          77,
+          9
+        ]
+      ],
+      "fraction_of_class_entropy_associated": 0.34049292165592776,
+      "interpretation": "Descriptive in-collection association; no trained classifier, accuracy claim, significance test or causal attribution.",
+      "mutual_information_bits": 0.680822829566793,
+      "n": 473,
+      "pooled_quartile_edges": [
+        0.96,
+        2.1,
+        9.2
+      ]
+    },
+    "catalogue_extent_missing": {
+      "Cramer_V": 0.470835900754852,
+      "categories": [
+        "False",
+        "True"
+      ],
+      "class_entropy_bits": 1.999521241897571,
+      "classes": [
+        "galaxies",
+        "globularclusters",
+        "nebulae",
+        "opencluster"
+      ],
+      "counts": [
+        [
+          120,
+          0
+        ],
+        [
+          109,
+          4
+        ],
+        [
+          73,
+          47
+        ],
+        [
+          111,
+          9
+        ]
+      ],
+      "fraction_of_class_entropy_associated": 0.07674381204849297,
+      "interpretation": "Descriptive in-collection association; no trained classifier, accuracy claim, significance test or causal attribution.",
+      "mutual_information_bits": 0.15345088237515642,
+      "n": 473
+    },
+    "column_median_step_max_normalized_pooled_quartiles": {
+      "Cramer_V": 0.231835844565818,
+      "categories": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "class_entropy_bits": 1.999521241897571,
+      "classes": [
+        "galaxies",
+        "globularclusters",
+        "nebulae",
+        "opencluster"
+      ],
+      "counts": [
+        [
+          44,
+          43,
+          25,
+          8
+        ],
+        [
+          17,
+          13,
+          27,
+          56
+        ],
+        [
+          35,
+          32,
+          26,
+          27
+        ],
+        [
+          23,
+          30,
+          40,
+          27
+        ]
+      ],
+      "fraction_of_class_entropy_associated": 0.05951512129459364,
+      "interpretation": "Descriptive in-collection association; no trained classifier, accuracy claim, significance test or causal attribution.",
+      "mutual_information_bits": 0.11900174924265045,
+      "n": 473,
+      "pooled_quartile_edges": [
+        0.012595598625505265,
+        0.02142227329098072,
+        0.034668260609683206
+      ]
+    },
+    "explicit_artifact_issue": {
+      "Cramer_V": 0.24686847625432773,
+      "categories": [
+        "False",
+        "True"
+      ],
+      "class_entropy_bits": 1.999521241897571,
+      "classes": [
+        "galaxies",
+        "globularclusters",
+        "nebulae",
+        "opencluster"
+      ],
+      "counts": [
+        [
+          116,
+          4
+        ],
+        [
+          101,
+          12
+        ],
+        [
+          103,
+          17
+        ],
+        [
+          88,
+          32
+        ]
+      ],
+      "fraction_of_class_entropy_associated": 0.02286087441117513,
+      "interpretation": "Descriptive in-collection association; no trained classifier, accuracy claim, significance test or causal attribution.",
+      "mutual_information_bits": 0.04571080399349729,
+      "n": 473
+    },
+    "extent_in_B15arcsec_pixels_pooled_quartiles": {
+      "Cramer_V": 0.5451491536279042,
+      "categories": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4",
+        "missing"
+      ],
+      "class_entropy_bits": 1.999521241897571,
+      "classes": [
+        "galaxies",
+        "globularclusters",
+        "nebulae",
+        "opencluster"
+      ],
+      "counts": [
+        [
+          63,
+          47,
+          9,
+          1,
+          0
+        ],
+        [
+          17,
+          46,
+          46,
+          0,
+          4
+        ],
+        [
+          24,
+          8,
+          16,
+          25,
+          47
+        ],
+        [
+          1,
+          2,
+          31,
+          77,
+          9
+        ]
+      ],
+      "fraction_of_class_entropy_associated": 0.34049292165592776,
+      "interpretation": "Descriptive in-collection association; no trained classifier, accuracy claim, significance test or causal attribution.",
+      "mutual_information_bits": 0.680822829566793,
+      "n": 473,
+      "pooled_quartile_edges": [
+        3.84,
+        8.4,
+        36.8
+      ]
+    },
+    "extent_in_current_pixels_pooled_quartiles": {
+      "Cramer_V": 0.49923852116121437,
+      "categories": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4",
+        "missing"
+      ],
+      "class_entropy_bits": 1.999521241897571,
+      "classes": [
+        "galaxies",
+        "globularclusters",
+        "nebulae",
+        "opencluster"
+      ],
+      "counts": [
+        [
+          63,
+          47,
+          4,
+          6,
+          0
+        ],
+        [
+          17,
+          46,
+          11,
+          35,
+          4
+        ],
+        [
+          24,
+          8,
+          26,
+          15,
+          47
+        ],
+        [
+          1,
+          2,
+          61,
+          47,
+          9
+        ]
+      ],
+      "fraction_of_class_entropy_associated": 0.2833033803426093,
+      "interpretation": "Descriptive in-collection association; no trained classifier, accuracy claim, significance test or causal attribution.",
+      "mutual_information_bits": 0.5664711268964341,
+      "n": 473,
+      "pooled_quartile_edges": [
+        98.303982670722,
+        215.0399620922044,
+        255.9996152165253
+      ]
+    },
+    "max_raw_plateau_fraction_pooled_quartiles": {
+      "Cramer_V": 0.10456016323697082,
+      "categories": [
+        "Q1",
+        "Q2"
+      ],
+      "class_entropy_bits": 1.999521241897571,
+      "classes": [
+        "galaxies",
+        "globularclusters",
+        "nebulae",
+        "opencluster"
+      ],
+      "counts": [
+        [
+          118,
+          2
+        ],
+        [
+          108,
+          5
+        ],
+        [
+          119,
+          1
+        ],
+        [
+          114,
+          6
+        ]
+      ],
+      "fraction_of_class_entropy_associated": 0.0042966859016558955,
+      "interpretation": "Descriptive in-collection association; no trained classifier, accuracy claim, significance test or causal attribution.",
+      "mutual_information_bits": 0.008591314730122781,
+      "n": 473,
+      "pooled_quartile_edges": [
+        3.814697265625e-06
+      ]
+    },
+    "max_zero_fraction_pooled_quartiles": {
+      "Cramer_V": 0.13450232299853523,
+      "categories": [
+        "Q1",
+        "Q2"
+      ],
+      "class_entropy_bits": 1.999521241897571,
+      "classes": [
+        "galaxies",
+        "globularclusters",
+        "nebulae",
+        "opencluster"
+      ],
+      "counts": [
+        [
+          117,
+          3
+        ],
+        [
+          99,
+          14
+        ],
+        [
+          112,
+          8
+        ],
+        [
+          110,
+          10
+        ]
+      ],
+      "fraction_of_class_entropy_associated": 0.007064423016010819,
+      "interpretation": "Descriptive in-collection association; no trained classifier, accuracy claim, significance test or causal attribution.",
+      "mutual_information_bits": 0.014125463882263736,
+      "n": 473,
+      "pooled_quartile_edges": [
+        0.0
+      ]
+    },
+    "ordinary_weak_contrast_or_nebulosity_caveat": {
+      "Cramer_V": 0.1835705714429745,
+      "categories": [
+        "False",
+        "True"
+      ],
+      "class_entropy_bits": 1.999521241897571,
+      "classes": [
+        "galaxies",
+        "globularclusters",
+        "nebulae",
+        "opencluster"
+      ],
+      "counts": [
+        [
+          112,
+          8
+        ],
+        [
+          91,
+          22
+        ],
+        [
+          99,
+          21
+        ],
+        [
+          89,
+          31
+        ]
+      ],
+      "fraction_of_class_entropy_associated": 0.013480477128269731,
+      "interpretation": "Descriptive in-collection association; no trained classifier, accuracy claim, significance test or causal attribution.",
+      "mutual_information_bits": 0.026954500368889692,
+      "n": 473
+    },
+    "pixel_scale_arcsec_pooled_quartiles": {
+      "Cramer_V": 0.4703373564464762,
+      "categories": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "class_entropy_bits": 1.999521241897571,
+      "classes": [
+        "galaxies",
+        "globularclusters",
+        "nebulae",
+        "opencluster"
+      ],
+      "counts": [
+        [
+          113,
+          1,
+          5,
+          1
+        ],
+        [
+          73,
+          8,
+          30,
+          2
+        ],
+        [
+          33,
+          1,
+          53,
+          33
+        ],
+        [
+          3,
+          5,
+          31,
+          81
+        ]
+      ],
+      "fraction_of_class_entropy_associated": 0.2747274065064211,
+      "interpretation": "Descriptive in-collection association; no trained classifier, accuracy claim, significance test or causal attribution.",
+      "mutual_information_bits": 0.5493232850410179,
+      "n": 473,
+      "pooled_quartile_edges": [
+        0.5859376032905641,
+        0.7078126820827144,
+        1.757815288861014
+      ]
+    },
+    "raw_plateau_above0.5percent": {
+      "Cramer_V": 0.06766238870623821,
+      "categories": [
+        "False",
+        "True"
+      ],
+      "class_entropy_bits": 1.999521241897571,
+      "classes": [
+        "galaxies",
+        "globularclusters",
+        "nebulae",
+        "opencluster"
+      ],
+      "counts": [
+        [
+          119,
+          1
+        ],
+        [
+          110,
+          3
+        ],
+        [
+          119,
+          1
+        ],
+        [
+          117,
+          3
+        ]
+      ],
+      "fraction_of_class_entropy_associated": 0.0017200517869453748,
+      "interpretation": "Descriptive in-collection association; no trained classifier, accuracy claim, significance test or causal attribution.",
+      "mutual_information_bits": 0.003439280085161152,
+      "n": 473
+    },
+    "row_median_step_max_normalized_pooled_quartiles": {
+      "Cramer_V": 0.25471380948280353,
+      "categories": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "class_entropy_bits": 1.999521241897571,
+      "classes": [
+        "galaxies",
+        "globularclusters",
+        "nebulae",
+        "opencluster"
+      ],
+      "counts": [
+        [
+          48,
+          36,
+          28,
+          8
+        ],
+        [
+          10,
+          18,
+          23,
+          62
+        ],
+        [
+          34,
+          35,
+          28,
+          23
+        ],
+        [
+          27,
+          29,
+          39,
+          25
+        ]
+      ],
+      "fraction_of_class_entropy_associated": 0.06952305559957431,
+      "interpretation": "Descriptive in-collection association; no trained classifier, accuracy claim, significance test or causal attribution.",
+      "mutual_information_bits": 0.1390128264729747,
+      "n": 473,
+      "pooled_quartile_edges": [
+        0.012857660268018834,
+        0.02065836624105124,
+        0.033549146556798116
+      ]
+    },
+    "v2c_disposition": {
+      "Cramer_V": 0.4171573547534017,
+      "categories": [
+        "review_needed",
+        "technical_pass"
+      ],
+      "class_entropy_bits": 1.999521241897571,
+      "classes": [
+        "galaxies",
+        "globularclusters",
+        "nebulae",
+        "opencluster"
+      ],
+      "counts": [
+        [
+          43,
+          77
+        ],
+        [
+          42,
+          71
+        ],
+        [
+          101,
+          19
+        ],
+        [
+          82,
+          38
+        ]
+      ],
+      "fraction_of_class_entropy_associated": 0.0662738367736515,
+      "interpretation": "Descriptive in-collection association; no trained classifier, accuracy claim, significance test or causal attribution.",
+      "mutual_information_bits": 0.13251594441096856,
+      "n": 473
+    }
+  },
+  "class_distributions": {
+    "galaxies": {
+      "B_common_support_available": 120,
+      "B_extent_above4arcmin_objects": 5,
+      "B_extent_below2pixels_objects": 15,
+      "FOV_all_values_sorted_arcmin": [
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5.64,
+        7.40974,
+        8.14304,
+        8.4573,
+        9.2605,
+        12.23318,
+        23.0
+      ],
+      "FOV_arcmin": {
+        "maximum": 23.0,
+        "mean": 5.326198000000001,
+        "median": 5.0,
+        "minimum": 5.0,
+        "n": 120,
+        "p05": 5.0,
+        "p25": 5.0,
+        "p75": 5.0,
+        "p95": 5.728486999999995,
+        "sample_SD": 1.8556074625129584
+      },
+      "FOV_value_counts": [
+        {
+          "arcmin": 5,
+          "count": 113
+        },
+        {
+          "arcmin": 5.64,
+          "count": 1
+        },
+        {
+          "arcmin": 7.40974,
+          "count": 1
+        },
+        {
+          "arcmin": 8.14304,
+          "count": 1
+        },
+        {
+          "arcmin": 8.4573,
+          "count": 1
+        },
+        {
+          "arcmin": 9.2605,
+          "count": 1
+        },
+        {
+          "arcmin": 12.23318,
+          "count": 1
+        },
+        {
+          "arcmin": 23.0,
+          "count": 1
+        }
+      ],
+      "allzero_objects": 1,
+      "background_IQR_over_global_dynamic": {
+        "maximum": 0.2529585798816568,
+        "mean": 0.10338927021197283,
+        "median": 0.09226119769502852,
+        "minimum": 0.03374366401158581,
+        "n": 120,
+        "p05": 0.04293606909152517,
+        "p25": 0.06233557332651324,
+        "p75": 0.1350698816419038,
+        "p95": 0.20249363427363778,
+        "sample_SD": 0.05101431774287305
+      },
+      "background_centre_median_difference_normalized": {
+        "maximum": 1.1324744178586197,
+        "mean": 0.4616291495775979,
+        "median": 0.40616606855171156,
+        "minimum": 0.01501355170588186,
+        "n": 120,
+        "p05": 0.07292315058736148,
+        "p25": 0.21082278586541137,
+        "p75": 0.7021114822835598,
+        "p95": 0.9443524842936549,
+        "sample_SD": 0.2945100730062346
+      },
+      "background_tile_p90_p10_over_global_dynamic": {
+        "maximum": 0.23484878048780478,
+        "mean": 0.07561280970451431,
+        "median": 0.060295217369035786,
+        "minimum": 0.02414748235011238,
+        "n": 120,
+        "p05": 0.03072747695326619,
+        "p25": 0.042260764407674734,
+        "p75": 0.0921954546537849,
+        "p95": 0.17488471858050375,
+        "sample_SD": 0.046088280600494434
+      },
+      "catalogue_extent_arcmin": {
+        "maximum": 11.5,
+        "mean": 1.2396049055,
+        "median": 0.936067,
+        "minimum": 0.315027,
+        "n": 120,
+        "p05": 0.41808534999999997,
+        "p25": 0.62346725,
+        "p75": 1.344085,
+        "p95": 2.8642434999999975,
+        "sample_SD": 1.2916885435245684
+      },
+      "column_median_step_max_normalized": {
+        "maximum": 0.061189919548433516,
+        "mean": 0.017739632007578332,
+        "median": 0.015647532727066704,
+        "minimum": 0.004913950388122818,
+        "n": 120,
+        "p05": 0.007380668242092937,
+        "p25": 0.011328413422632577,
+        "p75": 0.022096727166255856,
+        "p95": 0.03631809939423837,
+        "sample_SD": 0.009387576551656817
+      },
+      "extent_in_B15arcsec_pixels": {
+        "maximum": 46.0,
+        "mean": 4.958419622,
+        "median": 3.744268,
+        "minimum": 1.260108,
+        "n": 120,
+        "p05": 1.6723413999999999,
+        "p25": 2.493869,
+        "p75": 5.37634,
+        "p95": 11.45697399999999,
+        "sample_SD": 5.166754174098274
+      },
+      "extent_in_current_pixels": {
+        "maximum": 255.99994257916842,
+        "mean": 110.23417304660515,
+        "median": 95.85324390274452,
+        "minimum": 32.258759113343274,
+        "n": 120,
+        "p05": 42.811932293002855,
+        "p25": 63.84303514558616,
+        "p75": 137.63427973747645,
+        "p95": 255.99907931926955,
+        "sample_SD": 59.655898390410925
+      },
+      "extent_unknown_objects": 0,
+      "max_raw_plateau_fraction": {
+        "maximum": 1.0,
+        "mean": 0.008337148030598958,
+        "median": 3.814697265625e-06,
+        "minimum": 3.814697265625e-06,
+        "n": 120,
+        "p05": 3.814697265625e-06,
+        "p25": 3.814697265625e-06,
+        "p75": 3.814697265625e-06,
+        "p95": 3.814697265625e-06,
+        "sample_SD": 0.09128674175924355
+      },
+      "max_zero_fraction": {
+        "maximum": 1.0,
+        "mean": 0.008333396911621094,
+        "median": 0.0,
+        "minimum": 0.0,
+        "n": 120,
+        "p05": 0.0,
+        "p25": 0.0,
+        "p75": 0.0,
+        "p95": 0.0,
+        "sample_SD": 0.0912870870661956
+      },
+      "pixel_scale_arcsec": {
+        "maximum": 2.695322553971204,
+        "mean": 0.624164039168829,
+        "median": 0.5859376032905641,
+        "minimum": 0.5859376032905641,
+        "n": 120,
+        "p05": 0.5859376032905641,
+        "p25": 0.5859376032905641,
+        "p75": 0.5859376032905641,
+        "p95": 0.6713072279571899,
+        "sample_SD": 0.2174548621446368
+      },
+      "row_median_step_max_normalized": {
+        "maximum": 0.03994082840236687,
+        "mean": 0.017390016835873944,
+        "median": 0.014986207750553301,
+        "minimum": 0.005773882121055365,
+        "n": 120,
+        "p05": 0.006906523924792211,
+        "p25": 0.010718854557895669,
+        "p75": 0.022593198289262467,
+        "p95": 0.03559858120324149,
+        "sample_SD": 0.008434557670440044
+      },
+      "v2c_review_fraction": 0.35833333333333334,
+      "v2c_screening_counts": {
+        "review_needed": 43,
+        "technical_pass": 77
+      }
+    },
+    "globularclusters": {
+      "B_common_support_available": 113,
+      "B_extent_above4arcmin_objects": 15,
+      "B_extent_below2pixels_objects": 2,
+      "FOV_all_values_sorted_arcmin": [
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5.08,
+        5.2,
+        5.28,
+        5.32,
+        5.6,
+        5.68,
+        5.84,
+        6.04,
+        6.08,
+        6.12,
+        6.2,
+        6.36,
+        6.52,
+        6.6,
+        6.68,
+        6.8,
+        6.84,
+        6.88,
+        6.92,
+        7.08,
+        7.4,
+        8.2,
+        8.2,
+        8.24,
+        8.4,
+        8.6,
+        8.92,
+        9.2,
+        9.52,
+        9.64,
+        10.44,
+        10.92,
+        11.68,
+        12.4,
+        15,
+        15,
+        15,
+        15,
+        15.28,
+        15.64
+      ],
+      "FOV_arcmin": {
+        "maximum": 15.64,
+        "mean": 6.290265486725663,
+        "median": 5.0,
+        "minimum": 5.0,
+        "n": 113,
+        "p05": 5.0,
+        "p25": 5.0,
+        "p75": 6.36,
+        "p95": 13.439999999999978,
+        "sample_SD": 2.6142236146624707
+      },
+      "FOV_value_counts": [
+        {
+          "arcmin": 5,
+          "count": 73
+        },
+        {
+          "arcmin": 5.08,
+          "count": 1
+        },
+        {
+          "arcmin": 5.2,
+          "count": 1
+        },
+        {
+          "arcmin": 5.28,
+          "count": 1
+        },
+        {
+          "arcmin": 5.32,
+          "count": 1
+        },
+        {
+          "arcmin": 5.6,
+          "count": 1
+        },
+        {
+          "arcmin": 5.68,
+          "count": 1
+        },
+        {
+          "arcmin": 5.84,
+          "count": 1
+        },
+        {
+          "arcmin": 6.04,
+          "count": 1
+        },
+        {
+          "arcmin": 6.08,
+          "count": 1
+        },
+        {
+          "arcmin": 6.12,
+          "count": 1
+        },
+        {
+          "arcmin": 6.2,
+          "count": 1
+        },
+        {
+          "arcmin": 6.36,
+          "count": 1
+        },
+        {
+          "arcmin": 6.52,
+          "count": 1
+        },
+        {
+          "arcmin": 6.6,
+          "count": 1
+        },
+        {
+          "arcmin": 6.68,
+          "count": 1
+        },
+        {
+          "arcmin": 6.8,
+          "count": 1
+        },
+        {
+          "arcmin": 6.84,
+          "count": 1
+        },
+        {
+          "arcmin": 6.88,
+          "count": 1
+        },
+        {
+          "arcmin": 6.92,
+          "count": 1
+        },
+        {
+          "arcmin": 7.08,
+          "count": 1
+        },
+        {
+          "arcmin": 7.4,
+          "count": 1
+        },
+        {
+          "arcmin": 8.2,
+          "count": 2
+        },
+        {
+          "arcmin": 8.24,
+          "count": 1
+        },
+        {
+          "arcmin": 8.4,
+          "count": 1
+        },
+        {
+          "arcmin": 8.6,
+          "count": 1
+        },
+        {
+          "arcmin": 8.92,
+          "count": 1
+        },
+        {
+          "arcmin": 9.2,
+          "count": 1
+        },
+        {
+          "arcmin": 9.52,
+          "count": 1
+        },
+        {
+          "arcmin": 9.64,
+          "count": 1
+        },
+        {
+          "arcmin": 10.44,
+          "count": 1
+        },
+        {
+          "arcmin": 10.92,
+          "count": 1
+        },
+        {
+          "arcmin": 11.68,
+          "count": 1
+        },
+        {
+          "arcmin": 12.4,
+          "count": 1
+        },
+        {
+          "arcmin": 15,
+          "count": 4
+        },
+        {
+          "arcmin": 15.28,
+          "count": 1
+        },
+        {
+          "arcmin": 15.64,
+          "count": 1
+        }
+      ],
+      "allzero_objects": 3,
+      "background_IQR_over_global_dynamic": {
+        "maximum": 0.8836582430806258,
+        "mean": 0.2368655446473782,
+        "median": 0.17472485055558237,
+        "minimum": 0.04849507201998061,
+        "n": 113,
+        "p05": 0.05628465632731613,
+        "p25": 0.09781848822589673,
+        "p75": 0.33726634788548715,
+        "p95": 0.5853295901844671,
+        "sample_SD": 0.17944358803662777
+      },
+      "background_centre_median_difference_normalized": {
+        "maximum": 0.9929213478089776,
+        "mean": 0.555117414351656,
+        "median": 0.639385277744116,
+        "minimum": 0.002374739349522356,
+        "n": 113,
+        "p05": 0.032388888211751884,
+        "p25": 0.2327574350130656,
+        "p75": 0.8804986042930022,
+        "p95": 0.9581161119094288,
+        "sample_SD": 0.3286583722909122
+      },
+      "background_tile_p90_p10_over_global_dynamic": {
+        "maximum": 0.9004422054322672,
+        "mean": 0.26867442407844666,
+        "median": 0.18458689943131354,
+        "minimum": 0.03717741935483871,
+        "n": 113,
+        "p05": 0.04487241641065387,
+        "p25": 0.09702490774907749,
+        "p75": 0.3417884346339188,
+        "p95": 0.8320475169664983,
+        "sample_SD": 0.2348261927936884
+      },
+      "catalogue_extent_arcmin": {
+        "maximum": 7.82,
+        "mean": 2.3016513761467894,
+        "median": 1.96,
+        "minimum": 0.42,
+        "n": 109,
+        "p05": 0.776,
+        "p25": 1.3,
+        "p75": 3.04,
+        "p95": 5.059999999999998,
+        "sample_SD": 1.4657753060092196
+      },
+      "column_median_step_max_normalized": {
+        "maximum": 0.5853549939831528,
+        "mean": 0.04896398315739264,
+        "median": 0.034082076791543604,
+        "minimum": 0.007227198697068404,
+        "n": 113,
+        "p05": 0.009461003860572996,
+        "p25": 0.02087836807413088,
+        "p75": 0.0552560029799878,
+        "p95": 0.08159613261657502,
+        "sample_SD": 0.0752604075917276
+      },
+      "extent_in_B15arcsec_pixels": {
+        "maximum": 31.28,
+        "mean": 9.206605504587158,
+        "median": 7.84,
+        "minimum": 1.68,
+        "n": 109,
+        "p05": 3.104,
+        "p25": 5.2,
+        "p75": 12.16,
+        "p95": 20.23999999999999,
+        "sample_SD": 5.863101224036878
+      },
+      "extent_in_current_pixels": {
+        "maximum": 255.9999548716719,
+        "mean": 185.99216070753428,
+        "median": 200.70396461939075,
+        "minimum": 43.00799241844088,
+        "n": 109,
+        "p05": 79.46238599216696,
+        "p25": 133.11997653326938,
+        "p75": 255.999856370948,
+        "p95": 255.9999427392297,
+        "sample_SD": 67.54611854911589
+      },
+      "extent_unknown_objects": 4,
+      "max_raw_plateau_fraction": {
+        "maximum": 1.0,
+        "mean": 0.026552453505254425,
+        "median": 3.814697265625e-06,
+        "minimum": 3.814697265625e-06,
+        "n": 113,
+        "p05": 3.814697265625e-06,
+        "p25": 3.814697265625e-06,
+        "p75": 3.814697265625e-06,
+        "p95": 3.814697265625e-06,
+        "sample_SD": 0.16147565320517418
+      },
+      "max_zero_fraction": {
+        "maximum": 1.0,
+        "mean": 0.02971568149802959,
+        "median": 0.0,
+        "minimum": 0.0,
+        "n": 113,
+        "p05": 0.0,
+        "p25": 0.0,
+        "p75": 0.0,
+        "p95": 0.00027694702148437276,
+        "sample_SD": 0.16267994934801985
+      },
+      "pixel_scale_arcsec": {
+        "maximum": 1.8328156612857547,
+        "mean": 0.7371408326730303,
+        "median": 0.5859376032905641,
+        "minimum": 0.5859376032905641,
+        "n": 113,
+        "p05": 0.5859376032905641,
+        "p25": 0.5859376032905641,
+        "p75": 0.7453127125805578,
+        "p95": 1.575002060844593,
+        "sample_SD": 0.30635495393245654
+      },
+      "row_median_step_max_normalized": {
+        "maximum": 0.5264983285002744,
+        "mean": 0.05558193047307419,
+        "median": 0.03917102504769415,
+        "minimum": 0.007847957639939486,
+        "n": 113,
+        "p05": 0.009819635609502936,
+        "p25": 0.02133782165799443,
+        "p75": 0.06022099447513812,
+        "p95": 0.1462286251189627,
+        "sample_SD": 0.07453438718112164
+      },
+      "v2c_review_fraction": 0.37168141592920356,
+      "v2c_screening_counts": {
+        "review_needed": 42,
+        "technical_pass": 71
+      }
+    },
+    "nebulae": {
+      "B_common_support_available": 120,
+      "B_extent_above4arcmin_objects": 36,
+      "B_extent_below2pixels_objects": 13,
+      "FOV_all_values_sorted_arcmin": [
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        6.0,
+        6.4,
+        6.666,
+        8.0,
+        9.136,
+        10.0,
+        12.8,
+        15,
+        15,
+        15,
+        15,
+        15,
+        15,
+        15,
+        15,
+        15,
+        15,
+        15,
+        15,
+        15,
+        15,
+        15,
+        15,
+        15,
+        15,
+        15,
+        15,
+        15,
+        15,
+        15,
+        15,
+        15,
+        15,
+        15,
+        15,
+        15,
+        15,
+        15,
+        15,
+        15,
+        15,
+        15,
+        15,
+        15,
+        15,
+        15,
+        15,
+        15,
+        15,
+        15,
+        15,
+        15,
+        15,
+        15,
+        15.6,
+        16.0,
+        18.0,
+        18.0,
+        18.0,
+        18.0,
+        18.3,
+        18.4,
+        20.4,
+        24.0,
+        38.0,
+        44.0,
+        44.0,
+        44.0,
+        45.6,
+        54.0,
+        60.0,
+        60.0,
+        60.0,
+        62.0,
+        70.0,
+        84.0,
+        90.0,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120
+      ],
+      "FOV_arcmin": {
+        "maximum": 120.0,
+        "mean": 25.577516666666668,
+        "median": 15.0,
+        "minimum": 5.0,
+        "n": 120,
+        "p05": 5.0,
+        "p25": 5.0,
+        "p75": 18.0,
+        "p95": 120.0,
+        "sample_SD": 32.77577361507958
+      },
+      "FOV_value_counts": [
+        {
+          "arcmin": 5,
+          "count": 33
+        },
+        {
+          "arcmin": 6.0,
+          "count": 1
+        },
+        {
+          "arcmin": 6.4,
+          "count": 1
+        },
+        {
+          "arcmin": 6.666,
+          "count": 1
+        },
+        {
+          "arcmin": 8.0,
+          "count": 1
+        },
+        {
+          "arcmin": 9.136,
+          "count": 1
+        },
+        {
+          "arcmin": 10.0,
+          "count": 1
+        },
+        {
+          "arcmin": 12.8,
+          "count": 1
+        },
+        {
+          "arcmin": 15,
+          "count": 47
+        },
+        {
+          "arcmin": 15.6,
+          "count": 1
+        },
+        {
+          "arcmin": 16.0,
+          "count": 1
+        },
+        {
+          "arcmin": 18.0,
+          "count": 4
+        },
+        {
+          "arcmin": 18.3,
+          "count": 1
+        },
+        {
+          "arcmin": 18.4,
+          "count": 1
+        },
+        {
+          "arcmin": 20.4,
+          "count": 1
+        },
+        {
+          "arcmin": 24.0,
+          "count": 1
+        },
+        {
+          "arcmin": 38.0,
+          "count": 1
+        },
+        {
+          "arcmin": 44.0,
+          "count": 3
+        },
+        {
+          "arcmin": 45.6,
+          "count": 1
+        },
+        {
+          "arcmin": 54.0,
+          "count": 1
+        },
+        {
+          "arcmin": 60.0,
+          "count": 3
+        },
+        {
+          "arcmin": 62.0,
+          "count": 1
+        },
+        {
+          "arcmin": 70.0,
+          "count": 1
+        },
+        {
+          "arcmin": 84.0,
+          "count": 1
+        },
+        {
+          "arcmin": 90.0,
+          "count": 1
+        },
+        {
+          "arcmin": 120,
+          "count": 10
+        }
+      ],
+      "allzero_objects": 0,
+      "background_IQR_over_global_dynamic": {
+        "maximum": 0.9530044135414355,
+        "mean": 0.15268215154808232,
+        "median": 0.11817187054831438,
+        "minimum": 0.023289564616447822,
+        "n": 120,
+        "p05": 0.03711658094737239,
+        "p25": 0.06407463512478885,
+        "p75": 0.20482437804718306,
+        "p95": 0.34354113747406106,
+        "sample_SD": 0.12966337694232657
+      },
+      "background_centre_median_difference_normalized": {
+        "maximum": 1.2244619529997516,
+        "mean": 0.311865816648971,
+        "median": 0.14065497071690788,
+        "minimum": 0.0020823051028880228,
+        "n": 120,
+        "p05": 0.014845223398749574,
+        "p25": 0.042794986936051715,
+        "p75": 0.438211800286754,
+        "p95": 0.9858075749430419,
+        "sample_SD": 0.35394955844824977
+      },
+      "background_tile_p90_p10_over_global_dynamic": {
+        "maximum": 0.9683186626229751,
+        "mean": 0.1973899431839731,
+        "median": 0.13152166923318637,
+        "minimum": 0.01653664407988588,
+        "n": 120,
+        "p05": 0.03032536306905855,
+        "p25": 0.06083789006438903,
+        "p75": 0.27014175548791247,
+        "p95": 0.536543090133609,
+        "sample_SD": 0.1877345562503919
+      },
+      "catalogue_extent_arcmin": {
+        "maximum": 255.0,
+        "mean": 22.936661756287673,
+        "median": 4.0,
+        "minimum": 0.048803333,
+        "n": 73,
+        "p05": 0.1093683,
+        "p25": 0.707,
+        "p75": 22.8,
+        "p95": 90.39999999999999,
+        "sample_SD": 46.11111642536934
+      },
+      "column_median_step_max_normalized": {
+        "maximum": 0.7597085583253199,
+        "mean": 0.03498443455907171,
+        "median": 0.01956160744315579,
+        "minimum": 0.0035217546362339516,
+        "n": 120,
+        "p05": 0.0058230577171882875,
+        "p25": 0.011987823790448715,
+        "p75": 0.032620514679231605,
+        "p95": 0.052043372517528656,
+        "sample_SD": 0.0951731992920322
+      },
+      "extent_in_B15arcsec_pixels": {
+        "maximum": 1020.0,
+        "mean": 91.7466470251507,
+        "median": 16.0,
+        "minimum": 0.195213332,
+        "n": 73,
+        "p05": 0.4374732,
+        "p25": 2.828,
+        "p75": 91.2,
+        "p95": 361.59999999999997,
+        "sample_SD": 184.44446570147736
+      },
+      "extent_in_current_pixels": {
+        "maximum": 1087.8895231722083,
+        "mean": 205.75087462078716,
+        "median": 255.98726280354734,
+        "minimum": 4.99746041823487,
+        "n": 73,
+        "p05": 11.19931194575659,
+        "p25": 72.3967872377088,
+        "p75": 255.99941513429783,
+        "p95": 385.66750154810836,
+        "sample_SD": 183.13129242695155
+      },
+      "extent_unknown_objects": 47,
+      "max_raw_plateau_fraction": {
+        "maximum": 0.9959220886230469,
+        "mean": 0.008303133646647136,
+        "median": 3.814697265625e-06,
+        "minimum": 3.814697265625e-06,
+        "n": 120,
+        "p05": 3.814697265625e-06,
+        "p25": 3.814697265625e-06,
+        "p75": 3.814697265625e-06,
+        "p95": 3.814697265625e-06,
+        "sample_SD": 0.0909144840101266
+      },
+      "max_zero_fraction": {
+        "maximum": 0.9959220886230469,
+        "mean": 0.008300367991129558,
+        "median": 0.0,
+        "minimum": 0.0,
+        "n": 120,
+        "p05": 0.0,
+        "p25": 0.0,
+        "p75": 0.0,
+        "p95": 3.814697265625e-06,
+        "sample_SD": 0.09091473883265108
+      },
+      "pixel_scale_arcsec": {
+        "maximum": 14.063928068161085,
+        "mean": 2.9975072922887582,
+        "median": 1.757815288861014,
+        "minimum": 0.5859376032905641,
+        "n": 120,
+        "p05": 0.5859376032905641,
+        "p25": 0.5859376032905641,
+        "p75": 2.109379819155895,
+        "p95": 14.063928068161085,
+        "sample_SD": 3.841285788720066
+      },
+      "row_median_step_max_normalized": {
+        "maximum": 0.4194836896220135,
+        "mean": 0.02613361466068276,
+        "median": 0.018860746588058024,
+        "minimum": 0.0037317791825131905,
+        "n": 120,
+        "p05": 0.006355710069018928,
+        "p25": 0.011499971901196157,
+        "p75": 0.030458244896827597,
+        "p95": 0.0493545084148895,
+        "sample_SD": 0.03958371838299818
+      },
+      "v2c_review_fraction": 0.8416666666666667,
+      "v2c_screening_counts": {
+        "review_needed": 101,
+        "technical_pass": 19
+      }
+    },
+    "opencluster": {
+      "B_common_support_available": 120,
+      "B_extent_above4arcmin_objects": 98,
+      "B_extent_below2pixels_objects": 0,
+      "FOV_all_values_sorted_arcmin": [
+        5,
+        5,
+        5,
+        5.6,
+        5.8,
+        6.0,
+        6.0,
+        6.0,
+        6.68,
+        6.8,
+        7.1666666,
+        7.4,
+        8.0,
+        10.0,
+        10.6,
+        10.6,
+        11.0,
+        12.0,
+        12.0,
+        12.4,
+        12.8,
+        12.8,
+        13.2,
+        13.4,
+        13.6,
+        14.0,
+        14.0,
+        14.2,
+        14.4,
+        14.6,
+        15,
+        15,
+        15,
+        15,
+        15,
+        15,
+        15,
+        15,
+        15,
+        16.4,
+        16.8,
+        17.0,
+        18.0,
+        18.8,
+        21.2,
+        21.2,
+        21.4,
+        21.6,
+        22.8,
+        25.0,
+        26.0,
+        26.0,
+        26.0,
+        26.2,
+        26.6,
+        26.8,
+        26.8,
+        26.8,
+        27.2,
+        28.0,
+        28.0,
+        30.0,
+        30.0,
+        32.2,
+        33.6,
+        33.8,
+        35.8,
+        36.0,
+        40.0,
+        40.6,
+        40.8,
+        41.0,
+        45.6,
+        48.0,
+        50.0,
+        50.6,
+        51.8,
+        55.2,
+        56.4,
+        59.0,
+        60.0,
+        61.2,
+        62.0,
+        62.2,
+        65.2,
+        69.4,
+        69.6,
+        70.0,
+        72.0,
+        73.0,
+        77.6,
+        79.2,
+        86.4,
+        86.8,
+        88.4,
+        89.0,
+        104.0,
+        116.4,
+        119.0,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120
+      ],
+      "FOV_arcmin": {
+        "maximum": 120.0,
+        "mean": 48.228722221666665,
+        "median": 28.0,
+        "minimum": 5.0,
+        "n": 120,
+        "p05": 6.0,
+        "p25": 14.9,
+        "p75": 74.15,
+        "p95": 120.0,
+        "sample_SD": 41.30285214621031
+      },
+      "FOV_value_counts": [
+        {
+          "arcmin": 5,
+          "count": 3
+        },
+        {
+          "arcmin": 5.6,
+          "count": 1
+        },
+        {
+          "arcmin": 5.8,
+          "count": 1
+        },
+        {
+          "arcmin": 6.0,
+          "count": 3
+        },
+        {
+          "arcmin": 6.68,
+          "count": 1
+        },
+        {
+          "arcmin": 6.8,
+          "count": 1
+        },
+        {
+          "arcmin": 7.1666666,
+          "count": 1
+        },
+        {
+          "arcmin": 7.4,
+          "count": 1
+        },
+        {
+          "arcmin": 8.0,
+          "count": 1
+        },
+        {
+          "arcmin": 10.0,
+          "count": 1
+        },
+        {
+          "arcmin": 10.6,
+          "count": 2
+        },
+        {
+          "arcmin": 11.0,
+          "count": 1
+        },
+        {
+          "arcmin": 12.0,
+          "count": 2
+        },
+        {
+          "arcmin": 12.4,
+          "count": 1
+        },
+        {
+          "arcmin": 12.8,
+          "count": 2
+        },
+        {
+          "arcmin": 13.2,
+          "count": 1
+        },
+        {
+          "arcmin": 13.4,
+          "count": 1
+        },
+        {
+          "arcmin": 13.6,
+          "count": 1
+        },
+        {
+          "arcmin": 14.0,
+          "count": 2
+        },
+        {
+          "arcmin": 14.2,
+          "count": 1
+        },
+        {
+          "arcmin": 14.4,
+          "count": 1
+        },
+        {
+          "arcmin": 14.6,
+          "count": 1
+        },
+        {
+          "arcmin": 15,
+          "count": 9
+        },
+        {
+          "arcmin": 16.4,
+          "count": 1
+        },
+        {
+          "arcmin": 16.8,
+          "count": 1
+        },
+        {
+          "arcmin": 17.0,
+          "count": 1
+        },
+        {
+          "arcmin": 18.0,
+          "count": 1
+        },
+        {
+          "arcmin": 18.8,
+          "count": 1
+        },
+        {
+          "arcmin": 21.2,
+          "count": 2
+        },
+        {
+          "arcmin": 21.4,
+          "count": 1
+        },
+        {
+          "arcmin": 21.6,
+          "count": 1
+        },
+        {
+          "arcmin": 22.8,
+          "count": 1
+        },
+        {
+          "arcmin": 25.0,
+          "count": 1
+        },
+        {
+          "arcmin": 26.0,
+          "count": 3
+        },
+        {
+          "arcmin": 26.2,
+          "count": 1
+        },
+        {
+          "arcmin": 26.6,
+          "count": 1
+        },
+        {
+          "arcmin": 26.8,
+          "count": 3
+        },
+        {
+          "arcmin": 27.2,
+          "count": 1
+        },
+        {
+          "arcmin": 28.0,
+          "count": 2
+        },
+        {
+          "arcmin": 30.0,
+          "count": 2
+        },
+        {
+          "arcmin": 32.2,
+          "count": 1
+        },
+        {
+          "arcmin": 33.6,
+          "count": 1
+        },
+        {
+          "arcmin": 33.8,
+          "count": 1
+        },
+        {
+          "arcmin": 35.8,
+          "count": 1
+        },
+        {
+          "arcmin": 36.0,
+          "count": 1
+        },
+        {
+          "arcmin": 40.0,
+          "count": 1
+        },
+        {
+          "arcmin": 40.6,
+          "count": 1
+        },
+        {
+          "arcmin": 40.8,
+          "count": 1
+        },
+        {
+          "arcmin": 41.0,
+          "count": 1
+        },
+        {
+          "arcmin": 45.6,
+          "count": 1
+        },
+        {
+          "arcmin": 48.0,
+          "count": 1
+        },
+        {
+          "arcmin": 50.0,
+          "count": 1
+        },
+        {
+          "arcmin": 50.6,
+          "count": 1
+        },
+        {
+          "arcmin": 51.8,
+          "count": 1
+        },
+        {
+          "arcmin": 55.2,
+          "count": 1
+        },
+        {
+          "arcmin": 56.4,
+          "count": 1
+        },
+        {
+          "arcmin": 59.0,
+          "count": 1
+        },
+        {
+          "arcmin": 60.0,
+          "count": 1
+        },
+        {
+          "arcmin": 61.2,
+          "count": 1
+        },
+        {
+          "arcmin": 62.0,
+          "count": 1
+        },
+        {
+          "arcmin": 62.2,
+          "count": 1
+        },
+        {
+          "arcmin": 65.2,
+          "count": 1
+        },
+        {
+          "arcmin": 69.4,
+          "count": 1
+        },
+        {
+          "arcmin": 69.6,
+          "count": 1
+        },
+        {
+          "arcmin": 70.0,
+          "count": 1
+        },
+        {
+          "arcmin": 72.0,
+          "count": 1
+        },
+        {
+          "arcmin": 73.0,
+          "count": 1
+        },
+        {
+          "arcmin": 77.6,
+          "count": 1
+        },
+        {
+          "arcmin": 79.2,
+          "count": 1
+        },
+        {
+          "arcmin": 86.4,
+          "count": 1
+        },
+        {
+          "arcmin": 86.8,
+          "count": 1
+        },
+        {
+          "arcmin": 88.4,
+          "count": 1
+        },
+        {
+          "arcmin": 89.0,
+          "count": 1
+        },
+        {
+          "arcmin": 104.0,
+          "count": 1
+        },
+        {
+          "arcmin": 116.4,
+          "count": 1
+        },
+        {
+          "arcmin": 119.0,
+          "count": 1
+        },
+        {
+          "arcmin": 120,
+          "count": 21
+        }
+      ],
+      "allzero_objects": 3,
+      "background_IQR_over_global_dynamic": {
+        "maximum": 0.9315470369646001,
+        "mean": 0.1696395249454519,
+        "median": 0.13418689331538214,
+        "minimum": 0.03328111479547108,
+        "n": 120,
+        "p05": 0.04069672301295774,
+        "p25": 0.08444601961171863,
+        "p75": 0.19567694798582047,
+        "p95": 0.39141427341711144,
+        "sample_SD": 0.14220227560731413
+      },
+      "background_centre_median_difference_normalized": {
+        "maximum": 0.9771194821540952,
+        "mean": 0.2345956158734678,
+        "median": 0.14488649069007517,
+        "minimum": 0.006642314841728116,
+        "n": 120,
+        "p05": 0.026649951939047185,
+        "p25": 0.077136747439087,
+        "p75": 0.3374506973258153,
+        "p95": 0.7082014305141727,
+        "sample_SD": 0.2297633394526879
+      },
+      "background_tile_p90_p10_over_global_dynamic": {
+        "maximum": 0.9689035202086049,
+        "mean": 0.2196888577146603,
+        "median": 0.1439929134265897,
+        "minimum": 0.019870089795117906,
+        "n": 120,
+        "p05": 0.034741053682371084,
+        "p25": 0.06848816775300862,
+        "p75": 0.2872261139877563,
+        "p95": 0.7778605540827821,
+        "sample_SD": 0.21896099050669618
+      },
+      "catalogue_extent_arcmin": {
+        "maximum": 480.0,
+        "mean": 42.622282281981974,
+        "median": 16.8,
+        "minimum": 0.5,
+        "n": 111,
+        "p05": 3.0,
+        "p25": 7.15,
+        "p75": 41.400000000000006,
+        "p95": 154.65,
+        "sample_SD": 71.2611621412182
+      },
+      "column_median_step_max_normalized": {
+        "maximum": 0.8140808344198175,
+        "mean": 0.03287496623691189,
+        "median": 0.024781287448668487,
+        "minimum": 0.005671851958101409,
+        "n": 120,
+        "p05": 0.008202723211339963,
+        "p25": 0.015710217401593254,
+        "p75": 0.03247332604642357,
+        "p95": 0.05811438279420821,
+        "sample_SD": 0.07366698307289073
+      },
+      "extent_in_B15arcsec_pixels": {
+        "maximum": 1920.0,
+        "mean": 170.4891291279279,
+        "median": 67.2,
+        "minimum": 2.0,
+        "n": 111,
+        "p05": 12.0,
+        "p25": 28.6,
+        "p75": 165.60000000000002,
+        "p95": 618.6,
+        "sample_SD": 285.0446485648728
+      },
+      "extent_in_current_pixels": {
+        "maximum": 2047.7920436182746,
+        "mean": 325.35843484623865,
+        "median": 255.9991733171984,
+        "minimum": 51.199990974334376,
+        "n": 111,
+        "p05": 255.9830883151813,
+        "p25": 255.99566403841885,
+        "p75": 255.99991190888852,
+        "p95": 659.7729990532628,
+        "sample_SD": 252.63090405235315
+      },
+      "extent_unknown_objects": 9,
+      "max_raw_plateau_fraction": {
+        "maximum": 1.0,
+        "mean": 0.025003814697265626,
+        "median": 3.814697265625e-06,
+        "minimum": 3.814697265625e-06,
+        "n": 120,
+        "p05": 3.814697265625e-06,
+        "p25": 3.814697265625e-06,
+        "p75": 3.814697265625e-06,
+        "p95": 4.005432128906239e-06,
+        "sample_SD": 0.1567789513800547
+      },
+      "max_zero_fraction": {
+        "maximum": 1.0,
+        "mean": 0.02500314712524414,
+        "median": 0.0,
+        "minimum": 0.0,
+        "n": 120,
+        "p05": 0.0,
+        "p25": 0.0,
+        "p75": 0.0,
+        "p95": 1.2016296386718717e-05,
+        "sample_SD": 0.1567790604188009
+      },
+      "pixel_scale_arcsec": {
+        "maximum": 14.063928068161085,
+        "mean": 5.652143331603245,
+        "median": 3.281268139667172,
+        "minimum": 0.5859376032905641,
+        "n": 120,
+        "p05": 0.7031251784868117,
+        "p25": 1.7460964845573481,
+        "p75": 8.689790765792024,
+        "p95": 14.063928068161085,
+        "sample_SD": 4.840695336426627
+      },
+      "row_median_step_max_normalized": {
+        "maximum": 0.7157001760219049,
+        "mean": 0.040317529248943176,
+        "median": 0.02278591782364219,
+        "minimum": 0.0063908894195149335,
+        "n": 120,
+        "p05": 0.008597787644297793,
+        "p25": 0.014437187588402609,
+        "p75": 0.03159886244419797,
+        "p95": 0.07181187763305871,
+        "sample_SD": 0.0888935326374881
+      },
+      "v2c_review_fraction": 0.6833333333333333,
+      "v2c_screening_counts": {
+        "review_needed": 82,
+        "technical_pass": 38
+      }
+    }
+  },
+  "continuous_associations": {
+    "FOV_arcmin": {
+      "eta_squared": 0.5164028475363496,
+      "missing_excluded": 0,
+      "n": 473,
+      "transformation": "natural_log"
+    },
+    "background_IQR_over_global_dynamic": {
+      "eta_squared": 0.11295175717391424,
+      "missing_excluded": 0,
+      "n": 473,
+      "transformation": "identity"
+    },
+    "background_centre_median_difference_normalized": {
+      "eta_squared": 0.14382592806595162,
+      "missing_excluded": 0,
+      "n": 473,
+      "transformation": "identity"
+    },
+    "background_tile_p90_p10_over_global_dynamic": {
+      "eta_squared": 0.12729014997917934,
+      "missing_excluded": 0,
+      "n": 473,
+      "transformation": "identity"
+    },
+    "catalogue_extent_arcmin": {
+      "eta_squared": 0.4745181449908818,
+      "missing_excluded": 60,
+      "n": 413,
+      "transformation": "natural_log"
+    },
+    "column_median_step_max_normalized": {
+      "eta_squared": 0.023554811120257212,
+      "missing_excluded": 0,
+      "n": 473,
+      "transformation": "identity"
+    },
+    "extent_in_B15arcsec_pixels": {
+      "eta_squared": 0.15305233219957523,
+      "missing_excluded": 60,
+      "n": 413,
+      "transformation": "identity"
+    },
+    "extent_in_current_pixels": {
+      "eta_squared": 0.3030662096807487,
+      "missing_excluded": 60,
+      "n": 413,
+      "transformation": "natural_log"
+    },
+    "max_raw_plateau_fraction": {
+      "eta_squared": 0.004591815613607022,
+      "missing_excluded": 0,
+      "n": 473,
+      "transformation": "identity"
+    },
+    "max_zero_fraction": {
+      "eta_squared": 0.005544232284586092,
+      "missing_excluded": 0,
+      "n": 473,
+      "transformation": "identity"
+    },
+    "pixel_scale_arcsec": {
+      "eta_squared": 0.5163972247816137,
+      "missing_excluded": 0,
+      "n": 473,
+      "transformation": "natural_log"
+    },
+    "row_median_step_max_normalized": {
+      "eta_squared": 0.052721038934648495,
+      "missing_excluded": 0,
+      "n": 473,
+      "transformation": "identity"
+    }
+  },
+  "no_model_fitted_or_evaluated": true,
+  "population": "All473 frozen candidates, before any proposed selection or author decisions",
+  "representation_gate": {
+    "A": "Existing catalogue-adaptive512x512 inputs; scale and context shortcuts remain measurable.",
+    "B": "Feasibility only: common4arcmin TAN support at15arcsec/pixel ->16x16; nested1/2/4arcmin ->4/8/16 pixels. All source bytes unchanged, no new representation rendered.",
+    "choice_made": false,
+    "common_support_candidates": 473,
+    "limits": "No new data or resampling can restore missing large-field context or native resolution. Equal pixel scale is not equal measured PSF. Candidate-level quality usability is conditional on the chosen representation and controls."
+  }
+}

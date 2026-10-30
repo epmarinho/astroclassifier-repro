@@ -1,0 +1,84 @@
+{
+  "angular_FOV_control": {
+    "information_loss": "Common crop truncates large objects and coarse sampling blurs small ones; no post-accuracy choice of representation, crop, kernel or scale.",
+    "mandatory": true,
+    "neutralized_or_controlled_information": "Input angular field fixed4arcmin, common localTAN sampling15arcsec/pixel, added angular smoothing15arcsecFWHM and common16x16 effective grid; no adaptive-source-field intensity statistics. Do not feed originalFOV/headers into image models.",
+    "not_certified_neutral": "Original source PSF, survey plate grain, interpolation history and physical foreground/background may leave residual information. Do not call all FOV information eliminated.",
+    "recipe": "Complete representationB for every same eligible object and same split, regardless of source FOV or class. IfB is primary, A remains a contextual comparator."
+  },
+  "benchmark_metrics_computed_now": false,
+  "canonical_sha256": "5da2e8fc84c6d3e62afcf8d467fb92e54a75a64c79a989ad3acdb8a53b820223",
+  "decision_rule": "Representation roles, all preprocessing, metadata features, grouping, split seed and analysis policy are frozen before model training/held-out evaluation. Every declared control is reported, regardless of whether it helps the preferred narrative. Controls cannot select a best test seed, trigger test-driven recuration, alternative acquisitions or retraining.",
+  "metadata_only": {
+    "excluded": [
+      "catalogue object type",
+      "class or subtype strings",
+      "source/catalogue names",
+      "candidate or object IDs",
+      "aliases",
+      "paths",
+      "frozen index or role",
+      "declination/RA proxies not predeclared",
+      "image-derived model predictions"
+    ],
+    "features": [
+      "log(source_FOV_arcmin)",
+      "log(source_pixel_scale_arcsec)",
+      "log(recorded_catalogue_extent_arcmin)",
+      "catalogue_extent_missing",
+      "source_FOV_capped"
+    ],
+    "fit_or_inference_now": false,
+    "mandatory": true,
+    "model": "Fixed multinomial logistic regression, C=1, balanced class weights,max_iter=1000,lbfgs,no grid search. Nonconvergence is reported, not silently tuned. A depth3 decision tree is a separately reported fixed diagnostic, random_state=active_split_seed, no outcome-driven tuning.",
+    "preprocessing": "Train-only median imputation for missing logextent; explicit missingness indicator; train-only centering/scaling on unique objects. No held-out fitting.",
+    "purpose": "Measure available class information without pixels; association is not a causal leakage proof."
+  },
+  "network_or_models_used_now": false,
+  "outer_field_control": {
+    "A_mask": "Raw-view central128x128 indices[192:320,192:320] on the512grid, identical for every object.",
+    "B_mask": "Central4x4 indices[6:10,6:10] on the16common grid, identical for every object.",
+    "caveat": "Outer field can contain true diffuse target emission or neighbours. This is an outer-field/target-masked stress control, not a certified pure-background image.",
+    "intensity_rule": "Estimate p01/p99 from unmasked pixels only, then the same asinh rule; masked region filled u=0 before fixed sizing and normalization. This prevents the removed target from leaking through whole-image stretch statistics.",
+    "mandatory": true,
+    "sizing_augmentation": "Same recipe-specific output sizing and train-only D4 operation as the parent representation; no learned or class-dependent segmentation or fill."
+  },
+  "performance_or_test_results_used_to_design_this_protocol": false,
+  "phase": "Dataset-v2F",
+  "physical_object_not_FITS_is_metric_unit": true,
+  "quality_authority": "Dataset-v2E",
+  "representation_protocol_sha256": "3547358397a6ba41379545fdc113aee17dc4b82794e113aca1aa1a301d2d75b6",
+  "same_objects_components_and_frozen_split_for_every_control": true,
+  "split_protocol_sha256": "282ce140a55ebc0afe0cd58bfed2023685b238bbc70f41a8adc27695cdb1b273",
+  "status": "control_recipes_frozen_no_execution",
+  "stratified_reporting": {
+    "FOV_bins_arcmin": [
+      "5 exactly",
+      "(5,10]",
+      "(10,20]",
+      "(20,40]",
+      "(40,80]",
+      "(80,120]"
+    ],
+    "empty_or_degenerate_strata": "Report support and undefined metrics explicitly; never omit difficult bins or equate low support with equivalence.",
+    "extent_basis": "Primary frozen source512-pixel extent proxy, plus separately labelled actual224-pixel A and16-pixel B extent proxies. Also report angular extent and its source definition; no repair of unknown/reversed/half-light values.",
+    "extent_pixel_bins": [
+      "<2",
+      "[2,8)",
+      "[8,32)",
+      "[32,128)",
+      ">=128",
+      "unknown"
+    ],
+    "mandatory": true,
+    "reports": [
+      "object count and class support per stratum",
+      "balanced accuracy",
+      "macro-F1",
+      "accuracy",
+      "per-class precision/recall/F1/support",
+      "confusion matrices"
+    ],
+    "source_FOV_reported_even_for_common_B": true
+  }
+}

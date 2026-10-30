@@ -1,0 +1,474 @@
+candidate_id,canonical_identifier,target_class,target_subclass,selection_role,qc_label,successful_technical_bands,band_grids_identical,FOV_arcmin,extent_arcmin,issues,visual_inspection_recorded,field_overlap_degree,field_component_id,benchmark_admission,identity_inferred_from_appearance
+3ac45d9ed70e1cf9,SIMBAD:NGC   105,galaxies,barred_spiral,primary,technical_pass,3,True,5,0.987803,[],True,0,field_d25f4058ae32ca01,False,False
+4e4adaab72989d0f,SIMBAD:NGC   662,galaxies,barred_spiral,primary,review_needed,3,True,5,0.62,"[""bright_near_edge_star_halo_and_diffraction_structure""]",True,0,field_be7de74e5311720d,False,False
+146149ff9739e8b8,SIMBAD:Z 389-47,galaxies,barred_spiral,primary,technical_pass,3,True,5,1.77339,[],True,0,field_2deedeb250d3aa6e,False,False
+20e7b5a56db25c20,SIMBAD:Z 463-51,galaxies,barred_spiral,primary,technical_pass,3,True,5,0.577,[],True,0,field_9d5feb827784d3e1,False,False
+c4176a0f56b83881,SIMBAD:Z 419-6,galaxies,barred_spiral,primary,review_needed,3,True,5,0.953,"[""nonstellar_outline_or_plate_mark_visible_in_red_and_NIR""]",True,0,field_406a0520c2b57ec2,False,False
+3c82862f510b4b4a,SIMBAD:UGC  3286,galaxies,barred_spiral,primary,technical_pass,3,True,5,0.783,[],True,0,field_e8d057c0ae70fecb,False,False
+c6c1a27a3b9a1d35,SIMBAD:Z 285-2,galaxies,barred_spiral,primary,technical_pass,3,True,5,2.01608,[],True,0,field_93d8239a4711409e,False,False
+0c3f081172b517ba,SIMBAD:NGC  2344,galaxies,barred_spiral,primary,technical_pass,3,True,5,2.27885,[],True,0,field_77c4fb7c923ea8e1,False,False
+d95aca5095fb49f2,SIMBAD:Z   4-45,galaxies,barred_spiral,primary,technical_pass,3,True,5,0.935397,[],True,0,field_fd86373d8445d9d7,False,False
+465be0b3e1bc62af,SIMBAD:Z 152-31,galaxies,barred_spiral,primary,technical_pass,3,True,5,1.02114,[],True,0,field_85247787cd7aaef8,False,False
+cc3ddcbed9c3219d,SIMBAD:NGC  3094,galaxies,barred_spiral,primary,review_needed,3,True,5,1.80941,"[""NIR_panel_appears_blank_under_fixed_stretch"", ""degenerate_percentile_dynamic_range"", ""high_empirical_max_plateau_possible_clipping"", ""mostly_zero_requires_blank_coverage_review""]",True,0,field_b8d4af811e810833,False,False
+8cd07027bc9b3c7a,SIMBAD:Z 268-17,galaxies,barred_spiral,primary,technical_pass,3,True,5,0.367,[],True,0,field_6fa2172622a9a339,False,False
+4e7e773144dc38be,SIMBAD:IC 3998,galaxies,barred_spiral,primary,review_needed,3,True,5,0.588997,"[""bright_offcentre_neighbour_halo"", ""field_overlap_future_group_constraint""]",True,2,field_3257d47dabcdb706,False,False
+2cc3655c7aecb762,SIMBAD:IC 4030,galaxies,barred_spiral,primary,review_needed,3,True,5,0.447353,"[""field_overlap_future_group_constraint"", ""several_nearby_extended_sources_mixed_field_review""]",True,1,field_b2bc84a4447756ea,False,False
+17e8a8eaa4e2c569,SIMBAD:NGC  5541,galaxies,barred_spiral,primary,review_needed,3,True,5,1.0196,"[""row_or_column_median_artifact_proxy""]",True,0,field_9d9fdb4c95ef153e,False,False
+6148bef94f3acfbf,SIMBAD:Z  78-53,galaxies,barred_spiral,primary,technical_pass,3,True,5,0.90017,[],True,0,field_485ea3113f4cb46b,False,False
+45cef1bc0ca56afd,SIMBAD:Z 109-26,galaxies,barred_spiral,primary,technical_pass,3,True,5,1.18535,[],True,0,field_395b221663e1ce4e,False,False
+fa956f266e57dd3a,SIMBAD:Z  54-5,galaxies,barred_spiral,primary,technical_pass,3,True,5,2.26519,[],True,0,field_822823df8bcf0a59,False,False
+009ed171f20daa88,SIMBAD:Z 323-4,galaxies,barred_spiral,primary,review_needed,3,True,5,0.851073,"[""row_or_column_median_artifact_proxy""]",True,0,field_875cdb4d50877d74,False,False
+522224f33eb8b451,SIMBAD:Z 255-24,galaxies,barred_spiral,primary,technical_pass,3,True,5,1.19359,[],True,0,field_01e146377e4eebba,False,False
+5c445f2fdfaf772c,SIMBAD:NGC  6941,galaxies,barred_spiral,primary,review_needed,3,True,5,1.807,"[""NIR_vertical_plate_streak"", ""row_or_column_median_artifact_proxy""]",True,0,field_8c366a0db87295bb,False,False
+af4d355324149520,SIMBAD:Z 426-61,galaxies,barred_spiral,primary,technical_pass,3,True,5,1.71132,[],True,0,field_a60ac0de08c7d993,False,False
+beb7631dd5a832a3,SIMBAD:NGC  7241,galaxies,barred_spiral,primary,technical_pass,3,True,7.40974,3.70487,[],True,0,field_e61a9bfe8c1d3d2b,False,False
+5e1e00faa4b3389f,SIMBAD:Z 476-54,galaxies,barred_spiral,primary,technical_pass,3,True,5,1.27792,[],True,0,field_ca8c799ae379300f,False,False
+aa26f55e75989e75,SIMBAD:IC 5378S,galaxies,elliptical,primary,review_needed,3,True,5,1.07813,"[""multiple_nearby_extended_components_preserve_component_target"", ""preserved_v2b_visual_review_needed"", ""v2b_nearby_or_multicomponent_galaxy_structure""]",True,0,field_e8dc333429db0dcc,False,False
+5e5007adbdf40bd0,SIMBAD:LEDA    1614,galaxies,elliptical,primary,review_needed,3,True,5,0.59813,"[""field_overlap_future_group_constraint""]",True,1,field_18c029db34451c50,False,False
+5e934087ecaa6f61,SIMBAD:MCG-07-04-013,galaxies,elliptical,primary,technical_pass,3,True,5,0.98186,[],True,0,field_c133e484a0d01921,False,False
+39868d43396cdc13,SIMBAD:Z 387-43,galaxies,elliptical,primary,technical_pass,3,True,5,0.920717,[],True,0,field_6d74c611699e2b6d,False,False
+d7b3461c943557b5,SIMBAD:Z 391-14,galaxies,elliptical,primary,technical_pass,3,True,5,0.473,[],True,0,field_c17fd6a0acd8cb3e,False,False
+7319425f13d4f8d3,SIMBAD:LEDA 3092574,galaxies,elliptical,primary,technical_pass,3,True,5,0.506443,[],True,0,field_42a12dc780cc5ca7,False,False
+a64fb2fec3fbeabe,SIMBAD:MCG-03-13-053,galaxies,elliptical,primary,review_needed,3,True,5,0.623,"[""field_overlap_future_group_constraint""]",True,1,field_ec1a1a22a21b6c9d,False,False
+03849cbbee3bc796,SIMBAD:2MASX J06114031-3307281,galaxies,elliptical,primary,technical_pass,3,True,5,0.523,[],True,0,field_ee22c598f82a9781,False,False
+a5d098f8f6adff7c,SIMBAD:Z 206-21,galaxies,elliptical,primary,technical_pass,3,True,5,0.702743,[],True,0,field_9c335d2ac6c28c4d,False,False
+a054df736666588b,SIMBAD:IRAS 08486+0114,galaxies,elliptical,primary,technical_pass,3,True,5,0.315027,[],True,0,field_a9984e8f3f303aa7,False,False
+c0de6bd71825beed,SIMBAD:NGC  2802,galaxies,elliptical,primary,technical_pass,3,True,5,0.770353,[],True,0,field_5863c4e828692aeb,False,False
+524edea9ea83dfe3,SIMBAD:Z 240-40,galaxies,elliptical,primary,technical_pass,3,True,5,0.544253,[],True,0,field_b5599894ef16e942,False,False
+35e832235a08270f,SIMBAD:IC  678,galaxies,elliptical,primary,technical_pass,3,True,5,0.929587,[],True,0,field_4c1f85272f0cea2c,False,False
+1f5377210386e1ed,SIMBAD:LEDA   44656,galaxies,elliptical,primary,review_needed,3,True,5,0.39032,"[""bright_offcentre_neighbour_halo"", ""field_overlap_future_group_constraint""]",True,2,field_3257d47dabcdb706,False,False
+8b4694c92bc1fe6b,SIMBAD:NGC  4906,galaxies,elliptical,primary,review_needed,3,True,5,0.669717,"[""blue_and_red_rectangular_plate_boundary"", ""field_overlap_future_group_constraint""]",True,1,field_b2bc84a4447756ea,False,False
+e056e94f2a70df73,SIMBAD:MCG+09-24-032,galaxies,elliptical,primary,technical_pass,3,True,5,0.607663,[],True,0,field_07423952ec7c5ce6,False,False
+ee18f0f6b954e9d2,SIMBAD:Z 135-50,galaxies,elliptical,primary,technical_pass,3,True,5,0.643,[],True,0,field_a6d9e2135f9bdc22,False,False
+fe16bed8793d6625,SIMBAD:Z  79-57,galaxies,elliptical,primary,technical_pass,3,True,5,1.00051,[],True,0,field_5882e7919f6e51c6,False,False
+6367091fdcc3c0d0,SIMBAD:NGC  6515,galaxies,elliptical,primary,technical_pass,3,True,5,1.74132,[],True,0,field_cf1b4820c4f869c9,False,False
+abaccbd3f5f6f70d,SIMBAD:NGC  6623,galaxies,elliptical,primary,technical_pass,3,True,5,1.047,[],True,0,field_93ad5cadbf3314bc,False,False
+d498364b58b4598e,SIMBAD:Z 304-2,galaxies,elliptical,primary,technical_pass,3,True,5,0.68,[],True,0,field_2c3cb0059ce342eb,False,False
+bb09353b121f1ece,SIMBAD:Z 376-27,galaxies,elliptical,primary,technical_pass,3,True,5,0.627407,[],True,0,field_57b5df96294be71c,False,False
+92e2a776ce51e66c,SIMBAD:IC 1460,galaxies,elliptical,primary,technical_pass,3,True,5,0.73653,[],True,0,field_8801ce05a3f4bf73,False,False
+5f71115ebf326c24,SIMBAD:Z 380-35,galaxies,elliptical,primary,technical_pass,3,True,5,0.840287,[],True,0,field_9ff56d2067fd31cd,False,False
+60accc67c15c4ce7,SIMBAD:MCG-03-01-015,galaxies,irregular,primary,review_needed,3,True,23.0,11.5,"[""broad_background_gradient"", ""preserved_v2b_visual_review_needed"", ""row_or_column_median_artifact_proxy"", ""v2b_background_gradient_and_screening_proxy""]",True,0,field_bbb822ac178bcf05,False,False
+f46cc7727ec16833,SIMBAD:NGC  7809,galaxies,irregular,primary,technical_pass,3,True,5,0.524507,[],True,0,field_8965bcae4d07cda5,False,False
+7e249003bb4cf454,SIMBAD:LEDA    1625,galaxies,irregular,primary,review_needed,3,True,5,1.06,"[""field_overlap_future_group_constraint""]",True,1,field_18c029db34451c50,False,False
+ba8ed3d3795d35d2,SIMBAD:LEDA 2807107,galaxies,irregular,primary,review_needed,3,True,5,1.7,"[""weak_central_extended_light_in_crowded_field""]",True,0,field_8d984dbc5671fed3,False,False
+259f8b6075ce4164,SIMBAD:LEDA  166068,galaxies,irregular,primary,review_needed,3,True,5,1.7,"[""target_visibility_not_clear_at_catalogue_marker""]",True,0,field_145b57ea347403de,False,False
+7282db4b149b51a4,SIMBAD:LEDA   16573,galaxies,irregular,primary,review_needed,3,True,5,0.473,"[""field_overlap_future_group_constraint""]",True,1,field_c884afb6f7b89eea,False,False
+7db60cb6e1e870aa,SIMBAD:MCG+08-12-031,galaxies,irregular,primary,technical_pass,3,True,5,0.717973,[],True,0,field_3f561cda55497aaf,False,False
+b51b3914c49a6545,SIMBAD:UGC  3817,galaxies,irregular,primary,review_needed,3,True,5,0.42893,"[""weak_diffuse_contrast""]",True,0,field_7e4e9f52de09486a,False,False
+558b078dcc462627,SIMBAD:Z  88-7,galaxies,irregular,primary,technical_pass,3,True,5,1.33734,[],True,0,field_0bb5a3330a3c5054,False,False
+e9209214fe0f96cd,SIMBAD:Z 150-18,galaxies,irregular,primary,review_needed,3,True,5,0.68348,"[""row_or_column_median_artifact_proxy""]",True,0,field_68a823005737cb3f,False,False
+452fe001e0bf473f,SIMBAD:Z  68-90,galaxies,irregular,primary,technical_pass,3,True,5,0.418353,[],True,0,field_6f13569dae549cae,False,False
+8833b7a0b3fde484,SIMBAD:NGC  4192a,galaxies,irregular,primary,technical_pass,3,True,5,0.8,[],True,0,field_0313568c7a8e7604,False,False
+fcd87dad1f8e836e,SIMBAD:IC 3471,galaxies,irregular,primary,technical_pass,3,True,5,0.829077,[],True,0,field_28a5d4f9a1313cb4,False,False
+e4104bde95871d07,SIMBAD:LEDA   42585,galaxies,irregular,primary,technical_pass,3,True,5,0.477727,[],True,0,field_eb4ed6f02964a037,False,False
+49367de4bd8871df,SIMBAD:UGCA 312,galaxies,irregular,primary,technical_pass,3,True,5,0.93,[],True,0,field_4bb587053cf28432,False,False
+27920cd50c5777b9,SIMBAD:LEDA  592761,galaxies,irregular,primary,review_needed,3,True,5,0.44,"[""weak_diffuse_contrast_near_catalogue_marker""]",True,0,field_53c8edc7fe8dd3d7,False,False
+d3e5381e83d879ff,SIMBAD:LEDA  166185,galaxies,irregular,primary,review_needed,3,True,5,0.98,"[""weak_diffuse_contrast""]",True,0,field_d5dba0d7dcdef889,False,False
+de92470910849d9d,SIMBAD:LEDA   50911,galaxies,irregular,primary,technical_pass,3,True,5,0.709017,[],True,0,field_871c91f53d888be8,False,False
+59573e4efd49e52d,SIMBAD:LEDA   51659,galaxies,irregular,primary,review_needed,3,True,5,2.19,"[""bright_star_halo_and_diffraction_structure_near_target"", ""row_or_column_median_artifact_proxy""]",True,0,field_c612b32f05053966,False,False
+5830cae1e243d589,SIMBAD:Z 223-33,galaxies,irregular,primary,technical_pass,3,True,5,1.06009,[],True,0,field_205507bcf448bc80,False,False
+6b7bdbbe10fe37b7,SIMBAD:LEDA 2145608,galaxies,irregular,primary,review_needed,3,True,5,0.33996,"[""bright_star_halo_and_diffraction_structure""]",True,0,field_fff2b02c593388fe,False,False
+07d4f39fe79d73e9,SIMBAD:Z 225-9,galaxies,irregular,primary,technical_pass,3,True,5,0.936737,[],True,0,field_e04b3146df4ed64b,False,False
+aa18402575a98d2a,SIMBAD:NAME Sgr dIG,galaxies,irregular,primary,review_needed,3,True,5.64,2.82,"[""row_or_column_median_artifact_proxy"", ""weak_diffuse_contrast_and_plate_streaks""]",True,0,field_48fff5525797e13a,False,False
+666e2f6c3e058f44,SIMBAD:MCG-05-55-012,galaxies,irregular,primary,technical_pass,3,True,5,0.75666666,[],True,0,field_5fbdf6ac591cdd7c,False,False
+bea4365f7b154d77,SIMBAD:Z 456-37,galaxies,lenticular,primary,technical_pass,3,True,5,0.740313,[],True,0,field_75ce5fe91b7d0aa5,False,False
+be842e1070a7bad9,SIMBAD:Z 501-39,galaxies,lenticular,primary,technical_pass,3,True,5,1.25462,[],True,0,field_06dfe8db3262fc6e,False,False
+81d2799e32b588fa,SIMBAD:MCG+00-06-003,galaxies,lenticular,primary,review_needed,3,True,5,0.67181,"[""bright_edge_star_halo_and_diffraction_structure""]",True,0,field_9253a372c8bcaa21,False,False
+8ea2ac9395b79103,SIMBAD:IC 1861,galaxies,lenticular,primary,technical_pass,3,True,5,0.873,[],True,0,field_87d0bb42d77c46c2,False,False
+526637a2d58cbec5,SIMBAD:IRAS 03269-2211,galaxies,lenticular,primary,technical_pass,3,True,5,0.623623,[],True,0,field_75c7c9d29a039fd5,False,False
+97c952b9dced93e9,SIMBAD:MCG-06-10-003,galaxies,lenticular,primary,review_needed,3,True,5,0.413,"[""red_vertical_plate_streak""]",True,0,field_035fcb0e252bf04f,False,False
+62e5b57bcc9b3eb2,SIMBAD:2MASX J05014010-1523543,galaxies,lenticular,primary,review_needed,3,True,5,0.493,"[""field_overlap_future_group_constraint"", ""weak_compact_target_in_crowded_field""]",True,1,field_ec1a1a22a21b6c9d,False,False
+a337c8837e6f4ffc,SIMBAD:LEDA  149129,galaxies,lenticular,primary,review_needed,3,True,5,0.393,"[""row_or_column_median_artifact_proxy"", ""weak_target_contrast_near_marker""]",True,0,field_fcb980e87cb7cd59,False,False
+15c6aa0ec4930b16,SIMBAD:Z 117-66,galaxies,lenticular,primary,technical_pass,3,True,5,0.736003,[],True,0,field_8313433a6bb3089f,False,False
+89bd9c9e463763f2,SIMBAD:IC 2406,galaxies,lenticular,primary,technical_pass,3,True,5,1.54903,[],True,0,field_e8b6ef32a58fefb8,False,False
+cf897bc961cd9807,SIMBAD:Z 151-58,galaxies,lenticular,primary,technical_pass,3,True,5,0.895,[],True,0,field_9ef5db3daac5adca,False,False
+d9232f994fad916c,SIMBAD:Z   9-19,galaxies,lenticular,primary,technical_pass,3,True,5,0.612413,[],True,0,field_1cf886910825b340,False,False
+fcb7ce9ecfe1fe4a,SIMBAD:Z 242-17,galaxies,lenticular,primary,technical_pass,3,True,5,0.66749,[],True,0,field_b391d124cfcb2202,False,False
+ac53277b0c69ba1a,SIMBAD:LEDA   44652,galaxies,lenticular,primary,review_needed,3,True,5,0.4869,"[""bright_neighbour_halo"", ""field_overlap_future_group_constraint""]",True,2,field_3257d47dabcdb706,False,False
+a797a5aae557acc1,SIMBAD:NGC  5373,galaxies,lenticular,primary,technical_pass,3,True,5,0.613913,[],True,0,field_bc03561925f1b579,False,False
+33c613b9c8a268b3,SIMBAD:IC 1054,galaxies,lenticular,primary,review_needed,3,True,5,1.20538,"[""row_or_column_median_artifact_proxy""]",True,0,field_cee77efa4a91b7bf,False,False
+f0bf65dd79f20a36,SIMBAD:Z 167-8,galaxies,lenticular,primary,review_needed,3,True,5,0.862683,"[""red_rectangular_plate_boundary"", ""row_or_column_median_artifact_proxy""]",True,0,field_f48e04b84391395f,False,False
+c35693c56e36cdba,SIMBAD:Z 167-26,galaxies,lenticular,primary,technical_pass,3,True,5,1.50736,[],True,0,field_369b3a37f9400784,False,False
+8580126f148db2c2,SIMBAD:NGC  6350,galaxies,lenticular,primary,technical_pass,3,True,5,1.36432,[],True,0,field_4cf2bb76d354c98d,False,False
+f9e571ea11601fd5,SIMBAD:Z 341-8,galaxies,lenticular,primary,technical_pass,3,True,5,0.948803,[],True,0,field_24183e81d9d30f56,False,False
+bd4804ad91dbc970,SIMBAD:LEDA  162599,galaxies,lenticular,primary,review_needed,3,True,5,0.552063,"[""weak_compact_target_near_catalogue_marker""]",True,0,field_6bd0d1bad95c52d0,False,False
+af5857a886f8d697,SIMBAD:LEDA 1129926,galaxies,lenticular,primary,review_needed,3,True,5,0.569903,"[""weak_compact_target_near_catalogue_marker""]",True,0,field_fda04652ca9a6cb0,False,False
+015f068bfda74c81,SIMBAD:Z 405-14,galaxies,lenticular,primary,review_needed,3,True,5,0.973037,"[""bright_edge_star_halo""]",True,0,field_9560806637d84267,False,False
+68291826636a4d49,SIMBAD:NGC  7698,galaxies,lenticular,primary,technical_pass,3,True,5,1.0963,[],True,0,field_5bfc40b00db91c5b,False,False
+0ae8265e18b73a7e,SIMBAD:Z 408-41,galaxies,unbarred_spiral,primary,technical_pass,3,True,5,1.11772,[],True,0,field_1fbd7f319cbf0ba8,False,False
+2442606950dab4e7,SIMBAD:NGC   406,galaxies,unbarred_spiral,primary,review_needed,3,True,5,1.143,"[""row_or_column_median_artifact_proxy""]",True,0,field_a1957160da13b02f,False,False
+a8de6aac00201279,SIMBAD:Z 388-19,galaxies,unbarred_spiral,primary,technical_pass,3,True,5,1.49508,[],True,0,field_9ccc5d3d742044ac,False,False
+71727be8a885a365,SIMBAD:MCG-06-08-010,galaxies,unbarred_spiral,primary,technical_pass,3,True,5,1.23644,[],True,0,field_d0d6055aa9273ec7,False,False
+04c755d5c6eab396,SIMBAD:IC  381,galaxies,unbarred_spiral,reserve,technical_pass,3,True,5,1.053,[],True,0,field_1ab4ebcfed6e91f3,False,False
+b092ef988c18675a,SIMBAD:NGC  1741B,galaxies,unbarred_spiral,reserve,review_needed,3,True,5,0.523,"[""field_overlap_future_group_constraint"", ""several_nearby_extended_components""]",True,1,field_c884afb6f7b89eea,False,False
+9af756b0a329dbd3,SIMBAD:Z 204-29,galaxies,unbarred_spiral,reserve,technical_pass,3,True,5,1.99381,[],True,0,field_fe4b8e297b213925,False,False
+f3cf163a15afc81d,SIMBAD:Z 147-56,galaxies,unbarred_spiral,reserve,technical_pass,3,True,5,1.57185,[],True,0,field_21a49ce3199668c6,False,False
+12de06cda22a4bd2,SIMBAD:Z 237-13,galaxies,unbarred_spiral,reserve,review_needed,3,True,5,1.1,"[""bright_nearby_star_halo""]",True,0,field_dd9cc5fa335206f7,False,False
+e72f2a9d7b83dbb6,SIMBAD:NGC  2730,galaxies,unbarred_spiral,reserve,technical_pass,3,True,5,1.64134,[],True,0,field_64a86f7c0fffd27b,False,False
+1201039fb4164dbf,SIMBAD:NGC  3191,galaxies,unbarred_spiral,reserve,technical_pass,3,True,5,0.755647,[],True,0,field_e22242c6ac216454,False,False
+d7b2dea62583cd5a,SIMBAD:NGC  3726,galaxies,unbarred_spiral,reserve,review_needed,3,True,12.23318,6.11659,"[""row_or_column_median_artifact_proxy""]",True,0,field_364db1cddade8f5e,False,False
+5f4e9223e3d23f90,SIMBAD:NGC  4220,galaxies,unbarred_spiral,reserve,technical_pass,3,True,8.14304,4.07152,[],True,0,field_98c9aa306be12cc5,False,False
+b3d0c21180be88d1,SIMBAD:NGC  5248,galaxies,unbarred_spiral,reserve,technical_pass,3,True,9.2605,4.63025,[],True,0,field_bd7455416b2219d5,False,False
+becaa879b4808ce5,SIMBAD:NGC  5433,galaxies,unbarred_spiral,reserve,review_needed,3,True,5,1.60662,"[""row_or_column_median_artifact_proxy""]",True,0,field_82cd03c0d3578185,False,False
+c75564d4abf95463,SIMBAD:NGC  6014,galaxies,unbarred_spiral,reserve,technical_pass,3,True,5,1.57404,[],True,0,field_d974fa385b94644e,False,False
+876dab49158c3ad8,SIMBAD:IC 1222,galaxies,unbarred_spiral,reserve,technical_pass,3,True,5,1.45779,[],True,0,field_921ee7dc23c6aa41,False,False
+c5243e8b5a832cd1,SIMBAD:NGC  6330,galaxies,unbarred_spiral,reserve,technical_pass,3,True,5,1.20605,[],True,0,field_9cf5c629afb49ab3,False,False
+cc02315ab5404e30,SIMBAD:NGC  6636,galaxies,unbarred_spiral,reserve,review_needed,3,True,5,2.0134,"[""row_or_column_median_artifact_proxy""]",True,0,field_3f0e8c4cfab67bb5,False,False
+78a33deab44c3e72,SIMBAD:Z 341-20,galaxies,unbarred_spiral,reserve,review_needed,3,True,5,1.1,"[""prominent_neighbouring_extended_source_mixed_field""]",True,0,field_45db3f93d655ca39,False,False
+6c0707f6206f3231,SIMBAD:Z 448-17,galaxies,unbarred_spiral,reserve,technical_pass,3,True,5,0.993,[],True,0,field_5816a3af9d4d592b,False,False
+f3e8089e1a5992c9,SIMBAD:Z 377-8,galaxies,unbarred_spiral,reserve,technical_pass,3,True,5,1.23191,[],True,0,field_22e9dafc8959d92a,False,False
+ea8ed038d936aab3,SIMBAD:NGC  7339,galaxies,unbarred_spiral,reserve,review_needed,3,True,8.4573,4.22865,"[""row_or_column_median_artifact_proxy""]",True,0,field_eafa585bb06f552c,False,False
+e42410bf73198e22,SIMBAD:Z 381-55,galaxies,unbarred_spiral,reserve,technical_pass,3,True,5,1.95156,[],True,0,field_2af279896e30f140,False,False
+48fc316e5dc610bf,HEASARC-GLOBCLUST:NGC 288,globularclusters,milky_way_globular_cluster,primary,technical_pass,3,True,8.92,4.46,[],True,0,field_1dca9e594f3fec90,False,False
+8e0e6e6cb34b1ce7,HEASARC-GLOBCLUST:Whiting 1,globularclusters,milky_way_globular_cluster,primary,review_needed,3,True,5,0.44,"[""preserved_v2b_visual_review_needed"", ""v2b_weak_optical_target_contrast"", ""weak_cluster_contrast""]",True,0,field_4d0e9dc22430b509,False,False
+ee5018e38709434f,HEASARC-GLOBCLUST:NGC 1261,globularclusters,milky_way_globular_cluster,primary,technical_pass,3,True,5,1.36,[],True,0,field_7bfd7e125f0478f2,False,False
+e455444a207cc500,HEASARC-GLOBCLUST:Pal 2,globularclusters,milky_way_globular_cluster,primary,technical_pass,3,True,5,1.0,[],True,0,field_ac9958577bd68629,False,False
+f468d560287e1b13,HEASARC-GLOBCLUST:NGC 1851,globularclusters,milky_way_globular_cluster,primary,technical_pass,3,True,5,1.02,[],True,0,field_51d3c3a72c015e07,False,False
+c3accaa184271b2b,HEASARC-GLOBCLUST:NGC 2298,globularclusters,milky_way_globular_cluster,primary,technical_pass,3,True,5,1.96,[],True,0,field_56519b4f3c27ab59,False,False
+2f0098289f450b6d,HEASARC-GLOBCLUST:Ko 2,globularclusters,milky_way_globular_cluster,primary,review_needed,3,True,5,0.42,"[""weak_cluster_contrast_near_marker""]",True,0,field_2d9f2d1fd7bd0e89,False,False
+196dcf611a3fd7d0,HEASARC-GLOBCLUST:E 3,globularclusters,milky_way_globular_cluster,primary,technical_pass,3,True,8.4,4.2,[],True,0,field_9107ba4821a7800d,False,False
+3956058ff04337f8,HEASARC-GLOBCLUST:Pal 3,globularclusters,milky_way_globular_cluster,primary,review_needed,3,True,5,1.3,"[""weak_cluster_contrast""]",True,0,field_98d4b9de9b05af87,False,False
+f4874d737eff1672,HEASARC-GLOBCLUST:Pal 4,globularclusters,milky_way_globular_cluster,primary,review_needed,3,True,5,1.02,"[""weak_cluster_contrast""]",True,0,field_d130c54d3e6ddc81,False,False
+71ac20cc951bfa25,HEASARC-GLOBCLUST:NGC 4833,globularclusters,milky_way_globular_cluster,primary,technical_pass,3,True,9.64,4.82,[],True,0,field_fcccf7a102cc3319,False,False
+6970468c39cac8f6,HEASARC-GLOBCLUST:NGC 5286,globularclusters,milky_way_globular_cluster,primary,review_needed,3,True,5,1.46,"[""red_vertical_streaking_and_NIR_bright_edge_halo""]",True,0,field_4453aa925afcfac5,False,False
+a1be1a336c2157c4,HEASARC-GLOBCLUST:NGC 5466,globularclusters,milky_way_globular_cluster,primary,technical_pass,3,True,9.2,4.6,[],True,0,field_a49c0c6288d7b226,False,False
+c5475381d0a579eb,HEASARC-GLOBCLUST:NGC 5986,globularclusters,milky_way_globular_cluster,primary,technical_pass,3,True,5,1.96,[],True,0,field_5281ea2790c5702e,False,False
+882475ff57c4b430,HEASARC-GLOBCLUST:NGC 6171,globularclusters,milky_way_globular_cluster,primary,technical_pass,3,True,6.92,3.46,[],True,0,field_d7af52057efefe65,False,False
+a8cfdd49ea78d99f,HEASARC-GLOBCLUST:NGC 6273,globularclusters,milky_way_globular_cluster,primary,technical_pass,3,True,5.28,2.64,[],True,0,field_5873ecb106665e52,False,False
+b57a40e4a6e9b92f,HEASARC-GLOBCLUST:NGC 6541,globularclusters,milky_way_globular_cluster,primary,technical_pass,3,True,5,2.12,[],True,0,field_5edc62018b8e8baa,False,False
+67b2214260dce2e1,HEASARC-GLOBCLUST:NGC 6838,globularclusters,milky_way_globular_cluster,primary,technical_pass,3,True,6.68,3.34,[],True,0,field_87bee4b2130adfa4,False,False
+8800cf816ff82be6,HEASARC-GLOBCLUST:NGC 6864,globularclusters,milky_way_globular_cluster,primary,technical_pass,3,True,5,0.92,[],True,0,field_eea83675cbf96676,False,False
+085431ddb05fb54d,HEASARC-GLOBCLUST:Pal 12,globularclusters,milky_way_globular_cluster,primary,technical_pass,3,True,6.88,3.44,[],True,0,field_354304a1186b5ec2,False,False
+06a2c00546d85b92,HEASARC-GLOBCLUST:NGC 7492,globularclusters,milky_way_globular_cluster,primary,technical_pass,3,True,5,2.3,[],True,0,field_91e197f5cab91a82,False,False
+1d5ca0e5427c04f4,HEASARC-GLOBCLUST:Pal 1,globularclusters,milky_way_globular_cluster,primary,review_needed,3,True,5,0.92,"[""weak_cluster_contrast""]",True,0,field_e49101c02791b864,False,False
+54f72471bc16cb04,HEASARC-GLOBCLUST:Eridanus,globularclusters,milky_way_globular_cluster,primary,review_needed,3,True,5,0.92,"[""weak_cluster_contrast""]",True,0,field_47b61ddc9703bc67,False,False
+311c6ad80398fa19,HEASARC-GLOBCLUST:Pyxis,globularclusters,milky_way_globular_cluster,primary,review_needed,3,True,15,,"[""catalogue_extent_missing_FOV_suitability_unverified"", ""weak_cluster_contrast_in_crowded_field""]",True,0,field_7be0476ed8d523c9,False,False
+ef59fc78311d9556,HEASARC-GLOBCLUST:Ko 1,globularclusters,milky_way_globular_cluster,primary,review_needed,3,True,5,0.52,"[""weak_cluster_contrast_near_marker""]",True,0,field_9ac63d820038b524,False,False
+3f653f55a6bf214a,HEASARC-GLOBCLUST:NGC 4372,globularclusters,milky_way_globular_cluster,primary,technical_pass,3,True,15.64,7.82,[],True,0,field_477f009392e71fe5,False,False
+34578a9debb3a86c,HEASARC-GLOBCLUST:NGC 5053,globularclusters,milky_way_globular_cluster,primary,technical_pass,3,True,10.44,5.22,[],True,0,field_5824a1b533278e8e,False,False
+047b2bb48051c5fe,HEASARC-GLOBCLUST:NGC 5634,globularclusters,milky_way_globular_cluster,primary,review_needed,3,True,5,1.72,"[""prominent_nearby_star_halo_and_diffraction"", ""row_or_column_median_artifact_proxy""]",True,0,field_142d6daacb0e2e4c,False,False
+7714859d84b9cd08,HEASARC-GLOBCLUST:NGC 5927,globularclusters,milky_way_globular_cluster,primary,technical_pass,3,True,5,2.2,[],True,0,field_720eed40768a9f63,False,False
+6f6d2ae6c1453154,HEASARC-GLOBCLUST:NGC 6144,globularclusters,milky_way_globular_cluster,primary,technical_pass,3,True,6.52,3.26,[],True,0,field_69d0944c2cd59769,False,False
+b70e3b8168d14f90,HEASARC-GLOBCLUST:NGC 6333,globularclusters,milky_way_globular_cluster,primary,technical_pass,3,True,5,1.92,[],True,0,field_13029d9f7d1e0287,False,False
+a7bdc0c9b02df28b,HEASARC-GLOBCLUST:NGC 6723,globularclusters,milky_way_globular_cluster,primary,technical_pass,3,True,6.12,3.06,[],True,0,field_e600e02dee1105d5,False,False
+f7268c0c94b831e6,HEASARC-GLOBCLUST:NGC 6760,globularclusters,milky_way_globular_cluster,primary,technical_pass,3,True,5.08,2.54,[],True,0,field_395ec20bcff6b4b8,False,False
+afc0eb83f5b8e214,HEASARC-GLOBCLUST:NGC 6934,globularclusters,milky_way_globular_cluster,primary,technical_pass,3,True,5,1.38,[],True,0,field_fbea49a7a56d361f,False,False
+c3da95b9451e96af,HEASARC-GLOBCLUST:Pal 13,globularclusters,milky_way_globular_cluster,primary,review_needed,3,True,5,0.72,"[""NIR_broad_bright_diagonal_plate_streak""]",True,0,field_dfe6044ccfc647c2,False,False
+7d5c90621a5cf165,HEASARC-GLOBCLUST:AM 1,globularclusters,milky_way_globular_cluster,primary,technical_pass,3,True,5,0.82,[],True,0,field_5f3a5be487736f15,False,False
+12dbeeb565db9495,HEASARC-GLOBCLUST:NGC 4590,globularclusters,milky_way_globular_cluster,primary,technical_pass,3,True,6.04,3.02,[],True,0,field_de5493d8c6aca568,False,False
+1b3e9e49337d4f11,HEASARC-GLOBCLUST:AM 4,globularclusters,milky_way_globular_cluster,primary,review_needed,3,True,5,0.86,"[""target_visibility_not_clear_at_catalogue_marker""]",True,0,field_dd6d2b3812757718,False,False
+1a608e154b92c3fe,HEASARC-GLOBCLUST:NGC 5694,globularclusters,milky_way_globular_cluster,primary,technical_pass,3,True,5,0.8,[],True,0,field_0e5a367459f0f5d2,False,False
+cacb4f87b0bf30e9,HEASARC-GLOBCLUST:NGC 5897,globularclusters,milky_way_globular_cluster,primary,technical_pass,3,True,8.24,4.12,[],True,0,field_6066c39fcf1f94bc,False,False
+12f374035f3681ec,HEASARC-GLOBCLUST:NGC 6101,globularclusters,milky_way_globular_cluster,primary,technical_pass,3,True,5,2.1,[],True,0,field_103316ed43557439,False,False
+b2d616072de5be06,HEASARC-GLOBCLUST:NGC 6362,globularclusters,milky_way_globular_cluster,primary,technical_pass,3,True,8.2,4.1,[],True,0,field_7730e8db5ac67176,False,False
+ab8fb9de3b630d5a,HEASARC-GLOBCLUST:NGC 6544,globularclusters,milky_way_globular_cluster,primary,technical_pass,3,True,5,2.42,[],True,0,field_1721042b45d20645,False,False
+33cae948a02c4999,HEASARC-GLOBCLUST:Pal 11,globularclusters,milky_way_globular_cluster,primary,technical_pass,3,True,5.84,2.92,[],True,0,field_ac5f652672804c13,False,False
+513b79c80af35a13,HEASARC-GLOBCLUST:Rup 106,globularclusters,milky_way_globular_cluster,primary,technical_pass,3,True,5,2.1,[],True,0,field_f6a59f910dc4a7fc,False,False
+eab92d72217ee4bf,HEASARC-GLOBCLUST:NGC 5824,globularclusters,milky_way_globular_cluster,primary,technical_pass,3,True,5,0.9,[],True,0,field_8177ced8d1c94a58,False,False
+f8824cc8f96b51f7,HEASARC-GLOBCLUST:NGC 6235,globularclusters,milky_way_globular_cluster,primary,review_needed,3,True,5,2.0,"[""NIR_severe_repeated_horizontal_stripes""]",True,0,field_9609cc2300a6b3ac,False,False
+9f2f690f7073111c,HEASARC-GLOBCLUST:NGC 6352,globularclusters,milky_way_globular_cluster,primary,technical_pass,3,True,8.2,4.1,[],True,0,field_44a500cc7cea7e03,False,False
+328efc63f92c5c4d,HEASARC-GLOBCLUST:NGC 6624,globularclusters,milky_way_globular_cluster,primary,technical_pass,3,True,5,1.64,[],True,0,field_69e904c0aaac8e2c,False,False
+def610edb1997f32,HEASARC-GLOBCLUST:Terzan 7,globularclusters,milky_way_globular_cluster,primary,technical_pass,3,True,5,1.54,[],True,0,field_60793a9d61400c04,False,False
+51d974b6351a7a8f,HEASARC-GLOBCLUST:NGC 5946,globularclusters,milky_way_globular_cluster,primary,technical_pass,3,True,5,1.78,[],True,0,field_c27b791d1e53b316,False,False
+437106d88c579d66,HEASARC-GLOBCLUST:Lynga 7,globularclusters,milky_way_globular_cluster,primary,review_needed,3,True,5,2.4,"[""weak_central_contrast_in_crowded_field""]",True,0,field_52f4eff348076cf9,False,False
+f46e930ce3ca66cb,HEASARC-GLOBCLUST:NGC 6293,globularclusters,milky_way_globular_cluster,primary,technical_pass,3,True,5,1.78,[],True,0,field_3239b91098ac9b02,False,False
+820e845789a114b1,HEASARC-GLOBCLUST:NGC 6553,globularclusters,milky_way_globular_cluster,primary,technical_pass,3,True,5,2.06,[],True,0,field_12e3b160815d77f9,False,False
+ca1ccfecb9fc10c8,HEASARC-GLOBCLUST:Arp 2,globularclusters,milky_way_globular_cluster,primary,technical_pass,3,True,7.08,3.54,[],True,0,field_8c9e0d80606fb729,False,False
+8706e332e9cfdeda,HEASARC-GLOBCLUST:IC 4499,globularclusters,milky_way_globular_cluster,primary,technical_pass,3,True,6.84,3.42,[],True,0,field_6e0bb22ceaae699d,False,False
+1735f18181948f42,HEASARC-GLOBCLUST:NGC 6256,globularclusters,milky_way_globular_cluster,primary,technical_pass,3,True,5,1.72,[],True,0,field_2f44bb74936a4760,False,False
+877de5121de6beba,HEASARC-GLOBCLUST:NGC 6304,globularclusters,milky_way_globular_cluster,primary,review_needed,3,True,5.68,2.84,"[""blue_panel_appears_blank_under_fixed_stretch"", ""degenerate_percentile_dynamic_range"", ""high_empirical_max_plateau_possible_clipping"", ""mostly_zero_requires_blank_coverage_review""]",True,0,field_ca9081400839a59d,False,False
+8872e5deed6d89d0,HEASARC-GLOBCLUST:NGC 6712,globularclusters,milky_way_globular_cluster,primary,technical_pass,3,True,5.32,2.66,[],True,0,field_427c95900f9b0538,False,False
+01499c2fb543d263,HEASARC-GLOBCLUST:Terzan 8,globularclusters,milky_way_globular_cluster,primary,technical_pass,3,True,5,1.9,[],True,0,field_e59d4b833d430a9d,False,False
+a286d5604a9cd7b1,HEASARC-GLOBCLUST:Pal 5,globularclusters,milky_way_globular_cluster,primary,review_needed,3,True,10.92,5.46,"[""weak_cluster_contrast_near_marker""]",True,0,field_9eee19b5e72c4d97,False,False
+426a1779099d81ce,HEASARC-GLOBCLUST:1636-283,globularclusters,milky_way_globular_cluster,primary,technical_pass,3,True,5,1.0,[],True,0,field_e68b97fe6577b3be,False,False
+3e9002a73340b9e3,HEASARC-GLOBCLUST:NGC 6356,globularclusters,milky_way_globular_cluster,primary,technical_pass,3,True,5,1.62,[],True,0,field_8c70fac02bdc0c99,False,False
+ee971527e4c016f3,HEASARC-GLOBCLUST:NGC 6522,globularclusters,milky_way_globular_cluster,primary,technical_pass,3,True,5,2.0,[],True,0,field_f36ca6e6e86f5312,False,False
+0943e1b83520b49f,HEASARC-GLOBCLUST:NGC 6749,globularclusters,milky_way_globular_cluster,primary,technical_pass,3,True,5,2.2,[],True,0,field_167a78f612cb4647,False,False
+a89449c001041f09,HEASARC-GLOBCLUST:BH 176,globularclusters,milky_way_globular_cluster,primary,review_needed,3,True,5,1.8,"[""field_overlap_future_group_constraint"", ""weak_cluster_contrast_in_crowded_field""]",True,1,field_36333157a89a514c,False,False
+c6260671c9dbba66,HEASARC-GLOBCLUST:Terzan 3,globularclusters,milky_way_globular_cluster,primary,review_needed,3,True,5,2.5,"[""weak_cluster_contrast_in_crowded_field""]",True,0,field_4f114ec95d926eee,False,False
+1cab6b04f82eca74,HEASARC-GLOBCLUST:NGC 6316,globularclusters,milky_way_globular_cluster,primary,review_needed,3,True,5,1.3,"[""blue_severe_partial_blank_coverage_with_geometric_boundaries""]",True,0,field_0f13482804ad4b08,False,False
+db801858ad7d2d2b,HEASARC-GLOBCLUST:NGC 6584,globularclusters,milky_way_globular_cluster,primary,technical_pass,3,True,5,1.46,[],True,0,field_7316a0b50cacbba2,False,False
+1c3708057676e889,HEASARC-GLOBCLUST:Pal 10,globularclusters,milky_way_globular_cluster,primary,technical_pass,3,True,5,1.98,[],True,0,field_b0663f327d7b974e,False,False
+3ea731962f2e4270,HEASARC-GLOBCLUST:FSR 1735,globularclusters,milky_way_globular_cluster,primary,review_needed,3,True,5,0.68,"[""target_visibility_not_clear_in_crowded_field""]",True,0,field_fd0cce1fbf4bc49e,False,False
+9d83b7cbf1a6a863,HEASARC-GLOBCLUST:NGC 6284,globularclusters,milky_way_globular_cluster,primary,technical_pass,3,True,5,1.32,[],True,0,field_68d051a26f072405,False,False
+2a42f530859069bf,HEASARC-GLOBCLUST:NGC 6652,globularclusters,milky_way_globular_cluster,primary,technical_pass,3,True,5,0.96,[],True,0,field_c762b1fc1f043974,False,False
+2d8b0d99f122d305,HEASARC-GLOBCLUST:Pal 15,globularclusters,milky_way_globular_cluster,primary,review_needed,3,True,5,2.2,"[""weak_cluster_contrast""]",True,0,field_6e1e84d67c76b451,False,False
+75c4deeb4312a301,HEASARC-GLOBCLUST:NGC 6366,globularclusters,milky_way_globular_cluster,primary,technical_pass,3,True,11.68,5.84,[],True,0,field_5ac730f7be91c837,False,False
+04500a8829bff589,HEASARC-GLOBCLUST:NGC 6638,globularclusters,milky_way_globular_cluster,primary,technical_pass,3,True,5,1.02,[],True,0,field_6cce8ba584d8feb7,False,False
+0903a34afef40530,HEASARC-GLOBCLUST:Pal 14,globularclusters,milky_way_globular_cluster,primary,review_needed,3,True,5,2.44,"[""weak_cluster_contrast""]",True,0,field_7703e4cfe7bfc293,False,False
+cba283a7645d3a78,HEASARC-GLOBCLUST:NGC 6440,globularclusters,milky_way_globular_cluster,primary,technical_pass,3,True,5,0.96,[],True,0,field_76eeed240b465e2f,False,False
+a2645dbe638663c4,HEASARC-GLOBCLUST:NGC 6642,globularclusters,milky_way_globular_cluster,primary,technical_pass,3,True,5,1.46,[],True,0,field_67c8ae778ea65f52,False,False
+dcd8bef1f320d32d,HEASARC-GLOBCLUST:NGC 6287,globularclusters,milky_way_globular_cluster,primary,technical_pass,3,True,5,1.48,[],True,0,field_027f24b4d7983af4,False,False
+a864cf3932724145,HEASARC-GLOBCLUST:NGC 6558,globularclusters,milky_way_globular_cluster,primary,technical_pass,3,True,8.6,4.3,[],True,0,field_64048e3fe55778de,False,False
+54b9685c520ddc14,HEASARC-GLOBCLUST:NGC 6342,globularclusters,milky_way_globular_cluster,primary,technical_pass,3,True,5,1.46,[],True,0,field_0797ca71f179442c,False,False
+c6874c2bf8e29ba4,HEASARC-GLOBCLUST:NGC 6717,globularclusters,milky_way_globular_cluster,primary,review_needed,3,True,5,1.36,"[""large_bright_star_halo_and_diffraction_near_target""]",True,0,field_e46cda346bd156cf,False,False
+fea9767e0e3d14dd,HEASARC-GLOBCLUST:NGC 6453,globularclusters,milky_way_globular_cluster,primary,technical_pass,3,True,5,0.88,[],True,0,field_259fbb1369990b70,False,False
+ff183fc694429188,HEASARC-GLOBCLUST:NGC 6540,globularclusters,milky_way_globular_cluster,primary,review_needed,3,True,15,,"[""catalogue_extent_missing_FOV_suitability_unverified"", ""weak_central_contrast_in_crowded_field""]",True,0,field_77a3f139a8ababaa,False,False
+2f0fc09e30f1fe60,HEASARC-GLOBCLUST:NGC 6325,globularclusters,milky_way_globular_cluster,primary,technical_pass,3,True,5,1.26,[],True,0,field_746d04169d0609f1,False,False
+a9d6039ed93653d1,HEASARC-GLOBCLUST:NGC 6539,globularclusters,milky_way_globular_cluster,primary,technical_pass,3,True,6.8,3.4,[],True,0,field_e07cd69af5dc6822,False,False
+3454b13201bdccb8,HEASARC-GLOBCLUST:NGC 6426,globularclusters,milky_way_globular_cluster,primary,technical_pass,3,True,5,1.84,[],True,0,field_c323d11913f8b976,False,False
+cfa3db313278a6dd,HEASARC-GLOBCLUST:NGC 6528,globularclusters,milky_way_globular_cluster,primary,technical_pass,3,True,5,0.76,[],True,0,field_223e8c34849fc0fa,False,False
+bd83c713a0ff6539,HEASARC-GLOBCLUST:Pal 6,globularclusters,milky_way_globular_cluster,primary,review_needed,3,True,5,2.4,"[""blue_panel_appears_blank_under_fixed_stretch"", ""degenerate_percentile_dynamic_range"", ""high_empirical_max_plateau_possible_clipping"", ""mostly_zero_requires_blank_coverage_review""]",True,0,field_20c6b207bc471d0a,False,False
+f863dc63d7f3aee2,HEASARC-GLOBCLUST:Djorg 2,globularclusters,milky_way_globular_cluster,primary,review_needed,3,True,5,2.1,"[""weak_central_contrast_in_crowded_field""]",True,0,field_4c55062f07061cb5,False,False
+2207263e2de8ca38,HEASARC-GLOBCLUST:HP 1,globularclusters,milky_way_globular_cluster,primary,review_needed,3,True,12.4,6.2,"[""NIR_severe_repeated_horizontal_stripes""]",True,0,field_b8d45254de3ba774,False,False
+ce5f555e80f74245,HEASARC-GLOBCLUST:NGC 6517,globularclusters,milky_way_globular_cluster,primary,technical_pass,3,True,5,1.0,[],True,0,field_e610b9e5f7b226ab,False,False
+52f56e5da8e2549e,HEASARC-GLOBCLUST:Ton 2,globularclusters,milky_way_globular_cluster,primary,technical_pass,3,True,5.2,2.6,[],True,0,field_f9e682424f998a3a,False,False
+d6f8a8fb51cedbf9,HEASARC-GLOBCLUST:IC 1276,globularclusters,milky_way_globular_cluster,primary,technical_pass,3,True,9.52,4.76,[],True,0,field_ab030fdc066a5e3e,False,False
+dbdb8e9a9576dcc5,HEASARC-GLOBCLUST:IC 1257,globularclusters,milky_way_globular_cluster,primary,technical_pass,3,True,5.6,2.8,[],True,0,field_0a82a08ae10c1c7b,False,False
+179c993eb758eedc,HEASARC-GLOBCLUST:BH 261,globularclusters,milky_way_globular_cluster,primary,review_needed,3,True,5,1.1,"[""weak_central_contrast_in_crowded_field""]",True,0,field_49abdbbffcc16522,False,False
+13f8da80192e5063,HEASARC-GLOBCLUST:Djorg 1,globularclusters,milky_way_globular_cluster,primary,review_needed,3,True,6.36,3.18,"[""blue_severe_partial_blank_coverage_with_geometric_boundaries"", ""row_or_column_median_artifact_proxy""]",True,0,field_2fcb5714ba5dfb1d,False,False
+dbb0414d9c7b95ca,HEASARC-GLOBCLUST:Pal 8,globularclusters,milky_way_globular_cluster,primary,review_needed,3,True,5,1.16,"[""blue_panel_appears_blank_under_fixed_stretch"", ""degenerate_percentile_dynamic_range"", ""high_empirical_max_plateau_possible_clipping"", ""mostly_zero_requires_blank_coverage_review""]",True,0,field_c94bf31c1191a072,False,False
+7cbcc66e1b9ade28,HEASARC-GLOBCLUST:Terzan 5,globularclusters,milky_way_globular_cluster,primary,review_needed,3,True,5,1.44,"[""blue_severe_partial_blank_coverage_with_geometric_boundaries"", ""row_or_column_median_artifact_proxy""]",True,0,field_7ddb85600a79833a,False,False
+8926bfced217c8c6,HEASARC-GLOBCLUST:ESO-SC06,globularclusters,milky_way_globular_cluster,reserve,technical_pass,3,True,5,2.1,[],True,0,field_c6ba549985a2d2b1,False,False
+02569027534cd10b,HEASARC-GLOBCLUST:Terzan 6,globularclusters,milky_way_globular_cluster,reserve,review_needed,3,True,5,0.88,"[""NIR_severe_repeated_horizontal_stripes"", ""weak_blue_contrast""]",True,0,field_1ef953c7f59bf3a2,False,False
+64b0157417f2d728,HEASARC-GLOBCLUST:Terzan 10,globularclusters,milky_way_globular_cluster,reserve,review_needed,3,True,6.2,3.1,"[""blue_vertical_plate_streak"", ""weak_optical_target_contrast""]",True,0,field_215f22493d0510d3,False,False
+1921747ad4d7c5ad,HEASARC-GLOBCLUST:Terzan 2,globularclusters,milky_way_globular_cluster,reserve,review_needed,3,True,6.08,3.04,"[""NIR_rectangular_step_and_horizontal_stripes"", ""blue_severe_partial_blank_coverage_with_geometric_boundaries"", ""row_or_column_median_artifact_proxy""]",True,0,field_8f3f326bf8e1c6ee,False,False
+a67068e482686653,HEASARC-GLOBCLUST:Terzan 12,globularclusters,milky_way_globular_cluster,reserve,review_needed,3,True,5,1.5,"[""weak_blue_target_contrast""]",True,0,field_3b3a85a2f087bc44,False,False
+3894bf3495884a85,HEASARC-GLOBCLUST:Terzan 1,globularclusters,milky_way_globular_cluster,reserve,review_needed,3,True,15.28,7.64,"[""NIR_severe_repeated_horizontal_stripes"", ""weak_optical_target_contrast""]",True,0,field_fe9b1df170b19636,False,False
+f0ec4e94d1482a3a,HEASARC-GLOBCLUST:Terzan 9,globularclusters,milky_way_globular_cluster,reserve,technical_pass,3,True,5,1.56,[],True,0,field_8df6e9e8b671b3bd,False,False
+c8d2cef2c6d5dcca,HEASARC-GLOBCLUST:Terzan 4,globularclusters,milky_way_globular_cluster,reserve,review_needed,3,True,7.4,3.7,"[""NIR_severe_repeated_horizontal_stripes"", ""weak_optical_target_contrast""]",True,0,field_2b54808ba8de6a71,False,False
+f1183d7a8e5be9f7,HEASARC-GLOBCLUST:GLIMPSE01,globularclusters,milky_way_globular_cluster,reserve,review_needed,3,True,5,1.3,"[""target_visibility_not_clear_in_optical_bands""]",True,0,field_a4874357980f1811,False,False
+6fa5dbee91890760,HEASARC-GLOBCLUST:UKS 1,globularclusters,milky_way_globular_cluster,reserve,review_needed,3,True,15,,"[""catalogue_extent_missing_FOV_suitability_unverified"", ""target_visibility_not_clear_in_optical_bands""]",True,0,field_22ab47cee13def87,False,False
+059eeda91a398ffc,HEASARC-GLOBCLUST:2MS-GC02,globularclusters,milky_way_globular_cluster,reserve,review_needed,3,True,5,1.1,"[""target_visibility_not_clear_in_optical_bands""]",True,0,field_8da3589a9cf64079,False,False
+9f835f03e9b493ae,HEASARC-GLOBCLUST:2MS-GC01,globularclusters,milky_way_globular_cluster,reserve,review_needed,3,True,6.6,3.3,"[""row_or_column_median_artifact_proxy"", ""target_visibility_not_clear_in_optical_bands""]",True,0,field_9821a41db0f1f3bd,False,False
+29ae410e99701988,HEASARC-GLOBCLUST:GLIMPSE02,globularclusters,milky_way_globular_cluster,reserve,review_needed,3,True,15,,"[""catalogue_extent_missing_FOV_suitability_unverified"", ""target_visibility_not_clear_in_optical_bands""]",True,0,field_91f7c0bf00526bbb,False,False
+b28e36f936a265f7,SIMBAD:LDN 1287,nebulae,DNe,primary,review_needed,3,True,15,,"[""catalogue_extent_missing_FOV_suitability_unverified"", ""preserved_v2b_visual_review_needed"", ""v2b_catalogue_extent_missing""]",True,0,field_28a3a8de81e8cc1f,False,False
+20a1fba6003cb915,SIMBAD:LDN 1307,nebulae,DNe,primary,review_needed,3,True,120,91.0,"[""catalogue_based_FOV_capped_at120arcmin""]",True,0,field_cdac8c8826c3b6a8,False,False
+eb7fa417ea87fea2,SIMBAD:LDN 1457,nebulae,DNe,primary,technical_pass,3,True,62.0,31.0,[],True,0,field_ab8c94b6c54bc9bc,False,False
+cde04e12f875b4dc,SIMBAD:LDN 1448,nebulae,DNe,primary,review_needed,3,True,15,,"[""catalogue_extent_missing_FOV_suitability_unverified"", ""weak_diffuse_dark_feature_contrast""]",True,0,field_d63cb763a096e03a,False,False
+bc9747fe970eb9f3,SIMBAD:LDN 1551,nebulae,DNe,primary,review_needed,3,True,6.0,3.0,"[""field_overlap_future_group_constraint""]",True,1,field_246431c9a4761028,False,False
+9f0c4ef4776f4400,SIMBAD:LDN 1544,nebulae,DNe,primary,review_needed,3,True,15,,"[""catalogue_extent_missing_FOV_suitability_unverified""]",True,0,field_bbd51991484d0e1c,False,False
+76b5adfde3eb30ff,SIMBAD:LDN 1570,nebulae,DNe,primary,technical_pass,3,True,18.0,9.0,[],True,0,field_53294157b70cd975,False,False
+6ca00a2b1948ff3b,SIMBAD:[DB2002b] G259.43-12.72,nebulae,DNe,primary,review_needed,3,True,44.0,22.0,"[""NIR_large_background_step_and_horizontal_plate_stripes"", ""row_or_column_median_artifact_proxy""]",True,0,field_b7f4bb5df4562a12,False,False
+f20ee405e5b47362,SIMBAD:DCld 264.3+01.5,nebulae,DNe,primary,review_needed,3,True,15,,"[""catalogue_extent_missing_FOV_suitability_unverified"", ""weak_dark_feature_contrast_in_bright_crowded_field""]",True,0,field_e4dad306dcc44f77,False,False
+fd13c7492b29b326,SIMBAD:TGU H1716,nebulae,DNe,primary,review_needed,3,True,15.6,7.8,"[""bright_star_halos_and_weak_dark_feature_contrast"", ""catalogue_major_axis_smaller_than_minor_axis_unresolved"", ""field_overlap_future_group_constraint""]",True,1,field_0264f884ff72cf7e,False,False
+b146519b0aeeed85,SIMBAD:[DB2002b] G290.96-3.48,nebulae,DNe,primary,technical_pass,3,True,44.0,22.0,[],True,0,field_258c53309dcf6913,False,False
+82f773f6e47ef435,SIMBAD:[DB2002b] G300.23-16.89,nebulae,DNe,primary,review_needed,3,True,44.0,22.0,"[""row_or_column_median_artifact_proxy"", ""weak_diffuse_dark_feature_contrast""]",True,0,field_0f9e2110d3f2d4b4,False,False
+1f4237f081c29b3e,SIMBAD:NAME Coalsack Nebula,nebulae,DNe,primary,review_needed,3,True,15,,"[""blue_panel_appears_blank_under_fixed_stretch"", ""catalogue_extent_missing_FOV_suitability_unverified"", ""degenerate_percentile_dynamic_range"", ""high_empirical_max_plateau_possible_clipping"", ""mostly_zero_requires_blank_coverage_review""]",True,0,field_f2791257f933a61e,False,False
+ef99daf780fe4ca7,SIMBAD:Sandqvist 160,nebulae,DNe,primary,review_needed,3,True,15,,"[""catalogue_extent_missing_FOV_suitability_unverified"", ""large_NIR_bright_star_halo_near_edge""]",True,0,field_7d4aefde5362a950,False,False
+b0eafcf0f2a2e18e,SIMBAD:SDC G316.786-0.044,nebulae,DNe,primary,review_needed,3,True,9.136,4.568,"[""dark_target_visibility_not_clear_in_crowded_field""]",True,0,field_eec866f277b38464,False,False
+1bc28a3d1a380558,SIMBAD:LDN 1780,nebulae,DNe,primary,review_needed,3,True,15,,"[""catalogue_extent_missing_FOV_suitability_unverified"", ""row_or_column_median_artifact_proxy""]",True,0,field_9431ba336082df06,False,False
+0b6eb9f493c3b556,SIMBAD:LDN 1689B,nebulae,DNe,primary,review_needed,3,True,15,,"[""catalogue_extent_missing_FOV_suitability_unverified""]",True,0,field_f04f77f9e1d93de2,False,False
+1dc5a058f8e762d0,SIMBAD:NAME the Pipe Nebula,nebulae,DNe,primary,review_needed,3,True,120,240.0,"[""blue_severe_partial_blank_coverage_with_geometric_boundaries"", ""catalogue_based_FOV_capped_at120arcmin"", ""catalogue_extent_to_field_ratio_outside_screening_bounds"", ""row_or_column_median_artifact_proxy""]",True,0,field_19e1308ae383a014,False,False
+695fba896d32623b,SIMBAD:LDN  483,nebulae,DNe,primary,review_needed,3,True,20.4,10.2,"[""catalogue_major_axis_smaller_than_minor_axis_unresolved"", ""row_or_column_median_artifact_proxy""]",True,0,field_17a310c294b8a1ae,False,False
+d75eab09c299b60d,SIMBAD:LDN  663,nebulae,DNe,primary,review_needed,3,True,15,,"[""catalogue_extent_missing_FOV_suitability_unverified""]",True,0,field_505e7c3bcd4eec2b,False,False
+ce2cf487f6596d6a,SIMBAD:LDN 1157,nebulae,DNe,primary,review_needed,3,True,15,,"[""blue_thin_diagonal_plate_streak"", ""catalogue_extent_missing_FOV_suitability_unverified""]",True,0,field_8305499ab2a241f0,False,False
+cad522be6547cd78,SIMBAD:LDN 1177,nebulae,DNe,primary,technical_pass,3,True,8.0,4.0,[],True,0,field_3e9ac458c69f7dc6,False,False
+95f0cd1926149cfe,SIMBAD:LDN 1251,nebulae,DNe,primary,review_needed,3,True,54.0,27.0,"[""blue_broad_bright_diagonal_plate_streak""]",True,0,field_d0e37b1d7a8fd1bd,False,False
+ecf555290cc676b5,SIMBAD:LDN 1253,nebulae,DNe,primary,review_needed,3,True,15,,"[""catalogue_extent_missing_FOV_suitability_unverified""]",True,0,field_52f55510937d7ff3,False,False
+0f96da703b582f37,SIMBAD:NGC  7822,nebulae,HII,primary,review_needed,3,True,45.6,22.8,"[""preserved_v2b_visual_review_needed"", ""v2b_extended_multicomponent_nebulosity_reaches_edges""]",True,0,field_b06066ba9ecce484,False,False
+e9bfffe076e65090,SIMBAD:NGC   604,nebulae,HII,primary,review_needed,3,True,15,,"[""catalogue_extent_missing_FOV_suitability_unverified"", ""compact_nebular_region_with_extended_surrounding_light""]",True,0,field_b954cae66cdc04d4,False,False
+195ee51e831b4bd5,SIMBAD:NAME W 3 OH,nebulae,HII,primary,review_needed,3,True,15,,"[""catalogue_extent_missing_FOV_suitability_unverified""]",True,0,field_8bf6c66397571b72,False,False
+802c6a6b03652370,SIMBAD:HHL  5,nebulae,HII,primary,review_needed,3,True,15,,"[""catalogue_extent_missing_FOV_suitability_unverified"", ""extended_optical_target_visibility_not_clear""]",True,0,field_d298462a29210b1d,False,False
+f38520dfaf6ed8cd,SIMBAD:LHA 120-N  11,nebulae,HII,primary,review_needed,3,True,15,,"[""catalogue_extent_missing_FOV_suitability_unverified""]",True,0,field_8063193de313da7e,False,False
+ed617f35c752621c,SIMBAD:NAME Flame Nebula,nebulae,HII,primary,review_needed,3,True,15,,"[""catalogue_extent_missing_FOV_suitability_unverified"", ""large_bright_star_halo_and_horizontal_diffraction_structure""]",True,0,field_7702bde929967ed1,False,False
+ab0d268ffb0ecf12,SIMBAD:NAME Mon R2,nebulae,HII,primary,review_needed,3,True,120,90.0,"[""catalogue_based_FOV_capped_at120arcmin"", ""catalogue_major_axis_smaller_than_minor_axis_unresolved"", ""field_overlap_future_group_constraint""]",True,1,field_304a5640b132eaab,False,False
+a733e9d8aa85b535,SIMBAD:NGC  2363A,nebulae,HII,primary,review_needed,3,True,15,,"[""catalogue_extent_missing_FOV_suitability_unverified""]",True,0,field_3c105906e71713b6,False,False
+8c7f3ae23e2c0f32,SIMBAD:RCW  36,nebulae,HII,primary,review_needed,3,True,15,,"[""catalogue_extent_missing_FOV_suitability_unverified""]",True,0,field_97c49231c14c28ea,False,False
+143d0a51e2ae4674,SIMBAD:GAL 268.4-00.9,nebulae,HII,primary,technical_pass,3,True,5,1.9,[],True,0,field_6cf140c5524870f7,False,False
+93e40066486d8633,SIMBAD:NGC  3199,nebulae,HII,primary,review_needed,3,True,15,,"[""catalogue_extent_missing_FOV_suitability_unverified""]",True,0,field_45db234046289f6a,False,False
+52aeb8d32e329885,SIMBAD:NGC  3576,nebulae,HII,primary,review_needed,3,True,15,,"[""catalogue_extent_missing_FOV_suitability_unverified""]",True,0,field_4595150a767cf37d,False,False
+6c394d20a3091667,SIMBAD:ESO  95-1,nebulae,HII,primary,review_needed,3,True,5,0.887,"[""extended_optical_target_visibility_not_clear_in_crowded_field""]",True,0,field_a1efa2b418d08776,False,False
+ec3bc9fc08303b83,SIMBAD:GRS G308.60 +00.60,nebulae,HII,primary,review_needed,3,True,15,,"[""catalogue_extent_missing_FOV_suitability_unverified"", ""weak_extended_optical_contrast_in_crowded_field""]",True,0,field_6e65c6b483419e13,False,False
+f3367fef62e6ecef,SIMBAD:ESO 134-11,nebulae,HII,primary,review_needed,3,True,15,,"[""catalogue_extent_missing_FOV_suitability_unverified"", ""field_overlap_future_group_constraint""]",True,1,field_e7ca5546208bf911,False,False
+56eeac5c53523636,SIMBAD:RCW  97,nebulae,HII,primary,technical_pass,3,True,18.4,9.2,[],True,0,field_5de434682ab72a5a,False,False
+786ea3fc127ea72b,SIMBAD:GAL 333.6-00.2,nebulae,HII,primary,review_needed,3,True,18.0,9.0,"[""extended_optical_target_visibility_not_clear""]",True,0,field_a00a098f206e6595,False,False
+8f90ce9709ddaefd,SIMBAD:NGC  6334,nebulae,HII,primary,technical_pass,3,True,18.3,9.15,[],True,0,field_f97653fa2f9f829e,False,False
+0491d356f41776f1,SIMBAD:RAFGL 2046,nebulae,HII,primary,review_needed,3,True,15,,"[""catalogue_extent_missing_FOV_suitability_unverified"", ""row_or_column_median_artifact_proxy"", ""weak_extended_optical_contrast_near_marker""]",True,0,field_d79409efd5c9c432,False,False
+7e76dae170e54579,SIMBAD:W 49n,nebulae,HII,primary,review_needed,3,True,15,,"[""catalogue_extent_missing_FOV_suitability_unverified"", ""extended_optical_target_visibility_not_clear""]",True,0,field_6fd3ce7afc23f6af,False,False
+bdcc5a1d21bb967f,SIMBAD:W 58a,nebulae,HII,primary,review_needed,3,True,15,,"[""catalogue_extent_missing_FOV_suitability_unverified""]",True,0,field_61fae65e0d023604,False,False
+8b69aa3457f0d0e1,SIMBAD:SH  2-128,nebulae,HII,primary,technical_pass,3,True,5,1.21,[],True,0,field_3fe97f2a3ce68c56,False,False
+ee77886a07ff94f9,SIMBAD:SH  2-152,nebulae,HII,primary,technical_pass,3,True,5,1.047,[],True,0,field_d8e4a680b3f1259e,False,False
+b830fc0aff341463,SIMBAD:NAME Cep E,nebulae,HII,primary,review_needed,3,True,15,,"[""blue_vertical_rectangular_background_step"", ""catalogue_extent_missing_FOV_suitability_unverified"", ""weak_extended_optical_contrast""]",True,0,field_63c923a2eb87abba,False,False
+c3042fa36f99f794,SIMBAD:NGC    40,nebulae,PN,primary,review_needed,3,True,5,0.7667017,"[""catalogue_major_axis_smaller_than_minor_axis_unresolved"", ""field_overlap_future_group_constraint"", ""preserved_v2b_visual_review_needed"", ""v2b_catalogue_axis_inconsistency""]",True,1,field_383bb2a11ae1181a,False,False
+a532ef1c704f5cf9,SIMBAD:M  76,nebulae,PN,primary,review_needed,3,True,5,2.307,"[""row_or_column_median_artifact_proxy""]",True,0,field_48999bdb99136253,False,False
+72689eaddb84e6a9,SIMBAD:PN A66    3,nebulae,PN,primary,review_needed,3,True,5,1.0,"[""bright_near_edge_star_halo"", ""row_or_column_median_artifact_proxy""]",True,0,field_3bf4e0e23f125525,False,False
+7c7a7f27f559bfae,SIMBAD:NGC  1360,nebulae,PN,primary,review_needed,3,True,12.8,6.4,"[""row_or_column_median_artifact_proxy""]",True,0,field_853f733b08b1ceb7,False,False
+87f9f41c5b77f4b5,SIMBAD:NGC  1535,nebulae,PN,primary,review_needed,3,True,5,0.65,"[""NIR_broad_horizontal_plate_banding""]",True,0,field_6ecb43715c928533,False,False
+88c570f89300a537,SIMBAD:NGC  2022,nebulae,PN,primary,technical_pass,3,True,5,0.30681834,[],True,0,field_de568676158d1e32,False,False
+3f2cd4bc79c39de5,SIMBAD:IC 2165,nebulae,PN,primary,review_needed,3,True,5,0.14666666,"[""catalogue_extent_below16_output_pixels""]",True,0,field_be1f4193148fe49d,False,False
+10eb1d815a0e1552,SIMBAD:NGC  2346,nebulae,PN,primary,review_needed,3,True,5,0.91,"[""row_or_column_median_artifact_proxy""]",True,0,field_fadf510a5947f607,False,False
+a8909846d0915e06,SIMBAD:PN A66   30,nebulae,PN,primary,technical_pass,3,True,5,0.287,[],True,0,field_43a87592d115afe8,False,False
+716e05e9beaa9b2a,SIMBAD:NGC  2867,nebulae,PN,primary,review_needed,3,True,5,0.25255665,"[""row_or_column_median_artifact_proxy""]",True,0,field_d578314f3f3c21bb,False,False
+678882dc100e53cc,SIMBAD:NGC  3242,nebulae,PN,primary,review_needed,3,True,5,0.51229334,"[""catalogue_major_axis_smaller_than_minor_axis_unresolved""]",True,0,field_d974999634c4274e,False,False
+c1fd35c328358830,SIMBAD:M  97,nebulae,PN,primary,review_needed,3,True,6.666,3.333,"[""red_broad_bright_diagonal_plate_streak"", ""row_or_column_median_artifact_proxy""]",True,0,field_b11297597fe31ff1,False,False
+aa5da91b04a10d82,SIMBAD:NGC  4361,nebulae,PN,primary,technical_pass,3,True,5,1.35,[],True,0,field_a9bef605bfd6a377,False,False
+8aa54fdb85011ccb,SIMBAD:NGC  5315,nebulae,PN,primary,review_needed,3,True,5,0.08931617,"[""catalogue_extent_below16_output_pixels"", ""catalogue_extent_to_field_ratio_outside_screening_bounds""]",True,0,field_0dfc2437b22968dd,False,False
+37e84fd1de8307bc,SIMBAD:IC 4406,nebulae,PN,primary,review_needed,3,True,5,0.519755,"[""row_or_column_median_artifact_proxy""]",True,0,field_1d42fa5bde3ba587,False,False
+a1f8b793c1ad649c,SIMBAD:HD 138403,nebulae,PN,primary,review_needed,3,True,5,0.1087095,"[""catalogue_extent_below16_output_pixels"", ""row_or_column_median_artifact_proxy""]",True,0,field_e6d857b96f9a04e3,False,False
+4e234f9186083cb5,SIMBAD:IC 4593,nebulae,PN,primary,technical_pass,3,True,5,0.20966166,[],True,0,field_dd2a6b935db91c04,False,False
+5b0b532b65322921,SIMBAD:NGC  6309,nebulae,PN,primary,technical_pass,3,True,5,0.427,[],True,0,field_4a601b0e802014a0,False,False
+31cb11ab717612a8,SIMBAD:NGC  6572,nebulae,PN,primary,technical_pass,3,True,5,0.597,[],True,0,field_908c904567a21bca,False,False
+a67210ac57a8fc6e,SIMBAD:HD 184738,nebulae,PN,primary,review_needed,3,True,5,0.1098075,"[""catalogue_extent_below16_output_pixels""]",True,0,field_72ac1c5f0c1da98d,False,False
+983a4fcebbf11c01,SIMBAD:IC 4997,nebulae,PN,primary,review_needed,3,True,5,0.048803333,"[""NIR_thin_diagonal_plate_streak_near_upper_edge"", ""catalogue_extent_below16_output_pixels"", ""catalogue_extent_to_field_ratio_outside_screening_bounds""]",True,0,field_e5d6ec0db7deda13,False,False
+bd28dc100a57bc06,SIMBAD:NGC  7009,nebulae,PN,primary,review_needed,3,True,5,0.707,"[""NIR_curved_plate_mark_near_right_edge""]",True,0,field_d600e3c2c6d9b6ac,False,False
+c45e05a0585436fb,SIMBAD:IC 5217,nebulae,PN,primary,review_needed,3,True,5,0.33333334,"[""row_or_column_median_artifact_proxy""]",True,0,field_686a1eb4994bd055,False,False
+02355127313b1cac,SIMBAD:NGC  7662,nebulae,PN,primary,technical_pass,3,True,5,0.380885,[],True,0,field_24d540c47551284a,False,False
+19a346718ef5306d,SIMBAD:PP   1,nebulae,RNe,primary,review_needed,3,True,15,,"[""bright_diffuse_patch_offset_from_catalogue_marker_preserve_v2b_review"", ""catalogue_extent_missing_FOV_suitability_unverified"", ""preserved_v2b_visual_review_needed"", ""v2b_catalogue_extent_missing"", ""v2b_visible_peak_offset_from_catalogue_marker""]",True,0,field_fb08819b471d54f9,False,False
+92fe6904ae42542c,SIMBAD:IC   59,nebulae,RNe,primary,review_needed,3,True,15,,"[""catalogue_extent_missing_FOV_suitability_unverified""]",True,0,field_15658ed3d907ed5d,False,False
+bce1b980e0154b28,SIMBAD:IRAS 02471+6736,nebulae,RNe,primary,review_needed,3,True,5,1.548,"[""NIR_thin_vertical_plate_streak""]",True,0,field_7149b5f97a9c6ea9,False,False
+ffb73375f4389256,SIMBAD:BFS 32,nebulae,RNe,primary,review_needed,3,True,15,,"[""catalogue_extent_missing_FOV_suitability_unverified""]",True,0,field_b7128c92f8e0d0ee,False,False
+abbaf6a1b693d3f7,SIMBAD:HH 102,nebulae,RNe,primary,review_needed,3,True,15,,"[""catalogue_extent_missing_FOV_suitability_unverified"", ""field_overlap_future_group_constraint""]",True,1,field_246431c9a4761028,False,False
+6356383fe2ad4b35,SIMBAD:NGC  2071,nebulae,RNe,primary,review_needed,3,True,15,,"[""catalogue_extent_missing_FOV_suitability_unverified""]",True,0,field_df6e4395a5ced834,False,False
+88667316b82a607a,SIMBAD:NGC  2183,nebulae,RNe,primary,review_needed,3,True,5,1.51,"[""field_overlap_future_group_constraint""]",True,1,field_304a5640b132eaab,False,False
+992143c8210666bb,SIMBAD:IC 2177,nebulae,RNe,primary,review_needed,3,True,15,,"[""catalogue_extent_missing_FOV_suitability_unverified"", ""large_NIR_bright_star_halo_near_catalogue_marker""]",True,0,field_058fd30b1a31f424,False,False
+009f5f5f783ddf00,SIMBAD:NGC  2626,nebulae,RNe,primary,review_needed,3,True,15,,"[""NIR_localized_very_dark_patch_requires_pixel_coverage_review"", ""catalogue_extent_missing_FOV_suitability_unverified""]",True,0,field_9e31d64f3e4b5f33,False,False
+b52c3d0a6c348875,SIMBAD:BRAN 237A,nebulae,RNe,primary,review_needed,3,True,15,,"[""catalogue_extent_missing_FOV_suitability_unverified"", ""field_overlap_future_group_constraint""]",True,1,field_0264f884ff72cf7e,False,False
+adccb2547257457f,SIMBAD:ESO 128-4,nebulae,RNe,primary,review_needed,3,True,15,,"[""catalogue_extent_missing_FOV_suitability_unverified"", ""extended_optical_target_visibility_not_clear_in_crowded_field""]",True,0,field_1bfe0c73620e16d1,False,False
+2517f5fd14ea305e,SIMBAD:Ced 112,nebulae,RNe,primary,review_needed,3,True,15,,"[""catalogue_extent_missing_FOV_suitability_unverified""]",True,0,field_6094adc553b2bf51,False,False
+398bdbfeedd457eb,SIMBAD:VdBH 58,nebulae,RNe,primary,review_needed,3,True,15,,"[""NIR_geometric_background_step_near_left_edge"", ""catalogue_extent_missing_FOV_suitability_unverified"", ""row_or_column_median_artifact_proxy""]",True,0,field_0bf1e4fc86937f62,False,False
+2817d44fad2cca08,SIMBAD:NGC  5367,nebulae,RNe,primary,review_needed,3,True,15,,"[""catalogue_extent_missing_FOV_suitability_unverified""]",True,0,field_8705ca2e24ea565c,False,False
+99d17276c4af3517,SIMBAD:VdBH 62,nebulae,RNe,primary,review_needed,3,True,15,,"[""catalogue_extent_missing_FOV_suitability_unverified"", ""extended_optical_target_visibility_not_clear""]",True,0,field_64b2f5728b2d5ed7,False,False
+4dd94e8e03a63a1e,SIMBAD:VdBH 65,nebulae,RNe,primary,review_needed,3,True,15,,"[""catalogue_extent_missing_FOV_suitability_unverified""]",True,0,field_3b12fa1f9f6aa352,False,False
+553e83aa11dcd1f4,SIMBAD:NAME Draco Nebula,nebulae,RNe,primary,review_needed,3,True,15,,"[""catalogue_extent_missing_FOV_suitability_unverified"", ""red_thin_diagonal_plate_streak"", ""weak_diffuse_optical_contrast""]",True,0,field_9442d8927cb4533a,False,False
+de053e97f87474f8,SIMBAD:VdBH 86,nebulae,RNe,primary,technical_pass,3,True,6.4,3.2,[],True,0,field_2cfaf0c5fa5d7c69,False,False
+4c557d229fc3de94,SIMBAD:NAME Ser Nebula,nebulae,RNe,primary,review_needed,3,True,15,,"[""bright_near_edge_star_halo"", ""catalogue_extent_missing_FOV_suitability_unverified""]",True,0,field_47232019347a22a6,False,False
+fd4c42b4f7105c5c,SIMBAD:LBN 057.03+03.02,nebulae,RNe,primary,review_needed,3,True,15,,"[""catalogue_extent_missing_FOV_suitability_unverified""]",True,0,field_d9ff45125399d0f8,False,False
+37a747f802783e98,SIMBAD:NAME Gyulbudaghian's Nebula,nebulae,RNe,primary,review_needed,3,True,15,,"[""catalogue_extent_missing_FOV_suitability_unverified"", ""weak_nebulosity_contrast_near_catalogue_marker""]",True,0,field_4265e020b0d75be5,False,False
+99e2f0928d07aa2c,SIMBAD:RNO 138,nebulae,RNe,primary,review_needed,3,True,5,0.583,"[""bright_diffuse_patch_offset_from_catalogue_marker"", ""field_overlap_future_group_constraint""]",True,1,field_ec74f23227f8cfe5,False,False
+d9e4fa9a0686d33f,SIMBAD:NAME Cave Nebula,nebulae,RNe,primary,review_needed,3,True,15,,"[""catalogue_extent_missing_FOV_suitability_unverified""]",True,0,field_0a20acda342c7794,False,False
+d3cf47321fb6c5d8,SIMBAD:DSH J2320.1+5821B,nebulae,RNe,primary,review_needed,3,True,5,0.8,"[""extended_optical_target_visibility_not_clear""]",True,0,field_8478455f523ff987,False,False
+6aee31a8133ab0e0,SIMBAD:SNR G119.5+10.2,nebulae,SNR,primary,review_needed,3,True,120,90.0,"[""broad_plate_seams_and_background_variation"", ""catalogue_based_FOV_capped_at120arcmin"", ""field_overlap_future_group_constraint"", ""preserved_v2b_visual_review_needed"", ""v2b_FOV_cap"", ""v2b_diffuse_remnant_not_visually_established"", ""v2b_suspected_plate_or_mosaic_background_discontinuities"", ""weak_distinct_optical_target_contrast""]",True,1,field_383bb2a11ae1181a,False,False
+a3dafffd6d5f567d,SIMBAD:SNR B0102-72.3,nebulae,SNR,primary,review_needed,3,True,5,0.73333335,"[""bright_extended_neighbour_near_edge_and_weak_central_target_contrast""]",True,0,field_876e690db13ad29c,False,False
+1c456006c90ab5f8,SIMBAD:SNR G130.7+03.1,nebulae,SNR,primary,review_needed,3,True,18.0,9.0,"[""extended_optical_target_visibility_not_clear""]",True,0,field_66d12d2135c592d0,False,False
+85f502f5e277e0ee,SIMBAD:BWE 0332+6143,nebulae,SNR,primary,review_needed,3,True,15,,"[""catalogue_extent_missing_FOV_suitability_unverified"", ""extended_optical_target_visibility_not_clear""]",True,0,field_ca6f9a18561a1b5c,False,False
+988fa47af31891e4,SIMBAD:SNR G156.2+05.7,nebulae,SNR,reserve,review_needed,3,True,120,110.0,"[""catalogue_based_FOV_capped_at120arcmin"", ""catalogue_extent_to_field_ratio_outside_screening_bounds"", ""weak_distinct_optical_target_contrast""]",True,0,field_a419593312d81f7b,False,False
+9b3718c157a316f4,SIMBAD:SNR J052559-660453,nebulae,SNR,reserve,technical_pass,3,True,5,1.4,[],True,0,field_696158cd36e794d9,False,False
+751cadd8b1aa5ed7,SIMBAD:IC  443,nebulae,SNR,reserve,review_needed,3,True,90.0,45.0,"[""blue_and_NIR_multiple_bright_diagonal_plate_streaks""]",True,0,field_7218c5edc6b0e186,False,False
+438ff3f29ca638df,SIMBAD:SNR G240.9-00.9,nebulae,SNR,reserve,review_needed,3,True,15,,"[""catalogue_extent_missing_FOV_suitability_unverified"", ""extended_optical_target_visibility_not_clear""]",True,0,field_1bb138c8f47a85f0,False,False
+10da505540af4162,SIMBAD:NAME Vela,nebulae,SNR,reserve,review_needed,3,True,120,255.0,"[""catalogue_based_FOV_capped_at120arcmin"", ""catalogue_extent_to_field_ratio_outside_screening_bounds""]",True,0,field_bc9a15e095746d46,False,False
+95091559437e28f5,SIMBAD:[FK2005]  7,nebulae,SNR,reserve,review_needed,3,True,5,0.086666666,"[""catalogue_extent_below16_output_pixels"", ""catalogue_extent_to_field_ratio_outside_screening_bounds"", ""dominant_offcentre_bright_star_halo""]",True,0,field_85da5e3ef4c1d3fd,False,False
+4a08eccdeb1291dd,SIMBAD:NAME MSH 11-61A,nebulae,SNR,reserve,review_needed,3,True,38.0,19.0,"[""NIR_bright_star_halo_near_corner"", ""weak_distinct_optical_target_contrast""]",True,0,field_2b5eb673c1f3be4f,False,False
+e82acba70f7a9423,SIMBAD:SNR G292.0+01.8,nebulae,SNR,reserve,review_needed,3,True,24.0,12.0,"[""extended_optical_target_visibility_not_clear""]",True,0,field_ff257635aaf7be2b,False,False
+00d84c3e7eedf271,SIMBAD:SNR G295.5+09.7,nebulae,SNR,reserve,review_needed,3,True,120,90.0,"[""NIR_severe_geometric_background_steps"", ""bright_star_halos_and_weak_distinct_target_contrast"", ""catalogue_based_FOV_capped_at120arcmin""]",True,0,field_0603a562163df380,False,False
+07d1d7415f214a4e,SIMBAD:SNR G304.6+00.1,nebulae,SNR,reserve,review_needed,3,True,16.0,8.0,"[""extended_optical_target_visibility_not_clear""]",True,0,field_4159aeb193382583,False,False
+7217880fb139e529,SIMBAD:SNR G315.0-02.3,nebulae,SNR,reserve,review_needed,3,True,84.0,42.0,"[""blue_patchy_background_and_NIR_star_halo"", ""field_overlap_future_group_constraint"", ""weak_distinct_optical_target_contrast""]",True,1,field_e7ca5546208bf911,False,False
+2209b0b3a8b71fad,SIMBAD:NAME Lupus SN,nebulae,SNR,reserve,review_needed,3,True,60.0,30.0,"[""NIR_severe_geometric_background_step"", ""blue_rectangular_background_step"", ""row_or_column_median_artifact_proxy"", ""weak_distinct_optical_target_contrast""]",True,0,field_df494f6f626f9ac1,False,False
+42f52de2bec9162e,SIMBAD:SNR G338.3-00.0,nebulae,SNR,reserve,review_needed,3,True,18.0,9.0,"[""extended_optical_target_visibility_not_clear"", ""row_or_column_median_artifact_proxy""]",True,0,field_430afb69c67e9f92,False,False
+a2ce8491c5848a8e,SIMBAD:SNR G347.3-00.5,nebulae,SNR,reserve,review_needed,3,True,120,65.0,"[""blue_severe_partial_blank_coverage_with_geometric_boundaries"", ""catalogue_based_FOV_capped_at120arcmin"", ""row_or_column_median_artifact_proxy"", ""weak_distinct_optical_target_contrast""]",True,0,field_4bca2b18dbfa0ce3,False,False
+ba207bb860ef4c4c,SIMBAD:SNR G034.6-00.5,nebulae,SNR,reserve,technical_pass,3,True,70.0,35.0,[],True,0,field_2bae374cad4b9571,False,False
+94ab9a5b01edc16e,SIMBAD:W 51,nebulae,SNR,reserve,review_needed,3,True,60.0,30.0,"[""weak_distinct_optical_target_contrast""]",True,0,field_127c6e232e6a289e,False,False
+511ead98bbdb4f0b,SIMBAD:NAME gam Cyg SNR,nebulae,SNR,reserve,review_needed,3,True,120,60.0,"[""bright_star_halo_and_complex_surrounding_nebulosity"", ""field_overlap_future_group_constraint""]",True,1,field_066cb2a5dc676c5a,False,False
+2c2d3c92a861e159,SIMBAD:SNR G094.0+01.0,nebulae,SNR,reserve,review_needed,3,True,60.0,30.0,"[""extended_optical_target_visibility_not_clear""]",True,0,field_0bbb322c39729b5d,False,False
+009645e86fe166d1,SIMBAD:SNR G106.3+02.7,nebulae,SNR,reserve,review_needed,3,True,120,60.0,"[""weak_distinct_optical_target_contrast_amid_complex_field""]",True,0,field_b457c7c36b86d661,False,False
+0616895ef04107bd,SIMBAD:NAME Cas A,nebulae,SNR,reserve,review_needed,3,True,10.0,5.0,"[""red_thin_diagonal_plate_streak_near_left_edge""]",True,0,field_7ba4f25a79ee6663,False,False
+5f8105235ee377b6,SIMBAD:NGC   188,opencluster,,primary,review_needed,3,True,65.2,32.6,"[""NIR_diagonal_background_discontinuity_preserve_v2b_review"", ""preserved_v2b_visual_review_needed"", ""v2b_suspected_NIR_background_discontinuity""]",True,0,field_5f73b5908212f22d,False,False
+9c960ecb0e1b0ebb,SIMBAD:NGC   752,opencluster,,primary,review_needed,3,True,116.4,58.2,"[""NIR_dark_horizontal_streak"", ""blue_rectangular_background_step"", ""preserved_v2b_visual_review_needed"", ""v2b_NIR_streak_and_background_discontinuity"", ""v2b_blue_plate_mosaic_seam""]",True,0,field_7b7675f6f1c6533f,False,False
+c2635206311c6a99,SIMBAD:IC 1805,opencluster,,primary,review_needed,3,True,26.6,13.3,"[""preserved_v2b_visual_review_needed"", ""strong_surrounding_nebulosity_cluster_contrast_not_certified"", ""v2b_cluster_nebula_mixed_field""]",True,0,field_a0ff260e94858089,False,False
+657191121914b207,SIMBAD:IC  348,opencluster,,primary,review_needed,3,True,120,480.0,"[""bright_star_halo_and_surrounding_nebulosity"", ""catalogue_based_FOV_capped_at120arcmin"", ""catalogue_extent_to_field_ratio_outside_screening_bounds"", ""preserved_v2b_visual_review_needed"", ""red_rectangular_background_step"", ""v2b_catalogue_extent_FOV_inconsistency"", ""v2b_mixed_nebulosity_and_stellar_field"", ""v2b_suspected_plate_mosaic_patch""]",True,0,field_70eae62e103576a6,False,False
+2baaec04c0a284e7,SIMBAD:NGC  1662,opencluster,,primary,review_needed,3,True,120,72.2,"[""broad_background_and_halo_variation"", ""catalogue_based_FOV_capped_at120arcmin"", ""preserved_v2b_visual_review_needed"", ""v2b_FOV_cap"", ""v2b_broad_background_or_halo_variation""]",True,0,field_18391d3989c679bc,False,False
+4b7611fe4a6900e4,SIMBAD:NAME Orion Nebula Cluster,opencluster,,primary,review_needed,3,True,15,,"[""bright_nebulosity_dominates_fixed_stretch_cluster_contrast_not_certified"", ""catalogue_extent_missing_FOV_suitability_unverified"", ""field_overlap_future_group_constraint"", ""row_or_column_median_artifact_proxy""]",True,1,field_dc41caf784ef5d91,False,False
+7ae3fccd9a0b505e,SIMBAD:NGC  2244,opencluster,,primary,review_needed,3,True,120,88.0,"[""NIR_severe_geometric_partial_coverage_or_dynamic_range_failure"", ""catalogue_based_FOV_capped_at120arcmin"", ""row_or_column_median_artifact_proxy""]",True,0,field_e887594de0fd1108,False,False
+7c4f829909c22152,SIMBAD:NGC  2516,opencluster,,primary,review_needed,3,True,119.0,59.5,"[""large_blue_bright_star_halo_near_left_edge""]",True,0,field_3523b653a329ff62,False,False
+06d5786f33d02d3a,SIMBAD:NGC  2682,opencluster,,primary,review_needed,3,True,50.0,25.0,"[""blue_vertical_rectangular_background_step""]",True,0,field_628c1b5808b0ac22,False,False
+b05259b68fe1739f,SIMBAD:NGC  2818,opencluster,,primary,review_needed,3,True,18.8,9.4,"[""bright_compact_neighbour_in_cluster_field""]",True,0,field_626c13c879a51f4c,False,False
+5d92d222d3d059aa,SIMBAD:IC 2602,opencluster,,primary,review_needed,3,True,120,173.9,"[""catalogue_based_FOV_capped_at120arcmin"", ""catalogue_extent_to_field_ratio_outside_screening_bounds"", ""multiple_bright_star_halos_including_NIR_rings""]",True,0,field_4350b3bd22678ecb,False,False
+5799f50e518454aa,SIMBAD:NGC  3532,opencluster,,primary,review_needed,3,True,120,64.3,"[""catalogue_based_FOV_capped_at120arcmin""]",True,0,field_d5e8b7a6dbe18f8b,False,False
+f45cfb984f622e7b,SIMBAD:Cl Melotte  111,opencluster,,primary,review_needed,3,True,15,,"[""catalogue_extent_missing_FOV_suitability_unverified"", ""very_sparse_central_field_and_bright_edge_star""]",True,0,field_fa7c0614edd80653,False,False
+839095fab5c5d56e,SIMBAD:NGC  5316,opencluster,,primary,technical_pass,3,True,28.0,14.0,[],True,0,field_6b1817979e0ca2c9,False,False
+00cbb1fad0d6abda,SIMBAD:NGC  5662,opencluster,,primary,review_needed,3,True,79.2,39.6,"[""broad_background_variation_and_NIR_star_halos""]",True,0,field_eaa962fab94d25ac,False,False
+aa0781e5b157d0a2,SIMBAD:NGC  5822,opencluster,,primary,review_needed,3,True,88.4,44.2,"[""row_or_column_median_artifact_proxy""]",True,0,field_35841a20ea260d70,False,False
+7f2239a101cdf0b5,SIMBAD:NGC  6231,opencluster,,primary,review_needed,3,True,120,120.0,"[""blue_severe_partial_blank_coverage_with_geometric_boundaries"", ""catalogue_based_FOV_capped_at120arcmin"", ""catalogue_extent_to_field_ratio_outside_screening_bounds""]",True,0,field_572dee8e1cb056cb,False,False
+1bed2587b6028ef9,SIMBAD:NAME Quintuplet Cluster,opencluster,,primary,review_needed,3,True,5,0.5,"[""NIR_severe_repeated_horizontal_stripes"", ""weak_optical_cluster_contrast""]",True,0,field_9deeca9c787659ac,False,False
+fc3cd2da975366ba,SIMBAD:NGC  6530,opencluster,,primary,review_needed,3,True,28.0,14.0,"[""bright_nebulosity_dominates_fixed_stretch_cluster_contrast_not_certified"", ""row_or_column_median_artifact_proxy""]",True,0,field_e5fa5755bfd34f93,False,False
+629e3e4253780a79,SIMBAD:NGC  6819,opencluster,,primary,technical_pass,3,True,22.8,11.4,[],True,0,field_7bafccfa053b57a1,False,False
+a6ae99d6dfd11ca8,SIMBAD:NGC  6871,opencluster,,primary,review_needed,3,True,89.0,44.5,"[""weak_cluster_contrast_against_complex_background""]",True,0,field_df4db6a1abcd7d09,False,False
+3d4cf79b8a823894,SIMBAD:NGC  7023,opencluster,,primary,review_needed,3,True,15,,"[""blue_thin_diagonal_plate_streaks"", ""catalogue_extent_missing_FOV_suitability_unverified"", ""strong_surrounding_nebulosity_cluster_contrast_not_certified""]",True,0,field_b9ae433fa95e3d02,False,False
+4fd32303220cc809,SIMBAD:SH  2-140,opencluster,,primary,review_needed,3,True,70.0,35.0,"[""NIR_geometric_background_discontinuity_near_bottom"", ""strong_surrounding_nebulosity_cluster_contrast_not_certified""]",True,0,field_9858193d2160d8be,False,False
+a777129a056c1c9d,SIMBAD:NGC  7538,opencluster,,primary,review_needed,3,True,15,,"[""catalogue_extent_missing_FOV_suitability_unverified"", ""strong_surrounding_nebulosity_cluster_contrast_not_certified""]",True,0,field_5acd867a64e816ff,False,False
+e0316527a9f9cf25,SIMBAD:Cl Blanco    1,opencluster,,primary,review_needed,3,True,120,83.9,"[""blue_bright_star_halo"", ""catalogue_based_FOV_capped_at120arcmin"", ""red_rectangular_background_step""]",True,0,field_af1922a78c2fcf47,False,False
+9326c2ac788867e2,SIMBAD:NGC   419,opencluster,,primary,technical_pass,3,True,5.6,2.8,[],True,0,field_373b062eadf87aeb,False,False
+174a914b52f6b1c6,SIMBAD:IC 1848,opencluster,,primary,review_needed,3,True,48.0,24.0,"[""strong_surrounding_nebulosity_cluster_contrast_not_certified""]",True,0,field_dae7b512c0254450,False,False
+3120430715afab18,SIMBAD:NGC  1245,opencluster,,primary,review_needed,3,True,26.2,13.1,"[""row_or_column_median_artifact_proxy""]",True,0,field_92cde4c67749b28c,False,False
+01ea8a5f86422c39,SIMBAD:NGC  1664,opencluster,,primary,technical_pass,3,True,27.2,13.6,[],True,0,field_592c2628b7de182e,False,False
+c0cc96c36c1bcd6b,SIMBAD:NAME Ori Trapezium,opencluster,,primary,review_needed,3,True,15,,"[""bright_nebulosity_dominates_fixed_stretch_cluster_contrast_not_certified"", ""catalogue_extent_missing_FOV_suitability_unverified"", ""field_overlap_future_group_constraint""]",True,1,field_dc41caf784ef5d91,False,False
+ddd3e1a5fa46d3cc,SIMBAD:NGC  2158,opencluster,,primary,technical_pass,3,True,10.6,5.3,[],True,0,field_cabcba894f149e08,False,False
+9b788f4caa3bbe65,SIMBAD:NGC  2420,opencluster,,primary,review_needed,3,True,12.8,6.4,"[""NIR_panel_appears_blank_under_fixed_stretch"", ""degenerate_percentile_dynamic_range"", ""high_empirical_max_plateau_possible_clipping"", ""mostly_zero_requires_blank_coverage_review""]",True,0,field_05b3d368a3c4dd50,False,False
+a616f6d400d1daf4,SIMBAD:IC 2391,opencluster,,primary,review_needed,3,True,120,97.7,"[""bright_star_halos_and_background_steps"", ""catalogue_based_FOV_capped_at120arcmin"", ""catalogue_extent_to_field_ratio_outside_screening_bounds""]",True,0,field_88abe56ba7b45e37,False,False
+db6a724a9ab89d6d,SIMBAD:Cl Platais    8,opencluster,,primary,review_needed,3,True,120,325.9,"[""catalogue_based_FOV_capped_at120arcmin"", ""catalogue_extent_to_field_ratio_outside_screening_bounds"", ""large_bright_star_halo_near_left_edge""]",True,0,field_c57da3076ba57ca7,False,False
+b2169ef18e9c9a89,SIMBAD:Cl Trumpler   14,opencluster,,primary,review_needed,3,True,10.6,5.3,"[""bright_nebulosity_dominates_fixed_stretch_cluster_contrast_not_certified"", ""field_overlap_future_group_constraint"", ""row_or_column_median_artifact_proxy""]",True,2,field_f44e4bbc231f14ed,False,False
+4bfc332c4a675430,SIMBAD:NGC  3680,opencluster,,primary,review_needed,3,True,35.8,17.9,"[""broad_background_variation_and_NIR_star_halos""]",True,0,field_75cc478d7864b8df,False,False
+3413f805c761ea65,SIMBAD:Cl Collinder  261,opencluster,,primary,review_needed,3,True,26.0,13.0,"[""weak_cluster_contrast_in_crowded_field""]",True,0,field_f13d7073c0c30b8c,False,False
+1eb33694ff188c44,SIMBAD:Cl Stock   16,opencluster,,primary,technical_pass,3,True,6.0,3.0,[],True,0,field_4ef8b312dc283717,False,False
+bf1ff4922670463a,SIMBAD:NGC  5460,opencluster,,primary,review_needed,3,True,62.0,31.0,"[""NIR_bright_star_halos_near_edges""]",True,0,field_7e2b81b284ee8509,False,False
+e43733826da6cf09,SIMBAD:Cl Pismis   20,opencluster,,primary,technical_pass,3,True,8.0,4.0,[],True,0,field_19676c433b28e18b,False,False
+b1ff89a06e65be6d,SIMBAD:NGC  6067,opencluster,,primary,technical_pass,3,True,26.8,13.4,[],True,0,field_172d9af3c0500701,False,False
+d99a807c479d9058,SIMBAD:IC 4651,opencluster,,primary,technical_pass,3,True,55.2,27.6,[],True,0,field_280fc8f7ebe949bd,False,False
+f0ff9bed5ff28b2a,SIMBAD:NGC  6633,opencluster,,primary,technical_pass,3,True,86.4,43.2,[],True,0,field_96c98e4e15c5a6eb,False,False
+3d81de6005636597,SIMBAD:NGC  6811,opencluster,,primary,technical_pass,3,True,45.6,22.8,[],True,0,field_812b4da904842a09,False,False
+ece8344a7a3de4c4,SIMBAD:NGC  6940,opencluster,,primary,review_needed,3,True,60.0,30.0,"[""NIR_severe_geometric_background_step"", ""blue_background_seam_near_lower_edge""]",True,0,field_68eb3dc75adb5c28,False,False
+7a235796695bc878,SIMBAD:IC 1396,opencluster,,primary,review_needed,3,True,120,146.0,"[""catalogue_based_FOV_capped_at120arcmin"", ""catalogue_extent_to_field_ratio_outside_screening_bounds"", ""red_bright_diagonal_plate_streak_near_lower_edge"", ""strong_surrounding_nebulosity_cluster_contrast_not_certified""]",True,0,field_105fd414ea21ca58,False,False
+b72ddcb38be0346f,SIMBAD:NGC  7380,opencluster,,primary,review_needed,3,True,21.6,10.8,"[""strong_surrounding_nebulosity_cluster_contrast_not_certified""]",True,0,field_64d8f956dde579de,False,False
+1e551a7b8064a913,SIMBAD:NGC  7789,opencluster,,primary,technical_pass,3,True,50.6,25.3,[],True,0,field_c9e947068ed69a29,False,False
+6a8a112eef974b2b,SIMBAD:NGC   129,opencluster,,primary,review_needed,3,True,40.6,20.3,"[""red_large_rectangular_background_step""]",True,0,field_0324b9340a8cb9ff,False,False
+0c794c3e44c79192,SIMBAD:NGC   457,opencluster,,primary,review_needed,3,True,30.0,15.0,"[""red_large_rectangular_background_step""]",True,0,field_85d665c9ec46b4c0,False,False
+80b45e83a9f425f7,SIMBAD:NGC   884,opencluster,,primary,technical_pass,3,True,30.0,15.0,[],True,0,field_56023a0c372cc77e,False,False
+84f7b0c2a000d8be,SIMBAD:NGC  1342,opencluster,,primary,review_needed,3,True,69.4,34.7,"[""blue_rectangular_background_steps""]",True,0,field_e51aaae1cbe6310a,False,False
+33fbb66674bbc799,SIMBAD:NGC  1528,opencluster,,primary,review_needed,3,True,56.4,28.2,"[""NIR_geometric_background_step_near_upper_left"", ""field_overlap_future_group_constraint""]",True,1,field_e78defbff9945028,False,False
+9cee41d14768d9de,SIMBAD:NAME sig Ori Cluster,opencluster,,primary,review_needed,3,True,15,,"[""catalogue_extent_missing_FOV_suitability_unverified"", ""dominant_central_bright_star_halos_and_diffraction""]",True,0,field_9043f3287fa84fea,False,False
+090565e95cc3f6c1,SIMBAD:NGC  2243,opencluster,,primary,technical_pass,3,True,11.0,5.5,[],True,0,field_2b22988c30b92595,False,False
+30d7c88143b02a4c,SIMBAD:NGC  2362,opencluster,,primary,review_needed,3,True,120,104.0,"[""bright_star_halos_and_weak_cluster_contrast_at_frozen_scale"", ""catalogue_based_FOV_capped_at120arcmin"", ""catalogue_extent_to_field_ratio_outside_screening_bounds""]",True,0,field_eda0064c880d7c27,False,False
+6ce949e079a71a42,SIMBAD:Cl Mamajek    1,opencluster,,primary,review_needed,3,True,86.8,43.4,"[""weak_cluster_contrast_and_bright_star_halos""]",True,0,field_1c3b02682e28736a,False,False
+093ca39ae1cfc562,SIMBAD:Cl Ruprecht   79,opencluster,,primary,technical_pass,3,True,12.4,6.2,[],True,0,field_8a2a9c441d030b6b,False,False
+d57cdb82209404c8,SIMBAD:Cl Trumpler   16,opencluster,,primary,review_needed,3,True,14.6,7.3,"[""bright_nebulosity_dominates_fixed_stretch_cluster_contrast_not_certified"", ""field_overlap_future_group_constraint"", ""row_or_column_median_artifact_proxy""]",True,2,field_f44e4bbc231f14ed,False,False
+4da353f7cf09f17d,SIMBAD:NAME eps Cha Association,opencluster,,primary,review_needed,3,True,15,,"[""catalogue_extent_missing_FOV_suitability_unverified"", ""large_bright_star_halos_and_sparse_central_field""]",True,0,field_5f655ed58bbe925f,False,False
+7d59679ee80c69b1,SIMBAD:Cl Trumpler   20,opencluster,,primary,review_needed,3,True,26.8,13.4,"[""blue_large_rectangular_background_step_and_diagonal_streak""]",True,0,field_3dff8545fd8471a2,False,False
+b246dce820b31c55,SIMBAD:NGC  5281,opencluster,,primary,technical_pass,3,True,14.0,7.0,[],True,0,field_d9e8f06ddc3d9f2e,False,False
+ce295471fe54fb7e,SIMBAD:NGC  5606,opencluster,,primary,review_needed,3,True,6.0,3.0,"[""row_or_column_median_artifact_proxy""]",True,0,field_bd6ce5f80529169b,False,False
+6b933b31f904df16,SIMBAD:ESO 224-8,opencluster,,primary,review_needed,3,True,15,,"[""catalogue_extent_missing_FOV_suitability_unverified"", ""field_overlap_future_group_constraint"", ""weak_cluster_contrast_in_crowded_field""]",True,1,field_36333157a89a514c,False,False
+26788d41bb4f4036,SIMBAD:NGC  6253,opencluster,,primary,technical_pass,3,True,14.4,7.2,[],True,0,field_497632240d4a8f5f,False,False
+1195ed40a3eb9236,SIMBAD:NGC  6383,opencluster,,primary,review_needed,3,True,40.0,20.0,"[""NIR_severe_repeated_horizontal_stripes""]",True,0,field_4ffbed037d1f3676,False,False
+4491eae4390180d7,SIMBAD:IC 4756,opencluster,,primary,review_needed,3,True,120,64.1,"[""catalogue_based_FOV_capped_at120arcmin""]",True,0,field_8947b60b03c7494f,False,False
+2e36a368e6194866,SIMBAD:NGC  6823,opencluster,,primary,review_needed,3,True,7.1666666,3.5833333,"[""strong_surrounding_nebulosity_cluster_contrast_not_certified""]",True,0,field_e9aa9efb471faa3f,False,False
+fe294b0f4eb993dd,SIMBAD:NGC  6910,opencluster,,primary,review_needed,3,True,21.4,10.7,"[""blue_thin_diagonal_plate_streak_near_upper_left"", ""field_overlap_future_group_constraint"", ""strong_surrounding_nebulosity""]",True,1,field_066cb2a5dc676c5a,False,False
+7f53acc66a1af2fc,SIMBAD:IC 5146,opencluster,,primary,review_needed,3,True,16.4,8.2,"[""strong_surrounding_nebulosity_cluster_contrast_not_certified""]",True,0,field_3e0a8d4800a3e64b,False,False
+d8008ee5f65fe24d,SIMBAD:NGC  7209,opencluster,,primary,review_needed,3,True,73.0,36.5,"[""weak_cluster_contrast_at_frozen_wide_field_scale""]",True,0,field_80e6d7bcafbf009e,False,False
+67ef2de8adc17ba0,SIMBAD:NGC  7790,opencluster,,primary,technical_pass,3,True,14.2,7.1,[],True,0,field_1ce77f1635637593,False,False
+55e04ed3b8e9d473,SIMBAD:NGC   339,opencluster,,primary,technical_pass,3,True,5.8,2.9,[],True,0,field_26032fd9167b6743,False,False
+2d5fb3110ddcd628,SIMBAD:NGC   654,opencluster,,primary,technical_pass,3,True,12.8,6.4,[],True,0,field_7a8d8b36df5194fe,False,False
+b5ad83b32b75dd8c,SIMBAD:Cl Stock    2,opencluster,,primary,review_needed,3,True,120,123.6,"[""broad_NIR_background_variation"", ""catalogue_based_FOV_capped_at120arcmin"", ""catalogue_extent_to_field_ratio_outside_screening_bounds""]",True,0,field_a985069a9c4ab143,False,False
+719eabd3e4e27d77,SIMBAD:NGC  1193,opencluster,,primary,technical_pass,3,True,6.0,3.0,[],True,0,field_3e16f90b3b05f78c,False,False
+8f810acc0762bcca,SIMBAD:NGC  1545,opencluster,,primary,review_needed,3,True,69.6,34.8,"[""NIR_bright_diagonal_plate_streak"", ""field_overlap_future_group_constraint""]",True,1,field_e78defbff9945028,False,False
+8fe92c236520c6b8,SIMBAD:Cl Collinder   69,opencluster,,primary,review_needed,3,True,120,360.0,"[""catalogue_based_FOV_capped_at120arcmin"", ""catalogue_extent_to_field_ratio_outside_screening_bounds"", ""multiple_bright_star_halos"", ""row_or_column_median_artifact_proxy""]",True,0,field_d5c588a3b2e9ffba,False,False
+b3fa1bd6d00e6ff7,SIMBAD:NGC  2175,opencluster,,primary,review_needed,3,True,15,,"[""catalogue_extent_missing_FOV_suitability_unverified"", ""strong_surrounding_nebulosity_cluster_contrast_not_certified""]",True,0,field_4cf1a195db4dfd43,False,False
+cd0675bc04b9f715,SIMBAD:NGC  2477,opencluster,,primary,review_needed,3,True,36.0,18.0,"[""bright_star_halo_near_lower_edge""]",True,0,field_9952c2fa99160ad9,False,False
+019689026918e34a,SIMBAD:NGC  2506,opencluster,,primary,technical_pass,3,True,21.2,10.6,[],True,0,field_cd13f53c09276bd5,False,False
+3336aee8fd12687f,SIMBAD:NGC  2925,opencluster,,primary,technical_pass,3,True,33.8,16.9,[],True,0,field_1fee9d56363943ca,False,False
+790e33916935be8d,SIMBAD:NGC  3293,opencluster,,primary,review_needed,3,True,26.0,13.0,"[""bright_nebulosity_dominates_blue_red_stretch""]",True,0,field_dbd33c106fb4682e,False,False
+ed6ad6261658863f,SIMBAD:NGC  3960,opencluster,,primary,technical_pass,3,True,17.0,8.5,[],True,0,field_7594348fbc222043,False,False
+d787e4889b14a567,SIMBAD:NGC  4349,opencluster,,primary,technical_pass,3,True,18.0,9.0,[],True,0,field_bce6c7b4bbce5bee,False,False
+16c0014f8ec15e94,SIMBAD:Cl Danks    1,opencluster,,primary,review_needed,3,True,5,1.1,"[""field_overlap_future_group_constraint"", ""weak_optical_cluster_contrast_and_bright_near_edge_star""]",True,1,field_659e24335a48c165,False,False
+afb21a52be45bfae,SIMBAD:NGC  5617,opencluster,,primary,review_needed,3,True,14.0,7.0,"[""large_NIR_star_halo_near_upper_right""]",True,0,field_f2614aee9447205f,False,False
+9b8f3b44c3afe5e1,SIMBAD:NGC  6005,opencluster,,primary,technical_pass,3,True,13.6,6.8,[],True,0,field_65190ab2ea859ce5,False,False
+3aa96c616d4d9bf0,SIMBAD:NGC  6087,opencluster,,primary,review_needed,3,True,59.0,29.5,"[""multiple_large_NIR_star_halos""]",True,0,field_633944bafd911844,False,False
+c64401c2e5e808a0,SIMBAD:NGC  6281,opencluster,,primary,review_needed,3,True,62.2,31.1,"[""blue_severe_partial_blank_coverage_with_geometric_boundaries"", ""row_or_column_median_artifact_proxy""]",True,0,field_6c6bf1ae8bf4e630,False,False
+57d176216c264cdd,SIMBAD:NGC  6649,opencluster,,primary,technical_pass,3,True,10.0,5.0,[],True,0,field_5e19574e4f39e587,False,False
+e8fa5e638ac46fd8,SIMBAD:NGC  6774,opencluster,,primary,review_needed,3,True,120,78.2,"[""NIR_large_geometric_background_step"", ""catalogue_based_FOV_capped_at120arcmin""]",True,0,field_1ee5e75ccffb702a,False,False
+681f0eec83d868e2,SIMBAD:NGC  6866,opencluster,,primary,review_needed,3,True,25.0,12.5,"[""red_broad_diagonal_background_discontinuity""]",True,0,field_bc4d895027a4323f,False,False
+46978a4d037ad2b3,SIMBAD:NGC  7129,opencluster,,primary,review_needed,3,True,120,120.0,"[""NIR_bright_diagonal_plate_streak_near_upper_right"", ""catalogue_based_FOV_capped_at120arcmin"", ""catalogue_extent_to_field_ratio_outside_screening_bounds"", ""field_overlap_future_group_constraint"", ""strong_surrounding_nebulosity""]",True,1,field_ec74f23227f8cfe5,False,False
+f7ce154e2fe9a2e3,SIMBAD:NGC  7243,opencluster,,primary,technical_pass,3,True,61.2,30.6,[],True,0,field_fa200223bd9202a8,False,False
+609824c82bd7d8c5,SIMBAD:NGC  7510,opencluster,,primary,technical_pass,3,True,13.2,6.6,[],True,0,field_2049340dc3135200,False,False
+e5b40b0f56dce813,SIMBAD:NGC   225,opencluster,,primary,technical_pass,3,True,51.8,25.9,[],True,0,field_fdc11ab3f70100a3,False,False
+755517cc15fb78ce,SIMBAD:Cl Trumpler    1,opencluster,,primary,technical_pass,3,True,7.4,3.7,[],True,0,field_c245119f3badda15,False,False
+bc441d083e74a8ea,SIMBAD:Cl Trumpler    2,opencluster,,primary,technical_pass,3,True,77.6,38.8,[],True,0,field_36552436c68a90fd,False,False
+855baea5ad97849a,SIMBAD:Cl Alessi   13,opencluster,,primary,review_needed,3,True,120,163.3,"[""NIR_bright_star_halos"", ""blue_and_red_geometric_background_steps"", ""catalogue_based_FOV_capped_at120arcmin"", ""catalogue_extent_to_field_ratio_outside_screening_bounds""]",True,0,field_c050d5ba7a2f0808,False,False
+8e3f8d8869cee6ae,SIMBAD:NGC  1579,opencluster,,reserve,review_needed,3,True,26.8,13.4,"[""strong_surrounding_nebulosity_cluster_contrast_not_certified""]",True,0,field_7c60d9b898184b15,False,False
+4e2d593a2cbdac46,SIMBAD:NGC  1893,opencluster,,reserve,review_needed,3,True,72.0,36.0,"[""strong_surrounding_nebulosity_cluster_contrast_not_certified""]",True,0,field_bd72235c97df7c71,False,False
+ec4c054dad842d8d,SIMBAD:NGC  2232,opencluster,,reserve,review_needed,3,True,120,61.9,"[""bright_star_halos_and_broad_background_variation"", ""catalogue_based_FOV_capped_at120arcmin""]",True,0,field_c8ac936e110ef0a3,False,False
+a9b85efbbeecad9f,SIMBAD:Cl Melotte   66,opencluster,,reserve,review_needed,3,True,21.2,10.6,"[""NIR_severe_repeated_horizontal_stripes""]",True,0,field_51b816df4e29ceef,False,False
+80d488a054f8f523,SIMBAD:Cl Trumpler   10,opencluster,,reserve,review_needed,3,True,120,106.8,"[""NIR_large_geometric_background_steps"", ""catalogue_based_FOV_capped_at120arcmin"", ""catalogue_extent_to_field_ratio_outside_screening_bounds""]",True,0,field_4572977dfd08681e,False,False
+4f35431a9532bba5,SIMBAD:Cl Platais    9,opencluster,,reserve,review_needed,3,True,120,191.4,"[""NIR_bright_star_halos"", ""catalogue_based_FOV_capped_at120arcmin"", ""catalogue_extent_to_field_ratio_outside_screening_bounds"", ""red_horizontal_background_step""]",True,0,field_dc76db19578c398b,False,False
+0cee2e2e89d4c9c1,SIMBAD:Cl Trumpler   15,opencluster,,reserve,review_needed,3,True,104.0,52.0,"[""bright_nebulosity_dominates_blue_red_stretch"", ""field_overlap_future_group_constraint""]",True,2,field_f44e4bbc231f14ed,False,False
+bb618312ecb0679a,SIMBAD:IC 2714,opencluster,,reserve,technical_pass,3,True,41.0,20.5,[],True,0,field_dba1bd21bf7d5714,False,False
+115dd81ba475b3ac,SIMBAD:NGC  4815,opencluster,,reserve,technical_pass,3,True,13.4,6.7,[],True,0,field_55bd81029d1109d0,False,False
+887451d9bb66caa8,SIMBAD:Cl Danks    2,opencluster,,reserve,review_needed,3,True,5,1.55,"[""field_overlap_future_group_constraint"", ""weak_blue_optical_cluster_contrast""]",True,1,field_659e24335a48c165,False,False
+1008203fd8e1088a,SIMBAD:Cl Lynga    2,opencluster,,reserve,review_needed,3,True,26.0,13.0,"[""NIR_large_rectangular_background_step_near_right_edge""]",True,0,field_6d9a83aed93155b1,False,False
+16fe40aee8b9791c,SIMBAD:NGC  5823,opencluster,,reserve,technical_pass,3,True,32.2,16.1,[],True,0,field_ec1b18b863c21ecd,False,False
+51ea8e7e1e08250e,SIMBAD:NGC  6134,opencluster,,reserve,review_needed,3,True,12.0,6.0,"[""blue_panel_appears_blank_under_fixed_stretch"", ""degenerate_percentile_dynamic_range"", ""high_empirical_max_plateau_possible_clipping"", ""mostly_zero_requires_blank_coverage_review""]",True,0,field_71e869b4b491deba,False,False
+3798e0e69df6b786,SIMBAD:Cl Trumpler   27,opencluster,,reserve,review_needed,3,True,12.0,6.0,"[""NIR_bright_star_halo"", ""blue_panel_appears_blank_under_fixed_stretch"", ""degenerate_percentile_dynamic_range"", ""high_empirical_max_plateau_possible_clipping"", ""mostly_zero_requires_blank_coverage_review""]",True,0,field_c9119e0f0a90f3d4,False,False
+574a8da5ec1c9fcd,SIMBAD:NGC  6709,opencluster,,reserve,technical_pass,3,True,33.6,16.8,[],True,0,field_7bf806311a06188b,False,False
+8061f6ea7fd49b89,SIMBAD:NGC  6802,opencluster,,reserve,review_needed,3,True,6.68,3.34,"[""row_or_column_median_artifact_proxy""]",True,0,field_9fdf7fec413c0bdd,False,False
+ae900d0c784f0ae9,SIMBAD:IC 4996,opencluster,,reserve,technical_pass,3,True,6.8,3.4,[],True,0,field_c1f397e2fd8e1438,False,False
+62142b3a42d515a5,SIMBAD:NGC  7160,opencluster,,reserve,review_needed,3,True,120,144.0,"[""blue_rectangular_background_step_near_lower_left"", ""catalogue_based_FOV_capped_at120arcmin"", ""catalogue_extent_to_field_ratio_outside_screening_bounds""]",True,0,field_bd7669fe33cc80ea,False,False
+72f4da3de13598a7,SIMBAD:NGC  7235,opencluster,,reserve,technical_pass,3,True,16.8,8.4,[],True,0,field_e242e75592eb0673,False,False
+6fcea99045322baf,SIMBAD:NGC  7762,opencluster,,reserve,review_needed,3,True,40.8,20.4,"[""blue_horizontal_background_step"", ""large_bright_neighbour_halo""]",True,0,field_63ee71e409300d75,False,False

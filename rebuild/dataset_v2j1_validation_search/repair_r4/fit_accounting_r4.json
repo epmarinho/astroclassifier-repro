@@ -1,0 +1,15 @@
+{
+  "attempt_01_operational_pre_model_failure_preserved": 1,
+  "attempt_02_operational_loader_ipc_failure_preserved": 1,
+  "attempt_03_completed_campaign_fits": 90,
+  "attempt_04_started": false,
+  "metadata_controls_completed": 2,
+  "metadata_controls_required": 2,
+  "network_fits_completed": 90,
+  "network_fits_required": 90,
+  "phase": "Dataset-v2J1-R4",
+  "selection_frozen": true,
+  "selection_recomputations": 2,
+  "test_data_accessed": false,
+  "training_restarted": false
+}

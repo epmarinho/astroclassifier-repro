@@ -1,0 +1,4 @@
+objects,distinct_physical_objects,FITS_master_images,active_assignment_units,object_fraction_exact,object_fraction_decimal,target_fraction_exact,target_object_count,integer_deviation_from_global_target,standalone_derivatives_of_eligible_parents,all_lineage_derivatives_inheriting_constraint_role,split
+222,222,666,222,3/5,0.6,3/5,222,0,1156,1180,train
+75,75,225,75,15/74,0.20270270270270271,1/5,74,1,364,384,validation
+73,73,219,61,73/370,0.1972972972972973,1/5,74,-1,352,356,test

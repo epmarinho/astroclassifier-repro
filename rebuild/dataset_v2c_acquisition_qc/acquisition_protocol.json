@@ -1,0 +1,80 @@
+{
+  "acquisition": {
+    "automatic_retries": 0,
+    "concurrency": 3,
+    "maximum_candidates": 473,
+    "maximum_files": 1419,
+    "maximum_response_bytes": 20000000,
+    "method": "GET FITS through official CDS hips2fits",
+    "minimum_start_interval_seconds": 1,
+    "new_products": 1359,
+    "no_repeat_successful_request": true,
+    "ordering": "Frozen manifest order then blue, red, NIR. At most three in flight; global one-second start spacing. Cached completed request slots never queried again. Failures retained without substitution; no automatic retries; report incompleteness if any.",
+    "redirects_followed": 0,
+    "reused_products": 60,
+    "timeout_seconds": 60
+  },
+  "canonical_sha256": "5e8a0b596af7a5526c78b38ffac9a3ff87e7d32b0f57957eaf5337c41742a50d",
+  "footprint_graph": {
+    "angular_tolerance_radians": 1e-10,
+    "future_constraint": "Every connected component of overlapping fields must stay in one future split, or observations must be prospectively excluded. No split is constructed here.",
+    "geometry": "Closed convex spherical TAN footprint at pixel outer edges 0.5 and 512.5; union across all three band footprints. Failed or unavailable WCS additionally uses conservative planned TAN footprint; status explicit. All 473 choose 2 pairs tested with spherical cap rejection then vertex containment and great-circle edge intersections. Boundary touching counts as overlap. No centre-only approximation.",
+    "interpretation": "Field overlap is a dependence constraint, not evidence of identical physical targets.",
+    "unit": "Every frozen physical-object candidate, including reserves; physical identities remain from catalogue"
+  },
+  "fov_rule": {
+    "extent": "max of positive frozen major/minor axes in arcmin. If absent, twice frozen Harris half_light_radius_arcmin as half-light-diameter proxy. If neither available, extent unknown.",
+    "fov_arcmin": "clip(2*extent,5,120), or15 for missing extent. Identical recipe across objects, never based on pixel/model outcome.",
+    "limitations": "Harris radius is not full outer extent. Catalogue axis reversals and implausibly large extents are flagged, not repaired. Capped or unknown sizes require review; no post-image FOV adaptation."
+  },
+  "frozen_utc": "2026-10-23T00:05:06.683840+00:00",
+  "image_geometry": {
+    "coordinate_source": "Frozen numeric RA/Dec only; no online name resolver",
+    "coordsys": "icrs",
+    "height": 512,
+    "projection": "TAN",
+    "rotation_angle": 0,
+    "width": 512
+  },
+  "immutable_inputs": {
+    "survey_reuse_policy_sha256": "97cd1437ebfe5ccda980a198c79729c3082590180a63a3d4506ea7a82e582c87",
+    "v2a_manifest_sha256": "e1bf04ed3e9ffed1c7a0c080e8fbdcea65aa861ce59902846e5ce2c473a0b334",
+    "v2b_inventory_sha256": "f178b4b80b04dd2c70662f63cc1e6297904bfa5b0d1d5e92b95e23fcc115664f",
+    "v2b_protocol_sha256": "0df2cd14dc072d90de26d9bd6ab3e6709522e3ab3c0a50b8be7fdefc459b4e09"
+  },
+  "isolation": "Writes only under dataset_v2c_acquisition_qc; preserve v2A/v2B bytes; no v1 science records, predictions, checkpoints, training, inference, benchmark admission, labels, splits, manuscript or Git mutations. No packages or extra bands or image services.",
+  "phase": "Dataset-v2C",
+  "prospective_qc_labels": {
+    "review_needed": "Any fixed screening/scale/prior visual/overlap flag, or visual inspection pending; technical products preserved.",
+    "technical_pass": "All three required products pass integrity/WCS and fixed screens, scale checks, and documented visual review finds no issue. This does not admit the object or certify identity.",
+    "unusable_technical_failure": "Missing required product, HTTP/FITS/WCS/provenance failure, all pixels missing or inconsistent three-band grids. No repair/replacement."
+  },
+  "rendering": {
+    "orientation": "Flip FITS row direction for north-up if unrotated east-left TAN matrix verifies. Do not rewrite FITS.",
+    "per_band": "Finite pixels;1st/99th percentiles, clip0..1 then asinh(10*x)/asinh(10), invalid black, round8-bit; no local adaptive/tuned scaling.",
+    "pseudo_colour": "R=DSS2 NIR,G=DSS2 red,B=DSS2 blue, same per-band stretch; explicitly not calibrated true colour.",
+    "purpose": "Deterministic local inspection only; no fixed final training RGB is certified by this pilot.",
+    "visual_review": "Preserve completed v2B visual findings. All remaining products receive fixed automated artifact/coverage/centering screens and deterministic three-band/composite contact sheets. Record any actual human/assistant inspection separately; no unperformed manual inspection is claimed. Pending full visual inspection is review_needed, never benchmark admission."
+  },
+  "reuse": "The sixty originals remain at their immutable v2B repository paths; no copying needed, no downloads. Full provenance, hashes and request identities referenced in C.",
+  "rights": "Reuse immutable v2B survey_reuse_policy.json and retained official metadata. Local research products, retain DSS/CDS/STScI attribution and underlying policy limitations.",
+  "technical_qc": {
+    "FITS": "HTTP200; SIMPLE primary image, exactly512x512; supported BITPIX; complete2880-byte blocks and complete data payload; preserve all header cards.",
+    "WCS": "RA---TAN,DEC--TAN; invertible CD or PC/CDELT matrix; finite CRVAL/CRPIX; requested centre at reference point within1arcsec and within1output pixel of geometrical centre. Analytic TAN inverse check, no astropy installation.",
+    "artifact_caveat": "Screening proxies plus visual review, not a guarantee of artifact-free plates.",
+    "band_provenance": "Exact frozen query survey_id plus retained properties and returned FITS history/origin; explicitly note if original plate/exposure IDs or copyright are absent from resampled products.",
+    "catalogue_extent_pixels_minimum": 16,
+    "centering_caveat": "WCS/catalogue centering is geometric, not independent visual identification or proof that a diffuse object is detectable.",
+    "dynamic_range": "Flag if finite p99<=p1.",
+    "empirical_max_plateau_flag_above": 0.005,
+    "extent_to_fov_review_bounds": [
+      0.02,
+      0.8
+    ],
+    "invalid_definition": "Nonfinite or integer BLANK keyword; zeros recorded separately, not presumed missing without BLANK evidence.",
+    "invalid_fraction_flag_above": 0.01,
+    "mostly_zero_flag_above": 0.95,
+    "row_column_median_outlier_mad_flag_above": 8,
+    "saturation_caveat": "Repeated maxima are a clipping/saturation proxy, not calibrated photographic saturation proof."
+  }
+}

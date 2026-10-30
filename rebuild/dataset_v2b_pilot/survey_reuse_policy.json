@@ -1,0 +1,229 @@
+{
+  "HiPS2FITS_credit": "This research made use of hips2fits, a service provided by CDS.",
+  "official_DSS_copyright_url": "https://archive.stsci.edu/dss/copyright.html",
+  "policy_metadata_is_not_image_admission": true,
+  "policy_sources": [
+    {
+      "path": "survey_metadata/dss2_blue_properties.json",
+      "sha256": "3c6608f102c0e216589cf2539e9b90d212d7fdab35c2db9edd0a73d53f714474"
+    },
+    {
+      "path": "survey_metadata/dss2_blue_properties.response.txt",
+      "sha256": "512eaee7cbf976e884cadb5f9355eb26558ac101699e4ccb4659292f5488ad9b"
+    },
+    {
+      "path": "survey_metadata/dss2_nir_properties.json",
+      "sha256": "e2390024e823224fd1a3c22c4f05a973224a2dea6e9ac60ee0880da1acaebc9e"
+    },
+    {
+      "path": "survey_metadata/dss2_nir_properties.response.txt",
+      "sha256": "c24e434558b8c246b12f7a7539f9a8d955f92df2a62d6421a2f43fbb4d3cb0fe"
+    },
+    {
+      "path": "survey_metadata/dss2_red_properties.json",
+      "sha256": "09bea3f1085b676870c09fdbc11e6e992643196bd784cf99421d5d7afa0a34f1"
+    },
+    {
+      "path": "survey_metadata/dss2_red_properties.response.txt",
+      "sha256": "55c7f8745a0d2f30045cbd080ef45f2d6995843e7c3228adba2cd352eafbcd47"
+    },
+    {
+      "path": "survey_metadata/dss_acknowledging.json",
+      "sha256": "709a2935465bba1b11e3d8dc5e3a4244cfaedd953aa26145eea8f83d3130048f"
+    },
+    {
+      "path": "survey_metadata/dss_acknowledging.response.txt",
+      "sha256": "6594fdaefec4d7c9e8d9dee000c1b4d862e5ab027b54bedb36f5e84f8d8666e5"
+    },
+    {
+      "path": "survey_metadata/dss_policy.json",
+      "sha256": "0796bb549e6c2d8ae9e81c874c8fc8aebc76e17c9ee3e574d2e98b7079150c81"
+    },
+    {
+      "path": "survey_metadata/dss_policy.response.txt",
+      "sha256": "6e9d6d939b9241df7417d402a9e5910c97aa812fa324af7948d94172c5ebb67f"
+    },
+    {
+      "path": "survey_metadata/hips2fits_documentation.json",
+      "sha256": "89cbe2c14cb4e2e9c1f8b24f3d8eb60292c7d25f5d0af05c347e6a32d1d35e20"
+    },
+    {
+      "path": "survey_metadata/hips2fits_documentation.response.txt",
+      "sha256": "72955d9deb034a2cc5c5b4915246bb998a419f61e69425d80bc326e561ae3060"
+    },
+    {
+      "path": "survey_metadata/mast_data_use.json",
+      "sha256": "f207fb817f7bf0d390bfd26c0b4cb74dceafc8258b9ceff55e2bc1d03611cb21"
+    },
+    {
+      "path": "survey_metadata/mast_data_use.response.txt",
+      "sha256": "777b6d13c985b68bfb50ab9b94dd0fd6cb210f4d8372adea0a6e03e1dd3fa27e"
+    }
+  ],
+  "recorded_before_pixels_utc": "2026-10-22T23:42:19.515416+00:00",
+  "redistribution_status": "No public redistribution authorized or performed by this pilot. Dataset publication needs separate rights review, retaining per-survey acknowledgments and any per-file copyright header.",
+  "required_credit_records": "Complete per-band obs_ack and copyright strings are preserved in survey properties; cite CDS hips2fits service and DSS/STScI/Palomar/UK Schmidt origin when reporting use.",
+  "reuse_summary": "Public scientific retrieval through CDS. HiPS properties declare ODbL-1.0 for the HiPS layer; underlying DSS plates retain STScI/Caltech/UK survey/AURA copyright arrangements. Do not infer blanket public-domain or unrestricted redistribution from access or the HiPS licence.",
+  "surveys": [
+    {
+      "band": "blue",
+      "metadata_response_sha256": "512eaee7cbf976e884cadb5f9355eb26558ac101699e4ccb4659292f5488ad9b",
+      "metadata_url": "https://alasky.cds.unistra.fr/DSS/DSS2-blue-XJ-S/properties",
+      "properties": {
+        "bib_reference": "1996ASPC..101...88L",
+        "bib_reference_url": "https://adsabs.harvard.edu/abs/1996ASPC..101...88L/abstract",
+        "client_application": "AladinLite",
+        "client_category": "Image/Optical/DSS",
+        "client_sort_key": "03-01-03",
+        "creator_did": "ivo://CDS/P/DSS2/blue",
+        "dataproduct_type": "image",
+        "em_max": "4.91e-7",
+        "em_min": "4.68e-7",
+        "hips_builder": "Aladin/HipsGen v10.125",
+        "hips_copyright": "CNRS/Unistra",
+        "hips_creation_date": "2015-02-07T11:42Z",
+        "hips_creator": "Fernique P. (CDS)",
+        "hips_data_range": "-4736 29668",
+        "hips_doi": "10.26093/cds/aladin/2szd-bms",
+        "hips_estsize": "2331148605",
+        "hips_frame": "equatorial",
+        "hips_initial_dec": "-24.3603897",
+        "hips_initial_fov": "23.0",
+        "hips_initial_ra": "271.0198457",
+        "hips_license": "ODbL-1.0",
+        "hips_order": "9",
+        "hips_order_min": "0",
+        "hips_pixel_bitpix": "16",
+        "hips_pixel_cut": "4286 19959",
+        "hips_pixel_scale": "2.236E-4",
+        "hips_progenitor_url": "http://alasky.u-strasbg.fr/DSS/DSS2-blue-XJ-S/HpxFinder",
+        "hips_release_date": "2019-06-17T07:58Z",
+        "hips_status": "public master clonableOnce",
+        "hips_tile_format": "jpeg fits",
+        "hips_tile_width": "512",
+        "hips_version": "1.4",
+        "hipsgen_date": "2019-06-17T07:58Z",
+        "hipsgen_params": "out=/asd-volumes/sc1-asd-volume6/DSS/DSS2-blue-XJ-S UPDATE",
+        "moc_access_url": "http://alasky.u-strasbg.fr/DSS/DSS2-blue-XJ-S/Moc.fits",
+        "moc_sky_fraction": "0.9967",
+        "obs_ack": "The Digitized Sky Surveys were produced at the Space Telescope Science Institute under U.S. Government grant NAG W-2166. The images of these surveys are based on photographic data obtained using the Oschin Schmidt Telescope on Palomar Mountain and the UK Schmidt Telescope. The plates were processed into the present compressed digital form with the permission of these institutions. The National Geographic Society - Palomar Observatory Sky Atlas (POSS-I) was made by the California Institute of Technology with grants from the National Geographic Society. The Second Palomar Observatory Sky Survey (POSS-II) was made by the California Institute of Technology with funds from the National Science Foundation, the National Geographic Society, the Sloan Foundation, the Samuel Oschin Foundation, and the Eastman Kodak Corporation. The Oschin Schmidt Telescope is operated by the California Institute of Technology and Palomar Observatory. The UK Schmidt Telescope was operated by the Royal Observatory Edinburgh, with funding from the UK Science and Engineering Research Council (later the UK Particle Physics and Astronomy Research Council), until 1988 June, and thereafter by the Anglo-Australian Observatory. The blue plates of the southern Sky Atlas and its Equatorial Extension (together known as the SERC-J), as well as the Equatorial Red (ER), and the Second Epoch [red] Survey (SES) were all taken with the UK Schmidt. Supplemental funding for sky-survey work at the ST ScI is provided by the European Southern Observatory.",
+        "obs_collection": "DSS2 Blue (XJ+S)",
+        "obs_copyright": "Digitized Sky Survey - STScI/NASA, Healpixed by CDS",
+        "obs_copyright_url": "http://archive.stsci.edu/dss/copyright.html",
+        "obs_description": "The Catalogs and Surveys Group of the Space Telescope Science Institute has digitized the photographic Sky survey plates from the Palomar and  UK Schmidt telescopes to produce the \"Digitized Sky Survey\"(DSS). Each plate  covers 6.5 x 6.5 degrees of the sky and have been\\ndigitized using a modified  PDS microdensitometer. The DSS blue HiPS is a combination of DSS2-XJ and DSS2-S. DSS2-XJ north is the digitalization of the POSS-II J (1987-1998 - 0.491um) from Caltech,DSS2-S south is the digitalization of the SERC-J (1975-1987 - 0.468um) and SERC-EJ (1979-1988 - 0.468um) from ROE.The all-sky HEALPix resampling has been done by the CDS with the help of CADC.",
+        "obs_regime": "Optical",
+        "obs_title": "DSS2 Blue (XJ+S)",
+        "prov_progenitor": "STScI",
+        "t_max": "50814",
+        "t_min": "42413"
+      },
+      "survey_id": "CDS/P/DSS2/blue"
+    },
+    {
+      "band": "red",
+      "metadata_response_sha256": "55c7f8745a0d2f30045cbd080ef45f2d6995843e7c3228adba2cd352eafbcd47",
+      "metadata_url": "https://alasky.cds.unistra.fr/DSS/DSS2Merged/properties",
+      "properties": {
+        "bib_reference": "1996ASPC..101...88L",
+        "bib_reference_url": "https://ui.adsabs.harvard.edu/abs/1996ASPC..101...88L/abstract",
+        "client_application": "AladinLite",
+        "client_category": "Image/Optical/DSS",
+        "client_sort_key": "03-01-02",
+        "creator_did": "ivo://CDS/P/DSS2/red",
+        "dataproduct_type": "image",
+        "em_max": "6.58e-7",
+        "em_min": "6.4e-7",
+        "hips_builder": "Aladin/HipsGen v10.123",
+        "hips_copyright": "CNRS/Unistra",
+        "hips_creation_date": "2012-07-13T14:03Z",
+        "hips_creator": "Boch T. (CDS)",
+        "hips_doi": "10.26093/cds/aladin/wenz-vg",
+        "hips_estsize": "2301246266",
+        "hips_frame": "equatorial",
+        "hips_initial_dec": "-3.3581890",
+        "hips_initial_fov": "33.0",
+        "hips_initial_ra": "82.9368880",
+        "hips_license": "ODbL-1.0",
+        "hips_order": "9",
+        "hips_order_min": "0",
+        "hips_pixel_bitpix": "16",
+        "hips_pixel_cut": "1000 10000",
+        "hips_pixel_scale": "2.236E-4",
+        "hips_release_date": "2019-05-07T10:59Z",
+        "hips_status": "public master clonableOnce",
+        "hips_tile_format": "jpeg fits",
+        "hips_tile_width": "512",
+        "hips_version": "1.4",
+        "hipsgen_date": "2019-05-07T10:59Z",
+        "hipsgen_params": "out=/asd-volumes/sc1-asd-volume8/DSS/DSS2Merged UPDATE",
+        "moc_access_url": "http://alasky.u-strasbg.fr/DSS/DSS2Merged/Moc.fits",
+        "moc_sky_fraction": "1",
+        "obs_ack": "The Digitized Sky Surveys were produced at the Space Telescope Science Institute under U.S. Government grant NAG W-2166. The images of these surveys are based on photographic data obtained using the Oschin Schmidt Telescope on Palomar Mountain and the UK Schmidt Telescope. The plates were processed into the present compressed digital form with the permission of these institutions. The National Geographic Society - Palomar Observatory Sky Atlas (POSS-I) was made by the California Institute of Technology with grants from the National Geographic Society. The Second Palomar Observatory Sky Survey (POSS-II) was made by the California Institute of Technology with funds from the National Science Foundation, the National Geographic Society, the Sloan Foundation, the Samuel Oschin Foundation, and the Eastman Kodak Corporation. The Oschin Schmidt Telescope is operated by the California Institute of Technology and Palomar Observatory. The UK Schmidt Telescope was operated by the Royal Observatory Edinburgh, with funding from the UK Science and Engineering Research Council (later the UK Particle Physics and Astronomy Research Council), until 1988 June, and thereafter by the Anglo-Australian Observatory. The blue plates of the southern Sky Atlas and its Equatorial Extension (together known as the SERC-J), as well as the Equatorial Red (ER), and the Second Epoch [red] Survey (SES) were all taken with the UK Schmidt. Supplemental funding for sky-survey work at the ST ScI is provided by the European Southern Observatory.",
+        "obs_collection": "DSS2 Red (F+R)",
+        "obs_copyright": "Digitized Sky Survey - STScI/NASA, Healpixed by CDS",
+        "obs_copyright_url": "http://archive.stsci.edu/dss/copyright.html",
+        "obs_description": "The Catalogs and Surveys Group of the Space Telescope Science  Institute has digitized the photographic Sky survey plates from the Palomar and UK Schmidt telescopes to produce the \"Digitized Sky Survey\" (DSS). Each plate covers 6.5 x 6.5 degrees of the sky and have been digitized using a modified PDS microdensitometer.\\nDSS2F north is the digitalization of the POSS2/UKSTU Red survey (0.658um)\\nDSS2R south is the digitalization of the AAO Red survey (0.64um)\\nThe all-sky HEALPix resampling has been done by the CDS",
+        "obs_regime": "Optical",
+        "obs_title": "DSS2 Red (F+R)",
+        "prov_progenitor": "STScI",
+        "t_max": "51179",
+        "t_min": "45700"
+      },
+      "survey_id": "CDS/P/DSS2/red"
+    },
+    {
+      "band": "nir",
+      "metadata_response_sha256": "c24e434558b8c246b12f7a7539f9a8d955f92df2a62d6421a2f43fbb4d3cb0fe",
+      "metadata_url": "https://alasky.cds.unistra.fr/DSS/DSS2-NIR/properties",
+      "properties": {
+        "bib_reference": "1996ASPC..101...88L",
+        "bib_reference_url": "http://ui.adsabs.harvard.edu/abs/1996ASPC..101...88L/abstract",
+        "client_category": "Image/Optical/DSS",
+        "client_sort_key": "03-01-03a",
+        "creator_did": "ivo://CDS/P/DSS2/NIR",
+        "data_pixel_bitpix": "16",
+        "dataproduct_type": "image",
+        "em_max": "9.5E-7",
+        "em_min": "7E-7",
+        "hips_builder": "Aladin/HipsGen v10.125",
+        "hips_copyright": "CNRS/Unistra",
+        "hips_creation_date": "2015-09-08T12:14Z",
+        "hips_creator": "Fernique P. (CDS)",
+        "hips_data_range": "-11612 34834",
+        "hips_doi": "10.26093/cds/aladin/3hh0-7dk",
+        "hips_estsize": "2328304001",
+        "hips_frame": "equatorial",
+        "hips_hierarchy": "mean",
+        "hips_initial_dec": "-62.0757716",
+        "hips_initial_fov": "30.0",
+        "hips_initial_ra": "200.0641577",
+        "hips_license": "ODbL-1.0",
+        "hips_order": "9",
+        "hips_order_min": "0",
+        "hips_pixel_bitpix": "16",
+        "hips_pixel_cut": "1249 10940",
+        "hips_pixel_scale": "2.236E-4",
+        "hips_release_date": "2019-05-20T15:03Z",
+        "hips_status": "public master clonableOnce",
+        "hips_tile_format": "jpeg fits",
+        "hips_tile_width": "512",
+        "hips_version": "1.4",
+        "hipsgen_date": "2019-05-20T15:03Z",
+        "hipsgen_params": "out=/asd-volumes/sc1-asd-volume6/DSS/DSS2-NIR UPDATE",
+        "moc_sky_fraction": "0.9955",
+        "obs_ack": "The Digitized Sky Surveys were produced at the Space Telescope Science Institute under U.S. Government grant NAG W-2166. The images of these surveys are based on photographic data obtained using the Oschin Schmidt Telescope on Palomar Mountain and the UK Schmidt Telescope. The plates were processed into the present compressed digital form with the permission of these institutions. The National Geographic Society - Palomar Observatory Sky Atlas (POSS-I) was made by the California Institute of Technology with grants from the National Geographic Society. The Second Palomar Observatory Sky Survey (POSS-II) was made by the California Institute of Technology with funds from the National Science Foundation, the National Geographic Society, the Sloan Foundation, the Samuel Oschin Foundation, and the Eastman Kodak Corporation. The Oschin Schmidt Telescope is operated by the California Institute of Technology and Palomar Observatory. The UK Schmidt Telescope was operated by the Royal Observatory Edinburgh, with funding from the UK Science and Engineering Research Council (later the UK Particle Physics and Astronomy Research Council), until 1988 June, and thereafter by the Anglo-Australian Observatory. The blue plates of the southern Sky Atlas and its Equatorial Extension (together known as the SERC-J), as well as the Equatorial Red (ER), and the Second Epoch [red] Survey (SES) were all taken with the UK Schmidt. Supplemental funding for sky-survey work at the ST ScI is provided by the European Southern Observatory.",
+        "obs_collection": "DSS2 NIR (XI+IS)",
+        "obs_copyright": "Digitized Sky Survey - STScI/NASA, Healpixed by CDS",
+        "obs_copyright_url": "http://archive.stsci.edu/dss/copyright.html",
+        "obs_description": "The Catalogs and Surveys Group of the Space Telescope Science Institute has digitized the photographic Sky survey plates from the Palomar and  UK Schmidt telescopes to produce the \"Digitized Sky Survey\"(DSS). Each plate  covers 6.5 x 6.5 degrees of the sky and have been digitized using a modified  PDS microdensitometer. The DSS NIT HiPS is a combination of DSS2-XI and DSS2-IS. DSS2-XI north is the digitalization of the POSS-II N (1987-2002 - filter: IV-N +RG9) from Caltech, DSS2-IS south is the digitalization of the SERC-IS (1990-2002 - filter: IV-N +RG175). The all-sky HEALPix resampling has been done by the CDS with the help of CADC.",
+        "obs_regime": "Optical",
+        "obs_title": "DSS2 NIR (XI+IS)",
+        "prov_progenitor": "STScI",
+        "s_pixel_scale": "2.798E-4",
+        "t_max": "52620",
+        "t_min": "46796"
+      },
+      "survey_id": "CDS/P/DSS2/NIR"
+    }
+  ]
+}

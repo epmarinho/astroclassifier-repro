@@ -1,0 +1,291 @@
+{
+  "binding": {
+    "adopted_protocol_sha256": "8824112f1f6546b4aa0f5fdb64c4cc967e7f61a5b2610b0910e416a6a79ef239",
+    "author_resolution_sha256": "16c3c31e971af7c0b90b383a347e33db944da9f49489321d51566cd18a3d889a",
+    "floors_train_validation_test": [
+      21,
+      6,
+      10
+    ],
+    "fractions_exact": [
+      "3/5",
+      "1/5",
+      "1/5"
+    ],
+    "mandatory_controls": [
+      "B_common_field",
+      "metadata_FOV_only",
+      "outer_field",
+      "FOV_stratified_reporting"
+    ],
+    "materialized_splits": 1,
+    "membership_and_role_files": {
+      "assignment_unit_membership.csv": {
+        "sha256": "b6c55bfb372c11600414090aff6298df542c81fbc89837a9036ab7906c1d2657",
+        "size_bytes": 71965
+      },
+      "assignment_unit_membership.json": {
+        "sha256": "0440a32d8ef8d314fcea828e14ba517a5621fd0b0a67ca750ae6ddb99a424209",
+        "size_bytes": 306996
+      },
+      "counts_by_split_class.csv": {
+        "sha256": "f3c72a71ac8075d056cd67ea6b93ef4efde659ab63f0255e5c253f118c5114ad",
+        "size_bytes": 610
+      },
+      "derivative_membership.csv": {
+        "sha256": "ab266283b7718b8fb6be98c8163669d16213b37ff0fc31a8dc1a9341c7b5f8a0",
+        "size_bytes": 715762
+      },
+      "derivative_membership.json": {
+        "sha256": "e4dd498cdb6a6fc44ba65db168169a70a094f8d276a156a03468169d4ea9312c",
+        "size_bytes": 1833584
+      },
+      "full_candidate_membership.csv": {
+        "sha256": "3995f5c60d900063beada85534d269f37e5e00e7bebba3375000cc5d2ce43e36",
+        "size_bytes": 83297
+      },
+      "full_candidate_membership.json": {
+        "sha256": "af3fae09df6b5aef138dc7c89159f50cdad9745680c4379971b87e6f6d6b245c",
+        "size_bytes": 248741
+      },
+      "grouping_validation.json": {
+        "sha256": "139ac3039415efafbefd00d8caeaf33324091eeaae5cc7643c9455c7c2916057",
+        "size_bytes": 6573
+      },
+      "image_membership.csv": {
+        "sha256": "f9e153e1583a87f03c78b4955bd1eb0f1d96025b0e14595635e12e3b65562173",
+        "size_bytes": 400437
+      },
+      "image_membership.json": {
+        "sha256": "71bd358def07bbfaeba973190a47bce3eae5d754ad434ba54ecbd6d8eee8bcd3",
+        "size_bytes": 823260
+      },
+      "object_membership.csv": {
+        "sha256": "89a0156ca5fed9a6817da3175c504167cea7c1614a3568a40f40d65d433c6976",
+        "size_bytes": 511311
+      },
+      "object_membership.json": {
+        "sha256": "c01da3d7e93ab224d6d936d6d6c6e427c289bae78f422774477ca3b48ea3d16c",
+        "size_bytes": 835190
+      },
+      "objective_validation.json": {
+        "sha256": "f5827a3168d8bbafe4a165342000f2bcd9628a22268211019fe2530c3b87b7cd",
+        "size_bytes": 2658
+      },
+      "seeded_order_validation.json": {
+        "sha256": "01945a9f96e8e35f042c123dd70e696a1a25d6597e4c97e75f7fa527314d8afb",
+        "size_bytes": 610
+      },
+      "split_statistics.json": {
+        "sha256": "db19b9d302d4b15aed4852c93960d6e60dbbbea498d2daa52cc5ce7735d246c1",
+        "size_bytes": 8561
+      },
+      "splits/test.csv": {
+        "sha256": "05215357f7228a2f1a130a5a38dab11b43158bd726197df09fc873a9d09f5a15",
+        "size_bytes": 78891
+      },
+      "splits/test.json": {
+        "sha256": "2ffc150e4ce5fd4f438a2ba317edf8b2a84d58d8e7579910fb0597a8c95aca8a",
+        "size_bytes": 330013
+      },
+      "splits/train.csv": {
+        "sha256": "f69c2013bcef95b70cfdb0fa5e4962d112fe886f6b5875addf5bc7c924d9ebbf",
+        "size_bytes": 239508
+      },
+      "splits/train.json": {
+        "sha256": "2796453de81d6b37f920e08a362a86bb43d9e0081ab043845a930b5dd567818e",
+        "size_bytes": 1003493
+      },
+      "splits/validation.csv": {
+        "sha256": "ea0d16c839c01062d7a491dc41aab4a102e861b9fdc469da21ab27d29165aa23",
+        "size_bytes": 82452
+      },
+      "splits/validation.json": {
+        "sha256": "c31844bfda2ca7f13837b3001eb66c0a27d8ae8ed4bff99cfe6fd347851add94",
+        "size_bytes": 342722
+      }
+    },
+    "optimizer_input_sha256": "b625d61b87c3452b08942918acdbd75517f5e31e1ae053cc106f0b6a727e1d6d",
+    "optimizer_result_sha256": "f6f7a2bad3f81ca4259d238aaca1c817b896ce944775c76720d318fa3c23ba47",
+    "primary_representation": "A",
+    "quality_authority_E_inventory_sha256": "6f14587ca7086fc31940d332e5a18e22602f16536c0fde8a84bd7ce33670fbd3",
+    "schema": "Dataset-v2G-object-grouped-split-v1",
+    "source_F_inventory_sha256": "66eafccf1a30fa738a56359617ac4dcb5b4cfc73ec6684166c4ee7752d4b1b39",
+    "source_F_protocol_bundle_sha256": "a61ff785aebafd744afd8f7755657f0eff4bf48a8d8696587cb895eb6b955f1e",
+    "source_algorithm_sha256": "d4dc13643fc6f2cdc2fabff49d62098b159ce2157e8b0ac9b2e4e36af00fc573",
+    "split_seed": 3908274,
+    "statistical_unit": "physical_astronomical_object",
+    "tensors_created": false
+  },
+  "canonical_split_sha256": "1678a37f154baf5ff6895c81d286f3cac72fdaead7919e30f2af655be7bd33bf",
+  "canonicalization": "UTF8 JSON of binding, sorted keys, separators comma/colon, ensure_ascii=False, allow_nan=False; SHA256.",
+  "counts": {
+    "test": {
+      "FITS_master_images": 219,
+      "active_assignment_units": 61,
+      "all_lineage_derivatives_inheriting_constraint_role": 356,
+      "distinct_physical_objects": 73,
+      "integer_deviation_from_global_target": -1,
+      "object_fraction_decimal": 0.1972972972972973,
+      "object_fraction_exact": "73/370",
+      "objects": 73,
+      "per_class": {
+        "galaxies": {
+          "D_deterministic_quality": 18,
+          "E_author_accept_quality": 1,
+          "FITS_band_images": 57,
+          "assignment_units_touching_class": 14,
+          "distinct_physical_objects": 19,
+          "frozen_class": "galaxies",
+          "object_observations": 19,
+          "split": "test"
+        },
+        "globularclusters": {
+          "D_deterministic_quality": 18,
+          "E_author_accept_quality": 0,
+          "FITS_band_images": 54,
+          "assignment_units_touching_class": 18,
+          "distinct_physical_objects": 18,
+          "frozen_class": "globularclusters",
+          "object_observations": 18,
+          "split": "test"
+        },
+        "nebulae": {
+          "D_deterministic_quality": 15,
+          "E_author_accept_quality": 2,
+          "FITS_band_images": 51,
+          "assignment_units_touching_class": 14,
+          "distinct_physical_objects": 17,
+          "frozen_class": "nebulae",
+          "object_observations": 17,
+          "split": "test"
+        },
+        "opencluster": {
+          "D_deterministic_quality": 15,
+          "E_author_accept_quality": 4,
+          "FITS_band_images": 57,
+          "assignment_units_touching_class": 16,
+          "distinct_physical_objects": 19,
+          "frozen_class": "opencluster",
+          "object_observations": 19,
+          "split": "test"
+        }
+      },
+      "standalone_derivatives_of_eligible_parents": 352,
+      "target_fraction_exact": "1/5",
+      "target_object_count": 74
+    },
+    "train": {
+      "FITS_master_images": 666,
+      "active_assignment_units": 222,
+      "all_lineage_derivatives_inheriting_constraint_role": 1180,
+      "distinct_physical_objects": 222,
+      "integer_deviation_from_global_target": 0,
+      "object_fraction_decimal": 0.6,
+      "object_fraction_exact": "3/5",
+      "objects": 222,
+      "per_class": {
+        "galaxies": {
+          "D_deterministic_quality": 56,
+          "E_author_accept_quality": 3,
+          "FITS_band_images": 177,
+          "assignment_units_touching_class": 59,
+          "distinct_physical_objects": 59,
+          "frozen_class": "galaxies",
+          "object_observations": 59,
+          "split": "train"
+        },
+        "globularclusters": {
+          "D_deterministic_quality": 52,
+          "E_author_accept_quality": 3,
+          "FITS_band_images": 165,
+          "assignment_units_touching_class": 55,
+          "distinct_physical_objects": 55,
+          "frozen_class": "globularclusters",
+          "object_observations": 55,
+          "split": "train"
+        },
+        "nebulae": {
+          "D_deterministic_quality": 42,
+          "E_author_accept_quality": 9,
+          "FITS_band_images": 153,
+          "assignment_units_touching_class": 51,
+          "distinct_physical_objects": 51,
+          "frozen_class": "nebulae",
+          "object_observations": 51,
+          "split": "train"
+        },
+        "opencluster": {
+          "D_deterministic_quality": 44,
+          "E_author_accept_quality": 13,
+          "FITS_band_images": 171,
+          "assignment_units_touching_class": 57,
+          "distinct_physical_objects": 57,
+          "frozen_class": "opencluster",
+          "object_observations": 57,
+          "split": "train"
+        }
+      },
+      "standalone_derivatives_of_eligible_parents": 1156,
+      "target_fraction_exact": "3/5",
+      "target_object_count": 222
+    },
+    "validation": {
+      "FITS_master_images": 225,
+      "active_assignment_units": 75,
+      "all_lineage_derivatives_inheriting_constraint_role": 384,
+      "distinct_physical_objects": 75,
+      "integer_deviation_from_global_target": 1,
+      "object_fraction_decimal": 0.20270270270270271,
+      "object_fraction_exact": "15/74",
+      "objects": 75,
+      "per_class": {
+        "galaxies": {
+          "D_deterministic_quality": 19,
+          "E_author_accept_quality": 1,
+          "FITS_band_images": 60,
+          "assignment_units_touching_class": 20,
+          "distinct_physical_objects": 20,
+          "frozen_class": "galaxies",
+          "object_observations": 20,
+          "split": "validation"
+        },
+        "globularclusters": {
+          "D_deterministic_quality": 19,
+          "E_author_accept_quality": 0,
+          "FITS_band_images": 57,
+          "assignment_units_touching_class": 19,
+          "distinct_physical_objects": 19,
+          "frozen_class": "globularclusters",
+          "object_observations": 19,
+          "split": "validation"
+        },
+        "nebulae": {
+          "D_deterministic_quality": 17,
+          "E_author_accept_quality": 0,
+          "FITS_band_images": 51,
+          "assignment_units_touching_class": 17,
+          "distinct_physical_objects": 17,
+          "frozen_class": "nebulae",
+          "object_observations": 17,
+          "split": "validation"
+        },
+        "opencluster": {
+          "D_deterministic_quality": 15,
+          "E_author_accept_quality": 4,
+          "FITS_band_images": 57,
+          "assignment_units_touching_class": 19,
+          "distinct_physical_objects": 19,
+          "frozen_class": "opencluster",
+          "object_observations": 19,
+          "split": "validation"
+        }
+      },
+      "standalone_derivatives_of_eligible_parents": 364,
+      "target_fraction_exact": "1/5",
+      "target_object_count": 74
+    }
+  },
+  "exactly_one_split": true,
+  "materialized_utc": "2026-10-24T02:30:12.829347+00:00"
+}

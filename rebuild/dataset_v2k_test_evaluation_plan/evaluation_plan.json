@@ -1,0 +1,240 @@
+{
+  "canonical_sha256": "c0fd829094c6ad02a9cd4b0099c7accec18743ef576cbedffbce96735941c231",
+  "code_and_execution_gates": {
+    "future_inference_and_scoring_source_hashes_must_be_frozen_before_access": true,
+    "no_network_or_installation": true,
+    "preprocessing_and_model_source_hashes_recorded": true,
+    "test_evaluator_code_created_in_this_plan_phase": false,
+    "test_evaluator_code_sha256": null,
+    "test_scoring_code_created_in_this_plan_phase": false,
+    "test_scoring_code_sha256": null
+  },
+  "evaluation_authorized_now": false,
+  "frozen_identity": {
+    "assignment_unit_count": 61,
+    "class_order": [
+      "galaxies",
+      "globularclusters",
+      "nebulae",
+      "opencluster"
+    ],
+    "sealed_label_manifest_sha256_bytes": "8355ae20da64b27eaa1506bbde960e7f3b2b34c8c148fe73b68fff8ff43c3121",
+    "split_digest": "1678a37f154baf5ff6895c81d286f3cac72fdaead7919e30f2af655be7bd33bf",
+    "test_membership_digest": "ed396faf242a2ec183a7c9b5a906f46e4a0b4d373d452371b90f6fe2c266a53d",
+    "test_observation_count": 73,
+    "v2G_membership_file_sha256_bytes": "0440a32d8ef8d314fcea828e14ba517a5621fd0b0a67ca750ae6ddb99a424209",
+    "v2G_split_manifest_file_sha256_bytes": "85335f9f6db49689c9a68200c7d2b77d0a8912e9acd8a63fbaf8cc6fe20f33c7"
+  },
+  "frozen_targets": {
+    "canonical_sha256": "ccb33c9a90b867bf859a1b99db29c87c3b02a8d4cc3fab2c9f48465c775c8942",
+    "metadata_controls": 2,
+    "network_checkpoints": 36,
+    "path": "rebuild/dataset_v2k_test_evaluation_plan/evaluation_targets.json",
+    "total_evaluations": 38
+  },
+  "inference_contract": {
+    "adapter_applies": [
+      "A",
+      "B",
+      "A_outer",
+      "B_outer"
+    ],
+    "augmentation": "identity only; no D4, random transforms, TTA, crop, threshold or fitted transform",
+    "batch_size": 16,
+    "channels": [
+      "blue",
+      "red",
+      "NIR"
+    ],
+    "class_order": [
+      "galaxies",
+      "globularclusters",
+      "nebulae",
+      "opencluster"
+    ],
+    "custom_input_adapter": "torch.nn.functional.interpolate(x.unsqueeze(0), size=(256, 256), mode=\"bilinear\", align_corners=False, antialias=True).squeeze(0).contiguous()",
+    "decision_rule": "four-class argmax in frozen class order; no calibrated or tuned threshold",
+    "determinism": "CUBLAS_WORKSPACE_CONFIG=:4096:8; deterministic algorithms and cuDNN deterministic; benchmark false; TF32 disabled",
+    "input_source": "frozen v2H tensors for exactly the common ordered test membership",
+    "metadata_controls": "load the two hash-verified frozen joblib artifacts; predict with the frozen feature order and train-only preprocessing embedded in those artifacts; do not refit/impute/scale using held-out data",
+    "model_mode": "eval() and inference_mode/no_grad; float32; no AMP",
+    "normalization": "exact v2H frozen normalization; no additional family/ImageNet normalization",
+    "representations": [
+      "A",
+      "B",
+      "A_outer",
+      "B_outer"
+    ]
+  },
+  "inference_or_scoring_performed_now": false,
+  "isolation_and_order": [
+    "Before test content access, recheck all frozen protocol, selection, checkpoint, code, tensor-manifest, split, membership-byte and label-manifest hashes.",
+    "Verify 73 eligible observations and 61 frozen assignment units against the already sealed membership digest; do not include/expose truth to inference workers.",
+    "Construct a truth-free ordered membership view for inference. The worker can read only identifiers, unit IDs and tensors; it cannot read the sealed label manifest or class labels.",
+    "Run every one of the 38 targets once in the frozen target order, on the same ordered membership, then write and SHA-256 seal all prediction files and their manifest.",
+    "After all prediction hashes are immutable, release the frozen truth to a separate scorer exactly once; never expose truth back to prediction workers.",
+    "Compute the declared metrics, summaries, bootstrap, randomization and Holm corrections once; do not act on interim scores."
+  ],
+  "metrics_and_aggregation": {
+    "FOV_bins_arcmin": [
+      "5 exactly",
+      "(5,10]",
+      "(10,20]",
+      "(20,40]",
+      "(40,80]",
+      "(80,120]"
+    ],
+    "also": [
+      "per_class_precision_recall_f1_support",
+      "confusion_matrix_true_rows_predicted_columns",
+      "object_level_prediction_records",
+      "FOV_and_extent_stratified_metrics"
+    ],
+    "empty_or_degenerate_strata": "report zero/undefined support explicitly; do not omit or merge bins after viewing results",
+    "extent_pixel_bins": [
+      "<2",
+      "[2,8)",
+      "[8,32)",
+      "[32,128)",
+      ">=128",
+      "unknown"
+    ],
+    "family_summary": "for each architecture × representation, report the three seeds and mean ± sample SD (ddof=1); never select best seed",
+    "metadata": "report both fixed metadata/FOV controls separately as descriptive controls; no averaging with neural families",
+    "metric_conventions": "balanced accuracy averages recall over classes with positive true support; macro-F1 includes all four frozen classes with zero when denominator is zero; report degeneracies/support explicitly",
+    "per_seed": "report every network seed separately for each architecture and representation",
+    "primary": [
+      "balanced_accuracy",
+      "macro_f1",
+      "accuracy"
+    ]
+  },
+  "paired_statistics": {
+    "bootstrap": {
+      "estimand": "seed-level paired metric differences and mean of the three matched-seed differences; conditional on frozen checkpoints",
+      "generator": "NumPy PCG64",
+      "interval": "two-sided 95% percentile; linear quantile",
+      "replicates": 20000,
+      "same_draws_across": "all paired models, representations, metrics and seeds",
+      "seed": 20261021
+    },
+    "metadata_control_comparisons": "paired assignment-unit bootstrap differences versus each A architecture; descriptive only as frozen in v2I",
+    "multiplicity": {
+      "families": [
+        "9 hypotheses: three architecture pairs × three primary metrics on A",
+        "27 hypotheses: three architecture pairs × three metrics across B/A_outer/B_outer",
+        "27 hypotheses for each frozen network control representation versus A, as declared in v2I"
+      ],
+      "intervals": "marginal percentile intervals; not simultaneous after Holm",
+      "method": "Holm step-down, alpha 0.05",
+      "no_t_test_n3": true
+    },
+    "randomization": {
+      "generator": "NumPy PCG64",
+      "replicates": 20000,
+      "same_swaps_across": "related models, representations, metrics and seeds",
+      "seed": 20261021,
+      "two_sided_p": "(1 + count(replicates at least as extreme))/(20001)",
+      "unit": "assignment unit; jointly swap model predictions for every object in sampled unit and matched seeds"
+    },
+    "unit": "61 frozen v2G assignment units; all objects in a unit stay together"
+  },
+  "phase": "Dataset-v2K test-evaluation plan",
+  "plan_bindings_sha256": "ba42525a477134fb31dea1b87f582422d582a36b2cb34d50bb6dd8eab1039124",
+  "plan_created_without_test_content": true,
+  "prediction_schema": {
+    "membership_order_shared_by_all_38_targets": true,
+    "one_file_per_target": true,
+    "record_identity": [
+      "target_id",
+      "family/control_id",
+      "representation",
+      "seed",
+      "configuration_id",
+      "checkpoint_or_artifact_sha256",
+      "protocol_sha256",
+      "split_digest",
+      "preprocessing_digest",
+      "environment_digest"
+    ],
+    "required_fields_per_row": [
+      "ordered_position",
+      "physical_object_id",
+      "split_unit_id",
+      "predicted_class",
+      "four_class_probabilities"
+    ],
+    "sealing": "SHA-256 each target prediction file and canonical manifest before scorer receives truth",
+    "truth_in_prediction_record": false
+  },
+  "preservation": {
+    "no_v2J1_or_v2J2_write_performed": true,
+    "v2J1_inventory_verified": {
+      "all_listed_files_match": true,
+      "entries_verified": 19,
+      "inventory_canonical_sha256": "b8a2830b6a652574ce2fce122f2f577843e587ca2ed2944dc1026c0827ca6970",
+      "inventory_file_sha256": "e193e04d40e38cf2282fd791a5c383c7f6e02a9c14256b64c9e3f8f8377ca18f",
+      "inventory_path": "rebuild/dataset_v2j1_validation_search/repair_r4/file_inventory_r4.json"
+    },
+    "v2J2_inventory_verified": {
+      "all_listed_files_match": true,
+      "entries_verified": 360,
+      "inventory_canonical_sha256": "d309634a1bbd11fdd99b5fb6c2b42a3576c6f70d41d66c82098ac8020fc9b0ff",
+      "inventory_file_sha256": "8f1eb9e80d349e594fda9f0394606175e87fde50ce660ec7c26bf0b13912a4e6",
+      "inventory_path": "rebuild/dataset_v2j2_control_fits/file_inventory_v2j2_final.json"
+    }
+  },
+  "required_future_outputs": [
+    "execution_manifest.json",
+    "membership_hash_receipt.json",
+    "sealed_truth_receipt.json",
+    "predictions/<target_id>.json × 38",
+    "prediction_manifest.json",
+    "per_seed_metrics.csv",
+    "family_representation_summary.csv",
+    "metadata_control_metrics.csv",
+    "per_class_metrics.csv",
+    "confusion_matrices.json",
+    "paired_comparisons.csv",
+    "bootstrap_intervals.csv",
+    "randomization_tests.csv",
+    "fov_extent_stratified_metrics.csv",
+    "validation.json",
+    "REPORT.md",
+    "file_inventory.json"
+  ],
+  "scientific_limits": [
+    "No test outcome may trigger retraining, replacement, tuning, representation choice, seed selection, threshold changes, or preprocessing changes.",
+    "Report all target results, including failures, degeneracies and low-support strata.",
+    "Inference uncertainty is conditional on frozen checkpoints; seeds are not an inferential n=3 sample.",
+    "The inference/statistical unit is the frozen assignment unit, not each FITS image or treating 73 objects as independent.",
+    "No broad astronomical population generalization claim follows from this single frozen held-out collection."
+  ],
+  "selection_independence": {
+    "all_declared_targets_reported_regardless_of_performance": true,
+    "control_results_do_not_change_primary_representation_A": true,
+    "metadata_targets_are_the_two_frozen_v2I_controls": true,
+    "network_targets_are_exact_union_of_R4_A_and_v2J2_B_A_outer_B_outer": true,
+    "no_retraining_replacement_reselection_or_threshold_change": true,
+    "no_test_based_selection_or_best_seed": true
+  },
+  "single_pass": {
+    "metadata_model_observation_pairs": 146,
+    "network_model_observation_pairs": 2628,
+    "no_training_optimizer_or_scheduler": true,
+    "observations_per_target": 73,
+    "one_inference_evaluation_per_target": true,
+    "successful_evaluation_must_not_be_repeated": true,
+    "total_model_observation_predictions": 2774
+  },
+  "status": "plan_frozen_execution_not_authorized_by_this_phase",
+  "stopping_rules": [
+    "Any protocol, digest, checkpoint, code, environment, split, membership, tensor-manifest or sealed-label hash mismatch: stop before decoding/inference.",
+    "Any missing/extra/duplicate observation, assignment unit, checkpoint, model control, or unequal ordered membership across targets: stop before inference.",
+    "Any class-order, tensor shape/range, preprocessing, metadata-feature, deterministic-runtime or truth-isolation mismatch: stop before inference.",
+    "Any nonfinite probability, malformed probability row, inference exception, partial prediction, hash mismatch or non-deterministic output: preserve partial evidence and stop; do not retry or repeat a completed target under this plan.",
+    "Any metric/scoring discrepancy, support mismatch, confusion-matrix total mismatch, or analysis implementation/hash mismatch: stop scoring and preserve sealed predictions/truth separation; no altered analysis or rerun without separate authorization."
+  ],
+  "test_pixels_membership_rows_or_labels_opened_now": false,
+  "version": "v2K-plan-01"
+}

@@ -1,0 +1,19 @@
+{
+  "best_checkpoints": 27,
+  "canonical_sha256": "7146693e81949ef206f9914cffeb1b92b619f7769158f47dc4ed19bb60728f3c",
+  "complete_records_and_all_artifacts_hash_verified": true,
+  "completed_fit_records": 27,
+  "control_results_used_to_reselect": false,
+  "families": 3,
+  "fit_matrix_exact": true,
+  "fit_slots": 27,
+  "phase": "Dataset-v2J2",
+  "representations": 3,
+  "seeds_per_family_representation": 3,
+  "status": "passed",
+  "test_data_accessed": false,
+  "test_inference_or_scoring": false,
+  "test_labels_deserialized": false,
+  "validation_prediction_vectors": 27,
+  "validation_rows_per_fit": 75
+}

@@ -1,0 +1,148 @@
+{
+  "active_floors": null,
+  "active_fractions": null,
+  "active_profile": null,
+  "active_split_seed": null,
+  "algorithm": {
+    "budget": "If3^K>2000000, if no floor-compliant assignment exists, if identity/class contradictions exist, or any source hash differs, stop; no heuristic fallback, split-seed retry, pool expansion or floor weakening.",
+    "input": "Freeze370 E-eligible object IDs and full473-universe constraint union first. Count each physical object once. Retain17 original overlap components, aliases, derivatives and exact-content edges transitively before projecting eligibility; excluded bridges remain constraints.",
+    "name": "Exact coupled-unit enumeration plus convex singleton apportionment",
+    "objective_exact": "Minimize sum over all four classes and three roles of (role_object_count/class_object_total - requested_fraction_role)^2 using rational arithmetic. Equal class weighting; no image quality, appearance, model result, FOV or metadata feature enters this objective.",
+    "reference_implementation": "split_algorithm_reference.py; only synthetic cases executed in this phase.",
+    "step1": "Order coupled units by SHA256 Dataset-v2F|seed|coupled|unit_id, then unit_id. Order role branches by SHA256 Dataset-v2F|seed|role|role_name, then train/validation/test index. Enumerate3^K assignments, no seed search.",
+    "step2": "For each coupled assignment and each class, set singleton lower bounds max(0,floor_role-coupled_class_count_role). If their sum exceeds remaining singleton count, assignment infeasible. Otherwise repeatedly allocate one singleton count to role with smallest exact rational marginal squared-target-error2*(allocated-target_residual)+1. Equal marginal costs favor train, then validation, then test.",
+    "step3": "Choose first globally minimal feasible coupled assignment in the fixed seeded enumeration order. Within each class order singleton units by SHA256 Dataset-v2F|seed|singleton|class|unit_id then unit_id. Allocate first n_train to train, next n_validation to validation, remainder test.",
+    "step4": "Every eligible observation and derivative inherits its physical object and complete component role. All noneligible members retain that grouping constraint without becoming observations. Inactive units remain outside the primary pool.",
+    "structure_observed_without_assignment": {
+      "active_units": 358,
+      "coupled_assignments_to_consider": 177147,
+      "coupled_object_sizes": {
+        "2": 10,
+        "3": 1
+      },
+      "coupled_units": 11,
+      "cross_class_active_units": 1,
+      "single_object_units": 347
+    },
+    "toy_validation": {
+      "count_allocator_bruteforce_checks": 30,
+      "cross_class_component_atomic": true,
+      "infeasible_floor_stops": true,
+      "input_order_independence": true,
+      "primary_eligibility_assignments_generated": 0,
+      "synthetic_only": true,
+      "toy_exact_objective": "1/75"
+    }
+  },
+  "alternative_profiles_require_author_decision": {
+    "phase4f": {
+      "active_for_v2": false,
+      "fractions_exact": [
+        "485/801",
+        "158/801",
+        "158/801"
+      ],
+      "minimum_distinct_objects_per_class": {
+        "test": 10,
+        "train": 20,
+        "validation": 5
+      },
+      "source_scope": "Historical v1 declaration; explicit v2 adoption required",
+      "split_seed": 20261022
+    },
+    "phase4f2": {
+      "active_for_v2": false,
+      "fractions_exact": [
+        "3/5",
+        "1/5",
+        "1/5"
+      ],
+      "minimum_distinct_objects_per_class": {
+        "test": 10,
+        "train": 21,
+        "validation": 6
+      },
+      "source_scope": "Historical v1 declaration; explicit v2 adoption required",
+      "split_seed": 3908274
+    }
+  },
+  "canonical_sha256": "2e46a15a5156c24218cf851ba0a15647efc6a20a65d4e46dfffe7a310f65703c",
+  "class_stratification": "Object counts, not FITS-image counts; retain cross-class groups as whole indivisible assignment units. Quality evidence tiers and frozen subtypes reported, never re-ranked to balance after outcomes.",
+  "declaration_recovery_sha256": "44a65136713613e8eabbb1afb39394e8228e59b2d6482b13ea7f760acfb324c0",
+  "eligibility": {
+    "FITS_band_images": 1110,
+    "candidate_count": 370,
+    "excluded_13_rejected_and17_deferred": true,
+    "no_new_replacements": true,
+    "only_quality_authority": "Dataset-v2E",
+    "physical_object_groups": 370,
+    "unused_reserves_or_blocked_candidates_not_admitted": true
+  },
+  "final_split_materialized": false,
+  "fraction_scope_note": "Recovering different historical v1 settings is not adoption. No active v2 fractions, floors or seed are inferred from audit/randomization/training seeds.",
+  "future_statistical_unit": {
+    "bootstrap_prospective": "10000 paired replicates, seed2026102305,95percentile intervals; same resampled components for every compared frozen model/seed. Conditional on frozen checkpoints; training-seed uncertainty is not fully represented. No bootstrap or model metrics run now.",
+    "dependence": "Report370 physical-object units and358 active assignment/dependence units. For sample-uncertainty bootstrap, resample complete active dependence components and retain all object records/multiplicities; compute metrics with one weight per object, not one vote per FITS or equal-weight component averages.",
+    "multiple_observations_if_ever_authorized": "Primary score uses one deterministic canonical observation per object, lexicographic frozen source path then ID; all other views remain same role and auxiliary. Current370 have one three-band bundle each.",
+    "observation": "Physical astronomical object; three bands jointly define one observation. No band, preview, derivative or augmentation inflates n."
+  },
+  "nominal_integer_object_targets_if_groups_were_singletons": {
+    "phase4f": {
+      "galaxies": [
+        60,
+        19,
+        19
+      ],
+      "globularclusters": [
+        56,
+        18,
+        18
+      ],
+      "nebulae": [
+        51,
+        17,
+        17
+      ],
+      "opencluster": [
+        57,
+        19,
+        19
+      ]
+    },
+    "phase4f2": {
+      "galaxies": [
+        59,
+        20,
+        19
+      ],
+      "globularclusters": [
+        55,
+        19,
+        18
+      ],
+      "nebulae": [
+        51,
+        17,
+        17
+      ],
+      "opencluster": [
+        57,
+        19,
+        19
+      ]
+    }
+  },
+  "nominal_target_note": "Count arithmetic only, not an allocation, split-feasibility certificate or membership proposal. Exact role counts can differ when optimizing indivisible groups.",
+  "object_group_inventory_sha256": "558ed6d41695170bce0dad3159a0f295a1c5ca244f6ae728f5903982868cfde1",
+  "phase": "Dataset-v2F",
+  "primary_membership_assignments_written": 0,
+  "ready_for_split_materialization": false,
+  "requires_before_materialization": [
+    "Explicit v2 numeric split profile or complete new policy",
+    "Primary representation choice frozen before held-out evaluation",
+    "No unresolved physical identity/class conflict",
+    "Frozen source integrity and E eligibility unchanged"
+  ],
+  "scientific_floor_note": "Legacy object floors are planning minima, not power or precision certification. Adoption must be explicit; no new scientific sample-size claim follows from meeting them.",
+  "status": "algorithm_frozen_numeric_policy_pending"
+}

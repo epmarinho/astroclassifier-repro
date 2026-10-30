@@ -1,0 +1,474 @@
+candidate_id,selection_role,target_class,target_subclass,canonical_identifier,ra_deg,dec_deg,catalogue_object_type,catalogue_source,reference_count,morphological_type,major_axis_arcmin,minor_axis_arcmin,vmag,central_concentration,shapley_sawyer_class,identity_status
+3ac45d9ed70e1cf9,primary,galaxies,barred_spiral,SIMBAD:NGC   105,6.31979949466,12.883864962659999,G,SIMBAD TAP,76,Sbc,0.987803,0.769104,,,,catalogue_candidate_pending_cutout_and_visual_qc
+4e4adaab72989d0f,primary,galaxies,barred_spiral,SIMBAD:NGC   662,26.14792233573,37.69580734822,G,SIMBAD TAP,85,Sbc,0.62,0.471,,,,catalogue_candidate_pending_cutout_and_visual_qc
+146149ff9739e8b8,primary,galaxies,barred_spiral,SIMBAD:Z 389-47,43.98867179296,0.69260292956,G,SIMBAD TAP,103,Sb,1.77339,0.671229,,,,catalogue_candidate_pending_cutout_and_visual_qc
+20e7b5a56db25c20,primary,galaxies,barred_spiral,SIMBAD:Z 463-51,47.12799619798,20.77225603768,G,SIMBAD TAP,50,SBb,0.577,0.484,,,,catalogue_candidate_pending_cutout_and_visual_qc
+c4176a0f56b83881,primary,galaxies,barred_spiral,SIMBAD:Z 419-6,66.25546547989,7.17096158444,G,SIMBAD TAP,36,Sb,0.953,0.286,,,,catalogue_candidate_pending_cutout_and_visual_qc
+3c82862f510b4b4a,primary,galaxies,barred_spiral,SIMBAD:UGC  3286,79.83814682085,16.875330866559995,G,SIMBAD TAP,23,SBbc,0.783,0.298,,,,catalogue_candidate_pending_cutout_and_visual_qc
+c6c1a27a3b9a1d35,primary,galaxies,barred_spiral,SIMBAD:Z 285-2,98.50917466598001,58.86149117142,G,SIMBAD TAP,27,Sbc,2.01608,0.370153,,,,catalogue_candidate_pending_cutout_and_visual_qc
+0c3f081172b517ba,primary,galaxies,barred_spiral,SIMBAD:NGC  2344,108.11946992302,47.16675079678,G,SIMBAD TAP,97,Sb,2.27885,2.08332,,,,catalogue_candidate_pending_cutout_and_visual_qc
+d95aca5095fb49f2,primary,galaxies,barred_spiral,SIMBAD:Z   4-45,127.88703222886,-1.1978161054399998,G,SIMBAD TAP,70,SB,0.935397,0.713146,,,,catalogue_candidate_pending_cutout_and_visual_qc
+465be0b3e1bc62af,primary,galaxies,barred_spiral,SIMBAD:Z 152-31,143.85951718272,29.81263621054,G,SIMBAD TAP,78,Sb,1.02114,0.62024,,,,catalogue_candidate_pending_cutout_and_visual_qc
+cc3ddcbed9c3219d,primary,galaxies,barred_spiral,SIMBAD:NGC  3094,150.35808092996,15.770048799509997,G,SIMBAD TAP,125,SBab,1.80941,0.991919,,,,catalogue_candidate_pending_cutout_and_visual_qc
+8cd07027bc9b3c7a,primary,galaxies,barred_spiral,SIMBAD:Z 268-17,169.57112083333334,53.74986388888889,G,SIMBAD TAP,46,SBb,0.367,0.213,,,,catalogue_candidate_pending_cutout_and_visual_qc
+4e7e773144dc38be,primary,galaxies,barred_spiral,SIMBAD:IC 3998,194.94492123013998,27.97385772552,G,SIMBAD TAP,99,SB0,0.588997,0.43574,,,,catalogue_candidate_pending_cutout_and_visual_qc
+2cc3655c7aecb762,primary,galaxies,barred_spiral,SIMBAD:IC 4030,195.11654185059996,27.95599470558,G,SIMBAD TAP,79,SB0,0.447353,0.290645,,,,catalogue_candidate_pending_cutout_and_visual_qc
+17e8a8eaa4e2c569,primary,galaxies,barred_spiral,SIMBAD:NGC  5541,214.13250049605,39.58905871941,G,SIMBAD TAP,69,Sb,1.0196,0.717189,,,,catalogue_candidate_pending_cutout_and_visual_qc
+6148bef94f3acfbf,primary,galaxies,barred_spiral,SIMBAD:Z  78-53,235.81667276751,9.72387921585,G,SIMBAD TAP,39,Sb,0.90017,0.327032,,,,catalogue_candidate_pending_cutout_and_visual_qc
+45cef1bc0ca56afd,primary,galaxies,barred_spiral,SIMBAD:Z 109-26,247.70891466850998,16.25079683088,G,SIMBAD TAP,40,Sb,1.18535,0.449722,,,,catalogue_candidate_pending_cutout_and_visual_qc
+fa956f266e57dd3a,primary,galaxies,barred_spiral,SIMBAD:Z  54-5,257.7743541666666,5.85225,G,SIMBAD TAP,61,Sbc,2.26519,0.35337,,,,catalogue_candidate_pending_cutout_and_visual_qc
+009ed171f20daa88,primary,galaxies,barred_spiral,SIMBAD:Z 323-4,283.40201499894,66.23214843599,G,SIMBAD TAP,32,Sbc,0.851073,0.609539,,,,catalogue_candidate_pending_cutout_and_visual_qc
+522224f33eb8b451,primary,galaxies,barred_spiral,SIMBAD:Z 255-24,285.20070542001,50.88113250359001,G,SIMBAD TAP,46,Sbc,1.19359,0.594287,,,,catalogue_candidate_pending_cutout_and_visual_qc
+5c445f2fdfaf772c,primary,galaxies,barred_spiral,SIMBAD:NGC  6941,309.0978088578199,-4.61873492334,G,SIMBAD TAP,94,Sb,1.807,1.26906,,,,catalogue_candidate_pending_cutout_and_visual_qc
+af4d355324149520,primary,galaxies,barred_spiral,SIMBAD:Z 426-61,322.74010113298993,13.98617490283,G,SIMBAD TAP,49,Sbc,1.71132,0.348082,,,,catalogue_candidate_pending_cutout_and_visual_qc
+beb7631dd5a832a3,primary,galaxies,barred_spiral,SIMBAD:NGC  7241,333.957825,19.232361111111107,G,SIMBAD TAP,77,SBbc,3.70487,0.867681,,,,catalogue_candidate_pending_cutout_and_visual_qc
+5e1e00faa4b3389f,primary,galaxies,barred_spiral,SIMBAD:Z 476-54,352.50479036038,27.086816218199992,G,SIMBAD TAP,54,Sb,1.27792,0.381842,,,,catalogue_candidate_pending_cutout_and_visual_qc
+aa26f55e75989e75,primary,galaxies,elliptical,SIMBAD:IC 5378S,0.65798453661,16.64375928887,G,SIMBAD TAP,26,E,1.07813,0.691623,,,,catalogue_candidate_pending_cutout_and_visual_qc
+5e5007adbdf40bd0,primary,galaxies,elliptical,SIMBAD:LEDA    1614,6.47672889735,25.723665058640005,G,SIMBAD TAP,27,E0,0.59813,0.506018,,,,catalogue_candidate_pending_cutout_and_visual_qc
+5e934087ecaa6f61,primary,galaxies,elliptical,SIMBAD:MCG-07-04-013,22.91283949483,-42.36630071812999,G,SIMBAD TAP,20,E,0.98186,0.621517,,,,catalogue_candidate_pending_cutout_and_visual_qc
+39868d43396cdc13,primary,galaxies,elliptical,SIMBAD:Z 387-43,31.915672711169996,2.1496881178199994,G,SIMBAD TAP,47,E-SO,0.920717,0.83288,,,,catalogue_candidate_pending_cutout_and_visual_qc
+d7b3461c943557b5,primary,galaxies,elliptical,SIMBAD:Z 391-14,54.006625085421256,1.1047598039227782,G,SIMBAD TAP,33,E4,0.473,0.293,,,,catalogue_candidate_pending_cutout_and_visual_qc
+7319425f13d4f8d3,primary,galaxies,elliptical,SIMBAD:LEDA 3092574,60.959370833333345,-2.65765,G,SIMBAD TAP,19,E,0.506443,0.446177,,,,catalogue_candidate_pending_cutout_and_visual_qc
+a64fb2fec3fbeabe,primary,galaxies,elliptical,SIMBAD:MCG-03-13-053,75.43842429683,-15.4487816215,G,SIMBAD TAP,38,E-SO,0.623,0.561,,,,catalogue_candidate_pending_cutout_and_visual_qc
+03849cbbee3bc796,primary,galaxies,elliptical,SIMBAD:2MASX J06114031-3307281,92.91794686451,-33.12445473426,G,SIMBAD TAP,26,E-SO,0.523,0.429,,,,catalogue_candidate_pending_cutout_and_visual_qc
+a5d098f8f6adff7c,primary,galaxies,elliptical,SIMBAD:Z 206-21,116.49473758783,41.11938712335,G,SIMBAD TAP,26,E1,0.702743,0.638442,,,,catalogue_candidate_pending_cutout_and_visual_qc
+a054df736666588b,primary,galaxies,elliptical,SIMBAD:IRAS 08486+0114,132.803604,1.061908,G,SIMBAD TAP,28,eS,0.315027,0.208264,,,,catalogue_candidate_pending_cutout_and_visual_qc
+c0de6bd71825beed,primary,galaxies,elliptical,SIMBAD:NGC  2802,139.17260854716,18.96345819213,G,SIMBAD TAP,39,E,0.770353,0.586624,,,,catalogue_candidate_pending_cutout_and_visual_qc
+524edea9ea83dfe3,primary,galaxies,elliptical,SIMBAD:Z 240-40,156.19353840305,46.45605096204,G,SIMBAD TAP,35,E0,0.544253,0.508441,,,,catalogue_candidate_pending_cutout_and_visual_qc
+35e832235a08270f,primary,galaxies,elliptical,SIMBAD:IC  678,168.52656693697,6.57721800194,G,SIMBAD TAP,37,E,0.929587,0.657218,,,,catalogue_candidate_pending_cutout_and_visual_qc
+1f5377210386e1ed,primary,galaxies,elliptical,SIMBAD:LEDA   44656,194.93220379568996,27.994682930960007,G,SIMBAD TAP,98,E0,0.39032,0.37541,,,,catalogue_candidate_pending_cutout_and_visual_qc
+8b4694c92bc1fe6b,primary,galaxies,elliptical,SIMBAD:NGC  4906,195.16566822404997,27.923956527790004,G,SIMBAD TAP,138,E3,0.669717,0.581649,,,,catalogue_candidate_pending_cutout_and_visual_qc
+e056e94f2a70df73,primary,galaxies,elliptical,SIMBAD:MCG+09-24-032,220.85313967807,52.61453015846,G,SIMBAD TAP,29,E1,0.607663,0.470331,,,,catalogue_candidate_pending_cutout_and_visual_qc
+ee18f0f6b954e9d2,primary,galaxies,elliptical,SIMBAD:Z 135-50,230.37669198103998,21.19060565674,G,SIMBAD TAP,32,E...,0.643,0.515,,,,catalogue_candidate_pending_cutout_and_visual_qc
+fe16bed8793d6625,primary,galaxies,elliptical,SIMBAD:Z  79-57,242.13651711763998,9.606721646079999,G,SIMBAD TAP,32,E,1.00051,0.879145,,,,catalogue_candidate_pending_cutout_and_visual_qc
+6367091fdcc3c0d0,primary,galaxies,elliptical,SIMBAD:NGC  6515,269.35497308842,50.72811994236,G,SIMBAD TAP,46,E3,1.74132,1.30111,,,,catalogue_candidate_pending_cutout_and_visual_qc
+abaccbd3f5f6f70d,primary,galaxies,elliptical,SIMBAD:NGC  6623,274.92863910063,23.709451010859997,G,SIMBAD TAP,30,E,1.047,0.9,,,,catalogue_candidate_pending_cutout_and_visual_qc
+d498364b58b4598e,primary,galaxies,elliptical,SIMBAD:Z 304-2,304.63074672819,62.691205802259994,G,SIMBAD TAP,18,E,0.68,0.626,,,,catalogue_candidate_pending_cutout_and_visual_qc
+bb09353b121f1ece,primary,galaxies,elliptical,SIMBAD:Z 376-27,325.96379743813,-0.32140423483,G,SIMBAD TAP,32,E1,0.627407,0.508199,,,,catalogue_candidate_pending_cutout_and_visual_qc
+92e2a776ce51e66c,primary,galaxies,elliptical,SIMBAD:IC 1460,344.26702916666665,4.6768777777777775,G,SIMBAD TAP,34,E,0.73653,0.662656,,,,catalogue_candidate_pending_cutout_and_visual_qc
+5f71115ebf326c24,primary,galaxies,elliptical,SIMBAD:Z 380-35,350.1211380249,-1.00242079857,G,SIMBAD TAP,34,E1,0.840287,0.781971,,,,catalogue_candidate_pending_cutout_and_visual_qc
+60accc67c15c4ce7,primary,galaxies,irregular,SIMBAD:MCG-03-01-015,0.49125,-15.463888888888889,G,SIMBAD TAP,808,dIrr,11.5,4,,,,catalogue_candidate_pending_cutout_and_visual_qc
+f46cc7727ec16833,primary,galaxies,irregular,SIMBAD:NGC  7809,0.5393625000000001,2.9411111111111112,G,SIMBAD TAP,19,Irr,0.524507,0.453279,,,,catalogue_candidate_pending_cutout_and_visual_qc
+7e249003bb4cf454,primary,galaxies,irregular,SIMBAD:LEDA    1625,6.52479968,25.71924763045,G,SIMBAD TAP,25,Im,1.06,0.254,,,,catalogue_candidate_pending_cutout_and_visual_qc
+ba8ed3d3795d35d2,primary,galaxies,irregular,SIMBAD:LEDA 2807107,36.86208333333333,57.488055555555555,G,SIMBAD TAP,23,Irr,1.7,0.5,,,,catalogue_candidate_pending_cutout_and_visual_qc
+259f8b6075ce4164,primary,galaxies,irregular,SIMBAD:LEDA  166068,38.89875000000001,59.37888888888889,G,SIMBAD TAP,37,Irr,1.7,1.07,,,,catalogue_candidate_pending_cutout_and_visual_qc
+7282db4b149b51a4,primary,galaxies,irregular,SIMBAD:LEDA   16573,75.407632,-4.257912,G,SIMBAD TAP,75,Im,0.473,0.256,,,,catalogue_candidate_pending_cutout_and_visual_qc
+7db60cb6e1e870aa,primary,galaxies,irregular,SIMBAD:MCG+08-12-031,99.65945833333332,49.25886111111111,G,SIMBAD TAP,20,Im,0.717973,0.231834,,,,catalogue_candidate_pending_cutout_and_visual_qc
+b51b3914c49a6545,primary,galaxies,irregular,SIMBAD:UGC  3817,110.68533333333333,45.10852777777778,G,SIMBAD TAP,49,Im,0.42893,0.331906,,,,catalogue_candidate_pending_cutout_and_visual_qc
+558b078dcc462627,primary,galaxies,irregular,SIMBAD:Z  88-7,119.254281,14.396571,G,SIMBAD TAP,163,Im/BCD,1.33734,0.637107,,,,catalogue_candidate_pending_cutout_and_visual_qc
+e9209214fe0f96cd,primary,galaxies,irregular,SIMBAD:Z 150-18,130.65153964101,27.270258314040003,G,SIMBAD TAP,23,Im,0.68348,0.299911,,,,catalogue_candidate_pending_cutout_and_visual_qc
+452fe001e0bf473f,primary,galaxies,irregular,SIMBAD:Z  68-90,178.63744043262,9.54454577447,G,SIMBAD TAP,18,Irr,0.418353,0.331378,,,,catalogue_candidate_pending_cutout_and_visual_qc
+8833b7a0b3fde484,primary,galaxies,irregular,SIMBAD:NGC  4192a,183.33664,14.804898,G,SIMBAD TAP,23,Im(Im/S),0.8,0.8,,,,catalogue_candidate_pending_cutout_and_visual_qc
+fcd87dad1f8e836e,primary,galaxies,irregular,SIMBAD:IC 3471,188.095044,16.018874,G,SIMBAD TAP,35,Im/BCD,0.829077,0.513281,,,,catalogue_candidate_pending_cutout_and_visual_qc
+e4104bde95871d07,primary,galaxies,irregular,SIMBAD:LEDA   42585,190.410269,15.820093,G,SIMBAD TAP,18,Im(Im/S),0.477727,0.218608,,,,catalogue_candidate_pending_cutout_and_visual_qc
+49367de4bd8871df,primary,galaxies,irregular,SIMBAD:UGCA 312,194.7783333333333,-12.227777777777778,G,SIMBAD TAP,20,Irr,0.93,0.62,,,,catalogue_candidate_pending_cutout_and_visual_qc
+27920cd50c5777b9,primary,galaxies,irregular,SIMBAD:LEDA  592761,204.355,-39.897777777777776,G,SIMBAD TAP,48,dIrr,0.44,0.35,,,,catalogue_candidate_pending_cutout_and_visual_qc
+d3e5381e83d879ff,primary,galaxies,irregular,SIMBAD:LEDA  166185,211.79208333333335,35.06027777777778,G,SIMBAD TAP,95,dIrr,0.98,0.66,,,,catalogue_candidate_pending_cutout_and_visual_qc
+de92470910849d9d,primary,galaxies,irregular,SIMBAD:LEDA   50911,213.785803,57.091941,G,SIMBAD TAP,36,Im/BCD,0.709017,0.288641,,,,catalogue_candidate_pending_cutout_and_visual_qc
+59573e4efd49e52d,primary,galaxies,irregular,SIMBAD:LEDA   51659,217.01541666666665,-46.30166666666666,G,SIMBAD TAP,74,dIrr,2.19,0.78,,,,catalogue_candidate_pending_cutout_and_visual_qc
+5830cae1e243d589,primary,galaxies,irregular,SIMBAD:Z 223-33,240.96729207268,39.984400020459994,G,SIMBAD TAP,30,S/Irr,1.06009,0.713761,,,,catalogue_candidate_pending_cutout_and_visual_qc
+6b7bdbbe10fe37b7,primary,galaxies,irregular,SIMBAD:LEDA 2145608,245.842354,39.215390000000006,G,SIMBAD TAP,17,S/Irr,0.33996,0.296853,,,,catalogue_candidate_pending_cutout_and_visual_qc
+07d4f39fe79d73e9,primary,galaxies,irregular,SIMBAD:Z 225-9,253.74470690199996,43.06097652633,G,SIMBAD TAP,21,S/Irr,0.936737,0.388746,,,,catalogue_candidate_pending_cutout_and_visual_qc
+aa18402575a98d2a,primary,galaxies,irregular,SIMBAD:NAME Sgr dIG,292.4958333333334,-17.678055555555556,G,SIMBAD TAP,329,dIrr,2.82,2.19,,,,catalogue_candidate_pending_cutout_and_visual_qc
+666e2f6c3e058f44,primary,galaxies,irregular,SIMBAD:MCG-05-55-012,351.61466666666666,-32.38875,G,SIMBAD TAP,164,dIrr,0.75666666,0.615,,,,catalogue_candidate_pending_cutout_and_visual_qc
+bea4365f7b154d77,primary,galaxies,lenticular,SIMBAD:Z 456-37,2.92986735247,20.97542719352,G,SIMBAD TAP,24,SO,0.740313,0.614756,,,,catalogue_candidate_pending_cutout_and_visual_qc
+be842e1070a7bad9,primary,galaxies,lenticular,SIMBAD:Z 501-39,13.702611755220001,28.8668190082,G,SIMBAD TAP,27,E-S0,1.25462,0.380149,,,,catalogue_candidate_pending_cutout_and_visual_qc
+81d2799e32b588fa,primary,galaxies,lenticular,SIMBAD:MCG+00-06-003,29.202102110070005,-0.21255524760999997,G,SIMBAD TAP,40,E/S0,0.67181,0.343698,,,,catalogue_candidate_pending_cutout_and_visual_qc
+8ea2ac9395b79103,primary,galaxies,lenticular,SIMBAD:IC 1861,43.27912665916,25.49049441558,G,SIMBAD TAP,48,SO,0.873,0.681,,,,catalogue_candidate_pending_cutout_and_visual_qc
+526637a2d58cbec5,primary,galaxies,lenticular,SIMBAD:IRAS 03269-2211,52.292917704800004,-22.02122629571,G,SIMBAD TAP,30,S0...,0.623623,0.395751,,,,catalogue_candidate_pending_cutout_and_visual_qc
+97c952b9dced93e9,primary,galaxies,lenticular,SIMBAD:MCG-06-10-003,63.85336864453,-38.02806532213,G,SIMBAD TAP,19,S0...,0.413,0.339,,,,catalogue_candidate_pending_cutout_and_visual_qc
+62e5b57bcc9b3eb2,primary,galaxies,lenticular,SIMBAD:2MASX J05014010-1523543,75.41719436871,-15.39833343423,G,SIMBAD TAP,22,SO-a,0.493,0.266,,,,catalogue_candidate_pending_cutout_and_visual_qc
+a337c8837e6f4ffc,primary,galaxies,lenticular,SIMBAD:LEDA  149129,100.86810156639,-41.32944128047,G,SIMBAD TAP,19,S0,0.393,0.323,,,,catalogue_candidate_pending_cutout_and_visual_qc
+15c6aa0ec4930b16,primary,galaxies,lenticular,SIMBAD:Z 117-66,115.49427432785,23.17638238347,G,SIMBAD TAP,34,E/S0,0.736003,0.529186,,,,catalogue_candidate_pending_cutout_and_visual_qc
+89bd9c9e463763f2,primary,galaxies,lenticular,SIMBAD:IC 2406,132.01924391229,17.70240252275,G,SIMBAD TAP,36,SO-a,1.54903,0.780245,,,,catalogue_candidate_pending_cutout_and_visual_qc
+cf897bc961cd9807,primary,galaxies,lenticular,SIMBAD:Z 151-58,139.85434564753,26.908902636990003,G,SIMBAD TAP,25,S0,0.895,0.576022,,,,catalogue_candidate_pending_cutout_and_visual_qc
+d9232f994fad916c,primary,galaxies,lenticular,SIMBAD:Z   9-19,156.03194571358,0.14193020586999996,G,SIMBAD TAP,31,S0,0.612413,0.307738,,,,catalogue_candidate_pending_cutout_and_visual_qc
+fcb7ce9ecfe1fe4a,primary,galaxies,lenticular,SIMBAD:Z 242-17,169.30038072070002,46.85986355227,G,SIMBAD TAP,33,S0a,0.66749,0.4591,,,,catalogue_candidate_pending_cutout_and_visual_qc
+ac53277b0c69ba1a,primary,galaxies,lenticular,SIMBAD:LEDA   44652,194.93419145872997,27.958426533770005,G,SIMBAD TAP,64,S0,0.4869,0.245933,,,,catalogue_candidate_pending_cutout_and_visual_qc
+a797a5aae557acc1,primary,galaxies,lenticular,SIMBAD:NGC  5373,209.28108496098997,5.251888334619999,G,SIMBAD TAP,33,E/S0,0.613913,0.575605,,,,catalogue_candidate_pending_cutout_and_visual_qc
+33c613b9c8a268b3,primary,galaxies,lenticular,SIMBAD:IC 1054,221.63019121760996,1.2747750672,G,SIMBAD TAP,32,S0,1.20538,0.874265,,,,catalogue_candidate_pending_cutout_and_visual_qc
+f0bf65dd79f20a36,primary,galaxies,lenticular,SIMBAD:Z 167-8,239.64499742241998,27.618249933360005,G,SIMBAD TAP,27,S0...,0.862683,0.666768,,,,catalogue_candidate_pending_cutout_and_visual_qc
+c35693c56e36cdba,primary,galaxies,lenticular,SIMBAD:Z 167-26,241.667426,30.099069,G,SIMBAD TAP,128,S0a,1.50736,1.014,,,,catalogue_candidate_pending_cutout_and_visual_qc
+8580126f148db2c2,primary,galaxies,lenticular,SIMBAD:NGC  6350,259.67604344863,41.69433454827,G,SIMBAD TAP,20,SO,1.36432,1.17768,,,,catalogue_candidate_pending_cutout_and_visual_qc
+f9e571ea11601fd5,primary,galaxies,lenticular,SIMBAD:Z 341-8,281.8950943653,70.7335750575,G,SIMBAD TAP,23,S0,0.948803,0.763787,,,,catalogue_candidate_pending_cutout_and_visual_qc
+bd4804ad91dbc970,primary,galaxies,lenticular,SIMBAD:LEDA  162599,310.372775,0.132255,G,SIMBAD TAP,19,S0,0.552063,0.147014,,,,catalogue_candidate_pending_cutout_and_visual_qc
+af5857a886f8d697,primary,galaxies,lenticular,SIMBAD:LEDA 1129926,318.71833912706,-0.9777602544199999,G,SIMBAD TAP,24,E/S0,0.569903,0.437344,,,,catalogue_candidate_pending_cutout_and_visual_qc
+015f068bfda74c81,primary,galaxies,lenticular,SIMBAD:Z 405-14,343.97891333266,6.377674946019998,G,SIMBAD TAP,30,SO,0.973037,0.627998,,,,catalogue_candidate_pending_cutout_and_visual_qc
+68291826636a4d49,primary,galaxies,lenticular,SIMBAD:NGC  7698,353.50650959897,24.944638709370004,G,SIMBAD TAP,27,SO,1.0963,0.891295,,,,catalogue_candidate_pending_cutout_and_visual_qc
+0ae8265e18b73a7e,primary,galaxies,unbarred_spiral,SIMBAD:Z 408-41,3.15935873215,5.50539105839,G,SIMBAD TAP,44,SA,1.11772,0.362925,,,,catalogue_candidate_pending_cutout_and_visual_qc
+2442606950dab4e7,primary,galaxies,unbarred_spiral,SIMBAD:NGC   406,16.854416666666665,-69.87924166666666,G,SIMBAD TAP,93,SA(s)c,1.143,0.366,,,,catalogue_candidate_pending_cutout_and_visual_qc
+a8de6aac00201279,primary,galaxies,unbarred_spiral,SIMBAD:Z 388-19,36.96434433304,0.50152635538,G,SIMBAD TAP,59,SAB,1.49508,0.317257,,,,catalogue_candidate_pending_cutout_and_visual_qc
+71727be8a885a365,primary,galaxies,unbarred_spiral,SIMBAD:MCG-06-08-010,50.974583333333335,-37.5086111111111,G,SIMBAD TAP,49,S,1.23644,1.13777,,,,catalogue_candidate_pending_cutout_and_visual_qc
+04c755d5c6eab396,reserve,galaxies,unbarred_spiral,SIMBAD:IC  381,71.11905562207,75.63973384548,G,SIMBAD TAP,49,Sa-Sc,1.053,0.906,,,,catalogue_candidate_pending_cutout_and_visual_qc
+b092ef988c18675a,reserve,galaxies,unbarred_spiral,SIMBAD:NGC  1741B,75.398125,-4.263172222222222,G,SIMBAD TAP,66,Sm,0.523,0.126,,,,catalogue_candidate_pending_cutout_and_visual_qc
+9af756b0a329dbd3,reserve,galaxies,unbarred_spiral,SIMBAD:Z 204-29,103.80922656478,40.96063055879,G,SIMBAD TAP,31,Sc,1.99381,0.919945,,,,catalogue_candidate_pending_cutout_and_visual_qc
+f3cf163a15afc81d,reserve,galaxies,unbarred_spiral,SIMBAD:Z 147-56,115.309868,27.614047,G,SIMBAD TAP,70,SAB,1.57185,0.30211,,,,catalogue_candidate_pending_cutout_and_visual_qc
+12de06cda22a4bd2,reserve,galaxies,unbarred_spiral,SIMBAD:Z 237-13,130.84102612334,45.73600038008999,G,SIMBAD TAP,73,SAB,1.1,0.81312,,,,catalogue_candidate_pending_cutout_and_visual_qc
+e72f2a9d7b83dbb6,reserve,galaxies,unbarred_spiral,SIMBAD:NGC  2730,135.56599583333335,16.838197222222224,G,SIMBAD TAP,90,Scd,1.64134,1.13417,,,,catalogue_candidate_pending_cutout_and_visual_qc
+1201039fb4164dbf,reserve,galaxies,unbarred_spiral,SIMBAD:NGC  3191,154.77142537759,46.45409811508001,G,SIMBAD TAP,74,SA,0.755647,0.577692,,,,catalogue_candidate_pending_cutout_and_visual_qc
+d7b2dea62583cd5a,reserve,galaxies,unbarred_spiral,SIMBAD:NGC  3726,173.33806981069,47.02924450623,G,SIMBAD TAP,378,SAB,6.11659,3.67118,,,,catalogue_candidate_pending_cutout_and_visual_qc
+5f4e9223e3d23f90,reserve,galaxies,unbarred_spiral,SIMBAD:NGC  4220,184.04886311474996,47.88336575033,G,SIMBAD TAP,168,SA,4.07152,1.33872,,,,catalogue_candidate_pending_cutout_and_visual_qc
+b3d0c21180be88d1,reserve,galaxies,unbarred_spiral,SIMBAD:NGC  5248,204.38339378087,8.88513805068,G,SIMBAD TAP,567,SAB,4.63025,3.09856,,,,catalogue_candidate_pending_cutout_and_visual_qc
+becaa879b4808ce5,reserve,galaxies,unbarred_spiral,SIMBAD:NGC  5433,210.65026887499997,32.51042888888889,G,SIMBAD TAP,99,S_AB,1.60662,0.460136,,,,catalogue_candidate_pending_cutout_and_visual_qc
+c75564d4abf95463,reserve,galaxies,unbarred_spiral,SIMBAD:NGC  6014,238.98920585175998,5.93197931357,G,SIMBAD TAP,105,SAB0/a,1.57404,1.34518,,,,catalogue_candidate_pending_cutout_and_visual_qc
+876dab49158c3ad8,reserve,galaxies,unbarred_spiral,SIMBAD:IC 1222,248.78827776482,46.21392024946,G,SIMBAD TAP,70,SAB,1.45779,1.04917,,,,catalogue_candidate_pending_cutout_and_visual_qc
+c5243e8b5a832cd1,reserve,galaxies,unbarred_spiral,SIMBAD:NGC  6330,258.93505090289,29.404322272860004,G,SIMBAD TAP,52,SA_B_x,1.20605,0.470479,,,,catalogue_candidate_pending_cutout_and_visual_qc
+cc02315ab5404e30,reserve,galaxies,unbarred_spiral,SIMBAD:NGC  6636,275.51176987328,66.61663095979,G,SIMBAD TAP,48,S...,2.0134,0.628784,,,,catalogue_candidate_pending_cutout_and_visual_qc
+78a33deab44c3e72,reserve,galaxies,unbarred_spiral,SIMBAD:Z 341-20,287.7694583333334,73.42666666666668,G,SIMBAD TAP,41,S,1.1,0.71,,,,catalogue_candidate_pending_cutout_and_visual_qc
+6c0707f6206f3231,reserve,galaxies,unbarred_spiral,SIMBAD:Z 448-17,313.5508124999999,17.779336111111114,G,SIMBAD TAP,34,Sc,0.993,0.159,,,,catalogue_candidate_pending_cutout_and_visual_qc
+f3e8089e1a5992c9,reserve,galaxies,unbarred_spiral,SIMBAD:Z 377-8,329.53054999999995,1.008875,G,SIMBAD TAP,77,S,1.23191,0.287404,,,,catalogue_candidate_pending_cutout_and_visual_qc
+ea8ed038d936aab3,reserve,galaxies,unbarred_spiral,SIMBAD:NGC  7339,339.445375,23.786672222222226,G,SIMBAD TAP,139,Sab,4.22865,1.01826,,,,catalogue_candidate_pending_cutout_and_visual_qc
+e42410bf73198e22,reserve,galaxies,unbarred_spiral,SIMBAD:Z 381-55,357.77590833333335,1.0565472222222223,G,SIMBAD TAP,122,SAB,1.95156,0.797601,,,,catalogue_candidate_pending_cutout_and_visual_qc
+48fc316e5dc610bf,primary,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:NGC 288,13.1885,-26.58261111,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,8.09,0.99,3080,catalogue_candidate_pending_cutout_and_visual_qc
+8e0e6e6cb34b1ce7,primary,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:Whiting 1,30.7375,-3.25277778,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,15.03,0.55,3080,catalogue_candidate_pending_cutout_and_visual_qc
+ee5018e38709434f,primary,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:NGC 1261,48.06754167,-55.21622222,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,8.29,1.16,3080,catalogue_candidate_pending_cutout_and_visual_qc
+e455444a207cc500,primary,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:Pal 2,71.524625,31.3815,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,13.04,1.53,3080,catalogue_candidate_pending_cutout_and_visual_qc
+f468d560287e1b13,primary,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:NGC 1851,78.52816667,-40.04655556,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,7.14,1.86,3080,catalogue_candidate_pending_cutout_and_visual_qc
+c3accaa184271b2b,primary,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:NGC 2298,102.24754167,-36.00530556,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,9.29,1.38,3080,catalogue_candidate_pending_cutout_and_visual_qc
+2f0098289f450b6d,primary,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:Ko 2,119.57083333,26.255,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,17.6,0.5,3080,catalogue_candidate_pending_cutout_and_visual_qc
+196dcf611a3fd7d0,primary,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:E 3,140.23779167,-77.28188889,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,11.35,0.75,3080,catalogue_candidate_pending_cutout_and_visual_qc
+3956058ff04337f8,primary,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:Pal 3,151.38291667,0.07166667,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,14.26,0.99,3080,catalogue_candidate_pending_cutout_and_visual_qc
+f4874d737eff1672,primary,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:Pal 4,172.32,28.97358333,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,14.2,0.93,3080,catalogue_candidate_pending_cutout_and_visual_qc
+71ac20cc951bfa25,primary,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:NGC 4833,194.89133333,-70.8765,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,6.91,1.25,3080,catalogue_candidate_pending_cutout_and_visual_qc
+6970468c39cac8f6,primary,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:NGC 5286,206.61170833,-51.37425,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,7.34,1.41,3080,catalogue_candidate_pending_cutout_and_visual_qc
+a1be1a336c2157c4,primary,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:NGC 5466,211.36370833,28.53444444,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,9.04,1.04,3080,catalogue_candidate_pending_cutout_and_visual_qc
+c5475381d0a579eb,primary,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:NGC 5986,236.5125,-37.78641667,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,7.52,1.23,3080,catalogue_candidate_pending_cutout_and_visual_qc
+882475ff57c4b430,primary,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:NGC 6171,248.13275,-13.05377778,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,7.93,1.53,3080,catalogue_candidate_pending_cutout_and_visual_qc
+a8cfdd49ea78d99f,primary,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:NGC 6273,255.6575,-26.26797222,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,6.77,1.53,3080,catalogue_candidate_pending_cutout_and_visual_qc
+b57a40e4a6e9b92f,primary,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:NGC 6541,272.00983333,-43.71488889,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,6.3,1.86,3080,catalogue_candidate_pending_cutout_and_visual_qc
+67b2214260dce2e1,primary,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:NGC 6838,298.44370833,18.77919444,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,8.19,1.15,3080,catalogue_candidate_pending_cutout_and_visual_qc
+8800cf816ff82be6,primary,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:NGC 6864,301.51954167,-21.92116667,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,8.52,1.8,3080,catalogue_candidate_pending_cutout_and_visual_qc
+085431ddb05fb54d,primary,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:Pal 12,326.66183333,-21.25261111,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,11.99,2.98,3080,catalogue_candidate_pending_cutout_and_visual_qc
+06a2c00546d85b92,primary,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:NGC 7492,347.11095833,-15.6115,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,11.29,0.72,3080,catalogue_candidate_pending_cutout_and_visual_qc
+1d5ca0e5427c04f4,primary,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:Pal 1,53.3335,79.58105556,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,13.18,2.57,3080,catalogue_candidate_pending_cutout_and_visual_qc
+54f72471bc16cb04,primary,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:Eridanus,66.18541667,-21.18694444,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,14.7,1.1,3080,catalogue_candidate_pending_cutout_and_visual_qc
+311c6ad80398fa19,primary,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:Pyxis,136.99083333,-37.22138889,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,12.9,,3080,catalogue_candidate_pending_cutout_and_visual_qc
+ef59fc78311d9556,primary,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:Ko 1,179.82708333,12.26,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,17.1,0.5,3080,catalogue_candidate_pending_cutout_and_visual_qc
+3f653f55a6bf214a,primary,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:NGC 4372,186.43916667,-72.659,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,7.24,1.3,3080,catalogue_candidate_pending_cutout_and_visual_qc
+34578a9debb3a86c,primary,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:NGC 5053,199.112875,17.70025,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,9.47,0.74,3080,catalogue_candidate_pending_cutout_and_visual_qc
+047b2bb48051c5fe,primary,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:NGC 5634,217.405125,-5.97641667,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,9.47,2.07,3080,catalogue_candidate_pending_cutout_and_visual_qc
+7714859d84b9cd08,primary,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:NGC 5927,232.002875,-50.67302778,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,8.01,1.6,3080,catalogue_candidate_pending_cutout_and_visual_qc
+6f6d2ae6c1453154,primary,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:NGC 6144,246.80775,-26.0235,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,9.01,1.55,3080,catalogue_candidate_pending_cutout_and_visual_qc
+b70e3b8168d14f90,primary,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:NGC 6333,259.79691667,-18.51594444,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,7.72,1.25,3080,catalogue_candidate_pending_cutout_and_visual_qc
+a7bdc0c9b02df28b,primary,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:NGC 6723,284.888125,-36.63225,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,7.01,1.11,3080,catalogue_candidate_pending_cutout_and_visual_qc
+f7268c0c94b831e6,primary,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:NGC 6760,287.80004167,1.03047222,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,8.88,1.65,3080,catalogue_candidate_pending_cutout_and_visual_qc
+afc0eb83f5b8e214,primary,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:NGC 6934,308.547375,7.40447222,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,8.83,1.53,3080,catalogue_candidate_pending_cutout_and_visual_qc
+c3da95b9451e96af,primary,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:Pal 13,346.68516667,12.772,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,13.47,0.66,3080,catalogue_candidate_pending_cutout_and_visual_qc
+7d5c90621a5cf165,primary,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:AM 1,58.75958333,-49.61527778,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,15.72,1.36,3080,catalogue_candidate_pending_cutout_and_visual_qc
+12dbeeb565db9495,primary,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:NGC 4590,189.86658333,-26.74405556,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,7.84,1.41,3080,catalogue_candidate_pending_cutout_and_visual_qc
+1b3e9e49337d4f11,primary,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:AM 4,209.09041667,-27.1675,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,15.88,0.7,3080,catalogue_candidate_pending_cutout_and_visual_qc
+1a608e154b92c3fe,primary,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:NGC 5694,219.90120833,-26.53894444,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,10.17,1.89,3080,catalogue_candidate_pending_cutout_and_visual_qc
+cacb4f87b0bf30e9,primary,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:NGC 5897,229.35208333,-21.01027778,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,8.53,0.86,3080,catalogue_candidate_pending_cutout_and_visual_qc
+12f374035f3681ec,primary,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:NGC 6101,246.4505,-72.20219444,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,9.16,0.8,3080,catalogue_candidate_pending_cutout_and_visual_qc
+b2d616072de5be06,primary,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:NGC 6362,262.979125,-67.04833333,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,7.73,1.09,3080,catalogue_candidate_pending_cutout_and_visual_qc
+ab8fb9de3b630d5a,primary,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:NGC 6544,271.83575,-24.99733333,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,7.77,1.63,3080,catalogue_candidate_pending_cutout_and_visual_qc
+33cae948a02c4999,primary,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:Pal 11,296.31,-8.00722222,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,9.8,0.57,3080,catalogue_candidate_pending_cutout_and_visual_qc
+513b79c80af35a13,primary,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:Rup 106,189.6675,-51.15027778,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,10.9,0.7,3080,catalogue_candidate_pending_cutout_and_visual_qc
+eab92d72217ee4bf,primary,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:NGC 5824,225.99429167,-33.06822222,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,9.09,1.98,3080,catalogue_candidate_pending_cutout_and_visual_qc
+f8824cc8f96b51f7,primary,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:NGC 6235,253.35545833,-22.17744444,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,9.97,1.53,3080,catalogue_candidate_pending_cutout_and_visual_qc
+9f2f690f7073111c,primary,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:NGC 6352,261.37129167,-48.42216667,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,7.96,1.1,3080,catalogue_candidate_pending_cutout_and_visual_qc
+328efc63f92c5c4d,primary,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:NGC 6624,275.91879167,-30.36102778,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,7.87,2.5,3080,catalogue_candidate_pending_cutout_and_visual_qc
+def610edb1997f32,primary,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:Terzan 7,289.433,-34.65772222,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,12.0,0.93,3080,catalogue_candidate_pending_cutout_and_visual_qc
+51d974b6351a7a8f,primary,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:NGC 5946,233.86883333,-50.65966667,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,9.61,2.5,3080,catalogue_candidate_pending_cutout_and_visual_qc
+437106d88c579d66,primary,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:Lynga 7,242.76520833,-55.31777778,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,10.18,0.95,3080,catalogue_candidate_pending_cutout_and_visual_qc
+f46e930ce3ca66cb,primary,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:NGC 6293,257.5425,-26.58208333,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,8.22,2.5,3080,catalogue_candidate_pending_cutout_and_visual_qc
+820e845789a114b1,primary,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:NGC 6553,272.32333333,-25.90869444,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,8.06,1.16,3080,catalogue_candidate_pending_cutout_and_visual_qc
+ca1ccfecb9fc10c8,primary,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:Arp 2,292.18379167,-30.35563889,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,12.3,0.88,3080,catalogue_candidate_pending_cutout_and_visual_qc
+8706e332e9cfdeda,primary,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:IC 4499,225.076875,-82.21369444,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,9.76,1.21,3080,catalogue_candidate_pending_cutout_and_visual_qc
+1735f18181948f42,primary,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:NGC 6256,254.88591667,-37.12138889,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,11.29,2.5,3080,catalogue_candidate_pending_cutout_and_visual_qc
+877de5121de6beba,primary,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:NGC 6304,258.634375,-29.46202778,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,8.22,1.8,3080,catalogue_candidate_pending_cutout_and_visual_qc
+8872e5deed6d89d0,primary,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:NGC 6712,283.26791667,-8.70611111,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,8.1,1.05,3080,catalogue_candidate_pending_cutout_and_visual_qc
+01499c2fb543d263,primary,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:Terzan 8,295.43504167,-33.99947222,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,12.4,0.6,3080,catalogue_candidate_pending_cutout_and_visual_qc
+a286d5604a9cd7b1,primary,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:Pal 5,229.021875,-0.11161111,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,11.75,0.52,3080,catalogue_candidate_pending_cutout_and_visual_qc
+426a1779099d81ce,primary,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:1636-283,249.85604167,-28.39869444,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,12.0,1.0,3080,catalogue_candidate_pending_cutout_and_visual_qc
+3e9002a73340b9e3,primary,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:NGC 6356,260.89554167,-17.81302778,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,8.25,1.59,3080,catalogue_candidate_pending_cutout_and_visual_qc
+ee971527e4c016f3,primary,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:NGC 6522,270.89175,-30.03397222,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,8.27,2.5,3080,catalogue_candidate_pending_cutout_and_visual_qc
+0943e1b83520b49f,primary,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:NGC 6749,286.31375,1.90083333,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,12.44,0.79,3080,catalogue_candidate_pending_cutout_and_visual_qc
+a89449c001041f09,primary,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:BH 176,234.78104167,-50.05272222,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,14.0,0.85,3080,catalogue_candidate_pending_cutout_and_visual_qc
+c6260671c9dbba66,primary,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:Terzan 3,247.167,-35.35347222,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,12.0,0.7,3080,catalogue_candidate_pending_cutout_and_visual_qc
+1cab6b04f82eca74,primary,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:NGC 6316,259.15541667,-28.14011111,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,8.43,1.65,3080,catalogue_candidate_pending_cutout_and_visual_qc
+db801858ad7d2d2b,primary,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:NGC 6584,274.65666667,-52.21577778,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,8.27,1.47,3080,catalogue_candidate_pending_cutout_and_visual_qc
+1c3708057676e889,primary,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:Pal 10,289.50875,18.57166667,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,13.22,0.58,3080,catalogue_candidate_pending_cutout_and_visual_qc
+3ea731962f2e4270,primary,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:FSR 1735,253.04416667,-47.05805556,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,12.9,0.56,3080,catalogue_candidate_pending_cutout_and_visual_qc
+9d83b7cbf1a6a863,primary,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:NGC 6284,256.11879167,-24.76486111,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,8.83,2.5,3080,catalogue_candidate_pending_cutout_and_visual_qc
+2a42f530859069bf,primary,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:NGC 6652,278.940125,-32.99072222,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,8.62,1.8,3080,catalogue_candidate_pending_cutout_and_visual_qc
+2d8b0d99f122d305,primary,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:Pal 15,254.9625,-0.53888889,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,14.0,0.6,3080,catalogue_candidate_pending_cutout_and_visual_qc
+75c4deeb4312a301,primary,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:NGC 6366,261.93433333,-5.07986111,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,9.2,0.74,3080,catalogue_candidate_pending_cutout_and_visual_qc
+04500a8829bff589,primary,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:NGC 6638,277.73375,-25.49747222,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,9.02,1.33,3080,catalogue_candidate_pending_cutout_and_visual_qc
+0903a34afef40530,primary,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:Pal 14,242.7525,14.95777778,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,14.74,0.8,3080,catalogue_candidate_pending_cutout_and_visual_qc
+cba283a7645d3a78,primary,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:NGC 6440,267.21958333,-20.36025,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,9.2,1.62,3080,catalogue_candidate_pending_cutout_and_visual_qc
+a2645dbe638663c4,primary,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:NGC 6642,277.97541667,-23.47519444,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,9.13,1.99,3080,catalogue_candidate_pending_cutout_and_visual_qc
+dcd8bef1f320d32d,primary,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:NGC 6287,256.28804167,-22.70836111,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,9.35,1.38,3080,catalogue_candidate_pending_cutout_and_visual_qc
+a864cf3932724145,primary,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:NGC 6558,272.57333333,-31.76388889,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,9.26,2.5,3080,catalogue_candidate_pending_cutout_and_visual_qc
+54b9685c520ddc14,primary,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:NGC 6342,260.292,-19.58741667,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,9.66,2.5,3080,catalogue_candidate_pending_cutout_and_visual_qc
+c6874c2bf8e29ba4,primary,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:NGC 6717,283.77516667,-22.70147222,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,9.28,2.07,3080,catalogue_candidate_pending_cutout_and_visual_qc
+fea9767e0e3d14dd,primary,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:NGC 6453,267.71541667,-34.59916667,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,10.08,2.5,3080,catalogue_candidate_pending_cutout_and_visual_qc
+ff183fc694429188,primary,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:NGC 6540,271.53583333,-27.76527778,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,9.3,2.5,3080,catalogue_candidate_pending_cutout_and_visual_qc
+2f0fc09e30f1fe60,primary,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:NGC 6325,259.49670833,-23.766,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,10.33,2.5,3080,catalogue_candidate_pending_cutout_and_visual_qc
+a9d6039ed93653d1,primary,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:NGC 6539,271.207,-7.58586111,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,9.33,1.74,3080,catalogue_candidate_pending_cutout_and_visual_qc
+3454b13201bdccb8,primary,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:NGC 6426,266.22770833,3.17013889,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,11.01,1.7,3080,catalogue_candidate_pending_cutout_and_visual_qc
+cfa3db313278a6dd,primary,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:NGC 6528,271.20683333,-30.05627778,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,9.6,1.5,3080,catalogue_candidate_pending_cutout_and_visual_qc
+bd83c713a0ff6539,primary,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:Pal 6,265.92583333,-26.2225,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,11.55,1.1,3080,catalogue_candidate_pending_cutout_and_visual_qc
+f863dc63d7f3aee2,primary,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:Djorg 2,270.45458333,-27.82583333,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,9.9,1.5,3080,catalogue_candidate_pending_cutout_and_visual_qc
+2207263e2de8ca38,primary,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:HP 1,262.77166667,-29.98166667,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,11.59,2.5,3080,catalogue_candidate_pending_cutout_and_visual_qc
+ce5f555e80f74245,primary,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:NGC 6517,270.4605,-8.95877778,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,10.23,1.82,3080,catalogue_candidate_pending_cutout_and_visual_qc
+52f56e5da8e2549e,primary,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:Ton 2,264.04375,-38.55333333,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,12.24,1.3,3080,catalogue_candidate_pending_cutout_and_visual_qc
+d6f8a8fb51cedbf9,primary,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:IC 1276,272.68416667,-7.20761111,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,10.34,1.33,3080,catalogue_candidate_pending_cutout_and_visual_qc
+dbdb8e9a9576dcc5,primary,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:IC 1257,261.78541667,-7.09305556,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,13.1,1.55,3080,catalogue_candidate_pending_cutout_and_visual_qc
+179c993eb758eedc,primary,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:BH 261,273.5275,-28.635,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,11.0,1.0,3080,catalogue_candidate_pending_cutout_and_visual_qc
+13f8da80192e5063,primary,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:Djorg 1,266.86791667,-33.06555556,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,13.6,1.5,3080,catalogue_candidate_pending_cutout_and_visual_qc
+dbb0414d9c7b95ca,primary,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:Pal 8,280.37458333,-19.82583333,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,11.02,1.53,3080,catalogue_candidate_pending_cutout_and_visual_qc
+7cbcc66e1b9ade28,primary,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:Terzan 5,267.02,-24.77916667,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,13.85,1.62,3080,catalogue_candidate_pending_cutout_and_visual_qc
+8926bfced217c8c6,reserve,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:ESO-SC06,272.275,-46.42305556,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,12.0,0.9,3080,catalogue_candidate_pending_cutout_and_visual_qc
+02569027534cd10b,reserve,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:Terzan 6,267.69325,-31.27538889,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,13.85,2.5,3080,catalogue_candidate_pending_cutout_and_visual_qc
+64b0157417f2d728,reserve,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:Terzan 10,270.90166667,-26.0725,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,14.9,0.75,3080,catalogue_candidate_pending_cutout_and_visual_qc
+1921747ad4d7c5ad,reserve,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:Terzan 2,261.88791667,-30.80233333,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,14.29,2.5,3080,catalogue_candidate_pending_cutout_and_visual_qc
+a67068e482686653,reserve,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:Terzan 12,273.06583333,-22.74194444,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,15.63,0.57,3080,catalogue_candidate_pending_cutout_and_visual_qc
+3894bf3495884a85,reserve,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:Terzan 1,263.94916667,-30.46972222,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,15.9,2.5,3080,catalogue_candidate_pending_cutout_and_visual_qc
+f0ec4e94d1482a3a,reserve,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:Terzan 9,270.41166667,-26.83972222,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,16.0,2.5,3080,catalogue_candidate_pending_cutout_and_visual_qc
+c8d2cef2c6d5dcca,reserve,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:Terzan 4,262.6625,-31.59552778,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,16.0,0.9,3080,catalogue_candidate_pending_cutout_and_visual_qc
+f1183d7a8e5be9f7,reserve,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:GLIMPSE01,282.20708333,-1.49722222,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,22.24,1.37,3080,catalogue_candidate_pending_cutout_and_visual_qc
+6fa5dbee91890760,reserve,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:UKS 1,268.61333333,-24.14527778,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,17.29,2.1,3080,catalogue_candidate_pending_cutout_and_visual_qc
+059eeda91a398ffc,reserve,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:2MS-GC02,272.40208333,-20.77888889,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,24.6,0.95,3080,catalogue_candidate_pending_cutout_and_visual_qc
+9f835f03e9b493ae,reserve,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:2MS-GC01,272.090875,-19.82972222,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,27.74,0.85,3080,catalogue_candidate_pending_cutout_and_visual_qc
+29ae410e99701988,reserve,globularclusters,milky_way_globular_cluster,HEASARC-GLOBCLUST:GLIMPSE02,274.62708333,-16.97722222,GlC,NASA HEASARC GLOBCLUST (Harris 2010 edition),,,,,,1.33,3080,catalogue_candidate_pending_cutout_and_visual_qc
+b28e36f936a265f7,primary,nebulae,DNe,SIMBAD:LDN 1287,9.197916666666668,63.48388888888889,DNe,SIMBAD TAP,104,,,,,,,catalogue_candidate_pending_cutout_and_visual_qc
+20a1fba6003cb915,primary,nebulae,DNe,SIMBAD:LDN 1307,16.3,65.26666666666667,DNe,SIMBAD TAP,11,,91,91,,,,catalogue_candidate_pending_cutout_and_visual_qc
+eb7fa417ea87fea2,primary,nebulae,DNe,SIMBAD:LDN 1457,43.975,19.583333333333336,DNe,SIMBAD TAP,86,,31,31,,,,catalogue_candidate_pending_cutout_and_visual_qc
+cde04e12f875b4dc,primary,nebulae,DNe,SIMBAD:LDN 1448,50.625,30.583333333333332,DNe,SIMBAD TAP,549,,,,,,,catalogue_candidate_pending_cutout_and_visual_qc
+bc9747fe970eb9f3,primary,nebulae,DNe,SIMBAD:LDN 1551,67.875,18.208333333333332,DNe,SIMBAD TAP,826,,3,3,,,,catalogue_candidate_pending_cutout_and_visual_qc
+9f0c4ef4776f4400,primary,nebulae,DNe,SIMBAD:LDN 1544,76.06916666666666,25.18,DNe,SIMBAD TAP,984,,,,,,,catalogue_candidate_pending_cutout_and_visual_qc
+76b5adfde3eb30ff,primary,nebulae,DNe,SIMBAD:LDN 1570,91.86833333333333,19.467777777777776,DNe,SIMBAD TAP,47,,9,6,,,,catalogue_candidate_pending_cutout_and_visual_qc
+6ca00a2b1948ff3b,primary,nebulae,DNe,SIMBAD:[DB2002b] G259.43-12.72,113.53750000000001,-46.905,DNe,SIMBAD TAP,31,,22,7,,,,catalogue_candidate_pending_cutout_and_visual_qc
+f20ee405e5b47362,primary,nebulae,DNe,SIMBAD:DCld 264.3+01.5,133.675,-42.913333333333334,DNe,SIMBAD TAP,68,,,,,,,catalogue_candidate_pending_cutout_and_visual_qc
+fd13c7492b29b326,primary,nebulae,DNe,SIMBAD:TGU H1716,137.95000000000002,-45.65,DNe,SIMBAD TAP,9,,6,7.8,,,,catalogue_candidate_pending_cutout_and_visual_qc
+b146519b0aeeed85,primary,nebulae,DNe,SIMBAD:[DB2002b] G290.96-3.48,164.97916666666666,-63.73833333333334,DNe,SIMBAD TAP,7,,22,4,,,,catalogue_candidate_pending_cutout_and_visual_qc
+82f773f6e47ef435,primary,nebulae,DNe,SIMBAD:[DB2002b] G300.23-16.89,178.6291666666667,-79.46333333333334,DNe,SIMBAD TAP,46,,22,16,,,,catalogue_candidate_pending_cutout_and_visual_qc
+1f4237f081c29b3e,primary,nebulae,DNe,SIMBAD:NAME Coalsack Nebula,187.82916666666665,-63.74333333333333,DNe,SIMBAD TAP,276,,,,,,,catalogue_candidate_pending_cutout_and_visual_qc
+ef99daf780fe4ca7,primary,nebulae,DNe,SIMBAD:Sandqvist 160,196.72480560361254,-77.01739188302932,DNe,SIMBAD TAP,43,,,,,,,catalogue_candidate_pending_cutout_and_visual_qc
+b0eafcf0f2a2e18e,primary,nebulae,DNe,SIMBAD:SDC G316.786-0.044,221.30424999999997,-59.819833333333335,DNe,SIMBAD TAP,12,,4.568,2.47,,,,catalogue_candidate_pending_cutout_and_visual_qc
+1bc28a3d1a380558,primary,nebulae,DNe,SIMBAD:LDN 1780,234.925,-7.166666666666667,DNe,SIMBAD TAP,83,,,,,,,catalogue_candidate_pending_cutout_and_visual_qc
+0b6eb9f493c3b556,primary,nebulae,DNe,SIMBAD:LDN 1689B,248.67541666666665,-24.603055555555557,DNe,SIMBAD TAP,184,,,,,,,catalogue_candidate_pending_cutout_and_visual_qc
+1dc5a058f8e762d0,primary,nebulae,DNe,SIMBAD:NAME the Pipe Nebula,262.5,-25.0,DNe,SIMBAD TAP,450,,240,180,,,,catalogue_candidate_pending_cutout_and_visual_qc
+695fba896d32623b,primary,nebulae,DNe,SIMBAD:LDN  483,274.39583333333337,-4.663333333333334,DNe,SIMBAD TAP,369,,6,10.2,,,,catalogue_candidate_pending_cutout_and_visual_qc
+d75eab09c299b60d,primary,nebulae,DNe,SIMBAD:LDN  663,294.2291666666667,7.573333333333333,DNe,SIMBAD TAP,711,,,,,,,catalogue_candidate_pending_cutout_and_visual_qc
+ce2cf487f6596d6a,primary,nebulae,DNe,SIMBAD:LDN 1157,309.7766666666666,68.03694444444444,DNe,SIMBAD TAP,613,,,,,,,catalogue_candidate_pending_cutout_and_visual_qc
+cad522be6547cd78,primary,nebulae,DNe,SIMBAD:LDN 1177,319.4109166666667,68.29277777777777,DNe,SIMBAD TAP,96,,4,2,,,,catalogue_candidate_pending_cutout_and_visual_qc
+95f0cd1926149cfe,primary,nebulae,DNe,SIMBAD:LDN 1251,339.025,75.26666666666667,DNe,SIMBAD TAP,119,,27,27,,,,catalogue_candidate_pending_cutout_and_visual_qc
+ecf555290cc676b5,primary,nebulae,DNe,SIMBAD:LDN 1253,359.1333333333334,58.52833333333333,DNe,SIMBAD TAP,56,,,,,,,catalogue_candidate_pending_cutout_and_visual_qc
+0f96da703b582f37,primary,nebulae,HII,SIMBAD:NGC  7822,0.28575,67.4213888888889,HII,SIMBAD TAP,123,,22.8,22.8,,,,catalogue_candidate_pending_cutout_and_visual_qc
+e9bfffe076e65090,primary,nebulae,HII,SIMBAD:NGC   604,23.63375,30.783611111111114,HII,SIMBAD TAP,610,,,,,,,catalogue_candidate_pending_cutout_and_visual_qc
+195ee51e831b4bd5,primary,nebulae,HII,SIMBAD:NAME W 3 OH,36.76708333333334,61.87277777777778,HII,SIMBAD TAP,1067,,,,,,,catalogue_candidate_pending_cutout_and_visual_qc
+802c6a6b03652370,primary,nebulae,HII,SIMBAD:HHL  5,46.850833333333334,58.5125,HII,SIMBAD TAP,152,,,,,,,catalogue_candidate_pending_cutout_and_visual_qc
+f38520dfaf6ed8cd,primary,nebulae,HII,SIMBAD:LHA 120-N  11,74.21416666666667,-66.40666666666667,HII,SIMBAD TAP,278,,,,,,,catalogue_candidate_pending_cutout_and_visual_qc
+ed617f35c752621c,primary,nebulae,HII,SIMBAD:NAME Flame Nebula,85.42791666666668,-1.912222222222222,HII,SIMBAD TAP,719,,,,,,,catalogue_candidate_pending_cutout_and_visual_qc
+ab0d268ffb0ecf12,primary,nebulae,HII,SIMBAD:NAME Mon R2,91.94824999999999,-6.378499999999999,HII,SIMBAD TAP,803,,60,90,,,,catalogue_candidate_pending_cutout_and_visual_qc
+a733e9d8aa85b535,primary,nebulae,HII,SIMBAD:NGC  2363A,112.17833333333333,69.18916666666667,HII,SIMBAD TAP,595,,,,,,,catalogue_candidate_pending_cutout_and_visual_qc
+8c7f3ae23e2c0f32,primary,nebulae,HII,SIMBAD:RCW  36,134.75374999999997,-43.736111111111114,HII,SIMBAD TAP,165,,,,,,,catalogue_candidate_pending_cutout_and_visual_qc
+143d0a51e2ae4674,primary,nebulae,HII,SIMBAD:GAL 268.4-00.9,135.47611201573568,-47.73307743068917,HII,SIMBAD TAP,56,,1.9,1.6,,,,catalogue_candidate_pending_cutout_and_visual_qc
+93e40066486d8633,primary,nebulae,HII,SIMBAD:NGC  3199,154.13666666666666,-57.93388888888889,HII,SIMBAD TAP,70,,,,,,,catalogue_candidate_pending_cutout_and_visual_qc
+52aeb8d32e329885,primary,nebulae,HII,SIMBAD:NGC  3576,167.9718,-61.3072,HII,SIMBAD TAP,245,,,,,,,catalogue_candidate_pending_cutout_and_visual_qc
+6c394d20a3091667,primary,nebulae,HII,SIMBAD:ESO  95-1,182.25524999999996,-63.26656388888888,HII,SIMBAD TAP,96,,0.887,0.763,,,,catalogue_candidate_pending_cutout_and_visual_qc
+ec3bc9fc08303b83,primary,nebulae,HII,SIMBAD:GRS G308.60 +00.60,204.97500000000002,-61.75,HII,SIMBAD TAP,110,,,,,,,catalogue_candidate_pending_cutout_and_visual_qc
+f3367fef62e6ecef,primary,nebulae,HII,SIMBAD:ESO 134-11,220.12083333333334,-62.644999999999996,HII,SIMBAD TAP,597,,,,,,,catalogue_candidate_pending_cutout_and_visual_qc
+56eeac5c53523636,primary,nebulae,HII,SIMBAD:RCW  97,238.27083333333331,-54.59,HII,SIMBAD TAP,176,,9.2,9.2,,,,catalogue_candidate_pending_cutout_and_visual_qc
+786ea3fc127ea72b,primary,nebulae,HII,SIMBAD:GAL 333.6-00.2,245.54556601241342,-50.094016804815894,HII,SIMBAD TAP,147,,9,9,,,,catalogue_candidate_pending_cutout_and_visual_qc
+8f90ce9709ddaefd,primary,nebulae,HII,SIMBAD:NGC  6334,260.2184199999999,-36.13067,HII,SIMBAD TAP,748,,9.15,9.15,,,,catalogue_candidate_pending_cutout_and_visual_qc
+0491d356f41776f1,primary,nebulae,HII,SIMBAD:RAFGL 2046,270.13374999999996,-24.0675,HII,SIMBAD TAP,386,,,,,,,catalogue_candidate_pending_cutout_and_visual_qc
+7e76dae170e54579,primary,nebulae,HII,SIMBAD:W 49n,287.555,9.103333333333333,HII,SIMBAD TAP,500,,,,,,,catalogue_candidate_pending_cutout_and_visual_qc
+bdcc5a1d21bb967f,primary,nebulae,HII,SIMBAD:W 58a,300.44083333333333,33.54527777777778,HII,SIMBAD TAP,295,,,,,,,catalogue_candidate_pending_cutout_and_visual_qc
+8b69aa3457f0d0e1,primary,nebulae,HII,SIMBAD:SH  2-128,323.0412,55.8814,HII,SIMBAD TAP,174,,1.21,0.992,,,,catalogue_candidate_pending_cutout_and_visual_qc
+ee77886a07ff94f9,primary,nebulae,HII,SIMBAD:SH  2-152,344.67004490309,58.78311834333999,HII,SIMBAD TAP,148,,1.047,0.9,,,,catalogue_candidate_pending_cutout_and_visual_qc
+b830fc0aff341463,primary,nebulae,HII,SIMBAD:NAME Cep E,345.80324583333334,61.70715277777778,HII,SIMBAD TAP,184,,,,,,,catalogue_candidate_pending_cutout_and_visual_qc
+c3042fa36f99f794,primary,nebulae,PN,SIMBAD:NGC    40,3.25423754052,72.5219537052,PN,SIMBAD TAP,639,,0.1,0.7667017,,,,catalogue_candidate_pending_cutout_and_visual_qc
+a532ef1c704f5cf9,primary,nebulae,PN,SIMBAD:M  76,25.58189905342,51.57542638057,PN,SIMBAD TAP,388,,2.307,2.307,,,,catalogue_candidate_pending_cutout_and_visual_qc
+72689eaddb84e6a9,primary,nebulae,PN,SIMBAD:PN A66    3,33.02776467542,64.15064801706,PN,SIMBAD TAP,59,,1,1,,,,catalogue_candidate_pending_cutout_and_visual_qc
+7c7a7f27f559bfae,primary,nebulae,PN,SIMBAD:NGC  1360,53.31102855331001,-25.87166045775,PN,SIMBAD TAP,293,,6.4,6.4,,,,catalogue_candidate_pending_cutout_and_visual_qc
+87f9f41c5b77f4b5,primary,nebulae,PN,SIMBAD:NGC  1535,63.56570413057,-12.73942569009,PN,SIMBAD TAP,521,,0.65,0.611,,,,catalogue_candidate_pending_cutout_and_visual_qc
+88c570f89300a537,primary,nebulae,PN,SIMBAD:NGC  2022,85.52579343888,9.08627388766,PN,SIMBAD TAP,373,,0.30681834,0.304675,,,,catalogue_candidate_pending_cutout_and_visual_qc
+3f2cd4bc79c39de5,primary,nebulae,PN,SIMBAD:IC 2165,95.4282699181525,-12.987233610298889,PN,SIMBAD TAP,387,,0.14666666,0.14596333,,,,catalogue_candidate_pending_cutout_and_visual_qc
+10eb1d815a0e1552,primary,nebulae,PN,SIMBAD:NGC  2346,107.34383991685002,-0.8065586103699999,PN,SIMBAD TAP,594,,0.91,0.91,,,,catalogue_candidate_pending_cutout_and_visual_qc
+a8909846d0915e06,primary,nebulae,PN,SIMBAD:PN A66   30,131.72276661453,17.87954705405,PN,SIMBAD TAP,434,,0.287,0.132,,,,catalogue_candidate_pending_cutout_and_visual_qc
+716e05e9beaa9b2a,primary,nebulae,PN,SIMBAD:NGC  2867,140.3557635284,-58.31128518988999,PN,SIMBAD TAP,315,,0.25255665,0.250715,,,,catalogue_candidate_pending_cutout_and_visual_qc
+678882dc100e53cc,primary,nebulae,PN,SIMBAD:NGC  3242,156.19222313408,-18.64230468272,PN,SIMBAD TAP,844,,0.1,0.51229334,,,,catalogue_candidate_pending_cutout_and_visual_qc
+c1fd35c328358830,primary,nebulae,PN,SIMBAD:M  97,168.69880122825,55.01902300891,PN,SIMBAD TAP,358,,3.333,3.333,,,,catalogue_candidate_pending_cutout_and_visual_qc
+aa5da91b04a10d82,primary,nebulae,PN,SIMBAD:NGC  4361,186.12812938646996,-18.78487981564,PN,SIMBAD TAP,410,,1.35,1.35,,,,catalogue_candidate_pending_cutout_and_visual_qc
+8aa54fdb85011ccb,primary,nebulae,PN,SIMBAD:NGC  5315,208.48738616486,-66.51412763424,PN,SIMBAD TAP,327,,0.08931617,0.087669,,,,catalogue_candidate_pending_cutout_and_visual_qc
+37e84fd1de8307bc,primary,nebulae,PN,SIMBAD:IC 4406,215.60893374036996,-44.15060697583001,PN,SIMBAD TAP,295,,0.519755,0.51887,,,,catalogue_candidate_pending_cutout_and_visual_qc
+a1f8b793c1ad649c,primary,nebulae,PN,SIMBAD:HD 138403,234.29669714157,-71.9146908623,PN,SIMBAD TAP,271,,0.1087095,0.10820067,,,,catalogue_candidate_pending_cutout_and_visual_qc
+4e234f9186083cb5,primary,nebulae,PN,SIMBAD:IC 4593,242.93561644285,12.07139760794,PN,SIMBAD TAP,464,,0.20966166,0.20858167,,,,catalogue_candidate_pending_cutout_and_visual_qc
+5b0b532b65322921,primary,nebulae,PN,SIMBAD:NGC  6309,258.5179477501499,-12.91052590885,PN,SIMBAD TAP,323,,0.427,0.299,,,,catalogue_candidate_pending_cutout_and_visual_qc
+31cb11ab717612a8,primary,nebulae,PN,SIMBAD:NGC  6572,273.02632579548,6.853618870899999,PN,SIMBAD TAP,764,,0.597,0.406,,,,catalogue_candidate_pending_cutout_and_visual_qc
+a67210ac57a8fc6e,primary,nebulae,PN,SIMBAD:HD 184738,293.68847400852,30.516375180899995,PN,SIMBAD TAP,980,,0.1098075,0.10896717,,,,catalogue_candidate_pending_cutout_and_visual_qc
+983a4fcebbf11c01,primary,nebulae,PN,SIMBAD:IC 4997,305.03648248915,16.731583037049997,PN,SIMBAD TAP,559,,0.048803333,0.045776,,,,catalogue_candidate_pending_cutout_and_visual_qc
+bd28dc100a57bc06,primary,nebulae,PN,SIMBAD:NGC  7009,316.04506466152,-11.363494488210002,PN,SIMBAD TAP,1026,,0.707,0.523,,,,catalogue_candidate_pending_cutout_and_visual_qc
+c45e05a0585436fb,primary,nebulae,PN,SIMBAD:IC 5217,335.98215839050994,50.96679565007,PN,SIMBAD TAP,316,,0.33333334,0.106429,,,,catalogue_candidate_pending_cutout_and_visual_qc
+02355127313b1cac,primary,nebulae,PN,SIMBAD:NGC  7662,351.47429949701046,42.53495439677222,PN,SIMBAD TAP,943,,0.380885,0.38070166,,,,catalogue_candidate_pending_cutout_and_visual_qc
+19a346718ef5306d,primary,nebulae,RNe,SIMBAD:PP   1,1.7643604218086446,65.64462559625898,RNe,SIMBAD TAP,12,,,,,,,catalogue_candidate_pending_cutout_and_visual_qc
+92fe6904ae42542c,primary,nebulae,RNe,SIMBAD:IC   59,14.426666666666666,61.08327777777778,RNe,SIMBAD TAP,42,,,,,,,catalogue_candidate_pending_cutout_and_visual_qc
+bce1b980e0154b28,primary,nebulae,RNe,SIMBAD:IRAS 02471+6736,42.88708333333334,67.81361111111111,RNe,SIMBAD TAP,15,,1.548,0.588,,,,catalogue_candidate_pending_cutout_and_visual_qc
+ffb73375f4389256,primary,nebulae,RNe,SIMBAD:BFS 32,57.895833333333336,51.5,RNe,SIMBAD TAP,24,,,,,,,catalogue_candidate_pending_cutout_and_visual_qc
+abbaf6a1b693d3f7,primary,nebulae,RNe,SIMBAD:HH 102,67.83,18.1225,RNe,SIMBAD TAP,64,,,,,,,catalogue_candidate_pending_cutout_and_visual_qc
+6356383fe2ad4b35,primary,nebulae,RNe,SIMBAD:NGC  2071,86.791,0.3,RNe,SIMBAD TAP,662,,,,,,,catalogue_candidate_pending_cutout_and_visual_qc
+88667316b82a607a,primary,nebulae,RNe,SIMBAD:NGC  2183,92.69479166666667,-6.212472222222223,RNe,SIMBAD TAP,85,,1.51,0.93,,,,catalogue_candidate_pending_cutout_and_visual_qc
+992143c8210666bb,primary,nebulae,RNe,SIMBAD:IC 2177,106.10416666666667,-10.455,RNe,SIMBAD TAP,156,,,,,,,catalogue_candidate_pending_cutout_and_visual_qc
+009f5f5f783ddf00,primary,nebulae,RNe,SIMBAD:NGC  2626,128.88333333333333,-40.67166666666667,RNe,SIMBAD TAP,31,,,,,,,catalogue_candidate_pending_cutout_and_visual_qc
+b52c3d0a6c348875,primary,nebulae,RNe,SIMBAD:BRAN 237A,137.82458333333332,-45.55888888888889,RNe,SIMBAD TAP,14,,,,,,,catalogue_candidate_pending_cutout_and_visual_qc
+adccb2547257457f,primary,nebulae,RNe,SIMBAD:ESO 128-4,160.1463944413571,-61.96956588405424,RNe,SIMBAD TAP,12,,,,,,,catalogue_candidate_pending_cutout_and_visual_qc
+2517f5fd14ea305e,primary,nebulae,RNe,SIMBAD:Ced 112,167.46833333333336,-76.61583333333333,RNe,SIMBAD TAP,32,,,,,,,catalogue_candidate_pending_cutout_and_visual_qc
+398bdbfeedd457eb,primary,nebulae,RNe,SIMBAD:VdBH 58,194.67166666666665,-66.3711111111111,RNe,SIMBAD TAP,11,,,,,,,catalogue_candidate_pending_cutout_and_visual_qc
+2817d44fad2cca08,primary,nebulae,RNe,SIMBAD:NGC  5367,209.43333333333334,-39.980000000000004,RNe,SIMBAD TAP,31,,,,,,,catalogue_candidate_pending_cutout_and_visual_qc
+99d17276c4af3517,primary,nebulae,RNe,SIMBAD:VdBH 62,220.85,-58.75,RNe,SIMBAD TAP,2,,,,,,,catalogue_candidate_pending_cutout_and_visual_qc
+4dd94e8e03a63a1e,primary,nebulae,RNe,SIMBAD:VdBH 65,225.8625,-63.38666666666666,RNe,SIMBAD TAP,5,,,,,,,catalogue_candidate_pending_cutout_and_visual_qc
+553e83aa11dcd1f4,primary,nebulae,RNe,SIMBAD:NAME Draco Nebula,253.0,61.0,RNe,SIMBAD TAP,58,,,,,,,catalogue_candidate_pending_cutout_and_visual_qc
+de053e97f87474f8,primary,nebulae,RNe,SIMBAD:VdBH 86,259.94166666666666,-36.09666666666667,RNe,SIMBAD TAP,64,,3.2,2.1,,,,catalogue_candidate_pending_cutout_and_visual_qc
+4c557d229fc3de94,primary,nebulae,RNe,SIMBAD:NAME Ser Nebula,277.48333333333335,1.2466666666666668,RNe,SIMBAD TAP,29,,,,,,,catalogue_candidate_pending_cutout_and_visual_qc
+fd4c42b4f7105c5c,primary,nebulae,RNe,SIMBAD:LBN 057.03+03.02,291.525,22.75,RNe,SIMBAD TAP,7,,,,,,,catalogue_candidate_pending_cutout_and_visual_qc
+37a747f802783e98,primary,nebulae,RNe,SIMBAD:NAME Gyulbudaghian's Nebula,311.475,67.95,RNe,SIMBAD TAP,24,,,,,,,catalogue_candidate_pending_cutout_and_visual_qc
+99e2f0928d07aa2c,primary,nebulae,RNe,SIMBAD:RNO 138,325.740875,66.073075,RNe,SIMBAD TAP,28,,0.583,0.292,,,,catalogue_candidate_pending_cutout_and_visual_qc
+d9e4fa9a0686d33f,primary,nebulae,RNe,SIMBAD:NAME Cave Nebula,333.36249999999995,70.255,RNe,SIMBAD TAP,55,,,,,,,catalogue_candidate_pending_cutout_and_visual_qc
+d3cf47321fb6c5d8,primary,nebulae,RNe,SIMBAD:DSH J2320.1+5821B,350.0466666666666,58.355555555555554,RNe,SIMBAD TAP,7,,0.8,0.8,,,,catalogue_candidate_pending_cutout_and_visual_qc
+6aee31a8133ab0e0,primary,nebulae,SNR,SIMBAD:SNR G119.5+10.2,1.65,72.78333333333333,SNR,SIMBAD TAP,273,,90,90,,,,catalogue_candidate_pending_cutout_and_visual_qc
+a3dafffd6d5f567d,primary,nebulae,SNR,SIMBAD:SNR B0102-72.3,16.005,-72.0312,SNR,SIMBAD TAP,426,,0.73333335,0.73333335,,,,catalogue_candidate_pending_cutout_and_visual_qc
+1c456006c90ab5f8,primary,nebulae,SNR,SIMBAD:SNR G130.7+03.1,31.398880000000005,64.82813,SNR,SIMBAD TAP,677,,9,5,,,,catalogue_candidate_pending_cutout_and_visual_qc
+85f502f5e277e0ee,primary,nebulae,SNR,SIMBAD:BWE 0332+6143,54.297875,61.88405555555556,SNR,SIMBAD TAP,14,,,,,,,catalogue_candidate_pending_cutout_and_visual_qc
+988fa47af31891e4,reserve,nebulae,SNR,SIMBAD:SNR G156.2+05.7,74.66666666666667,51.833333333333336,SNR,SIMBAD TAP,129,,110,110,,,,catalogue_candidate_pending_cutout_and_visual_qc
+9b3718c157a316f4,reserve,nebulae,SNR,SIMBAD:SNR J052559-660453,81.50166666666667,-66.08388888888888,SNR,SIMBAD TAP,461,,1.4,1.4,,,,catalogue_candidate_pending_cutout_and_visual_qc
+751cadd8b1aa5ed7,reserve,nebulae,SNR,SIMBAD:IC  443,94.25,22.5699996948,SNR,SIMBAD TAP,1334,,45,25,,,,catalogue_candidate_pending_cutout_and_visual_qc
+438ff3f29ca638df,reserve,nebulae,SNR,SIMBAD:SNR G240.9-00.9,115.65,-25.216666666666665,SNR,SIMBAD TAP,13,,,,,,,catalogue_candidate_pending_cutout_and_visual_qc
+10da505540af4162,reserve,nebulae,SNR,SIMBAD:NAME Vela,128.5,-45.83333333333333,SNR,SIMBAD TAP,1353,,255,255,,,,catalogue_candidate_pending_cutout_and_visual_qc
+95091559437e28f5,reserve,nebulae,SNR,SIMBAD:[FK2005]  7,148.88729166666664,69.00933333333334,SNR,SIMBAD TAP,86,,0.086666666,0.086666666,,,,catalogue_candidate_pending_cutout_and_visual_qc
+4a08eccdeb1291dd,reserve,nebulae,SNR,SIMBAD:NAME MSH 11-61A,164.85566666666665,-61.311833333333325,SNR,SIMBAD TAP,191,,19,14,,,,catalogue_candidate_pending_cutout_and_visual_qc
+e82acba70f7a9423,reserve,nebulae,SNR,SIMBAD:SNR G292.0+01.8,171.244,-59.319,SNR,SIMBAD TAP,359,,12,8,,,,catalogue_candidate_pending_cutout_and_visual_qc
+00d84c3e7eedf271,reserve,nebulae,SNR,SIMBAD:SNR G295.5+09.7,182.41666666666669,-52.416666666666664,SNR,SIMBAD TAP,305,,90,65,,,,catalogue_candidate_pending_cutout_and_visual_qc
+07d1d7415f214a4e,reserve,nebulae,SNR,SIMBAD:SNR G304.6+00.1,196.49583333333334,-62.7,SNR,SIMBAD TAP,94,,8,8,,,,catalogue_candidate_pending_cutout_and_visual_qc
+7217880fb139e529,reserve,nebulae,SNR,SIMBAD:SNR G315.0-02.3,220.75,-62.5,SNR,SIMBAD TAP,380,,42,42,,,,catalogue_candidate_pending_cutout_and_visual_qc
+2209b0b3a8b71fad,reserve,nebulae,SNR,SIMBAD:NAME Lupus SN,225.5920833333333,-42.096944444444446,SNR,SIMBAD TAP,1425,,30,30,,,,catalogue_candidate_pending_cutout_and_visual_qc
+42f52de2bec9162e,reserve,nebulae,SNR,SIMBAD:SNR G338.3-00.0,250.18,-46.53,SNR,SIMBAD TAP,180,,9,8,,,,catalogue_candidate_pending_cutout_and_visual_qc
+a2ce8491c5848a8e,reserve,nebulae,SNR,SIMBAD:SNR G347.3-00.5,258.1125,-39.68666666666666,SNR,SIMBAD TAP,779,,65,55,,,,catalogue_candidate_pending_cutout_and_visual_qc
+ba207bb860ef4c4c,reserve,nebulae,SNR,SIMBAD:SNR G034.6-00.5,284.044375,1.2225833333333336,SNR,SIMBAD TAP,1050,,35,27,,,,catalogue_candidate_pending_cutout_and_visual_qc
+94ab9a5b01edc16e,reserve,nebulae,SNR,SIMBAD:W 51,290.9583333333333,14.1,SNR,SIMBAD TAP,1368,,30,30,,,,catalogue_candidate_pending_cutout_and_visual_qc
+511ead98bbdb4f0b,reserve,nebulae,SNR,SIMBAD:NAME gam Cyg SNR,305.07125,40.43583333333333,SNR,SIMBAD TAP,250,,60,60,,,,catalogue_candidate_pending_cutout_and_visual_qc
+2c2d3c92a861e159,reserve,nebulae,SNR,SIMBAD:SNR G094.0+01.0,320.986,51.9781,SNR,SIMBAD TAP,92,,30,25,,,,catalogue_candidate_pending_cutout_and_visual_qc
+009645e86fe166d1,reserve,nebulae,SNR,SIMBAD:SNR G106.3+02.7,336.875,60.83333333333333,SNR,SIMBAD TAP,104,,60,24,,,,catalogue_candidate_pending_cutout_and_visual_qc
+0616895ef04107bd,reserve,nebulae,SNR,SIMBAD:NAME Cas A,350.8584,58.8113,SNR,SIMBAD TAP,3096,,5,5,,,,catalogue_candidate_pending_cutout_and_visual_qc
+5f8105235ee377b6,primary,opencluster,,SIMBAD:NGC   188,11.797916666666667,85.24388888888889,OpC,SIMBAD TAP,1014,,32.6,32.6,,,,catalogue_candidate_pending_cutout_and_visual_qc
+9c960ecb0e1b0ebb,primary,opencluster,,SIMBAD:NGC   752,29.22291666666667,37.79388888888889,OpC,SIMBAD TAP,731,,58.2,58.2,,,,catalogue_candidate_pending_cutout_and_visual_qc
+c2635206311c6a99,primary,opencluster,,SIMBAD:IC 1805,38.21,61.47111111111111,OpC,SIMBAD TAP,543,,13.3,13.3,,,,catalogue_candidate_pending_cutout_and_visual_qc
+657191121914b207,primary,opencluster,,SIMBAD:IC  348,56.13208333333334,32.15888888888888,OpC,SIMBAD TAP,1497,,480,480,,,,catalogue_candidate_pending_cutout_and_visual_qc
+2baaec04c0a284e7,primary,opencluster,,SIMBAD:NGC  1662,72.19791666666666,10.881944444444445,OpC,SIMBAD TAP,155,,72.2,72.2,,,,catalogue_candidate_pending_cutout_and_visual_qc
+4b7611fe4a6900e4,primary,opencluster,,SIMBAD:NAME Orion Nebula Cluster,83.75,-5.483333333333333,OpC,SIMBAD TAP,2562,,,,,,,catalogue_candidate_pending_cutout_and_visual_qc
+7ae3fccd9a0b505e,primary,opencluster,,SIMBAD:NGC  2244,98.045,4.91388888888889,OpC,SIMBAD TAP,680,,88,88,,,,catalogue_candidate_pending_cutout_and_visual_qc
+7c4f829909c22152,primary,opencluster,,SIMBAD:NGC  2516,119.52708333333337,-60.8,OpC,SIMBAD TAP,814,,59.5,59.5,,,,catalogue_candidate_pending_cutout_and_visual_qc
+06d5786f33d02d3a,primary,opencluster,,SIMBAD:NGC  2682,132.84583333333333,11.81388888888889,OpC,SIMBAD TAP,2582,,25,25,,,,catalogue_candidate_pending_cutout_and_visual_qc
+b05259b68fe1739f,primary,opencluster,,SIMBAD:NGC  2818,139.04416666666668,-36.62388888888889,OpC,SIMBAD TAP,112,,9.4,9.4,,,,catalogue_candidate_pending_cutout_and_visual_qc
+5d92d222d3d059aa,primary,opencluster,,SIMBAD:IC 2602,160.61291666666665,-64.42611111111111,OpC,SIMBAD TAP,753,,173.9,173.9,,,,catalogue_candidate_pending_cutout_and_visual_qc
+5799f50e518454aa,primary,opencluster,,SIMBAD:NGC  3532,166.41708333333332,-58.70694444444444,OpC,SIMBAD TAP,447,,64.3,64.3,,,,catalogue_candidate_pending_cutout_and_visual_qc
+f45cfb984f622e7b,primary,opencluster,,SIMBAD:Cl Melotte  111,186.01416666666668,25.651944444444442,OpC,SIMBAD TAP,532,,,,,,,catalogue_candidate_pending_cutout_and_visual_qc
+839095fab5c5d56e,primary,opencluster,,SIMBAD:NGC  5316,208.51583333333332,-61.883055555555565,OpC,SIMBAD TAP,110,,14,14,,,,catalogue_candidate_pending_cutout_and_visual_qc
+00cbb1fad0d6abda,primary,opencluster,,SIMBAD:NGC  5662,218.73416666666662,-56.64,OpC,SIMBAD TAP,141,,39.6,39.6,,,,catalogue_candidate_pending_cutout_and_visual_qc
+aa0781e5b157d0a2,primary,opencluster,,SIMBAD:NGC  5822,226.05083333333332,-54.36611111111111,OpC,SIMBAD TAP,247,,44.2,44.2,,,,catalogue_candidate_pending_cutout_and_visual_qc
+7f2239a101cdf0b5,primary,opencluster,,SIMBAD:NGC  6231,253.54499999999996,-41.81194444444444,OpC,SIMBAD TAP,569,,120,120,,,,catalogue_candidate_pending_cutout_and_visual_qc
+1bed2587b6028ef9,primary,opencluster,,SIMBAD:NAME Quintuplet Cluster,266.55778269545,-28.83003348404491,OpC,SIMBAD TAP,581,,0.5,0.5,,,,catalogue_candidate_pending_cutout_and_visual_qc
+fc3cd2da975366ba,primary,opencluster,,SIMBAD:NGC  6530,271.1291666666666,-24.358333333333334,OpC,SIMBAD TAP,450,,14,14,,,,catalogue_candidate_pending_cutout_and_visual_qc
+629e3e4253780a79,primary,opencluster,,SIMBAD:NGC  6819,295.32708333333323,40.19,OpC,SIMBAD TAP,747,,11.4,11.4,,,,catalogue_candidate_pending_cutout_and_visual_qc
+a6ae99d6dfd11ca8,primary,opencluster,,SIMBAD:NGC  6871,301.5479166666666,35.765,OpC,SIMBAD TAP,239,,44.5,44.5,,,,catalogue_candidate_pending_cutout_and_visual_qc
+3d4cf79b8a823894,primary,opencluster,,SIMBAD:NGC  7023,315.40374999999995,68.16333333333334,OpC,SIMBAD TAP,749,,,,,,,catalogue_candidate_pending_cutout_and_visual_qc
+4fd32303220cc809,primary,opencluster,,SIMBAD:SH  2-140,334.78249999999997,63.28527777777777,OpC,SIMBAD TAP,670,,35,25,,,,catalogue_candidate_pending_cutout_and_visual_qc
+a777129a056c1c9d,primary,opencluster,,SIMBAD:NGC  7538,348.405,61.5,OpC,SIMBAD TAP,926,,,,,,,catalogue_candidate_pending_cutout_and_visual_qc
+e0316527a9f9cf25,primary,opencluster,,SIMBAD:Cl Blanco    1,0.8529166666666667,-29.958055555555553,OpC,SIMBAD TAP,392,,83.9,83.9,,,,catalogue_candidate_pending_cutout_and_visual_qc
+9326c2ac788867e2,primary,opencluster,,SIMBAD:NGC   419,17.071916666666667,-72.88383333333334,OpC,SIMBAD TAP,290,,2.8,2.8,,,,catalogue_candidate_pending_cutout_and_visual_qc
+174a914b52f6b1c6,primary,opencluster,,SIMBAD:IC 1848,42.855000000000004,60.418888888888894,OpC,SIMBAD TAP,525,,24,24,,,,catalogue_candidate_pending_cutout_and_visual_qc
+3120430715afab18,primary,opencluster,,SIMBAD:NGC  1245,48.69083333333334,47.23500000000001,OpC,SIMBAD TAP,175,,13.1,13.1,,,,catalogue_candidate_pending_cutout_and_visual_qc
+01ea8a5f86422c39,primary,opencluster,,SIMBAD:NGC  1664,72.76291666666665,43.67611111111111,OpC,SIMBAD TAP,146,,13.6,13.6,,,,catalogue_candidate_pending_cutout_and_visual_qc
+c0cc96c36c1bcd6b,primary,opencluster,,SIMBAD:NAME Ori Trapezium,83.81874999999998,-5.3872222222222215,OpC,SIMBAD TAP,1720,,,,,,,catalogue_candidate_pending_cutout_and_visual_qc
+ddd3e1a5fa46d3cc,primary,opencluster,,SIMBAD:NGC  2158,91.86208333333333,24.09888888888889,OpC,SIMBAD TAP,327,,5.3,5.3,,,,catalogue_candidate_pending_cutout_and_visual_qc
+9b788f4caa3bbe65,primary,opencluster,,SIMBAD:NGC  2420,114.60208333333331,21.575,OpC,SIMBAD TAP,539,,6.4,6.4,,,,catalogue_candidate_pending_cutout_and_visual_qc
+a616f6d400d1daf4,primary,opencluster,,SIMBAD:IC 2391,130.29208333333335,-52.99111111111111,OpC,SIMBAD TAP,886,,97.7,97.7,,,,catalogue_candidate_pending_cutout_and_visual_qc
+db6a724a9ab89d6d,primary,opencluster,,SIMBAD:Cl Platais    8,136.71791666666667,-58.685,OpC,SIMBAD TAP,104,,325.9,325.9,,,,catalogue_candidate_pending_cutout_and_visual_qc
+b2169ef18e9c9a89,primary,opencluster,,SIMBAD:Cl Trumpler   14,160.98583333333335,-59.55305555555556,OpC,SIMBAD TAP,553,,5.3,5.3,,,,catalogue_candidate_pending_cutout_and_visual_qc
+4bfc332c4a675430,primary,opencluster,,SIMBAD:NGC  3680,171.39208333333332,-43.24000000000001,OpC,SIMBAD TAP,342,,17.9,17.9,,,,catalogue_candidate_pending_cutout_and_visual_qc
+3413f805c761ea65,primary,opencluster,,SIMBAD:Cl Collinder  261,189.51916666666665,-68.37694444444443,OpC,SIMBAD TAP,222,,13,13,,,,catalogue_candidate_pending_cutout_and_visual_qc
+1eb33694ff188c44,primary,opencluster,,SIMBAD:Cl Stock   16,199.85999999999999,-62.62200000000001,OpC,SIMBAD TAP,95,,3,3,,,,catalogue_candidate_pending_cutout_and_visual_qc
+bf1ff4922670463a,primary,opencluster,,SIMBAD:NGC  5460,211.8470833333333,-48.28499999999999,OpC,SIMBAD TAP,117,,31,31,,,,catalogue_candidate_pending_cutout_and_visual_qc
+e43733826da6cf09,primary,opencluster,,SIMBAD:Cl Pismis   20,228.84799999999998,-59.07299999999999,OpC,SIMBAD TAP,104,,4,4,,,,catalogue_candidate_pending_cutout_and_visual_qc
+b1ff89a06e65be6d,primary,opencluster,,SIMBAD:NGC  6067,243.29916666666662,-54.226944444444456,OpC,SIMBAD TAP,247,,13.4,13.4,,,,catalogue_candidate_pending_cutout_and_visual_qc
+d99a807c479d9058,primary,opencluster,,SIMBAD:IC 4651,261.21208333333334,-49.916944444444454,OpC,SIMBAD TAP,380,,27.6,27.6,,,,catalogue_candidate_pending_cutout_and_visual_qc
+f0ff9bed5ff28b2a,primary,opencluster,,SIMBAD:NGC  6633,276.845,6.614999999999999,OpC,SIMBAD TAP,436,,43.2,43.2,,,,catalogue_candidate_pending_cutout_and_visual_qc
+3d81de6005636597,primary,opencluster,,SIMBAD:NGC  6811,294.3399999999999,46.378055555555555,OpC,SIMBAD TAP,448,,22.8,22.8,,,,catalogue_candidate_pending_cutout_and_visual_qc
+ece8344a7a3de4c4,primary,opencluster,,SIMBAD:NGC  6940,308.62583333333333,28.278055555555554,OpC,SIMBAD TAP,223,,30,30,,,,catalogue_candidate_pending_cutout_and_visual_qc
+7a235796695bc878,primary,opencluster,,SIMBAD:IC 1396,324.745,57.51388888888888,OpC,SIMBAD TAP,535,,146,146,,,,catalogue_candidate_pending_cutout_and_visual_qc
+b72ddcb38be0346f,primary,opencluster,,SIMBAD:NGC  7380,341.8166666666667,58.125,OpC,SIMBAD TAP,198,,10.8,10.8,,,,catalogue_candidate_pending_cutout_and_visual_qc
+1e551a7b8064a913,primary,opencluster,,SIMBAD:NGC  7789,359.3341666666666,56.72611111111111,OpC,SIMBAD TAP,590,,25.3,25.3,,,,catalogue_candidate_pending_cutout_and_visual_qc
+6a8a112eef974b2b,primary,opencluster,,SIMBAD:NGC   129,7.607083333333334,60.213055555555556,OpC,SIMBAD TAP,216,,20.3,20.3,,,,catalogue_candidate_pending_cutout_and_visual_qc
+0c794c3e44c79192,primary,opencluster,,SIMBAD:NGC   457,19.887083333333337,58.27805555555556,OpC,SIMBAD TAP,260,,15,15,,,,catalogue_candidate_pending_cutout_and_visual_qc
+80b45e83a9f425f7,primary,opencluster,,SIMBAD:NGC   884,35.58416666666667,57.14888888888889,OpC,SIMBAD TAP,506,,15,15,,,,catalogue_candidate_pending_cutout_and_visual_qc
+84f7b0c2a000d8be,primary,opencluster,,SIMBAD:NGC  1342,52.89416666666667,37.38,OpC,SIMBAD TAP,137,,34.7,34.7,,,,catalogue_candidate_pending_cutout_and_visual_qc
+33fbb66674bbc799,primary,opencluster,,SIMBAD:NGC  1528,63.877916666666664,51.21805555555556,OpC,SIMBAD TAP,135,,28.2,28.2,,,,catalogue_candidate_pending_cutout_and_visual_qc
+9cee41d14768d9de,primary,opencluster,,SIMBAD:NAME sig Ori Cluster,84.675,-2.6,OpC,SIMBAD TAP,652,,,,,,,catalogue_candidate_pending_cutout_and_visual_qc
+090565e95cc3f6c1,primary,opencluster,,SIMBAD:NGC  2243,97.39500000000001,-31.28194444444444,OpC,SIMBAD TAP,309,,5.5,5.5,,,,catalogue_candidate_pending_cutout_and_visual_qc
+30d7c88143b02a4c,primary,opencluster,,SIMBAD:NGC  2362,109.67083333333335,-24.95388888888889,OpC,SIMBAD TAP,434,,104,104,,,,catalogue_candidate_pending_cutout_and_visual_qc
+6ce949e079a71a42,primary,opencluster,,SIMBAD:Cl Mamajek    1,130.637,-78.963,OpC,SIMBAD TAP,403,,43.4,43.4,,,,catalogue_candidate_pending_cutout_and_visual_qc
+093ca39ae1cfc562,primary,opencluster,,SIMBAD:Cl Ruprecht   79,145.25916666666666,-53.846111111111114,OpC,SIMBAD TAP,89,,6.2,6.2,,,,catalogue_candidate_pending_cutout_and_visual_qc
+d57cdb82209404c8,primary,opencluster,,SIMBAD:Cl Trumpler   16,161.25291666666666,-59.7,OpC,SIMBAD TAP,513,,7.3,7.3,,,,catalogue_candidate_pending_cutout_and_visual_qc
+4da353f7cf09f17d,primary,opencluster,,SIMBAD:NAME eps Cha Association,179.96249999999998,-78.20666666666666,OpC,SIMBAD TAP,196,,,,,,,catalogue_candidate_pending_cutout_and_visual_qc
+7d59679ee80c69b1,primary,opencluster,,SIMBAD:Cl Trumpler   20,189.88208333333333,-60.636944444444445,OpC,SIMBAD TAP,144,,13.4,13.4,,,,catalogue_candidate_pending_cutout_and_visual_qc
+b246dce820b31c55,primary,opencluster,,SIMBAD:NGC  5281,206.61416666666665,-62.91611111111111,OpC,SIMBAD TAP,93,,7,7,,,,catalogue_candidate_pending_cutout_and_visual_qc
+ce295471fe54fb7e,primary,opencluster,,SIMBAD:NGC  5606,216.9458333333333,-59.63166666666667,OpC,SIMBAD TAP,109,,3,3,,,,catalogue_candidate_pending_cutout_and_visual_qc
+6b933b31f904df16,primary,opencluster,,SIMBAD:ESO 224-8,234.7725,-50.050555555555555,OpC,SIMBAD TAP,78,,,,,,,catalogue_candidate_pending_cutout_and_visual_qc
+26788d41bb4f4036,primary,opencluster,,SIMBAD:NGC  6253,254.77791666666667,-52.71194444444445,OpC,SIMBAD TAP,215,,7.2,7.2,,,,catalogue_candidate_pending_cutout_and_visual_qc
+1195ed40a3eb9236,primary,opencluster,,SIMBAD:NGC  6383,263.67291666666665,-32.57305555555555,OpC,SIMBAD TAP,169,,20,20,,,,catalogue_candidate_pending_cutout_and_visual_qc
+4491eae4390180d7,primary,opencluster,,SIMBAD:IC 4756,279.6491666666667,5.435,OpC,SIMBAD TAP,283,,64.1,64.1,,,,catalogue_candidate_pending_cutout_and_visual_qc
+2e36a368e6194866,primary,opencluster,,SIMBAD:NGC  6823,295.79416666666657,23.32111111111111,OpC,SIMBAD TAP,280,,3.5833333,3.5833333,,,,catalogue_candidate_pending_cutout_and_visual_qc
+fe294b0f4eb993dd,primary,opencluster,,SIMBAD:NGC  6910,305.7958333333333,40.77166666666667,OpC,SIMBAD TAP,202,,10.7,10.7,,,,catalogue_candidate_pending_cutout_and_visual_qc
+7f53acc66a1af2fc,primary,opencluster,,SIMBAD:IC 5146,328.37199999999996,47.246,OpC,SIMBAD TAP,519,,8.2,8.2,,,,catalogue_candidate_pending_cutout_and_visual_qc
+d8008ee5f65fe24d,primary,opencluster,,SIMBAD:NGC  7209,331.2241666666667,46.50805555555556,OpC,SIMBAD TAP,149,,36.5,36.5,,,,catalogue_candidate_pending_cutout_and_visual_qc
+67ef2de8adc17ba0,primary,opencluster,,SIMBAD:NGC  7790,359.61291666666665,61.209999999999994,OpC,SIMBAD TAP,288,,7.1,7.1,,,,catalogue_candidate_pending_cutout_and_visual_qc
+55e04ed3b8e9d473,primary,opencluster,,SIMBAD:NGC   339,14.448416666666668,-74.47072222222224,OpC,SIMBAD TAP,159,,2.9,2.9,,,,catalogue_candidate_pending_cutout_and_visual_qc
+2d5fb3110ddcd628,primary,opencluster,,SIMBAD:NGC   654,26.00791666666667,61.883055555555565,OpC,SIMBAD TAP,207,,6.4,6.4,,,,catalogue_candidate_pending_cutout_and_visual_qc
+b5ad83b32b75dd8c,primary,opencluster,,SIMBAD:Cl Stock    2,33.85583333333334,59.52194444444444,OpC,SIMBAD TAP,166,,123.6,123.6,,,,catalogue_candidate_pending_cutout_and_visual_qc
+719eabd3e4e27d77,primary,opencluster,,SIMBAD:NGC  1193,46.48583333333334,44.38305555555556,OpC,SIMBAD TAP,99,,3,3,,,,catalogue_candidate_pending_cutout_and_visual_qc
+8f810acc0762bcca,primary,opencluster,,SIMBAD:NGC  1545,65.20208333333332,50.221111111111114,OpC,SIMBAD TAP,126,,34.8,34.8,,,,catalogue_candidate_pending_cutout_and_visual_qc
+8fe92c236520c6b8,primary,opencluster,,SIMBAD:Cl Collinder   69,83.79208333333334,9.813055555555556,OpC,SIMBAD TAP,382,,360,360,,,,catalogue_candidate_pending_cutout_and_visual_qc
+b3fa1bd6d00e6ff7,primary,opencluster,,SIMBAD:NGC  2175,92.41250000000001,20.486666666666668,OpC,SIMBAD TAP,270,,,,,,,catalogue_candidate_pending_cutout_and_visual_qc
+cd0675bc04b9f715,primary,opencluster,,SIMBAD:NGC  2477,118.04583333333332,-38.53694444444444,OpC,SIMBAD TAP,320,,18,18,,,,catalogue_candidate_pending_cutout_and_visual_qc
+019689026918e34a,primary,opencluster,,SIMBAD:NGC  2506,120.01000000000002,-10.773055555555555,OpC,SIMBAD TAP,324,,10.6,10.6,,,,catalogue_candidate_pending_cutout_and_visual_qc
+3336aee8fd12687f,primary,opencluster,,SIMBAD:NGC  2925,143.32083333333335,-53.41305555555555,OpC,SIMBAD TAP,85,,16.9,16.9,,,,catalogue_candidate_pending_cutout_and_visual_qc
+790e33916935be8d,primary,opencluster,,SIMBAD:NGC  3293,158.97,-58.231111111111105,OpC,SIMBAD TAP,329,,13,13,,,,catalogue_candidate_pending_cutout_and_visual_qc
+ed6ad6261658863f,primary,opencluster,,SIMBAD:NGC  3960,177.64416666666668,-55.678888888888885,OpC,SIMBAD TAP,155,,8.5,8.5,,,,catalogue_candidate_pending_cutout_and_visual_qc
+d787e4889b14a567,primary,opencluster,,SIMBAD:NGC  4349,186.04791666666665,-61.86611111111111,OpC,SIMBAD TAP,126,,9,9,,,,catalogue_candidate_pending_cutout_and_visual_qc
+16c0014f8ec15e94,primary,opencluster,,SIMBAD:Cl Danks    1,198.12099999999998,-62.699,OpC,SIMBAD TAP,84,,1.1,1.1,,,,catalogue_candidate_pending_cutout_and_visual_qc
+afb21a52be45bfae,primary,opencluster,,SIMBAD:NGC  5617,217.45208333333332,-60.718888888888884,OpC,SIMBAD TAP,109,,7,7,,,,catalogue_candidate_pending_cutout_and_visual_qc
+9b8f3b44c3afe5e1,primary,opencluster,,SIMBAD:NGC  6005,238.95499999999993,-57.43888888888888,OpC,SIMBAD TAP,78,,6.8,6.8,,,,catalogue_candidate_pending_cutout_and_visual_qc
+3aa96c616d4d9bf0,primary,opencluster,,SIMBAD:NGC  6087,244.7208333333333,-57.916111111111114,OpC,SIMBAD TAP,202,,29.5,29.5,,,,catalogue_candidate_pending_cutout_and_visual_qc
+c64401c2e5e808a0,primary,opencluster,,SIMBAD:NGC  6281,256.1791666666667,-37.948055555555555,OpC,SIMBAD TAP,166,,31.1,31.1,,,,catalogue_candidate_pending_cutout_and_visual_qc
+57d176216c264cdd,primary,opencluster,,SIMBAD:NGC  6649,278.3591666666667,-10.39888888888889,OpC,SIMBAD TAP,157,,5,5,,,,catalogue_candidate_pending_cutout_and_visual_qc
+e8fa5e638ac46fd8,primary,opencluster,,SIMBAD:NGC  6774,289.08708333333334,-16.333055555555553,OpC,SIMBAD TAP,277,,78.2,78.2,,,,catalogue_candidate_pending_cutout_and_visual_qc
+681f0eec83d868e2,primary,opencluster,,SIMBAD:NGC  6866,300.98291666666665,44.15805555555555,OpC,SIMBAD TAP,193,,12.5,12.5,,,,catalogue_candidate_pending_cutout_and_visual_qc
+46978a4d037ad2b3,primary,opencluster,,SIMBAD:NGC  7129,325.7416666666667,66.11333333333333,OpC,SIMBAD TAP,275,,120,120,,,,catalogue_candidate_pending_cutout_and_visual_qc
+f7ce154e2fe9a2e3,primary,opencluster,,SIMBAD:NGC  7243,333.7875,49.83000000000001,OpC,SIMBAD TAP,138,,30.6,30.6,,,,catalogue_candidate_pending_cutout_and_visual_qc
+609824c82bd7d8c5,primary,opencluster,,SIMBAD:NGC  7510,347.76708333333335,60.57888888888889,OpC,SIMBAD TAP,108,,6.6,6.6,,,,catalogue_candidate_pending_cutout_and_visual_qc
+e5b40b0f56dce813,primary,opencluster,,SIMBAD:NGC   225,10.805,61.7738888888889,OpC,SIMBAD TAP,114,,25.9,25.9,,,,catalogue_candidate_pending_cutout_and_visual_qc
+755517cc15fb78ce,primary,opencluster,,SIMBAD:Cl Trumpler    1,23.916666666666664,61.28333333333333,OpC,SIMBAD TAP,108,,3.7,3.7,,,,catalogue_candidate_pending_cutout_and_visual_qc
+bc441d083e74a8ea,primary,opencluster,,SIMBAD:Cl Trumpler    2,39.232083333333335,55.90500000000001,OpC,SIMBAD TAP,129,,38.8,38.8,,,,catalogue_candidate_pending_cutout_and_visual_qc
+855baea5ad97849a,primary,opencluster,,SIMBAD:Cl Alessi   13,51.762083333333344,-35.821111111111115,OpC,SIMBAD TAP,97,,163.3,163.3,,,,catalogue_candidate_pending_cutout_and_visual_qc
+8e3f8d8869cee6ae,reserve,opencluster,,SIMBAD:NGC  1579,67.514,35.325,OpC,SIMBAD TAP,94,,13.4,13.4,,,,catalogue_candidate_pending_cutout_and_visual_qc
+4e2d593a2cbdac46,reserve,opencluster,,SIMBAD:NGC  1893,80.72416666666665,33.443888888888885,OpC,SIMBAD TAP,273,,36,36,,,,catalogue_candidate_pending_cutout_and_visual_qc
+ec4c054dad842d8d,reserve,opencluster,,SIMBAD:NGC  2232,96.88791666666667,-4.74888888888889,OpC,SIMBAD TAP,223,,61.9,61.9,,,,catalogue_candidate_pending_cutout_and_visual_qc
+a9b85efbbeecad9f,reserve,opencluster,,SIMBAD:Cl Melotte   66,111.57291666666667,-47.684999999999995,OpC,SIMBAD TAP,218,,10.6,10.6,,,,catalogue_candidate_pending_cutout_and_visual_qc
+80d488a054f8f523,reserve,opencluster,,SIMBAD:Cl Trumpler   10,131.94291666666666,-42.566111111111105,OpC,SIMBAD TAP,214,,106.8,106.8,,,,catalogue_candidate_pending_cutout_and_visual_qc
+4f35431a9532bba5,reserve,opencluster,,SIMBAD:Cl Platais    9,139.24083333333334,-43.861944444444454,OpC,SIMBAD TAP,77,,191.4,191.4,,,,catalogue_candidate_pending_cutout_and_visual_qc
+0cee2e2e89d4c9c1,reserve,opencluster,,SIMBAD:Cl Trumpler   15,161.17708333333331,-59.36888888888889,OpC,SIMBAD TAP,231,,52,52,,,,catalogue_candidate_pending_cutout_and_visual_qc
+bb618312ecb0679a,reserve,opencluster,,SIMBAD:IC 2714,169.37291666666667,-62.71888888888889,OpC,SIMBAD TAP,113,,20.5,20.5,,,,catalogue_candidate_pending_cutout_and_visual_qc
+115dd81ba475b3ac,reserve,opencluster,,SIMBAD:NGC  4815,194.49916666666664,-64.96000000000001,OpC,SIMBAD TAP,114,,6.7,6.7,,,,catalogue_candidate_pending_cutout_and_visual_qc
+887451d9bb66caa8,reserve,opencluster,,SIMBAD:Cl Danks    2,198.22199999999998,-62.68099999999999,OpC,SIMBAD TAP,76,,1.55,1.55,,,,catalogue_candidate_pending_cutout_and_visual_qc
+1008203fd8e1088a,reserve,opencluster,,SIMBAD:Cl Lynga    2,216.085,-61.32805555555556,OpC,SIMBAD TAP,82,,13,13,,,,catalogue_candidate_pending_cutout_and_visual_qc
+16fe40aee8b9791c,reserve,opencluster,,SIMBAD:NGC  5823,226.36499999999998,-55.60805555555556,OpC,SIMBAD TAP,76,,16.1,16.1,,,,catalogue_candidate_pending_cutout_and_visual_qc
+51ea8e7e1e08250e,reserve,opencluster,,SIMBAD:NGC  6134,246.95291666666662,-49.16111111111111,OpC,SIMBAD TAP,171,,6,6,,,,catalogue_candidate_pending_cutout_and_visual_qc
+3798e0e69df6b786,reserve,opencluster,,SIMBAD:Cl Trumpler   27,264.08333333333337,-33.51666666666666,OpC,SIMBAD TAP,102,,6,6,,,,catalogue_candidate_pending_cutout_and_visual_qc
+574a8da5ec1c9fcd,reserve,opencluster,,SIMBAD:NGC  6709,282.83583333333337,10.33388888888889,OpC,SIMBAD TAP,150,,16.8,16.8,,,,catalogue_candidate_pending_cutout_and_visual_qc
+8061f6ea7fd49b89,reserve,opencluster,,SIMBAD:NGC  6802,292.65083333333337,20.261944444444445,OpC,SIMBAD TAP,120,,3.34,3.34,,,,catalogue_candidate_pending_cutout_and_visual_qc
+ae900d0c784f0ae9,reserve,opencluster,,SIMBAD:IC 4996,304.135,37.6488888888889,OpC,SIMBAD TAP,187,,3.4,3.4,,,,catalogue_candidate_pending_cutout_and_visual_qc
+62142b3a42d515a5,reserve,opencluster,,SIMBAD:NGC  7160,328.45,62.58833333333334,OpC,SIMBAD TAP,249,,144,144,,,,catalogue_candidate_pending_cutout_and_visual_qc
+72f4da3de13598a7,reserve,opencluster,,SIMBAD:NGC  7235,333.0829166666667,57.27111111111111,OpC,SIMBAD TAP,119,,8.4,8.4,,,,catalogue_candidate_pending_cutout_and_visual_qc
+6fcea99045322baf,reserve,opencluster,,SIMBAD:NGC  7762,357.47208333333333,68.035,OpC,SIMBAD TAP,88,,20.4,20.4,,,,catalogue_candidate_pending_cutout_and_visual_qc

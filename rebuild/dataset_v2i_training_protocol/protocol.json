@@ -1,0 +1,316 @@
+{
+  "augmentation": {
+    "implementation_gate": "Before training, prove an implementation over stored v2H tensors is numerically equivalent to the frozen source-lattice operation; otherwise apply the transform on the frozen A 512 and B 16 lattices before sizing. Do not pre-materialize random views.",
+    "prohibited": [
+      "random crop",
+      "continuous rotation",
+      "brightness/contrast/color jitter",
+      "cutout",
+      "noise",
+      "mixup",
+      "test-time augmentation"
+    ],
+    "recipe": "v2F deterministic D4 keyed by SHA256 UTF-8 Dataset-v2F|augment|2026102303|physical_object_id|zero_based_epoch; first 8 bytes big endian modulo 8. Codes 0–3 are quarter-turn CCW; 4–7 mirror horizontally then rotate.",
+    "same_object_epoch_transform_for_all_channels_representations_architectures_and_seeds": true,
+    "train_only": true,
+    "validation_test": "identity"
+  },
+  "author_decisions_sha256": "eef166b0233fcd1b31d0f47aea8b962508a09b9163b8826f5e4925d9d0215d00",
+  "author_decisions_status": "all five author gates explicitly resolved and frozen",
+  "candidate_manifest_sha256": "e5032c7194e0f8479c0df6a355d6651f1fb5b90e8811429b992ebb3fbcb13572",
+  "canonical_sha256": "6a4593c9e470f8eb61819a13d8fc82e74a4bfb662b5bb22ce9ca221d179b3737",
+  "custom_input_adapter": {
+    "applies_to": [
+      "A",
+      "B",
+      "A_outer",
+      "B_outer"
+    ],
+    "custom_architecture_contract": "unchanged effective v1 architecture with 256x256 input; do not change to grid 7",
+    "device": "CPU",
+    "family": "custom_cnn_transformer",
+    "is_representation_or_tunable_candidate": false,
+    "library_environment": {
+      "python": "3.12.3",
+      "torch": "2.7.0+cu128",
+      "torchvision": "0.22.0+cu128"
+    },
+    "operation": "torch.nn.functional.interpolate(x.unsqueeze(0), size=(256, 256), mode=\"bilinear\", align_corners=False, antialias=True).squeeze(0).contiguous()",
+    "order": "load frozen v2H tensor; apply frozen training-only D4 augmentation (validation/test identity); apply adapter; transfer to CUDA; call custom model",
+    "output": "float32 [3,256,256]",
+    "source": "frozen v2H float32 tensor, shape [3,224,224]",
+    "training_augmentation_applied_before_adapter": true,
+    "v2H_files_modified": false,
+    "validation_test_adapter_applied": true
+  },
+  "data_and_preprocessing": {
+    "class_order": [
+      "galaxies",
+      "globularclusters",
+      "nebulae",
+      "opencluster"
+    ],
+    "class_weights": "Reciprocal training-object counts by class, float32, normalized by float32 mean; computed from train labels only and shared across all families/representations.",
+    "normalization": "Use v2H per-object p01/p99, clipping, asinh(10), and fixed (u-0.5)/0.5 exactly. No additional fitted image normalization. Any metadata imputation/scaling uses training objects only.",
+    "role_counts_objects": {
+      "test": 73,
+      "train": 222,
+      "validation": 75
+    },
+    "source": "v2H tensors only; one object-level example with blue/red/NIR channel order",
+    "split_sha256": "1678a37f154baf5ff6895c81d286f3cac72fdaead7919e30f2af655be7bd33bf",
+    "test_assignment_units": 61
+  },
+  "determinism": {
+    "DataLoader": "seeded generator, deterministic worker initialization, fixed shuffle algorithm; validation and test order do not shuffle",
+    "cuda": "CUBLAS_WORKSPACE_CONFIG=:4096:8; deterministic algorithms and cuDNN deterministic; benchmark false; TF32 disabled",
+    "fit_seeds": [
+      3908274,
+      3908275,
+      3908276
+    ],
+    "seed_Python_NumPy_Torch_CPU_and_all_CUDA_generators_per_fit": true,
+    "seed_unit": "same numeric seed matches corresponding architecture/configuration/representation runs; seeds are training replicates, not an inferential n=3 sample"
+  },
+  "factorial": {
+    "conditional_control_fits": 27,
+    "design": "3 architectures × 4 representations × 3 seeds",
+    "identical_architecture_configuration_across_representations": true,
+    "mandatory_controls": [
+      "B",
+      "A_outer",
+      "B_outer",
+      "metadata_FOV_only",
+      "FOV_stratified_reporting"
+    ],
+    "metadata_fit_count": 2,
+    "primary": "A",
+    "retrospective_representation_selection": false,
+    "search_fits_A": 90,
+    "selected_A_runs_reused": 9,
+    "selected_fit_count": 36,
+    "selected_test_evaluation_count": 36,
+    "total_fit_count": 119,
+    "unique_selected_network_fits": 117
+  },
+  "fit_accounting_sha256": "e4132fa1c23943c8fe9232a58de7fe3a3e4d7d439c4dfa9920e790d702aa43d7",
+  "initialization": {
+    "channel_order": [
+      "blue",
+      "red",
+      "NIR"
+    ],
+    "custom_cnn_transformer": {
+      "policy": "Seeded source-defined initialization; no checkpoint reuse. Preserve effective v1 architecture and 256x256 input contract; apply frozen non-trainable adapter described in custom_input_adapter."
+    },
+    "normalization": "Use exact frozen v2H normalization; no additional ImageNet-specific or family-specific normalization.",
+    "resnet50": {
+      "local_weight_path": "/home/emarinho/.cache/torch/hub/checkpoints/resnet50-0676ba61.pth",
+      "policy": "Official locally preserved torchvision ResNet50_Weights.IMAGENET1K_V1 bytes only; verify SHA-256 before use; no network; missing/mismatched bytes stop execution.",
+      "sha256": "0676ba61b6795bbe1773cffd859882e5e297624d384b6993f7c9e683e722fb8a"
+    },
+    "train_from_scratch": false,
+    "transfer_interpretation": "Frozen transfer-learning policy. Blue/red/NIR are not conventional RGB channels; this does not assert spectral equivalence.",
+    "vit_b_16": {
+      "local_weight_path": "/home/emarinho/.cache/torch/hub/checkpoints/vit_b_16-c867db91.pth",
+      "policy": "Official locally preserved torchvision ViT_B_16_Weights.IMAGENET1K_V1 bytes only; verify SHA-256 before use; no network; missing/mismatched bytes stop execution.",
+      "sha256": "c867db91d3e12c6cbadabb610d73c24a546bf82d8c03a9fea34f43a712ddb0e9"
+    }
+  },
+  "metadata_FOV_control": {
+    "features": [
+      "log(source_FOV_arcmin)",
+      "log(source_pixel_scale_arcsec)",
+      "log(catalogue_extent_arcmin)",
+      "catalogue_extent_missing",
+      "source_FOV_capped"
+    ],
+    "fit_count": 2,
+    "imputation_and_scaling": "training objects only; median imputation and centering/scaling; no held-out fitting",
+    "models": [
+      {
+        "C": 1,
+        "class_weight": "balanced",
+        "max_iter": 1000,
+        "solver": "lbfgs",
+        "type": "multinomial_logistic_regression"
+      },
+      {
+        "max_depth": 3,
+        "random_state": 3908274,
+        "type": "decision_tree"
+      }
+    ],
+    "purpose": "mandatory leakage/shortcut control; never selects representations or model configs"
+  },
+  "model_selection": {
+    "adopted_alternative": "B",
+    "best_seed_selection": false,
+    "checkpoint_within_fit": "Minimum sample-mean class-weighted validation loss; retain all three seeds; never select a best seed.",
+    "search": "90 fits on representation A only: 12 ResNet50 configs x 3 seeds; 12 ViT-B/16 configs x 3 seeds; six custom Transformer configs x 3 seeds.",
+    "selection_rule": "Per architecture, choose one configuration using only A validation: highest mean balanced accuracy over three seeds; then highest mean macro-F1; then lowest mean weighted validation loss; then lowest sample variance (ddof=1) of balanced accuracy; then lexicographically smallest configuration ID.",
+    "test_access_before_selection_seal": false,
+    "test_based_changes": false,
+    "validation_only": true,
+    "winner_controls": "After selection, run only B, A_outer and B_outer for the selected configuration and all three matching seeds; do not rerun the selected A fits."
+  },
+  "open_decisions_sha256": "6c081427ab84e2cedf603d69434a825bd958b2f10c7664d4772d70f31a65b242",
+  "optimization_proposal": {
+    "batch_size": 16,
+    "checkpoint_and_resume": "Save epoch-boundary last state including model, optimizer, scheduler, RNG and sampler states; preserve best state at minimum sample-mean weighted validation loss. Resume only from hash-verified complete state with identical configuration, protocol, source and environment. Never restart due to poor performance or reset optimizer/scheduler.",
+    "cpu_threads": 2,
+    "early_stopping": {
+      "min_delta": 0.0,
+      "monitor": "weighted validation loss",
+      "patience": 20
+    },
+    "failure": "OOM, nondeterminism, missing pretrained weights, corrupt state or nonfinite loss stops the fit/campaign. No batch, precision, seed, preprocessing, architecture or optimizer changes to rescue a run; no replacement fit without new authorization.",
+    "family_settings": {
+      "custom_cnn_transformer": {
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "epsilon": 1e-08,
+        "lr": 9e-05,
+        "optimizer": "Adam",
+        "weight_decay": 5e-07
+      },
+      "resnet50": {
+        "backbone_batchnorm_eval_while_frozen": true,
+        "backbone_lr": 0.0001,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "epsilon": 1e-08,
+        "head_lr_multiplier": 10,
+        "head_only_warmup_epochs": 5,
+        "one_optimizer_no_reset": true,
+        "optimizer": "AdamW",
+        "weight_decay": 0.0001
+      },
+      "vit_b_16": {
+        "backbone_lr": 3e-05,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "epsilon": 1e-08,
+        "head_lr_multiplier": 10,
+        "head_only_warmup_epochs": 5,
+        "one_optimizer_no_reset": true,
+        "optimizer": "AdamW",
+        "weight_decay": 0.01
+      }
+    },
+    "gradient_clip_norm": 3.0,
+    "max_epochs": 100,
+    "resource_limits": {
+      "memory": "record peak allocated/reserved; stop at 90% of device memory; no batch fallback",
+      "one_exclusive_GPU": "RTX 5060 Ti class as in v1 execution; no concurrent fits",
+      "precision": "float32 only; CUDA deterministic settings inherited from v1",
+      "software_target": "Python 3.12.3; torch 2.7.0+cu128; torchvision 0.22.0+cu128; freeze full environment/source digest before launch"
+    },
+    "scheduler": {
+      "active_from_epoch": 1,
+      "factor": 0.1,
+      "monitor": "weighted validation loss",
+      "no_reset_at_unfreeze": true,
+      "patience": 5,
+      "type": "ReduceLROnPlateau"
+    },
+    "seeds": [
+      3908274,
+      3908275,
+      3908276
+    ],
+    "weighted_loss": "class-weighted cross-entropy; mean reduction over objects",
+    "workers": 8
+  },
+  "phase": "Dataset-v2I",
+  "ready_for_execution": true,
+  "scope": {
+    "architectures": [
+      "custom_cnn_transformer",
+      "resnet50",
+      "vit_b_16"
+    ],
+    "classes": [
+      "galaxies",
+      "globularclusters",
+      "nebulae",
+      "opencluster"
+    ],
+    "mandatory_controls": [
+      "B",
+      "A_outer",
+      "B_outer",
+      "metadata_FOV_only",
+      "FOV_stratified_reporting"
+    ],
+    "primary_representation": "A",
+    "statistical_unit": "v2G assignment unit / overlap component",
+    "task": "four-class astronomical classification",
+    "taxonomy_aware_or_hierarchical_classification": false
+  },
+  "source_digests": {
+    "author_decisions_sha256": "eef166b0233fcd1b31d0f47aea8b962508a09b9163b8826f5e4925d9d0215d00",
+    "v1_phase4b_selection": "dc1729544b61d44fe9daa80752fe8e7e8165aea322965180dd74540c2df5e812",
+    "v1_phase4c_baseline_audit": "b9b92b010340e1fd7761548f2fa22e478d09d17be1c0d4495dd5a12594959476",
+    "v1_phase4c_custom_audit": "1cbe4c88d0cce9abee966e58a59200559e0767fdac9ab63bcee6c630ac5e14ca",
+    "v1_phase4c_selection": "f3fd04c457a59c73d4942a7e50054b8499b679ca701add5d403600a806ef4218",
+    "v1_phase4e_statistical_protocol": "f33e52ecb92568a90e154f4fbb27d64eb1e9845feaa3f00e3445049591f86beb",
+    "v1_protocol": "183b02d988c61a8036ba7a3a496c3f4797cbced1e261c38eb2cb8a94e4ea8516",
+    "v2F_representation": "3547358397a6ba41379545fdc113aee17dc4b82794e113aca1aa1a301d2d75b6",
+    "v2F_shortcut_controls": "c6f10f88b49fc01bb5fd66bc71ac08fb212fb862eb096855f16ff916b1699246",
+    "v2G_split": "85335f9f6db49689c9a68200c7d2b77d0a8912e9acd8a63fbaf8cc6fe20f33c7",
+    "v2H_dataset_digest": "089048e74a683100b1a317be6f32a5924e203129264ba9441bb0320275ad6021",
+    "v2H_inventory": "8fb890200277fe91ba62e683f4de58c20f809586aa0644334f2c6cf1d2075c4d",
+    "v2H_tensor_merkle": "111411afe4a4f20bafca15f2d5f10be2e1321d065cce2dc4b30bc4121f73d001"
+  },
+  "statistical_analysis": {
+    "assignment_unit_count_test": 61,
+    "bootstrap_replicates": 20000,
+    "bootstrap_rng": "NumPy PCG64",
+    "bootstrap_seed": 20261021,
+    "bootstrap_unit": "resample 61 assignment units with replacement; keep all objects in each unit; same draw for every paired model, representation and seed",
+    "metadata_control": "Report both fixed metadata models and paired cluster-bootstrap differences versus each primary A architecture descriptively; no representation selection or tuning from these controls.",
+    "metric_conventions": "balanced accuracy averages recall over classes with positive true support; macro-F1 includes all four frozen classes with zero when denominator is zero; report degeneracies/support explicitly",
+    "metrics": [
+      "balanced_accuracy",
+      "macro_f1",
+      "accuracy",
+      "per_class_precision_recall_f1_support",
+      "confusion_matrix"
+    ],
+    "multiplicity": "Holm alpha .05: 9 primary A architecture-pair×metric tests; separate 27-test family for architecture contrasts on controls and separate 27-test family for each control versus A.",
+    "paired_permutation_replicates": 20000,
+    "prediction_records_sealed_before_scoring_truth": true,
+    "prediction_worker_receives_truth": false,
+    "randomization_replicates": 20000,
+    "randomization_rng": "NumPy PCG64",
+    "randomization_seed": 20261021,
+    "randomization_unit": "assignment unit; jointly swap model predictions for every object in a sampled unit",
+    "retain_each_object_prediction": true,
+    "seed_summary": "report seed-specific metrics and paired differences; report every seed and mean ± sample SD (ddof=1); never best seed",
+    "shared_randomization_draws_across_paired_models_representations_metrics_and_seeds": true,
+    "shared_resamples_across_models_representations_metrics_and_seeds": true,
+    "test_result_retraining_replacement_reselection": false,
+    "whole_assignment_units": true
+  },
+  "statistical_analysis_plan_sha256": "927ccaee16470d2020eeb7f3f2e0a06c4e5d43580181fe58ca52d942fdf65d70",
+  "status": "frozen_after_author_decisions_ready_for_execution_no_training_started",
+  "test_access_allowed_now": false,
+  "test_lock_policy": {
+    "deep_checkpoint_evaluations": 36,
+    "metadata_control_evaluations": 2,
+    "observations_per_checkpoint": 73,
+    "one_final_pass_only": true,
+    "seal_predictions_before_scoring": true,
+    "test_evaluations": 38,
+    "test_results_cannot_trigger_retraining_replacement_or_reselection": true,
+    "worker_has_truth": false
+  },
+  "training_started_this_turn": false
+}

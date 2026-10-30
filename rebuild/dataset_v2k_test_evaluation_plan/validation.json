@@ -1,0 +1,19 @@
+{
+  "canonical_sha256": "6967f066faf6af4a7c2abdf37c2c930607dd850f0463a25f93834c66bb43c2d3",
+  "evaluation_executor_hash_pending_future_preaccess_gate": true,
+  "inference_performed": false,
+  "phase": "Dataset-v2K-plan",
+  "plan_canonical_sha256": "c0fd829094c6ad02a9cd4b0099c7accec18743ef576cbedffbce96735941c231",
+  "scoring_performed": false,
+  "status": "passed_plan_only",
+  "target_count_metadata": 2,
+  "target_count_network": 36,
+  "target_count_total": 38,
+  "target_manifest_canonical_sha256": "ccb33c9a90b867bf859a1b99db29c87c3b02a8d4cc3fab2c9f48465c775c8942",
+  "test_labels_opened": false,
+  "test_membership_rows_opened": false,
+  "test_tensors_opened": false,
+  "unique_network_checkpoint_hashes": 36,
+  "v2J1_inventory_entries_verified": 19,
+  "v2J2_inventory_entries_verified": 360
+}

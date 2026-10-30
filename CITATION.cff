@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this archive, please cite the associated article."
+title: "AstroClassifier reproducibility archive"
+type: software
+authors:
+  - family-names: "Marinho"
+    given-names: "Eraldo Pereira"
+year: 2026
+repository-code: "https://github.com/epmarinho/astroclassifier-repro"
+license: Apache-2.0
+

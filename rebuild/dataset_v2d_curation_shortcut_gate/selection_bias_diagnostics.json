@@ -1,0 +1,197 @@
+{
+  "never_drop_all_review_needed": true,
+  "populations": [
+    {
+      "FOV_median_arcmin": 5.0,
+      "class": "galaxies",
+      "interpretation": "Descriptive proposal, no final split or performance claim; ready population can still show selection bias.",
+      "objects": 120,
+      "population": "all_frozen",
+      "subtype_counts": {
+        "barred_spiral": 24,
+        "elliptical": 24,
+        "irregular": 24,
+        "lenticular": 24,
+        "unbarred_spiral": 24
+      }
+    },
+    {
+      "FOV_median_arcmin": 5.0,
+      "class": "galaxies",
+      "interpretation": "Descriptive proposal, no final split or performance claim; ready population can still show selection bias.",
+      "objects": 77,
+      "population": "C_pass_only_counterfactual",
+      "subtype_counts": {
+        "barred_spiral": 16,
+        "elliptical": 19,
+        "irregular": 12,
+        "lenticular": 14,
+        "unbarred_spiral": 16
+      }
+    },
+    {
+      "FOV_median_arcmin": 5.0,
+      "class": "galaxies",
+      "interpretation": "Descriptive proposal, no final split or performance claim; ready population can still show selection bias.",
+      "objects": 100,
+      "population": "conditional_100_slots",
+      "subtype_counts": {
+        "barred_spiral": 23,
+        "elliptical": 24,
+        "irregular": 24,
+        "lenticular": 24,
+        "unbarred_spiral": 5
+      }
+    },
+    {
+      "FOV_median_arcmin": 5.0,
+      "class": "galaxies",
+      "interpretation": "Descriptive proposal, no final split or performance claim; ready population can still show selection bias.",
+      "objects": 93,
+      "population": "quality_ready_in_proposal",
+      "subtype_counts": {
+        "barred_spiral": 21,
+        "elliptical": 23,
+        "irregular": 22,
+        "lenticular": 22,
+        "unbarred_spiral": 5
+      }
+    },
+    {
+      "FOV_median_arcmin": 5.0,
+      "class": "globularclusters",
+      "interpretation": "Descriptive proposal, no final split or performance claim; ready population can still show selection bias.",
+      "objects": 113,
+      "population": "all_frozen",
+      "subtype_counts": {
+        "milky_way_globular_cluster": 113
+      }
+    },
+    {
+      "FOV_median_arcmin": 5.0,
+      "class": "globularclusters",
+      "interpretation": "Descriptive proposal, no final split or performance claim; ready population can still show selection bias.",
+      "objects": 71,
+      "population": "C_pass_only_counterfactual",
+      "subtype_counts": {
+        "milky_way_globular_cluster": 71
+      }
+    },
+    {
+      "FOV_median_arcmin": 5.0,
+      "class": "globularclusters",
+      "interpretation": "Descriptive proposal, no final split or performance claim; ready population can still show selection bias.",
+      "objects": 100,
+      "population": "conditional_100_slots",
+      "subtype_counts": {
+        "milky_way_globular_cluster": 100
+      }
+    },
+    {
+      "FOV_median_arcmin": 5.0,
+      "class": "globularclusters",
+      "interpretation": "Descriptive proposal, no final split or performance claim; ready population can still show selection bias.",
+      "objects": 89,
+      "population": "quality_ready_in_proposal",
+      "subtype_counts": {
+        "milky_way_globular_cluster": 89
+      }
+    },
+    {
+      "FOV_median_arcmin": 15.0,
+      "class": "nebulae",
+      "interpretation": "Descriptive proposal, no final split or performance claim; ready population can still show selection bias.",
+      "objects": 120,
+      "population": "all_frozen",
+      "subtype_counts": {
+        "DNe": 24,
+        "HII": 24,
+        "PN": 24,
+        "RNe": 24,
+        "SNR": 24
+      }
+    },
+    {
+      "FOV_median_arcmin": 5.0,
+      "class": "nebulae",
+      "interpretation": "Descriptive proposal, no final split or performance claim; ready population can still show selection bias.",
+      "objects": 19,
+      "population": "C_pass_only_counterfactual",
+      "subtype_counts": {
+        "DNe": 4,
+        "HII": 5,
+        "PN": 7,
+        "RNe": 1,
+        "SNR": 2
+      }
+    },
+    {
+      "FOV_median_arcmin": 15.0,
+      "class": "nebulae",
+      "interpretation": "Descriptive proposal, no final split or performance claim; ready population can still show selection bias.",
+      "objects": 100,
+      "population": "conditional_100_slots",
+      "subtype_counts": {
+        "DNe": 24,
+        "HII": 24,
+        "PN": 24,
+        "RNe": 24,
+        "SNR": 4
+      }
+    },
+    {
+      "FOV_median_arcmin": 15.0,
+      "class": "nebulae",
+      "interpretation": "Descriptive proposal, no final split or performance claim; ready population can still show selection bias.",
+      "objects": 74,
+      "population": "quality_ready_in_proposal",
+      "subtype_counts": {
+        "DNe": 18,
+        "HII": 19,
+        "PN": 21,
+        "RNe": 15,
+        "SNR": 1
+      }
+    },
+    {
+      "FOV_median_arcmin": 28.0,
+      "class": "opencluster",
+      "interpretation": "Descriptive proposal, no final split or performance claim; ready population can still show selection bias.",
+      "objects": 120,
+      "population": "all_frozen",
+      "subtype_counts": {
+        "None": 120
+      }
+    },
+    {
+      "FOV_median_arcmin": 16.9,
+      "class": "opencluster",
+      "interpretation": "Descriptive proposal, no final split or performance claim; ready population can still show selection bias.",
+      "objects": 38,
+      "population": "C_pass_only_counterfactual",
+      "subtype_counts": {
+        "None": 38
+      }
+    },
+    {
+      "FOV_median_arcmin": 28.0,
+      "class": "opencluster",
+      "interpretation": "Descriptive proposal, no final split or performance claim; ready population can still show selection bias.",
+      "objects": 100,
+      "population": "conditional_100_slots",
+      "subtype_counts": {
+        "None": 100
+      }
+    },
+    {
+      "FOV_median_arcmin": 24.4,
+      "class": "opencluster",
+      "interpretation": "Descriptive proposal, no final split or performance claim; ready population can still show selection bias.",
+      "objects": 74,
+      "population": "quality_ready_in_proposal",
+      "subtype_counts": {
+        "None": 74
+      }
+    }
+  ]
+}

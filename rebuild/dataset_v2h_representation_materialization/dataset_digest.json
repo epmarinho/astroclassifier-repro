@@ -1,0 +1,19 @@
+{
+  "algorithm": "SHA256 domain-separated binary Merkle tree",
+  "binding": {
+    "controls_sha256": "0513b8ebac2dcef0e863875d791ef4449599e590eab805dc531a6fb3273ba1e1",
+    "labels_sha256": "8355ae20da64b27eaa1506bbde960e7f3b2b34c8c148fe73b68fff8ff43c3121",
+    "representation_protocol_sha256": "3547358397a6ba41379545fdc113aee17dc4b82794e113aca1aa1a301d2d75b6",
+    "representations": {
+      "A": "85e1fea03b573463235ec292dbe65ad618437d32ef0bb07672cc173bfe6cc246",
+      "B": "da5510de551f982fae451c6c453c8b56fb90007fda9d0b0ed7cbd2a64ba89a3f"
+    },
+    "shortcut_protocol_sha256": "c6f10f88b49fc01bb5fd66bc71ac08fb212fb862eb096855f16ff916b1699246",
+    "split_sha256": "1678a37f154baf5ff6895c81d286f3cac72fdaead7919e30f2af655be7bd33bf",
+    "tensor_merkle_root": "111411afe4a4f20bafca15f2d5f10be2e1321d065cce2dc4b30bc4121f73d001"
+  },
+  "canonical_dataset_sha256": "089048e74a683100b1a317be6f32a5924e203129264ba9441bb0320275ad6021",
+  "tensor_count": 1480,
+  "tensor_merkle_root": "111411afe4a4f20bafca15f2d5f10be2e1321d065cce2dc4b30bc4121f73d001",
+  "total_tensor_bytes": 891315200
+}
