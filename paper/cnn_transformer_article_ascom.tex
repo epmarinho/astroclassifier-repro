@@ -319,6 +319,16 @@ selected on A and transferred without retuning, the other representations assess
 robustness of the A-selected training configurations. Their results do not estimate
 the best performance attainable after representation-specific optimization.
 
+\subsection{AI-assisted research workflow}
+
+The AstroClassifier project originated from a classifier independently designed
+and implemented by the author. OpenAI Codex was subsequently used to assist with
+software refinement, experiment orchestration, dataset-provenance and integrity
+audits, and reproducibility checks. The author specified the scientific objectives
+and experimental protocols, reviewed the generated code and records, verified the
+reported results against frozen artefacts, interpreted the findings, and made all
+final decisions.
+
 \section{Evaluation and statistical analysis}
 
 Primary metrics are \balacc{}, \macrof{}, and accuracy, supplemented by per-class
@@ -592,11 +602,10 @@ The curated AstroClassifier reproducibility archive for this study is publicly
 available at \url{https://github.com/epmarinho/astroclassifier-repro}. It contains
 the source code needed to reproduce the analyses, protocols, manifests,
 configurations, aggregate statistics, and prediction and scoring records. A
-versioned archival snapshot and its permanent DOI will be added before
-submission. DSS2 survey
-products will be redistributed only where source terms permit. Retrieval manifests
-and provenance records support reconstruction when direct redistribution is
-inappropriate.
+versioned FITS and tensor dataset release is available from the same repository,
+with checksums, provenance, and DSS use and attribution terms. Retrieval manifests
+support independent reconstruction from the source archives. A permanent archival
+DOI will be added before submission.
 
 \section{Conclusion}
 
@@ -616,6 +625,14 @@ physical-object split units, explicit shortcut controls, and pre-specified one-p
 testing. High accuracy
 on unseen objects is evidence of generalization within the collection; it is not, by
 itself, evidence that a model learned the intended astronomical morphology.
+
+\section*{Declaration of generative AI and AI-assisted technologies in the
+manuscript preparation process}
+
+During the preparation of this work, the author used OpenAI Codex and ChatGPT to
+assist with manuscript organization, language refinement, and presentation. After
+using these tools, the author reviewed and edited the content as needed and takes
+full responsibility for the content of the publication.
 
 \bibliographystyle{elsarticle-harv}
 \begingroup

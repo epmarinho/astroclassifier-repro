@@ -41,12 +41,19 @@ correction.
 
 ## Data and large artifacts
 
-This repository does not redistribute FITS products, materialized tensors,
-trained checkpoints, or the legacy internet-image corpus. DSS2 products can be
+The Git history does not store FITS products, materialized tensors, trained
+checkpoints, or the legacy internet-image corpus. DSS2 products can also be
 reconstructed from the retrieval and provenance manifests, subject to the source
 archive's terms. Frozen records may contain paths to omitted local artifacts;
 those paths document the original execution and are not expected to resolve in a
 fresh clone.
+
+The versioned FITS and tensor datasets are available from the
+[Dataset-v2 release](https://github.com/epmarinho/astroclassifier-repro/releases/tag/dataset-v2.0.0).
+They are release assets rather than Git objects. Read
+[`datasets/DATA_USE.md`](datasets/DATA_USE.md) for DSS attribution and
+non-commercial-use conditions, and verify downloads with
+[`datasets/RELEASE_ASSETS.sha256`](datasets/RELEASE_ASSETS.sha256).
 
 ## Manuscript
 
