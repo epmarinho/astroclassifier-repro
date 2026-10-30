@@ -1,11 +1,27 @@
 cff-version: 1.2.0
-message: "If you use this archive, please cite the associated article."
-title: "AstroClassifier reproducibility archive"
+message: "If you use this software and reproducibility archive, please cite this record."
+title: "AstroClassifier reproducibility archive: object-independent evaluation of small-data astronomical image classifiers"
 type: software
 authors:
   - family-names: "Marinho"
     given-names: "Eraldo Pereira"
-year: 2026
+    orcid: "https://orcid.org/0000-0002-7413-0161"
+    affiliation: "Institute of Geoscience and Exact Sciences, São Paulo State University (UNESP)"
+version: 1.0.0
+date-released: 2026-10-30
 repository-code: "https://github.com/epmarinho/astroclassifier-repro"
+url: "https://github.com/epmarinho/astroclassifier-repro"
 license: Apache-2.0
-
+abstract: >-
+  Reproducibility archive for an object-independent evaluation of small-data
+  astronomical image classifiers. It contains the implementation, frozen
+  experimental protocols, provenance records, predictions, aggregate results,
+  manuscript, and reproducible figures for comparisons of a custom
+  CNN--Transformer, ResNet-50, and ViT-B/16.
+keywords:
+  - astronomical image classification
+  - small datasets
+  - object-independent evaluation
+  - shortcut learning
+  - convolutional neural networks
+  - vision transformers

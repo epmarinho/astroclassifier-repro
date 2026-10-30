@@ -1,0 +1,31 @@
+{
+  "title": "AstroClassifier reproducibility archive: object-independent evaluation of small-data astronomical image classifiers",
+  "description": "<p>Reproducibility archive for an object-independent evaluation of small-data astronomical image classifiers. It contains the implementation, frozen experimental protocols, provenance records, predictions, aggregate results, manuscript, and reproducible figures for comparisons of a custom CNN–Transformer, ResNet-50, and ViT-B/16.</p><p>Versioned FITS products and materialized tensors are distributed as separate Dataset-v2 release assets and remain subject to the source-archive terms documented in <code>datasets/DATA_USE.md</code>.</p>",
+  "creators": [
+    {
+      "name": "Marinho, Eraldo Pereira",
+      "orcid": "0000-0002-7413-0161",
+      "affiliation": "Institute of Geoscience and Exact Sciences, São Paulo State University (UNESP)"
+    }
+  ],
+  "version": "1.0.0",
+  "access_right": "open",
+  "license": "Apache-2.0",
+  "upload_type": "software",
+  "language": "eng",
+  "keywords": [
+    "astronomical image classification",
+    "small datasets",
+    "object-independent evaluation",
+    "shortcut learning",
+    "convolutional neural networks",
+    "vision transformers"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/epmarinho/astroclassifier-repro/releases/tag/dataset-v2.0.0",
+      "relation": "isSupplementedBy",
+      "resource_type": "dataset"
+    }
+  ]
+}
